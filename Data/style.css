@@ -1,6 +1,6 @@
 html {
     background-color: #040605;
-    cursor: url(/UI/Cursor.png), auto;
+    cursor: url(/aowp/UI/Cursor.png), auto;
 
 }
 
@@ -185,7 +185,7 @@ p {
     width: 400px;
     float: left;
     border: 1px solid white;
-    background-image: url("/UI/AbilityListBackground.png");
+    background-image: url("/aowp/UI/AbilityListBackground.png");
     background-size: 400px;
 
     border: 2px solid white;
@@ -283,7 +283,7 @@ p {
 }
 
 .unit_ability_holder {
-    background-image: url("/UI/AbilityListBackground.png");
+    background-image: url("/aowp/UI/AbilityListBackground.png");
     background-size: 400px;
 
     width: 310px;
@@ -560,13 +560,13 @@ x-bio {
     min-height: 20px;
     min-width: 20px;
     position: relative;
-    content: url(../Icons/Text/biochemical.png);
+    content: url(/aowp/Icons/Text/biochemical.png);
 }
 
 x-thermal {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/thermal.png);
+    content: url(/aowp/Icons/Text/thermal.png);
     position: relative;
 
 }
@@ -574,7 +574,7 @@ x-thermal {
 x-psionic {
     min-height: 20px;
     min-width: 20px;
-    content: url(../Icons/Text/psionic.png);
+    content: url(/aowp/Icons/Text/psionic.png);
     position: relative;
     background-size: 20px;
 
@@ -583,14 +583,14 @@ x-psionic {
 x-arc {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/arc.png);
+    content: url(/aowp/Icons/Text/arc.png);
     position: relative;
 }
 
 x-kinetic {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/kinetic.png);
+    content: url(/aowp/Icons/Text/kinetic.png);
     position: relative;
 
 }
@@ -598,7 +598,7 @@ x-kinetic {
 x-turn {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/turn.png);
+    content: url(/aowp/Icons/Text/turn.png);
     position: relative;
 
 }
@@ -606,7 +606,7 @@ x-turn {
 x-shield {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/shield.png);
+    content: url(/aowp/Icons/Text/shield.png);
     position: relative;
 
 
@@ -615,7 +615,7 @@ x-shield {
 x-armor {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/armor.png);
+    content: url(/aowp/Icons/Text/armor.png);
     position: relative;
 
 
@@ -624,7 +624,7 @@ x-armor {
 x-energy {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/energy.png);
+    content: url(/aowp/Icons/Text/energy.png);
     position: relative;
 
 
@@ -633,7 +633,7 @@ x-energy {
 x-hp {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/hp.png);
+    content: url(/aowp/Icons/Text/hp.png);
     position: relative;
 
 
@@ -642,7 +642,7 @@ x-hp {
 x-production {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/production.png);
+    content: url(/aowp/Icons/Text/production.png);
     position: relative;
 
 
@@ -651,7 +651,7 @@ x-production {
 x-accuracy {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/accuracy.png);
+    content: url(/aowp/Icons/Text/accuracy.png);
     position: relative;
 
 
@@ -660,7 +660,7 @@ x-accuracy {
 x-range {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/range.png);
+    content: url(/aowp/Icons/Text/range.png);
     position: relative;
 
 }
@@ -668,7 +668,7 @@ x-range {
 x-cosmite {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/cosmite.png);
+    content: url(/aowp/Icons/Text/cosmite.png);
     position: relative;
 
 
@@ -677,7 +677,7 @@ x-cosmite {
 x-kineticres {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/kineticRes.png);
+    content: url(/aowp/Icons/Text/kineticRes.png);
     position: relative;
 
 
@@ -686,7 +686,7 @@ x-kineticres {
 x-medal_novice {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/novice.png);
+    content: url(/aowp/Icons/Text/novice.png);
     position: relative;
 
 
@@ -695,7 +695,7 @@ x-medal_novice {
 x-medal_veteran {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/veteran.png);
+    content: url(/aowp/Icons/Text/veteran.png);
     position: relative;
 
 
@@ -704,7 +704,7 @@ x-medal_veteran {
 x-medal_expert {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/expert.png);
+    content: url(/aowp/Icons/Text/expert.png);
     position: relative;
 
 
@@ -713,7 +713,7 @@ x-medal_expert {
 x-medal_prime {
     max-height: 20px;
     top: 5px;
-    content: url(../Icons/Text/prime.png);
+    content: url(/aowp/Icons/Text/prime.png);
     position: relative;
 
 
@@ -721,7 +721,7 @@ x-medal_prime {
 
 x-repeating {
     max-width: 80px;
-    content: url(../Icons/Text/repeating.png);
+    content: url(/aowp/Icons/Text/repeating.png);
     position: relative;
 
 
@@ -729,7 +729,7 @@ x-repeating {
 
 x-singleaction {
     max-width: 80px;
-    content: url(../Icons/Text/single_action.png);
+    content: url(/aowp/Icons/Text/single_action.png);
     position: relative;
 
 
@@ -737,7 +737,7 @@ x-singleaction {
 
 x-fullcontinue {
     max-width: 80px;
-    content: url(../Icons/Text/fullaction_continue.png);
+    content: url(/aowp/Icons/Text/fullaction_continue.png);
     position: relative;
 
 
