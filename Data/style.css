@@ -615,7 +615,7 @@ x-shield {
 x-armor {
     max-height: 20px;
     top: 5px;
-    content: url(/aowp/Icons/Text/armor.png);
+    content: url(./aowp/Icons/Text/armor.png);
     position: relative;
 
 
