@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+     <script type="text/javascript" language="javascript" src="UnitAbilities.json"></script>
+     
+     <script type="text/javascript" language="javascript" src="Units.json"></script>
+ </head>
+    
+<body style="text-align:left;">
+
+<h2>Tooltip</h2>
+<p>Move the mouse over the text below:</p> 
+    
+    
+    
+    <!–– unit test -->
+
+    <div class="unitcard">
+    <div class="listOfUnits">
+     <div onmouseover = "showUnit('KirKo Emergent')">Kir'Ko Emergent </div>
+  <!-- <div onmouseover = "showUnit('Tigran Prowler')">Prowler </div> -->
+    </div>
+   
+    <br>
+    <div class="unitImageHolder"><img class= "unit_image"  src="https://66.media.tumblr.com/dd964942a3a9da72805363f94d3f72df/tumblr_inline_nmjd23VeaQ1qkvi0e_500.gif" alt="Smiley" ><div class= "unit_image_overlay"></div></div>
+    
+    <div class="unitStats">
+         <p class="unit_name"> Name</p>
+   <div class="basestats">
+       <p class="hp_number">5 </p><div class="sprite_hp"></div><p class="shield_number">3 </p><div class="sprite_shield"></div><p class="armor_number">3 </p><div class="sprite_armor"></div>
+       <p class="mp_number">3 </p><div class="sprite_mp"></div></div>
+   
+    
+    <br>
+    <div class="abilityText">njk</div>
+        </div>
+    </div>
+   <div class="test"> tewte ewrewr</div>
+    
+
+    
+<script type="text/javascript">
+  
+         
+  // $(document).ready(function(e) {    
+  //     $.each(jsonObject, function(i, item) {
+  //  var text2 = $("<p></p>").text(item.car);
+  //           $('.block:last').before(text2);
+//});
+        //var txt2 = $("<p></p>").text("Text."); 
+  //  $('.block:last').before('<div class="block"><input type="text" /><span class="remove">Remove Option</span></div>', txt2);
+//});
+//$('.optionBox').on('click','.remove',function() {
+// 	$(this).parent().remove();
+//});
+    
+
+    var aName = "32";
+    
+function showUnit(a){
+    var hp, mp, shield, armor, name, j, abilityname, imagelink = "";
+    $('.abilityHolders').remove();
+    for (i in jsonUnits.units) {
+    if(a == jsonUnits.units[i].name){    
+        name = jsonUnits.units[i].name;
+        hp = jsonUnits.units[i].hp;   
+        mp = jsonUnits.units[i].mp;   
+        shield = jsonUnits.units[i].shield;   
+        armor = jsonUnits.units[i].armor;  
+        imagelink = jsonUnits.units[i].image_link;
+        for(j in jsonUnits.units[i].abilities){
+            abilityname = showAbility(jsonUnits.units[i].abilities[j].slug);
+            var newDiv = "<div class='abilityHolders'> </div>";
+           var abilityIMG = document.createElement("img");
+            abilityIMG.setAttribute('class', 'abilityIcon');
+            abilityIMG.setAttribute("src", showAbilityTooltip(jsonUnits.units[i].abilities[j].slug, "icon"));
+            abilityIMG.setAttribute("height", "30");
+            abilityIMG.setAttribute("width", "30");
+           
+             var NAME = document.createElement("p");
+            NAME.setAttribute('class', 'abilityHolders');
+          
+            var t = document.createTextNode(abilityname);
+            NAME.appendChild(t);
+            
+           var txt2 = $(newDiv).text(abilityname);
+           $('.abilityText').before (NAME );
+             //$('.abilityText').append ($(img2) );
+        
+            $(".abilityHolders:last").append(abilityIMG);
+            
+            
+            
+            
+            $(".abilityHolders:last").append("<span class='tooltipAbility'><p class='tooltipname'>"+ showAbilityTooltip(jsonUnits.units[i].abilities[j].slug, "name") + "<br> <br>" + showAbilityTooltip(jsonUnits.units[i].abilities[j].slug, "description") + "</p></span>");
+           
+        }
+    }
+  
+}
+   
+    //$(".tooltipicon").attr("src", research.getAttribute('hp'));
+    $(".hp_number").text(hp);
+    $(".mp_number").text(mp);
+    $(".shield_number").text(shield);
+    $(".armor_number").text(armor);
+     $(".unit_name").text(name);
+    $(".unit_image").attr("src", imagelink);
+    
+   // $(".abilityText").text(abilityname);
+   // document.getElementsByClassName("tooltipname").text = skill.getAttribute('skill-name');
+        
+} 
+    
+    
+function showAbilityTooltip(a, b){
+    var abilityName, abilityIcon, abilityDamage, abilityDescription, i = "";
+for (i in jsonUnitAbilities.abilities) 
+{
+    if(a == jsonUnitAbilities.abilities[i].slug){
+        abilityName = jsonUnitAbilities.abilities[i].name;  
+        abilityDescription = jsonUnitAbilities.abilities[i].description;
+        abilityIcon = jsonUnitAbilities.abilities[i].icon;
+        abilityDamage += jsonUnitAbilities.abilities[i].damage;
+         aName = jsonUnitAbilities.abilities[i].name;
+    } 
+   
+  }
+   
+//$(".tooltipicon").attr("src",abilityIcon);
+// $(".test").text(abilityDescription);
+   //$(".tooltipname").text(abilityDescription);
+    if(b == 'name'){
+        return abilityName;
+    }else if(b == 'description'){
+      return abilityDescription;
+    } else if(b == 'icon'){
+      return abilityIcon;
+    }else{
+    return "Type not set";    
+    }
+}      
+
+    
+
+    
+function showAbility(a){
+var abilityName, abilityIcon, abilityDamage, i = "";
+for (i in jsonUnitAbilities.abilities) 
+{
+    if(a == jsonUnitAbilities.abilities[i].slug){
+        abilityName = jsonUnitAbilities.abilities[i].name;  
+        abilityDescription = jsonUnitAbilities.abilities[i].description;
+        //abilityIcon += jsonUnitAbilities.abilities[i].icon;
+        //abilityDamage += jsonUnitAbilities.abilities[i].damage;
+        
+    } 
+   
+  }
+    return abilityName;
+    
+//$(".tooltipicon").attr("src",abilityIcon);
+//$(".tooltipname").text(abilityName + abilityDamage);
+   // $(".abilityText").text(abilityName);
+   // return abilityName;
+}      
+//function hideResearch(a){
+    
+  //  $(".tooltipicon").attr("src", null);
+    //$(".tooltipname").text("");    
+//}
+    
+</script>
+
+
+</body>
+</html>

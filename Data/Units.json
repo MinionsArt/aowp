@@ -1,0 +1,503 @@
+var jsonUnits = {
+    "units": [{
+            "hp": "30",
+            "name": "kirko_emergent",
+            "string": "KIR'KO EMERGENT",
+            "armor": "0",
+            "shield": "0",
+            "mp": "32",
+            "tier": "1",
+            "cost": "40 <x-energy></x-energy> 150 <x-production></x-production>",
+            "origin_research": "",
+            "origin_building": "",
+            "description": "\"The short slithering bugs known as Emergents are easiest to destroy, but they are crafty and voracious. Our guardsmen struggle to keep them from infesting our underground stores. Though relatively slow, they chew and tunnel below the surface of our settlement. Their bodies are in a state of constant metamorphosis, thus the chemicals they exude are noxious. It is not uncommon to happen upon a group of them in burrows ready to vomit gobs of toxic sludge on any that wander too close to where they feed.\" <br> <i>--Professor R. Lin'l \"Bugman\" Bunson, \"RV-1235: Seti Alpha Outpost Recordings</i>\"",
+            "image_link": 'Kirko/KirkoEmergent.mp4',
+            "elite_skill": "elite_skill_metamorphosis",
+            "abilities": [
+                {
+                    "slug": "gunk_spit"
+        },
+                {
+                    "slug": "tunnel"
+        },
+                {
+                    "slug": "defense_mode"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "metamorphosis"
+        },
+                {
+                    "slug": "swarm_shield"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                },
+                {
+                    "slug": "rapid_evolution"
+                }
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "land_movement"
+                    }, {
+                    "slug": "light_unit"
+                    }, {
+                    "slug": "skirmisher"
+                    },
+                {
+                    "slug": "biological"
+                    }
+                ]
+
+},
+        {
+            "hp": "40",
+            "name": "kirko_frenzied",
+            "string": "KIR'KO FRENZIED",
+            "armor": "2",
+            "shield": "0",
+            "mp": "40",
+            "tier": "1",
+            "cost": "40 <x-energy></x-energy> 150 <x-production></x-production>",
+            "origin_research": "",
+            "origin_building": "",
+            "description": "\"We are Frenzied. Branded as worker tools, our claws thirst for reaping. We work for our mindless mother. We are not them. We work until our vanished Queen returns. She calls from the Empty. They think she died. The earth's fertile wealth will feed our broken. We are strongest in the true swarm. We follow our forgotten purpose. We fight those wo exiled our Queen. Too long we worked for them; now we fight. They desire sweet nectar, we'll give them bile. We are Frenzied.\" [message repeats) <br> <i>--Kir'Ko Interrogater Translation Unit: Translation Errors, \"RV-1457D: The Carapace Broken</i>\"",
+            "image_link": 'Kirko/KirkoFrenzied.mp4',
+            "elite_skill": "elite_skill_ignore_overwatch",
+            "abilities": [
+                {
+                    "slug": "rending_claws",
+                    "damage": "5 K M"
+        },
+                {
+                    "slug": "battle_vomit",
+                    "damage": "20 B R"
+        },
+                {
+                    "slug": "defense_mode"
+        },
+               ],
+            "passives": [
+
+                {
+                    "slug": "swarm_shield"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                },
+                {
+                    "slug": "frenzy"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "land_movement"
+                    }, {
+                    "slug": "light_unit"
+                    }, {
+                    "slug": "infantry"
+                    },
+                {
+                    "slug": "core"
+                    },
+                {
+                    "slug": "biological"
+                    }
+                ],
+
+
+}, {
+            "hp": "60",
+            "name": "kirko_barrager",
+            "string": "KIR'KO BARRAGER",
+            "armor": "4",
+            "shield": "0",
+            "mp": "24",
+            "tier": "3",
+            "cost": "120<x-energy></x-energy>400<x-production></x-production>20<x-cosmite></x-cosmite>",
+            "origin_research": "Kir'ko Barrager Caste",
+            "origin_building": "Elite Military Building",
+            "description": "\"We first observed what we thought might be some kind of Kir'Ko cattle lumbering slowly in the jungle scrub. We kept a safe distance and remained concealed, until Ensign Jakobbe thought it might be fun to harass one with his tareting schope to see what might happen. Its long abdomen curled over its armored center, its rear sptrouting like a hellish flower. A globule sailed over the ravine, splattering in our vicinity. Acrid gas burned our eyes. Jakobbe was blinded. I fled as the cover exploded around us.\" <br> <i>--Mah Reg'Nib, Observer Officisate, \"RV-771X: Nectar Run: The Price of Power</i>\"",
+            "image_link": 'Kirko/KirkoBarrager.mp4',
+            "elite_skill": "elite_skill_metamorphosis",
+            "abilities": [
+                {
+                    "slug": "biochemical_discharge"
+        },
+                {
+                    "slug": "blinding_gas"
+        }, {
+                    "slug": "biochemical_barrage"
+        },
+                {
+                    "slug": "defense_mode"
+        },
+               ],
+            "resistances": [
+                {
+                    "slug": "stagger_resistance_resistant"
+        }
+
+        ],
+            "passives": [
+                {
+                    "slug": "juggernaut"
+        },
+                {
+                    "slug": "swarm_shield"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                },
+                {
+                    "slug": "large_target"
+                }
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "land_movement"
+                    }, {
+                    "slug": "heavy_unit"
+                    }, {
+                    "slug": "elite"
+                    },
+                {
+                    "slug": "biological"
+                    }
+                ]
+
+    },
+        {
+            "hp": "35",
+            "name": "kirko_engulfer",
+            "string": "KIR'KO ENGULFER",
+            "armor": "2",
+            "shield": "0",
+            "mp": "24",
+            "tier": "2",
+            "cost": "100 <x-energy></x-energy> 270 <x-production></x-production>",
+            "origin_research": "Kir'ko Engulfer Caste",
+            "origin_building": "Elite Military Building",
+            "description": "\"We first observed what we thought might be some kind of Kir'Ko cattle lumbering slowly in the jungle scrub. We kept a safe distance and remained concealed, until Ensign Jakobbe thought it might be fun to harass one with his tareting schope to see what might happen. Its long abdomen curled over its armored center, its rear sptrouting like a hellish flower. A globule sailed over the ravine, splattering in our vicinity. Acrid gas burned our eyes. Jakobbe was blinded. I fled as the cover exploded around us.\" <br> <i>--Mah Reg'Nib, Observer Officisate, \"RV-771X: Nectar Run: The Price of Power</i>\"",
+            "image_link": 'Kirko/KirkoEngulfer.mp4',
+            "elite_skill": "elite_skill_metamorphosis",
+            "abilities": [
+                {
+                    "slug": "biochemical_discharge"
+        },
+                {
+                    "slug": "blinding_gas"
+        }, {
+                    "slug": "biochemical_barrage"
+        },
+                {
+                    "slug": "defense_mode"
+        },
+               ],
+            "resistances": [
+                {
+                    "slug": "stagger_resistance_resistant"
+        }
+
+        ],
+            "passives": [
+                {
+                    "slug": "juggernaut"
+        },
+                {
+                    "slug": "swarm_shield"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                },
+                {
+                    "slug": "large_target"
+                }
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "flying"
+                    }, {
+                    "slug": "heavy_unit"
+                    }, {
+                    "slug": "skirmisher"
+                    },
+                {
+                    "slug": "biological"
+                    }
+                ]
+
+    },
+
+        {
+            "hp": "35",
+            "name": "kirko_unleashed",
+            "string": "KIR'KO UNLEASHED",
+            "armor": "2",
+            "shield": "0",
+            "mp": "32",
+            "tier": "1",
+            "cost": "30 <x-energy></x-energy> 130 <x-production></x-production>",
+            "origin_research": "",
+            "origin_building": "",
+            "description": "\"The expedition proceeded without a hitch, until a flying Kir'Ko bug spied the convoy. We sniped the first, easily blasting it out of the sky. Despite my objections, the captain thought we could continue unnoticed. That's when they swarmed. Although there were dozens of targets, together their strange, oppressive, insectoid minds screamed in our heads making them harder to hit. Men panicked, fleeing in all directions. The only reason I survived was that I hit my head on an ammo box hatch and was trapped therein.\"  -- Mah Reg'Nib, Observer Officiate, \"RV-772X: Nectar Run: The Price of Power\"",
+            "image_link": 'Kirko/KirkoUnleashed.mp4',
+            "elite_skill": "elite_skill_ignore_overwatch",
+            "abilities": [
+                {
+                    "slug": "ravage"
+        },
+                {
+                    "slug": "gunk_shot"
+        },
+                {
+                    "slug": "defense_mode"
+        }
+               ],
+            "resistances": [
+
+
+        ],
+            "passives": [
+                {
+                    "slug": "farsight"
+        },
+                {
+                    "slug": "swarm_shield"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                }
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "flying"
+                    }, {
+                    "slug": "core"
+                    }, {
+                    "slug": "light_unit"
+                    },
+                {
+                    "slug": "biological"
+                    },
+                {
+                    "slug": "scout"
+                    }
+                ]
+
+    },
+        {
+            "hp": "50",
+            "name": "kirko_abyssian",
+            "string": "KIR'KO ABYSSIAN",
+            "armor": "3",
+            "shield": "0",
+            "mp": "32",
+            "tier": "2",
+            "cost": "80 <x-energy></x-energy> 250 <x-production></x-production>",
+            "origin_research": "",
+            "origin_building": "",
+            "description": "\"They're called Abyssians, and I'm telling you our walls won't hold against them. You've seen their colonies, those solid cement-like tiers one upon another. How do you think they were formed? We should be fleeing. Our forces are insufficient to hold back the swarm. The Abyssians will break through our defenses and the swarm will do the rest. Get your ment out. Leave it. They're tunneling into the reserve chambers as we speak. If you care about these colonists at all, you'll get them out now!.\"  -- Professor R. Lin'l Bugman Bunson\"RV-120S: Seti Alpha Outpost Recordings\"",
+            "image_link": 'Kirko/KirkoAbyssian.mp4',
+            "elite_skill": "elite_skill_ignore_overwatch",
+            "abilities": [
+                {
+                    "slug": "corrosive_bile"
+        },
+                {
+                    "slug": "tunnel"
+        },
+                {
+                    "slug": "wax_cement"
+        },
+                {
+                    "slug": "defense_mode"
+        }
+               ],
+            "resistances": [
+
+
+        ],
+            "passives": [
+                {
+                    "slug": "swarm_shield"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                }
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "land_movement"
+                    }, {
+                    "slug": "specialist"
+                    }, {
+                    "slug": "light_unit"
+                    },
+                {
+                    "slug": "biological"
+                    }
+                                ]
+
+    },
+        {
+            "hp": "60",
+            "name": "kirko_colonizer",
+            "string": "KIR'KO COLONIZER",
+            "armor": "0",
+            "shield": "0",
+            "mp": "40",
+            "tier": "1",
+            "cost": "100 <x-energy></x-energy> 1 <x-colonist></x-colonist> 300 <x-production></x-production> 30 <x-cosmite></x-cosmite>",
+            "origin_research": "",
+            "origin_building": "Frontier Facilities",
+            "description": "\"From the ashes of the Star Union, a new age will dawn. The fallen empire hides powerful secrets yet to be found, a race in earnest to revive the powers hidden in our past. The colonizer is the first step towards that revival. The nurturing of colonies and the development of society is of delicate importance, more so for a foreign and unfmiliar planet with dangers unkown. The cosmic Dark Age is over, nd the legendary remnnts of the Empire lay dormant, waiting to be rediscovered.\"  -- Quinlinn T. Ortivexis,\"RV-4367H: Universal Coinidental History\"",
+            "image_link": 'Kirko/KirkoColonizer.mp4',
+            "elite_skill": "elite_skill_ignore_overwatch",
+            "abilities": [
+
+               ],
+            "resistances": [
+                {
+                    "slug": "stagger_resistance_resistant"
+        }
+
+
+        ],
+            "passives": [
+                {
+                    "slug": "colonizer"
+                },
+                {
+                    "slug": "large_target"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                }
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "floating"
+                    }, {
+                    "slug": "core"
+                    }, {
+                    "slug": "heavy_unit"
+                    },
+                {
+                    "slug": "biological"
+                    }
+                                ]
+
+    },
+        {
+            "hp": "65",
+            "name": "kirko_deep_one",
+            "string": "KIR'KO DEEP ONE",
+            "armor": "2",
+            "shield": "4",
+            "mp": "32",
+            "tier": "3",
+            "cost": "120 <x-energy></x-energy> 400 <x-production></x-production> 20 <x-cosmite></x-cosmite>",
+            "origin_research": "Deep Caste",
+            "origin_building": "Harbor",
+            "description": "\"We found a mind in the Depths. Have you heard her forlorn cry? Her powers called us to the lonely shore like a torch beneath the water on a night with no moon. She is a reflection of our Beloved. She is the Deep One. Her carapace is strong. She iis not our lost Queen, but she remembers her. She is an ancient sister. She pities us. The oppressors hold their breath refusing to breathe the air when she plunges into their thoughts. They drown in the depths of her mind.\"  -- Nek'nek-Vik'vik-Kit'kikit\"RV-2398D: Words with Echoes\"",
+            "image_link": 'Kirko/KirkoDeepOne.mp4',
+            "elite_skill": "elite_skill_ignore_overwatch",
+            "abilities": [
+                {
+                    "slug": "psi_gouge"
+        },
+                {
+                    "slug": "call_of_the_deep"
+        },
+
+                {
+                    "slug": "defense_mode"
+        }
+               ],
+            "resistances": [
+                {
+                    "slug": "stagger_resistance_immune"
+        }
+
+
+        ],
+            "passives": [
+                {
+                    "slug": "swarm_shield"
+                },
+                {
+                    "slug": "strategic_regeneration"
+                },
+                {
+                    "slug": "large_target"
+                }
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "kirko"
+                    },
+                {
+                    "slug": "ship"
+                    }, {
+                    "slug": "water_movement"
+                    }, {
+                    "slug": "heavy_unit"
+                    }, {
+                    "slug": "psionic"
+                    },
+                {
+                    "slug": "biological"
+                    }
+                                ]
+
+    }
+
+]
+}

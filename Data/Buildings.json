@@ -1,0 +1,13 @@
+var jsonBuildings = {
+    "buildings": [{
+            "slug": "colony_center",
+            "name": "Colony Center",
+            "type": "Colony Center",
+            "description": "This is the colony center building. It provides a basic income and room for your colonists to grow. <br><br> This structure provides: <br> +20 Food income <br> + 60 Production income <br> + 10 Happiness income <br> <br> +4 Food colonist slots",
+            "cost": "150 <x-production> </x-production>",
+            "prereq": "",
+            "image_link": "colony_center",
+        },
+
+    ]
+}

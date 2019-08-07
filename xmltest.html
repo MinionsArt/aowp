@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" href="readXML.css" type="text/css">
+    <title>Read First Child</title>
+    <xml ID="writersXML" SRC="Species_Penguins.xml"></xml>
+</head>
+
+<body>
+    <script language="JavaScript">
+        var xFoo = document.createElement('x-foo');
+        xFoo.addEventListener('click', function(e) {
+            alert('Thanks!');
+        });
+        var xFoo = new XFoo();
+        document.body.appendChild(xFoo);
+    </script>
+
+    <span ID="blueBack">Read firstChild</span>
+    <div>
+        <p id="demo">e <x-foo>e</x-foo>we</p>
+    </div>
+
+
+
+</body>
+</html>

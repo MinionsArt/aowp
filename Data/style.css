@@ -1,0 +1,744 @@
+html {
+    background-color: #040605;
+    cursor: url(/UI/Cursor.png), auto;
+
+}
+
+#menu {
+    background: #343434;
+    color: #eee;
+    height: 35px;
+    border-bottom: 4px solid #eeeded
+}
+
+#menu ul,
+#menu li {
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none
+}
+
+#menu ul {
+    height: 35px
+}
+
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+    font: bold 12px Arial;
+    text-shadow: 0 -1px 0 #000;
+    text-transform: uppercase
+}
+
+#menu li:first-child {
+    border-left: none
+}
+
+#menu a {
+    display: block;
+    line-height: 35px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #eee;
+}
+
+#menu li:hover > a,
+#menu li a:hover {
+    background: #111
+}
+
+#menu input {
+    display: none;
+    margin: 0 0;
+    padding: 0 0;
+    width: 80px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer
+}
+
+#menu label {
+    font: bold 30px Arial;
+    display: none;
+    width: 35px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+}
+
+#menu label span {
+    font-size: 12px;
+    position: relative;
+    left: 35px
+}
+
+#menu ul.menus {
+    height: auto;
+    width: 180px;
+    background: #111;
+    position: relative;
+    z-index: 99;
+    display: none;
+    border: 0;
+}
+
+#menu ul.menus li {
+    display: block;
+    width: 100%;
+    font: 12px Arial;
+    text-transform: none;
+}
+
+#menu li:hover ul.menus {
+    display: block
+}
+
+#menu a.home {
+    background: #c00;
+}
+
+#menu a.prett {
+    padding: 0 27px 0 14px
+}
+
+#menu a.prett::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 6px 5px;
+    border-color: #eee transparent transparent transparent;
+    position: absolute;
+    top: 15px;
+    right: 9px
+}
+
+#menu ul.menus a:hover {
+    background: #333;
+}
+
+#menu ul.menus .submenu {
+    display: none;
+    position: absolute;
+    left: 180px;
+    background: #111;
+    top: 0;
+    width: 180px;
+}
+
+#menu ul.menus .submenu li {
+    background: #111;
+}
+
+#menu ul.menus .has-submenu:hover .submenu {
+    display: block;
+}
+
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+
+}
+
+.unit_description {
+    font-family: "Noto Sans", Times, sans-serif;
+    color: #fff4ad;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    top: -20px;
+}
+
+.unit_image {
+    float: left;
+    padding-bottom: 10px
+}
+
+.unit_image_holder {
+    position: relative;
+    width: 400px;
+    float: left;
+    border: 1px solid white;
+    background-image: url("/UI/AbilityListBackground.png");
+    background-size: 400px;
+
+    border: 2px solid white;
+    border-color: rgba(105, 255, 255, 0.4);
+    margin: 5px;
+}
+
+.unit_card {
+    background-color: #19313d;
+    color: white;
+    width: 840px;
+    height: 600px;
+    padding: 35px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unit_elite_skill {
+    overflow: hidden;
+    width: 308px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(100, 100, 20, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.unit_passiveslot {
+    overflow: hidden;
+    width: 308px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(50, 50, 100, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.unit_resistanceslot {
+    overflow: hidden;
+    width: 308px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(50, 100, 100, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+
+
+}
+
+.unit_abilityslot {
+    overflow: hidden;
+    width: 308px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.origin_icon:hover {
+    border: 1px solid aqua;
+}
+
+/* Change the color of links on hover */
+.unit_abilityslot:hover {
+    background-color: darkslategray;
+
+}
+
+/* Change the color of links on hover */
+.unit_passiveslot:hover {
+    background-color: darkblue;
+
+}
+
+/* Change the color of links on hover */
+.unit_elite_skill:hover {
+    background-color: darkslateblue;
+
+}
+
+/* Change the color of links on hover */
+.unit_resistanceslot:hover {
+    background-color: darkolivegreen;
+
+}
+
+.unit_ability_holder {
+    background-image: url("/UI/AbilityListBackground.png");
+    background-size: 400px;
+
+    width: 310px;
+    border: 2px solid white;
+    border-color: rgba(105, 255, 255, 0.4);
+    margin: 5px;
+}
+
+.unit_stats {
+    height: 30px;
+    top: 0px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    position: relative;
+    background-color: rgba(10, 10, 10, 0.4);
+}
+
+.unit_types {
+    height: 40px;
+    position: relative;
+    clear: left;
+    width: 300px;
+    border: 5px solid black;
+    background-color: rgba(10, 10, 40, 0.4);
+
+}
+
+.unit_ability_icon {
+    float: left;
+}
+
+.unit_stat_icon {
+    position: relative;
+    align-content: left;
+    padding-right: 10px;
+    float: left;
+    height;
+    left: 10%
+}
+
+.unit_stat_icon .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid darkgrey;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    min-width: 100px;
+    max-width: 400px;
+    min-height: 50px;
+    margin-left: 50px;
+
+    transition: opacity 0.5s;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.unit_stat_icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+.unit_prod {
+    color: bisque;
+    font-size: 14px;
+    position: relative;
+    top: -22px;
+    padding: 10px;
+    text-align: left;
+}
+
+.ability_damage {
+    float: right;
+    font-size: 20px;
+    align-content: right;
+    margin-top: 10px;
+    display: inline-block;
+
+    min-width: 50px;
+}
+
+
+.unit_name {
+    font-size: 18px;
+    position: relative;
+    top: -5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px cyan;
+}
+
+.tooltip {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+.tooltiptext {
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #004b5e;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+    min-width: 100px;
+    max-width: 400px;
+    min-height: 50px;
+    margin-left: 100px;
+
+    transition: opacity 0.5s;
+
+}
+
+.unittype_icon {
+    position: relative;
+    float: left;
+
+}
+
+/* Tooltip text */
+.unittype_icon .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #004b5e;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 40px;
+    margin-left: 40px;
+
+    transition: opacity 0.5s;
+
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.unittype_icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.researchResultImage .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: justify;
+    white-space: nowrap;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #004b5e;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 10px;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 100px;
+    max-width: 500px;
+    min-height: 50px;
+
+    margin-left: 200px;
+
+    transition: opacity 0.5s;
+}
+
+.researchSkillSlot {
+    color: aliceblue;
+    width: 280px;
+    height: 90px;
+    position: relative;
+    display: inline-block;
+    background-color: #002159;
+    border-radius: 10px 0px 10px 10px;
+    border: 2px solid aliceblue;
+
+
+}
+
+.researchSkillSlot:hover .researchSkillSlotIcon {
+    background-color: #8e5616;
+    box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.3);
+
+
+}
+
+.researchSkillSlot:hover {
+    background-color: #8e5616;
+    box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.3);
+
+}
+
+.researchSkillSlotIcon {
+    margin-left: -35px;
+    position: absolute;
+    margin-top: 5px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+    background-color: #002159;
+    border-radius: 40px 40px 40px 40px;
+    border: 2px solid aliceblue;
+
+}
+
+.img-circle {
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.researchResultImage:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.researchResultImage:hover .researchSkillSlotIcon {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.researchResultImage {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: "huh.png"no-repeat 0 0;
+    /* replace */
+}
+
+.researchResult {
+    margin-left: 15%;
+    margin-top: 30px;
+    height: 40px;
+    position: absolute;
+}
+
+x-bio {
+    min-height: 20px;
+    min-width: 20px;
+    position: relative;
+    content: url(../Icons/Text/biochemical.png);
+}
+
+x-thermal {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/thermal.png);
+    position: relative;
+
+}
+
+x-psionic {
+    min-height: 20px;
+    min-width: 20px;
+    content: url(../Icons/Text/psionic.png);
+    position: relative;
+    background-size: 20px;
+
+}
+
+x-arc {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/arc.png);
+    position: relative;
+}
+
+x-kinetic {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/kinetic.png);
+    position: relative;
+
+}
+
+x-turn {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/turn.png);
+    position: relative;
+
+}
+
+x-shield {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/shield.png);
+    position: relative;
+
+
+}
+
+x-armor {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/armor.png);
+    position: relative;
+
+
+}
+
+x-energy {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/energy.png);
+    position: relative;
+
+
+}
+
+x-hp {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/hp.png);
+    position: relative;
+
+
+}
+
+x-production {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/production.png);
+    position: relative;
+
+
+}
+
+x-accuracy {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/accuracy.png);
+    position: relative;
+
+
+}
+
+x-range {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/range.png);
+    position: relative;
+
+}
+
+x-cosmite {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/cosmite.png);
+    position: relative;
+
+
+}
+
+x-kineticres {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/kineticRes.png);
+    position: relative;
+
+
+}
+
+x-medal_novice {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/novice.png);
+    position: relative;
+
+
+}
+
+x-medal_veteran {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/veteran.png);
+    position: relative;
+
+
+}
+
+x-medal_expert {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/expert.png);
+    position: relative;
+
+
+}
+
+x-medal_prime {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/prime.png);
+    position: relative;
+
+
+}
+
+x-repeating {
+    max-width: 80px;
+    content: url(../Icons/Text/repeating.png);
+    position: relative;
+
+
+}
+
+x-singleaction {
+    max-width: 80px;
+    content: url(../Icons/Text/single_action.png);
+    position: relative;
+
+
+}
+
+x-fullcontinue {
+    max-width: 80px;
+    content: url(../Icons/Text/fullaction_continue.png);
+    position: relative;
+
+
+}

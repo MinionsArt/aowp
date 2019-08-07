@@ -1,0 +1,15 @@
+var jsonMods = {
+    "mods": [{
+            "slug": "test_mod",
+            "name": "Test Mod",
+
+            "type": "D H 15",
+            "description": "Testing testing testing",
+            "check": "infantry melee",
+            "checknot": "kirko_frenzied",
+            "image_link": "test",
+
+        },
+
+    ]
+}

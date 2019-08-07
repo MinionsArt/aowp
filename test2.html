@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="Units.json"></script>
+    <title></title>
+</head>
+
+<body>
+
+
+    <script>
+        function showUnit(a) {
+            var hp, mp, shield, armor, descr, j, abilityname, imagelink = "";
+            for (i in jsonUnits.units) {
+                if (a == jsonUnits.units[i].name) {
+                    descr = document.getElementById(a+"_description")
+                    descr.innerHTML = jsonUnits.units[i].description;
+                   imagelink = document.getElementById(a+"_vid")
+                    imagelink.setAttribute('src', "test.mp4");
+                     hp = document.getElementById(a+"_hp")
+                    hp.innerHTML = jsonUnits.units[i].hp;
+                   armor = document.getElementById(a+"_armor")
+                     armor.innerHTML = jsonUnits.units[i].armor;
+                     shield = document.getElementById(a+"_shield")
+                     shield.innerHTML = jsonUnits.units[i].shield;
+                     mp = document.getElementById(a+"_mp")
+                     mp.innerHTML = jsonUnits.units[i].mp;
+                }
+            }
+
+        }
+        
+        function showAbility(a) {
+            var hp, mp, shield, armor, descr, j, abilityname, imagelink = "";
+            for (j in jsonUnitAbilities.abilities) {
+                if (a == jsonUnitAbilities.abilities[j].slug) {
+                    abilityname = document.getElementById(a+"_description");
+                    abilityname.innerHTML = jsonUnitAbilities.abilities[j].description;
+                  
+                }
+            }
+abilityname = document.getElementById("gunk_spit_description");           
+        }
+        
+        // document.getElementById("kirkoimg1")
+        //   .src = "halloweenKat2.png";
+    </script>
+
+    <iframe width="1000" height="2000" src="test.html">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+
+
+
+
+    <div class="unit_card">
+        <div class="unit_image_holder">
+            <video width="400" autoplay muted loop id="kirko_emergent_vid">
+
+                <source src="KirkoEmergent.mp4" type="video/mp4">
+            </video>
+            <p class="unit_description" id="kirko_emergent_description">"Test"</p>
+            <div style="position: absolute; top: -5px; background-color: black; height: 30px; width: 400px;">
+
+                <p class="unit_name">KIR'KO - EMERGENT</p>
+                <img class="unit_image" id="kirko_emergent_icon" src="Emergent.png" style="position: absolute; top: -40px; background-color: black;  padding: 4px" width="60">
+            </div>
+
+
+        </div>
+
+        <div class="unit_ability_holder" style="width: 310px; float: left;display: inline-block;">
+
+            <div class="unit_stats">
+
+                <p style="font-size: 18px;position: relative;top:-15px; float: left; left:5%" id="kirko_emergent_hp">hp</p>
+                <img class="unit_stat_icon" src="HP.png" width="25" height="25">
+                <p style="font-size: 18px;position: relative;top:-15px; float: left; left:15%" id="kirko_emergent_armor">armor</p>
+                <img class="unit_stat_icon" src="Armor.png" style=" position: relative; align-content: left; float: left; left:15%" width="25" height="25">
+                <p style="font-size: 18px;position: relative;top:-15px; float: left; left:15%" id="kirko_emergent_shield">shield</p>
+                <img class="unit_stat_icon" src="Shield.png" style="position: relative; align-content: center; float: left; left:15%" width="25" height="25">
+
+
+                <p style="font-size: 18px;position: relative;top:-15px; float: left; left:30%" id="kirko_emergent_mp">mp</p>
+                <img class="unit_stat_icon" src="MP.png" style="position: relative; align-content: center; float: left; left:30%" width="25" height="25">
+
+            </div>
+            <div class="unit_types">
+
+                <img class="unittype_icon" src="Kirko.png" style=" position: relative; align-content: left; float: left;" width="40" height="40">
+                <img class="unittype_icon" src="LandMovement.png" style=" position: relative; align-content: left; float: left;" width="40" height="40">
+                <img class="unittype_icon" src="LightUnit.png" style=" position: relative; align-content: left; float: left;" width="40" height="40">
+                <img class="unittype_icon" src="Skirmisher.png" style=" position: relative; align-content: left; float: left;" width="40" height="40">
+                <img class="unittype_icon" src="Biological.png" style=" position: relative; align-content: left; float: left;" width="40" height="40">
+
+            </div>
+            <div class="unit_abilityslot"> <img class="unit_ability_icon" src="Biochamical.png" style=" padding : 5px; display: inline-block; float:right" width="25" height="25">
+                <p style="float: right; ">7</p>
+                <img class="unit_ability_icon" id="gunk_spit_icon" src="GunkSpit.png" style="float: left" width="40" height="40">
+                <div class="tooltip">Gunk Spit <span class="tooltiptext">
+                        <p style="color: dodgerblue; font-size: 18px;">Gunk Spit 7 <img class="unit_ability_icon" src="Biochamical.png" width="30" height="30"></p>
+                        <p id="gunk_spit_description">test</p>
+                    </span></div>
+            </div>
+            <script>
+                showAbility("gunk_spit");
+            </script>
+            <div class="unit_abilityslot">
+                <img class="unit_ability_icon" src="Tunnel.png" style="float: left" width="40" height="40">
+                <div class="tooltip">Tunnel<span class="tooltiptext">
+                        <p style="color: dodgerblue; font-size: 18px; position: relative;">Tunnel
+                            <p>Unit is able to tunnel through the ground in Tactical Combat, avoiding Overwatch
+                                <ul>
+                                    <li>Max Range: 7</li>
+                                    <li>Requires 3 Action Points, Costs 2</li>
+                                    <li>Only affects Ground targets</li>
+                                    <li>Cooldown: 1 <img class="unittype_icon" src="Biochamical.png" width="30" height="30"></li>
+                                </ul>
+                    </span></div>
+            </div>
+            <div class="unit_abilityslot">
+                <img class="unit_ability_icon" src="DefenseMode.png" style="float: left" width="40" height="40">
+
+                <div class="tooltip">Defense Mode<span class="tooltiptext">
+                        <p style=" font-size: 18px; ">Defense Mode</p>
+                        <p>This unit ends its turn and goes into a defensive mode. It becomes 25% harder to hit and cannot be flanked
+                        </p>
+
+
+
+                    </span></div>
+            </div>
+            <div class="unit_abilityslot">
+                <img class="unit_ability_icon" src="DefenseMode.png" style="float: left" width="40" height="40">
+
+                <div class="tooltip">Defense Mode<span class="tooltiptext">
+                        <p style=" font-size: 18px; ">Defense Mode</p>
+                        <p>This unit ends its turn and goes into a defensive mode. It becomes 25% harder to hit and cannot be flanked
+                        </p>
+
+
+
+                    </span></div>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        showUnit('kirko_emergent');
+    </script>
+
+
+
+</body>
+
+</html>

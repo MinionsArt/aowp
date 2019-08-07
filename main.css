@@ -1,0 +1,299 @@
+html {
+    background-color: dimgrey;
+
+}
+
+body {
+    margin: 0px;
+
+}
+
+h2 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+
+.researchResultImage .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: justify;
+    white-space: nowrap;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid darkgrey;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 10px;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 100px;
+    max-width: 500px;
+    min-height: 50px;
+
+    margin-left: 200px;
+
+    transition: opacity 0.5s;
+}
+
+.researchSkillSlot {
+    color: aliceblue;
+    width: 280px;
+    height: 90px;
+    position: relative;
+    display: inline-block;
+    background-color: #002159;
+    border-radius: 10px 0px 10px 10px;
+    border: 2px solid aliceblue;
+
+
+}
+
+.researchSkillSlot:hover .researchSkillSlotIcon {
+    background-color: #8e5616;
+    box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.3);
+
+
+}
+
+.researchSkillSlot:hover {
+    background-color: #8e5616;
+    box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.3);
+
+}
+
+.researchSkillSlotIcon {
+    margin-left: -35px;
+    position: absolute;
+    margin-top: 5px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+    background-color: #002159;
+    border-radius: 40px 40px 40px 40px;
+    border: 2px solid aliceblue;
+
+}
+
+.img-circle {
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.researchResultImage:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.researchResultImage:hover .researchSkillSlotIcon {
+    visibility: visible;
+    opacity: 1;
+}
+
+.turns {
+    float: right;
+    position: relative;
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 10px;
+}
+
+.researchName {
+    float: left;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 5px;
+    position: relative;
+    height: 15px;
+}
+
+.basestats {
+    height: 20px;
+    width: 500px;
+}
+
+.hp_number {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+
+}
+
+.mp_number {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+
+}
+
+.armor_number {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+
+}
+
+.shield_number {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+
+}
+
+.sprite_turn {
+    background-image: url("https://66.media.tumblr.com/4e362967193f3ce1cf03e1236462afc5/tumblr_inline_nnqvmdxaU01qkvi0e_540.png");
+    /* replace */
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.sprite_hp {
+    background: url("https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png");
+    /* replace */
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+}
+
+.sprite_shield {
+    background: url("https://66.media.tumblr.com/f46d4c36999a6ae6cb62e5f73755c3de/tumblr_inline_nmg0hw5d1Q1qkvi0e_540.png");
+    /* replace */
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.sprite_armor {
+    background: url("https://66.media.tumblr.com/2d9b846a27c8102f5fc556c6257b38ba/tumblr_inline_nmg0hq7g4E1qkvi0e_540.png");
+    /* replace */
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+}
+
+.sprite_mp {
+    background: url("https://66.media.tumblr.com/cf96a27256e0f536312256895cef642a/tumblr_inline_nmg0i4r8S91qkvi0e_540.png");
+    /* replace */
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.unit_image_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px 1px 20px 0 cyan;
+    top: 0;
+    left: 0;
+}
+
+.abilityHolders {
+    color: white;
+    background-color: #202913;
+    border: 1px solid black;
+}
+
+.abilityText2 {
+    color: cyan;
+    text-align: left;
+}
+
+.abilityIcon {
+    text-align: left;
+    border: 2px solid white;
+}
+
+
+.abilityHolders .tooltipAbility {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: justify;
+    white-space: nowrap;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid darkgrey;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 10px;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 100px;
+    max-width: 500px;
+    min-height: 50px;
+
+    margin-left: 20px;
+
+    transition: opacity 0.5s;
+    left: 85%;
+}
+
+
+.abilityHolders:hover .tooltipAbility {
+    visibility: visible;
+    opacity: 1;
+}
+
+.listOfUnits {
+    display: inline-block;
+    position: relative;
+}
+
+
+.abilityText {
+    color: aquamarine;
+}
+
+.researchResult {
+    margin-left: 15%;
+    margin-top: 30px;
+    height: 40px;
+    position: absolute;
+}
+
+.unitcard {}
+
+
+
+.researchResultImage {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: "huh.png"no-repeat 0 0;
+    /* replace */
+}
+
+.unitImageHolder {
+    display: inline-block;
+    position: relative;
+
+
+}
+
+.unitStats {
+    top: auto;
+    display: inline-block;
+    position: absolute;
+    max-width: 300px;
+}

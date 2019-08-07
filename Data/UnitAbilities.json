@@ -1,0 +1,361 @@
+var jsonUnitAbilities = {
+    "abilities": [
+        {
+            "slug": "apc_mounted_cannon",
+            "name": "APC Mounted Cannon",
+            "type": "Repeating",
+            "description": "<p>Fire a Mounted Cannon at a target\
+                                <ul> \
+                                <li>Affected by line of sight penalties</li>\
+<li><i>Firearms</i></li>\
+                                </ul>",
+            "damage": "16 K",
+            "icon_name": "cannon_kinetic_repeating",
+            "accuracy": "90% ",
+            "range": "7",
+
+
+       },
+        {
+            "slug": "apc_tactical_scanners",
+            "name": "APC Mounted Cannon",
+            "type": "Single Action",
+            "description": "<p>Start the APC scanners up to give targeting information to all friendly units, increasing both accuracy by 15% and morale by 100 <x-morale></x-morale> for 2 <x-turns></x-turns>\
+                                <ul> \
+                                <li>Cooldown: 2 <x-turns></x-turns></li>\
+ <li> <i> Buff </i></li> \
+                </ul>",
+            "damage": "",
+            "icon_name": "scanners",
+            "accuracy": "100% ",
+            "range": "0",
+
+
+       },
+        {
+            "slug": "absorb_pain",
+            "name": "Absorb Pain",
+            "type": "Single Action",
+            "description": "<p>This unit links itself to the target friendly unit. Any damage dealt to the linked unit is reduced by 35% and is dealt to this unit instead. This effect lasts until end of combat. Absorb Pain cannot target MEchanical units, Colony Defenses, or other units with Absorb Pain.\
+                                <ul> \
+                                <li>Can only be used once per battle</li>\
+<li><i>Psionic Buff</i></li>\
+                                </ul>",
+            "damage": "",
+            "icon_name": "transfer_pain",
+            "accuracy": "100% ",
+            "range": "0",
+
+
+       },
+        {
+            "slug": "abyssal_reverberation",
+            "name": "Abyssal Reverberation",
+            "type": "Single Action",
+            "description": "<p>Teleport to target hex, dealing damage to adjacent enemy units.\
+                                <ul> \
+                                <li><span style =\"color: lawngreen\">Psionic</span> Bypass all <x-armor> </x-armor></li>\
+ <li> <span style = \"color: lawngreen\">Broken Mind</span> 8 <x-psi_def></x-psi_def> strength chance to apply <span style =\"color: red\">Broken Mind</span> to non-Mindless units for 3 <x-turns></x-turns> </li>\
+ <li><span style =\"color: lawngreen\">Psionic Drain</span> Heals this unit when attacking non-Mindless targets</li>\
+ <li> Only affects Ground targets </li>\
+<li> Cooldown: 2 <x-turns> </x-turns></li>\
+ <li> <i> Psionic </i></li>\
+</ul>",
+            "damage": "12 P",
+            "icon_name": "combat_jump",
+            "accuracy": "100% ",
+            "range": "7",
+
+
+       },
+
+        {
+            "slug": "swarm_shield",
+            "name": "Swarm Shield",
+            "description": "Unit gains +2<x-shield> </x-shield>     when there is an adjacent friendly unit with Swarm Shield",
+            "damage": "",
+            "icon_name": "swarm_shield",
+            "accuracy": "",
+            "range": "",
+
+       },
+        {
+            "slug": "strategic_regeneration",
+            "name": "Strategic Regeneration",
+            "description": "The Kir'Ko are naturally adept at healing, increasing their Strategic Turn regeneration by +6 <x-hp></x-hp>    .",
+            "damage": "",
+            "icon_name": "strategic_regeneration",
+            "accuracy": "",
+            "range": "",
+
+       },
+        {
+            "slug": "gunk_spit",
+            "name": "Gunk Spit",
+            "type": "Repeating",
+
+            "description": "<p>Medium-range Biochemical attack\
+                                <ul> \
+                                <li>Affected by line of sight rules</li>\
+                                </ul>",
+
+            "damage": "7 B",
+            "icon_name": "gunk_spit",
+            "accuracy": "90% <x-accuracy> </x-accuracy>",
+            "range": "5 <x-range>  </x-range>",
+
+
+       },
+        {
+            "slug": "battle_vomit",
+            "name": "Battle Vomit",
+            "type": "Single Action",
+            "description": "<p>Short-range Biochemical area of effect attack\
+                                <ul> \
+                                <li><span style =\"color: lawngreen\">Armor Melt</span> Destroys 1 <x-armor> </x-armor>      per hit</li>\
+                                <li>Ignores line of sight penalties</li>\
+ <li>Cooldown: 2 <x-turn> </x-turn></li>\
+                                </ul>",
+            "damage": "10 B",
+            "icon_name": "battle_vomit",
+            "accuracy": "100% <x-accuracy>  </x-accuracy>",
+            "range": "3",
+
+
+       },
+        {
+            "slug": "rending_claws",
+            "name": "Rending Claws",
+            "type": "Repeating",
+            "description": "<p>Strike the target with rending claws\
+                                <ul> \
+                                <li><span style =\"color: lawngreen\">High Impact</span> <span style =\"color: red\">Stagger</span> units, reducing action points and cancelling defensive modes.</li>\
+                                <li><span style =\"color: lawngreen\">Melee</span> Bypass all <x-shield> </x-shield>   </li>\ \
+                                <li>Only affects Ground targets</li>\
+                                </ul>",
+            "damage": "10 K",
+            "icon_name": "rending_claws",
+            "accuracy": "90% <x-accuracy>  </x-accuracy>",
+            "range": "1",
+
+       },
+        {
+            "slug": "tunnel",
+            "name": "Tunnel",
+            "type": "Full Action Continue <x-fullcontinue>  </x-fullcontinue>",
+            "description": "<p>Unit is able to tunnel through the ground in Tactical Combat, avoiding Overwatch\
+                                <ul> \
+                                <li>Cooldown: 1 <x-turn></x-turn></li>\
+                                </ul>",
+            "damage": "",
+            "icon_name": "tunnel",
+            "accuracy": "100%",
+            "range": "7",
+
+
+       },
+        {
+            "slug": "biochemical_discharge",
+            "name": "Biochemical Discharge",
+            "type": "Single Action <x-singleaction>  </x-singleaction>",
+            "description": "<p>Discharges a torrent of biochemicals at short range, dealing high damage\
+                                <ul> \
+                                <li>Affected by line of sight rules</li>\
+                                </ul>",
+            "damage": "20 B",
+            "icon_name": "gunk_spit",
+            "accuracy": "90% <x-accuracy>  </x-accuracy>",
+            "range": "5 <x-range>  </x-range>",
+
+
+       },
+        {
+            "slug": "biochemical_barrage",
+            "name": "Biochemical Barrage",
+            "type": "Repeating <x-repeating>  </x-repeating>",
+            "description": "<p>Fire a repeating barrage of Biochemicals at the target.\
+                                <ul> \<li><span style =\"color: lawngreen\">High Impact</span> <span style =\"color: red\">Stagger</span> units, reducing action points and cancelling defensive modes.</li>\
+                                <li><span style =\"color: lawngreen\">Demolisher </span>200% additional damage to obstacles. Can destroy fortified obstacles</li>\
+                               <li>Ignores line of sight penalties</li>\
+ <li>Only affects Ground targets</li>\
+                                </ul>",
+            "damage": "10 B",
+            "icon_name": "battle_vomit",
+            "accuracy": "40% <x-accuracy>  </x-accuracy>",
+            "range": "2-7 <x-range>  </x-range>",
+
+
+       },
+
+        {
+            "slug": "blinding_gas",
+            "name": "Blinding Gas",
+            "type": "Single Action <x-singleaction>  </x-singleaction>",
+            "description": "<p>Fire a bomb that explodes in a cloud of blinding gas that lings on the battlefield for 3 <x-turn> </x-turn>\
+                                <ul>\           <li><span style =\"color: lawngreen\">Blind </span>8<x-kineticres> </x-kineticres>    strength chance to apply <span style =\"color: red\">Blinded</span> to non-Ethereal targets for 2<x-turn> </x-turn>   .</li>\
+                                                       <li>Cooldown: 1 <x-turn></x-turn></li>\
+            </ul>",
+            "damage": "",
+            "icon_name": "blinding_gas",
+            "accuracy": "100% <x-accuracy>  </x-accuracy>",
+            "range": "7 <x-range>  </x-range>",
+
+
+       },
+        {
+            "slug": "defense_mode",
+            "name": "Defense Mode",
+            "type": "Defensive",
+            "description": "This unit ends its turn and goes into a defensive mode. It becomes 25% harder to hit and cannot be flanked. <br> If this unit is staggered, the defensive mode is canceled.",
+            "damage": "",
+            "icon_name": "defense_mode",
+            "accuracy": "",
+            "range": "",
+
+
+       },
+        {
+            "slug": "rapid_evolution",
+            "name": "Rapid Evolution",
+            "description": "This unit gains 50% more experience when victorious in combat",
+            "damage": "",
+            "icon_name": "rapid_evolution",
+
+       },
+        {
+            "slug": "metamorphosis",
+            "name": "Metamorphosis",
+            "description": "This unit evolves when it reaches the Elite Rank.",
+            "damage": "",
+            "icon_name": "metamorphosis",
+
+       },
+        {
+            "slug": "frenzy",
+            "name": "Frenzy",
+            "description": "[DEL]",
+            "damage": "",
+            "icon_name": "frenzy",
+
+       },
+        {
+            "slug": "kirko",
+            "name": "Kir'Ko",
+            "description": "A Kir'Ko unit. <br> Through rapid evolution, the Kir'Ko seek to restore what was broken and will find retribution for the terrible fate that has befallen them.",
+            "damage": "",
+            "icon_name": "kirko",
+
+       },
+        {
+            "slug": "light_unit",
+            "name": "Light Unit",
+            "description": "A small, standard unit.",
+            "damage": "",
+            "icon_name": "light_unit",
+
+       },
+        {
+            "slug": "land_movement",
+            "name": "Land Movement",
+            "description": "This unit can move over land hexes.",
+            "damage": "",
+            "icon_name": "land_movement",
+
+       },
+        {
+            "slug": "skirmisher",
+            "name": "Skirmisher",
+            "description": "Offensive unit.",
+            "damage": "",
+            "icon_name": "skirmisher",
+
+       },
+        {
+            "slug": "biological",
+            "name": "Biological",
+            "description": "A carbon-based lifeform.",
+            "damage": "",
+            "icon_name": "biological",
+
+       },
+        {
+            "slug": "core",
+            "name": "Core",
+            "description": "A basic unit",
+            "damage": "",
+            "icon_name": "core",
+
+       },
+        {
+            "slug": "infantry",
+            "name": "Infantry",
+            "description": "A unit which is usually bipedal, or at least vaguely humanoid in shape",
+            "damage": "",
+            "icon_name": "infantry",
+
+       },
+        {
+            "slug": "juggernaut",
+            "name": "Juggernaut",
+            "description": "This unit is able to move through and destroy obstacles, althought it is slowed down. This does not apply to fortified obstacles",
+            "damage": "",
+            "icon_name": "juggernaut",
+
+       },
+        {
+            "slug": "large_target",
+            "name": "Large Target",
+            "description": "This unit is 15% easier to hit with ranged attacks. In addition, it cannot take cover itself, but counts as cover for other units",
+            "damage": "",
+            "icon_name": "large_target",
+
+       },
+        {
+            "slug": "elite",
+            "name": "Elite",
+            "description": "Elite unit.",
+            "damage": "",
+            "icon_name": "elite",
+
+       },
+        {
+            "slug": "heavy_unit",
+            "name": "Heavy Unit",
+            "description": "A heavier, stronger unit. Heavy units cannot be staggered by high impact attacks, and do not turn to face their attacker when flanked",
+            "damage": "",
+            "icon_name": "heavy_unit",
+
+       },
+
+        {
+            "slug": "stagger_resistance_resistant",
+            "name": "<span style =\"color: lawngreen\">Stagger Resistance</span>",
+            "description": "This unit is less likely to lose Action Points when taking damage",
+            "damage": "<span style =\"color: lawngreen\">Resistant</span>",
+            "icon_name": "stagger_resistance",
+
+       },
+        {
+            "slug": "stagger_resistance_immune",
+            "name": "<span style =\"color: lawngreen\">Stagger Resistance</span>",
+            "description": "This unit doesn not lose Action Points when taking damage",
+            "damage": "<span style =\"color: lawngreen\">Immune</span>",
+            "icon_name": "stagger_resistance",
+
+       },
+
+        {
+            "slug": "elite_skill_metamorphosis",
+            "name": "Elite Skill: Metamorphosis",
+            "description": "This unit transforms into another on Elite Rank",
+            "damage": "",
+       },
+        {
+            "slug": "elite_skill_ignore_overwatch",
+            "name": "Elite Skill: Ignore Overwatch",
+            "description": "This unit is a veteran and now ignores enemy Overwatch",
+            "damage": "",
+       }
+
+]
+}

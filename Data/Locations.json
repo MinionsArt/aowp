@@ -1,0 +1,14 @@
+var jsonLocations = {
+    "locations": [{
+            "slug": "dna_vault",
+            "name": "DNA Vault",
+
+            "type": "Visit Sites",
+            "description": "An old Imperial Seed vault, used to store DNA samples and seeds of all varieties of creatures and vegetation for research purposes. <br> Visiting units gain +50% experience during their next combat. <br><br> The DNA Vault adds +5 food when it is within a colony's domain.",
+
+            "image_link": "dna_vault",
+
+        },
+
+    ]
+}
