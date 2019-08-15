@@ -557,8 +557,8 @@ p {
 }
 
 x-bio {
-    min-height: 20px;
-    min-width: 20px;
+    max-height: 20px;
+    top: 4px;
     position: relative;
     content: url(/aowp/Icons/Text/biochemical.png);
 }
