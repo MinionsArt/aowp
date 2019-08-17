@@ -34,7 +34,7 @@ function addAbilityslot(a, b) {
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
             if (jsonUnitAbilities.abilities[j].damage === undefined) {
-                abilityDam = "Not Found";
+                abilityDam = "";
             } else {
                 abilityDam = jsonUnitAbilities.abilities[j].damage;
             }

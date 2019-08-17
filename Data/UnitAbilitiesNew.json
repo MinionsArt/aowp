@@ -29,6 +29,54 @@ var jsonUnitAbilities = {
             "icon": "scan_catalogue_icon"
  },
         {
+            "description": "This unit ends its turn and goes into a defensive mode. It becomes 25% harder to hit and cannot be flanked.<br></br>If this unit is staggered, the defensive mode is canceled.",
+            "name": "Defense Mode",
+            "slug": "defense_mode",
+            "icon": "defense_mode_icon"
+ },
+        {
+            "description": "This unit heals each Biological unit in its stack for 6<hp></hp> per strategic turn.",
+            "name": "Biological Recovery",
+            "slug": "biological_recovery",
+            "icon": "biological_recovery_icon"
+ },
+        {
+            "description": "An Amazon unit.<br></br>The bio-engineering <hyperlink,0000039E00000016>Amazons</hyperlink> have the ability to alter life and survive harsh circumstances. Their fearsome troops have spartan discipline and are experts in guerrilla tactics. Their arsenal includes genetically engineered beasts that the Amazons ride in to battle.",
+            "name": "Amazon",
+            "slug": "amazon",
+            "icon": "amazon_icon"
+ },
+        {
+            "description": "A carbon-based lifeform.",
+            "name": "Biological",
+            "slug": "biological",
+            "icon": "biological_icon"
+ },
+        {
+            "description": "A unit which is usually bipedal, or at least vaguely humanoid in shape.",
+            "name": "Infantry",
+            "slug": "infantry",
+            "icon": "infantry_icon"
+ },
+        {
+            "description": "This unit can move over land hexes.",
+            "name": "Land Movement",
+            "slug": "land_movement",
+            "icon": "land_movement_icon"
+ },
+        {
+            "description": "A small, standard unit.",
+            "name": "Light Unit",
+            "slug": "light_unit",
+            "icon": "light_unit_icon"
+ },
+        {
+            "description": "Specialized unit.",
+            "name": "Specialist",
+            "slug": "specialist",
+            "icon": "specialist_icon"
+ },
+        {
             "damage": "9<DamageBio></DamageBio> ",
             "description": "<popUpHeader3><titleBrown>Bio Arrows</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire arrows with Biochemical tips at the target.<br></br><bulletList><bullet>Ignores cover and unit penalties</bullet></bulletList><br></br><silver>(Biochemical)</popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Bio Arrows</titleBrown></popUpHeader2>",
@@ -43,6 +91,24 @@ var jsonUnitAbilities = {
             "icon": "flash_arrow_icon"
  },
         {
+            "description": "This unit cannot be detected when standing on Forest hexes.",
+            "name": "Forest Camouflage",
+            "slug": "forest_camouflage",
+            "icon": "forest_camouflage_icon"
+ },
+        {
+            "description": "This unit gains one extra hex of range when in cover.",
+            "name": "Visual Acuity",
+            "slug": "visual_acuity",
+            "icon": "visual_acuity_icon"
+ },
+        {
+            "description": "A basic unit.",
+            "name": "Core",
+            "slug": "core",
+            "icon": "core_icon"
+ },
+        {
             "damage": "9<DamageThermal></DamageThermal> ",
             "description": "<popUpHeader3><titleBrown>Laser Repeater</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageThermal></DamageThermal> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Laser Repeater at the target.<br></br><bulletList><bullet><xpCol>Air to Air</xpCol> +33% additional damage against Flying units</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser)</popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Laser Repeater</titleBrown></popUpHeader2>",
@@ -55,6 +121,36 @@ var jsonUnitAbilities = {
             "name": "<popUpHeader2><titleBrown>Swoop</titleBrown></popUpHeader2>",
             "slug": "swoop_amazon_shrike",
             "icon": "swoop_icon"
+ },
+        {
+            "description": "This unit ends its turn and goes into a defensive mode. It becomes 50% harder to hit and cannot be flanked.<br></br>If this unit is staggered, the defensive mode is canceled.",
+            "name": "Defense Mode: Evasion",
+            "slug": "defense_mode_evasion",
+            "icon": "defense_mode_evasion_icon"
+ },
+        {
+            "description": "The unit has +1 vision range.",
+            "name": "Farsight",
+            "slug": "farsight",
+            "icon": "farsight_icon"
+ },
+        {
+            "description": "A non-sapient unit.",
+            "name": "Animal",
+            "slug": "animal",
+            "icon": "animal_icon"
+ },
+        {
+            "description": "This unit is Flying, and is 10% harder to hit with most weapons.",
+            "name": "Flying",
+            "slug": "flying",
+            "icon": "flying_icon"
+ },
+        {
+            "description": "Scouts are mobile reconnaissance units.",
+            "name": "Scout",
+            "slug": "scout",
+            "icon": "scout_icon"
  }
 ]
 }
