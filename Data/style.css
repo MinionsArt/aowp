@@ -563,7 +563,7 @@ DamageBio {
     content: url(/aowp/Icons/Text/biochemical.png);
 }
 
-x-thermal {
+DamageThermal {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/thermal.png);

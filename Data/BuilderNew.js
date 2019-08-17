@@ -33,31 +33,11 @@ function addAbilityslot(a, b) {
 
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
-            // if (b === undefined) {
-            //   abilityDam = "Not Found";
-            //} else {
-
-            //  splitDamageString = jsonUnitAbilities.abilities[j].damage.split(" ");
-            //  abilityDam = splitDamageString[0];
-            // if (splitDamageString[1] == "K") {
-            //     abilityDamType = "<x-kinetic></x-kinetic>"
-            // }
-            // if (splitDamageString[1] == "A") {
-            //     abilityDamType = "<x-arc></x-arc>"
-            // }
-            // if (splitDamageString[1] == "B") {
-            //     abilityDamType = "<x-bio></x-bio>"
-            //  }
-            //  if (splitDamageString[1] == "P") {
-            //     abilityDamType = "<x-psionic></x-psionic>"
-            // }
-            // if (splitDamageString[1] == "T") {
-            //     abilityDamType = "<x-thermal></x-thermal>"
-            // }
-            // if (splitDamageString[1] == "E") {
-            //     abilityDamType = "<x-explosive></x-explosive>"
-            // }
-            // abilityDam += abilityDamType;
+            if (jsonUnitAbilities.abilities[j].damage === undefined) {
+                abilityDam = "Not Found";
+            } else {
+                abilityDam = jsonUnitAbilities.abilities[j].damage;
+            }
 
 
 
@@ -328,7 +308,7 @@ function showUnit(a) {
             }
 
             for (k in jsonUnits.units[i].abilities) {
-                addAbilityslot(jsonUnits.units[i].abilities[k].slug, jsonUnits.units[i].abilities[k].damage);
+                addAbilityslot(jsonUnits.units[i].abilities[k].slug);
 
             }
             for (z in jsonUnits.units[i].resistances) {

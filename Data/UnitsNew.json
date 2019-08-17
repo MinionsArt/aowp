@@ -16,13 +16,16 @@ var jsonUnits = {
                     "slug": "fire_bio_blaster_amazon_biomancer"
    },
                 {
-                    "slug": "manipulate:_sleep_amazon_biomancer"
+                    "slug": "manipulate_sleep_amazon_biomancer"
    },
                 {
-                    "slug": "manipulate:_mend_amazon_biomancer"
+                    "slug": "manipulate_mend_amazon_biomancer"
    },
                 {
-                    "slug": "scan:_catalogue_amazon_biomancer"
+                    "slug": "scan_catalogue_amazon_biomancer"
+   },
+                {
+                    "slug": "defense_mode"
    }
   ],
             "cost": "80<energy></energy>  250<production></production>"
@@ -44,6 +47,9 @@ var jsonUnits = {
    },
                 {
                     "slug": "flash_arrow_amazon_huntress"
+   },
+                {
+                    "slug": "defense_mode"
    }
   ],
             "cost": "40<energy></energy>  150<production></production>"
@@ -65,6 +71,9 @@ var jsonUnits = {
    },
                 {
                     "slug": "swoop_amazon_shrike"
+   },
+                {
+                    "slug": "defense_mode_evasion"
    }
   ],
             "cost": "30<energy></energy>  130<production></production>"
