@@ -28,7 +28,8 @@ html {
     position: relative;
     font: bold 12px Arial;
     text-shadow: 0 -1px 0 #000;
-    text-transform: uppercase
+    text-transform: uppercase;
+    z-index: 1000
 }
 
 #menu li:first-child {
@@ -77,8 +78,8 @@ html {
     height: auto;
     width: 180px;
     background: #111;
-    position: relative;
-    z-index: 99;
+    position: absolute;
+    z-index: 10000;
     display: none;
     border: 0;
 }
@@ -199,7 +200,7 @@ p {
     width: 840px;
     height: 600px;
     padding: 35px;
-    display: block;
+    display: table;
     margin-left: auto;
     margin-right: auto;
 }
