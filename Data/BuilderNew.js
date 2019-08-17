@@ -44,7 +44,7 @@ function addAbilityslot(a, b) {
 
 
             abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].slug;
+            abilityIcon = jsonUnitAbilities.abilities[j].icon;
             abilityDescr = jsonUnitAbilities.abilities[j].description;
             //abilityDam = jsonUnitAbilities.abilities[j].damage;
             abilityRange = jsonUnitAbilities.abilities[j].range;

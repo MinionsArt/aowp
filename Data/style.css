@@ -640,11 +640,15 @@ StrengthBio {
 }
 
 bulletList {
-    list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     overflow: hidden;
-    background-color: #333333;
+}
+
+popUpHeader2 {
+    padding: 10px;
+    word-spacing: 5px;
+
 }
 
 bullet:before {

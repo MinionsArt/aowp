@@ -4,49 +4,57 @@ var jsonUnitAbilities = {
             "damage": "8<DamageBio></DamageBio> ",
             "description": "<popUpHeader3><titleBrown>Fire Bio Blaster</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Biochemical round at the target.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Biochemical)</popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Fire Bio Blaster</titleBrown></popUpHeader2>",
-            "slug": "fire_bio_blaster_amazon_biomancer"
+            "slug": "fire_bio_blaster_amazon_biomancer",
+            "icon": "fire_bio_blaster_icon"
  },
         {
             "damage": "",
             "description": "<popUpHeader3><titleBrown>Manipulate: Sleep</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Target a Biological, Mineral or Cyborg unit to apply <abilityred>Sleep</abilityred> with 8<StrengthBio></StrengthBio> strength chance for 2<turn></turn>. If resisted, apply <abilityred>Slow</abilityred> instead.<br></br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Manipulate: Sleep</titleBrown></popUpHeader2>",
-            "slug": "manipulate_sleep_amazon_biomancer"
+            "slug": "manipulate_sleep_amazon_biomancer",
+            "icon": "manipulate_sleep_icon"
  },
         {
             "damage": "",
             "description": "<popUpHeader3><titleBrown>Manipulate: Mend</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Alter DNA structure of target Biological or Cyborg unit to heal wounds. Restores 25<hp></hp> and removes all non-Psionic status effects.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Manipulate: Mend</titleBrown></popUpHeader2>",
-            "slug": "manipulate_mend_amazon_biomancer"
+            "slug": "manipulate_mend_amazon_biomancer",
+            "icon": "manipulate_mend_icon"
  },
         {
             "damage": "",
             "description": "<popUpHeader3><titleBrown>Scan: Catalogue</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Reveal detailed information about the weaknesses of the target unit. All units of this type become <abilityred>Scanned</abilityred> until the end of combat, giving them -2 resistance to all damage types.<br></br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Scan: Catalogue</titleBrown></popUpHeader2>",
-            "slug": "scan_catalogue_amazon_biomancer"
+            "slug": "scan_catalogue_amazon_biomancer",
+            "icon": "scan_catalogue_icon"
  },
         {
             "damage": "9<DamageBio></DamageBio> ",
             "description": "<popUpHeader3><titleBrown>Bio Arrows</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire arrows with Biochemical tips at the target.<br></br><bulletList><bullet>Ignores cover and unit penalties</bullet></bulletList><br></br><silver>(Biochemical)</popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Bio Arrows</titleBrown></popUpHeader2>",
-            "slug": "bio_arrows_amazon_huntress"
+            "slug": "bio_arrows_amazon_huntress",
+            "icon": "bio_arrows_icon"
  },
         {
             "damage": "",
             "description": "<popUpHeader3><titleBrown>Flash Arrow</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire an arrow that flashes a 1 hex radius area on impact.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Blind</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityRed>Blinded</abilityRed> to non-Ethereal targets for 2<turn></turn>.</bullet></bulletList><br></br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Flash Arrow</titleBrown></popUpHeader2>",
-            "slug": "flash_arrow_amazon_huntress"
+            "slug": "flash_arrow_amazon_huntress",
+            "icon": "flash_arrow_icon"
  },
         {
             "damage": "9<DamageThermal></DamageThermal> ",
             "description": "<popUpHeader3><titleBrown>Laser Repeater</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageThermal></DamageThermal> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Laser Repeater at the target.<br></br><bulletList><bullet><xpCol>Air to Air</xpCol> +33% additional damage against Flying units</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser)</popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Laser Repeater</titleBrown></popUpHeader2>",
-            "slug": "laser_repeater_amazon_shrike"
+            "slug": "laser_repeater_amazon_shrike",
+            "icon": "laser_repeater_icon"
  },
         {
             "damage": "12<DamagePhysical></DamagePhysical> ",
             "description": "<popUpHeader3><titleBrown>Swoop</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Swoop down for a melee attack, entering <abilityblue>Defense Mode</abilityblue> afterwards.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Bleeding</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Bleeding</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 1 <turn></turn></bullet></bulletList><br></br><silver>(Melee)</popUpDesc>",
             "name": "<popUpHeader2><titleBrown>Swoop</titleBrown></popUpHeader2>",
-            "slug": "swoop_amazon_shrike"
+            "slug": "swoop_amazon_shrike",
+            "icon": "swoop_icon"
  }
 ]
 }
