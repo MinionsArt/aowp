@@ -573,12 +573,11 @@ DamageThermal {
 
 }
 
-x-psionic {
-    min-height: 20px;
-    min-width: 20px;
+DamagePsyche {
+    max-height: 20px;
+    top: 5px;
     content: url(/aowp/Icons/Text/psionic.png);
     position: relative;
-    background-size: 20px;
 
 }
 
