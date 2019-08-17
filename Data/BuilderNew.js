@@ -239,32 +239,32 @@ function showUnit(a) {
             descr.innerHTML = jsonUnits.units[i].description;
             imagelink = document.getElementById("vid");
             imagelink.setAttribute("id", "vid" + a);
-            imagelink.setAttribute('src', "/aowp/Previews/" + jsonUnits.units[i].image_link);
+            imagelink.setAttribute('src', "/aowp/Previews/" + jsonUnits.units[i].id + ".mp4");
             if (imagelink.getAttribute('src') === "/aowp/Previews/undefined") {
                 imagelink.setAttribute('src', "/aowp/Previews/placeholder.mp4");
             }
-            research = document.getElementById("researchorigin");
-            research.setAttribute("id", "researchorigin" + a);
-            if (jsonUnits.units[i].origin_research != "") {
-                // research.setAttribute("src", "/Icons/Research/" + jsonUnits.units[i].origin_research + ".jpg");
-                // research.setAttribute("src", "/Icons/Research/" + jsonUnits.units[i].origin_research + ".jpg");
-                research.innerHTML = jsonUnits.units[i].origin_research;
-            } else {
-                research.setAttribute("src", "/aowp/UI/empty.png");
-                research.setAttribute("style", "width: 0px");
+            // research = document.getElementById("researchorigin");
+            // research.setAttribute("id", "researchorigin" + a);
+            // if (jsonUnits.units[i].origin_research != "") {
+            // research.setAttribute("src", "/Icons/Research/" + jsonUnits.units[i].origin_research + ".jpg");
+            // research.setAttribute("src", "/Icons/Research/" + jsonUnits.units[i].origin_research + ".jpg");
+            //     research.innerHTML = jsonUnits.units[i].origin_research;
+            // } else {
+            //    research.setAttribute("src", "/aowp/UI/empty.png");
+            //    research.setAttribute("style", "width: 0px");
 
-            }
+            // }
 
-            building = document.getElementById("buildingorigin");
-            building.setAttribute("id", "buildingorigin" + a);
-            if (jsonUnits.units[i].origin_research != "") {
-                // building.setAttribute("src", "/Icons/Buildings/" + jsonUnits.units[i].origin_building + ".jpg");
-                building.innerHTML = jsonUnits.units[i].origin_building;
-            } else {
-                building.setAttribute("src", "/aowp/UI/empty.png");
+            // building = document.getElementById("buildingorigin");
+            // building.setAttribute("id", "buildingorigin" + a);
+            // if (jsonUnits.units[i].origin_research != "") {
+            // building.setAttribute("src", "/Icons/Buildings/" + jsonUnits.units[i].origin_building + ".jpg");
+            //      building.innerHTML = jsonUnits.units[i].origin_building;
+            //  } else {
+            //     building.setAttribute("src", "/aowp/UI/empty.png");
 
-                building.setAttribute("style", "width: 0px");
-            }
+            //     building.setAttribute("style", "width: 0px");
+            // }
             hp = document.getElementById("hp")
             hp.setAttribute("id", "hp" + a);
             hp.innerHTML = jsonUnits.units[i].hp;
