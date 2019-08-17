@@ -698,12 +698,28 @@ range {
 
 }
 
-x-cosmite {
+tricorium {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/cosmite.png);
     position: relative;
 
+
+}
+
+strengthpsyche {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/Strength_psy.png);
+    position: relative;
+
+}
+
+strengthpsi {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/Strength_psy.png);
+    position: relative;
 
 }
 
@@ -765,6 +781,21 @@ singleUseAction {
     content: url(/aowp/Icons/Text/single_action.png);
     position: relative;
 
+
+}
+
+fullAction {
+    max-width: 80px;
+    content: url(/aowp/Icons/Text/180px-AP_FullAction.png);
+    position: relative;
+
+
+}
+
+freeAction {
+    max-width: 80px;
+    content: url(/aowp/Icons/Text/180px-AP_Free.png);
+    position: relative;
 
 }
 

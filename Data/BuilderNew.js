@@ -125,7 +125,7 @@ function addResistanceSlot(a) {
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
             abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].icon_name;
+            abilityIcon = jsonUnitAbilities.abilities[j].icon;
             abilityDescr = jsonUnitAbilities.abilities[j].description;
             abilityDam = jsonUnitAbilities.abilities[j].damage;
             var btn = document.createElement("DIV");
