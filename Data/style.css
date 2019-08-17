@@ -187,7 +187,7 @@ p {
     border: 1px solid white;
     background-image: url("/aowp/UI/AbilityListBackground.png");
     background-size: 400px;
-
+    display: table;
     border: 2px solid white;
     border-color: rgba(105, 255, 255, 0.4);
     margin: 5px;
@@ -199,7 +199,7 @@ p {
     width: 840px;
     height: 600px;
     padding: 35px;
-    display: table;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -556,7 +556,7 @@ p {
     position: absolute;
 }
 
-x-bio {
+DamageBio {
     max-height: 20px;
     top: 4px;
     position: relative;
@@ -587,7 +587,7 @@ x-arc {
     position: relative;
 }
 
-x-kinetic {
+DamagePhysical {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/kinetic.png);
@@ -595,7 +595,7 @@ x-kinetic {
 
 }
 
-x-turn {
+turn {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/turn.png);
@@ -603,7 +603,7 @@ x-turn {
 
 }
 
-x-shield {
+shield {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/shield.png);
@@ -612,7 +612,7 @@ x-shield {
 
 }
 
-x-armor {
+armor {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/armor.png);
@@ -621,16 +621,9 @@ x-armor {
 
 }
 
-x-energy {
-    max-height: 20px;
-    top: 5px;
-    content: url(/aowp/Icons/Text/energy.png);
-    position: relative;
 
 
-}
-
-x-hp {
+hp {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/hp.png);
@@ -639,16 +632,34 @@ x-hp {
 
 }
 
-x-production {
+StrengthBio {
     max-height: 20px;
     top: 5px;
-    content: url(/aowp/Icons/Text/production.png);
+    content: url(/aowp/Icons/Text/test.png);
     position: relative;
-
-
 }
 
-x-accuracy {
+bulletList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+bullet:before {
+    content: "• ";
+}
+
+bullet {
+    display: block;
+    color: white;
+    text-align: left;
+
+    text-decoration: none;
+}
+
+accuracy {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/accuracy.png);
@@ -657,7 +668,24 @@ x-accuracy {
 
 }
 
-x-range {
+xpCol {
+    color: lawngreen;
+}
+
+spacedline {
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+
+range {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/range.png);
@@ -719,7 +747,7 @@ x-medal_prime {
 
 }
 
-x-repeating {
+repeatingAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/repeating.png);
     position: relative;
@@ -727,12 +755,28 @@ x-repeating {
 
 }
 
-x-singleaction {
+singleUseAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/single_action.png);
     position: relative;
 
 
+}
+
+popUpHeader3 {
+    font-size: 20px;
+}
+
+titleBrown {
+    color: rosybrown;
+}
+
+abilityred {
+    color: red;
+}
+
+actionblue {
+    color: deepskyblue;
 }
 
 x-fullcontinue {
@@ -741,4 +785,27 @@ x-fullcontinue {
     position: relative;
 
 
+}
+
+popUpDesc {
+    text-align: left;
+}
+
+HelpText {
+    color: grey;
+    font-size: 14px;
+}
+
+energy {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/energy.png);
+    position: relative;
+}
+
+production {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/production.png);
+    position: relative;
 }

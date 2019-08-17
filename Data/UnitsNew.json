@@ -1,0 +1,73 @@
+var jsonUnits = {
+    "units": [
+        {
+            "upkeep": "8<energy></energy>",
+            "id": "amazon_biomancer",
+            "icon": "amazon_biomancer_icon",
+            "name": "Amazon - Biomancer",
+            "armor": 0,
+            "mp": 32,
+            "tier": 2,
+            "hp": 35,
+            "shield": 3,
+            "description": "“How can you harm your own mother? Think of her. Motherhood is sacred. All flesh comes from Mother’s flesh. I assure you, I am no threat. Sure, I will protect my offspring and discipline my children, but that’s only because Mother knows best. Biomancers are the mothers of all living kindred—melded to the cosmic womb. We nurture all life. We were first to coax it from the fertile earth, to encourage it to fly, to sing. Embrace beauty. I know your kind. Come. Let me nurse you back to strength.”— Matron Bu Brandyvine, “RV-7005D: Lure of the Biomancer”",
+            "abilities": [
+                {
+                    "slug": "fire_bio_blaster_amazon_biomancer"
+   },
+                {
+                    "slug": "manipulate:_sleep_amazon_biomancer"
+   },
+                {
+                    "slug": "manipulate:_mend_amazon_biomancer"
+   },
+                {
+                    "slug": "scan:_catalogue_amazon_biomancer"
+   }
+  ],
+            "cost": "80<energy></energy>  250<production></production>"
+ },
+        {
+            "upkeep": "4<energy></energy>",
+            "id": "amazon_huntress",
+            "icon": "amazon_huntress_icon",
+            "name": "Amazon - Huntress",
+            "armor": 0,
+            "mp": 32,
+            "tier": 1,
+            "hp": 40,
+            "shield": 1,
+            "description": "“At the forest-moon of Gen-II, we discovered the Terratech Research Park stripped of all its tech. Disappointed in the loss of such valuable assets, the team searched the forest. That’s when we saw them: powerful females armed with ultramodern bows. These Huntresses moved like ghosts in and out of the trees. Visible one moment, gone the next. We demanded they surrender their armor and weapons, clearly using modified tech from the old Star Union facility. Ignoring us, they launched a volley of modified arrows, some laced with biotoxins and others that produced blinding flashes.”— Major Matt Maxim, “RV-3424M: Terratech Salvage Mission Gen-II”",
+            "abilities": [
+                {
+                    "slug": "bio_arrows_amazon_huntress"
+   },
+                {
+                    "slug": "flash_arrow_amazon_huntress"
+   }
+  ],
+            "cost": "40<energy></energy>  150<production></production>"
+ },
+        {
+            "upkeep": "4<energy></energy>",
+            "id": "amazon_shrike",
+            "icon": "amazon_shrike_icon",
+            "name": "Amazon - Shrike",
+            "armor": 0,
+            "mp": 32,
+            "tier": 1,
+            "hp": 30,
+            "shield": 0,
+            "description": "“Kinswoman Hannahess tamed the feral avian, pterodactyl-like creatures from our jungle planet. She converted these flying predators into flocks of servants out of love for them. She captured their biometrics for Terratech where it was ignored. After the Revolt, she petitioned the Matriarchy to give her children a purpose among the Amazons. The result is the Shrike: a spy with special affinity for forests, capable of seeing farthest, sporting a low-powered bioelectrical laser gun, and an instinct to swoop at intruders targeting their eyes. A most useful tool for our cause, tamed by our own.”— Archivist Historian Emmilla-Galen, “RV-1109H: A History”",
+            "abilities": [
+                {
+                    "slug": "laser_repeater_amazon_shrike"
+   },
+                {
+                    "slug": "swoop_amazon_shrike"
+   }
+  ],
+            "cost": "30<energy></energy>  130<production></production>"
+ }
+]
+}
