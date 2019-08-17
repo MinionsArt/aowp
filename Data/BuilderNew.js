@@ -171,7 +171,7 @@ function EliteSkill(a) {
     return nam;
 }
 
-function addEliteSkill(a, b) {
+function addEliteSkill(a) {
     var abilityName, abilityIcon, abilityDescr = "";
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
@@ -194,7 +194,7 @@ function addEliteSkill(a, b) {
             imag.setAttribute("height", "40");
 
             document.getElementById("unitabholder").appendChild(btn);
-            document.getElementById("unitabholder").setAttribute("id", "unitabholder" + b);
+            // document.getElementById("unitabholder").setAttribute("id", "unitabholder" + b);
 
             tex.appendChild(spa);
 
@@ -320,10 +320,14 @@ function showUnit(a) {
                 addPassiveslot(jsonUnits.units[i].passives[x].slug);
 
             }
+
+            for (m in jsonUnits.units[i].elite_rewards) {
+                addEliteSkill(jsonUnits.units[i].elite_rewards[m].slug);
+            }
             document.getElementById("unitabholder").setAttribute("id", "unitabholder" + a);
 
             document.getElementById("unitstat").setAttribute("id", "unitstat" + a);
-            addEliteSkill(jsonUnits.units[i].elite_skill, a);
+
 
             //checkModRequirements(jsonUnits.units[i]);
 

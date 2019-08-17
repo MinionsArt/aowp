@@ -194,6 +194,7 @@ p {
     margin: 5px;
 }
 
+
 .unit_card {
     background-color: #19313d;
     color: white;
@@ -581,7 +582,7 @@ x-psionic {
 
 }
 
-x-arc {
+DamageWave {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/arc.png);
@@ -799,6 +800,10 @@ popUpDesc {
 HelpText {
     color: grey;
     font-size: 14px;
+}
+
+fireCol {
+    color: red;
 }
 
 energy {
