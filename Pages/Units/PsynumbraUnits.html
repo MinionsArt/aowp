@@ -4,10 +4,16 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        var url = "/aowp/Data/UnitAbilitiesNew.json";
+        $.getScript(url);
+        var url2 = "/aowp/Data/UnitsNew.json";
+        $.getScript(url2);
+        var url3 = "/aowp/Data/BuilderNew.js";
+        $.getScript(url3);
+
+    </script>
     <script>
         $("#body").ready(function() {
             $("#header").load("/aowp/header.html");
