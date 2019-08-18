@@ -211,7 +211,7 @@ p {
     width: 308px;
     height: 40px;
     margin: 1px;
-    background-color: rgba(100, 100, 20, 0.5);
+    background-color: rgba(50, 50, 20, 0.8);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     border-color: rgba(255, 255, 255, 0.2);
@@ -223,7 +223,7 @@ p {
     width: 308px;
     height: 40px;
     margin: 1px;
-    background-color: rgba(50, 50, 100, 0.5);
+    background-color: rgba(50, 50, 80, 0.8);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     border-color: rgba(255, 255, 255, 0.2);
@@ -235,7 +235,7 @@ p {
     width: 308px;
     height: 40px;
     margin: 1px;
-    background-color: rgba(50, 100, 100, 0.5);
+    background-color: rgba(40, 50, 50, 0.8);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     border-color: rgba(255, 255, 255, 0.2);
@@ -249,7 +249,7 @@ p {
     width: 308px;
     height: 40px;
     margin: 1px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     border-color: rgba(255, 255, 255, 0.2);
@@ -333,15 +333,15 @@ p {
     color: #fff;
 
     border-radius: 10px 0px 10px 0px;
-    border: 1px solid darkgrey;
+    border: 1px solid #004b5e;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     position: absolute;
     z-index: 1;
-    min-width: 100px;
-    max-width: 400px;
-    min-height: 50px;
-    margin-left: 50px;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 40px;
+    margin-left: 40px;
 
     transition: opacity 0.5s;
 
@@ -405,11 +405,10 @@ p {
     padding: 10px;
     position: absolute;
     z-index: 1;
-    font-size: 16px;
-    min-width: 100px;
-    max-width: 400px;
-    min-height: 50px;
-    margin-left: 100px;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 40px;
+    margin-left: 40px;
 
     transition: opacity 0.5s;
 
@@ -656,11 +655,6 @@ StrengthBio {
     position: relative;
 }
 
-bulletList {
-    margin: 0;
-    padding: 5px;
-    overflow: hidden;
-}
 
 popUpHeader2 {
     padding: 20px;
@@ -677,7 +671,8 @@ bullet {
     display: block;
     color: white;
     text-align: left;
-
+    margin: 0px;
+    padding: 0px;
     text-decoration: none;
 }
 
@@ -695,11 +690,7 @@ xpCol {
 }
 
 spacedline {
-    display: block;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
+    display: flex;
     overflow: hidden;
     border-style: inset;
     border-width: 1px;

@@ -221,7 +221,7 @@ function checkModRequirements(unit) {
 }
 
 function showUnit(a) {
-    var hp, mp, shield, armor, descr, j, k, x, y, z, unitName, icon, imagelink, prodcost, tier, research, building = "";
+    var hp, mp, shield, armor, descr, j, k, x, y, z, unitName, icon, imagelink, prodcost, tier, research, building, reward = "";
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].id) {
             icon = document.getElementById("uniticon");
@@ -281,21 +281,28 @@ function showUnit(a) {
             tier.setAttribute("id", "tier" + a);
             var levelup = document.getElementById("levelup");
             levelup.setAttribute("id", "levelup" + a);
+            if ((jsonUnits.units[i].elite_rewards[0]) != undefined) {
+                reward = jsonUnits.units[i].elite_rewards[0].slug;
+
+
+            } else {
+                reward = "";
+            }
             tier.innerHTML = "Tier " + jsonUnits.units[i].tier + ": " + jsonUnits.units[i].upkeep;
             if (jsonUnits.units[i].tier == "1") {
 
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+2 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+2 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+2 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+2 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+2 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+2 <hp></hp> HP <li>+5 <accuracy></accuracy> Accuracy </li></li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+2 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+5 <accuracy></accuracy> Accuracy </li><li>+2 <hp></hp> HP </li><li>" + EliteSkill(reward) + "</li></ul>";
 
             }
             if (jsonUnits.units[i].tier == "2") {
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+4 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+4 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+4 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+4 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+4 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+4 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
 
             }
             if (jsonUnits.units[i].tier == "3") {
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+6 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+6 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+6 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+6 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+6 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
             }
             if (jsonUnits.units[i].tier == "4") {
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+8 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+8 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+8 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+8 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+8 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+8 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
             }
 
             prodcost = document.getElementById("productioncost");
