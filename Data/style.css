@@ -245,6 +245,7 @@ p {
 
 .unit_abilityslot {
     overflow: hidden;
+
     width: 308px;
     height: 40px;
     margin: 1px;
