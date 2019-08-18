@@ -286,7 +286,7 @@ p {
 
 .unit_ability_holder {
     background-image: url("/aowp/UI/AbilityListBackground.png");
-    background-size: 400px;
+    background-size: 310px;
 
     width: 310px;
     border: 2px solid white;
@@ -622,6 +622,14 @@ armor {
 
 }
 
+happiness {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/happiness.png);
+    position: relative;
+
+}
+
 
 
 hp {
@@ -633,10 +641,17 @@ hp {
 
 }
 
+StrengthPhysical {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/Strength_kinetic.png);
+    position: relative;
+}
+
 StrengthBio {
     max-height: 20px;
     top: 5px;
-    content: url(/aowp/Icons/Text/test.png);
+    content: url(/aowp/Icons/Text/Strength_bio.png);
     position: relative;
 }
 
@@ -647,8 +662,9 @@ bulletList {
 }
 
 popUpHeader2 {
-    padding: 10px;
-    word-spacing: 5px;
+    padding: 20px;
+    font-weight: 300;
+    word-spacing: 0px;
 
 }
 
@@ -715,6 +731,22 @@ strengthpsyche {
 
 }
 
+StrengthWave {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/Strength_arc.png);
+    position: relative;
+
+}
+
+StrengthThermal {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/Strength_thermal.png);
+    position: relative;
+
+}
+
 strengthpsi {
     max-height: 20px;
     top: 5px;
@@ -723,14 +755,7 @@ strengthpsi {
 
 }
 
-x-kineticres {
-    max-height: 20px;
-    top: 5px;
-    content: url(/aowp/Icons/Text/kineticRes.png);
-    position: relative;
 
-
-}
 
 x-medal_novice {
     max-height: 20px;
@@ -801,6 +826,7 @@ freeAction {
 
 popUpHeader3 {
     font-size: 20px;
+    font-weight: 600;
 }
 
 titleBrown {
@@ -815,13 +841,7 @@ actionblue {
     color: deepskyblue;
 }
 
-x-fullcontinue {
-    max-width: 80px;
-    content: url(/aowp/Icons/Text/fullaction_continue.png);
-    position: relative;
 
-
-}
 
 popUpDesc {
     text-align: left;
