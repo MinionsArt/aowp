@@ -9,23 +9,38 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(document).ready(function() {
+        $("#body").ready(function() {
+
             $("#header").load("/aowp/header.html");
-            $("#unit").load("/aowp/unitcard.html")
-            $("#unit2").load("/aowp/unitcard.html")
-            $("#unit3").load("/aowp/unitcard.html")
-            $("#unit4").load("/aowp/unitcard.html")
-            $("#unit5").load("/aowp/unitcard.html")
-            $("#unit6").load("/aowp/unitcard.html")
-            $("#unit7").load("/aowp/unitcard.html")
-            $("#unit8").load("/aowp/unitcard.html")
-            $("#unit9").load("/aowp/unitcard.html")
-            $("#unit10").load("/aowp/unitcard.html")
-            $("#unit11").load("/aowp/unitcard.html")
-            $("#unit12").load("/aowp/unitcard.html")
-            $("#unit13").load("/aowp/unitcard.html")
-            $("#unit14").load("/aowp/unitcard.html")
-            $("#unit15").load("/aowp/unitcard.html")
+
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("paragon_soldier");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("paragon_guard");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("paragon_fanatic");
+            });
+
+
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("paragon_heavy_soldier");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("paragon_techno_prophet");
+            });
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("paragon_peacekeeper_light_turret");
+            });
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("paragon_warden_heavy_turret");
+            });
+
+
+
 
         });
     </script>
@@ -55,30 +70,4 @@
     </iframe>-->
     </div>
 
-    <script>
-        $(document).ready(function() {
-            function showStats() {
-                showUnit('paragon_soldier');
-                showUnit('paragon_guard');
-
-                showUnit('paragon_fanatic');
-
-
-                showUnit('paragon_heavy_soldier');
-                showUnit('paragon_techno_prophet');
-                showUnit('paragon_peacekeeper_light_turret');
-                showUnit('paragon_warden_heavy_turret');
-
-
-
-                // showUnit('kirko_engulfer');
-                // showUnit('kirko_unleashed');
-                //  showUnit('kirko_abyssian');
-                //  showUnit('kirko_colonizer');
-                //  showUnit('kirko_deep_one');
-            }
-
-            setTimeout(showStats, 500);
-        });
-    </script>
 </body></html>

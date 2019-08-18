@@ -9,31 +9,69 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(document).ready(function() {
+        $("#body").ready(function() {
+
             $("#header").load("/aowp/header.html");
-            $("#unit").load("/aowp/unitcard.html")
-            $("#unit2").load("/aowp/unitcard.html")
-            $("#unit3").load("/aowp/unitcard.html")
-            $("#unit4").load("/aowp/unitcard.html")
-            $("#unit5").load("/aowp/unitcard.html")
-            $("#unit6").load("/aowp/unitcard.html")
-            $("#unit7").load("/aowp/unitcard.html")
-            $("#unit8").load("/aowp/unitcard.html")
 
-            $("#unit9").load("/aowp/unitcard.html")
-            $("#unit10").load("/aowp/unitcard.html")
-            $("#unit11").load("/aowp/unitcard.html")
-            $("#unit12").load("/aowp/unitcard.html")
-            $("#unit13").load("/aowp/unitcard.html")
-            $("#unit14").load("/aowp/unitcard.html")
-            $("#unit15").load("/aowp/unitcard.html")
-            $("#unit16").load("/aowp/unitcard.html")
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_inspector");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_scavenger");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_vorpal_sniper");
+            });
 
 
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_electrocutioner");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_lightning_rider");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_reverse_engineer");
+            });
+
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_storm_wader");
+            });
+            $("#unit8").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_wrecker");
+            });
+            $("#unit9").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_wrecking_ship");
+            });
+            $("#unit10").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_disassembler");
+            });
+            $("#unit11").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_reaver");
+            });
+            $("#unit12").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_swarm");
+            });
+            $("#unit13").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_construct");
+            });
+            $("#unit14").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_advanced_construct");
+            });
+            $("#unit15").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_constrictor");
+            });
+            $("#unit16").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_colonizer");
+            });
+            $("#unit17").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_arc_coil");
+            });
         });
-
     </script>
-
 
     <title>Age of Wonders Planetfall - Assembly Units</title>
 </head>
@@ -63,47 +101,10 @@
     <div id="unit15"></div>
 
     <div id="unit16"></div>
+    <div id="unit17"></div>
 
     <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
         <p>Your browser does not support iframes.</p>
     </iframe>-->
     </div>
-
-    <script>
-        $(document).ready(function() {
-            function showStats() {
-                showUnit('assembly_inspector');
-
-                showUnit('assembly_scavenger');
-
-                showUnit('assembly_vorpal_sniper');
-                showUnit('assembly_electrocutioner');
-                showUnit('assembly_lightning_rider');
-                showUnit('assembly_reverse_engineer');
-                showUnit('assembly_storm_wader');
-                showUnit('assembly_wrecker');
-                showUnit('assembly_wrecking_ship');
-                showUnit('assembly_disassembler');
-
-                showUnit('assembly_reaver');
-                showUnit('assembly_swarm');
-                showUnit('assembly_construct');
-                showUnit('assembly_advanced_construct');
-                showUnit('assembly_constrictor');
-                showUnit('assembly_arc_coil');
-
-
-                // showUnit('kirko_engulfer');
-                // showUnit('kirko_unleashed');
-                //  showUnit('kirko_abyssian');
-                //  showUnit('kirko_colonizer');
-                //  showUnit('kirko_deep_one');
-            }
-
-            setTimeout(showStats, 500);
-        });
-
-    </script>
-</body>
-
-</html>
+</body></html>

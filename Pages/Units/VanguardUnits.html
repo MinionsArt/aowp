@@ -9,33 +9,75 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(document).ready(function() {
-            $("#header").load("/aowp/header.html");
-            $("#unit").load("/aowp/unitcard.html")
-            $("#unit1").load("/aowp/unitcard.html")
-            $("#unit2").load("/aowp/unitcard.html")
-            $("#unit3").load("/aowp/unitcard.html")
-            $("#unit4").load("/aowp/unitcard.html")
-            $("#unit5").load("/aowp/unitcard.html")
-            $("#unit6").load("/aowp/unitcard.html")
-            $("#unit7").load("/aowp/unitcard.html")
-            $("#unit8").load("/aowp/unitcard.html")
-            $("#unit9").load("/aowp/unitcard.html")
-            $("#unit10").load("/aowp/unitcard.html")
-            $("#unit11").load("/aowp/unitcard.html")
-            $("#unit12").load("/aowp/unitcard.html")
-            $("#unit13").load("/aowp/unitcard.html")
-            $("#unit14").load("/aowp/unitcard.html")
-            $("#unit15").load("/aowp/unitcard.html")
-            $("#unit16").load("/aowp/unitcard.html")
-            $("#unit17").load("/aowp/unitcard.html")
-            $("#unit18").load("/aowp/unitcard.html")
-            $("#unit19").load("/aowp/unitcard.html")
-            $("#unit20").load("/aowp/unitcard.html")
+        $("#body").ready(function() {
 
+            $("#header").load("/aowp/header.html");
+
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_owl");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_trooper");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_engineer");
+            });
+
+
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_pug");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_assault_bike");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_gunship");
+            });
+
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_walker");
+            });
+            $("#unit8").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_frigate");
+            });
+            $("#unit9").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_laser_tank");
+            });
+            $("#unit10").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_drone_carrier");
+            });
+            $("#unit11").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_assault_drone");
+            });
+            $("#unit12").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_repair_drone");
+            });
+            $("#unit13").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_skirmish_drone");
+            });
+            $("#unit14").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_nanite_support_station");
+            });
+            $("#unit15").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_gun_turret");
+            });
+            $("#unit16").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_heavy_gun_turret");
+            });
+            $("#unit17").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_launcher_turret");
+            });
+            $("#unit18").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_colonizer");
+            });
+            $("#unit19").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_repeater_defense_turret");
+            });
         });
     </script>
-
 
     <title>Age of Wonders Planetfall - Vanguard Units</title>
 </head>
@@ -144,48 +186,4 @@
         <p>Your browser does not support iframes.</p>
     </iframe>-->
     </div>
-
-    <script>
-        $(document).ready(function() {
-            function showStats() {
-
-                showUnit('vanguard_owl');
-
-                showUnit('vanguard_trooper');
-                showUnit('vanguard_assault_bike');
-
-                showUnit('vanguard_engineer');
-
-                showUnit('vanguard_gunship');
-
-                showUnit('vanguard_pug');
-
-                showUnit('vanguard_frigate');
-
-                showUnit('vanguard_laser_tank');
-                showUnit('vanguard_walker');
-                showUnit('vanguard_battleship');
-                showUnit('vanguard_drone_carrier');
-
-                showUnit('vanguard_assault_drone');
-                showUnit('vanguard_gun_turret');
-                showUnit('vanguard_heavy_gun_turret');
-                showUnit('vanguard_launcher_turret');
-                showUnit('vanguard_nanite_support_station');
-                showUnit('vanguard_repair_drone');
-                showUnit('vanguard_skirmish_drone');
-                showUnit('vanguard_valkyrie');
-                showUnit('vanguard_colonizer');
-                showUnit('vanguard_repeater_defense_turret');
-
-                // showUnit('kirko_engulfer');
-                // showUnit('kirko_unleashed');
-                //  showUnit('kirko_abyssian');
-                //  showUnit('kirko_colonizer');
-                //  showUnit('kirko_deep_one');
-            }
-
-            setTimeout(showStats, 500);
-        });
-    </script>
 </body></html>

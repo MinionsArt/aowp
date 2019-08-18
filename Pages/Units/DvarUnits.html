@@ -9,27 +9,58 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(document).ready(function() {
+        $("#body").ready(function() {
+
             $("#header").load("/aowp/header.html");
-            $("#unit").load("/aowp/unitcard.html")
-            $("#unit2").load("/aowp/unitcard.html")
-            $("#unit3").load("/aowp/unitcard.html")
-            $("#unit4").load("/aowp/unitcard.html")
-            $("#unit5").load("/aowp/unitcard.html")
-            $("#unit6").load("/aowp/unitcard.html")
-            $("#unit7").load("/aowp/unitcard.html")
-            $("#unit8").load("/aowp/unitcard.html")
 
-            $("#unit9").load("/aowp/unitcard.html")
-            $("#unit10").load("/aowp/unitcard.html")
-            $("#unit11").load("/aowp/unitcard.html")
-            $("#unit12").load("/aowp/unitcard.html")
-            $("#unit13").load("/aowp/unitcard.html")
-            $("#unit14").load("/aowp/unitcard.html")
-            $("#unit15").load("/aowp/unitcard.html")
-            $("#unit16").load("/aowp/unitcard.html")
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_prospector");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_trencher");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_foreman");
+            });
 
 
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_bulwark");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_ramjet");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_ironclad");
+            });
+
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_sapper");
+            });
+            $("#unit8").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_baron");
+            });
+            $("#unit9").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_excavator_tank");
+            });
+            $("#unit10").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_rocket_artillery");
+            });
+            $("#unit11").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_dreadnought");
+            });
+            $("#unit12").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_earth_crusher");
+            });
+            $("#unit13").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_colonizer");
+            });
+            $("#unit14").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_bombard");
+            });
         });
     </script>
 
@@ -67,38 +98,5 @@
     </iframe>-->
     </div>
 
-    <script>
-        $(document).ready(function() {
-            function showStats() {
 
-                showUnit('dvar_prospector');
-                showUnit('dvar_trencher');
-
-                showUnit('dvar_foreman');
-                showUnit('dvar_bulwark');
-                showUnit('dvar_ramjet');
-                showUnit('dvar_ironclad');
-                showUnit('dvar_sapper');
-
-                showUnit('dvar_baron');
-                showUnit('dvar_excavator_tank');
-                showUnit('dvar_rocket_artillery');
-                showUnit('dvar_dreadnought');
-                showUnit('dvar_earth_crusher');
-
-                showUnit('dvar_colonizer');
-
-                showUnit('dvar_bombard');
-
-
-                // showUnit('kirko_engulfer');
-                // showUnit('kirko_unleashed');
-                //  showUnit('kirko_abyssian');
-                //  showUnit('kirko_colonizer');
-                //  showUnit('kirko_deep_one');
-            }
-
-            setTimeout(showStats, 500);
-        });
-    </script>
 </body></html>

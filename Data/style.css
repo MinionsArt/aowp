@@ -855,6 +855,13 @@ energy {
     position: relative;
 }
 
+population {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/population.png);
+    position: relative;
+}
+
 production {
     max-height: 20px;
     top: 5px;

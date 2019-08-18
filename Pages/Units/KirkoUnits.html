@@ -9,23 +9,63 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(document).ready(function() {
+        $("#body").ready(function() {
+
             $("#header").load("/aowp/header.html");
-            $("#unit").load("/aowp/unitcard.html")
-            $("#unit2").load("/aowp/unitcard.html")
-            $("#unit3").load("/aowp/unitcard.html")
-            $("#unit4").load("/aowp/unitcard.html")
-            $("#unit5").load("/aowp/unitcard.html")
-            $("#unit6").load("/aowp/unitcard.html")
-            $("#unit7").load("/aowp/unitcard.html")
-            $("#unit8").load("/aowp/unitcard.html")
-            $("#unit9").load("/aowp/unitcard.html")
-            $("#unit10").load("/aowp/unitcard.html")
-            $("#unit11").load("/aowp/unitcard.html")
-            $("#unit12").load("/aowp/unitcard.html")
-            $("#unit13").load("/aowp/unitcard.html")
-            $("#unit14").load("/aowp/unitcard.html")
-            $("#unit15").load("/aowp/unitcard.html")
+
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_unleashed");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_frenzied");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_hidden");
+            });
+
+
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_tormented");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_barrager");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_torrent");
+            });
+
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_engulfer");
+            });
+            $("#unit8").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_deep_one");
+            });
+            $("#unit9").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_trancendent");
+            });
+            $("#unit10").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_ravenous");
+            });
+            $("#unit10").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_harbinger");
+            });
+            $("#unit11").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_abyssian");
+            });
+            $("#unit12").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_emergent");
+            });
+
+            $("#unit13").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_colonizer");
+            });
+            $("#unit14").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_hiveguard");
+            });
+
 
         });
     </script>
@@ -63,34 +103,5 @@
     </iframe>-->
     </div>
 
-    <script>
-        $(document).ready(function() {
-            function showStats() {
-                showUnit('kirko_emergent');
 
-                showUnit('kirko_frenzied');
-                showUnit('kirko_hidden');
-
-                showUnit('kirko_barrager');
-
-                showUnit('kirko_tormented');
-
-                showUnit('kirko_torrent');
-                showUnit('kirko_engulfer');
-                showUnit('kirko_unleashed');
-                showUnit('kirko_abyssian');
-                showUnit('kirko_ravenous');
-
-                showUnit('kirko_trancendent');
-
-                showUnit('kirko_deep_one');
-                showUnit('kirko_harbinger');
-                showUnit('kirko_colonizer');
-
-                showUnit('kirko_hiveguard');
-            }
-
-            setTimeout(showStats, 100);
-        });
-    </script>
 </body></html>

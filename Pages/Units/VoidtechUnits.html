@@ -9,17 +9,40 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(document).ready(function() {
-            $("#header").load("/aowp/header.html");
-            $("#unit").load("/aowp/unitcard.html")
-            $("#unit2").load("/aowp/unitcard.html")
-            $("#unit3").load("/aowp/unitcard.html")
-            $("#unit4").load("/aowp/unitcard.html")
-            $("#unit5").load("/aowp/unitcard.html")
-            $("#unit6").load("/aowp/unitcard.html")
-            $("#unit7").load("/aowp/unitcard.html")
-            $("#unit8").load("/aowp/unitcard.html")
+        $("#body").ready(function() {
 
+            $("#header").load("/aowp/header.html");
+
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("amazon_echo_walker");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("assembly_echo_walker");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("dvar_echo_walker");
+            });
+
+
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_echo_walker");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_echo_walker");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("vanguard_echo_walker");
+            });
+
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("phase_manipulator");
+            });
+            $("#unit8").load("/aowp/unitcard.html", function() {
+                showUnit("rift_generator");
+            });
 
         });
     </script>
@@ -49,30 +72,4 @@
     </iframe>-->
     </div>
 
-    <script>
-        $(document).ready(function() {
-            function showStats() {
-                showUnit('amazon_echo_walker');
-                showUnit('assembly_echo_walker');
-                showUnit('dvar_echo_walker');
-                showUnit('syndicate_echo_walker');
-                showUnit('kirko_echo_walker');
-                showUnit('vanguard_echo_walker');
-                showUnit('phase_manipulator');
-
-                showUnit('rift_generator');
-
-
-
-
-                // showUnit('kirko_engulfer');
-                // showUnit('kirko_unleashed');
-                //  showUnit('kirko_abyssian');
-                //  showUnit('kirko_colonizer');
-                //  showUnit('kirko_deep_one');
-            }
-
-            setTimeout(showStats, 500);
-        });
-    </script>
 </body></html>

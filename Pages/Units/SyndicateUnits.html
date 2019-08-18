@@ -9,26 +9,58 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(document).ready(function() {
-            $("#header").load("/aowp/header.html");
-            $("#unit").load("/aowp/unitcard.html")
-            $("#unit2").load("/aowp/unitcard.html")
-            $("#unit3").load("/aowp/unitcard.html")
-            $("#unit4").load("/aowp/unitcard.html")
-            $("#unit5").load("/aowp/unitcard.html")
-            $("#unit6").load("/aowp/unitcard.html")
-            $("#unit7").load("/aowp/unitcard.html")
-            $("#unit8").load("/aowp/unitcard.html")
+        $("#body").ready(function() {
 
-            $("#unit9").load("/aowp/unitcard.html")
-            $("#unit10").load("/aowp/unitcard.html")
-            $("#unit11").load("/aowp/unitcard.html")
-            $("#unit12").load("/aowp/unitcard.html")
-            $("#unit13").load("/aowp/unitcard.html")
+            $("#header").load("/aowp/header.html");
+
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_runner");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_indentured");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_overseer");
+            });
+
+
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_guild_assassin");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_enforcer");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_mirage");
+            });
+
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_guild_cruiser");
+            });
+            $("#unit8").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_wraith");
+            });
+            $("#unit9").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_subjugator");
+            });
+            $("#unit10").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_zenith");
+            });
+            $("#unit11").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_sentinel");
+            });
+            $("#unit12").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_colonizer");
+            });
+            $("#unit13").load("/aowp/unitcard.html", function() {
+                showUnit("syndicate_suppressor_tower");
+            });
 
         });
     </script>
-
 
     <title>Age of Wonders Planetfall - Syndicate Units</title>
 </head>
@@ -61,43 +93,5 @@
     </iframe>-->
     </div>
 
-    <script>
-        $(document).ready(function() {
-            function showStats() {
 
-
-                showUnit('syndicate_runner');
-
-                showUnit('syndicate_indentured');
-
-                showUnit('syndicate_enforcer');
-
-                showUnit('syndicate_guild_assassin');
-
-
-                showUnit('syndicate_overseer');
-
-                showUnit('syndicate_guild_cruiser');
-
-                showUnit('syndicate_mirage');
-
-                showUnit('syndicate_wraith');
-
-                showUnit('syndicate_subjugator');
-
-
-                showUnit('syndicate_zenith');
-
-                showUnit('syndicate_sentinel');
-
-
-                showUnit('syndicate_colonizer');
-
-                showUnit('syndicate_suppressor_tower');
-
-            }
-
-            setTimeout(showStats, 500);
-        });
-    </script>
 </body></html>
