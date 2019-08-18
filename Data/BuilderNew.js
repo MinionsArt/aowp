@@ -284,18 +284,18 @@ function showUnit(a) {
             tier.innerHTML = "Tier " + jsonUnits.units[i].tier + ": " + jsonUnits.units[i].upkeep;
             if (jsonUnits.units[i].tier == "1") {
 
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+2 <x-hp></x-hp> Hit Points</li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+2 HP</li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+2 HP</li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+2 HP</li><li>" + EliteSkill(jsonUnits.units[i].elite_skill) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+2 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+2 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+2 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+2 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
 
             }
             if (jsonUnits.units[i].tier == "2") {
-                levelup.innerHTML = "<p><x-medal_trooper> </x-medal_trooper>Trooper<li>+4 <x-hp></x-hp> Hit Points</li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 HP</li></ul><p>Expert<li>+4 HP</li></ul> <p>Elite<li>+4 HP</li><li>" + EliteSkill(jsonUnits.units[i].elite_skill) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+4 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+4 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+4 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
 
             }
             if (jsonUnits.units[i].tier == "3") {
-                levelup.innerHTML = "<p><x-medal_trooper> </x-medal_trooper>Trooper<li>+6 <x-hp></x-hp> Hit Points</li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 HP</li></ul><p>Expert<li>+6 HP</li></ul> <p>Elite<li>+6 HP</li><li>" + EliteSkill(jsonUnits.units[i].elite_skill) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+6 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+6 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+6 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
             }
             if (jsonUnits.units[i].tier == "4") {
-                levelup.innerHTML = "<p><x-medal_trooper> </x-medal_trooper>Trooper<li>+6 <x-hp></x-hp> Hit Points</li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 HP</li></ul><p>Expert<li>+6 HP</li></ul> <p>Elite<li>+6 HP</li><li>" + EliteSkill(jsonUnits.units[i].elite_skill) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+8 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+8 <hp></hp> HP </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+8 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+8 <hp></hp> HP </li><li>" + EliteSkill(jsonUnits.units[i].elite_rewards[0].slug) + "</li></ul>";
             }
 
             prodcost = document.getElementById("productioncost");
