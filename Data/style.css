@@ -417,6 +417,7 @@ p {
 .unittype_icon {
     position: relative;
     float: left;
+    max-width: 36px;
 
 }
 
