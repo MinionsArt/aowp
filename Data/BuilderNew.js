@@ -225,7 +225,7 @@ function showUnit(a) {
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].id) {
             icon = document.getElementById("uniticon");
-            icon.setAttribute("src", "/aowp/Icons/UnitIcons/" + a + ".png");
+            icon.setAttribute("src", "/aowp/Icons/UnitIcons/" + a + "_icon.png");
             icon.setAttribute("id", "uniticon" + a);
             if (icon.getAttribute('src') === "/aowp/Icons/UnitIcons/undefined") {
                 icon.setAttribute('src', "/aowp/Icons/placeholder.png");
