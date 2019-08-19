@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+        });
+    </script>
+    <title></title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <p style="color:white">Very WIP search, only works with single keywords atm...</p>
+    <input type="text" id="searchInput">
+    <input type="submit" value="Submit" id="button">
+    <div id="searchOutput">test</div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $('#button').click(function() {
+            searchData();
+        });
+    });
+
+    function isInArray(array, search) {
+        return array.indexOf(search) >= 0;
+    }
+
+
+    function searchData() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        searchUnits(filter);
+
+    }
+
+    function searchUnits(keyword) {
+        var i, output, textvalue, j, l = "";
+        var list = new Array();
+        output = document.getElementById("searchOutput");
+
+        for (i = 0; i < jsonUnits.units.length; i++) {
+            textvalue = jsonUnits.units[i].id;
+            if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                if (list.length >= 1) {
+                    if (!isInArray(list, jsonUnits.units[i].id)) {
+                        list.push(jsonUnits.units[i].id);
+                    }
+                } else {
+                    list.push(jsonUnits.units[i].id);
+                }
+
+
+
+            }
+            for (j = 0; j < jsonUnits.units[i].abilities.length; j++) {
+                textvalue = jsonUnits.units[i].abilities[j].slug;
+                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                    if (list.length >= 1) {
+                        if (!isInArray(list, jsonUnits.units[i].id)) {
+                            list.push(jsonUnits.units[i].id);
+                        }
+                    } else {
+                        list.push(jsonUnits.units[i].id);
+                    }
+
+
+
+                }
+            }
+            for (j = 0; j < jsonUnits.units[i].passives.length; j++) {
+                textvalue = jsonUnits.units[i].passives[j].slug;
+                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                    if (list.length >= 1) {
+                        if (!isInArray(list, jsonUnits.units[i].id)) {
+                            list.push(jsonUnits.units[i].id);
+                        }
+                    } else {
+                        list.push(jsonUnits.units[i].id);
+                    }
+
+
+
+                }
+            }
+
+            for (j = 0; j < jsonUnits.units[i].unit_types.length; j++) {
+                textvalue = jsonUnits.units[i].unit_types[j].slug;
+                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                    if (list.length >= 1) {
+                        if (!isInArray(list, jsonUnits.units[i].id)) {
+                            list.push(jsonUnits.units[i].id);
+                        }
+                    } else {
+                        list.push(jsonUnits.units[i].id);
+                    }
+
+
+
+                }
+            }
+
+
+
+        }
+        output.innerHTML = list.toString();
+        for (j = 0; j < list.length; j++) {
+            // addSearchResultUnit(list[j]);
+            addUnitCard(list[j]);
+        }
+
+    }
+
+    function addUnitCard(unit) {
+        var iDiv = document.createElement('div');
+        // iDiv.setAttribute("id", "unit");
+        // alert(unit);
+        document.getElementById("searchOutput").appendChild(iDiv);
+        $(iDiv).load("/aowp/unitcard.html", function() {
+            showUnit(unit);
+        });
+
+
+
+    }
+
+    function addSearchResultUnit(unit) {
+        var output = document.getElementById("searchOutput");
+        for (l = 0; l < jsonUnits.units.length; l++)
+            if (unit == jsonUnits.units[l].name) {
+                var holder = document.createElement("div");
+                holder.className = ".unit_abilityslot ";
+                var icon = document.createElement("img");
+                icon.setAttribute("src", "/aow3db/Icons/UnitIcons/" + unit + ".png");
+                var unitName = document.createElement("p");
+                unitName.innerHTML = jsonUnits.units[l].string;
+                output.innerHTML = "done the thing";
+                output.appendChild(holder);
+                holder.appendChild(icon);
+                holder.append(unitName);
+            } else {
+                output.innerHTML = "done some thing";
+            }
+
+    }
+</script></html>
