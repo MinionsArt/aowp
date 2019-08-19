@@ -15,6 +15,14 @@
             $("#header").load("/aowp/header.html");
 
         });
+        $(document).ready(function() {
+            function showStats() {
+                textFit(document.getElementsByClassName('unit_passiveslot'));
+            }
+
+            setTimeout(showStats, 500);
+        });
+
     </script>
     <title></title>
 </head>
@@ -156,4 +164,7 @@
             }
 
     }
-</script></html>
+
+</script>
+
+</html>
