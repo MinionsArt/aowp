@@ -50,6 +50,8 @@
     function searchData() {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInput");
+        output = document.getElementById("searchOutput");
+        output.innerHTML = "";
         filter = input.value.toUpperCase();
         searchUnits(filter);
 
