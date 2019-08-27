@@ -208,7 +208,7 @@ p {
 
 .unit_elite_skill {
     overflow: hidden;
-    width: 308px;
+    width: 328px;
     height: 40px;
     margin: 1px;
     background-color: rgba(50, 50, 20, 0.8);
@@ -220,7 +220,7 @@ p {
 
 .unit_passiveslot {
     overflow: hidden;
-    width: 308px;
+    width: 328px;
     height: 40px;
     margin: 1px;
     background-color: rgba(50, 50, 80, 0.8);
@@ -232,7 +232,7 @@ p {
 
 .unit_resistanceslot {
     overflow: hidden;
-    width: 308px;
+    width: 328px;
     height: 40px;
     margin: 1px;
     background-color: rgba(40, 50, 50, 0.8);
@@ -246,7 +246,7 @@ p {
 .unit_abilityslot {
     overflow: hidden;
 
-    width: 308px;
+    width: 328px;
     height: 40px;
     margin: 1px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -287,9 +287,9 @@ p {
 
 .unit_ability_holder {
     background-image: url("/aowp/UI/AbilityListBackground.png");
-    background-size: 310px;
+    background-size: 350px;
 
-    width: 310px;
+    width: 330px;
     border: 2px solid white;
     border-color: rgba(105, 255, 255, 0.4);
     margin: 5px;
@@ -308,7 +308,7 @@ p {
     height: 40px;
     position: relative;
     clear: left;
-    width: 300px;
+    width: 320px;
     border: 5px solid black;
     background-color: rgba(10, 10, 40, 0.4);
 
@@ -479,7 +479,7 @@ p {
 
 .researchSkillSlot {
     color: aliceblue;
-    width: 280px;
+    width: 320px;
     height: 90px;
     position: relative;
     display: inline-block;
