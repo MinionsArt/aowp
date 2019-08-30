@@ -416,8 +416,11 @@ p {
 
 .unittype_icon {
     position: relative;
+    background-image: url(/aowp/UI/unitTypeBackground.png);
+    background-position: right;
+    background-size: contain;
     float: left;
-    max-width: 36px;
+    max-width: 40px;
 
 }
 

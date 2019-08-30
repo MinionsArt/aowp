@@ -5,8 +5,6 @@ var jsonMods = {
 
             "type": "D H 15",
             "description": "Testing testing testing",
-            "check": "infantry melee",
-            "checknot": "kirko_frenzied",
             "image_link": "test",
 
         },
