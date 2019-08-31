@@ -108,7 +108,7 @@ function addPassiveslot(a) {
             tex.className = "tooltip";
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
-            spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
+            spa.innerHTML = "<p>" + "<span style=\"font-size=20px; color=rgb(158, 197, 225)\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aowp/Icons/Passives/" + abilityIcon + ".png");
             imag.className = "unittype_icon";
             imag.setAttribute("width", "40");

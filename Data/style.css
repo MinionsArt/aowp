@@ -663,7 +663,7 @@ StrengthBio {
 popUpHeader2 {
     padding: 20px;
     font-weight: 300;
-    word-spacing: 0px;
+    text-align: justify;
 
 }
 
@@ -826,7 +826,9 @@ popUpHeader3 {
 }
 
 titleBrown {
-    color: rosybrown;
+    color: rgb(158, 197, 225);
+    font-weight: 550;
+
 }
 
 abilityred {
