@@ -41,11 +41,12 @@ function addAbilityslot(a, b) {
 
 
 
-
-
             abilityName = jsonUnitAbilities.abilities[j].name;
             abilityIcon = jsonUnitAbilities.abilities[j].icon;
             abilityDescr = jsonUnitAbilities.abilities[j].description;
+            var n = abilityDescr.includes("Unique");
+
+
             //abilityDam = jsonUnitAbilities.abilities[j].damage;
             abilityRange = jsonUnitAbilities.abilities[j].range;
             abilityAcc = jsonUnitAbilities.abilities[j].accuracy;
@@ -58,6 +59,9 @@ function addAbilityslot(a, b) {
             /// tooltipName.style.fontSize = "20px";
             tooltipName.innerHTML = "test";
             btn.className = "unit_abilityslot";
+            if (n === true) {
+                btn.style.backgroundColor = "rgb(73, 0, 80)";
+            }
             var imag = document.createElement("IMG");
             imag.className = "unit_ability_icon";
             var spa = document.createElement("SPAN");
