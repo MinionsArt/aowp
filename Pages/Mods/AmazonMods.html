@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#mod1").load("/aowp/modcard.html", function() {
+                showMod("grounding_harness");
+            });
+            $("#mod2").load("/aowp/modcard.html", function() {
+                showMod("advanced_instinct_controller");
+            });
+            $("#mod3").load("/aowp/modcard.html", function() {
+                showMod("primal_awareness_amplifier(detector)");
+            });
+            $("#mod4").load("/aowp/modcard.html", function() {
+                showMod("regenerative_bioregulator");
+            });
+            $("#mod5").load("/aowp/modcard.html", function() {
+                showMod("crushing_roots");
+            });
+            $("#mod6").load("/aowp/modcard.html", function() {
+                showMod("blood_fury_inducers");
+            });
+            $("#mod7").load("/aowp/modcard.html", function() {
+                showMod("earth_link_mask");
+            });
+            $("#mod8").load("/aowp/modcard.html", function() {
+                showMod("spirit_link_module");
+            });
+        });
+
+    </script>
+
+
+    <title>Age of Wonders Planetfall - Amazon Mods</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h2 style="text-align: center; color: aliceblue">
+        Amazon Mods
+    </h2>
+    <div id="mod1">
+    </div>
+    <div id="mod2"></div>
+    <div id="mod3"></div>
+    <div id="mod4"></div>
+    <div id="mod5"></div>
+
+    <div id="mod6"></div>
+    <div id="mod7"></div>
+    <div id="mod8"></div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

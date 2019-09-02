@@ -167,6 +167,28 @@ p {
 
 }
 
+.mod_description {
+
+    position: relative;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    max-width: 500px;
+    top: -20px;
+}
+
+.mod_image_holder {
+    position: relative;
+    width: 700;
+    float: left;
+    background-color: rgb(0, 5, 10, 0.5);
+    border: 1px solid white;
+    display: table;
+    border: 2px solid white;
+    border-color: rgba(105, 255, 255, 0.4);
+    margin: 5px;
+}
+
 .unit_description {
     font-family: "Noto Sans", Times, sans-serif;
     color: #fff4ad;
@@ -174,6 +196,20 @@ p {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
     top: -20px;
+}
+
+.mod_image {
+    float: left;
+    padding: 10px;
+    padding-top: 40px;
+    max-width: 200px;
+
+    background: url("/aowp/UI/backgroundModIcon.png");
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+
 }
 
 .unit_image {
@@ -192,6 +228,17 @@ p {
     border: 2px solid white;
     border-color: rgba(105, 255, 255, 0.4);
     margin: 5px;
+}
+
+.mod_card {
+    background-color: #19313d;
+    color: white;
+    width: 840px;
+
+    padding: 35px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -379,6 +426,14 @@ p {
     font-size: 18px;
     position: relative;
     top: -5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px cyan;
+}
+
+.mod_name {
+    font-size: 18px;
+    position: relative;
+
     text-align: center;
     text-shadow: 2px 2px 5px cyan;
 }
@@ -833,6 +888,7 @@ titleBrown {
 
 abilityred {
     color: red;
+    font-weight: 400px;
 }
 
 actionblue {

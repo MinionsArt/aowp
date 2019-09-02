@@ -1,13 +1,189 @@
 var jsonMods = {
     "mods": [{
-            "slug": "test_mod",
-            "name": "Test Mod",
+            "slug": "grounding_harness",
+            "tier": "I",
+            "name": "Grounding Harness",
 
-            "type": "D H 15",
-            "description": "Testing testing testing",
-            "image_link": "test",
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "By grounding itself, the unit gains Stagger Resistance and +5 <arcResistance></arcResistance> resistance<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to non-Mechanical units that have Land Movement. </abilityred> ",
+
+
+        }, {
+            "slug": "advanced_instinct_controller",
+            "tier": "III",
+            "name": "Advanced Instinct Controller",
+
+            "type": "Defense Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Control a creature's instinctual reactions. The unit gains 300 <morale></morale> and 5<psiResistance></psiResistance> resistance<br><br>Additionally, this mod grants the unit +1 <shield></shield> <br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko, and Mounted units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "primal_awareness_amplifier(detector)",
+            "tier": "III",
+            "name": "Primal Awareness Amplifier (Detector)",
+
+            "type": "Defense Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit gains <actionblue>Detection</actionblue>, can no longer be flanked, gains +2 Sensor Range and is 10% harder to hit<br><br>Additionally, this mod grants the unit +1 <shield></shield> <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "blood_fury_inducers",
+            "tier": "VII",
+            "name": "Blood Fury Inducers",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "When a Biological, Cyborg, or Arborian unit dies in battle, this gives this unit one stack of <actionblue>Blood Fury</actionblue>, increasing damage by 10% and regenerating 10% <hp></hp> per stack. Up to 4 stacks.<br><br>Additionally, this mod grants the unit +15<hp></hp> <br><br> <abilityred>This Mod can only be applied to Heavy Biological and Cyborg units. </abilityred> ",
+
+
+        }, {
+            "slug": "spirit_link_module",
+            "tier": "IX",
+            "name": "Spirit Link Module",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Forge a powerful mental link between rider and mount. The unit gains 50% critical hit damage, 400 <happiness></happiness> and becomes 20% harder to hit<br><br>Additionally, this mod grants the unit +2 <shield></shield><br><br><br><abilityred>This Mod can only be applied to Mounted units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "regenerative_bioregulator",
+            "tier": "V",
+            "name": "Regenerative Bioregulator",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit gains <actionblue>Regeneration</actionblue>, healing it for 15% of its maximum <hp></hp> each turn in combat and restoring all of its <hp></hp> at the start of its owner's turn on the strategic map.<br><br>The unit also gains 5 <biochemical></biochemical> resistance.<br><br>Additionally, this mod grants the unit +10<hp></hp><br><br><br><abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "crushing_roots",
+            "tier": "VI",
+            "name": "Crushing Roots",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit gains the <actionblue>Plant Roots (Improved)</actionblue> defense mode, healing it for 12<hp></hp> and granting it +4<armor></armor>. If the unit has an <abilityred>Entangle</abilityred> ability, it now also deals 8 damage each turn to Entangled enemies.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities<br><br><br><abilityred>This Mod can only be applied to Plant units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "earth_link_mask",
+            "tier": "IX",
+            "name": "Earth Link Mask",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit's attacks have 8 <StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Crushing Entanglement</abilityred> to non-Ethereal non-Flying units for 2 <turn></turn>. The unit also gains the <actionblue>Plant Roots (Improved)</actionblue> defense mode.<br> Additionally, this mod grants the unit +15<hp></hp> <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "ocular_implants(detector)",
+            "tier": "I",
+            "name": "Ocular Implants(Detector)",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit gains <actionblue>Detection</actionblue>, +1 Strategical Vision Range and a 10% bonus to critical hit change <br> Additionally, this mod grants the unit +1<armor></armor> <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "flesh_tearer_implants",
+            "tier": "III",
+            "name": "Flesh Tearer Implants",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Melee attacks do 10% extra damage to Biological and Cyborg units, and have a 8 <StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Bleeding</abilityred>, for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko and Cyborg units that are Light and have a Melee ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "advanced_re-engineering",
+            "tier": "VII",
+            "name": "Advanced Re-engineering",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Upgrades the reverse Engineer. It is now possible to Reassemble Heavy units as well as Light units, and to create more powerful Advanced Construct.<br> <actionblue>Create Advanced Construct</actionblue><br>Create an Advanced Construct under the player's control on the target hex.<br><actionblue>Advanced Reassemble</actionblue><br> Target dead light Cyborg ground unit to bring it back to life with 70% of its max <hp></hp>. Target a living Cyborg to heal it for 55 <hp></hp>. Cannot target self <br><br> Additionally, this mod grants the unit +2 <armor></armor><br><br> <abilityred>This Mod can only be applied the Assembly Reverse Engineer. </abilityred> ",
+
+
+        },
+        {
+            "slug": "cloaking_implants",
+            "tier": "IV",
+            "name": "Cloaking Implants",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Advanced technologies grant this unit <actionblue>Universal Camouflage</actionblue> on the World Map and the  <actionblue>Evasion</actionblue> defense mode. In addition, the unit becomes 40% harder to hit with all Overwatch attacks. <br><br> Additionally, this mod grants the unit +1<armor></armor> <br><br> <abilityred>This Mod can only be applied to Light Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "emergency_quantric_shielding",
+            "tier": "IX",
+            "name": "Emergency Quantric Shielding",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit is immune to all damage over time status effects. Whenever the unit takes damage that would kill it, it leaves the unit at 1 <hp></hp> instead, and the unit gains complete immunity to all damage and status effects for 1<turn></turn>.<br>Only triggers once per battle. <br><br> Additionally, this mod grants the unit +2<armor></armor> <br><br> <abilityred>This Mod can only be applied to Light units. </abilityred> ",
+
 
         },
 
+        {
+            "slug": "neurotoxic_implants",
+            "tier": "V",
+            "name": "Neurotoxic Implants",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's melee attacks now do Biochemical damage and have a 8 <StrengthBiochemical></StrengthBiochemical> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units, reducing their morale and making them easier to hit for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Scavenger, Wrecker, and Reverse Engineer units </abilityred> ",
+
+
+        },
+        {
+            "slug": "quantum_support_nanites",
+            "tier": "IX",
+            "name": "Quantum Support Nanites",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Quantum Support Nanites</actionblue><br>Extensive implants fitted with specilized field generators automatically target all friendly units within a 2 hex radius of this unit. This unit and all other affected units gain +2 <shield></shield> and heal for 20% of their <hp></hp> each turn for 3 <turn></turn> <br><br> Additionally, this mod grants the unit +2<armor></armor> <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "reassembly_module",
+            "tier": "VII",
+            "name": "Reassembly Module",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit gains<actionblue>Regeneration</actionblue>, healing 15% of its maximum <hp></hp> each turn in combat, and recovers all of its <hp></hp> at the start of its owner's turn on the strategic map.<br> If the unit dies, the reassembly module attempts to repair all vital systems, alloweing the unit to reassemble itself after the battle if the unit's owner wins. <br><br> Additionally, this mod grants the unit +15<hp></hp> <br><br> <abilityred>This Mod can only be applied to Cyborg and Mechinal units, excep the Assembly Wrecker. </abilityred> ",
+
+
+        },
+        {
+            "slug": "toxin_nanites_ammunition",
+            "tier": "V",
+            "name": "Toxin Nanites Ammunition",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Replaces the Disassembler shell with a Toxic variant. It now leaves behind a cloud of Toxic Nanites that deal 15 <biochemical></biochemical> damage to enemy units standing in it, as well as having a 12 <StrengthBiochemical></StrengthBiochemical> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Disassembler unit. </abilityred> ",
+
+
+        },
     ]
 }

@@ -374,6 +374,32 @@ function showBuilding(a) {
     }
 }
 
+function showMod(a) {
+    var modName, description, cost, type, tier = "";
+    for (j in jsonMods.mods) {
+        if (a == jsonMods.mods[j].slug) {
+            modName = document.getElementById("modname");
+            modName.innerHTML = "<span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonMods.mods[j].name;
+            modName.setAttribute("id", "modname" + a);
+            description = document.getElementById("moddescription");
+            description.innerHTML = jsonMods.mods[j].description;
+            description.setAttribute("id", "moddescription" + a);
+            type = document.getElementById("modtype");
+            type.innerHTML = "Mod Type: " + jsonMods.mods[j].type;
+            type.setAttribute("id", "modtype" + a);
+            tier = document.getElementById("modtier");
+            tier.innerHTML = "Tier: " + jsonMods.mods[j].tier;
+            tier.setAttribute("id", "modtier" + a);
+            cost = document.getElementById("modcost");
+            cost.innerHTML = "Purchase Cost : " + jsonMods.mods[j].cost;
+            cost.setAttribute("id", "modcost" + a);
+            imagelink = document.getElementById("modicon");
+            imagelink.setAttribute("src", "/aowp/Icons/Mods/" + a + ".png");
+            imagelink.setAttribute("id", "modicon" + a);
+        }
+    }
+}
+
 function searchData() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("searchInput");
