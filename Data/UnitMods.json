@@ -415,5 +415,137 @@ var jsonMods = {
 
 
         },
+        {
+            "slug": "blazing_infusion",
+            "tier": "",
+            "name": "Blazing Infusion",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's attacks have a 8 <StrengthThermal></StrengthThermal> strength chance to cause <abilityred>Burning</abilityred> to non-Mineral and non-Ethereal targets for 3 <turn></turn>. At the start of this unit's turn, adjacent enemy units take 6 <DamageThermal></DamageThermal> damage, and adjacent Flame Quarzite units heal for 12 <hp></hp>.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to Flame Quartzite units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "fiery_infusion",
+            "tier": "",
+            "name": "Fiery Infusion",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's attacks have a 8 <StrengthThermal></StrengthThermal> strength chance to cause <abilityred>Burning</abilityred> to non-Mineral and non-Ethereal targets for 3 <turn></turn>. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to Flame Quartzite units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "contaminated_claws",
+            "tier": "",
+            "name": "Contaminated Claws",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's melee attacks have a 8 <StrengthBio></StrengthBio> strength chance to cause <abilityred>Poisoned</abilityred> to  Biological and Cyborg units for 3 <turn></turn>. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "evolutionary_mutation",
+            "tier": "",
+            "name": "Evolutionary Mutation",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit is better than others of its kind. It has +200<happiness></happiness> and +2 resistance to all status effects. <br><br> Additionally, this mod grants the unit +5 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "hardened_scything_claws",
+            "tier": "",
+            "name": "Hardened Scything Claws",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Hardened claws give this unit's melee attacks one level of <abilityred>Stagger Impact</abilityred> and a 8 <StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Bleeding</abilityred>.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to units that have a Melee ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "infection_x",
+            "tier": "",
+            "name": "Infection X",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit is infected with an experimental virus that brings the dead back to life. When it is killed, it comes back to life 1 <turn></turn> later with 70% <hp></hp>, -2 <armor></armor>, and its attacks deal +20% damage.<br>This can only occur once per battle.<br><br> Additionally, this mod grants the unit +10 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "minor_infection_x",
+            "tier": "",
+            "name": "Minor Infection X",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit is infected with an experimental virus that brings the dead back to life. When it is killed, it comes back to life 1 <turn></turn> later with 40% <hp></hp>, -2 <armor></armor>, and its attacks deal +10% damage.<br>This can only occur once per battle.<br><br> Additionally, this mod grants the unit +5 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "paralyzing_infusion",
+            "tier": "",
+            "name": "Paralyzing Infusion",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's attacks have a 4 <StrengthWave></StrengthWave> strength chance to cause <abilityred>Stunned</abilityred> to non-Ethereal targets for 1 <turn></turn>.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to Crystal Quartzite units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "plague_carrier",
+            "tier": "",
+            "name": "Plague Carrier",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit is carrying a plague, causing adjacent Biological and Cyborg enemy units to take 6<DamageBio></DamageBio> damage at the end of this unit's turn, with a 8 <StrengthBio></StrengthBio> strength chance of applying <abilityred>Blighted Plague</abilityred>. This gives the enemy unit -400 <happiness></happiness>, -20% accuracyon attacks and causes them to take 8 <DamageBio></DamageBio> damage per <turn></turn>.<br><br> Additionally, this mod grants the unit +2 <armor></armor><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "scything_claws",
+            "tier": "",
+            "name": "Scything Claws",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's claws are sharper than others, giving this unit's melee attacks a 8 <StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Bleeding</abilityred>.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to units that have a Melee ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "superior_evolutionary_mutation",
+            "tier": "",
+            "name": "Superior Evolutionary Mutation",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit is superior to others of its kind. It has +400<happiness></happiness> and +5 resistance to all status effects. <br><br> Additionally, this mod grants the unit +15 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "tempered_shells",
+            "tier": "",
+            "name": "Tempered Shells",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit has +3 <DamagePhysical></DamagePhysical> resistance <br><br> Additionally, this mod grants the unit +1 <armor></armor><br><br> <abilityred>This Mod can only be applied to Mineral units. </abilityred> ",
+
+
+        },
     ]
 }
