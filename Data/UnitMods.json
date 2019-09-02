@@ -6,7 +6,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
-            "description": "By grounding itself, the unit gains Stagger Resistance and +5 <arcResistance></arcResistance> resistance<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to non-Mechanical units that have Land Movement. </abilityred> ",
+            "description": "By grounding itself, the unit gains Stagger Resistance and +5 <DamageWave></DamageWave> resistance<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to non-Mechanical units that have Land Movement. </abilityred> ",
 
 
         }, {
@@ -16,7 +16,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Control a creature's instinctual reactions. The unit gains 300 <morale></morale> and 5<psiResistance></psiResistance> resistance<br><br>Additionally, this mod grants the unit +1 <shield></shield> <br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko, and Mounted units. </abilityred> ",
+            "description": "Control a creature's instinctual reactions. The unit gains 300 <happiness></happiness> and 5<DamagePsyche></DamagePsyche> resistance<br><br>Additionally, this mod grants the unit +1 <shield></shield> <br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko, and Mounted units. </abilityred> ",
 
 
         },
@@ -59,7 +59,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
-            "description": "This unit gains <actionblue>Regeneration</actionblue>, healing it for 15% of its maximum <hp></hp> each turn in combat and restoring all of its <hp></hp> at the start of its owner's turn on the strategic map.<br><br>The unit also gains 5 <biochemical></biochemical> resistance.<br><br>Additionally, this mod grants the unit +10<hp></hp><br><br><br><abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+            "description": "This unit gains <actionblue>Regeneration</actionblue>, healing it for 15% of its maximum <hp></hp> each turn in combat and restoring all of its <hp></hp> at the start of its owner's turn on the strategic map.<br><br>The unit also gains 5 <DamageBio></DamageBio> resistance.<br><br>Additionally, this mod grants the unit +10<hp></hp><br><br><br><abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
 
         },
@@ -148,7 +148,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "This unit's melee attacks now do Biochemical damage and have a 8 <StrengthBiochemical></StrengthBiochemical> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units, reducing their morale and making them easier to hit for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Scavenger, Wrecker, and Reverse Engineer units </abilityred> ",
+            "description": "This unit's melee attacks now do Biochemical damage and have a 8 <StrengthBio></StrengthBio> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units, reducing their morale and making them easier to hit for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Scavenger, Wrecker, and Reverse Engineer units </abilityred> ",
 
 
         },
@@ -181,7 +181,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Replaces the Disassembler shell with a Toxic variant. It now leaves behind a cloud of Toxic Nanites that deal 15 <biochemical></biochemical> damage to enemy units standing in it, as well as having a 12 <StrengthBiochemical></StrengthBiochemical> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Disassembler unit. </abilityred> ",
+            "description": "Replaces the Disassembler shell with a Toxic variant. It now leaves behind a cloud of Toxic Nanites that deal 15 <DamageBio></DamageBio> damage to enemy units standing in it, as well as having a 12 <StrengthBio></StrengthBio> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Disassembler unit. </abilityred> ",
 
 
         },
