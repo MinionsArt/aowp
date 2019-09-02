@@ -547,5 +547,281 @@ var jsonMods = {
 
 
         },
+
+        {
+            "slug": "xenoplague_parasite",
+            "tier": "I",
+            "name": "Xenoplague Parasite",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit is infected with a strain of Xenoplague and gains <actionblue>Hyper-evolved Immune System</actionblue>, granting it +2 resistance to all non-Psionic Status Effects, and  <actionblue>Ferocious Determination</actionblue>, making the unit immune to negative morale and Mind Control effects. <br><br> Additionally, this mod grants the unit +5 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "plague_pods",
+            "tier": "III",
+            "name": "Plague Pods",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "<actionblue>Plague Pods</actionblue><br>Throw Plague Pods at the target, dealing Biochemical damage in a 1 hex radius. Xenoplague units in that area are instead healed for 8 <hp></hp> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit except Animals. </abilityred> ",
+
+
+        },
+        {
+            "slug": "bio-spore_purification",
+            "tier": "V",
+            "name": "Bio-Spore Purification",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "<actionblue>Bio-Spore Purification</actionblue><br>Inject target Biological or Cyborg unit with a specific concoction of purifying spores. The target is healed for 25 <hp></hp> and all negative Status Effects are cleared.<br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
+
+
+        },
+        {
+            "slug": "bio-spore_hyper_aggression",
+            "tier": "VII",
+            "name": "Bio-Spore Hyper Aggression",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Bio-Spore Hyper Aggression</actionblue><br>Releases a burst of spores from the unit, driving all friendly Biological and Cyborg units around them into <actionblue> Hyper Aggression</actionblue>, increasing their damage by 25% for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
+
+
+        },
+        {
+            "slug": "bio-spore_proliferation",
+            "tier": "IX",
+            "name": "Bio-Spore Proliferation",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Bio-Spore Proliferation</actionblue><br>Resurrect target friendly Biological or Cyborg unit. If used on a non-Xenoplague corpse, the unit will return as a Xenoplague unit.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
+
+
+        },
+        {
+            "slug": "parasitic_symbiosis",
+            "tier": "IX",
+            "name": "Parasitic Symbiosis",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This usnit is infected with a strong strain of Xenoplague and gains:<br> <actionblue>Hyper Evolved Immune System</actionblue>, granting it +2 resistance on all non-Psionic Status Effects.<br> <actionblue>Ferocious Determination</actionblue>, granting it immunity to negative Morale and Mind Control effects.<actionblue>Regeneration</actionblue>, granting it 15% <hp></hp> regeneration per combat turn and full <hp></hp> recovery per turn on the World Map<br><actionblue>Regenerative Spore Cloud</actionblue>, granting all friendly adjacent Biological and Cyborg units <actionblue>Regeneration</actionblue>.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units </abilityred> ",
+
+
+        },
+        {
+            "slug": "guardian_daemon_shell",
+            "tier": "I",
+            "name": "Guardian Daemon Shell",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit is 25% harder to hit by ranged attacks. They also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology.<br><br> Additionally, this mod grants the unit +1 <armor></armor>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
+
+
+        },
+        {
+            "slug": "targeting_daemon_shell",
+            "tier": "I",
+            "name": "Targeting Daemon Shell",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "The unit gains 10% accuracy and 10% critical hit chance. They also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology.<br><br> Additionally, this mod grants the unit 10% increased damage.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
+
+
+        },
+        {
+            "slug": "compromise_module",
+            "tier": "III",
+            "name": "Compromise Module",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Weapon attacks now have a 8 <StrengthWave></StrengthWave> strength chance to apply <abilityred>Compromised</abilityred> to Mechanical and Cyborg units.<br><br> Additionally, this mod grants the unit 10% increased damage.<br><br> <abilityred>This Mod can be applied to any unit except Animals</abilityred> ",
+
+
+        },
+        {
+            "slug": "incapacitate_daemon_shell",
+            "tier": "IV",
+            "name": "Incapacitate Daemon Shell",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Provides the unit with a Daemon Shell containing an Incapacitate Daemon that they can deploy to disrupt enemy units.  They also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology. <br><br><actionblue>Incapacitate Daemon Shell</actionblue><br>Infect target enemy Mechanical or Cyborg unit with a hostile Daemon. This causes the unit the have a 8 <StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> for 1 <turn></turn>. On failure, the unit is staggered instead.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
+
+
+        },
+        {
+            "slug": "total_network_integration",
+            "tier": "VI",
+            "name": "Total Network Integration",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "The unit is immune to stagger and all status effects. If the unit dies in combat, they are revived with 15% of their maximum <hp></hp> at the start of the next turn. By creating an emergency backup of this unit's conciousness, they also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology. <br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units, except the Assembly Wrecker </abilityred> ",
+
+
+        },
+        {
+            "slug": "deployable_malware_daemon",
+            "tier": "IX",
+            "name": "Deployable Malware Daemon",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Deploys a drone inhabited by a Malware Daemon <br><br><actionblue>Deployable Malware Daemon</actionblue><br>Deploy the Malware Daemon drone. It has a ranged Arc attack, and if destroyed, will attempt to <abilityred>Mind Control</abilityred> a nearby enemy Mechanical or Cyborg unit.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
+
+
+        },
+        {
+            "slug": "shield_of_reckoning",
+            "tier": "IX",
+            "name": "Shield of Reckoning",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit reflects 50% of all damage done to them back to their attacker. <br> This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> Additionally, this mod grants the unit +2<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
+
+
+        },
+        {
+            "slug": "shield_of_remorse",
+            "tier": "II",
+            "name": "Shield of Remorse",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Each time this unit is damaged by another unit. the attacker has a strength 8 <strengthpsyche></strengthpsyche> chance to apply <abilityred>Soulburn</abilityred>. The attacker also gains <abilityred>Remorse</abilityred>, a stacking debuff that applies -100 <happiness></happiness> for 3 <turn></turn>. <br> This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
+
+
+        },
+        {
+            "slug": "tenets_of_healing",
+            "tier": "IV",
+            "name": "Tenets of Healing",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": " This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> <actionblue>Healing Touch</actionblue><br>Dispel hostile effects from target non-Mindless Biological or Cyborg unit and heal them for 25 <hp></hp>.<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless Infantry and Mounted units </abilityred> ",
+
+
+        },
+        {
+            "slug": "tenets_of_pacifism",
+            "tier": "VI",
+            "name": "Tenets of Pacifism",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": " This unit can no longer trigger Overwatch attacks. <br>This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> <actionblue>Project Pacifism</actionblue><br>All units adjacent to this one have a strength 8 <strengthpsyche></strengthpsyche> chance of becoming <abilityred>Pacified</abilityred>, disabling damaging abilities for 2 <turn></turn> .<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless Infantry and Mounted units </abilityred> ",
+
+
+        },
+        {
+            "slug": "tenets_of_tranquility",
+            "tier": "I",
+            "name": "Tenets of Tranquility",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": " This unit is immune to all negative morale effects and gains one level of Stagger Resistance. <br>This unit is now considered <actionblue>Enlightened</actionblue>. <br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
+
+
+        },
+        {
+            "slug": "purification_field",
+            "tier": "I",
+            "name": "Purification Field",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": " <actionblue>Purification Field</actionblue><br>Restore 10 <hp></hp> and remove any non-Psionic Status Effects from this unit or target adjacent unit. <br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can be applied to any unit except Animals </abilityred> ",
+
+
+        },
+        {
+            "slug": "thermal_targeting_relay",
+            "tier": "III",
+            "name": "Thermal Targeting Relay",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": " This unit's attacks get +10% accuracy and +20% damage against <abilityred>Burning</abilityred> or <abilityred>Immolated</abilityred> targets. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities<br><br> <abilityred>This Mod can be applied to any unit except Animals </abilityred> ",
+
+
+        },
+        {
+            "slug": "hazmat_protection",
+            "tier": "IV",
+            "name": "Hazmat Protection",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Provides the unit with a protective system, granting them +4 <DamageBio></DamageBio> resistance and <actionblue>Hazard Immunity</actionblue>.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units </abilityred> ",
+
+
+        },
+        {
+            "slug": "pyrx_absorption_panels",
+            "tier": "IV",
+            "name": "PyrX Absorption Panels",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "When standing in Thermal Hazards, the unit deals +20% damage, and it heals for 20% of their max <hp></hp> at the start of each turn.<br><br> The unit also gainst +3 <DamageThermal></DamageThermal> resistance and immunity to <actionblue>Thermal Status Effects and Hazards</actionblue>.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Cyborg and Mechanical units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "backlash_projectors",
+            "tier": "VII",
+            "name": "Backlash Projectors",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "When damaged, this unit pulses fire around itself, dealing 12 <DamageThermal></DamageThermal> damage to all adjacent enemy units.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "superheated_plasma_actuators",
+            "tier": "VII",
+            "name": "Superheated Plasma Actuators",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Plasma attack with <abilityred>Burning</abilityred> now apply <abilityred>Immolation</abilityred> instead, dealing 12 <DamageThermal></DamageThermal> damage per turn. Immolation lasts for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units with a Plasma ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "superheated_plasma_actuators",
+            "tier": "VII",
+            "name": "Superheated Plasma Actuators",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Plasma attack with <abilityred>Burning</abilityred> now apply <abilityred>Immolation</abilityred> instead, dealing 12 <DamageThermal></DamageThermal> damage per turn. Immolation lasts for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units with a Plasma ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "phoenix_bomb_launchers",
+            "tier": "IX",
+            "name": "Phoenix Bomb Launcher",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Launch Phoenix Bombs</actionblue><br>Fire a Phoenix Bomb, dealing damage in a 1 hex radius area and leaving behind a burning Hazard for 2 <turn></turn>.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
+
+
+        },
     ]
 }
