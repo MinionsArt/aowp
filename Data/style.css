@@ -200,7 +200,7 @@ p {
 
 .mod_image {
     float: left;
-    padding: 10px;
+    padding: 25px;
     padding-top: 40px;
     max-width: 200px;
 
@@ -887,7 +887,7 @@ titleBrown {
 }
 
 abilityred {
-    color: red;
+    color: rgb(224, 34, 69);
     font-weight: 400px;
 }
 

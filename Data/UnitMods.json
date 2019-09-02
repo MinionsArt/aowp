@@ -185,5 +185,235 @@ var jsonMods = {
 
 
         },
+        {
+            "slug": "autonom_network_connector",
+            "tier": "",
+            "name": "Autonom Network Connector",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit gains Network Comaptible, allowing it to benefit from <actionblue>Networked</actionblue> <br><br> Additionally, this mod grants the unit +1 <armor></armor><br><br> <abilityred>This Mod can only be applied to Cyborg units. </abilityred> ",
+
+
+        },
+
+        {
+            "slug": "combat_protocol_implants",
+            "tier": "",
+            "name": "Combat Protocol Implants",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "These implants make the unit quicker on the battlefield, granting it 10%increased accuracy and critical hit chance, as well as making this unit 10% harder to hit. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "concussive_ordnance",
+            "tier": "",
+            "name": "Concussive Ordnance",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "The unit's Explosive attacks gain a 4<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Concussion</abilityred> to non-Ethereal and non-Mechanical units for 1 <turn></turn> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "debilitating_strain",
+            "tier": "",
+            "name": "Debilitating Strain",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Attacks from Biochemical weapons have a 8<StrengthBio></StrengthBio> strength chance of applying <abilityred>Debilitating Infection</abilityred> to Biological or Cyborg units, making them 20% easier to hit and giving them -400<happiness></happiness>. This lasts for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have an Biochemical ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "euphoric_spores",
+            "tier": "",
+            "name": "Euphoric Spores",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit releases euphoria-inducing spores, giving <actionblue>Euphoric</actionblue> to itself and all adjacent Biological and Cyborg units. These units gain +400<happiness></happiness> and ignore morale penalties in combat. <br><br> Additionally, this mod grants the unit +10 <hp></hp><br><br> <abilityred>This Mod can only be applied to Plant and Bee units. </abilityred> ",
+
+
+        }, {
+            "slug": "eyes_of_eternity",
+            "tier": "",
+            "name": "Eyes of Eternity",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "The Psi-Fish can create much stronger bonds while they gaze to infinity. The strength chance of the Captivating, Facinationg and Enticing Bond abilities is increased to 12 <StrengthPsy></StrengthPsy>. Additionally, all of their Psionic ranged abilities have their range increased by 2. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Psi-Fish units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "focus.chimera",
+            "tier": "",
+            "name": "Focus: Chimera",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Psionic users on this path have a 4 strength chance to apply <abilityred>Burning</abilityred>, <abilityred>Electrified</abilityred>, and <abilityred>Poison</abilityred> when their attacks strike a target.<br><br> <abilityred>Only one focus mod can be active at a time.</abilityred>  <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "hallucinogenic_regulators",
+            "tier": "",
+            "name": "Hallucinogenic Regulators",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "The Spacer Psycho's special formula. Firearms and Melee weapons have a 8 <StrengthBio></StrengthBio> strength chance to apply <abilityred>Hallucinating</abilityred> to non-Mindless units, reducing their accuracy by 30% and causing all attacks against affected units to count as flanking. This lasts for 2 <turn></turn>  <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Melee or Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "immolation_matrix",
+            "tier": "",
+            "name": "Immolation Matrix",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This matrix cause Laser attacks to ignite units hit, giving a 8 <StrengthThermal></StrengthThermal> strength chance to <abilityred>Immolate</abilityred> non-Ethereal and non-Mineral untis for 3 <turn></turn>. If resisted, apply <abilityred>Burning</abilityred> instead.  <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "makeshift_choking_module",
+            "tier": "",
+            "name": "Makeshift Choking Module",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This module was supposed to start fires, but its jury-rigged nature only makes things smoke. Unit's Laser weapons have a 8 <StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Choking</abilityred> to Biological or Cyborg units, making their attacks 25% less accurate and reducing their damage by 25%, for 1 <turn></turn>. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Laser ability. </abilityred> ",
+
+
+        }, {
+            "slug": "mantra_of_illusion",
+            "tier": "",
+            "name": "Mantra of Illusion",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "A mantra devised for those who seek to fool others. Psionic support abilites grant <actionblue>Lightly Obscured</actionblue>, and their psionic attacks have a 8 <StrengthPsy></StrengthPsy> strength chance to apply <abilityred>Hallucinating</abilityred> for 2 <turn></turn>   <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "mantra_of_the_branded",
+            "tier": "",
+            "name": "Mantra of the Branded",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Understanding the Spacer philosophies is hard. Maintaining this Mantra while keeping one's sanity is even harder. Psionic support abilites grand <actionblue>Effigy Carrier</actionblue> to ground units, and Psionic attacks gain a 4 <StrengthPsy></StrengthPsy> strength chance to apply <abilityred>Insanity</abilityred> to non-Mindless units, making that unit waste their next turn running in a random direction.  <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "mind_barrier",
+            "tier": "",
+            "name": "Mind Barrier",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This mod creates a small psionic barrier around the unit, granting it +6 <DamagePsyche></DamagePsyche> status resistance and +3 <DamagePsyche></DamagePsyche> damage resistance. <br><br> Additionally, this mod grants the unit +1 <shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
+
+
+        },
+        {
+            "slug": "mining_laser_upgrade",
+            "tier": "",
+            "name": "Mining Laser Upgrade",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "All Laser attacks gain <abilityred>Melt Armor</abilityred> removing 1<armor></armor> with each hit.  <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "overcharger_augment",
+            "tier": "",
+            "name": "Overcharger Augment",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Overcharger Augment</actionblue><br> Allows the unit to <actionblue>Overcharge</actionblue> themselves, granting them new abilites, increased damage, and changing their Kinetic attacks to arc for 2 <turn></turn> <br><br> Additionally, this mod grants the unit +2 <shield></shield><br><br> <abilityred>This Mod can only be applied to units with Imperial Augments. </abilityred> ",
+
+
+        },
+        {
+            "slug": "poison_glands",
+            "tier": "",
+            "name": "Poison Glands",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Specialized glands coat this unit's melee attacks in poison, granting these a 12 <StrengthBio></StrengthBio> strength chance of applying <abilityred>Poisoned</abilityred>. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units that have a Melee ability.</abilityred> ",
+
+
+        },
+        {
+            "slug": "reactive_shielding",
+            "tier": "",
+            "name": "Reactive Shielding",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Whenever this unit is struck by a ranged attack, it gains +1 <shield></shield> for 1<turn></turn>. This effect can stack. <br><br> Additionally, this mod grants the unit +1 <shield></shield><br><br> <abilityred>This Mod can only be applied to Cyborg and Mechanical units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "regeneration_spores",
+            "tier": "",
+            "name": "Regeneration Spores",
+
+            "type": "Defensive Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit releases regenerative spores which heal it and all adjacent friendly Biological or Cyborg units for 20% <hp></hp> at the end of each turn in tactical combat. <br><br> Additionally, this mod grants the unit +10 <hp></hp><br><br> <abilityred>This Mod can only be applied to Plant and Bee units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "self-repair_systems",
+            "tier": "",
+            "name": "Self-Repair Systems",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit has self-repair systems that heal it during battle for 20% <hp></hp> each turn, and heal ti to full <hp></hp> at the start of every Strategic turn. <br><br> Additionally, this mod grants the unit +1 <armor></armor><br><br> <abilityred>This Mod can only be applied to Mechanical units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "smart_rounds",
+            "tier": "",
+            "name": "Smart Rounds",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "When shooting at a target, this unit's Firearm attacks ignore cover and unit in the way penalties. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to units that have a Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "sprouting_infestation",
+            "tier": "",
+            "name": "Sprouting Infestation",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The unit's Biochemical attacks have a 8 <StrengthBio></StrengthBio> strength chance to apply <abilityred>Sprouting Infestation</abilityred> to Biological or Cyborg units. This deals 8 <DamageBio></DamageBio> damage each turn until the end of combat. <br> A unit that dies while under this effect creates a friend Vine Sprout unit.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilites<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+
+
+        },
     ]
 }
