@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#mod1").load("/aowp/modcard.html", function() {
+                showMod("mark_of_the_dark_sun");
+            });
+            $("#mod2").load("/aowp/modcard.html", function() {
+                showMod("consuming_gaze");
+            });
+            $("#mod3").load("/aowp/modcard.html", function() {
+                showMod("pain_mirror");
+            });
+            $("#mod4").load("/aowp/modcard.html", function() {
+                showMod("the_forbidden_mantra");
+            });
+            $("#mod5").load("/aowp/modcard.html", function() {
+                showMod("avatar_of_the_abyss");
+            });
+
+        });
+
+    </script>
+
+
+    <title>Age of Wonders Planetfall - Psynumbra Mods</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h2 style="text-align: center; color: aliceblue">
+        Psynumbra Mods
+    </h2>
+    <div id="mod1">
+    </div>
+    <div id="mod2"></div>
+    <div id="mod3"></div>
+    <div id="mod4"></div>
+    <div id="mod5"></div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

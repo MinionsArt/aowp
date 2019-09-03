@@ -280,7 +280,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "This matrix cause Laser attacks to ignite units hit, giving a 8 <StrengthThermal></StrengthThermal> strength chance to <abilityred>Immolate</abilityred> non-Ethereal and non-Mineral untis for 3 <turn></turn>. If resisted, apply <abilityred>Burning</abilityred> instead.  <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Laser ability. </abilityred> ",
+            "description": "This matrix cause Laser attacks to ignite units hit, giving a 8 <StrengthThermal></StrengthThermal> strength chance to <abilityred>Immolate</abilityred> non-Ethereal and non-Mineral units for 3 <turn></turn>. If resisted, apply <abilityred>Burning</abilityred> instead.  <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to units that have a Laser ability. </abilityred> ",
 
 
         },
@@ -820,6 +820,127 @@ var jsonMods = {
             "type": "Defensive Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
             "description": "<actionblue>Launch Phoenix Bombs</actionblue><br>Fire a Phoenix Bomb, dealing damage in a 1 hex radius area and leaving behind a burning Hazard for 2 <turn></turn>.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "mark_of_the_dark_sun",
+            "tier": "I",
+            "name": "Mark of the Dark Sun",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "The unit gains 4<DamagePsyche></DamagePsyche> resistance. Also each time they deal a killing blow, they gain <actionblue>Dark Reward</actionblue> until end of combat, increasing their damage by 20% per stack, to a maximum of 3 stacks.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities<br><br> <abilityred>This Mod can be applied to any units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "consuming_gaze",
+            "tier": "IV",
+            "name": "Consuming Gaze",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "<actionblue>Consuming Gaze</actionblue><br>This unit channels dark Psionic energy through its eyes, dealing damage to target enemy unit and healing the caster for 20<hp></hp>.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "pain_mirror",
+            "tier": "VII",
+            "name": "Pain Mirror",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Whenever this unit is damaged from within 3 hexes, deal 6 <DamagePsyche></DamagePsyche> damage back to the attacker. This damage also has a 8 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Broken Mind</abilityred>.<br><br> Additionally, this mod grants the unit +2<shield></shield><br><br> <abilityred>This Mod can be applied to any units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "the_forbidden_mantra",
+            "tier": "VII",
+            "name": "The Forbidden Mantra",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Psionic attacks have a 4 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Catatonic</abilityred> to non-Mindless for 1 <turn></turn>. Psionic Buffs apply <actionblue>Dark Elation</actionblue> to the target, granting them +400<happiness></happiness> Morale and +4 <DamagePsyche></DamagePsyche> Psionic resistance for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "avatar_of_the_abyss",
+            "tier": "IX",
+            "name": "Avatar of the Abyss",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The unit gains 5 <DamagePsyche></DamagePsyche> resistance and becomes immune to Psionic Status and Hazard Effects. All attacks have a 4 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Panic</abilityred>. If this is resisted, applies <abilityred>Broken Mind</abilityred>.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "phasewalk_modulator",
+            "tier": "I",
+            "name": "Phasewalk Modulator",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Unit gains <actionblue>Phase Field</actionblue>. The unit is able to walk through obstacles and is 20% harder to hit in combat.<br><br> Additionally, this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted. </abilityred> ",
+
+
+        },
+        {
+            "slug": "void_augmentation",
+            "tier": "III",
+            "name": "Void Augmentation",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "The unit's attacks gain a 4 <StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Dimensional Instability</abilityred>.<br> If the attack already applies this status effect, instead increase its strength by +4 <StrengthPhysical></StrengthPhysical>.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit except Animals. </abilityred> ",
+
+
+        },
+        {
+            "slug": "gravity_pulse_grenade",
+            "tier": "V",
+            "name": "Gravity Pulse Grenade",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "<actionblue>Gravity Pulse Grenade</actionblue><br>Throw a Gravity Pulse Genade dealing damage in a 1 hex radius area.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "phase_drive",
+            "tier": "VII",
+            "name": "Phase Drive",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Phase</actionblue><br>Teleport to target unoccupied hex.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "statis_pocket_inducer",
+            "tier": "VII",
+            "name": "Statis Pocket Inducer",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The unit's attack gain a 4 <StrengthPhysical></StrengthPhysical> strength chance to remove 1 <mp></mp> action points from the target.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+
+
+        },
+        {
+            "slug": "quantum_avatar",
+            "tier": "IX",
+            "name": "Quantum Avatar",
+
+            "type": "Defensive Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Whenever the unit takes damage, its attacker is teleported 1 hex away fromt their current position, receives <abilityred>Dimensional Instability</abilityred> and becomes <abilityred>Staggered</abilityred>.<br> Voidtech of Voidtech-modded units adjacent to this one receive 3 <shield></shield> and gain a level of <actionblue>Stagger Resistance</actionblue>. <br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
 
 
         },
