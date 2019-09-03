@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#mod1").load("/aowp/modcard.html", function() {
+                showMod("ammunition_flechette");
+            });
+            $("#mod2").load("/aowp/modcard.html", function() {
+                showMod("ammunition_electrified");
+            });
+            $("#mod3").load("/aowp/modcard.html", function() {
+                showMod("rail_accelerators");
+            });
+            $("#mod4").load("/aowp/modcard.html", function() {
+                showMod("ammunition_fire_burst");
+            });
+            $("#mod5").load("/aowp/modcard.html", function() {
+                showMod("kinetic_phase_modulator");
+            });
+            $("#mod6").load("/aowp/modcard.html", function() {
+                showMod("shockwave_infuser");
+            });
+
+        });
+    </script>
+
+
+    <title>Age of Wonders Planetfall - Firearms Weapon Group Mods</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h2 style="text-align: center; color: aliceblue">
+        Firearms Weapon Group Mods
+    </h2>
+    <div id="mod1">
+    </div>
+    <div id="mod2"></div>
+    <div id="mod3"></div>
+    <div id="mod4"></div>
+    <div id="mod5"></div>
+    <div id="mod6"></div>
+
+
+    </div>
+
+
+</body></html>

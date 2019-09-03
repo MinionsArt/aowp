@@ -1334,5 +1334,412 @@ var jsonMods = {
 
 
         },
+        {
+            "slug": "static_buildup_module",
+            "tier": "II",
+            "name": "Static Buildup Module",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Attacks from Arc weapons have a 8 <StrengthWave></StrengthWave> strength chance to apply <abilityred>Static Charge</abilityred>, a stacking debuff that lowers the target's Arc resistance by 1 <DamageWave></DamageWave> resistance for 1 <turn></turn>.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "arc_retaliation_defense",
+            "tier": "IV",
+            "name": "Arc Retaliation Defense",
+
+            "type": "Defense Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Unit becomes statically charged, gaining 2 <DamageWave></DamageWave> resistance. Whenever this unit is damaged by an enemy unit within 2 hexes, that unit has a 4 <StrengthWave></StrengthWave> strength chance to become <abilityred>Stunned</abilityred> and receives 6 <DamageWave></DamageWave> damage.<br><br> Additionally, this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+
+
+        },
+        {
+            "slug": "arc_impact_module",
+            "tier": "VI",
+            "name": "Arc Impact Module",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Attacks from Arc weapons gain an extra impact level, allowing them to <abilityred>Stagger</abilityred> enemy units.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "arc_extension_module",
+            "tier": "VIII",
+            "name": "Arc Extension Module",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Attacks from Arc weapons will now jump up to 1 enemy targets within 2 hexes on a succesful hit, dealing 50% damage.<br> Does not apply to Area of Effect and Melee attacks.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "stun_module",
+            "tier": "VIII",
+            "name": "Stun Module",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Attacks from Arc weapons have a 4 <StrengthWave></StrengthWave> strength chance to <abilityred>Stun</abilityred> non-Ethereal units for 1 <turn></turn>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "positron_arc_storm_projector",
+            "tier": "IX",
+            "name": "Positron Arc Storm Projector",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Positron Arc Storm</actionblue><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "positron_discharge_shield",
+            "tier": "IX",
+            "name": "Positron Arc Storm Projector",
+
+            "type": "Defense Mod - Shield",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit is shrouded in a powerful Arc field, making it 25% harder to hit with ranged attacks and granting it 5 <DamageWave></DamageWave> resistance. At the start of each turn of combat, a random Enemy within a 2 hex radius area of effect gets hit with discarge, taking 12 <DamageWave></DamageWave> damage.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "acidic_composite",
+            "tier": "I",
+            "name": "Acidic Composite",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Attacks from Biochemical weapons are infused with acid, giving <abilityred>Melt Armor</abilityred>, removing 1 <armor></armor> with each hit.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "infusion_ionic",
+            "tier": "III",
+            "name": "Infusion: Ionic",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Attacks from Biochemical weapons now deal Arc damage and have a 12 <StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Etherieal units for 3 <turn></turn>.<br><br> Only one Infusion can be active at a time.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "cerebral_strain",
+            "tier": "V",
+            "name": "Cerebral Strain",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Biochemical attacks deal +10% damage against non-Mindless units and have a 8 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Catatonic</abilityred> to non-Mindless Psionic units for 1 <turn></turn><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "viscous_strain",
+            "tier": "V",
+            "name": "Viscous Strain",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Biochemical attacks have a 8 <StrengthBio></StrengthBio> strength chance to apply <abilityred>Slow</abilityred> to non-Ethereal units for 3 <turn></turn>. <br><br> If a unit is already <abilityred>Slowed</abilityred>, that unit has a 4 <StrengthBio></StrengthBio> strength chance to become for <abilityred>Immobilized</abilityred> 1 <turn></turn><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "blight_infection",
+            "tier": "VII",
+            "name": "Blight Infection",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Biochemical attacks have a 8 <StrengthBio></StrengthBio> strength chance to apply <abilityred>Blight Infection</abilityred> until end of combat. <br> A unit infected will explode in a 2 hex radius when it dies, dealing 14 <DamageBio></DamageBio> Biochemical damage to all units in the explosion.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "blight_bringer",
+            "tier": "IX",
+            "name": "Blight Bringer",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Unit gains +5 <DamageBio></DamageBio> resistance and Immunity to <actionblue>Biochemical Status Effects and Hazards</actionblue>. <br> at the end of this unit's turn, andy Biological or Cyborg units within 2 hexes of this unit have a 8 <StrengthBio></StrengthBio> strength chance to be affected by <abilityred>Blighted Plague</abilityred> for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "flash_payload",
+            "tier": "II",
+            "name": "Flash Payload",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Explosive attacks now have a 4 <StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Blinded</abilityred> to non-Ethereal units, for 2 <turn></turn>.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "explosives_incendiary",
+            "tier": "IV",
+            "name": "Explosives: Incendiary",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Explosive attacks now deal Thermal damage and have a <StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Burning</abilityred>.<br><br><abilityred>Cannot be combined with Explosives: Electrical.</abilityred><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "guided_delivery_mechanisms",
+            "tier": "VI",
+            "name": "Guided Delivery Mechanisms",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Increases the range of ranged Explosive attacks by 1 hex and their accuracy by 20%.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "explosives_electrical",
+            "tier": "VIII",
+            "name": "Explosives: Electrical",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Explosive attacks now deal Arc damage and have a <StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred>.<br><br><abilityred>Cannot be combined with Explosives: Incendiary.</abilityred><br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "smart_payload",
+            "tier": "VIII",
+            "name": "Smart Payload",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Explosive attacks ignore friendly targets and gain a level of <abilityred>Stagger Impact</abilityred>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "micro_nuclear_payload",
+            "tier": "IX",
+            "name": "Micro Nuclear Payload",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Explosive attacks gain a level of <abilityred>Stagger Impact</abilityred>, destroy 1 <armor></armor> and 1 <shield></shield> per hit and have a 4 <StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Immolate</abilityred>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "ammunition_flechette",
+            "tier": "I",
+            "name": "Ammunition: Flechette",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Allows the unit to fire flechette ammunition, which has a 8 <StrengthPhysical></StrengthPhysical> strength chance to inflict <abilityred>Bleeding</abilityred> on Cyborg and Biological units for 3 <turn></turn>.<br><br><abilityred>Only one kind of ammunition can be active at any time. </abilityred> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "ammunition_electrified",
+            "tier": "III",
+            "name": "Ammunition: Electrified",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Allows the unit to fire electrified ammunition to deal Arc damage and have a 8 <StrengthWave></StrengthWave> strength chance to inflict <abilityred>Electrified</abilityred> on Cyborg and Mechanical units for 3 <turn></turn>.<br><br><abilityred>Only one kind of ammunition can be active at any time. </abilityred> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "rail_accelerators",
+            "tier": "III",
+            "name": "Rail Accelerators",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Advanced accelerators built into the weapon stabilize the shot, improving accuracy by 10% and adding 1 extra range. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "ammunition_fire_burst",
+            "tier": "V",
+            "name": "Ammunition: Fire Burst",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Allows the unit to fire incendiary ammunition to deal Thermal damage and have a 8 <StrengthThermal></StrengthThermal> strength chance to set targets on fire, causing <abilityred>Burning</abilityred> for 3 <turn></turn>.<br><br><abilityred>Only one kind of ammunition can be active at any time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "kinetic_phase_modulator",
+            "tier": "VII",
+            "name": "Kinetic Phase Modulator",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Upgrades Firearms so that the rounds t ravel in a modified dimensional phase, allowing them to bypass 4 <shield></shield> and ignore 50% of accuracy penalties from line of sight and units in the way. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "shockwave_infuser",
+            "tier": "IX",
+            "name": "Shockwave Infuser",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Firearms attacks have a 4 <StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Concussion</abilityred> for 1 <turn></turn> on the primary target while <abilityred>Staggering</abilityred> adjacent units with High Impact.. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "incinerator_module",
+            "tier": "II",
+            "name": "Incinerator Module",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's Laser weapons have a 8 <StrengthThermal></StrengthThermal> strength chance to inflict <abilityred>Burning</abilityred> for 3 <turn></turn>. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "hard_light_module",
+            "tier": "IV",
+            "name": "Hard Light Module",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's Laser weapons gain an extra level of <abilityred>Stagger Impact</abilityred>. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "laser_penetrator_module",
+            "tier": "VI",
+            "name": "Laser Penetrator Module",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's Laser weapons ignore up to 2 <armor></armor> and have a 8 <StrengthThermal></StrengthThermal> chance of applying <abilityred>Charred</abilityred> for 2 <turn></turn>. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "shield_breaker_module",
+            "tier": "VI",
+            "name": "Shield Breaker Module",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's Laser weapons gain <abilityred>Shield Overheat</abilityred>, disabling 2 <shield></shield> per hit. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "flash_module",
+            "tier": "VIII",
+            "name": "Flash Module",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit's Laser weapons have a 12 <StrengthPhysical></StrengthPhysical> strength chance to <abilityred>Blind</abilityred> units for 2 <turn></turn>. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "plasma_disintegrator_module",
+            "tier": "IX",
+            "name": "Plasma Disintegrator Module",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Laser weapons destroy 1 <armor></armor> and have a 2 <StrengthThermal></StrengthThermal> strength chance to <abilityred>Disintegrate</abilityred> Tier 1 and Tier 2 units. Disintegrated units are instantly killed and leave no corpse behind. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "focus_flames",
+            "tier": "II",
+            "name": "Focus: Flames",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Psionic attacks are empowered with flame, dealing Thermal damage and have a 4 <StrengthThermal></StrengthThermal> strength chance to inflict <abilityred>Burning</abilityred>. <br> Psionic buffs increase Thermal Resistance by 6 <DamageThermal></DamageThermal><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "mantra_of_clarity",
+            "tier": "II",
+            "name": "Mantra of Clarity",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Psionic attacks are from this unit leave a debuff on their target, making that unit 20% easier to hit. Psionic buffs from this unit now make friendly units 20% harder to hit. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "focus_venom",
+            "tier": "IV",
+            "name": "Focus: Venom",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Psionic attacks are infused with acid, dealing Biochemical damage and have a 4 <StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred>. <br> Psionic buffs increase Biochemical Resistance by 6 <DamageBio></DamageBio><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "mantra_of_life",
+            "tier": "VI",
+            "name": "Mantra of Life",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Psionic buffs now also heal units for 15<hp></hp> and grant them 3 <shield></shield> for 2 <turn></turn>. This can stack <br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic Buff ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "mantra_of_control",
+            "tier": "VIII",
+            "name": "Mantra of Control",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "All Psionic attacks have 20% Increased accuracy.<br><br><actionblue>Dominate</actionblue><br> Through Psionic will of the caster, target unit has a 8 <strengthpsyche></strengthpsyche> strength chance to be Mind Controlled. Mind controlled units switch factions to your side. The Mind Control effect is canceled if the caster is killed. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "aether_storm",
+            "tier": "IX",
+            "name": "Aether Storm",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "<actionblue>Aether Storm</actionblue><br> Channel the power of the aether through this unit.<br> Teleport to target location and strike all foes within 2 hexes. <br> This unit enters its Defense Mode afterwards. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+
+
+        },
     ]
 }
