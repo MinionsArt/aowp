@@ -396,6 +396,98 @@ var jsonMods = {
 
         },
         {
+            "slug": "exploitative_targeting_system",
+            "tier": "I",
+            "name": "Exploitative Targeting System",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "The unit gains +20% accuracy and gains <actionblue>Flanker</actionblue> which increases their damage by 25% while flanking.<br><br>Additionally, this mod grants the unit 10% increased damage on all abilities. <br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+
+
+        },
+        {
+            "slug": "cerebral_control_collars",
+            "tier": "III",
+            "name": "Cerebral Control Collars",
+
+            "type": "Defense Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit is immune to Morale effects and gains +2 <DamagePsyche></DamagePsyche> Psionic resistance. The unit is now considered an <actionblue>Indentured</actionblue> unit.<br><br>Additionally, this mod grants the unit +1<shield></shield>. <br><br> <abilityred>This Mod can only be applied to non-Syndicate Biological and Cyborg units that are Tier 1 or Tier 2. </abilityred> ",
+
+
+        },
+        {
+            "slug": "psitec_vision_enhancers(detector)",
+            "tier": "III",
+            "name": "PsiTec Vision Enhancers",
+
+            "type": "Defense Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "The unit gains +3 <DamagePsyche></DamagePsyche> Psionic resistance, <actionblue>Detection</actionblue> unit and +1 vision range on the world map.<br><br>Additionally, this mod grants the unit +1<shield></shield>. <br><br> <abilityred>This Mod can only be applied to non-Mechanical and non-Mindless units. </abilityred> ",
+
+        },
+        {
+            "slug": "spatial_acceleration_sails",
+            "tier": "IV",
+            "name": "Spatial Acceleration Sails",
+
+            "type": "Defense Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "The unit gains <actionblue>Fast</actionblue> movement speed and the Mirage shields make units become 15% harder to hit when in defense mode.<br><br>Additionally, this mod grants the unit +1<shield></shield>. <br><br> <abilityred>This Mod can only be applied to the Syndicate Mirage unit. </abilityred> ",
+
+        },
+        {
+            "slug": "adaptive_camouflage_projector",
+            "tier": "VI",
+            "name": "Adaptive Camouflage Projector",
+
+            "type": "Defense Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "The unit gains <actionblue>Universal Camouflage</actionblue>, is 20% harder to hit and gains the 'Evasion' defense mode.<br><br>Additionally, this mod grants the unit +1<shield></shield>. <br><br> <abilityred>This Mod can only be applied to Infantry units that don't have Universal Camouflage as a Unit Passive. </abilityred> ",
+
+        },
+        {
+            "slug": "control_amplifier",
+            "tier": "VI",
+            "name": "Control Amplifier",
+
+            "type": "Defense Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "<actionblue>Enforced Control</actionblue><br>Exerting rigorous control over all Indentured units boosts their damage output by 25% for 2 <turn></turn><br><br>Additionally, this mod grants the unit +1<shield></shield>. <br><br> <abilityred>This Mod can only be applied to the Syndicate Overseer unit. </abilityred> ",
+
+        },
+        {
+            "slug": "advanced_dislocation_drive",
+            "tier": "VII",
+            "name": "Advanced Dislocation Drive",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The range of teleportation is increased by 2 hexes, damage is increased by 50%, and the unit becomes 40% harder to hit for 1 <turn></turn> after teleporting.<br><br>Additionally, this mod grants the unit +2<shield></shield>. <br><br> <abilityred>This Mod can only be applied to the Syndicate Wraith unit. </abilityred> ",
+
+        },
+        {
+            "slug": "cerebral_amplifier",
+            "tier": "VII",
+            "name": "Cerebral Amplifier",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The unit and all Indentured units in the army gain +25% critical hit chance.<br><br><actionblue>Purging Protocols</actionblue><br>Run purging protocols on target Indentured unit, dispelling them of all hostile status effects.<br><br>Additionally, this mod grants the unit +2<shield></shield>. <br><br> <abilityred>This Mod can only be applied to Syndicate Light units, except for Indentured. </abilityred> ",
+
+        },
+        {
+            "slug": "psitec_drive_modulator",
+            "tier": "VII",
+            "name": "PsiTec Drive Modulator",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The unit gains stagger immunity. WHenever the unit uses an ability, they heal for 10<hp></hp> and gain +15% damage for 3 <turn></turn>. This can stack up to 3 times.<br><br>Additionally, this mod grants the unit +2<shield></shield>. <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+
+        },
+        {
             "slug": "autonom_network_connector",
             "tier": "",
             "name": "Autonom Network Connector",
