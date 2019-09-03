@@ -186,6 +186,105 @@ var jsonMods = {
 
         },
         {
+            "slug": "fortification_tools",
+            "tier": "I",
+            "name": "Fortification Tools",
+
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's trenches become Fortified Trenches instead, ensuring they can only be destroyed with abilites with <abilityred>Demolisher</abilityred>. These fortification also heal Dvar units inside them for 15% of their max <hp></hp> per <turn></turn>.<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to units that have the Entrench ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "ironbreaker_modifications",
+            "tier": "I",
+            "name": "Ironbreaker Modifications",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Melee attacks bypass 3 <armor></armor>.<br><br>Additionally, this mod grants the unit 10% increased damage on all abilities. <br><br> <abilityred>This Mod can only be applied to units that have a Melee ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "advanced_target_recognition(detector)",
+            "tier": "III",
+            "name": "Advanced Target Recognition(Detector)",
+
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Unit gains <actionblue>Detection</actionblue>, gets +2 Sensor Range and ignores 50% of the accuracy penalties from line of sight while in combat.<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to Mechanical and Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "explosive_resistant_armor",
+            "tier": "III",
+            "name": "Explosive Resistant Armor",
+
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Unit gains a level of <actionblue>Stagger Resistance</actionblue> and 8 <DamagePhysical></DamagePhysical> resistance against Explosive attacks.<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to Cyborg, Mechanical and Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "reconstruction_kit",
+            "tier": "V",
+            "name": "Reconstruction Kit",
+
+            "type": "Defense Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "<actionblue>Reconstruction Kit</actionblue><br> Reconstruct a destroyed friendly Mechanical unit to 30% of their maximum <hp></hp> or heal a working one for 20 <hp></hp>.<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to the Dvar Baron and Foreman. </abilityred> ",
+
+
+        },
+        {
+            "slug": "illuminator_targeting_system",
+            "tier": "VII",
+            "name": "Illuminator Targeting System",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit deals +30% damage against <abilityred>Illuminated</abilityred> targets.<actionblue>Targeting Flare</actionblue><br> Launch a flare, marking an area of 1 hex radius. Units in that arrea gain <abilityred>Illuminated</abilityred>, making them 30% easier to hit. The flare lasts for 3 <turn></turn> .<br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Cyborg and Mechanical units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "super-powered_pistons",
+            "tier": "VII",
+            "name": "Super-Powered Pistons",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Melee attacks gain one level of <abilityred>Stagger Impact</abilityred> and have a 8 <StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Concussion</abilityred> to non-Ethereal or non-Mechanical units, for 1 <turn></turn> .<br><br>Additionally, this mod grants the unit 30% increased damage on all abilities. <br><br> <abilityred>This Mod can only be applied to Dvar, Cyborg or Mechanical units that have a Melee ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "captains_regalia",
+            "tier": "IX",
+            "name": "Capain's Regalia",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Units adjacent to this one gain +400 <happiness></happiness> and have +2 to all resistances. <br>Does not affect Mindless units.<br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "reactive_kinetic_battery",
+            "tier": "IX",
+            "name": "Reactive Kinetic Battery",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Unit gains a level of <actionblue>Stagger Resistance</actionblue>, and each time it takes damage, it gains a charge of <actionblue>Kinetic Energy</actionblue>, up to a maximum of 5.<actionblue>Unleash Stored Energy</actionblue><br> Deal damage in a 4 hex cone, increased by 10% for each stack of<actionblue>Kinetic Energy</actionblue>the unit has.  <br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Mechanical units. </abilityred> ",
+
+
+        },
+        {
             "slug": "autonom_network_connector",
             "tier": "",
             "name": "Autonom Network Connector",
