@@ -79,7 +79,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Earth Link Mask",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
             "description": "This unit's attacks have 8 <StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Crushing Entanglement</abilityred> to non-Ethereal non-Flying units for 2 <turn></turn>. The unit also gains the <actionblue>Plant Roots (Improved)</actionblue> defense mode.<br> Additionally, this mod grants the unit +15<hp></hp> <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
 
@@ -90,7 +90,7 @@ var jsonMods = {
             "tier": "I",
             "name": "Ocular Implants(Detector)",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
             "description": "This unit gains <actionblue>Detection</actionblue>, +1 Strategical Vision Range and a 10% bonus to critical hit chance <br> Additionally, this mod grants the unit +1<armor></armor> <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
@@ -112,7 +112,7 @@ var jsonMods = {
             "tier": "VII",
             "name": "Advanced Re-engineering",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
             "description": "Upgrades the reverse Engineer. It is now possible to Reassemble Heavy units as well as Light units, and to create more powerful Advanced Constructs.<br> <actionblue>Create Advanced Construct</actionblue><br>Create an Advanced Construct under the player's control on the target hex.<br><actionblue>Advanced Reassemble</actionblue><br> Target dead light Cyborg ground unit to bring it back to life with 70% of its max <hp></hp>. Target a living Cyborg to heal it for 55 <hp></hp>. Cannot target self <br><br> Additionally, this mod grants the unit +2 <armor></armor><br><br> <abilityred>This Mod can only be applied the Assembly Reverse Engineer. </abilityred> ",
 
@@ -123,7 +123,7 @@ var jsonMods = {
             "tier": "IV",
             "name": "Cloaking Implants",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
             "description": "Advanced technologies grant this unit <actionblue>Universal Camouflage</actionblue> on the World Map and the  <actionblue>Evasion</actionblue> defense mode. In addition, the unit becomes 40% harder to hit with all Overwatch attacks. <br><br> Additionally, this mod grants the unit +1<armor></armor> <br><br> <abilityred>This Mod can only be applied to Light Biological and Cyborg units. </abilityred> ",
 
@@ -134,7 +134,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Emergency Quantric Shielding",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
             "description": "This unit is immune to all damage over time status effects. Whenever the unit takes damage that would kill it, it leaves the unit at 1 <hp></hp> instead, and the unit gains complete immunity to all damage and status effects for 1<turn></turn>.<br>Only triggers once per battle. <br><br> Additionally, this mod grants the unit +2<armor></armor> <br><br> <abilityred>This Mod can only be applied to Light units. </abilityred> ",
 
@@ -157,7 +157,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Quantum Support Nanites",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
             "description": "<actionblue>Quantum Support Nanites</actionblue><br>Extensive implants fitted with specialized field generators automatically target all friendly units within a 2 hex radius of this unit. This unit and all other affected units gain +2 <shield></shield> and heal for 20% of their <hp></hp> each turn for 3 <turn></turn> <br><br> Additionally, this mod grants the unit +2<armor></armor> <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
 
@@ -168,7 +168,7 @@ var jsonMods = {
             "tier": "VII",
             "name": "Reassembly Module",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
             "description": "This unit gains <actionblue>Regeneration</actionblue>, healing 15% of its maximum <hp></hp> each turn in combat, and recovers all of its <hp></hp> at the start of its owner's turn on the strategic map.<br> If the unit dies, the reassembly module attempts to repair all vital systems, alloweing the unit to reassemble itself after the battle if the unit's owner wins. <br><br> Additionally, this mod grants the unit +15<hp></hp> <br><br> <abilityred>This Mod can only be applied to Cyborg and Mechinal units, excep the Assembly Wrecker. </abilityred> ",
 
@@ -247,7 +247,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "This unit deals +30% damage against <abilityred>Illuminated</abilityred> targets.<actionblue>Targeting Flare</actionblue><br> Launch a flare, marking an area of 1 hex radius. Units in that arrea gain <abilityred>Illuminated</abilityred>, making them 30% easier to hit. The flare lasts for 3 <turn></turn> .<br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Cyborg and Mechanical units. </abilityred> ",
+            "description": "This unit deals +30% damage against <abilityred>Illuminated</abilityred> targets.<br><br><actionblue>Targeting Flare</actionblue><br> Launch a flare, marking an area of 1 hex radius. Units in that arrea gain <abilityred>Illuminated</abilityred>, making them 30% easier to hit. The flare lasts for 3 <turn></turn> .<br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Cyborg and Mechanical units. </abilityred> ",
 
 
         },
@@ -280,8 +280,119 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Unit gains a level of <actionblue>Stagger Resistance</actionblue>, and each time it takes damage, it gains a charge of <actionblue>Kinetic Energy</actionblue>, up to a maximum of 5.<actionblue>Unleash Stored Energy</actionblue><br> Deal damage in a 4 hex cone, increased by 10% for each stack of<actionblue>Kinetic Energy</actionblue>the unit has.  <br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Mechanical units. </abilityred> ",
+            "description": "Unit gains a level of <actionblue>Stagger Resistance</actionblue>, and each time it takes damage, it gains a charge of <actionblue>Kinetic Energy</actionblue>, up to a maximum of 5.<br><br><actionblue>Unleash Stored Energy</actionblue><br> Deal damage in a 4 hex cone, increased by 10% for each stack of<actionblue>Kinetic Energy</actionblue>the unit has.  <br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Mechanical units. </abilityred> ",
 
+
+        },
+        {
+            "slug": "heightened_vision(detector)",
+            "tier": "I",
+            "name": "Heightened Vision(Detector)",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit gains 20% increased accuracy. The unit also gains +1 Strategic Vision Range and <actionblue>Detection</actionblue>, allowing it to see concealed units on the strategic map.<br><br>Additionally, this mod grants the unit +5<hp></hp>. <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+        },
+        {
+            "slug": "sundering_claws",
+            "tier": "I",
+            "name": "Sundering Claws",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's melee attacks remove 1<armor></armor> from their target with each strike.<br><br>Additionally, this mod grants the unit 10% increased damage on all abilities. <br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko and Cyborg units that have a Melee ability. </abilityred> ",
+
+
+        },
+        {
+            "slug": "accelerated_healing",
+            "tier": "I",
+            "name": "Accelerated Healing",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit gains <actionblue>Regeneration</actionblue>, healing 15% of its maximum <hp></hp> each turn in combat, and recovers all of its <hp></hp> at the start of its owner's turn on the strategic map.<br><br>Additionally, this mod grants the unit +5<hp></hp>. <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+
+        },
+        {
+            "slug": "adaptive_carapace",
+            "tier": "IV",
+            "name": "Adaptive Carapace",
+
+            "type": "Defense Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Whenever this unit is struck by a ranged attack, it gains +1<armor></armor> for 1 <turn></turn>. This effect can stack up to 5 times.<br><br>Additionally, this mod grants the unit +1<armor></armor>. <br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko and Mounted units. </abilityred> ",
+
+        },
+        {
+            "slug": "tunneling_claws",
+            "tier": "IV",
+            "name": "Tunneling Claws",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's melee attacks deal +10% damage<br><br><actionblue>Tunnel</actionblue><br> Unit is able to tunnel through the ground in Tactical Combat, avoiding Overwatch<br><br>Additionally, this mod grants the unit +10<hp></hp>. <br><br> <abilityred>This Mod can only be applied to Kir'Ko Frenzied units. </abilityred> ",
+
+        },
+        {
+            "slug": "poison_excretion",
+            "tier": "V",
+            "name": "Poison Excretion",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "At the end of each turn, adjacent enemy units take 6 <DamageBio></DamageBio> damage, and there is a strength 8 <StrengthBio></StrengthBio> chance of those units getting <abilityred>Poisoned</abilityred>. <br><br> If this unit dies, it exploseds dealing 16 <DamageBio></DamageBio>damage to all adjacent units, with a strength 8 <StrengthBio></StrengthBio> chance of those units getting <abilityred>Poisoned</abilityred>.<br><br>Additionally, this mod grants the unit +10<hp></hp>. <br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko and MOunted units. </abilityred> ",
+
+        },
+        {
+            "slug": "psi-infected_claws",
+            "tier": "V",
+            "name": "Psi-infected Claws",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Melee attacks from this unit have a strength 4 <strengthpsyche></strengthpsyche> chance to apply <abilityred>Concussion</abilityred>,<abilityred>Insanity</abilityred>,<abilityred>Panic</abilityred>,<abilityred>Catatonic</abilityred> or <abilityred>Immobilize</abilityred> at random to non-Mindless or Cyborg units, for 1 <turn></turn>.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities. <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units that have a Melee ability. </abilityred> ",
+
+        },
+        {
+            "slug": "cloaking_carapace",
+            "tier": "VII",
+            "name": "Cloaking Carapace",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit gains <actionblue>Universal Camouflage</actionblue> and is 10% harder to hit. <br><br> In addition, each time this unit it hit, it becomes 10% harder to hit for t hat turn. This effect can stack up to 3 times.<br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Light Animal, Kir'Ko and Mounted units. </abilityred> ",
+
+        },
+        {
+            "slug": "resuscitation_glands",
+            "tier": "VII",
+            "name": "Resuscitation Glands",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "If this unit is killed during tactical combat, it will revive after 1 <turn></turn> with 40% <hp></hp>. <br> This can only occur once per battle.<br><br>Additionally, this mod grants the unit +15 <hp></hp>. <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units, except the Assembly Wrecker. </abilityred> ",
+
+        },
+        {
+            "slug": "accelerated_metabolism",
+            "tier": "IX",
+            "name": "Accelerated Metabolism",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The unit develops a unique metabolism, granting it <actionblue>Skitter</actionblue>, making it harder to hit the more it moves during its combat turn. Once per turn in tactical combat, this unit's action points are refilled after killing a unit.<br><br>Additionally, this mod grants the unit +15 <hp></hp>. <br><br> <abilityred>This Mod can only be applied to Light Biological and Cyborg units. </abilityred> ",
+
+        },
+        {
+            "slug": "adrenal_response_glands",
+            "tier": "IX",
+            "name": "Adrenal Response Glands",
+
+            "type": "Defense Mod - Hit Points",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Whenever the unit takes damage, they gain a stack of <actionblue>Enraged</actionblue>, granting the unit +10% melee damage, +10% accuracy and +5% critical hit chance per stack. This can stack up to 5 times. Enraged lasts for 2 <turn></turn>.<br><br>Additionally, this mod grants the unit +15 <hp></hp>. <br><br> <abilityred>This Mod can only be applied to Heavy Biological and Cyborg units. </abilityred> ",
 
         },
         {
@@ -289,7 +400,7 @@ var jsonMods = {
             "tier": "",
             "name": "Autonom Network Connector",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
             "description": "This unit gains Network Compatible, allowing it to benefit from <actionblue>Networked</actionblue> <br><br> Additionally, this mod grants the unit +1 <armor></armor><br><br> <abilityred>This Mod can only be applied to Cyborg units. </abilityred> ",
 
@@ -334,7 +445,7 @@ var jsonMods = {
             "tier": "",
             "name": "Euphoric Spores",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
             "description": "This unit releases euphoria-inducing spores, giving <actionblue>Euphoric</actionblue> to itself and all adjacent Biological and Cyborg units. These units gain +400<happiness></happiness> and ignore morale penalties in combat. <br><br> Additionally, this mod grants the unit +10 <hp></hp><br><br> <abilityred>This Mod can only be applied to Plant and Bee units. </abilityred> ",
 
@@ -420,7 +531,7 @@ var jsonMods = {
             "tier": "",
             "name": "Mind Barrier",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "10 <tricorium></tricorium>",
             "description": "This mod creates a small psionic barrier around the unit, granting it +6 <DamagePsyche></DamagePsyche> status resistance and +3 <DamagePsyche></DamagePsyche> damage resistance. <br><br> Additionally, this mod grants the unit +1 <shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
 
@@ -442,7 +553,7 @@ var jsonMods = {
             "tier": "",
             "name": "Overcharger Augment",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
             "description": "<actionblue>Overcharger Augment</actionblue><br> Allows the unit to <actionblue>Overcharge</actionblue> themselves, granting them new abilities, increased damage, and changing their Kinetic attacks to arc for 2 <turn></turn> <br><br> Additionally, this mod grants the unit +2 <shield></shield><br><br> <abilityred>This Mod can only be applied to units with Imperial Augments. </abilityred> ",
 
@@ -464,7 +575,7 @@ var jsonMods = {
             "tier": "",
             "name": "Reactive Shielding",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "10 <tricorium></tricorium>",
             "description": "Whenever this unit is struck by a ranged attack, it gains +1 <shield></shield> for 1<turn></turn>. This effect can stack. <br><br> Additionally, this mod grants the unit +1 <shield></shield><br><br> <abilityred>This Mod can only be applied to Cyborg and Mechanical units. </abilityred> ",
 
@@ -475,7 +586,7 @@ var jsonMods = {
             "tier": "",
             "name": "Regeneration Spores",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
             "description": "This unit releases regenerative spores which heal it and all adjacent friendly Biological or Cyborg units for 20% <hp></hp> at the end of each turn in tactical combat. <br><br> Additionally, this mod grants the unit +10 <hp></hp><br><br> <abilityred>This Mod can only be applied to Plant and Bee units. </abilityred> ",
 
@@ -486,7 +597,7 @@ var jsonMods = {
             "tier": "",
             "name": "Self-Repair Systems",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
             "description": "This unit has self-repair systems that heal it during battle for 20% <hp></hp> each turn, and heal it to full <hp></hp> at the start of every Strategic turn. <br><br> Additionally, this mod grants the unit +1 <armor></armor><br><br> <abilityred>This Mod can only be applied to Mechanical units. </abilityred> ",
 
@@ -552,7 +663,7 @@ var jsonMods = {
             "tier": "",
             "name": "Evolutionary Mutation",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "5 <tricorium></tricorium>",
             "description": "This unit is better than others of its kind. It has +200<happiness></happiness> and +2 resistance to all status effects. <br><br> Additionally, this mod grants the unit +5 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
@@ -574,7 +685,7 @@ var jsonMods = {
             "tier": "",
             "name": "Infection X",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
             "description": "This unit is infected with an experimental virus that brings the dead back to life. When it is killed, it comes back to life 1 <turn></turn> later with 70% <hp></hp>, -2 <armor></armor>, and its attacks deal +20% damage.<br>This can only occur once per battle.<br><br> Additionally, this mod grants the unit +10 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
@@ -585,7 +696,7 @@ var jsonMods = {
             "tier": "",
             "name": "Minor Infection X",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "5 <tricorium></tricorium>",
             "description": "This unit is infected with an experimental virus that brings the dead back to life. When it is killed, it comes back to life 1 <turn></turn> later with 40% <hp></hp>, -2 <armor></armor>, and its attacks deal +10% damage.<br>This can only occur once per battle.<br><br> Additionally, this mod grants the unit +5 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
@@ -607,7 +718,7 @@ var jsonMods = {
             "tier": "",
             "name": "Plague Carrier",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
             "description": "This unit is carrying a plague, causing adjacent Biological and Cyborg enemy units to take 6<DamageBio></DamageBio> damage at the end of this unit's turn, with a 8 <StrengthBio></StrengthBio> strength chance of applying <abilityred>Blighted Plague</abilityred>. This gives the enemy unit -400 <happiness></happiness>, -20% accuracy on attacks and causes them to take 8 <DamageBio></DamageBio> damage per <turn></turn>.<br><br> Additionally, this mod grants the unit +2 <armor></armor><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
@@ -629,7 +740,7 @@ var jsonMods = {
             "tier": "",
             "name": "Superior Evolutionary Mutation",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
             "description": "This unit is superior to others of its kind. It has +400<happiness></happiness> and +5 resistance to all status effects. <br><br> Additionally, this mod grants the unit +15 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
@@ -640,7 +751,7 @@ var jsonMods = {
             "tier": "",
             "name": "Tempered Shells",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
             "description": "This unit has +3 <DamagePhysical></DamagePhysical> resistance <br><br> Additionally, this mod grants the unit +1 <armor></armor><br><br> <abilityred>This Mod can only be applied to Mineral units. </abilityred> ",
 
@@ -652,7 +763,7 @@ var jsonMods = {
             "tier": "I",
             "name": "Xenoplague Parasite",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "5 <tricorium></tricorium>",
             "description": "This unit is infected with a strain of Xenoplague and gains <actionblue>Hyper-evolved Immune System</actionblue>, granting it +2 resistance to all non-Psionic Status Effects, and  <actionblue>Ferocious Determination</actionblue>, making the unit immune to negative morale and Mind Control effects. <br><br> Additionally, this mod grants the unit +5 <hp></hp><br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
@@ -674,7 +785,7 @@ var jsonMods = {
             "tier": "V",
             "name": "Bio-Spore Purification",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
             "description": "<actionblue>Bio-Spore Purification</actionblue><br>Inject target Biological or Cyborg unit with a specific concoction of purifying spores. The target is healed for 25 <hp></hp> and all negative Status Effects are cleared.<br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
 
@@ -685,7 +796,7 @@ var jsonMods = {
             "tier": "VII",
             "name": "Bio-Spore Hyper Aggression",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
             "description": "<actionblue>Bio-Spore Hyper Aggression</actionblue><br>Releases a burst of spores from the unit, driving all friendly Biological and Cyborg units around them into <actionblue> Hyper Aggression</actionblue>, increasing their damage by 25% for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
 
@@ -696,7 +807,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Bio-Spore Proliferation",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
             "description": "<actionblue>Bio-Spore Proliferation</actionblue><br>Resurrect target friendly Biological or Cyborg unit. If used on a non-Xenoplague corpse, the unit will return as a Xenoplague unit.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
 
@@ -707,7 +818,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Parasitic Symbiosis",
 
-            "type": "Defensive Mod - Hit Points",
+            "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
             "description": "This usnit is infected with a strong strain of Xenoplague and gains:<br> <actionblue>Hyper Evolved Immune System</actionblue>, granting it +2 resistance on all non-Psionic Status Effects.<br> <actionblue>Ferocious Determination</actionblue>, granting it immunity to negative Morale and Mind Control effects.<actionblue>Regeneration</actionblue>, granting it 15% <hp></hp> regeneration per combat turn and full <hp></hp> recovery per turn on the World Map<br><actionblue>Regenerative Spore Cloud</actionblue>, granting all friendly adjacent Biological and Cyborg units <actionblue>Regeneration</actionblue>.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units </abilityred> ",
 
@@ -718,7 +829,7 @@ var jsonMods = {
             "tier": "I",
             "name": "Guardian Daemon Shell",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
             "description": "This unit is 25% harder to hit by ranged attacks. They also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology.<br><br> Additionally, this mod grants the unit +1 <armor></armor>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
 
@@ -751,7 +862,7 @@ var jsonMods = {
             "tier": "IV",
             "name": "Incapacitate Daemon Shell",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
             "description": "Provides the unit with a Daemon Shell containing an Incapacitate Daemon that they can deploy to disrupt enemy units.  They also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology. <br><br><actionblue>Incapacitate Daemon Shell</actionblue><br>Infect target enemy Mechanical or Cyborg unit with a hostile Daemon. This causes the unit the have a 8 <StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> for 1 <turn></turn>. On failure, the unit is staggered instead.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
 
@@ -762,7 +873,7 @@ var jsonMods = {
             "tier": "VI",
             "name": "Total Network Integration",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
             "description": "The unit is immune to stagger and all status effects. If the unit dies in combat, they are revived with 15% of their maximum <hp></hp> at the start of the next turn. By creating an emergency backup of this unit's conciousness, they also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology. <br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units, except the Assembly Wrecker </abilityred> ",
 
@@ -773,7 +884,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Deployable Malware Daemon",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
             "description": "Deploys a drone inhabited by a Malware Daemon <br><br><actionblue>Deployable Malware Daemon</actionblue><br>Deploy the Malware Daemon drone. It has a ranged Arc attack, and if destroyed, will attempt to <abilityred>Mind Control</abilityred> a nearby enemy Mechanical or Cyborg unit.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
 
@@ -784,7 +895,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Shield of Reckoning",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
             "description": "This unit reflects 50% of all damage done to them back to their attacker. <br> This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> Additionally, this mod grants the unit +2<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
 
@@ -795,7 +906,7 @@ var jsonMods = {
             "tier": "II",
             "name": "Shield of Remorse",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "5 <tricorium></tricorium>",
             "description": "Each time this unit is damaged by another unit. the attacker has a strength 8 <strengthpsyche></strengthpsyche> chance to apply <abilityred>Soulburn</abilityred>. The attacker also gains <abilityred>Remorse</abilityred>, a stacking debuff that applies -100 <happiness></happiness> for 3 <turn></turn>. <br> This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
 
@@ -806,7 +917,7 @@ var jsonMods = {
             "tier": "IV",
             "name": "Tenets of Healing",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "10 <tricorium></tricorium>",
             "description": " This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> <actionblue>Healing Touch</actionblue><br>Dispel hostile effects from target non-Mindless Biological or Cyborg unit and heal them for 25 <hp></hp>.<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless Infantry and Mounted units </abilityred> ",
 
@@ -817,7 +928,7 @@ var jsonMods = {
             "tier": "VI",
             "name": "Tenets of Pacifism",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "10 <tricorium></tricorium>",
             "description": " This unit can no longer trigger Overwatch attacks. <br>This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> <actionblue>Project Pacifism</actionblue><br>All units adjacent to this one have a strength 8 <strengthpsyche></strengthpsyche> chance of becoming <abilityred>Pacified</abilityred>, disabling damaging abilities for 2 <turn></turn> .<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless Infantry and Mounted units </abilityred> ",
 
@@ -828,7 +939,7 @@ var jsonMods = {
             "tier": "I",
             "name": "Tenets of Tranquility",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "5 <tricorium></tricorium>",
             "description": " This unit is immune to all negative morale effects and gains one level of Stagger Resistance. <br>This unit is now considered <actionblue>Enlightened</actionblue>. <br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless units </abilityred> ",
 
@@ -839,7 +950,7 @@ var jsonMods = {
             "tier": "I",
             "name": "Purification Field",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
             "description": " <actionblue>Purification Field</actionblue><br>Restore 10 <hp></hp> and remove any non-Psionic Status Effects from this unit or target adjacent unit. <br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can be applied to any unit except Animals </abilityred> ",
 
@@ -861,7 +972,7 @@ var jsonMods = {
             "tier": "IV",
             "name": "Hazmat Protection",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
             "description": "Provides the unit with a protective system, granting them +4 <DamageBio></DamageBio> resistance and <actionblue>Hazard Immunity</actionblue>.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units </abilityred> ",
 
@@ -872,7 +983,7 @@ var jsonMods = {
             "tier": "IV",
             "name": "PyrX Absorption Panels",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
             "description": "When standing in Thermal Hazards, the unit deals +20% damage, and it heals for 20% of their max <hp></hp> at the start of each turn.<br><br> The unit also gainst +3 <DamageThermal></DamageThermal> resistance and immunity to <actionblue>Thermal Status Effects and Hazards</actionblue>.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Cyborg and Mechanical units. </abilityred> ",
 
@@ -883,7 +994,7 @@ var jsonMods = {
             "tier": "VII",
             "name": "Backlash Projectors",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
             "description": "When damaged, this unit pulses fire around itself, dealing 12 <DamageThermal></DamageThermal> damage to all adjacent enemy units.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units. </abilityred> ",
 
@@ -916,7 +1027,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Phoenix Bomb Launcher",
 
-            "type": "Defensive Mod - Armor",
+            "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
             "description": "<actionblue>Launch Phoenix Bombs</actionblue><br>Fire a Phoenix Bomb, dealing damage in a 1 hex radius area and leaving behind a burning Hazard for 2 <turn></turn>.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
 
@@ -949,7 +1060,7 @@ var jsonMods = {
             "tier": "VII",
             "name": "Pain Mirror",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
             "description": "Whenever this unit is damaged from within 3 hexes, deal 6 <DamagePsyche></DamagePsyche> damage back to the attacker. This damage also has a 8 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Broken Mind</abilityred>.<br><br> Additionally, this mod grants the unit +2<shield></shield><br><br> <abilityred>This Mod can be applied to any units. </abilityred> ",
 
@@ -971,7 +1082,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Avatar of the Abyss",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
             "description": "The unit gains 5 <DamagePsyche></DamagePsyche> resistance and becomes immune to Psionic Status and Hazard Effects. All attacks have a 4 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Panic</abilityred>. If this is resisted, applies <abilityred>Broken Mind</abilityred>.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
 
@@ -982,7 +1093,7 @@ var jsonMods = {
             "tier": "I",
             "name": "Phasewalk Modulator",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "5 <tricorium></tricorium>",
             "description": "Unit gains <actionblue>Phase Field</actionblue>. The unit is able to walk through obstacles and is 20% harder to hit in combat.<br><br> Additionally, this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted. </abilityred> ",
 
@@ -1015,7 +1126,7 @@ var jsonMods = {
             "tier": "VII",
             "name": "Phase Drive",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
             "description": "<actionblue>Phase</actionblue><br>Teleport to target unoccupied hex.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
 
@@ -1037,7 +1148,7 @@ var jsonMods = {
             "tier": "IX",
             "name": "Quantum Avatar",
 
-            "type": "Defensive Mod - Shields",
+            "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
             "description": "Whenever the unit takes damage, its attacker is teleported 1 hex away fromt their current position, receives <abilityred>Dimensional Instability</abilityred> and becomes <abilityred>Staggered</abilityred>.<br> Voidtech of Voidtech-modded units adjacent to this one receive 3 <shield></shield> and gain a level of <actionblue>Stagger Resistance</actionblue>. <br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
 
