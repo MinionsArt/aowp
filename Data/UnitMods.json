@@ -484,7 +484,95 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
-            "description": "The unit gains stagger immunity. WHenever the unit uses an ability, they heal for 10<hp></hp> and gain +15% damage for 3 <turn></turn>. This can stack up to 3 times.<br><br>Additionally, this mod grants the unit +2<shield></shield>. <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+            "description": "The unit gains <actionblue>Stagger Immunity</actionblue>. WHenever the unit uses an ability, they heal for 10<hp></hp> and gain +15% damage for 3 <turn></turn>. This can stack up to 3 times.<br><br>Additionally, this mod grants the unit +2<shield></shield>. <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+
+        },
+        {
+            "slug": "nanite_injectors",
+            "tier": "I",
+            "name": "Nanite Injectors",
+
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "<actionblue>Nanite Injectors</actionblue><br>Use Nanite INjectors to heal this unit for 15<hp></hp> and increase its resistances to all damage channels by 3 for 2 <turn></turn>.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+
+
+        },
+        {
+            "slug": "improved_combat_sensors(detector)",
+            "tier": "II",
+            "name": "Improved Combat Sensors(Detector)",
+
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "The unit becomes 20% harder to hit and gains <actionblue>Detection</actionblue>. In addition, the unit's scanner range on the strategic map is increased by 2 hexes.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Light units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "interlocking_armor",
+            "tier": "II",
+            "name": "Interlocking Armor",
+
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "The unit gains <actionblue>Stagger Resistance</actionblue> and 2 <DamagePhysical></DamagePhysical> resistance.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Cyborg, Mechanical and Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "jetpack",
+            "tier": "IV",
+            "name": "Jetpack",
+
+            "type": "Defense Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "<actionblue>Jetpack Jump</actionblue><br>Jump to the target location.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "launcher_turret_pack",
+            "tier": "VI",
+            "name": "Launcher Turret Pack",
+
+            "type": "Defense Mod - Armor",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Replaces the Engineer's gun turret with a turret that fires missiles.<br><br><actionblue>Place Launcher Turret</actionblue><br>Place a launcher turret on the target hex.<br><br>The summoned unit will inherit any compatible mods that do not grant an active ability.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to the Vanguard Engineer units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "sequential_kill_system",
+            "tier": "VIII",
+            "name": "Sequential Kill System",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "The unit regains 1 action point upon dealing the killing blow to an enemy. Can only occur once per turn.<br><br>Additionally, this mod grants the unit 30% increased damage on all abilities. <br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+
+
+        },
+        {
+            "slug": "miniaturized_missile_array",
+            "tier": "IX",
+            "name": "Miniaturized Missile Array",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Gives the unit <actionblue></actionblue> and the 'Fire Brimstone Missile' ability.<br><br><actionblue>Fire Brimstone Missile</actionblue><br>Fire a Brimstone Missile at an enemy. The rocket leaves behind a stream of super-heated gas that deals Thermal damage to all units that enter its area.<br><br>Additionally, this mod grants the unit +2<armor></armor>. <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+
+
+        },
+        {
+            "slug": "reactive_armor_plating",
+            "tier": "IX",
+            "name": "Reactive Armor Plating",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Whenever damage is dealt to this unit, 50% of the damage is reflected back to its source.<br><br>Additionally, this mod grants the unit +2<armor></armor>. <br><br> <abilityred>This Mod can only be applied to HFeavy Cyborg and Mechanical units. </abilityred> ",
+
 
         },
         {
