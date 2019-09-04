@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en">
+<meta name="viewport" content="width=device-width">
 
 <head>
+    <link rel="shortcut icon" type="image/png" href="/aowp/favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70751511-1"></script>
     <script>
@@ -13,6 +15,15 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-70751511-1');
+
+    </script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script>
+        $('.has-sub').click(function(e) {
+            e.preventDefault();
+            $(this).parent().toggleClass('tap');
+        });
 
     </script>
 
@@ -27,110 +38,102 @@
             <h2 style="color:white">Updated for Patch v1.005</h2>
         </div>
     </div>
-    <nav>
-        <ul id='menu'>
-            <li class='prett' style="color:burlywood; width: 30%; text-align: center">Units
-            <li class='prett' style="color:deepskyblue; width: 30%; text-align: center">Mods
+    <ul class="egmenu">
+        <li style="color:antiquewhite">Units:</li>
+        <li><a style="color:burlywood" href='#' title='Menu'>Race</a>
+            <ul>
 
-        </ul>
-    </nav>
-    <nav>
-        <ul id='menu'>
-            <li><a class='prett' style="color:burlywood" href='#' title='Menu'>Race</a>
-                <ul class='menus'>
+                <li><a href="/aowp/Pages/Units/AmazonUnits.html" title="Sub Menu">Amazon</a></li>
+                <li><a href="/aowp/Pages/Units/AssemblyUnits.html" title="Sub Menu">Assembly</a></li>
+                <li><a href="/aowp/Pages/Units/DvarUnits.html" title="Sub Menu">Dvar</a></li>
+                <li><a href="/aowp/Pages/Units/KirkoUnits.html" title="Sub Menu">Kir'Ko</a></li>
+                <li><a href="/aowp/Pages/Units/SyndicateUnits.html" title="Sub Menu">Syndicate</a></li>
+                <li><a href="/aowp/Pages/Units/VanguardUnits.html" title="Sub Menu">Vanguard</a></li>
+            </ul>
+        </li>
+        <li><a class='prett' style="color:burlywood" href='#' title='Menu'>Secret Tech</a>
+            <ul class='menus'>
 
-                    <li><a href="/aowp/Pages/Units/AmazonUnits.html" title="Sub Menu">Amazon</a></li>
-                    <li><a href="/aowp/Pages/Units/AssemblyUnits.html" title="Sub Menu">Assembly</a></li>
-                    <li><a href="/aowp/Pages/Units/DvarUnits.html" title="Sub Menu">Dvar</a></li>
-                    <li><a href="/aowp/Pages/Units/KirkoUnits.html" title="Sub Menu">Kir'Ko</a></li>
-                    <li><a href="/aowp/Pages/Units/SyndicateUnits.html" title="Sub Menu">Syndicate</a></li>
-                    <li><a href="/aowp/Pages/Units/VanguardUnits.html" title="Sub Menu">Vanguard</a></li>
-                </ul>
-            </li>
-            <li><a class='prett' style="color:burlywood" href='#' title='Menu'>Secret Tech</a>
-                <ul class='menus'>
+                <li><a href="/aowp/Pages/Units/CelestianUnits.html" title="Sub Menu">Celestian</a></li>
+                <li><a href="/aowp/Pages/Units/PsynumbraUnits.html" title="Sub Menu">Psynumbra</a></li>
+                <li><a href="/aowp/Pages/Units/PrometheanUnits.html" title="Sub Menu">Promethean</a></li>
+                <li><a href="/aowp/Pages/Units/SynthesisUnits.html" title="Sub Menu">Synthesis</a></li>
+                <li><a href="/aowp/Pages/Units/VoidtechUnits.html" title="Sub Menu">VoidTech</a></li>
+                <li><a href="/aowp/Pages/Units/XenoplagueUnits.html" title="Sub Menu">Xenoplague</a></li>
+            </ul>
+        </li>
+        <li><a class='prett' style="color:burlywood" href='#' title='Menu'>NPC</a>
+            <ul class='menus'>
 
-                    <li><a href="/aowp/Pages/Units/CelestianUnits.html" title="Sub Menu">Celestian</a></li>
-                    <li><a href="/aowp/Pages/Units/PsynumbraUnits.html" title="Sub Menu">Psynumbra</a></li>
-                    <li><a href="/aowp/Pages/Units/PrometheanUnits.html" title="Sub Menu">Promethean</a></li>
-                    <li><a href="/aowp/Pages/Units/SynthesisUnits.html" title="Sub Menu">Synthesis</a></li>
-                    <li><a href="/aowp/Pages/Units/VoidtechUnits.html" title="Sub Menu">VoidTech</a></li>
-                    <li><a href="/aowp/Pages/Units/XenoplagueUnits.html" title="Sub Menu">Xenoplague</a></li>
-                </ul>
-            </li>
-            <li><a class='prett' style="color:burlywood" href='#' title='Menu'>NPC</a>
-                <ul class='menus'>
+                <li><a href="/aowp/Pages/Units/AutonomUnits.html" title="Sub Menu">Autonom</a></li>
+                <li><a href="/aowp/Pages/Units/GrowthUnits.html" title="Sub Menu">Growth</a></li>
+                <li><a href="/aowp/Pages/Units/ParagonUnits.html" title="Sub Menu">Paragon</a></li>
+                <li><a href="/aowp/Pages/Units/PsifishUnits.html" title="Sub Menu">Psi-Fish</a></li>
+                <li><a href="/aowp/Pages/Units/SpacerUnits.html" title="Sub Menu">Spacers</a></li>
+            </ul>
+        </li>
+        <li><a class='prett' style="color:burlywood" href='#' title='Menu'>Other</a>
+            <ul class='menus'>
+                <li><a href="/aowp/Pages/Units/QuartziteUnits.html" title="Sub Menu">Quartzite</a></li>
 
-                    <li><a href="/aowp/Pages/Units/AutonomUnits.html" title="Sub Menu">Autonom</a></li>
-                    <li><a href="/aowp/Pages/Units/GrowthUnits.html" title="Sub Menu">The Growth</a></li>
-                    <li><a href="/aowp/Pages/Units/ParagonUnits.html" title="Sub Menu">Paragon</a></li>
-                    <li><a href="/aowp/Pages/Units/PsifishUnits.html" title="Sub Menu">Psi-Fish</a></li>
-                    <li><a href="/aowp/Pages/Units/SpacerUnits.html" title="Sub Menu">Spacers</a></li>
-                </ul>
-            </li>
-            <li><a class='prett' style="color:burlywood" href='#' title='Menu'>Other</a>
-                <ul class='menus'>
-                    <li><a href="/aowp/Pages/Units/QuartziteUnits.html" title="Sub Menu">Quartzite</a></li>
+                <li><a href="/aowp/Pages/Units/AnimalUnits.html" title="Sub Menu">Animals</a></li>
 
-                    <li><a href="/aowp/Pages/Units/AnimalUnits.html" title="Sub Menu">Other Animals</a></li>
+                <li><a href="/aowp/Pages/Units/MarauderUnits.html" title="Sub Menu">Marauders</a></li>
 
-                    <li><a href="/aowp/Pages/Units/MarauderUnits.html" title="Sub Menu">Marauders</a></li>
+                <li><a href="#" title="Sub Menu">Unique</a></li>
+            </ul>
+        </li>
+        <li style="color:cadetblue">Mods:</li>
+        <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>Race</a>
+            <ul class='menus'>
+                <li><a href="/aowp/Pages/Mods/AmazonMods.html" title="Sub Menu">Amazon</a></li>
+                <li><a href="/aowp/Pages/Mods/AssemblyMods.html" title="Sub Menu">Assembly</a></li>
+                <li><a href="/aowp/Pages/Mods/DvarMods.html" title="Sub Menu">Dvar</a></li>
+                <li><a href="/aowp/Pages/Mods/KirkoMods.html" title="Sub Menu">Kir'Ko</a></li>
+                <li><a href="/aowp/Pages/Mods/SyndicateMods.html" title="Sub Menu">Syndicate</a></li>
+                <li><a href="/aowp/Pages/Mods/VanguardMods.html" title="Sub Menu">Vanguard</a></li>
+            </ul>
+        </li>
+        <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>Weapon Group</a>
+            <ul class='menus'>
+                <li><a href="/aowp/Pages/Mods/ArcWeaponMods.html" title="Sub Menu">Arc</a></li>
+                <li><a href="/aowp/Pages/Mods/BiochemicalWeaponMods.html" title="Sub Menu">Biochemical</a></li>
+                <li><a href="/aowp/Pages/Mods/ExplosiveWeaponMods.html" title="Sub Menu">Explosives</a></li>
+                <li><a href="/aowp/Pages/Mods/KineticWeaponMods.html" title="Sub Menu">Firearms</a></li>
+                <li><a href="/aowp/Pages/Mods/LaserWeaponMods.html" title="Sub Menu">Laser</a></li>
+                <li><a href="/aowp/Pages/Mods/PsionicWeaponMods.html" title="Sub Menu">Psionic</a></li>
+            </ul>
+        </li>
+        <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>Secret Tech</a>
+            <ul class='menus'>
 
-                    <li><a href="#" title="Sub Menu">Unique</a></li>
-                </ul>
-            </li>
+                <li><a href="/aowp/Pages/Mods/CelestianMods.html" title="Sub Menu">Celestian</a></li>
+                <li><a href="/aowp/Pages/Mods/PsynumbraMods.html" title="Sub Menu">Psynumbra</a></li>
+                <li><a href="/aowp/Pages/Mods/PrometheanMods.html" title="Sub Menu">Promethean</a></li>
+                <li><a href="/aowp/Pages/Mods/SynthesisMods.html" title="Sub Menu">Synthesis</a></li>
+                <li><a href="/aowp/Pages/Mods/VoidtechMods.html" title="Sub Menu">VoidTech</a></li>
+                <li><a href="/aowp/Pages/Mods/XenoplagueMods.html" title="Sub Menu">Xenoplague</a></li>
 
-            <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>Race</a>
-                <ul class='menus'>
-                    <li><a href="/aowp/Pages/Mods/AmazonMods.html" title="Sub Menu">Amazon</a></li>
-                    <li><a href="/aowp/Pages/Mods/AssemblyMods.html" title="Sub Menu">Assembly</a></li>
-                    <li><a href="/aowp/Pages/Mods/DvarMods.html" title="Sub Menu">Dvar</a></li>
-                    <li><a href="/aowp/Pages/Mods/KirkoMods.html" title="Sub Menu">Kir'Ko</a></li>
-                    <li><a href="/aowp/Pages/Mods/SyndicateMods.html" title="Sub Menu">Syndicate</a></li>
-                    <li><a href="/aowp/Pages/Mods/VanguardMods.html" title="Sub Menu">Vanguard</a></li>
-                </ul>
-            </li>
-            <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>Weapon Group</a>
-                <ul class='menus'>
-                    <li><a href="/aowp/Pages/Mods/ArcWeaponMods.html" title="Sub Menu">Arc</a></li>
-                    <li><a href="/aowp/Pages/Mods/BiochemicalWeaponMods.html" title="Sub Menu">Biochemical</a></li>
-                    <li><a href="/aowp/Pages/Mods/ExplosiveWeaponMods.html" title="Sub Menu">Explosives</a></li>
-                    <li><a href="/aowp/Pages/Mods/KineticWeaponMods.html" title="Sub Menu">Firearms</a></li>
-                    <li><a href="/aowp/Pages/Mods/LaserWeaponMods.html" title="Sub Menu">Laser</a></li>
-                    <li><a href="/aowp/Pages/Mods/PsionicWeaponMods.html" title="Sub Menu">Psionic</a></li>
-                </ul>
-            </li>
-            <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>Secret Tech</a>
-                <ul class='menus'>
+            </ul>
+        </li>
+        <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>NPC & Wildlife</a>
+            <ul class='menus'>
+                <li><a href="/aowp/Pages/Mods/AutonomMods.html" title="Sub Menu">Autonom</a></li>
+                <li><a href="/aowp/Pages/Mods/GrowthMods.html" title="Sub Menu">Growth</a></li>
+                <li><a href="/aowp/Pages/Mods/ParagonMods.html" title="Sub Menu">Paragon</a></li>
+                <li><a href="/aowp/Pages/Mods/PsiFishMods.html" title="Sub Menu">Psi-Fish</a></li>
+                <li><a href="/aowp/Pages/Mods/SpacerMods.html" title="Sub Menu">Spacers</a></li>
+                <li><a href="/aowp/Pages/Mods/WildlifeMods.html" title="Sub Menu">Wildlife</a></li>
 
-                    <li><a href="/aowp/Pages/Mods/CelestianMods.html" title="Sub Menu">Celestian</a></li>
-                    <li><a href="/aowp/Pages/Mods/PsynumbraMods.html" title="Sub Menu">Psynumbra</a></li>
-                    <li><a href="/aowp/Pages/Mods/PrometheanMods.html" title="Sub Menu">Promethean</a></li>
-                    <li><a href="/aowp/Pages/Mods/SynthesisMods.html" title="Sub Menu">Synthesis</a></li>
-                    <li><a href="/aowp/Pages/Mods/VoidtechMods.html" title="Sub Menu">VoidTech</a></li>
-                    <li><a href="/aowp/Pages/Mods/XenoplagueMods.html" title="Sub Menu">Xenoplague</a></li>
-
-                </ul>
-            </li>
-            <li><a class='prett' style="color:deepskyblue" href='#' title='Menu'>NPC & Wildlife</a>
-                <ul class='menus'>
-                    <li><a href="/aowp/Pages/Mods/AutonomMods.html" title="Sub Menu">Autonom</a></li>
-                    <li><a href="/aowp/Pages/Mods/GrowthMods.html" title="Sub Menu">The Growth</a></li>
-                    <li><a href="/aowp/Pages/Mods/ParagonMods.html" title="Sub Menu">Paragon</a></li>
-                    <li><a href="/aowp/Pages/Mods/PsiFishMods.html" title="Sub Menu">Psi-Fish</a></li>
-                    <li><a href="/aowp/Pages/Mods/SpacerMods.html" title="Sub Menu">Spacers</a></li>
-                    <li><a href="/aowp/Pages/Mods/WildlifeMods.html" title="Sub Menu">Wildlife</a></li>
-
-                </ul>
-            </li>
-            <li><a class='prett' style="color:coral" href='/aowp/searchTest.html' title='Menu'>WIP Search</a>
-            </li>
-            <li><a class='prett' style="color:aquamarine" href='https://mike6811.github.io/AOWP_TechTree/' title='Menu'>Tech Trees (External)</a>
-            </li>
+            </ul>
+        </li>
+        <li><a class='prett' style="color:coral" href='/aowp/searchTest.html' title='Menu'>WIP Search</a>
+        </li>
+        <li><a class='prett' style="color:aquamarine" href='https://mike6811.github.io/AOWP_TechTree/' title='Menu'>Tech Trees (External)</a>
+        </li>
 
 
-        </ul>
-    </nav>
+    </ul>
 
 
 
