@@ -61,7 +61,13 @@ ul.egmenu li:hover ul {
 
     ul.egmenu > li {
         float: none;
-        width: 100%;
+
+        font-size: 25px;
+    }
+
+    ul.egmenu li {
+        font-size: 25px;
+        ;
     }
 
     ul.egmenu a {
