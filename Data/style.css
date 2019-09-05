@@ -85,6 +85,7 @@ ul.egmenu li:hover ul {
     ul.egmenu li.tap ul {
         display: block;
     }
+
 }
 
 @media all and (min-width: 481px) {
@@ -93,7 +94,7 @@ ul.egmenu li:hover ul {
     }
 
     ul.egmenu li:hover ul {
-        display: inherit;
+        display: block;
     }
 }
 
