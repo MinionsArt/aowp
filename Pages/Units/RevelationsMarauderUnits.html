@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("rabid_piglet");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("megasow");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("misfortune");
+            });
+
+
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("rpr-liquidator");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("rpr-stalker");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("rpr-culler");
+            });
+
+
+
+
+        });
+    </script>
+
+
+    <title>Age of Wonders Planetfall - RPR & Wildlife Units (Revelations)</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <p>
+        RPR & Wildlife Units(Revelations)
+    </p>
+    <div id="unit">
+    </div>
+    <div id="unit2"></div>
+    <div id="unit3"></div>
+    <div id="unit4"></div>
+    <div id="unit5"></div>
+
+    <div id="unit6"></div>
+
+
+    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
+        <p>Your browser does not support iframes.</p>
+    </iframe>-->
+    </div>
+
+
+</body></html>

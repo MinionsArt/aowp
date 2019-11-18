@@ -749,6 +749,14 @@ DamagePhysical {
 
 }
 
+DamageEntropy {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/entropy.png);
+    position: relative;
+
+}
+
 turn {
     max-height: 20px;
     top: 5px;
@@ -888,6 +896,14 @@ StrengthThermal {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/Strength_thermal.png);
+    position: relative;
+
+}
+
+strengthentropy {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/Strength_entropy.png);
     position: relative;
 
 }
