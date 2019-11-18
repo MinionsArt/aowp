@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
+
     <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
@@ -39,6 +41,13 @@
 
         });
 
+        $(document).ready(function() {
+            function showStats() {
+                textFit(document.getElementsByClassName('unit_passiveslot'));
+            }
+
+            setTimeout(showStats, 500);
+        });
     </script>
 
     <title>Age of Wonders Planetfall - Forgotten Units</title>
@@ -64,6 +73,4 @@
     </iframe>-->
     </div>
 
-</body>
-
-</html>
+</body></html>
