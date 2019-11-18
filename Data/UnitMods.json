@@ -1830,7 +1830,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Merge the mind of an Es'Teq Lord with the unit. Whenever this unit gains an Essence Charge, they heal for 8 <hp></hp>.<br><br><actionblue>Tithe</actionblue><br> The unit reaches out and forcibly takes the Essence Charges from target unit. All Essence Charge from the target unit are transferred to the caster. This ability does not work on other Lords.</bullet> <br><br> Cooldown 2 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +16 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
+            "description": "Merge the mind of an Es'Teq Lord with the unit. Whenever this unit gains an Essence Charge, they heal for 8 <hp></hp>.<br><br><actionblue>Tithe</actionblue><br> The unit reaches out and forcibly takes the Essence Charges from target unit. All Essence Charge from the target unit are transferred to the caster. This ability does not work on other Lords.</bullet> <br><br> Cooldown 2 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
 
 
         },
