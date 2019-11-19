@@ -28,6 +28,10 @@ ul.egmenu ul {
     top: 100%;
 }
 
+body {
+    font-family: 'Duru Sans', sans-serif;
+}
+
 ul.egmenu a {
     cursor: pointer;
     color: white;
@@ -255,11 +259,14 @@ ul.egmenu li:hover ul {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Duru Sans', sans-serif;
     font-size: 15px;
     margin: 10px 0 0 0;
 
 }
+
+
+
 
 .mod_description {
 
@@ -284,7 +291,7 @@ p {
 }
 
 .unit_description {
-    font-family: "Noto Sans", Times, sans-serif;
+    font-family: "Custom";
     color: #fff4ad;
     position: relative;
     background-color: rgba(0, 0, 0, 0.2);
@@ -991,8 +998,8 @@ popUpHeader3 {
 }
 
 titleBrown {
-    color: rgb(158, 197, 225);
-    font-weight: 550;
+    color: rgb(255, 255, 102);
+    font-weight: 350;
 
 }
 
@@ -1002,7 +1009,7 @@ abilityred {
 }
 
 actionblue {
-    color: deepskyblue;
+    color: rgb(102, 204, 255);
 }
 
 
