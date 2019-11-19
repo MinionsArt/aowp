@@ -818,7 +818,7 @@ StrengthBio {
 
 
 popUpHeader2 {
-    padding: 20px;
+    padding: 10px;
     font-weight: 300;
     text-align: justify;
 
@@ -1018,6 +1018,13 @@ HelpText {
 
 fireCol {
     color: red;
+}
+
+EssenceCharge {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/essence.png);
+    position: relative;
 }
 
 energy {
