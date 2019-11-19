@@ -1797,7 +1797,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
-            "description": "This unit gains 100 <morale></morale> for each Essence Charge it carries.<br><br><actionblue>Essence Sacrifice</actionblue><br> Target unit gains 2 stacks of Energy Drain, and the caster gains 2 stacks of Essence Charge. This ability can target both friendly and enemy units, including the caster themselves.</bullet> <br><br> Cooldown 1 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
+            "description": "This unit gains 100 <happiness></happiness> for each Essence Charge it carries.<br><br><actionblue>Essence Sacrifice</actionblue><br> Target unit gains 2 stacks of Energy Drain, and the caster gains 2 stacks of Essence Charge. This ability can target both friendly and enemy units, including the caster themselves.</bullet> <br><br> Cooldown 1 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
 
 
         },
