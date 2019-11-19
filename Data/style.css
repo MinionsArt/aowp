@@ -1020,7 +1020,21 @@ fireCol {
     color: red;
 }
 
+xp {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/xp.png);
+    position: relative;
+}
+
 EssenceCharge {
+    max-height: 20px;
+    top: 5px;
+    content: url(/aowp/Icons/Text/essence.png);
+    position: relative;
+}
+
+essencechargeall {
     max-height: 20px;
     top: 5px;
     content: url(/aowp/Icons/Text/essence.png);
