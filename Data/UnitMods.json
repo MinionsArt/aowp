@@ -1775,7 +1775,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Whenever this unit is hit with an attack, there is a 4 <strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred>. On succes, the caster gains an Essence Charge, increasing damage.<br><br><actionblue>Essence Barrier</actionblue><br> Consumes all Essence Charges. The unit forms a barrier around themselves and all adjacent hexes, the unit and all allies within the barrier gain +2 <shield></shield> per Essence Charge consumed to create barrier. After using this ability, the unit goes into Defense Mode<br> <bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet> <br><br> Cooldown 1 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
+            "description": "Whenever this unit is hit with an attack, there is a 4 <strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred>. On succes, the caster gains an Essence Charge, increasing damage.<br><br><actionblue>Essence Barrier</actionblue><br> Consumes all Essence Charges. The unit forms a barrier around themselves and all adjacent hexes, the unit and all allies within the barrier gain +2 <shield></shield> per Essence Charge consumed to create barrier. After using this ability, the unit goes into Defense Mode<br> Cooldown 1 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
 
 
         },
@@ -1830,7 +1830,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Merge the mind of an Es'Teq Lord with the unit. Whenever this unit gains an Essence Charge, they heal for 8 <hp></hp>.<br><br><actionblue>Tithe</actionblue><br> The unit reaches out and forcibly takes the Essence Charges from target unit. All Essence Charge from the target unit are transferred to the caster. This ability does not work on other Lords.</bullet> <br><br> Cooldown 2 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +16 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
+            "description": "Merge the mind of an Es'Teq Lord with the unit. Whenever this unit gains an Essence Charge, they heal for 8 <hp></hp>.<br><br><actionblue>Tithe</actionblue><br> The unit reaches out and forcibly takes the Essence Charges from target unit. All Essence Charge from the target unit are transferred to the caster. This ability does not work on other Lords.</bullet> <br><br> Cooldown 2 <turn></turn> <br><br> <abilityred>Only one kind of Incarnation can be active at any time </abilityred><br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to non-Mindless units. </abilityred> ",
 
 
         },
