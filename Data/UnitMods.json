@@ -324,7 +324,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Whenever this unit is struck by an attack, it gains +1<armor></armor> for 1 <turn></turn>. This effect can stack up to 4 times.<br><br>Additionally, this mod grants the unit +1<armor></armor>. <br><br> <abilityred>This Mod can only be applied to all non-Ethereal units. </abilityred> ",
+            "description": "Whenever this unit is struck by an attack, it gains +1<armor></armor> for 1 <turn></turn>. This effect can stack up to 3 times.<br><br>Additionally, this mod grants the unit +1<armor></armor>. <br><br> <abilityred>This Mod can only be applied to all non-Ethereal units. </abilityred> ",
 
         },
         {

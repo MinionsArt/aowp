@@ -10604,7 +10604,7 @@ var jsonUnits = {
             "mp": 32,
             "icon": "kirko_engulfer_icon",
             "name": "Kir'Ko - Engulfer",
-            "hp": 40,
+            "hp": 35,
             "armor": 3,
             "tier": 2,
             "passives": [
