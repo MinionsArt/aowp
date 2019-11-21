@@ -318,6 +318,10 @@ p {
     padding-bottom: 10px
 }
 
+tab {
+    padding-left: 15px;
+}
+
 .unit_image_holder {
     position: relative;
     width: 400px;
@@ -965,7 +969,7 @@ repeatingAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/repeating.png);
     position: relative;
-
+    padding-left: 10px;
 
 }
 
@@ -973,7 +977,7 @@ singleUseAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/single_action.png);
     position: relative;
-
+    padding-left: 10px;
 
 }
 
@@ -981,7 +985,7 @@ fullAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/180px-AP_FullAction.png);
     position: relative;
-
+    padding-left: 10px;
 
 }
 
@@ -989,6 +993,7 @@ freeAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/180px-AP_Free.png);
     position: relative;
+    padding-left: 10px;
 
 }
 
