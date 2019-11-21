@@ -997,9 +997,18 @@ freeAction {
 
 }
 
+leaveoneaction {
+    max-width: 80px;
+    content: url(/aowp/Icons/Text/180px-AP_LeaveOneActionPoint.png);
+    position: relative;
+    padding-left: 10px;
+
+}
+
 popUpHeader3 {
     font-size: 20px;
     font-weight: 600;
+    background-color:
 }
 
 titleBrown {

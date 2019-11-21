@@ -114,7 +114,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Upgrades the reverse Engineer. It is now possible to Reassemble Heavy units as well as Light units, and to create more powerful Advanced Constructs.<br> <actionblue>Create Advanced Construct</actionblue><br>Create an Advanced Construct under the player's control on the target hex.<br><actionblue>Advanced Reassemble</actionblue><br> Target dead light Cyborg ground unit to bring it back to life with 70% of its max <hp></hp>. Target a living Cyborg to heal it for 55 <hp></hp>. Cannot target self <br><br> Additionally, this mod grants the unit +2 <armor></armor><br><br> <abilityred>This Mod can only be applied the Assembly Reverse Engineer. </abilityred> ",
+            "description": "Upgrades the reverse Engineer. It is now possible to Reassemble Heavy units as well as Light units, and to create more powerful Advanced Constructs.<br><br> Additionally, this mod grants the unit +2 <armor></armor><br><br> <abilityred>This Mod can only be applied the Assembly Reverse Engineer. </abilityred><br> <br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Create Advanced  Construct</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Create an Advanced Construct under the player's control on the target hex.<br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc> <br><br> <popUpHeader3><titleBrown>Advanced Reassemble</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target a dead light Cyborg ground unit to bring it back to life with 70% of its max <hp></hp>. Target a living Cyborg to heal it for 55<hp></hp>. Cannot target self.<br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
 
 
         },
@@ -159,7 +159,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "<actionblue>Quantum Support Nanites</actionblue><br>Extensive implants fitted with specialized field generators automatically target all friendly units within a 2 hex radius of this unit. This unit and all other affected units gain +2 <shield></shield> and heal for 10 <hp></hp> each turn for 3 <turn></turn> <br><br> Additionally, this mod grants the unit +2<armor></armor> <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+            "description": " Additionally, this mod grants the unit +2<armor></armor> <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred><br> <br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Quantum Support Nanites</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Extensive implants fitted with specialized field generators automatically target all friendly units within a 2 hex radius of this unit. This unit and all other affected units gain +2 <shield></shield> and heal for 10 <hp></hp> each turn for 3 <turn></turn><br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
 
 
         },
@@ -236,7 +236,8 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
-            "description": "<actionblue>Reconstruction Kit</actionblue><br> Reconstruct a destroyed friendly non-tier IV Mechanical unit to 50% of their maximum <hp></hp> or heal a working one for 25 <hp></hp>.<br><br>Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to the Dvar Baron and Foreman. </abilityred> ",
+            "description": "Additionally, this mod grants the unit +1 <armor></armor> <br><br> <abilityred>This Mod can only be applied to the Dvar Baron and Foreman. </abilityred> <br> <br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Reconstruction Kit</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Reconstruct a destroyed friendly Mechanical unit to 50% of their maximum <hp></hp> or heal a working one for 35 <hp></hp>.<br><br>Cannot reconstruct tier 4 units<br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+
 
 
         },
@@ -247,7 +248,8 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "This unit deals +30% damage against <abilityred>Illuminated</abilityred> targets.<br><br><actionblue>Targeting Flare</actionblue><br> Launch a flare, marking an area of 1 hex radius. Units in that area gain <abilityred>Illuminated</abilityred>, making them 30% easier to hit. The flare lasts for 3 <turn></turn> .<br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+            "description": "Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred><br> <br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Targeting Flare</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc>Launch a flare, marking an area of 1 hex radius. Units in that area gain <abilityred>Illuminated</abilityred>, making them 30% easier to hit. The flare lasts for 3 <turn></turn> .<br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
+
 
 
         },
@@ -280,7 +282,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Unit gains a level of <actionblue>Stagger Resistance</actionblue>, and each time it takes damage, it gains a charge of <actionblue>Kinetic Energy</actionblue>, up to a maximum of 5.<br><br><actionblue>Unleash Stored Energy</actionblue><br> Deal damage in a 4 hex cone, increased by 10% for each stack of<actionblue>Kinetic Energy</actionblue>the unit has.  <br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Mechanical units. </abilityred> ",
+            "description": "Unit gains a level of <actionblue>Stagger Resistance</actionblue>, and each time it takes damage, it gains a charge of <actionblue>Kinetic Energy</actionblue>, up to a maximum of 5.<br><br>Additionally, this mod grants the unit +2 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Heavy Mechanical units. </abilityred><br> <br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Unleash Stored Energy</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>15<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Deal damage in a 4 hex cone, increased by 10% for each stack of <actionblue>Kinetic Energy</actionblue> the unit has.  <br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
 
 
         },
@@ -332,7 +334,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
-            "description": "This unit's melee attacks deal +20% damage.<br><br><actionblue>Tunnel</actionblue><br> Unit is able to tunnel through the ground in Tactical Combat, avoiding Overwatch<br><br>Additionally, this mod grants the unit +10<hp></hp>. <br><br> <abilityred>This Mod can only be applied to Kir'Ko Frenzied and Kir'Ko Ravenous units. </abilityred> ",
+            "description": "This unit's melee attacks deal +20% damage.<br><br>Additionally, this mod grants the unit +10<hp></hp>. <br><br> <abilityred>This Mod can only be applied to Kir'Ko Frenzied and Kir'Ko Ravenous units. </abilityred><br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Tunnel</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Leave One Point<leaveoneaction></leaveoneaction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Unit is able to tunnel through the ground in Tactical Combat, avoiding Overwatch.<br><bulletList><bullet>Cooldown: 1 <turn></turn></bullet></bulletList></popUpDesc>",
 
         },
         {
@@ -454,7 +456,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "10 <tricorium></tricorium>",
-            "description": "<actionblue>Enforced Control</actionblue><br>Exerting rigorous control over all Indentured units boosts their damage output by 25% for 2 <turn></turn><br><br>Additionally, this mod grants the unit +1<shield></shield>. <br><br> <abilityred>This Mod can only be applied to the Syndicate Overseer unit. </abilityred> ",
+            "description": "Additionally, this mod grants the unit +1<shield></shield>. <br><br> <abilityred>This Mod can only be applied to the Syndicate Overseer unit. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Enforced Control</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Exerting rigorous control over all Indentured units boosts their damage output by 25% for 2 <turn></turn><br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList><br><silver>(Psionic Buff)</silver></popUpDesc>",
 
         },
         {
@@ -474,7 +476,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
-            "description": "The unit and all Indentured units in the army gain +25% critical hit chance.<br><br><actionblue>Purging Protocols</actionblue><br>Run purging protocols on target Indentured unit, dispelling them of all hostile status effects.<br><br>Additionally, this mod grants the unit +2<shield></shield>. <br><br> <abilityred>This Mod can only be applied to Syndicate Light units, except for Indentured. </abilityred> ",
+            "description": "The unit and all Indentured units in the army gain +25% critical hit chance.<br><br>Additionally, this mod grants the unit +2<shield></shield>. <br><br> <abilityred>This Mod can only be applied to Syndicate Light units, except for Indentured. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Purging Protocols</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Run purging protocols on target Indentured unit, dispelling them of all hostile status effects.<br><bulletList><bullet>Cooldown: 1 <turn></turn>.</bullet></bulletList><br><silver>(Psionic Buff)</silver></popUpDesc>",
 
         },
         {
@@ -494,7 +496,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
-            "description": "<actionblue>Nanite Injectors</actionblue><br>Use Nanite Injectors to heal this unit for 15<hp></hp> and increase its resistances to all damage channels by 3 for 2 <turn></turn>.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Nanite Injectors</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Use Nanite Injectors to heal this unit for 15<hp></hp> and increase its resistances to all damage channels by 3 for 2 <turn></turn>.<bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>",
 
 
         },
@@ -527,7 +529,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
-            "description": "<actionblue>Jetpack Jump</actionblue><br>Jump to the target location.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+            "description": "Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Jetpack Jump</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Jump to the target location.<bulletList><bullet>Cooldown: 3 <turn></turn></bullet><bullet>Starts on cooldown: 1 <turn></turn></bullet></bulletList></popUpDesc>",
 
 
         },
@@ -538,7 +540,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Replaces the Engineer's gun turret with a turret that fires missiles.<br><br><actionblue>Place Launcher Turret</actionblue><br>Place a launcher turret on the target hex.<br><br>The summoned unit will inherit any compatible mods that do not grant an active ability.<br><br>Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to the Vanguard Engineer units. </abilityred> ",
+            "description": "Additionally, this mod grants the unit +1 <armor></armor>. <br><br> <abilityred>This Mod can only be applied to the Vanguard Engineer units. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Place Launcher Turret</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Place a launcher turret on the target hex.<br><br>The summoned unit will inherit any compatible mods that do not grant an active ability.<br><br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
 
 
         },
@@ -560,7 +562,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Gives the unit <actionblue></actionblue> and the 'Fire Brimstone Missile' ability.<br><br><actionblue>Fire Brimstone Missile</actionblue><br>Fire a Brimstone Missile at an enemy. The rocket leaves behind a stream of super-heated gas that deals Thermal damage to all units that enter its area.<br><br>Additionally, this mod grants the unit +2<armor></armor>. <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> ",
+            "description": "Gives the unit <actionblue></actionblue> and the 'Fire Brimstone Missile' ability.<br><br>Additionally, this mod grants the unit +2<armor></armor>. <br><br> <abilityred>This Mod can only be applied to Infantry units. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Fire Brimstone Missile</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamagePhysical></DamagePhysical> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Brimstone Missile at an enemy. The rocket leaves behind a stream of super-heated gas that deals Thermal damage to all units that enter its area.<br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Explosive)</silver></popUpDesc>",
 
 
         },
@@ -979,7 +981,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
-            "description": "<actionblue>Bio-Spore Purification</actionblue><br>Inject target Biological or Cyborg unit with a specific concoction of purifying spores. The target is healed for 25 <hp></hp> and all negative Status Effects are cleared.<br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
+            "description": "Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred>  <br><br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Bio-Spore Purification</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Inject target Biological or Cyborg unit with a specific concoction of purifying spores. The target is healed for 30 <hp></hp> and all negative Status Effects are cleared. <br> Mechanical units with Xenoplague upgrades can also be affected<bulletList><bullet>Can only be used once per battle</bullet></bulletList><br></popUpDesc>",
 
 
         },
@@ -990,7 +992,8 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
-            "description": "<actionblue>Bio-Spore Hyper Aggression</actionblue><br>Releases a burst of spores from the unit, driving all friendly Biological and Cyborg units around them into <actionblue> Hyper Aggression</actionblue>, increasing their damage by 25% for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
+            "description": "Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> <br><br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Bio-Spore Purification</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Releases a burst of spores from the unit, driving all friendly Biological and Cyborg units around them into <actionblue> Hyper Aggression</actionblue>, increasing their damage by 25% for 3 <turn></turn>. <br> Mechanical units with Xenoplague upgrades can also be affected<bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></popUpDesc>",
+
 
 
         },
@@ -1001,7 +1004,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
-            "description": "<actionblue>Bio-Spore Proliferation</actionblue><br>Resurrect target friendly Biological or Cyborg unit. If used on a non-Xenoplague corpse, the unit will return as a Xenoplague unit.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> ",
+            "description": "Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> <br><br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Bio-Spore Purification</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc>Resurrect target friendly Biological or Cyborg unit. If used on a non-Xenoplague corpse, the unit will return as a Xenoplague unit<br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></popUpDesc>",
 
 
         },
@@ -1056,7 +1059,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Provides the unit with a Daemon Shell containing an Incapacitate Daemon that they can deploy to disrupt enemy units.  They also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology. <br><br><actionblue>Incapacitate Daemon Shell</actionblue><br>Infect target enemy Mechanical or Cyborg unit with a hostile Daemon. This causes the unit the have a 8 <StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> for 1 <turn></turn>. On failure, the unit is staggered instead.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
+            "description": "Provides the unit with a Daemon Shell containing an Incapacitate Daemon that they can deploy to disrupt enemy units.  They also become <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology. <br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Incapacitate Daemon Shell</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Infect target enemy Mechanical or Cyborg unit with a hostile Daemon. This causes the unit the have a 8 <StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> for 1 <turn></turn>. On failure, the unit is staggered instead.<bullet>Cooldown: 3 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
 
 
         },
@@ -1078,7 +1081,8 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Deploys a drone inhabited by a Malware Daemon. <br><br><actionblue>Deployable Malware Daemon</actionblue><br>Deploy the Malware Daemon drone. It has a ranged Arc attack, and if destroyed, will attempt to <abilityred>Mind Control</abilityred> a nearby enemy Mechanical or Cyborg unit.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred> ",
+            "description": "Deploys a drone inhabited by a Malware Daemon.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Biological, Cyborg, and Mechanical units </abilityred><br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Deployable Malware Daemon</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Deploy the Malware Daemon drone. It has a ranged Arc attack, and if destroyed, will attempt to <abilityred>Mind Control</abilityred> a nearby enemy Mechanical or Cyborg unit.<bullet>Can only be used once per battle.</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+
 
 
         },
@@ -1122,7 +1126,8 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "10 <tricorium></tricorium>",
-            "description": " This unit can no longer trigger Overwatch attacks. <br>This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> <actionblue>Project Pacifism</actionblue><br>All units adjacent to this one have a strength 8 <strengthpsyche></strengthpsyche> chance of becoming <abilityred>Pacified</abilityred>, disabling damaging abilities for 2 <turn></turn> .<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless Infantry and Mounted units </abilityred> ",
+            "description": " This unit can no longer trigger Overwatch attacks. <br>This unit is now considered <actionblue>Enlightened</actionblue>.<br><br> Additionally, this mod grants the unit +1<shield></shield><br><br> <abilityred>This Mod can only be applied to non-Mindless Infantry and Mounted units </abilityred> <br><br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Project Pacifism</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>All units adjacent to this one have a strength 8 <strengthpsyche></strengthpsyche> chance of becoming <abilityred>Pacified</abilityred>, disabling damaging abilities for 2 <turn></turn>.<bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc> ",
+
 
 
         },
@@ -1144,7 +1149,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
-            "description": " <actionblue>Purification Field</actionblue><br>Restore 15 <hp></hp> and remove any non-Psionic Status Effects from this unit or target adjacent unit. <br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can be applied to any unit except Animals </abilityred> ",
+            "description": "Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can be applied to any unit except Animals </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Purification Field</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc>Restore 15 <hp></hp> and remove any non-Psionic Status Effects from this unit or target adjacent unit.<br><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>",
 
 
         },
@@ -1211,7 +1216,8 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "<actionblue>Launch Phoenix Bombs</actionblue><br>Fire a Phoenix Bomb, dealing damage in a 1 hex radius area and leaving behind a burning Hazard for 2 <turn></turn>.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
+            "description": " Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred>  <br><br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Launch Phoenix Bombs</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>26<DamageThermal></DamageThermal> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Phoenix Bomb, dealing damage in a 1 hex radius area and leaving behind a burning Hazard for 2 <turn></turn>.<br><bulletList><bullet><xpCol>Immolate</xpCol> 8 <strengthThermal></strengthThermal> strength chance to apply <abilityred>Immolated</abilityred> to non-Mineral or non-Ethereal targets for 3 <turn></turn>. If resisted, apply <abilityred>Burning</abilityred> instead.</bullet><bullet>Ignores line of sight penalties</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Plasma)</silver></popUpDesc>",
+
 
 
         },
@@ -1233,7 +1239,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "<actionblue>Consuming Gaze</actionblue><br>This unit channels dark Psionic energy through its eyes, dealing damage to target enemy unit and healing the caster for 20<hp></hp>.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
+            "description": "Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Consuming Gaze</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>12<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>This unit channels dark Psionic energy through its eyes, dealing damage to target enemy unit and healing the caster for 20<hp></hp>.<br><bulletList><bullet><xpCol>Broken Mind</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
 
 
         },
@@ -1299,7 +1305,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "<actionblue>Gravity Pulse Grenade</actionblue><br>Throw a Gravity Pulse Grenade dealing damage in a 1 hex radius area.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> ",
+            "description": "Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Gravity Pulse Grenade</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>9<DamagePhysical></DamagePhysical> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Throw a Gravity Pulse Grenade dealing damage in a 1 hex radius area.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles.<br>Can destroy fortified obstacles.</bullet><bullet><xpCol>Dimensional Instability</xpCol> 4<StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Dimensional Instability</abilityred> until the end of combat. </bullet></bulletList><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Grenade)</silver></popUpDesc>",
 
 
         },
@@ -1310,7 +1316,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
-            "description": "<actionblue>Phase</actionblue><br>Teleport to target unoccupied hex.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+            "description": "Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> <br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Phase</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Leave One Point<leaveoneaction></leaveoneaction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Teleport to target unoccupied hex.<bullet>Cooldown: 3 <turn></turn></bullet></bulletList></popUpDesc>",
 
 
         },
@@ -1398,7 +1404,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "<actionblue>Positron Arc Storm</actionblue><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+            "description": " Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred><br><br> Unlocks Ability: <br><br> <popUpHeader3><titleBrown>Positron Arc Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><bulletList><bullet><xpCol>Stun</xpCol> 4<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> instead.</bullet><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet></bulletList><br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
 
 
         },
@@ -1728,7 +1734,8 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "All Psionic attacks have 20% Increased accuracy.<br><br><actionblue>Dominate</actionblue><br> Through Psionic will of the caster, target unit has a 8 <strengthpsyche></strengthpsyche> strength chance to be Mind Controlled. Mind controlled units switch factions to your side. The Mind Control effect is canceled if the caster is killed. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+            "description": "All Psionic attacks have 20% Increased accuracy. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred>  <br><br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Dominate</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Through Psionic will of the caster, target unit has a 8 <strengthpsyche></strengthpsyche> strength chance to be Mind Controlled. Mind controlled units switch factions to your side. The Mind Control effect is canceled if the caster is killed.<bulletList><bullet>Can only be used once per battle</bullet></bulletList><br></popUpDesc>",
+
 
 
         },
@@ -1739,7 +1746,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "<actionblue>Aether Storm</actionblue><br> Channel the power of the aether through this unit.<br> Teleport to target location and strike all foes within 2 hexes. <br> This unit enters its Defense Mode afterwards. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+            "description": "Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred>  <br><br> Unlocks Ability: <br><br><popUpHeader3><titleBrown>Aether Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>14<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br> Channel the power of the aether through this unit.<br> Teleport to target location and strike all foes within 2 hexes. <br> This unit enters its <actionblue>Defense Mode</actionblue> afterwards.<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Insanity</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Insanity</abilityred> to non-Mindless units for 1<turn></turn>. If resisted, apply<abilityred>Broken Mind</abilityred> instead.</bullet></bulletList><br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
 
 
         },
