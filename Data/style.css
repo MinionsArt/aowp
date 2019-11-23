@@ -36,7 +36,7 @@ ul.egmenu a {
     cursor: pointer;
     color: white;
     line-height: 30px;
-    padding: 15px 20px;
+    padding: 9px 20px;
 
     text-decoration: none;
 }
@@ -272,8 +272,7 @@ p {
 
     position: relative;
     float: right;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 20px;
     max-width: 500px;
     top: -20px;
 }
@@ -284,10 +283,9 @@ p {
     min-width: 800px;
     float: left;
     background-color: rgb(0, 5, 10, 0.5);
-    border: 1px solid white;
+
     display: table;
-    border: 2px solid white;
-    border-color: rgba(105, 255, 255, 0.4);
+    padding: 10px;
     margin: 5px;
 }
 
@@ -310,6 +308,7 @@ p {
 
     background-repeat: no-repeat;
     background-position: bottom center;
+
 
 
 }
@@ -544,8 +543,9 @@ tab {
     font-size: 18px;
     position: relative;
 
-    text-align: center;
-    text-shadow: 2px 2px 5px cyan;
+    text-align: left;
+    padding-left: 10px;
+
 }
 
 .tooltip {
@@ -1044,6 +1044,11 @@ HelpText {
 
 fireCol {
     color: red;
+}
+
+silver {
+    color: lightgray;
+    font-size: 15px;
 }
 
 xp {

@@ -379,16 +379,16 @@ function showMod(a) {
     for (j in jsonMods.mods) {
         if (a == jsonMods.mods[j].slug) {
             modName = document.getElementById("modname");
-            modName.innerHTML = "<span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonMods.mods[j].name;
+            modName.innerHTML = "<titlebrown>" + jsonMods.mods[j].name + "</titlebrown>";
             modName.setAttribute("id", "modname" + a);
             description = document.getElementById("moddescription");
             description.innerHTML = jsonMods.mods[j].description;
             description.setAttribute("id", "moddescription" + a);
-            type = document.getElementById("modtype");
-            type.innerHTML = "Mod Type: " + jsonMods.mods[j].type;
-            type.setAttribute("id", "modtype" + a);
+            //type = document.getElementById("modtype");
+            //type.innerHTML = "Mod Type: " + jsonMods.mods[j].type;
+            //type.setAttribute("id", "modtype" + a);
             tier = document.getElementById("modtier");
-            tier.innerHTML = "Tier: " + jsonMods.mods[j].tier;
+            tier.innerHTML = "<silver>" + "Tier " + jsonMods.mods[j].tier + ", " + jsonMods.mods[j].type + "</silver>";
             tier.setAttribute("id", "modtier" + a);
             cost = document.getElementById("modcost");
             cost.innerHTML = "Purchase Cost : " + jsonMods.mods[j].cost;
