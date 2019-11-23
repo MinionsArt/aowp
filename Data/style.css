@@ -10,7 +10,8 @@ ul {
 }
 
 ul.egmenu {
-    background: #333;
+    background: black;
+    border: 1px solid rgba(60, 60, 90, 1);
     height: 30px;
     width: 100%;
 }
@@ -21,11 +22,13 @@ ul.egmenu > li {
 }
 
 ul.egmenu ul {
-    background: #444;
+    background-color: rgba(10, 10, 15, 1);
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
+    border: 1px solid rgba(60, 60, 90, 1);
+    min-width: 150px;
 }
 
 body {
@@ -36,8 +39,7 @@ ul.egmenu a {
     cursor: pointer;
     color: white;
     line-height: 30px;
-    padding: 9px 20px;
-
+    padding: 9px 10px;
     text-decoration: none;
 }
 
@@ -45,13 +47,13 @@ ul.egmenu li {
     list-style: none;
     z-index: 1000;
     text-transform: uppercase;
-    font: bold 12px Arial;
-
+    font-size: 12px;
+    font-family: 'Duru Sans', sans-serif;
 
 }
 
 ul.egmenu li:hover {
-    background: #555;
+    background-color: darkslategrey;
 }
 
 ul.egmenu li:hover ul {
