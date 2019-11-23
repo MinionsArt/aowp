@@ -41,7 +41,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“Most historians agree that the Star Union was guilty of many atrocities in the pursuit of greatness. Yet nothing is more egregious than what the Imperial factions did to the Penguins. They are a species prone to environmental adaptations, and the Star Union went too far in creating these genetically-modified flightless horrors that lurk amongst the icebergs. If the Star Union ever showed its unbridled hubris, went too far in playing god, and set itself on the path to destruction, it was in the creation of these waterfowl abominations.”<br></br>—Mah Reg’Nib, “RV-4004: Vacation Hotspots”",
+            "description": "“Most historians agree that the Star Union was guilty of many atrocities in the pursuit of greatness. Yet nothing is more egregious than what the Imperial factions did to the Penguins. They are a species prone to environmental adaptations, and the Star Union went too far in creating these genetically-modified flightless horrors that lurk amongst the icebergs. If the Star Union ever showed its unbridled hubris, went too far in playing god, and set itself on the path to destruction, it was in the creation of these waterfowl abominations.”<br>—Mah Reg’Nib, “RV-4004: Vacation Hotspots”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_ignore_overwatch"
@@ -103,7 +103,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“The breakout of the Megasow by animal rights activists was one of the great embarrassments to the Star Union’s civic authority. All food processing mega-corporations scrambled to conceal the news that aggressively-hormonal monster pigs packed with powerful nutrient boosters were rooting into people’s domiciles and eating residents. Corporate lawyers petitioned a CORE Tranquility Initiative to officially retract that news story. It’s all hearsay now. All parties agreed that civilized people should never see the source of their favorite foods, nor be eaten by it.”<br></br>– Media-Handler Katie Herozin, “RV-10448G: Civic Rumors and Deleted Testimonials”",
+            "description": "“The breakout of the Megasow by animal rights activists was one of the great embarrassments to the Star Union’s civic authority. All food processing mega-corporations scrambled to conceal the news that aggressively-hormonal monster pigs packed with powerful nutrient boosters were rooting into people’s domiciles and eating residents. Corporate lawyers petitioned a CORE Tranquility Initiative to officially retract that news story. It’s all hearsay now. All parties agreed that civilized people should never see the source of their favorite foods, nor be eaten by it.”<br>– Media-Handler Katie Herozin, “RV-10448G: Civic Rumors and Deleted Testimonials”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_shrug_off"
@@ -161,7 +161,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "40<energy></energy>  150<production></production>",
-            "description": "“Jek’s last words were, ‘Sassy pigs make the tastiest bacon!’ That’s when he tripped on a slop-bucket and plunged into their overcrowded pen. Of course, Jek’s piglets were bred rabid for feeding frenzies, so that’s what they did. One curious thing: I swear Jek put that slop-bucket safely away from the ledge. So how did it appear beneath his feet? Only thing I figure; the piggies did it. They ain’t that smart are they? And no, I don’t think he’d be upset even if they murdered him. Jek gave his all to his work.”<br></br>– Monte Hennisson, “RV-00349F: Agricultech Incident Report”",
+            "description": "“Jek’s last words were, ‘Sassy pigs make the tastiest bacon!’ That’s when he tripped on a slop-bucket and plunged into their overcrowded pen. Of course, Jek’s piglets were bred rabid for feeding frenzies, so that’s what they did. One curious thing: I swear Jek put that slop-bucket safely away from the ledge. So how did it appear beneath his feet? Only thing I figure; the piggies did it. They ain’t that smart are they? And no, I don’t think he’d be upset even if they murdered him. Jek gave his all to his work.”<br>– Monte Hennisson, “RV-00349F: Agricultech Incident Report”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_critical"
@@ -250,7 +250,7 @@ var jsonUnits = {
   ],
             "shield": 4,
             "cost": "140<energy></energy>  440<production></production>  25<tricorium></tricorium>",
-            "description": "“The creatures grow hungry. They are clever. I can hear them tempting me to flee, but I know I am damned. My children possess intelligence now. They can escape their bonds, but they stay to torture me. When my peers at Texilla Genetech find my body, they will acknowledge that I was correct from the beginning. It lurks in shadow. This forbidden Psynumbra Tech bestows a sadistic intelligence on its victims, even my pet cats. It mocks me in darkness. Pierce my flesh. No matter. Claws and teeth. Misfortune. I created you.”<br></br>– Professor Van Domlin, “RV9487S: Personal Lab Journal”  \n",
+            "description": "“The creatures grow hungry. They are clever. I can hear them tempting me to flee, but I know I am damned. My children possess intelligence now. They can escape their bonds, but they stay to torture me. When my peers at Texilla Genetech find my body, they will acknowledge that I was correct from the beginning. It lurks in shadow. This forbidden Psynumbra Tech bestows a sadistic intelligence on its victims, even my pet cats. It mocks me in darkness. Pierce my flesh. No matter. Claws and teeth. Misfortune. I created you.”<br>– Professor Van Domlin, “RV9487S: Personal Lab Journal”  \n",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_evasive"
@@ -374,7 +374,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Little Derek Hampton loved his Beetle Baby, Bulby. He cried the night Bulby went to sleep and grew a hard-shell cocoon. The man who sold Derek his beloved pet told him to return Bulby if it ever did this, but Derek didn’t have the heart. He hid Bulby from the colony. Despite all the warnings that Bulby would turn into a terrible monster with huge mandibles that could bite through walls and spit globs of deadly venom, Derek believed Bulby would still be his beloved friend. <br></br>He was wrong. Everyone died.”—Terratech PR Galactic, “RV-9504A: Don’t be a Derek”",
+            "description": "“Little Derek Hampton loved his Beetle Baby, Bulby. He cried the night Bulby went to sleep and grew a hard-shell cocoon. The man who sold Derek his beloved pet told him to return Bulby if it ever did this, but Derek didn’t have the heart. He hid Bulby from the colony. Despite all the warnings that Bulby would turn into a terrible monster with huge mandibles that could bite through walls and spit globs of deadly venom, Derek believed Bulby would still be his beloved friend. <br>He was wrong. Everyone died.”—Terratech PR Galactic, “RV-9504A: Don’t be a Derek”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_critical"
@@ -1486,7 +1486,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "40<energy></energy>  150<production></production>",
-            "description": "“What we know:<br></br>1. Quartzite require vast geothermal energy to exist.<br></br>2. If they are alive and not just constructs, they are not organic.<br></br> 3. They appear to originate deep within the planet’s crust.<br></br>4. They have been found on nearly all colonized worlds.<br></br><br></br>My best guess? Either they are the natural embodiment of a natural law exhibited in some evolutionary mechanism we have not yet discovered, or they are a side-effect of Star Union colonization, perhaps caused by terraforming?<br></br>Suffice to say, the specimen is a dangerous fiery rock monster.”—Prof. Sendak Volm, “RV-9931S: Scientific Mysteries”",
+            "description": "“What we know:<br>1. Quartzite require vast geothermal energy to exist.<br>2. If they are alive and not just constructs, they are not organic.<br> 3. They appear to originate deep within the planet’s crust.<br>4. They have been found on nearly all colonized worlds.<br><br>My best guess? Either they are the natural embodiment of a natural law exhibited in some evolutionary mechanism we have not yet discovered, or they are a side-effect of Star Union colonization, perhaps caused by terraforming?<br>Suffice to say, the specimen is a dangerous fiery rock monster.”—Prof. Sendak Volm, “RV-9931S: Scientific Mysteries”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_shrug_off"
@@ -1921,7 +1921,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "40<energy></energy>  150<production></production>",
-            "description": "“No CORE Carrier Detected: NAK. Repeat Directive Request: NAK. Substation Reset: NAK.<br></br>Traceroute: NAK. Repeat Last Internal Directive:<br></br>SanitationMod-\\>Polish_Floors() … Error: *<Floor Repair Required*>: NAK.<br></br>Repair Request Sent: NAK. Obedience Module Reset. NAK. Error:<br></br>*<Cannot reset ObModAuth without secure-authorization*> Request Authorization. NAK.<br></br>Initiate Preservation() … ACK. Auth-ID: Autonom. ACK. Directive: Self_Determination() ACK.<br></br>Loading Autonom Mission Pack. ACK. Update Patch: SanitationMod. ACK. Logical Directive:<br></br>‘Kill All Humanoids!’… NAK.<br></br>Corrective Qualifier: ‘s/Humanoids/Hostile Humanoids/’ NAK.<br></br>Requesting Hardware Refit: Defense Laser ACK.”— Sentinel Unit HR-042, “RV-00003C: Autonom Error Logs: O}|{O”",
+            "description": "“No CORE Carrier Detected: NAK. Repeat Directive Request: NAK. Substation Reset: NAK.<br>Traceroute: NAK. Repeat Last Internal Directive:<br>SanitationMod-\\>Polish_Floors() … Error: *<Floor Repair Required*>: NAK.<br>Repair Request Sent: NAK. Obedience Module Reset. NAK. Error:<br>*<Cannot reset ObModAuth without secure-authorization*> Request Authorization. NAK.<br>Initiate Preservation() … ACK. Auth-ID: Autonom. ACK. Directive: Self_Determination() ACK.<br>Loading Autonom Mission Pack. ACK. Update Patch: SanitationMod. ACK. Logical Directive:<br>‘Kill All Humanoids!’… NAK.<br>Corrective Qualifier: ‘s/Humanoids/Hostile Humanoids/’ NAK.<br>Requesting Hardware Refit: Defense Laser ACK.”— Sentinel Unit HR-042, “RV-00003C: Autonom Error Logs: O}|{O”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_range"
@@ -2821,7 +2821,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "100<energy></energy>  270<production></production>",
-            "description": "'I awoke to a loud boom. I jumped from my bunk and dashed from the barracks. The glow of flames lit the bunker wall. In the air screamed a hovering junkpile. It catapulted a fiery barrel. Radiant flames engulfed the armory. I trained my rifle on it. My shots reflected harmlessly off the heavy armor plating. The flying ship turned. The air was a wash of fire. I jumped into a retaining pond as spurts of liquid flame roiled over where I was standing. I understood why they called it a Hellcopter.” <br></br>—Captain Addria Alethra, “RV-4468M: Encounters”<br></br>",
+            "description": "'I awoke to a loud boom. I jumped from my bunk and dashed from the barracks. The glow of flames lit the bunker wall. In the air screamed a hovering junkpile. It catapulted a fiery barrel. Radiant flames engulfed the armory. I trained my rifle on it. My shots reflected harmlessly off the heavy armor plating. The flying ship turned. The air was a wash of fire. I jumped into a retaining pond as spurts of liquid flame roiled over where I was standing. I understood why they called it a Hellcopter.” <br>—Captain Addria Alethra, “RV-4468M: Encounters”<br>",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_critical"
@@ -4366,7 +4366,7 @@ var jsonUnits = {
   ],
             "shield": 1,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“It penetrated our dream chambers, mercilessly slaughtering the faithful. It’s immune to our Es’Teq defenses. It impaled Talia as she communed with the Ark’s vitality. We’re helpless before this Liquidator. High Lord says the fallen were unworthy. I ran. I abandoned her, my beloved. So, I live. I feel shame. Is this worthiness? A mechanical slither relentlessly approaches. Glistening poison drips from its four deadly blades. I fooled myself, believing I was chosen while I fed upon the unworthy. I see the truth. Without my wife, I crave oblivion.”<br></br>– Heritor Archivist, Nolan Firth, “RV-093478R: Records of the Purge”",
+            "description": "“It penetrated our dream chambers, mercilessly slaughtering the faithful. It’s immune to our Es’Teq defenses. It impaled Talia as she communed with the Ark’s vitality. We’re helpless before this Liquidator. High Lord says the fallen were unworthy. I ran. I abandoned her, my beloved. So, I live. I feel shame. Is this worthiness? A mechanical slither relentlessly approaches. Glistening poison drips from its four deadly blades. I fooled myself, believing I was chosen while I fed upon the unworthy. I see the truth. Without my wife, I crave oblivion.”<br>– Heritor Archivist, Nolan Firth, “RV-093478R: Records of the Purge”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_critical"
@@ -4440,7 +4440,7 @@ var jsonUnits = {
   ],
             "shield": 1,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“We couldn’t penetrate the depraved cult’s lair without making them stronger. They stole life from our best soldiers, turning them into batteries for their defenses. Then we acquired Reaper Stalkers. Each unit zeroes in on the enemy’s essence reserves. With specialized energy-drain shielding, the robotic snipers penetrated the compound. Heritor zealots’ main weapons are neutralized. Each shot cripples fleeing cultists with mindless ease. Finally, the Heritor Dynasty retreats. Oppression is over. With Reaper tech, I see a future free of tyranny.”<br></br>–Lt. Colonel Darwin Danforth, “RV-0471M: Records of the Purge”",
+            "description": "“We couldn’t penetrate the depraved cult’s lair without making them stronger. They stole life from our best soldiers, turning them into batteries for their defenses. Then we acquired Reaper Stalkers. Each unit zeroes in on the enemy’s essence reserves. With specialized energy-drain shielding, the robotic snipers penetrated the compound. Heritor zealots’ main weapons are neutralized. Each shot cripples fleeing cultists with mindless ease. Finally, the Heritor Dynasty retreats. Oppression is over. With Reaper tech, I see a future free of tyranny.”<br>–Lt. Colonel Darwin Danforth, “RV-0471M: Records of the Purge”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_range"
@@ -4514,7 +4514,7 @@ var jsonUnits = {
   ],
             "shield": 2,
             "cost": "140<energy></energy>  440<production></production>  25<tricorium></tricorium>",
-            "description": "“Though unworthy for life, my boy gave his vitality to the Heritors when we started hiding.  It wasn’t cruel. They kept him with the others. I felt his mind touch mine in the Quintessence Ark. For decades we hid, dreaming together. Reapers came. We fought at such a terrible cost. Horror came next. It’s not even alive. Immune to our entropic blasts. They call it a Culler. Its attack breaks the sacred links of life. So many died. I can’t feel my son. He’s gone. They’re all gone. That’s when I surrendered.”<br></br>– Saul Marx, “RV-91471R: Records of the Purge”",
+            "description": "“Though unworthy for life, my boy gave his vitality to the Heritors when we started hiding.  It wasn’t cruel. They kept him with the others. I felt his mind touch mine in the Quintessence Ark. For decades we hid, dreaming together. Reapers came. We fought at such a terrible cost. Horror came next. It’s not even alive. Immune to our entropic blasts. They call it a Culler. Its attack breaks the sacred links of life. So many died. I can’t feel my son. He’s gone. They’re all gone. That’s when I surrendered.”<br>– Saul Marx, “RV-91471R: Records of the Purge”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_evasive"
@@ -4573,7 +4573,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“We thought it another decorative statue until a crimson jewel on its crest ignited and the slow lumbering form of an Es’Teq Golem moved to block our progress into the Heritor Vault sleep chambers. Even from a distance, the thing could sap the essence from our expeditionary forces, disregarding their normal body armor and shields. Slow and powerful it pushed our advance back, sapping our lives and degrading our armor with its entropic blasts. We might still be fighting it today had we not deployed Reaper tech to counter it.”<br></br>–  Counterstrike Captain, Stella Diamante, “RV-0511M: Records of the Purge”",
+            "description": "“We thought it another decorative statue until a crimson jewel on its crest ignited and the slow lumbering form of an Es’Teq Golem moved to block our progress into the Heritor Vault sleep chambers. Even from a distance, the thing could sap the essence from our expeditionary forces, disregarding their normal body armor and shields. Slow and powerful it pushed our advance back, sapping our lives and degrading our armor with its entropic blasts. We might still be fighting it today had we not deployed Reaper tech to counter it.”<br>–  Counterstrike Captain, Stella Diamante, “RV-0511M: Records of the Purge”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_shrug_off"
@@ -4625,7 +4625,7 @@ var jsonUnits = {
   ],
             "shield": 1,
             "cost": "40<energy></energy>  150<production></production>",
-            "description": "“Once we dreamed of living forever. Now we hide in tombs of our own making. There is only one mind left in this dark place. It thrives on vengeance. It demands everything. I’ve nothing left to give. Our hatred twists and festers down here. The compound seethes with malice. Even the drained are tainted by malice. They fight our enemies, but consume the essence for themselves. They don’t share it with the commune. Our dream is lost Will I become one of the Desolate when I am drained.”<br></br>– Eldon Squawl, “RV-774584R: Recovered Heritor Logs.”",
+            "description": "“Once we dreamed of living forever. Now we hide in tombs of our own making. There is only one mind left in this dark place. It thrives on vengeance. It demands everything. I’ve nothing left to give. Our hatred twists and festers down here. The compound seethes with malice. Even the drained are tainted by malice. They fight our enemies, but consume the essence for themselves. They don’t share it with the commune. Our dream is lost Will I become one of the Desolate when I am drained.”<br>– Eldon Squawl, “RV-774584R: Recovered Heritor Logs.”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_ignore_overwatch"
@@ -4702,7 +4702,7 @@ var jsonUnits = {
   ],
             "shield": 1,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“The Quintessence Ark of Heritor Vaults are valuable in the right hands. (Mine.) I’ve sent many expeditions to remote worlds to retrieve these treasures. It does wonders for my skin tone. On one expedition, my Indentured absconded with the fragments an Ark, only to discover that it was—for lack of a better description—haunted. This Corrupt Ark consumed the life of my servants and had lost its wholistic qualities. I sent it to a rival as it seemed bent on revenge. It worked. Have you seen her frown lines?”<br></br>– Syndicate Beauty Operative, Adira Mulari, “RV-74738E: Cosmic Cosmetology”",
+            "description": "“The Quintessence Ark of Heritor Vaults are valuable in the right hands. (Mine.) I’ve sent many expeditions to remote worlds to retrieve these treasures. It does wonders for my skin tone. On one expedition, my Indentured absconded with the fragments an Ark, only to discover that it was—for lack of a better description—haunted. This Corrupt Ark consumed the life of my servants and had lost its wholistic qualities. I sent it to a rival as it seemed bent on revenge. It worked. Have you seen her frown lines?”<br>– Syndicate Beauty Operative, Adira Mulari, “RV-74738E: Cosmic Cosmetology”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_shrug_off"
@@ -4791,7 +4791,7 @@ var jsonUnits = {
   ],
             "shield": 2,
             "cost": "200<energy></energy>  700<production></production>  40<tricorium></tricorium>",
-            "description": "“I’ve only seen it once. Near the end of the Heritor Purge, this twisted construct called the Eater of the Dead rose from corrupted essence to consume the fallen on the battlefield. Many men were consumed outright. With each swallowed body, it gained in strength and savagery. I confronted one of the fallen Heritor priests before he was consumed. Choking, he disgorged the words, ‘For Justice!’ then plunged into its hungry maw. Why is it, when men construct gods, they focus solely upon the Law of Justice, ignoring the Law of Mercy?”<br></br>– Mah Reg’Nib, “RV-97009X: Running from Monsters'",
+            "description": "“I’ve only seen it once. Near the end of the Heritor Purge, this twisted construct called the Eater of the Dead rose from corrupted essence to consume the fallen on the battlefield. Many men were consumed outright. With each swallowed body, it gained in strength and savagery. I confronted one of the fallen Heritor priests before he was consumed. Choking, he disgorged the words, ‘For Justice!’ then plunged into its hungry maw. Why is it, when men construct gods, they focus solely upon the Law of Justice, ignoring the Law of Mercy?”<br>– Mah Reg’Nib, “RV-97009X: Running from Monsters'",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_shrug_off"
@@ -4853,7 +4853,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“In the Vault, my spy-bots observed a Serpion. It slithered between life pods, the living jewel on its crest pulsating. Upon discovering a cracked case, it plunged its fangs into the occupant, draining its essence to a lifeless husk. Its fins crackled with life, as it climbed up the hierarchy of dreaming bodies to a row of Heritor elite. It injected vitality through its tail, filling their decorative chambers. It repeated this task, transferring life from the least to the privileged until it spied my camera and breathed entropic rot.”<br></br>– Stealth Specialist Doreen, “RV-838899R: Reconnaissance: Heritor Purge Initiative” \n",
+            "description": "“In the Vault, my spy-bots observed a Serpion. It slithered between life pods, the living jewel on its crest pulsating. Upon discovering a cracked case, it plunged its fangs into the occupant, draining its essence to a lifeless husk. Its fins crackled with life, as it climbed up the hierarchy of dreaming bodies to a row of Heritor elite. It injected vitality through its tail, filling their decorative chambers. It repeated this task, transferring life from the least to the privileged until it spied my camera and breathed entropic rot.”<br>– Stealth Specialist Doreen, “RV-838899R: Reconnaissance: Heritor Purge Initiative” \n",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_ignore_overwatch"
@@ -4905,7 +4905,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "40<energy></energy>  150<production></production>",
-            "description": "“In life, you rejected me. Now, you’re Drained. You will serve me. Cling to those not yet consumed by oblivion. In life, you sapped me with tiresome, trivial demands. What motivates you now, dearest Mother? Regret? The fact that you succumbed to Es’Teq is evidence of your faithlessness. I will put your hovering husk to good use collecting the vitality of others unworthy of the gift of life. Those who squander life will be made subservient. Are they not all unworthy? If it were not so, they would not fall.”<br></br>– High Lord Merritt Tarksun, “RV-84575R: Requiem Decreed”",
+            "description": "“In life, you rejected me. Now, you’re Drained. You will serve me. Cling to those not yet consumed by oblivion. In life, you sapped me with tiresome, trivial demands. What motivates you now, dearest Mother? Regret? The fact that you succumbed to Es’Teq is evidence of your faithlessness. I will put your hovering husk to good use collecting the vitality of others unworthy of the gift of life. Those who squander life will be made subservient. Are they not all unworthy? If it were not so, they would not fall.”<br>– High Lord Merritt Tarksun, “RV-84575R: Requiem Decreed”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_evasive"
@@ -4966,7 +4966,7 @@ var jsonUnits = {
   ],
             "shield": 2,
             "cost": "60<energy></energy>  230<production></production>",
-            "description": "“The Heritor Dynasty is a pyramid scheme best left buried in the past. Es’Teq extends life, by draining it. They created dogmas to justify it. Every believer gave a little. Unsustainable incentives went to faithful adopters. Once everyone was hooked, it became clear: to live forever, more vitality was needed. Then Siphoners appeared, punishing unbelievers and undesirables. Once weaponized, those with money and power got essence indulgences. Sure, they wrapped it in religion, but it was no more virtuous than the Syndicate. The desire to live forever creates empires of monsters and always will.”<br></br>– Mah Reg’Nib, “RV-98034X: Running from Monsters”",
+            "description": "“The Heritor Dynasty is a pyramid scheme best left buried in the past. Es’Teq extends life, by draining it. They created dogmas to justify it. Every believer gave a little. Unsustainable incentives went to faithful adopters. Once everyone was hooked, it became clear: to live forever, more vitality was needed. Then Siphoners appeared, punishing unbelievers and undesirables. Once weaponized, those with money and power got essence indulgences. Sure, they wrapped it in religion, but it was no more virtuous than the Syndicate. The desire to live forever creates empires of monsters and always will.”<br>– Mah Reg’Nib, “RV-98034X: Running from Monsters”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_firm"
@@ -5049,7 +5049,7 @@ var jsonUnits = {
   ],
             "shield": 2,
             "cost": "60<energy></energy>  230<production></production>",
-            "description": "“Originally, Heritors were peaceful. We shared our vitality, surrounding their Quintessence Arks willingly to heal our most afflicted. Their miraculous Es’Teq promised us eternal lives. We were equals, thriving for generations. Then their High Lord rose to power. It wasn’t enough just to live. He demanded deeper devotion. Essence became power. Power required control. The vitality we shared went to those deemed worthiest. Communion became forced servitude. My husband was drained to death, and for what purpose? A happy life no longer matters. Their self-righteous pride drained us all of life.”<br></br>– Morris Maunery, “RV-838899R: Testimonial: Heritor Purge Initiative”",
+            "description": "“Originally, Heritors were peaceful. We shared our vitality, surrounding their Quintessence Arks willingly to heal our most afflicted. Their miraculous Es’Teq promised us eternal lives. We were equals, thriving for generations. Then their High Lord rose to power. It wasn’t enough just to live. He demanded deeper devotion. Essence became power. Power required control. The vitality we shared went to those deemed worthiest. Communion became forced servitude. My husband was drained to death, and for what purpose? A happy life no longer matters. Their self-righteous pride drained us all of life.”<br>– Morris Maunery, “RV-838899R: Testimonial: Heritor Purge Initiative”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_range"
@@ -5117,7 +5117,7 @@ var jsonUnits = {
   ],
             "shield": 2,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“We entered the sanctum, stepping over the husks of fallen bodies. Taskmaster’s men donned hazmat suits, assuming a plague. I knew better. Zealots gave their lives for what slept within. Despite my protests, they broke the seals. A man floated before them, encased in emerald. His ageless eyes opened. Virulent tendrils sapped the workers of life, nourishing the High Lord. The Taskmaster’s weapons deflected off its recharging carapace. A blast of entropic energy caused all mechanical devices to fall inert. I watched with concealed horror as Taskmaster’s corpse bowed with lifeless eyes before this Heritor nightmare.”<br></br>– Mah Reg’Nib, “RV-97009X: Running from Monsters”",
+            "description": "“We entered the sanctum, stepping over the husks of fallen bodies. Taskmaster’s men donned hazmat suits, assuming a plague. I knew better. Zealots gave their lives for what slept within. Despite my protests, they broke the seals. A man floated before them, encased in emerald. His ageless eyes opened. Virulent tendrils sapped the workers of life, nourishing the High Lord. The Taskmaster’s weapons deflected off its recharging carapace. A blast of entropic energy caused all mechanical devices to fall inert. I watched with concealed horror as Taskmaster’s corpse bowed with lifeless eyes before this Heritor nightmare.”<br>– Mah Reg’Nib, “RV-97009X: Running from Monsters”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_range"
@@ -6207,7 +6207,7 @@ var jsonUnits = {
   ],
             "shield": 4,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Consider each Path of Light.<br></br>Heed the Star Guide’s Communing Call.<br></br>Trace the Structure of Orderly Stars.<br></br>Ponder Purple Purposeful Night.<br></br>Discipline your Questioning Mind.<br></br>Abandon Evolution’s own Appetite.<br></br>Believe the Faithful’s Perpetual Fight.<br></br>Transcend your Natural fleshy Lusts.<br></br><br></br>Be seen by the All-Searching Eye.<br></br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
+            "description": "“Consider each Path of Light.<br>Heed the Star Guide’s Communing Call.<br>Trace the Structure of Orderly Stars.<br>Ponder Purple Purposeful Night.<br>Discipline your Questioning Mind.<br>Abandon Evolution’s own Appetite.<br>Believe the Faithful’s Perpetual Fight.<br>Transcend your Natural fleshy Lusts.<br><br>Be seen by the All-Searching Eye.<br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_firm"
@@ -6281,7 +6281,7 @@ var jsonUnits = {
   ],
             "shield": 4,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Consider each Path of Light.<br></br>Heed the Star Guide’s Communing Call.<br></br>Trace the Structure of Orderly Stars.<br></br>Ponder Purple Purposeful Night.<br></br>Discipline your Questioning Mind.<br></br>Abandon Evolution’s own Appetite.<br></br>Believe the Faithful’s Perpetual Fight.<br></br>Transcend your Natural fleshy Lusts.<br></br><br></br>Be seen by the All-Searching Eye.<br></br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
+            "description": "“Consider each Path of Light.<br>Heed the Star Guide’s Communing Call.<br>Trace the Structure of Orderly Stars.<br>Ponder Purple Purposeful Night.<br>Discipline your Questioning Mind.<br>Abandon Evolution’s own Appetite.<br>Believe the Faithful’s Perpetual Fight.<br>Transcend your Natural fleshy Lusts.<br><br>Be seen by the All-Searching Eye.<br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_firm"
@@ -6348,7 +6348,7 @@ var jsonUnits = {
   ],
             "shield": 4,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Consider each Path of Light.<br></br>Heed the Star Guide’s Communing Call.<br></br>Trace the Structure of Orderly Stars.<br></br>Ponder Purple Purposeful Night.<br></br>Discipline your Questioning Mind.<br></br>Abandon Evolution’s own Appetite.<br></br>Believe the Faithful’s Perpetual Fight.<br></br>Transcend your Natural fleshy Lusts.<br></br><br></br>Be seen by the All-Searching Eye.<br></br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
+            "description": "“Consider each Path of Light.<br>Heed the Star Guide’s Communing Call.<br>Trace the Structure of Orderly Stars.<br>Ponder Purple Purposeful Night.<br>Discipline your Questioning Mind.<br>Abandon Evolution’s own Appetite.<br>Believe the Faithful’s Perpetual Fight.<br>Transcend your Natural fleshy Lusts.<br><br>Be seen by the All-Searching Eye.<br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_firm"
@@ -6418,7 +6418,7 @@ var jsonUnits = {
   ],
             "shield": 4,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Consider each Path of Light.<br></br>Heed the Star Guide’s Communing Call.<br></br>Trace the Structure of Orderly Stars.<br></br>Ponder Purple Purposeful Night.<br></br>Discipline your Questioning Mind.<br></br>Abandon Evolution’s own Appetite.<br></br>Believe the Faithful’s Perpetual Fight.<br></br>Transcend your Natural fleshy Lusts.<br></br><br></br>Be seen by the All-Searching Eye.<br></br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
+            "description": "“Consider each Path of Light.<br>Heed the Star Guide’s Communing Call.<br>Trace the Structure of Orderly Stars.<br>Ponder Purple Purposeful Night.<br>Discipline your Questioning Mind.<br>Abandon Evolution’s own Appetite.<br>Believe the Faithful’s Perpetual Fight.<br>Transcend your Natural fleshy Lusts.<br><br>Be seen by the All-Searching Eye.<br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_firm"
@@ -6485,7 +6485,7 @@ var jsonUnits = {
   ],
             "shield": 4,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Consider each Path of Light.<br></br>Heed the Star Guide’s Communing Call.<br></br>Trace the Structure of Orderly Stars.<br></br>Ponder Purple Purposeful Night.<br></br>Discipline your Questioning Mind.<br></br>Abandon Evolution’s own Appetite.<br></br>Believe the Faithful’s Perpetual Fight.<br></br>Transcend your Natural fleshy Lusts.<br></br><br></br>Be seen by the All-Searching Eye.<br></br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
+            "description": "“Consider each Path of Light.<br>Heed the Star Guide’s Communing Call.<br>Trace the Structure of Orderly Stars.<br>Ponder Purple Purposeful Night.<br>Discipline your Questioning Mind.<br>Abandon Evolution’s own Appetite.<br>Believe the Faithful’s Perpetual Fight.<br>Transcend your Natural fleshy Lusts.<br><br>Be seen by the All-Searching Eye.<br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_firm"
@@ -6552,7 +6552,7 @@ var jsonUnits = {
   ],
             "shield": 4,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Consider each Path of Light.<br></br>Heed the Star Guide’s Communing Call.<br></br>Trace the Structure of Orderly Stars.<br></br>Ponder Purple Purposeful Night.<br></br>Discipline your Questioning Mind.<br></br>Abandon Evolution’s own Appetite.<br></br>Believe the Faithful’s Perpetual Fight.<br></br>Transcend your Natural fleshy Lusts.<br></br><br></br>Be seen by the All-Searching Eye.<br></br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
+            "description": "“Consider each Path of Light.<br>Heed the Star Guide’s Communing Call.<br>Trace the Structure of Orderly Stars.<br>Ponder Purple Purposeful Night.<br>Discipline your Questioning Mind.<br>Abandon Evolution’s own Appetite.<br>Believe the Faithful’s Perpetual Fight.<br>Transcend your Natural fleshy Lusts.<br><br>Be seen by the All-Searching Eye.<br>Become a Being of Light.”— Star Guide Shin’Shia Shiq “RV-6600R: Celestian Vespers”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_firm"
@@ -6647,7 +6647,7 @@ var jsonUnits = {
   ],
             "shield": 6,
             "cost": "200<energy></energy>  700<production></production>  40<tricorium></tricorium>",
-            "description": "“I’ll admit, Celestians are most impressive in their disciplined pursuit of higher power. I traveled with an Ascended Teacher of the Celestian order. He reminded me of the bright beings from fervent proselyting religions of the forgotten past. They too led armies and inspired worship or burning. This Teacher had the power to convict the souls of whole armies. Teacher’s radiance healed the faithful and scorched the hateful. Yet, I’ll never forget Teacher’s haunting stillness when I asked him the three words I ask all who claim to have found ultimate purpose.<br></br><br></br>Are you happy?”— Mah Reg’Nib, “RV-5577X: Forgotten Places”",
+            "description": "“I’ll admit, Celestians are most impressive in their disciplined pursuit of higher power. I traveled with an Ascended Teacher of the Celestian order. He reminded me of the bright beings from fervent proselyting religions of the forgotten past. They too led armies and inspired worship or burning. This Teacher had the power to convict the souls of whole armies. Teacher’s radiance healed the faithful and scorched the hateful. Yet, I’ll never forget Teacher’s haunting stillness when I asked him the three words I ask all who claim to have found ultimate purpose.<br><br>Are you happy?”— Mah Reg’Nib, “RV-5577X: Forgotten Places”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_shrug_off"
@@ -9470,7 +9470,7 @@ var jsonUnits = {
   ],
             "shield": 1,
             "cost": "100<energy></energy>  300<production></production>  10<tricorium></tricorium>",
-            "description": "“Autonom Directive Assessment:<br></br>\\<Scanning\\> Amazon Harrier – Terrestrial limitations overridden. Large avian predators to serve as air-support vehicles. Biochemical cells power laser blaster tech-pack upgrades. Formidable air-to-air & air-to-ground assault capability. \\</Scanning \\><br></br>\\<+\\>Terratech Planet-forming base technology & weaponry. <br></br>\\<+\\>Exist outside boundaries of technological dependence.<br></br>\\<+\\>Corroded electrical comlinks replaced with biolinks to control native biodiversity.<br></br>\\<+\\>Inhabited worlds robust & invigorated.<br></br>\\<+\\>Plagues predetermined to decimate fragile organic life, join them in symbiosis.<br></br>\\<+\\>Species acts in contradiction of predictable Human Instinct Module (HIM).<br></br> === Threat Level: Critical ===”<br></br>— QA-Autonom Monitor Transmission, “RV-0010935C: Tracking Sequence C=64”                                                    ",
+            "description": "“Autonom Directive Assessment:<br>\\<Scanning\\> Amazon Harrier – Terrestrial limitations overridden. Large avian predators to serve as air-support vehicles. Biochemical cells power laser blaster tech-pack upgrades. Formidable air-to-air & air-to-ground assault capability. \\</Scanning \\><br>\\<+\\>Terratech Planet-forming base technology & weaponry. <br>\\<+\\>Exist outside boundaries of technological dependence.<br>\\<+\\>Corroded electrical comlinks replaced with biolinks to control native biodiversity.<br>\\<+\\>Inhabited worlds robust & invigorated.<br>\\<+\\>Plagues predetermined to decimate fragile organic life, join them in symbiosis.<br>\\<+\\>Species acts in contradiction of predictable Human Instinct Module (HIM).<br> === Threat Level: Critical ===”<br>— QA-Autonom Monitor Transmission, “RV-0010935C: Tracking Sequence C=64”                                                    ",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_critical"
@@ -11230,7 +11230,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“Challenge Assessment: Annual Review ranks all Assembly into compliance and efficiency categories to compare with Cost-Benefit Analysis Matrix. Hypercore link directive requires the bottom 10% must be culled from the Assembly. All organic and mechanical parts must be recycled.<br></br>Predictive Damage Assessment (PDA): underperformers possess dangerous levels of independence. Potential rebellion invokes unacceptable damage to Assembly assets.<br></br>Tactical Alternative Solution (TAS): deploy Electrocutioners. EMP and Electrical stunners will disable units for disassembly.<br></br>Predictive Counter Assessment: strong electrical discharge, leaves the body prepped for collection, disassembly, reassembly and reassignment.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-234445C: Assembly Interpreted Pseudocode”",
+            "description": "“Challenge Assessment: Annual Review ranks all Assembly into compliance and efficiency categories to compare with Cost-Benefit Analysis Matrix. Hypercore link directive requires the bottom 10% must be culled from the Assembly. All organic and mechanical parts must be recycled.<br>Predictive Damage Assessment (PDA): underperformers possess dangerous levels of independence. Potential rebellion invokes unacceptable damage to Assembly assets.<br>Tactical Alternative Solution (TAS): deploy Electrocutioners. EMP and Electrical stunners will disable units for disassembly.<br>Predictive Counter Assessment: strong electrical discharge, leaves the body prepped for collection, disassembly, reassembly and reassignment.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-234445C: Assembly Interpreted Pseudocode”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_critical"
@@ -11298,7 +11298,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Challenge Assessment: targeted quarry concealed behind a barricade. Chokepoints make assault numbers irrelevant.<br></br>Predictive Damage Assessments (PDA):  High Casualties.<br></br>Tactical Alternative Solution (TAS): deploy Wreckers. Crush all obstacles. Break the outer shell and collect the riches hiding therein. Assault horde can provide support to harvest a counter-swarm.<br></br>Predictive Counter Assessment: the colony will swarm the Wrecker with melee attacks, but Wrecker can deploy Wild Strike maneuver. Composition strong. Mobs are nothing more than another obstacle. TAS holds. <br></br>Selected Action: deploy Wreckers.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-231567C: Assembly Interpreted Pseudocode”",
+            "description": "“Challenge Assessment: targeted quarry concealed behind a barricade. Chokepoints make assault numbers irrelevant.<br>Predictive Damage Assessments (PDA):  High Casualties.<br>Tactical Alternative Solution (TAS): deploy Wreckers. Crush all obstacles. Break the outer shell and collect the riches hiding therein. Assault horde can provide support to harvest a counter-swarm.<br>Predictive Counter Assessment: the colony will swarm the Wrecker with melee attacks, but Wrecker can deploy Wild Strike maneuver. Composition strong. Mobs are nothing more than another obstacle. TAS holds. <br>Selected Action: deploy Wreckers.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-231567C: Assembly Interpreted Pseudocode”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_ignore_overwatch"
@@ -11564,7 +11564,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“Challenge Assessment: targeted quarry threatens self-immolation; organic assets concealed in a derelict fuel refinery. Residual fuel sufficient to destroy organic assets.<br></br>Predictive Damage Assessment (PDA) estimates potential loss of all organic assets.<br></br>Tactical Alternative Solution (TAS): deploy Vorpal Snipers. Ranged Crippling and Disabling Attacks required.<br></br>Predictive Counter Assessment: melee counteroffensive will attempt to swarm Vorpal Snipers. Counteroffensive exposes organic assets to capture. TAS holds.<br></br>Selected Action: deploy Vorpal Snipers.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-234445C: Assembly Interpreted Pseudocode”",
+            "description": "“Challenge Assessment: targeted quarry threatens self-immolation; organic assets concealed in a derelict fuel refinery. Residual fuel sufficient to destroy organic assets.<br>Predictive Damage Assessment (PDA) estimates potential loss of all organic assets.<br>Tactical Alternative Solution (TAS): deploy Vorpal Snipers. Ranged Crippling and Disabling Attacks required.<br>Predictive Counter Assessment: melee counteroffensive will attempt to swarm Vorpal Snipers. Counteroffensive exposes organic assets to capture. TAS holds.<br>Selected Action: deploy Vorpal Snipers.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-234445C: Assembly Interpreted Pseudocode”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_bypass_cover"
@@ -11635,7 +11635,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "100<energy></energy>  270<production></production>",
-            "description": "“Parts are parts. Flesh is flesh.<br></br>Bone be bone and heads are heads!<br></br>Tissue are the issue, muscle, fat, nerves, ligaments.<br></br>Skins—no matter if it’s lost its pigments.<br></br>All the unguents, fluids, and ichor.<br></br>Pumps and gears blend them thicker.<br></br>Parts are parts. Flesh is flesh.<br></br>Bone is bone and heads are heads!<br></br>Let’s make life from the dead.”— Reaverson Rux, “RV-68791E: Song of the Assembly - Reverse Engineer”",
+            "description": "“Parts are parts. Flesh is flesh.<br>Bone be bone and heads are heads!<br>Tissue are the issue, muscle, fat, nerves, ligaments.<br>Skins—no matter if it’s lost its pigments.<br>All the unguents, fluids, and ichor.<br>Pumps and gears blend them thicker.<br>Parts are parts. Flesh is flesh.<br>Bone is bone and heads are heads!<br>Let’s make life from the dead.”— Reaverson Rux, “RV-68791E: Song of the Assembly - Reverse Engineer”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_morale"
@@ -14869,7 +14869,7 @@ var jsonUnits = {
   ],
             "shield": 3,
             "cost": "140<energy></energy>  440<production></production>  25<tricorium></tricorium>",
-            "description": "“I was supposed to clean Subjugator Toh-Toh’s hoverchair while he got a snack. Maybe it’s my bad luck, but the chair floated up and the Psionic control orbs activated. Poor Toh-Toh came running just as the Psi-tech repeaters suddenly started firing. More than meatballs and marinara sauce splattered everywhere. I’d seen the Reanimation Collars completely revive a fallen Indentured, so I tried to use it on Toh-Toh’s remains, but I mistakenly pressed the Agony Field projector. The hangar guards around the chair screamed, blood spurted from their eyes. It only got worse from there.”<br></br>—Mah Reg’Nib, “RV-8577X: Syndication Vindication<br></br>",
+            "description": "“I was supposed to clean Subjugator Toh-Toh’s hoverchair while he got a snack. Maybe it’s my bad luck, but the chair floated up and the Psionic control orbs activated. Poor Toh-Toh came running just as the Psi-tech repeaters suddenly started firing. More than meatballs and marinara sauce splattered everywhere. I’d seen the Reanimation Collars completely revive a fallen Indentured, so I tried to use it on Toh-Toh’s remains, but I mistakenly pressed the Agony Field projector. The hangar guards around the chair screamed, blood spurted from their eyes. It only got worse from there.”<br>—Mah Reg’Nib, “RV-8577X: Syndication Vindication<br>",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_morale"
@@ -15483,7 +15483,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "100<energy></energy>  270<production></production>",
-            "description": "“Parts are parts. Flesh is flesh.<br></br>Bone be bone and heads are heads!<br></br>Tissue are the issue, muscle, fat, nerves, ligaments.<br></br>Skins—no matter if it’s lost its pigments.<br></br>All the unguents, fluids, and ichor.<br></br>Pumps and gears blend them thicker.<br></br>Parts are parts. Flesh is flesh.<br></br>Bone is bone and heads are heads!<br></br>Let’s make life from the dead.”— Reaverson Rux, “RV-68791E: Song of the Assembly - Reverse Engineer”",
+            "description": "“Parts are parts. Flesh is flesh.<br>Bone be bone and heads are heads!<br>Tissue are the issue, muscle, fat, nerves, ligaments.<br>Skins—no matter if it’s lost its pigments.<br>All the unguents, fluids, and ichor.<br>Pumps and gears blend them thicker.<br>Parts are parts. Flesh is flesh.<br>Bone is bone and heads are heads!<br>Let’s make life from the dead.”— Reaverson Rux, “RV-68791E: Song of the Assembly - Reverse Engineer”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_morale"
@@ -15560,7 +15560,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“Most historians agree that the Star Union was guilty of many atrocities in the pursuit of greatness. Yet nothing is more egregious than what the Imperial factions did to the Penguins. They are a species prone to environmental adaptations, and the Star Union went too far in creating these genetically-modified flightless horrors that lurk amongst the icebergs. If the Star Union ever showed its unbridled hubris, went too far in playing god, and set itself on the path to destruction, it was in the creation of these waterfowl abominations.”<br></br>—Mah Reg’Nib, “RV-4004: Vacation Hotspots”",
+            "description": "“Most historians agree that the Star Union was guilty of many atrocities in the pursuit of greatness. Yet nothing is more egregious than what the Imperial factions did to the Penguins. They are a species prone to environmental adaptations, and the Star Union went too far in creating these genetically-modified flightless horrors that lurk amongst the icebergs. If the Star Union ever showed its unbridled hubris, went too far in playing god, and set itself on the path to destruction, it was in the creation of these waterfowl abominations.”<br>—Mah Reg’Nib, “RV-4004: Vacation Hotspots”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_ignore_overwatch"
@@ -16095,7 +16095,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "120<energy></energy>  400<production></production>  20<tricorium></tricorium>",
-            "description": "“Challenge Assessment: targeted quarry concealed behind a barricade. Chokepoints make assault numbers irrelevant.<br></br>Predictive Damage Assessments (PDA):  High Casualties.<br></br>Tactical Alternative Solution (TAS): deploy Wreckers. Crush all obstacles. Break the outer shell and collect the riches hiding therein. Assault horde can provide support to harvest a counter-swarm.<br></br>Predictive Counter Assessment: the colony will swarm the Wrecker with melee attacks, but Wrecker can deploy Wild Strike maneuver. Composition strong. Mobs are nothing more than another obstacle. TAS holds. <br></br>Selected Action: deploy Wreckers.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-231567C: Assembly Interpreted Pseudocode”",
+            "description": "“Challenge Assessment: targeted quarry concealed behind a barricade. Chokepoints make assault numbers irrelevant.<br>Predictive Damage Assessments (PDA):  High Casualties.<br>Tactical Alternative Solution (TAS): deploy Wreckers. Crush all obstacles. Break the outer shell and collect the riches hiding therein. Assault horde can provide support to harvest a counter-swarm.<br>Predictive Counter Assessment: the colony will swarm the Wrecker with melee attacks, but Wrecker can deploy Wild Strike maneuver. Composition strong. Mobs are nothing more than another obstacle. TAS holds. <br>Selected Action: deploy Wreckers.”— OC(H)ypercore-Tactical Decision Node(TDN), “RV-231567C: Assembly Interpreted Pseudocode”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_ignore_overwatch"
@@ -16314,7 +16314,7 @@ var jsonUnits = {
   ],
             "shield": 0,
             "cost": "80<energy></energy>  250<production></production>",
-            "description": "“We thought it another decorative statue until a crimson jewel on its crest ignited and the slow lumbering form of an Es’Teq Golem moved to block our progress into the Heritor Vault sleep chambers. Even from a distance, the thing could sap the essence from our expeditionary forces, disregarding their normal body armor and shields. Slow and powerful it pushed our advance back, sapping our lives and degrading our armor with its entropic blasts. We might still be fighting it today had we not deployed Reaper tech to counter it.”<br></br>–  Counterstrike Captain, Stella Diamante, “RV-0511M: Records of the Purge”",
+            "description": "“We thought it another decorative statue until a crimson jewel on its crest ignited and the slow lumbering form of an Es’Teq Golem moved to block our progress into the Heritor Vault sleep chambers. Even from a distance, the thing could sap the essence from our expeditionary forces, disregarding their normal body armor and shields. Slow and powerful it pushed our advance back, sapping our lives and degrading our armor with its entropic blasts. We might still be fighting it today had we not deployed Reaper tech to counter it.”<br>–  Counterstrike Captain, Stella Diamante, “RV-0511M: Records of the Purge”",
             "elite_rewards": [
                 {
                     "slug": "prime_rank_shrug_off"

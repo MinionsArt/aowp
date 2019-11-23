@@ -238,7 +238,7 @@ function showUnit(a) {
             unitName = document.getElementById("unitstring");
             unitName.setAttribute("id", "unitstring" + a);
 
-            unitName.innerHTML = "<span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonUnits.units[i].name;
+            unitName.innerHTML = "<span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonUnits.units[i].name.toUpperCase();
             descr = document.getElementById("description");
             descr.setAttribute("id", "description" + a);
             descr.innerHTML = jsonUnits.units[i].description;

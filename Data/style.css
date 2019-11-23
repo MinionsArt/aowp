@@ -511,9 +511,10 @@ tab {
 .unit_prod {
     color: bisque;
     font-size: 14px;
-    position: relative;
-    top: -22px;
-    padding: 10px;
+    position: absolute;
+    top: -1px;
+    background-color: #112244;
+
     text-align: left;
 }
 
@@ -529,11 +530,14 @@ tab {
 
 
 .unit_name {
-    font-size: 18px;
-    position: relative;
-    top: -5px;
+    font-size: 16px;
+    position: absolute;
     text-align: center;
-    text-shadow: 2px 2px 5px cyan;
+    width: 100%;
+    /* position the left edge of the element at the middle of the parent */
+    top: -1px;
+    background-color: #112244;
+    text-shadow: 1px 1px 2px black;
 }
 
 .mod_name {
