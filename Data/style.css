@@ -1070,7 +1070,7 @@ EssenceCharge {
 essencechargeall {
     max-height: 25px;
     top: 3px;
-    content: url(/aowp/Icons/Text/essence.png);
+    content: url(/aowp/Icons/Text/essenceAll.png);
     position: relative;
 }
 
