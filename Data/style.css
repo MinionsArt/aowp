@@ -493,7 +493,7 @@ tab {
     position: absolute;
     z-index: 1;
     min-width: 200px;
-    max-width: 600px;
+    max-width: 400px;
     min-height: 40px;
     margin-left: 40px;
 
@@ -573,7 +573,7 @@ tab {
     position: absolute;
     z-index: 1;
     min-width: 200px;
-    max-width: 600px;
+    max-width: 400px;
     min-height: 40px;
     margin-left: 40px;
 
