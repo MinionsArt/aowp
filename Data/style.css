@@ -1106,7 +1106,7 @@ production {
     text-align: center;
     position: absolute;
     font-family: 'Duru Sans', sans-serif;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -30%);
     text-shadow: 2px 2px 5px black;
