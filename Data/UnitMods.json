@@ -148,7 +148,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "This unit's melee attacks now do Biochemical damage and have a 12 <StrengthBio></StrengthBio> strength chance(8 <StrengthBio></StrengthBio> for repeating attacks) to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units, reducing their morale and making them easier to hit for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Scavenger, Wrecker, and Reverse Engineer units </abilityred> ",
+            "description": "This unit's melee attacks now do Biochemical damage and have a 12 <StrengthBio></StrengthBio> strength chance(8 <StrengthBio></StrengthBio> for repeating attacks) to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg units, reducing their morale and making them easier to hit for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 20 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to the Assembly Scavenger, Wrecker, and Reverse Engineer units </abilityred> ",
 
 
         },
