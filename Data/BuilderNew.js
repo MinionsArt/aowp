@@ -296,7 +296,7 @@ function showUnit(a) {
             tier.innerHTML = "Tier " + jsonUnits.units[i].tier + ": " + jsonUnits.units[i].upkeep;
             if (jsonUnits.units[i].tier == "1") {
 
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+2 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+2 <hp></hp> HP <li>+5 <accuracy></accuracy> Accuracy </li></li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+2 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+5 <accuracy></accuracy> Accuracy </li><li>+2 <hp></hp> HP </li><li>" + EliteSkill(reward) + "</li></ul>";
+                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+4 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 <hp></hp> HP <li>+5 <accuracy></accuracy> Accuracy </li></li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+4 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+5 <accuracy></accuracy> Accuracy </li><li>+4 <hp></hp> HP </li><li>" + EliteSkill(reward) + "</li></ul>";
 
             }
             if (jsonUnits.units[i].tier == "2") {
