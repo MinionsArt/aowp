@@ -34,6 +34,7 @@
     <div style="margin-right: auto; margin-left: auto; width: 300px;">
         <input type="text" style="margin-right: auto; margin-left: auto; width: 300px;" id="searchInput">
         <input type="submit" value="Submit" id="button">
+        <p id="searchResult" style="color: aqua"></p>
 
     </div>
     <div id="searchOutput">test</div>
@@ -64,11 +65,12 @@
     }
 
     function searchUnits(keyword) {
-        var i, output, textvalue, j, l = "";
+        var i, output, textvalue, j, l, result = "";
 
         var fields = keyword.split('+', 3);
         var list = new Array();
         output = document.getElementById("searchOutput");
+        result = document.getElementById("searchResult");
 
         for (i = 0; i < jsonUnits.units.length; i++) {
             textvalue = jsonUnits.units[i].id;
@@ -154,7 +156,7 @@
 
         }
 
-        output.innerHTML = list.toString();
+        result.innerHTML = list.length.toString() + " results found";
         for (j = 0; j < list.length; j++) {
 
             addUnitCard(list[j]);
