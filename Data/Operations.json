@@ -1,0 +1,15 @@
+var jsonOperations = {
+    "operations": [{
+            "slug": "protective_growth",
+            "name": "Protective Growth",
+            "tier": "I",
+            "type": "Tactical Operation(Instant)",
+            "description": "Summon thick roots to protect a friendly ground unit, healing it for 10 <hp></hp> and preventing it from moving for 2 <turn></turn>. <br> While immobilized in this manner, the unit gains +4 <armor></armor> and regenerates 25% of its maximum <hp></hp> per turn.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+
+
+        },
+
+    ]
+}

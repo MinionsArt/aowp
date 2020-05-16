@@ -400,6 +400,120 @@ function showMod(a) {
     }
 }
 
+function showTech(a) {
+    var modName, description, cost, type, tier = "";
+    for (j in jsonTech.tech) {
+        if (a == jsonTech.tech[j].slug) {
+            modName = document.getElementById("techname");
+            modName.innerHTML = jsonTech.tech[j].name;
+            modName.setAttribute("id", "techname" + a);
+
+
+            cost = document.getElementById("techcost");
+            cost.innerHTML = jsonTech.tech[j].cost + "<research></research>";
+            cost.setAttribute("id", "modcost" + a);
+            imagelink = document.getElementById("techicon");
+            imagelink.setAttribute("src", "/aowp/Icons/Tech/" + a + ".png");
+            imagelink.setAttribute("id", "techicon" + a);
+
+            for (j in jsonTech.tech[i].mod_unlock) {
+                addModUnlock(jsonTech.tech[i].mod_unlock[j].slug);
+
+            }
+
+            for (j in jsonTech.tech[i].op_unlock) {
+                addOpUnlock(jsonTech.tech[i].op_unlock[j].slug);
+
+            }
+        }
+    }
+}
+
+function addModUnlock(a) {
+    var modUnlockName, modUnlockIcon, modUnlockAbility, j = "";
+    for (j in jsonMods.mods) {
+        if (a == jsonMods.mods[j].slug) {
+            modUnlockName = "<titlebrown>" + jsonMods.mods[j].name + "</titlebrown>";
+            modUnlockIcon = jsonMods.mods[j].slug;
+            modUnlockAbility = jsonMods.mods[j].description;
+
+
+            var tier = "<silver>" + "Tier " + jsonMods.mods[j].tier + ", " + jsonMods.mods[j].type + "</silver>";
+
+
+            var btn = document.createElement("DIV");
+            btn.className = "researchResultBackgroundImage";
+            var imag = document.createElement("IMG");
+            imag.className = "modunlock_icon";
+            var spa = document.createElement("SPAN");
+            var tex = document.createElement("DIV");
+            tex.className = "tooltip";
+            //tex.innerHTML = modUnlockName;
+            spa.className = "tooltiptext";
+            spa.innerHTML = "<p>" + modUnlockName + "</p>" + tier + "<hr>"
+            imag.setAttribute("src", "/aowp/Icons/Mods/" + modUnlockIcon + ".png");
+
+            spa.innerHTML += "<img src=\"/aowp/Icons/Mods/" + modUnlockIcon + ".png\" width='200'\">";
+            spa.innerHTML += "<br>" + modUnlockAbility;
+            spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods.mods[j].cost;
+            imag.setAttribute("height", "35");
+            document.getElementById("unlockholder").appendChild(btn);
+            btn.appendChild(imag);
+
+
+            btn.appendChild(spa);
+
+
+            // btn.appendChild(tex);
+
+        }
+    }
+
+}
+
+
+function addOpUnlock(a) {
+    var opUnlockName, opUnlockIcon, opUnlockAbility, j = "";
+    for (j in jsonOperations.operations) {
+        if (a == jsonOperations.operations[j].slug) {
+            opUnlockName = "<titlebrown>" + jsonOperations.operations[j].name + "</titlebrown>";
+            opUnlockIcon = jsonOperations.operations[j].slug;
+            opUnlockAbility = jsonOperations.operations[j].description;
+
+
+            var tier = "<silver>" + "Tier " + jsonOperations.operations[j].tier + ", " + jsonOperations.operations[j].type + "</silver>";
+
+
+            var btn = document.createElement("DIV");
+            btn.className = "researchResultBackgroundImage";
+            var imag = document.createElement("IMG");
+            imag.className = "modunlock_icon";
+            var spa = document.createElement("SPAN");
+            var tex = document.createElement("DIV");
+            tex.className = "tooltip";
+            //tex.innerHTML = modUnlockName;
+            spa.className = "tooltiptext";
+            spa.innerHTML = "<p>" + opUnlockName + "</p>" + tier + "<hr>"
+            imag.setAttribute("src", "/aowp/Icons/Operations/" + opUnlockIcon + ".png");
+
+
+            spa.innerHTML += "<br>" + opUnlockAbility;
+            spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
+            imag.setAttribute("height", "40");
+            document.getElementById("unlockholder").appendChild(btn);
+            btn.appendChild(imag);
+
+
+            btn.appendChild(spa);
+
+
+            // btn.appendChild(tex);
+
+        }
+    }
+
+}
+
 function searchData() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("searchInput");

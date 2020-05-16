@@ -4,6 +4,15 @@ html {
 
 }
 
+table {}
+
+th,
+td {
+    width: 300px;
+    height: 100px;
+    color: aliceblue;
+
+}
 
 ul {
     padding: 0px;
@@ -267,7 +276,12 @@ p {
 
 }
 
+.modunlock_icon {
+    padding-top: 15px;
 
+    display: table;
+    margin: 0 auto;
+}
 
 
 .mod_description {
@@ -315,6 +329,20 @@ p {
 
 }
 
+.tech_image {
+    float: left;
+
+    max-width: 100px;
+
+    background: url("/aowp/UI/backgroundModIcon.png");
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+
+
+}
+
 .unit_image {
     float: left;
     padding-bottom: 10px
@@ -345,6 +373,19 @@ tab {
     padding: 35px;
     display: table;
     margin-left: auto;
+    margin-right: auto;
+}
+
+.tech_card {
+
+    color: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px 0px 10px 30px;
+    border: 1px solid white;
+    background-color: #131517;
+
+    margin-left: 40px;
     margin-right: auto;
 }
 
@@ -550,6 +591,15 @@ tab {
 
 }
 
+.tech_name {
+    font-size: 16px;
+    position: relative;
+    color: aliceblue;
+    text-align: center;
+    padding-left: 10px;
+
+}
+
 .tooltip {
     color: white;
     display: inline-block;
@@ -610,6 +660,33 @@ tab {
 
     transition: opacity 0.5s;
 
+}
+
+
+
+.researchResultBackgroundImage .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #004b5e;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 40px;
+    margin-left: 40px;
+
+    transition: opacity 0.5s;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.researchResultBackgroundImage:hover .tooltiptext {
+    visibility: visible;
 }
 
 
@@ -691,10 +768,12 @@ tab {
 
 .img-circle {
     border-radius: 50%;
-    border: 2px solid aliceblue;
+    border: 4px solid green;
     margin-left: auto;
     margin-top: 5px;
+    max-width: 60px;
     margin-right: auto;
+    float: left;
     display: inline-block;
     vertical-align: middle;
 }
@@ -711,14 +790,31 @@ tab {
 }
 
 
-.researchResultImage {
+.researchResultBackgroundImage {
+
+    position: relative;
+
     display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url("/aowp/UI/backgroundModIcon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    /* replace */
+}
+
+.researchResultImage {
+
     position: relative;
     margin-left: 10px;
+    margin-top: 15px;
     text-align: center;
-    width: 50px;
-    height: 50px;
-    background: "huh.png"no-repeat 0 0;
+    width: 40px;
+    height: 40px;
+
+
     /* replace */
 }
 
@@ -1092,6 +1188,14 @@ production {
     max-height: 20px;
     top: 3px;
     content: url(/aowp/Icons/Text/production.png);
+    position: relative;
+}
+
+
+research {
+    max-height: 20px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/research.png);
     position: relative;
 }
 

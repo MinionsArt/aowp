@@ -1,0 +1,31 @@
+var jsonTech = {
+    "tech": [{
+            "slug": "amazon_protective_grounding",
+            "name": "Protective Grounding",
+
+            "mod_unlock": [
+                {
+                    "slug": "grounding_harness"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "protective_growth"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "75",
+
+            "image_link": "amazon_protective_grounding",
+
+        },
+
+    ]
+}

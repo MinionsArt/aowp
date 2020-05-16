@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/aowp/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/Tech.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/Operations.json"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#mod1").load("/aowp/techcard.html", function() {
+                showTech("amazon_protective_grounding");
+            });
+
+        });
+    </script>
+
+
+    <title>Age of Wonders Planetfall - Amazon Mods</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <table id="AmazonTech">
+        <tr>
+            <th></th>
+            <th>I</th>
+            <th>II</th>
+            <th>III</th>
+            <th>IV</th>
+            <th>V</th>
+            <th>VI</th>
+            <th>VII</th>
+            <th>VIII</th>
+            <th>IX</th>
+            <th>X</th>
+        </tr>
+        <tr>
+            <td>
+                Amazon
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <div id="mod3"></div>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div id="mod1"></div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+    </div>
+
+
+</body></html>
