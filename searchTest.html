@@ -46,6 +46,18 @@
         });
     });
 
+    $(document).ready(function() {
+
+    });
+
+    $(function() {
+        $("#searchInput").keyup(function(event) {
+            if (event.which === 13) {
+                searchData();
+            }
+        })
+    });
+
     function isInArray(array, search) {
         return array.indexOf(search) >= 0;
     }
