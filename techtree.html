@@ -13,14 +13,35 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/Tech.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/Operations.json"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/aowp/Data/dragscroll.js"></script>
     <script>
         $("#body").ready(function() {
 
             $("#header").load("/aowp/header.html");
 
-            $("#mod1").load("/aowp/techcard.html", function() {
+            $("#tech1").load("/aowp/techcard.html", function() {
                 showTech("amazon_protective_grounding");
             });
+
+            $("#tech2").load("/aowp/techcard.html", function() {
+                showTech("amazon_arborian_commune");
+            });
+            $("#tech3").load("/aowp/techcard.html", function() {
+                showTech("amazon_primal_control");
+            });
+            $("#tech4").load("/aowp/techcard.html", function() {
+                showTech("amazon_primal_control");
+            });
+            $("#tech5").load("/aowp/techcard.html", function() {
+                showTech("amazon_primal_control");
+            });
+            $("#tech6").load("/aowp/techcard.html", function() {
+                showTech("amazon_primal_control");
+            });
+            $("#tech7").load("/aowp/techcard.html", function() {
+                showTech("amazon_primal_control");
+            });
+
 
         });
     </script>
@@ -32,48 +53,90 @@
 <body>
     <div id="header"></div>
 
-    <table id="AmazonTech">
-        <tr>
-            <th></th>
-            <th>I</th>
-            <th>II</th>
-            <th>III</th>
-            <th>IV</th>
-            <th>V</th>
-            <th>VI</th>
-            <th>VII</th>
-            <th>VIII</th>
-            <th>IX</th>
-            <th>X</th>
-        </tr>
-        <tr>
-            <td>
-                Amazon
-            </td>
-            <td>
+    <div class="horizontal dragscroll">
+        <svg height="1000" width="3000" style="position: absolute; float: left; z-index: -1">
+            <line x1="400" y1="350" x2="1000" y2="350" style="stroke:rgb(220,220,255);stroke-width:2" />
+            <line x1="430" y1="350" x2="430" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+        </svg>
+        <table id="AmazonTech">
 
-            </td>
-            <td>
-                <div id="mod3"></div>
-            </td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <div id="mod1"></div>
-            </td>
-            <td></td>
-        </tr>
-    </table>
+            <tr>
+                <th></th>
+                <th>I</th>
+                <th>II</th>
+                <th>III</th>
+                <th>IV</th>
+                <th>V</th>
+                <th>VI</th>
+                <th>VII</th>
+                <th>VIII</th>
+                <th>IX</th>
+                <th>X</th>
+            </tr>
+            <tr>
+                <td>
+                    Amazon
+                </td>
+                <td>
 
+                </td>
+                <td>
+                    <div id="tech2"></div>
 
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="tech1"></div>
+
+                </td>
+
+                <td></td>
+                <td>
+                    <div id="tech3"></div>
+                </td>
+                <td>
+                    <div id="tech4"></div>
+
+                </td>
+                <td>
+                    <div id="tech5"></div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="tech4"></div>
+
+                </td>
+
+                <td></td>
+                <td>
+                    <div id="tech5"></div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="tech6"></div>
+
+                </td>
+
+                <td></td>
+                <td>
+                    <div id="tech7"></div>
+                </td>
+            </tr>
+
+        </table>
 
     </div>
 

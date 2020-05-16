@@ -416,16 +416,24 @@ function showTech(a) {
             imagelink.setAttribute("src", "/aowp/Icons/Tech/" + a + ".png");
             imagelink.setAttribute("id", "techicon" + a);
 
-            for (j in jsonTech.tech[i].mod_unlock) {
-                addModUnlock(jsonTech.tech[i].mod_unlock[j].slug);
+            for (k in jsonTech.tech[j].mod_unlock) {
+                addModUnlock(jsonTech.tech[j].mod_unlock[k].slug);
 
             }
 
-            for (j in jsonTech.tech[i].op_unlock) {
-                addOpUnlock(jsonTech.tech[i].op_unlock[j].slug);
+            for (k in jsonTech.tech[j].op_unlock) {
+                addOpUnlock(jsonTech.tech[j].op_unlock[k].slug);
 
             }
+
+            for (k in jsonTech.tech[j].unit_unlock) {
+                addUnitUnlock(jsonTech.tech[j].unit_unlock[k].slug);
+
+            }
+            document.getElementById("unlockholder").setAttribute("id", "unlockholder" + a);
         }
+
+
     }
 }
 
@@ -456,8 +464,9 @@ function addModUnlock(a) {
             spa.innerHTML += "<img src=\"/aowp/Icons/Mods/" + modUnlockIcon + ".png\" width='200'\">";
             spa.innerHTML += "<br>" + modUnlockAbility;
             spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods.mods[j].cost;
-            imag.setAttribute("height", "35");
-            document.getElementById("unlockholder").appendChild(btn);
+            imag.setAttribute("height", "30");
+            var newID = document.getElementById("unlockholder");
+            newID.appendChild(btn);
             btn.appendChild(imag);
 
 
@@ -498,7 +507,83 @@ function addOpUnlock(a) {
 
 
             spa.innerHTML += "<br>" + opUnlockAbility;
-            spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
+
+            if (jsonOperations.operations[j].casting != "") {
+                spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
+            }
+
+            imag.setAttribute("height", "40");
+            if (jsonOperations.operations[j].type.includes("Tactical")) {
+                var imag2 = document.createElement("IMG");
+                imag2.setAttribute("src", "/aowp/Icons/Text/tac_ops.png");
+                imag2.className = "corner_icon";
+                btn.appendChild(imag2);
+            }
+            document.getElementById("unlockholder").appendChild(btn);
+            btn.appendChild(imag);
+
+
+            btn.appendChild(spa);
+
+
+            // btn.appendChild(tex);
+
+        }
+    }
+
+}
+
+function addUnitUnlock(a) {
+    var unitUnlockName, unitUnlockIcon, unitUnlockAbility, j = "";
+    for (j in jsonUnits.units) {
+        if (a == jsonUnits.units[j].id) {
+            if (jsonUnits.units[j].name.includes("-")) {
+                unitNameShort = "<titleBrownBig> Unit: " + jsonUnits.units[j].name.split("-")[1] + "</titleBrownBig>";
+            } else {
+                unitNameShort = "<titleBrownBig> Unit: " + jsonUnits.units[j].name + "</titleBrownBig>";
+            }
+
+            unitUnlockName = "<titleBrownBig>" + jsonUnits.units[j].name + "</titleBrownBig>";
+            unitUnlockIcon = jsonUnits.units[j].icon;
+            // unitUnlockAbility = jsonUnits.units[j].description;
+
+
+            var tier = "<silver>Unit Unlock</silver>";
+
+
+            var btn = document.createElement("DIV");
+            btn.className = "researchResultBackgroundImage";
+            var imag = document.createElement("IMG");
+            imag.className = "modunlock_icon";
+            var spa = document.createElement("SPAN");
+            var tex = document.createElement("DIV");
+            tex.className = "tooltip";
+            //tex.innerHTML = modUnlockName;
+            spa.className = "tooltiptext";
+            spa.innerHTML = "<p>" + unitNameShort + "</p>" + tier + "<hr>";
+            spa.innerHTML += unitUnlockName;
+            spa.innerHTML += "<br>Tier " + jsonUnits.units[j].tier;
+            spa.innerHTML += "<hr>" + jsonUnits.units[j].hp + "<hp></hp> " + jsonUnits.units[j].mp + "<mp></mp> ";
+            if (jsonUnits.units[j].shield) {
+                spa.innerHTML += jsonUnits.units[j].shield + "<shield></shield> ";
+            }
+            if (jsonUnits.units[j].armor) {
+                spa.innerHTML += jsonUnits.units[j].armor + "<armor></armor> ";
+            }
+            spa.innerHTML += "<hr>";
+            for (k in jsonUnits.units[j].abilities) {
+                spa.innerHTML += "<li>" + addAbilityList(jsonUnits.units[j].abilities[k].slug) + "</li>";
+
+            }
+            for (k in jsonUnits.units[j].unit_types) {
+                spa.innerHTML += "<li>" + addAbilityList(jsonUnits.units[j].unit_types[k].slug) + "</li>";
+
+            }
+            imag.setAttribute("src", "/aowp/Icons/UnitIcons/" + unitUnlockIcon + ".png");
+
+
+            // spa.innerHTML += "<br>" + opUnlockAbility;
+            //spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
             imag.setAttribute("height", "40");
             document.getElementById("unlockholder").appendChild(btn);
             btn.appendChild(imag);
@@ -512,6 +597,28 @@ function addOpUnlock(a) {
         }
     }
 
+}
+
+function addAbilityList(a) {
+    var dam = "";
+    for (j in jsonUnitAbilities.abilities) {
+        if (a == jsonUnitAbilities.abilities[j].slug) {
+            if (jsonUnitAbilities.abilities[j].damage) {
+                dam = jsonUnitAbilities.abilities[j].damage;
+            }
+            return jsonUnitAbilities.abilities[j].name + dam + "<br>"
+        }
+    }
+}
+
+function addTypesList(a) {
+    var dam = "";
+    for (j in jsonUnitAbilities.abilities) {
+        if (a == jsonUnitAbilities.abilities[j].slug) {
+
+            return jsonUnitAbilities.abilities[j].name + "<br>"
+        }
+    }
 }
 
 function searchData() {

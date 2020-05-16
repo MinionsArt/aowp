@@ -9,7 +9,7 @@ table {}
 th,
 td {
     width: 300px;
-    height: 100px;
+    height: 95px;
     color: aliceblue;
 
 }
@@ -329,6 +329,17 @@ p {
 
 }
 
+.corner_icon {
+    float: left;
+    position: absolute;
+    padding-top: 35px;
+    padding-left: 35px;
+    max-width: 25px;
+
+
+
+}
+
 .tech_image {
     float: left;
 
@@ -379,8 +390,8 @@ tab {
 .tech_card {
 
     color: white;
-    width: 300px;
-    height: 100px;
+    width: 290px;
+    height: 90px;
     border-radius: 30px 0px 10px 30px;
     border: 1px solid white;
     background-color: #131517;
@@ -916,6 +927,15 @@ hp {
 
 }
 
+mp {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/mp.png);
+    position: relative;
+
+
+}
+
 StrengthPhysical {
     max-height: 25px;
     top: 3px;
@@ -1120,6 +1140,13 @@ titleBrown {
 
 }
 
+titleBrownBig {
+    color: rgb(255, 255, 102);
+    font-weight: 350;
+    font-size: 18px;
+
+}
+
 abilityred {
     color: rgb(224, 34, 69);
     font-weight: 400px;
@@ -1176,6 +1203,21 @@ energy {
     content: url(/aowp/Icons/Text/energy.png);
     position: relative;
 }
+
+tacticalPoint {
+    max-height: 20px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/tac_ops.png);
+    position: relative;
+}
+
+stratPoint {
+    max-height: 20px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/strat_ops.png);
+    position: relative;
+}
+
 
 population {
     max-height: 25px;

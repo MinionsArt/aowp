@@ -23,9 +23,68 @@ var jsonTech = {
             ],
             "cost": "75",
 
-            "image_link": "amazon_protective_grounding",
+
 
         },
+
+        {
+            "slug": "amazon_arborian_commune",
+            "name": "Arborian Commune",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "amazon_arborian_sentinel"
+                }
+
+            ],
+            "cost": "113",
+
+
+
+        },
+        {
+            "slug": "amazon_primal_control",
+            "name": "Primal Control",
+
+            "mod_unlock": [
+                {
+                    "slug": "primal_awareness_amplifier(detector)"
+                },
+                {
+                    "slug": "advanced_instinct_controller"
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "primal_override"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }
+
 
     ]
 }
