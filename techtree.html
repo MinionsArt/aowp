@@ -13,7 +13,7 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/Tech.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/Operations.json"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="/aowp/Data/dragscroll.js"></script>
+    <script type="text/javascript" src="/aowp/Data/dragscroll.js"></script>
     <script>
         $("#body").ready(function() {
 
@@ -30,7 +30,7 @@
                 showTech("amazon_primal_control");
             });
             $("#tech4").load("/aowp/techcard.html", function() {
-                showTech("amazon_primal_control");
+                showTech("amazon_hydromancer_commune");
             });
             $("#tech5").load("/aowp/techcard.html", function() {
                 showTech("amazon_primal_control");
@@ -44,17 +44,19 @@
 
 
         });
+
     </script>
 
 
     <title>Age of Wonders Planetfall - Amazon Mods</title>
 </head>
+<div id="header"></div>
 
-<body>
-    <div id="header"></div>
+<body class="horizontal dragscroll">
 
-    <div class="horizontal dragscroll">
-        <svg height="1000" width="3000" style="position: absolute; float: left; z-index: -1">
+    <div class="horizontal dragscroll" style="cursor: grab;">
+
+        <svg height="1000" width="2000" style="position: absolute; float: left; z-index: -1">
             <line x1="400" y1="350" x2="1000" y2="350" style="stroke:rgb(220,220,255);stroke-width:2" />
             <line x1="430" y1="350" x2="430" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
         </svg>
@@ -86,11 +88,17 @@
                 </td>
                 <td>
                 </td>
+
             </tr>
             <tr>
                 <td></td>
+
                 <td></td>
                 <td></td>
+                <td>
+                    <div id="tech4"></div>
+
+                </td>
             </tr>
             <tr>
                 <td></td>
@@ -99,46 +107,22 @@
 
                 </td>
 
-                <td></td>
+
                 <td>
-                    <div id="tech3"></div>
-                </td>
-                <td>
-                    <div id="tech4"></div>
 
                 </td>
+
                 <td>
                     <div id="tech5"></div>
                 </td>
             </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <div id="tech4"></div>
 
-                </td>
-
-                <td></td>
-                <td>
-                    <div id="tech5"></div>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <div id="tech6"></div>
-
-                </td>
-
-                <td></td>
-                <td>
-                    <div id="tech7"></div>
-                </td>
-            </tr>
 
         </table>
 
     </div>
 
 
-</body></html>
+</body>
+
+</html>

@@ -83,6 +83,32 @@ var jsonTech = {
 
 
 
+        }, {
+            "slug": "amazon_hydromancer_commune",
+            "name": "Hydromancer Commune",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "amazon_hydromancer"
+                }
+
+            ],
+            "cost": "150",
+
+
+
         }
 
 

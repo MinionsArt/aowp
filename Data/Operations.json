@@ -15,7 +15,7 @@ var jsonOperations = {
             "name": "Primal Override",
             "tier": "III",
             "type": "Tactical Operation(Instant)",
-            "description": "Attempt to Mind Control a non-Mindless or non-Mechanical Tier 1 or Tier II Animal unit with a 8 strength chance. <br> If the target is under the effect of Entangle or Sleep the strength chance increases up to 12. <br> If mind controlled this way, the unit permanently comes under your control. If resisted, apply insanity instead",
+            "description": "Attempt to <abilityred>Mind Control</abilityred> a non-Mindless or non-Mechanical Tier 1 or Tier II Animal unit with a 8 strength chance. <br> If the target is under the effect of Entangle or Sleep the strength chance increases up to 12. <br> If mind controlled this way, the unit permanently comes under your control. If resisted, apply insanity instead",
             "energy_cost": "80",
             "casting": "4 <tacticalPoint></tacticalPoint>",
 
