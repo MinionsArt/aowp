@@ -22,17 +22,20 @@
 
             setTimeout(showStats, 500);
         });
-
     </script>
     <title>Age of Wonders Planetfall - Search Units</title>
 </head>
 
 <body>
     <div id="header"></div>
-    <p style="color:white">Very WIP search, only works with single keywords atm...</p>
-    <input type="text" id="searchInput">
-    <input type="submit" value="Submit" id="button">
-    <div id="searchOutput">test</div>
+    <h2 style="color:white;text-align: center">Unit Search</h2>
+    <p style="color:white;text-align: center">use "+" to search for up to 3 keywords <br> E.G: "cyborg+skirmisher+overwatch"</p>
+    <br>
+    <div style="margin-right: auto; margin-left: auto; width: 300px;">
+        <input type="text" id="searchInput">
+        <input type="submit" value="Submit" id="button">
+        <div id="searchOutput">test</div>
+    </div>
 
 </body>
 <script>
@@ -52,19 +55,24 @@
         input = document.getElementById("searchInput");
         output = document.getElementById("searchOutput");
         output.innerHTML = "";
+
+
         filter = input.value.toUpperCase();
-        searchUnits(filter);
+        var test = filter.replace(' ', "_");
+        searchUnits(test);
 
     }
 
     function searchUnits(keyword) {
         var i, output, textvalue, j, l = "";
+
+        var fields = keyword.split('+', 3);
         var list = new Array();
         output = document.getElementById("searchOutput");
 
         for (i = 0; i < jsonUnits.units.length; i++) {
             textvalue = jsonUnits.units[i].id;
-            if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+            if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                 if (list.length >= 1) {
                     if (!isInArray(list, jsonUnits.units[i].id)) {
                         list.push(jsonUnits.units[i].id);
@@ -78,7 +86,7 @@
             }
             for (j = 0; j < jsonUnits.units[i].abilities.length; j++) {
                 textvalue = jsonUnits.units[i].abilities[j].slug;
-                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                     if (list.length >= 1) {
                         if (!isInArray(list, jsonUnits.units[i].id)) {
                             list.push(jsonUnits.units[i].id);
@@ -93,7 +101,7 @@
             }
             for (j = 0; j < jsonUnits.units[i].passives.length; j++) {
                 textvalue = jsonUnits.units[i].passives[j].slug;
-                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                     if (list.length >= 1) {
                         if (!isInArray(list, jsonUnits.units[i].id)) {
                             list.push(jsonUnits.units[i].id);
@@ -109,7 +117,7 @@
 
             for (j = 0; j < jsonUnits.units[i].unit_types.length; j++) {
                 textvalue = jsonUnits.units[i].unit_types[j].slug;
-                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                     if (list.length >= 1) {
                         if (!isInArray(list, jsonUnits.units[i].id)) {
                             list.push(jsonUnits.units[i].id);
@@ -126,12 +134,102 @@
 
 
         }
+
+        if (fields.length == 2) {
+            var workinglist = list;
+            list = new Array();
+
+            list = searchUnitsMultiple(workinglist, fields[1]);
+
+
+
+        }
+        if (fields.length == 3) {
+            var workinglist = list;
+            list = new Array();
+
+            list = searchUnitsMultiple(workinglist, fields[2]);
+
+
+
+        }
+
         output.innerHTML = list.toString();
         for (j = 0; j < list.length; j++) {
-            // addSearchResultUnit(list[j]);
+
             addUnitCard(list[j]);
         }
 
+    }
+
+    function searchUnitsMultiple(workinglist, fieldToSearch) {
+
+        var newlist = new Array();
+        for (i = 0; i < jsonUnits.units.length; i++) {
+            textvalue = jsonUnits.units[i].id;
+            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+                if (newlist.length >= 1) {
+                    if (!isInArray(newlist, jsonUnits.units[i].id)) {
+                        newlist.push(jsonUnits.units[i].id);
+                    }
+                } else {
+                    newlist.push(jsonUnits.units[i].id);
+                }
+
+
+
+            }
+            for (j = 0; j < jsonUnits.units[i].abilities.length; j++) {
+                textvalue = jsonUnits.units[i].abilities[j].slug;
+                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+                    if (newlist.length >= 1) {
+                        if (!isInArray(newlist, jsonUnits.units[i].id)) {
+                            newlist.push(jsonUnits.units[i].id);
+                        }
+                    } else {
+                        newlist.push(jsonUnits.units[i].id);
+                    }
+
+
+
+                }
+            }
+            for (j = 0; j < jsonUnits.units[i].passives.length; j++) {
+                textvalue = jsonUnits.units[i].passives[j].slug;
+                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+                    if (newlist.length >= 1) {
+                        if (!isInArray(newlist, jsonUnits.units[i].id)) {
+                            newlist.push(jsonUnits.units[i].id);
+                        }
+                    } else {
+                        newlist.push(jsonUnits.units[i].id);
+                    }
+
+
+
+                }
+            }
+
+            for (j = 0; j < jsonUnits.units[i].unit_types.length; j++) {
+                textvalue = jsonUnits.units[i].unit_types[j].slug;
+                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+                    if (newlist.length >= 1) {
+                        if (!isInArray(newlist, jsonUnits.units[i].id)) {
+                            newlist.push(jsonUnits.units[i].id);
+                        }
+                    } else {
+                        newlist.push(jsonUnits.units[i].id);
+                    }
+
+
+
+                }
+            }
+
+
+
+        }
+        return newlist;
     }
 
     function addUnitCard(unit) {
@@ -166,7 +264,4 @@
             }
 
     }
-
-</script>
-
-</html>
+</script></html>
