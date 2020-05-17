@@ -84,8 +84,8 @@ var jsonTech = {
 
 
         }, {
-            "slug": "amazon_hydromancer_commune",
-            "name": "Hydromancer Commune",
+            "slug": "amazon_aquatica_commune",
+            "name": "Aquatica Commune",
 
             "mod_unlock": [
                 {
@@ -101,7 +101,331 @@ var jsonTech = {
             ],
             "unit_unlock": [
                 {
-                    "slug": "amazon_hydromancer"
+                    "slug": "amazon_aquatica"
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        },
+        {
+            "slug": "amazon_forest_genesis",
+            "name": "Forest Genesis",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        },
+
+        {
+            "slug": "amazon_harrier_commune",
+            "name": "Harrier Commune",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        },
+
+        {
+            "slug": "amazon_bombardon_commune",
+            "name": "Bombardon Commune",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }
+
+,
+
+        {
+            "slug": "amazon_regenerative_bio_resonance",
+            "name": "Regenerative Bio Resonance",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }
+
+             ,
+
+        {
+            "slug": "amazon_amplified_bio_resonance",
+            "name": "Amplified Bio Resonance",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        },
+
+        {
+            "slug": "amazon_tyrannodon_commune",
+            "name": "Tyrannodon Commune",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }, {
+            "slug": "amazon_restorative_cloning",
+            "name": "Restorative Cloning",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }, {
+            "slug": "amazon_organism_stimulus",
+            "name": "Organism Stimulus",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }
+             , {
+            "slug": "amazon_arborian_queen_commune",
+            "name": "Arborian Queen Commune",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }
+   , {
+            "slug": "amazon_gaialogical_affinity",
+            "name": "Gaialogical Affinity",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_reforestation"
+                }, {
+                    "slug": "entangling_overgrowth"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }
+             , {
+            "slug": "biochemical_biochemical_applications",
+            "name": "Biochemical Applications",
+
+            "mod_unlock": [
+                {
+                    "slug": "acidic_composite"
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+            ],
+            "unit_unlock": [
+                {
+
                 }
 
             ],

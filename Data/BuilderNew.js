@@ -1,3 +1,22 @@
+var divState = {}; // we store the status in this object
+function showhide(id) {
+    if (document.getElementById) {
+        var divid = document.getElementById(id);
+        if (divState[id] == true) {
+            return;
+        }
+        divState[id] = (divState[id]) ? false : true; // initialize / invert status (true is visible and false is closed)
+        //close others
+        for (var div in divState) {
+            if (divState[div] && div != id) { // ignore closed ones and the current
+                document.getElementById(div).style.display = 'none'; // hide
+                divState[div] = false; // reset status
+            }
+        }
+        divid.style.display = (divid.style.display == 'inline-block' ? 'none' : 'inline-block');
+    }
+}
+
 function addUnitTypeIcon(a, b) {
     var icontext, iconsrc, iconName, j, btn, imag, spa = "";
     for (j in jsonUnitAbilities.abilities) {

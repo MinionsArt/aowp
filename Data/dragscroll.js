@@ -69,8 +69,9 @@
                         if (pushed) {
                             (scroller = el.scroller || el).scrollLeft -=
                                 newScrollX = (-lastClientX + (lastClientX = e.clientX));
-                            scroller.scrollTop -=
-                                newScrollY = (-lastClientY + (lastClientY = e.clientY));
+                            //  scroller.scrollTop -=
+                            //  newScrollY = (-lastClientY + (lastClientY = e.clientY));
+                            // newScrollY = e.clientY;
                             if (el == _document.body) {
                                 (scroller = _document.documentElement).scrollLeft -= newScrollX;
                                 scroller.scrollTop -= newScrollY;
