@@ -22,7 +22,7 @@
             $("#amazont1").load("/aowp/techcard.html", function() {
                 showTech("amazon_protective_grounding");
                 showhide('amazon');
-
+                showhide2('celestian');
             });
 
             $("#amazont2").load("/aowp/techcard.html", function() {
@@ -85,20 +85,27 @@
 
                 $(this).css("color", "cyan");
             });
+
+            $(".togglelink2").click(function() {
+                $(".togglelink2").css("color", "white");
+
+                $(this).css("color", "cyan");
+            });
         });
     </script>
 
 
-    <title>Age of Wonders Planetfall - Amazon Mods</title>
+    <title>Age of Wonders Planetfall - Tech Tree</title>
 </head>
 <div id="header"></div>
 
 <body>
 
+    <h1 style="color: aliceblue; text-align: center">Tech Tree</h1>
     <div class="buttons">
-        <a href="#" onclick="showhide('amazon');" style="font-size: 20px" class="togglelink"> Amazon </a>
+        <a href="#" onclick="showhide('amazon');" style="font-size: 20px; color: aqua" class="togglelink"> Amazon </a>
         <a href="#" onclick="showhide('assembly');" style="font-size: 20px" class="togglelink"> Assembly </a>
-        <a href="#" onclick="showhide('dvar');" style="font-size: 20px" class="togglelink"> Dvar </a>
+
     </div>
 
 
@@ -121,10 +128,14 @@
         <!-- Amazon                                                                ----------------------------------------------------------Amazon -->
 
         <div class="techbackground" id="amazon">
-            <svg height="1000" width="2000" style="position:absolute; float: left z-index: -2">
+            <svg height="1000" width="2000" style="position:absolute; float: left; z-index: -2">
                 <line x1="400" y1="250" x2="1000" y2="250" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="650" y1="250" x2="650" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="150" x2="1000" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="640" y1="250" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="640" y1="50" x2="650" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="840" y1="50" x2="1300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
             </svg>
             <table id="AmazonTech" style="background-color: rgba(0, 255, 100, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
 
@@ -229,9 +240,7 @@
             <!-- Biochemical                                                                ----------------------------------------------------------Biochemical -->
 
 
-            <svg height="1000" width="2000" style="position:absolute; float: left z-index: -2">
 
-            </svg>
             <table id="BioTech" style="background-color: rgba(200, 255, 0, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
 
                 <tr>
@@ -282,17 +291,17 @@
 
 
 
-            <svg height="1000" width="2000" style="position:absolute; float: left z-index: -2">
-                <!-- <line x1="400" y1="0" x2="1000" y2="0" style="stroke:rgb(220,220,255);stroke-width:2" /> -->
 
-            </svg>
             <table id="LaserTech" style="background-color: rgba(200, 0, 255, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
 
                 <tr>
                     <td>
                         <p style="font-size: 30px;padding: 10px"><img src="/aowp/Icons/Text/thermal.png" width="50px"> Laser </p>
                     </td>
-                    <td>
+                    <td> <svg height="100" width="2000" style="position:absolute; float: left z-index: -2; top:-40px">
+                            <line x1="0S" y1="0" x2="1000" y2="0" style="stroke:rgb(220,220,255);stroke-width:2" />
+                            S
+                        </svg>
                         <div id="biot1"></div>
 
                     </td>
@@ -333,17 +342,138 @@
             </table>
         </div>
 
+        <br>
+
+
+
         <!-- Assembly                                                                ----------------------------------------------------------Assembly -->
 
         <div class="techbackground" id="assembly" style="display: none">
-            <svg height="1000" width="2000" style="position:absolute; float: left z-index: -2">
 
-            </svg>
             <table id="AssemblyTech">
 
                 <tr>
                     <td>
                         <p style="font-size: 40px;padding: 10px"><img src="/aowp/Icons/UnitTypes/assembly.png" width="50px"> Assembly </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="amazont2"></div>
+
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <div id="amazont4"></div>
+
+                    </td>
+                    <td>
+                        <div id="amazont5"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont7"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont9"></div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+
+                    <td></td>
+                    <td>
+                        <div id="amazont2b"></div>
+
+                    </td>
+                    <td>
+                        <div id="amazont3"></div>
+
+                    </td>
+                    <td></td>
+
+                    <td></td>
+                    <td></td>
+
+                    <td>
+                        <div id="amazont7b"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div id="amazont1"></div>
+
+                    </td>
+
+
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div id="amazont3b"></div>
+                    </td>
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div id="amazont5b"></div>
+                    </td>
+                    <td>
+                        <div id="amazont6"></div>
+                    </td>
+                    <td>
+                        <div id="amazont7c"></div>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="amazont9b"></div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <br><br>
+
+        <div class="buttons">
+            <a href="#" onclick="showhide2('celestian');" style="font-size: 20px ; color: aqua" class="togglelink2"> Celestian </a>
+            <a href="#" onclick="showhide2('psynumbra');" style="font-size: 20px" class="togglelink2"> Psynumbra </a>
+            <a href="#" onclick="showhide2('promethean');" style="font-size: 20px" class="togglelink2"> Promethean </a>
+        </div>
+
+        <div class="techbackground" id="celestian">
+            <svg height="1000" width="2000" style="position:absolute; float: left; z-index: -2">
+                <line x1="400" y1="250" x2="1000" y2="250" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="640" y1="250" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="640" y1="50" x2="650" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="840" y1="50" x2="1300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+            </svg>
+            <table id="AmazonTech" style="background-color: rgba(0, 255, 100, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
+
+                <tr>
+                    <td>
+                        <p style="font-size: 30px;padding: 10px"><img src="/aowp/Icons/Passives/celestian_unit.png" width="50px"> Celestian </p>
                     </td>
                     <td>
 

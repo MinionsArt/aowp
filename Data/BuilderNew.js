@@ -16,6 +16,25 @@ function showhide(id) {
         divid.style.display = (divid.style.display == 'inline-block' ? 'none' : 'inline-block');
     }
 }
+var divState2 = {};
+
+function showhide2(id) {
+    if (document.getElementById) {
+        var divid = document.getElementById(id);
+        if (divState2[id] == true) {
+            return;
+        }
+        divState2[id] = (divState2[id]) ? false : true; // initialize / invert status (true is visible and false is closed)
+        //close others
+        for (var div in divState2) {
+            if (divState2[div] && div != id) { // ignore closed ones and the current
+                document.getElementById(div).style.display = 'none'; // hide
+                divState2[div] = false; // reset status
+            }
+        }
+        divid.style.display = (divid.style.display == 'inline-block' ? 'none' : 'inline-block');
+    }
+}
 
 function addUnitTypeIcon(a, b) {
     var icontext, iconsrc, iconName, j, btn, imag, spa = "";
@@ -483,7 +502,7 @@ function addModUnlock(a) {
             spa.innerHTML += "<img src=\"/aowp/Icons/Mods/" + modUnlockIcon + ".png\" width='200'\">";
             spa.innerHTML += "<br>" + modUnlockAbility;
             spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods.mods[j].cost;
-            imag.setAttribute("height", "30");
+            imag.setAttribute("height", "25");
             var newID = document.getElementById("unlockholder");
             newID.appendChild(btn);
             btn.appendChild(imag);
@@ -531,7 +550,7 @@ function addOpUnlock(a) {
                 spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
             }
 
-            imag.setAttribute("height", "40");
+            imag.setAttribute("height", "30");
             if (jsonOperations.operations[j].type.includes("Tactical")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/tac_ops.png");
@@ -603,7 +622,7 @@ function addUnitUnlock(a) {
 
             // spa.innerHTML += "<br>" + opUnlockAbility;
             //spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
-            imag.setAttribute("height", "40");
+            imag.setAttribute("height", "30");
             document.getElementById("unlockholder").appendChild(btn);
             btn.appendChild(imag);
 
