@@ -1,5 +1,8 @@
 var divState = {}; // we store the status in this object
-function showhide(id) {
+var divStateweapon1 = ["biochemical", "laser", "firearms"];
+var currentRace = "";
+
+function showhide(id, weapon, weapon2) {
     if (document.getElementById) {
         var divid = document.getElementById(id);
         if (divState[id] == true) {
@@ -13,8 +16,33 @@ function showhide(id) {
                 divState[div] = false; // reset status
             }
         }
+        currentRace = id;
         divid.style.display = (divid.style.display == 'inline-block' ? 'none' : 'inline-block');
     }
+
+    if (document.getElementById) {
+        var divid = document.getElementById(weapon);
+        var divid2 = document.getElementById(weapon2);
+        //  if (divStateweapon1[weapon] == true && divStateweapon1[weapon2] == true) {
+        //     return;
+        // }
+        // divStateweapon1[weapon] = (divStateweapon1[weapon]) ? false : true; // initialize / invert status (true is visible and false is closed)
+        // divStateweapon1[weapon2] = (divStateweapon1[weapon2]) ? false : true;
+        //  divStateweapon1[weapon] = true;
+        // divStateweapon1[weapon2] = true;
+        //close others
+        for (var i = 0; i < divStateweapon1.length; i++) {
+
+            var e = document.getElementById(divStateweapon1[i])
+            e.style.display = 'none'; // hide
+            //  divStateweapon1[div] = false; // reset status
+        }
+
+
+        divid.style.display = 'inline-block';
+        divid2.style.display = 'inline-block';
+    }
+
 }
 var divState2 = {};
 
@@ -439,7 +467,7 @@ function showMod(a) {
 }
 
 function showTech(a) {
-    var modName, description, cost, type, tier = "";
+    var modName, description, cost, type, tier, secret = "";
     for (j in jsonTech.tech) {
         if (a == jsonTech.tech[j].slug) {
             modName = document.getElementById("techname");
@@ -455,17 +483,28 @@ function showTech(a) {
             imagelink.setAttribute("id", "techicon" + a);
 
             for (k in jsonTech.tech[j].mod_unlock) {
-                addModUnlock(jsonTech.tech[j].mod_unlock[k].slug);
+                if (jsonTech.tech[j].mod_unlock[k].slug != undefined) {
+                    addModUnlock(jsonTech.tech[j].mod_unlock[k].slug);
+                }
 
             }
 
             for (k in jsonTech.tech[j].op_unlock) {
-                addOpUnlock(jsonTech.tech[j].op_unlock[k].slug);
+                if (jsonTech.tech[j].op_unlock[k].slug != undefined) {
+                    addOpUnlock(jsonTech.tech[j].op_unlock[k].slug);
+                }
 
             }
 
             for (k in jsonTech.tech[j].unit_unlock) {
-                addUnitUnlock(jsonTech.tech[j].unit_unlock[k].slug);
+                if (jsonTech.tech[j].unit_unlock[k].slug != undefined) {
+                    secret = jsonTech.tech[j].unit_unlock[k].slug;
+                    if (jsonTech.tech[j].unit_unlock[k].slug.indexOf("secret") > -1) {
+                        secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace);
+                    }
+                    addUnitUnlock(secret);
+                }
+
 
             }
             document.getElementById("unlockholder").setAttribute("id", "unlockholder" + a);
@@ -474,6 +513,7 @@ function showTech(a) {
 
     }
 }
+
 
 function addModUnlock(a) {
     var modUnlockName, modUnlockIcon, modUnlockAbility, j = "";
@@ -573,8 +613,13 @@ function addOpUnlock(a) {
 
 function addUnitUnlock(a) {
     var unitUnlockName, unitUnlockIcon, unitUnlockAbility, j = "";
+
     for (j in jsonUnits.units) {
+
+
         if (a == jsonUnits.units[j].id) {
+
+
             if (jsonUnits.units[j].name.includes("-")) {
                 unitNameShort = "<titleBrownBig> Unit: " + jsonUnits.units[j].name.split("-")[1] + "</titleBrownBig>";
             } else {

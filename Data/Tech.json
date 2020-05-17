@@ -435,6 +435,34 @@ var jsonTech = {
 
         }
 
+                , {
+            "slug": "celestian_test",
+            "name": "Celestian Secret Tech Var",
+
+            "mod_unlock": [
+                {
+
+                }
+
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_star_guide"
+                }
+
+            ],
+            "cost": "150",
+
+
+
+        }
+
 
     ]
 }

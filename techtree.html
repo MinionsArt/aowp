@@ -21,7 +21,7 @@
 
             $("#amazont1").load("/aowp/techcard.html", function() {
                 showTech("amazon_protective_grounding");
-                showhide('amazon');
+                showhide('amazon', 'biochemical', 'laser');
                 showhide2('celestian');
             });
 
@@ -78,12 +78,21 @@
                 showTech("biochemical_biochemical_applications");
 
             });
+            $("#celest1").load("/aowp/techcard.html", function() {
+                showTech("celestian_test");
+
+            });
 
 
             $(".togglelink").click(function() {
                 $(".togglelink").css("color", "white");
 
                 $(this).css("color", "cyan");
+                $("#celest1").load("/aowp/techcard.html", function() {
+                    showTech("celestian_test");
+
+                });
+
             });
 
             $(".togglelink2").click(function() {
@@ -104,13 +113,13 @@
 
     <h1 style="color: aliceblue; text-align: center">Tech Tree</h1>
     <div class="buttons">
-        <a href="#" onclick="showhide('amazon');" style="font-size: 20px; color: aqua" class="togglelink"> Amazon </a>
-        <a href="#" onclick="showhide('assembly');" style="font-size: 20px" class="togglelink"> Assembly </a>
+        <a href="#" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua" class="togglelink"> Amazon </a>
+        <a href="#" onclick="showhide('assembly', 'biochemical', 'firearms');" style="font-size: 20px" class="togglelink"> Assembly </a>
 
     </div>
 
 
-    <div class="dragscroll" style="cursor: grab; position: relative; z-index: 5; width: auto; height: 865px; overflow: auto hidden;">
+    <div class="dragscroll" style="cursor: grab; position: relative; z-index: 5; width: auto; height: 1200x; overflow: auto hidden;">
         <table>
             <tr>
                 <th></th>
@@ -237,115 +246,7 @@
                 </tr>
 
             </table>
-
-            <!-- Biochemical                                                                ----------------------------------------------------------Biochemical -->
-
-
-
-            <table id="BioTech" style="background-color: rgba(200, 255, 0, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 30px;padding: 10px"><img src="/aowp/Icons/Text/biochemical.png" width="50px"> Biochemical </p>
-                    </td>
-                    <td>
-                        <div id="biot1"></div>
-
-                    </td>
-                    <td>
-                        <div id="biot2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="amazont4"></div>
-
-                    </td>
-                    <td>
-                        <div id="amazont5"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="amazont7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="amazont9"></div>
-
-                    </td>
-
-                </tr>
-
-
-            </table>
-
-            <!-- Laser                                                                ----------------------------------------------------------Laser -->
-
-
-
-
-            <table id="LaserTech" style="background-color: rgba(200, 0, 255, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 30px;padding: 10px"><img src="/aowp/Icons/Text/thermal.png" width="50px"> Laser </p>
-                    </td>
-                    <td> <svg height="100" width="2000" style="position:absolute; float: left z-index: -2; top:-40px">
-                            <line x1="0S" y1="0" x2="1000" y2="0" style="stroke:rgb(220,220,255);stroke-width:2" />
-                            S
-                        </svg>
-                        <div id="biot1"></div>
-
-                    </td>
-                    <td>
-                        <div id="biot2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="amazont4"></div>
-
-                    </td>
-                    <td>
-                        <div id="amazont5"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="amazont7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="amazont9"></div>
-
-                    </td>
-
-                </tr>
-
-
-            </table>
         </div>
-
-        <br>
-
-
 
         <!-- Assembly                                                                ----------------------------------------------------------Assembly -->
 
@@ -452,6 +353,174 @@
             </table>
         </div>
 
+        <!-- Biochemical                                                                ----------------------------------------------------------Biochemical -->
+
+
+        <div class="techbackground" id="biochemical">
+            <table id="BioTech" style="background-color: rgba(200, 255, 0, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
+
+                <tr>
+                    <td>
+                        <p style="font-size: 30px;padding: 10px"><img src="/aowp/Icons/Text/biochemical.png" width="50px"> Biochemical </p>
+                    </td>
+                    <td>
+                        <div id="biot1"></div>
+
+                    </td>
+                    <td>
+                        <div id="biot2"></div>
+
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <div id="amazont4"></div>
+
+                    </td>
+                    <td>
+                        <div id="amazont5"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont7"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont9"></div>
+
+                    </td>
+
+                </tr>
+
+
+            </table>
+        </div>
+        <!-- Laser                                                                ----------------------------------------------------------Laser -->
+
+
+
+        <div class="techbackground" id="laser">
+            <table id="LaserTech" style="background-color: rgba(200, 0, 255, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
+
+                <tr>
+                    <td>
+                        <p style="font-size: 30px;padding: 10px"><img src="/aowp/Icons/Text/thermal.png" width="50px"> Laser </p>
+                    </td>
+                    <td> <svg height="100" width="2000" style="position:absolute; float: left z-index: -2; top:-40px">
+                            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:rgb(220,220,255);stroke-width:2" />
+                            S
+                        </svg>
+                        <div id="biot1"></div>
+
+                    </td>
+                    <td>
+                        <div id="biot2"></div>
+
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <div id="amazont4"></div>
+
+                    </td>
+                    <td>
+                        <div id="amazont5"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont7"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont9"></div>
+
+                    </td>
+
+                </tr>
+
+
+            </table>
+        </div>
+
+        <br>
+
+        <!-- Laser                                                                ----------------------------------------------------------Laser -->
+
+
+
+        <div class="techbackground" id="firearms" style="display: none">
+            <table id="LaserTech" style="background-color: rgba(200, 0, 255, 0.05); border: 1px solid rgba(0, 150, 255, .3); ">
+
+                <tr>
+                    <td>
+                        <p style="font-size: 30px;padding: 10px"><img src="/aowp/Icons/Text/kinetic.png" width="50px"> Firearms </p>
+                    </td>
+                    <td> <svg height="100" width="2000" style="position:absolute; float: left z-index: -2; top:-40px">
+                            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:rgb(220,220,255);stroke-width:2" />
+                            S
+                        </svg>
+                        <div id="biot1"></div>
+
+                    </td>
+                    <td>
+                        <div id="biot2"></div>
+
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <div id="amazont4"></div>
+
+                    </td>
+                    <td>
+                        <div id="amazont5"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont7"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="amazont9"></div>
+
+                    </td>
+
+                </tr>
+
+
+            </table>
+        </div>
+
+        <br>
+
+
+
+
+
         <br><br>
 
         <div class="buttons" style="position: sticky">
@@ -480,7 +549,7 @@
 
                     </td>
                     <td>
-                        <div id="amazont2"></div>
+                        <div id="celest1"></div>
 
                     </td>
                     <td>
@@ -569,6 +638,8 @@
                 </tr>
 
             </table>
+        </div>
+        <div id="footer" style="height: 300px">
         </div>
     </div>
 
