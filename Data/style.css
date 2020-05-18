@@ -372,9 +372,9 @@ p {
 .corner_icon {
     float: left;
     position: absolute;
-    padding-top: 35px;
-    padding-left: 35px;
-    max-width: 25px;
+    padding-top: 30px;
+    padding-left: 30px;
+    max-width: 20px;
 
 
 
@@ -1324,4 +1324,53 @@ research {
         -2px -2px 5px black, 1px 1px 0 #000;
     color: whitesmoke;
     opacity: 2;
+}
+
+influence {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/influence.png);
+    position: relative;
+}
+
+food {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/food.png);
+    position: relative;
+}
+
+operationstrength {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/op_strength.png);
+    position: relative;
+}
+
+operationDefense {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/op_defense.png);
+    position: relative;
+}
+
+raceRelation {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/<PLACEHOLDER>.png);
+    position: relative;
+}
+
+unhappiness {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/unhappiness.png);
+    position: relative;
+}
+
+rioter {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/rioter.png);
+    position: relative;
 }

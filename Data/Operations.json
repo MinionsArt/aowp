@@ -22,5 +22,426 @@ var jsonOperations = {
 
         },
 
+        {
+            "slug": "replicating_restoration",
+            "name": "Replicating Restoration",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Remove target friendly unit's negative Status Effects and heal it for 8<hp></hp>. This effect jumps to 3 other units within 2 hexes.",
+            "energy_cost": "40",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "hololusion",
+            "name": "Hololusion",
+            "tier": "IV",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "All friendly units in a 3 hex radius gain a 10% evasion and +1<shield></shield> for 1<turn></turn>. All enemy Biological and Cyborg units in the area have a 8<StrengthPhysical></StrengthPhysical> strength chance of getting <abilityRed>Disoriented</abilityRed>, gaining a 30% fumble chance for 2<turn></turn>.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "orbital_abduction",
+            "name": "Orbital Abduction",
+            "tier": "V",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Target unit has a chance, based on how low its <hp></hp> is, of being transported into the orbital layer for research, killing the unit.<br>Chance increases further if the unit is <abilityRed>Concussed</abilityRed>, <abilityRed>Disorientated</abilityRed>, <abilityRed>Impaired</abilityRed>, <abilityRed>Stunned</abilityRed>, <abilityRed>Sleeping</abilityRed> or <abilityRed>Disabled</abilityRed>.<br>Gain 15<research></research> per tier of the abducted unit.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "omni_flare",
+            "name": "Omni Flare",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "A Omni Flare deals 14<DamageThermal></DamageThermal> and 14<DamagePhysical></DamagePhysical> to units in a 2 hex range. Has a 8<StrengthPhysical></StrengthPhysical> strength chance of applying <abilityRed>Impaired</abilityRed>, disabling unit mods and applying <abilityRed>Slow</abilityRed> for 1<turn></turn>.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "disinformation_campaign",
+            "name": "Disinformation Campaign",
+            "tier": "II",
+            "type": "Covert Operation",
+            "description": "Spread disinformation through the media channels of target player, reducing their relation with all races by -300<raceRelation></raceRelation> for 15<turn></turn>.<br>On failure, applies -100<raceRelation></raceRelation> instead.",
+            "energy_cost": "0",
+            "influence_cost": "30",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "motivating_broadcasting",
+            "name": "Motivating Broadcasting",
+            "tier": "II",
+            "type": "Strategic Operation (Sustained)",
+            "description": "All colonies with a <actionblue>Propagation Tower</actionblue> gain +15<production></production>.<br><br>In addition, during combat on the domains of these colonies, all units gain +200<happiness></happiness>.<br>All friendly Propagators cause this effect in battle while the operation is active.<br><br>While active, affected colonies <firecol>produce -5<energy></energy></firecol> and the upkeep of Propagators is <firecol>increased by +25%</firecol>.",
+            "energy_cost": "60",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "unsettling_propaganda",
+            "name": "Unsettling Propaganda",
+            "tier": "VI",
+            "type": "Strategic Operation (Timed)",
+            "description": "Attempt to spread false and disturbing propaganda on target enemy colony, causing 12<unhappiness></unhappiness> for 3<turn></turn> as well as up to 2<rioter></rioter>.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "vigilant_broadcasting",
+            "name": "Vigilant Broadcasting",
+            "tier": "VI",
+            "type": "Strategic Operation (Sustained)",
+            "description": "All colonies with a Propagation Tower gain +4<operationDefense></operationDefense><br><br>In addition, during combat on the domains of these colonies, all units gain +1<shield></shield>.<br>All Propagators cause this effect in battle while the operation is active.<br><br>While active, affected colonies <firecol>produce -5<energy></energy></firecol> and the upkeep of Propagators is <firecol>increased by +25%</firecol>",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "holoreality_broadcasting",
+            "name": "Holoreality Broadcasting",
+            "tier": "VIII",
+            "type": "Strategic Operation (Sustained)",
+            "description": "All colonies with a Propagation Tower gain +10<happiness></happiness><br><br>In addition, at the start of each turn in combat on the domains of these colonies, all enemy non-Mindless units have a 4<strengthpsyche></strengthpsyche> chance of becoming <abilityRed>Hallucinating</abilityRed> for 1<turn></turn>.<br>All Propagators cause this effect in battle while the operation is active.<br><br>While active, affected colonies <firecol>produce -5<energy></energy></firecol> and the upkeep of Propagators is <firecol>increased by +25%</firecol>",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "weighted_holograms",
+            "name": "Weighted Holograms",
+            "tier": "IV",
+            "type": "Empire Upgrade",
+            "description": "All Infiltrator units you control gain +1[armor/] and 10% damage increase, even when Holoshifted.<br>Holoshift can now target Mechanical units. ",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "lifelike_holograms",
+            "name": "Lifelike Holograms",
+            "tier": "VII",
+            "type": "Empire Upgrade",
+            "description": "All Infiltrator units you control gain +2<shield></shield> and 10% damage increase, even when Holoshifted.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "high-frequency_projection",
+            "name": "High-Frequency Projection",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Project a sound in a 1 hex radius that deals 12<DamagePhysical></DamagePhysical> damage with <abilityRed>High Impact</abilityRed> to units in the area.<br>Non-Ethereal units have a 8<StrengthPhysical></StrengthPhysical> strength chance of becoming <abilityRed>Disoriented</abilityRed>, giving the unit a 30% fumble chance to its attacks for 2<turn></turn>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "shield_shattering_frequency",
+            "name": "Shield Shattering Frequency",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "A special Sonic frequency hits targets in a 2 hex radius, dealing 8<DamagePhysical></DamagePhysical> damage and destroying 4<shield></shield> until the end of combat.",
+            "energy_cost": "40",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "rapid_cavitation",
+            "name": "Rapid Cavitation",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "Attempt to apply <abilityRed>Reverb</abilityRed> 4 times to all units in a 1 hex radius. Each attempt has a strength 12<StrengthPhysical></StrengthPhysical> chance to succeed, applying <abilityRed>Resonance</abilityRed> instead on failure. If a unit has 3 stacks of reverb, it explodes damaging itself and adjacent units for 15<DamagePhysical></DamagePhysical>.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "field-wide_resonsant_frequencies",
+            "name": "Field-Wide Resonsant Frequencies",
+            "tier": "VIII",
+            "type": "Tactical Operation (Instant)",
+            "description": "At the end of each enemy turn, for 5<turn></turn>, all enemy units take 6<DamagePhysical></DamagePhysical> and gain <abilityRed>Resonance</abilityRed>, reducing their <DamagePhysical></DamagePhysical> resistance for 2<turn></turn>.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "laser_strike",
+            "name": "Laser Strike",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Call in a Laser Strike at the target that deals 25 damage with <abilityRed>Massive Impact</abilityRed> and has 8 strength chance to inflict <abilityRed>Burning</abilityRed>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "photonic_countermeasures",
+            "name": "Photonic Countermeasures",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "Fire a blinding Laser beam, dealing 10 damage in a 1 hex radius. All enemy units hit by this ability have 12 strength chance to be <abilityRed>Blinded</abilityRed>, decreasing their accuracy for 2.",
+            "energy_cost": "40",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "laser_ablation",
+            "name": "Laser Ablation",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Deal 25 damage with <abilityRed>Massive Impact</abilityRed> to target unit, bypassing and removing 3 and 3.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "starlight_projector",
+            "name": "Starlight Projector",
+            "tier": "VIII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Bathe the battlefield in Thermal energy, reducing the defenses of enemy units by 5 and 3 for 2. Also, enemy units have a have strength 8 chance to become <abilityRed>Blinded</abilityRed> for 2",
+            "energy_cost": "100",
+            "casting": "9 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "autonomous_repair_subroutines",
+            "name": "Autonomous Repair Subroutines",
+            "tier": "III",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Uploads repair subroutines to all friendly <actionblue>Integrated</actionblue> units. They heal for 6<hp></hp> at the end of each turn for 2.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "aegis_subroutines",
+            "name": "Aegis Subroutines",
+            "tier": "III",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Uploads protective subroutines to all <actionblue>Integrated</actionblue> units. They receive 2 for 2",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "disruption_virus_pulse",
+            "name": "Disruption Virus Pulse",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target enemy unit takes 22 Arc damage. If this ability targets Mechanical or Cyborg unit, it has a strength 8 chance to cause the target to become <abilityRed>Compromised</abilityRed>. This ability jumps up to 2 times to other enemy units within 2 hexes.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "motion_control_hack",
+            "name": "Motion Control Hack",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Enemy Mechanical and Cyborg units in a 2 hex area take 10[damageWave/] with <abilityRed>Massive Impact</abilityRed>. In addition, they have a strength 8 chance to become <abilityRed>Immobilized</abilityRed> for 1.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "skirmish_subroutines",
+            "name": "Skirmish Subroutines",
+            "tier": "VI",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Uploads combat subroutines to all friendly <actionblue>Integrated</actionblue> units. They gain +1 Impact resistance and deal +20 damage for 2.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "localized_system_shutdown",
+            "name": "Localized System Shutdown",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Sends out a targeted hacking signal to interfere with enemy Mechanical and Cyborg units in a 3 hex area of effect. They have a 8<StrengthWave></StrengthWave>  strength chance to become <abilityRed>Disabled</abilityRed> for 2. If resisted, the units will be <abilityRed>Staggered</abilityRed> instead. In addition, Biological units in the area have a 8<StrengthWave></StrengthWave> strength chance to become <abilityRed>Electrified</abilityRed> for 3<turn></turn>.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+        {
+            "slug": "internal_system_overload_hack",
+            "name": "Internal System Overload Hack",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "All Mechanical and Cyborg units in target enemy army take 20 of their current <hp></hp> in damage. Units damaged this way are <abilityRed>Compromised</abilityRed> at the start of every battle for 1 strategic turn. ",
+            "energy_cost": "60",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "deploy_maintenance_daemons",
+            "name": "Deploy Maintenance Daemons",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "All <actionblue>Integrated</actionblue> units in target friendly army heal to full <hp></hp> and gain <actionblue>Finely-tuned</actionblue> for 1 strategic turn, granting them +10 accuracy and +10 damage.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "zero-day_vulnerability",
+            "name": "Zero-Day Vulnerability",
+            "tier": "II",
+            "type": "Strategic Operation (Timed)",
+            "description": "Target enemy colony has their operational defense reduced by 5 and their happiness reduced by 8 for 10",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "cyber_attack",
+            "name": "Cyber Attack",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Launch a cyber attack on a non-Synthesis enemy colony, infiltrating their systems and linking them up to the Basilisk network for 10. This ability causes greater havoc the more Basilisk Nodes you build. ",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "reactivate_imperial_androids",
+            "name": "Reactivate Imperial Androids",
+            "tier": "VII",
+            "type": "Strategic Operation (Summon)",
+            "description": "Reactivating local imperial androids can provide quick reinforcements in the field.<br><br>Summon 2 Autonom, E:bot, or Network Link units at target location. These units can only be Tier 1 or 2.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "cascading_system_failure",
+            "name": "Cascading System Failure",
+            "tier": "VII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target enemy colony's income is reduced by 25 for 10.",
+            "energy_cost": "200",
+            "casting": "20 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "the_singularity",
+            "name": "The Singularity",
+            "tier": "X",
+            "type": "Doomsday Finisher Operation",
+            "description": "Link the entire planet together in the Basilisk network, bringing it all under your control, granting absolute power.<br><br>Requires Cyber Attack level 3.",
+            "energy_cost": "500",
+            "casting": "50 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "organized_cyber_divisions",
+            "name": "Organized Cyber Divisions",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Optimize and strengthen our cyberwarfare division in times of war, allowing for more brutal cyber-attacks and increased efficiency.<br><br>Gain 2 for all operations. In addition, strategic and covert operations are now 20 cheaper.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "worker_integration",
+            "name": "Worker Integration",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "With a few minor cyber augmentations, we can integrate our factory workers into the network, massively boosting their efficiency.<br><br><production></production> and <energy></energy> slots produce 2 of their respective resource per colonist working it.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "society_2.0",
+            "name": "Society 2.0",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "Computers are everywhere, do everything, and see all. Our people are fully integrated into a digital paradise of consumerism and hedonism, and they love us for it.<br><br>All Colonies gain 10 and produce 10.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "total_war_automation",
+            "name": "Total War Automation",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "Total integration of synthesis technology into war factories leads to massive gains in efficiency and effectiveness for our units.<br><br>All units gain 1 extra rank when produced, and cost 20.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "dwelling_intimidation",
+            "name": "Dwelling Intimidation",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "By using a combination of blackmail and direct threats the Shakarn can intimidate their foes into profit.<br><br>Gain a 10%<influence></influence> discount when dealing with NPC Factions. Faction War Quest rewards trigger at 6 units defeated, instead of 10.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "homeworld_reminiscence",
+            "name": "Homeworld Reminiscence",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "The Shakarn�s homeworld is 90% oceanic, covered by atolls and archipelagos. Through promoting festivities next to bodies of water, the Shakarn colonists  can reminisce about their homes and those they left behind.<br><br>Colonies gain +12<food></food> and +4<happiness></happiness> if the coastal or river feature is in their domain.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "scorched_earth_policy",
+            "name": "Scorched Earth Policy",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "Your people are attuned to the rhythm of war and will be faster and more efficient when razing enemy colonies.<br><br>Resources gained from razing enemy colonies and sector bases is increased by 75% and it takes 1<turn></turn> less to raze.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "active_agent_networks",
+            "name": "Active Agent Networks",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "By facilitating communication between active agents, intelligence travels faster.<br><br>Gain +4<operationstrength></operationstrength> when using <actionblue>Infiltrate Operations Center</actionblue><br>Gain +2<influence></influence> and +15<research></research> per turn for each active infiltration on a unique player.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "heightened_domok_regimen",
+            "name": "Heightened Domok Regimen",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Increasing the presence of veteran Domok advisers helps you with military training and conscription, increasing the efficiency of all units and reducing their maintenance.<br><br>All units deal +10% damage, gain +10% accuracy, and have their <energy></energy> upkeep reduced by 20%.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "holocrafted_zardas_channels",
+            "name": "Holocrafted Zardas Channels",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Increasing the number of Zardas advisors helps you craft and maintain a holocrafted network of signals, allowing your agents to communicate through subtle holographic codes hidden in plain sight, while confounding your enemies.<br><br>Covert Operations cost 40% less to prime and you gain +3<operationDefense></operationDefense> Operational Defense.<br>Infiltrators now deal +30% damage, even when Holoshifted.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+
     ]
 }

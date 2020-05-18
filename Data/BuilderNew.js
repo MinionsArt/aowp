@@ -597,6 +597,12 @@ function addOpUnlock(a) {
                 imag2.className = "corner_icon";
                 btn.appendChild(imag2);
             }
+            if (jsonOperations.operations[j].type.includes("Strategic")) {
+                var imag2 = document.createElement("IMG");
+                imag2.setAttribute("src", "/aowp/Icons/Text/strat_ops.png");
+                imag2.className = "corner_icon";
+                btn.appendChild(imag2);
+            }
             document.getElementById("unlockholder").appendChild(btn);
             btn.appendChild(imag);
 

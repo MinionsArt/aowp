@@ -1,5 +1,162 @@
 var jsonTech = {
-    "tech": [{
+    "tech": [{ // assembly
+
+            "slug": "assembly_molecular_computing",
+
+    }, {
+
+            "slug": "assembly_reverse_engineering",
+
+    },
+        {
+
+            "slug": "assembly_auxiliary_resource_extraction",
+
+    },
+        {
+
+            "slug": "assembly_harness_the_storm",
+
+    },
+        {
+
+            "slug": "assembly_advanced_bionics",
+
+    },
+        {
+
+            "slug": "assembly_naval_demolitions",
+
+    },
+        {
+
+            "slug": "assembly_adaptive_systems",
+
+    },
+
+        {
+
+            "slug": "assembly_toxic_applications",
+
+    },
+        {
+
+            "slug": "assembly_destructive_means",
+
+    },
+        {
+
+            "slug": "assembly_ionic_manipulation",
+
+    },
+        {
+
+            "slug": "assembly_disassemblers",
+
+    },
+        {
+
+            "slug": "assembly_system_reload",
+
+    },
+        {
+
+            "slug": "assembly_ultimate_form",
+
+    },
+        {
+
+            "slug": "assembly_quantric_technology",
+
+    },
+
+             // bio
+
+        {
+
+            "slug": "biochemical_volatile_afflictions",
+
+    },
+        {
+
+            "slug": "biochemical_specialized_strains",
+
+    },
+
+        {
+
+            "slug": "biochemical_advanced_infections",
+
+    },
+        {
+
+            "slug": "biochemical_blight_plague",
+
+    },
+
+                  // firearms
+
+        {
+
+            "slug": "firearms_subjugation_ordnance",
+
+    },
+        {
+
+            "slug": "firearms_electromagnetic_utilization",
+
+    },
+
+        {
+
+            "slug": "firearms_kinetic_force_manipulation",
+
+    },
+        {
+
+            "slug": "firearms_explosive_payloads",
+
+    },
+
+        {
+
+            "slug": "firearms_relativistic_projectiles",
+
+    },
+
+                             // arc
+
+        {
+
+            "slug": "arc_magnetic_energy_storage",
+
+    },
+        {
+
+            "slug": "arc_electron_impact",
+
+    },
+
+        {
+
+            "slug": "arc_ionic_detachment",
+
+    },
+        {
+
+            "slug": "arc_neuro-electric_disruptors",
+
+    },
+
+        {
+
+            "slug": "arc_positron_technology",
+
+    },
+
+
+///////////////////amazon
+        {
             "slug": "amazon_protective_grounding",
             "name": "Protective Grounding",
 
@@ -461,7 +618,1158 @@ var jsonTech = {
 
 
 
+        },
+
+        {
+            "slug": "shakarn_discerning_systems",
+            "name": "Discerning Systems",
+
+            "mod_unlock": [
+                {
+                    "slug": "portable_scanners"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "replicating_restoration"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100"
+        },
+
+        {
+            "slug": "shakarn_propaganda_propagation",
+            "name": "Propaganda Propagation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "disinformation_campaign"
+                }
+        ,
+                {
+                    "slug": "motivating_broadcasting"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "shakarn_caste_military_applications",
+            "name": "Caste Military Applications",
+
+            "mod_unlock": [
+                {
+                    "slug": "impairing_grenade"
+                }
+        ,
+                {
+                    "slug": "xeno_defense_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "shakarn_propagator_deployment",
+            "name": "Propagator Deployment",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_propagator"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "propagator"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "shakarn_holotech_applications",
+            "name": "Holotech Applications",
+
+            "mod_unlock": [
+                {
+                    "slug": "holodisplacement_shields"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "hololusion"
+                }
+        ,
+                {
+                    "slug": "weighted_holograms"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "shakarn_firebrand_deployment",
+            "name": "Firebrand Deployment",
+
+            "mod_unlock": [
+                {
+                    "slug": "omni_claw"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "shakarn_firebrand"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "shakarn_orbit_tactics",
+            "name": "Orbit Tactics",
+
+            "mod_unlock": [
+                {
+                    "slug": "orbital_recall_systems"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "orbital_abduction"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "shakarn_tactician_deployment",
+            "name": "Tactician Deployment",
+
+            "mod_unlock": [
+                {
+                    "slug": "sono_fins"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "shakarn_tactician"
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "shakarn_cold_war_measures",
+            "name": "Cold War Measures",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "unsettling_propaganda"
+                }
+        ,
+                {
+                    "slug": "vigilant_broadcasting"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "shakarn_refractor_deployment",
+            "name": "Refractor Deployment",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_refractor"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "shakarn_refractor"
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "shakarn_caste_advancements",
+            "name": "Caste Advancements",
+
+            "mod_unlock": [
+                {
+                    "slug": "assault_exoskeleton"
+                }
+        ,
+                {
+                    "slug": "holoreality_mantle"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "lifelike_holograms"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "shakarn_perfected_holotech",
+            "name": "Perfected Holotech",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "holoreality_broadcasting"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "shakarn_gama_supremecy",
+            "name": "Gama Supremecy",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "shakarn_sonokarn"
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "shakarn_gama_omnitech_research",
+            "name": "Gama Omnitech Research",
+
+            "mod_unlock": [
+                {
+                    "slug": "trigger-phrase_systems"
+                }
+        ,
+                {
+                    "slug": "holochromatic_engines"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "omni_flare"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "laser_heavy_laser_applications",
+            "name": "Heavy Laser Applications",
+
+            "mod_unlock": [
+                {
+                    "slug": "incinerator_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "laser_strike"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "laser_photon_acceleration",
+            "name": "Photon Acceleration",
+
+            "mod_unlock": [
+                {
+                    "slug": "hard_light_systems"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "photonic_countermeasures"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "laser_non-refracting_lasers",
+            "name": "Non-Refracting Lasers",
+
+            "mod_unlock": [
+                {
+                    "slug": "searing_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "laser_ablation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "laser_crystalline_technology",
+            "name": "Crystalline Technology",
+
+            "mod_unlock": [
+                {
+                    "slug": "dazzler_systems"
+                }
+        ,
+                {
+                    "slug": "laser_precision_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "laser_plasma_weaponry",
+            "name": "Plasma Weaponry",
+
+            "mod_unlock": [
+                {
+                    "slug": "plasma_disintegrator_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "starlight_projector"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "sonic_deafening_frequencies",
+            "name": "Deafening Frequencies",
+
+            "mod_unlock": [
+                {
+                    "slug": "deafning_amplifiers"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "high-frequency_projection"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "sonic_sonolysis_application",
+            "name": "Sonolysis Application",
+
+            "mod_unlock": [
+                {
+                    "slug": "focused_sonolysis_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "shield_shattering_frequency"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "sonic_sound_augmentation",
+            "name": "Sound Augmentation",
+
+            "mod_unlock": [
+                {
+                    "slug": "acute_pitch"
+                }
+        ,
+                {
+                    "slug": "cavitation_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "sonic_accelerated_sound_waves",
+            "name": "Accelerated Sound Waves",
+
+            "mod_unlock": [
+                {
+                    "slug": "reverbing_shields"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rapid_cavitation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "sonic_perfect_resonance",
+            "name": "Perfect Resonance",
+
+            "mod_unlock": [
+                {
+                    "slug": "sono-interference_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "field-wide_resonant_frequencies"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "synthesis_synthesis_integration",
+            "name": "Synthesis Integration",
+
+            "mod_unlock": [
+                {
+                    "slug": "guardian_daemon_shell"
+                }
+        ,
+                {
+                    "slug": "targeting_daemon_shell"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "integrated_military_networks"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "synthesis_daemon_deployment",
+            "name": "Daemon Deployment",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "internal_system_overload_hack"
+                }
+        ,
+                {
+                    "slug": "deploy_maintenance_daemons"
+                }
+        ,
+                {
+                    "slug": "zero-day_vulnerability"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "synthesis_information_control",
+            "name": "Information Control",
+
+            "mod_unlock": [
+                {
+                    "slug": "hasher_smg"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_hacker"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "synthesis_combat_subroutines",
+            "name": "Combat Subroutines",
+
+            "mod_unlock": [
+                {
+                    "slug": "compromise_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "autonomous_repair_subroutines"
+                }
+        ,
+                {
+                    "slug": "aegis_subroutines"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "synthesis_motion_disruption",
+            "name": "Motion Disruption",
+
+            "mod_unlock": [
+                {
+                    "slug": "incapacitate_daemon_shell"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "disruption_virus_pulse"
+                }
+        ,
+                {
+                    "slug": "motion_control_hack"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "synthesis_network_connectivity",
+            "name": "Network Connectivity",
+
+            "mod_unlock": [
+                {
+                    "slug": "type-s_mobile_network"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "network_link"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "synthesis_basilisk_network",
+            "name": "Basilisk Network",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "basilisk_node"
+                }
+        ,
+                {
+                    "slug": "cyber_attack"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "synthesis_pacification_cypher",
+            "name": "Pacification Cypher",
+
+            "mod_unlock": [
+                {
+                    "slug": "total_network_integration"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "skirmish_subroutines"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "synthesis_systems_regulation",
+            "name": "Systems Regulation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "reactivate_imperial_androids"
+                }
+        ,
+                {
+                    "slug": "cascading_system_failure"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "synthesis_neural_integration",
+            "name": "Neural Integration",
+
+            "mod_unlock": [
+                {
+                    "slug": "disruption_relay"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "avatar"
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "synthesis_autonomous_malware",
+            "name": "Autonomous Malware",
+
+            "mod_unlock": [
+                {
+                    "slug": "deployable_malware_daemon"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "localized_system_shutdown"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "synthesis_basilisk_singularity",
+            "name": "Basilisk Singularity",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "the_singularity"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "shakarn_planetfall_procedures",
+            "name": "Planetfall Procedures",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "dwelling_intimidation"
+                }
+        ,
+                {
+                    "slug": "homeworld_reminiscence"
+                }
+        ,
+                {
+                    "slug": "propagation_towers"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "shakarn_manipulation_campaigns",
+            "name": "Manipulation Campaigns",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "scorched_earth_policy"
+                }
+        ,
+                {
+                    "slug": "active_agent_networks"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "shakarn_expert_council",
+            "name": "Expert Council",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "heightened_domok_regimen"
+                }
+        ,
+                {
+                    "slug": "holocrafted_zardas_channels"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "synthesis_cyber_optimization",
+            "name": "Cyber Optimization",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "organized_cyber_divisions"
+                }
+        ,
+                {
+                    "slug": "worker_integration"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_v"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "synthesis_cyber_society",
+            "name": "Cyber Society",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "society_2.0"
+                }
+        ,
+                {
+                    "slug": "total_war_automation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "doctrine_dawn_of_a_new_union",
+            "name": "Dawn of a New Union",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "planetary_unification_protocol"
+                }
+        ,
+                {
+                    "slug": "unification_efforts"
+                }
+        ,
+                {
+                    "slug": "hero_resurrection_protocol"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
         }
+
 
 
     ]
