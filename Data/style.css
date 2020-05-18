@@ -17,7 +17,7 @@ th {
 td {
     min-width: 320px;
     max-width: 320px;
-    height: 95px;
+    height: 90px;
     color: aliceblue;
 
 }
@@ -313,15 +313,36 @@ p {
 
 .tabletech {
     background-color: rgba(0, 255, 100, 0.05);
-    box-shadow: inset 1px 1px 20px #074447;
+    box-shadow: inset 1px 1px 10px #074447;
     border: 1px solid #1f5659;
 }
 
 .modunlock_icon {
-    padding-top: 15px;
+    padding-top: 10px;
 
     display: table;
     margin: 0 auto;
+}
+
+
+.modunlock_icon2 {
+    padding-top: 15px;
+
+
+    display: table;
+    margin: 0 auto;
+    margin-left: -5px;
+}
+
+.dragscroll {
+    cursor: grab;
+    position: relative;
+    z-index: 5;
+    width: auto;
+    height: 1200x;
+    overflow: hidden;
+    background: url("/aowp/UI/hex35.png");
+    background-color: #051221;
 }
 
 .buttons {
@@ -439,7 +460,7 @@ tab {
     width: 290px;
     height: 85px;
     border-radius: 30px 0px 10px 30px;
-    border: 1px solid white;
+    border: 1px solid #A5C3D3;
     background-color: #131517;
     background-image: url("/aowp/UI/scan.png");
     background-size: 500px;
@@ -672,6 +693,12 @@ tab {
     display: inline-block;
 }
 
+
+.tooltiptext2 {
+    display: inline-block;
+}
+
+
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -689,6 +716,28 @@ tab {
     min-height: 40px;
     margin-left: 40px;
 
+    transition: opacity 0.5s;
+
+}
+
+/* Tooltip text */
+.researchResultBackgroundImage .tooltiptext2 {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #004b5e;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 40px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
     transition: opacity 0.5s;
 
 }
@@ -736,7 +785,7 @@ tab {
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     position: absolute;
-
+    font-size: 14px;
     z-index: 1;
     min-width: 400px;
     max-width: 600px;
@@ -751,6 +800,10 @@ tab {
     visibility: visible;
 }
 
+/* Show the tooltip text when you mouse over the tooltip container */
+.researchResultBackgroundImage:hover .tooltiptext2 {
+    visibility: visible;
+}
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .unittype_icon:hover .tooltiptext {
@@ -822,9 +875,9 @@ tab {
     width: 75px;
     height: 75px;
 
-    background-color: #002159;
+    background-color: #131517;
     border-radius: 40px 40px 40px 40px;
-    border: 2px solid aliceblue;
+    border: 2px solid #A5C3D3;
 
 }
 

@@ -63,6 +63,15 @@ var jsonOperations = {
         },
 
         {
+            "slug": "integrated_military_networks",
+            "name": "Integrated Military Networks",
+            "tier": "I",
+            "type": "Empire Upgrade",
+            "description": "All Mechanical and Cyborg units are <actionblue>Integrated</actionblue>, allowing them to interface with Synthesis technology. <br> All militia units you control become <actionblue>Integrated</actionblue>",
+
+},
+
+        {
             "slug": "disinformation_campaign",
             "name": "Disinformation Campaign",
             "tier": "II",

@@ -519,7 +519,12 @@ function addModUnlock(a) {
     var modUnlockName, modUnlockIcon, modUnlockAbility, j = "";
     for (j in jsonMods.mods) {
         if (a == jsonMods.mods[j].slug) {
-            modUnlockName = "<titlebrown>" + jsonMods.mods[j].name + "</titlebrown>";
+            if (jsonMods.mods[j].type.includes("Weapon")) {
+                modUnlockName = "Equipment: " + jsonMods.mods[j].name;
+            } else {
+                modUnlockName = jsonMods.mods[j].name;
+            }
+            modUnlockName = "<titlebrown>" + modUnlockName + "</titlebrown>";
             modUnlockIcon = jsonMods.mods[j].slug;
             modUnlockAbility = jsonMods.mods[j].description;
 
@@ -530,25 +535,39 @@ function addModUnlock(a) {
             var btn = document.createElement("DIV");
             btn.className = "researchResultBackgroundImage";
             var imag = document.createElement("IMG");
-            imag.className = "modunlock_icon";
+            imag.className = "modunlock_icon2";
             var spa = document.createElement("SPAN");
-            var tex = document.createElement("DIV");
-            tex.className = "tooltip";
-            //tex.innerHTML = modUnlockName;
-            spa.className = "tooltiptext";
+
+
             spa.innerHTML = "<p>" + modUnlockName + "</p>" + tier + "<hr>"
             imag.setAttribute("src", "/aowp/Icons/Mods/" + modUnlockIcon + ".png");
 
             spa.innerHTML += "<img src=\"/aowp/Icons/Mods/" + modUnlockIcon + ".png\" width='200'\">";
             spa.innerHTML += "<br>" + modUnlockAbility;
-            spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods.mods[j].cost;
-            imag.setAttribute("height", "25");
+
+            if (jsonMods.mods[j].type.includes("Weapon")) {
+                spa.innerHTML += "<hr> Base Cost: " + jsonMods.mods[j].cost;
+            } else {
+                spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods.mods[j].cost;
+            }
+
+            imag.setAttribute("height", "30");
             var newID = document.getElementById("unlockholder");
             newID.appendChild(btn);
             btn.appendChild(imag);
 
 
             btn.appendChild(spa);
+
+            var bodyRect = document.body.getBoundingClientRect(),
+                elemRect = btn.getBoundingClientRect(),
+                offset = elemRect.top - bodyRect.top;
+            if (offset > 800) {
+                spa.className = "tooltiptext2";
+            } else {
+                spa.className = "tooltiptext";
+            }
+
 
 
             // btn.appendChild(tex);
@@ -579,18 +598,18 @@ function addOpUnlock(a) {
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
             //tex.innerHTML = modUnlockName;
-            spa.className = "tooltiptext";
+
             spa.innerHTML = "<p>" + opUnlockName + "</p>" + tier + "<hr>"
             imag.setAttribute("src", "/aowp/Icons/Operations/" + opUnlockIcon + ".png");
 
 
             spa.innerHTML += "<br>" + opUnlockAbility;
 
-            if (jsonOperations.operations[j].casting != "") {
+            if (jsonOperations.operations[j].casting != undefined) {
                 spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
             }
 
-            imag.setAttribute("height", "30");
+            imag.setAttribute("height", "35");
             if (jsonOperations.operations[j].type.includes("Tactical")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/tac_ops.png");
@@ -609,7 +628,14 @@ function addOpUnlock(a) {
 
             btn.appendChild(spa);
 
-
+            var bodyRect = document.body.getBoundingClientRect(),
+                elemRect = btn.getBoundingClientRect(),
+                offset = elemRect.top - bodyRect.top;
+            if (offset > 800) {
+                spa.className = "tooltiptext2";
+            } else {
+                spa.className = "tooltiptext";
+            }
             // btn.appendChild(tex);
 
         }
@@ -648,7 +674,7 @@ function addUnitUnlock(a) {
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
             //tex.innerHTML = modUnlockName;
-            spa.className = "tooltiptext";
+
             spa.innerHTML = "<p>" + unitNameShort + "</p>" + tier + "<hr>";
             spa.innerHTML += unitUnlockName;
             spa.innerHTML += "<br>Tier " + jsonUnits.units[j].tier;
@@ -673,14 +699,21 @@ function addUnitUnlock(a) {
 
             // spa.innerHTML += "<br>" + opUnlockAbility;
             //spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
-            imag.setAttribute("height", "30");
+            imag.setAttribute("height", "35");
             document.getElementById("unlockholder").appendChild(btn);
             btn.appendChild(imag);
 
 
             btn.appendChild(spa);
 
-
+            var bodyRect = document.body.getBoundingClientRect(),
+                elemRect = btn.getBoundingClientRect(),
+                offset = elemRect.top - bodyRect.top;
+            if (offset > 800) {
+                spa.className = "tooltiptext2";
+            } else {
+                spa.className = "tooltiptext";
+            }
             // btn.appendChild(tex);
 
         }
