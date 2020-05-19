@@ -514,62 +514,9 @@ var jsonTech = {
 
 
         }
-             , {
-            "slug": "biochemical_biochemical_applications",
-            "name": "Biochemical Applications",
-
-            "mod_unlock": [
-                {
-                    "slug": "acidic_composite"
-                }
 
 
-            ],
-            "op_unlock": [
-                {
-
-                }
-            ],
-            "unit_unlock": [
-                {
-
-                }
-
-            ],
-            "cost": "150",
-
-
-
-        }
-
-                , {
-            "slug": "celestian_test",
-            "name": "Celestian Secret Tech Var",
-
-            "mod_unlock": [
-                {
-
-                }
-
-
-            ],
-            "op_unlock": [
-                {
-
-                }
-            ],
-            "unit_unlock": [
-                {
-                    "slug": "secret_star_guide"
-                }
-
-            ],
-            "cost": "150",
-
-
-
-        },
-
+                ,
         {
             "slug": "shakarn_discerning_systems",
             "name": "Discerning Systems",
@@ -2488,7 +2435,7 @@ var jsonTech = {
             ],
             "unit_unlock": [
                 {
-                    "slug": "promethean_phoenix_walker"
+                    "slug": "phoenix_walker"
                 }
 
             ],
@@ -3112,7 +3059,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "infusion:_ionic"
+                    "slug": "infusion_ionic"
                 }
 
             ],
