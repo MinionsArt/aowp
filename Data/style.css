@@ -340,7 +340,7 @@ p {
     z-index: 5;
     width: auto;
     height: 1200x;
-    overflow: hidden;
+    overflow: auto hidden;
     background: url("/aowp/UI/hex35.png");
     background-color: #051221;
 }
@@ -1432,5 +1432,19 @@ rioter {
     max-height: 25px;
     top: 3px;
     content: url(/aowp/Icons/Text/rioter.png);
+    position: relative;
+}
+
+casusBelli {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/<PLACEHOLDER>.png);
+    position: relative;
+}
+
+reputation6 {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/<PLACEHOLDER>.png);
     position: relative;
 }

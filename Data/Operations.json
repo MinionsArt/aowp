@@ -305,10 +305,10 @@ var jsonOperations = {
             "slug": "zero-day_vulnerability",
             "name": "Zero-Day Vulnerability",
             "tier": "II",
-            "type": "Strategic Operation (Timed)",
-            "description": "Target enemy colony has their operational defense reduced by 5 and their happiness reduced by 8 for 10",
-            "energy_cost": "80",
-            "casting": "8 <stratPoint></stratPoint>",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target enemy colony has their operational defense reduced by 5<operationDefense></operationDefense> and their happiness reduced by 8<unhappiness></unhappiness> for 10<turn></turn>",
+            "energy_cost": "60",
+            "casting": "6 <stratPoint></stratPoint>",
         },
 
         {
@@ -450,6 +450,337 @@ var jsonOperations = {
             "energy_cost": "200",
             "casting": "15 <stratPoint></stratPoint>",
         },
+
+        {
+            "slug": "nanite_support_station",
+            "name": "Nanite Support Station",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Drops a Nanite Support Station onto the battlefield. The Nanite Support Station has a built-in blur field which gives <actionblue>Obscured</actionblue> to all adjacent units. In addition, the station heals all adjacent friendly units 10<hp></hp> at the start of each turn. The Nanite Support Station is destroyable.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "combat_assist_system",
+            "name": "Combat Assist System",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Send a CAS drone to assist target unit. The drone purges any negative status effects and provides 2[/Shield] while it is active, for up to 3<turn></turn>.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "deploy_valkyrie",
+            "name": "Deploy Valkyrie",
+            "tier": "IV",
+            "type": "Tactical Operation (Summon)",
+            "description": "An orbital drop pod lands at target location, dealing 10<DamageThermal></DamageThermal> damage with <abilityRed>High Impact</abilityRed> to units in a 1 hex radius area of effect around the impact location. The drop pod unfolds into cover. The drop pod contains a Valkyrie unit which lasts until end of combat.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "heavy_launcher_turret",
+            "name": "Heavy Launcher Turret",
+            "tier": "VI",
+            "type": "Tactical Operation (Summon)",
+            "description": "Deploys a Heavy Launcher Turret into combat. <br><br>The turret deals18 <DamagePhysical></DamagePhysical> area of effect damage and lasts until end of combat.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "direct_command",
+            "name": "Direct Command",
+            "tier": "VIII",
+            "type": "Tactical Operation (Instant)",
+            "description": "All friendly non-mindless units gain 400<happiness></happiness>, have a 10% damage increase and gain a level of <actionblue>Stagger Resistance</actionblue> for 3<turn></turn>",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "security_drones",
+            "name": "Security Drones",
+            "tier": "III",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Security drones are active in the colony's domain. When friendly armies fight in that domain, 2 random Drones will aid them in combat.<br>The drones disappear at the end of combat.",
+            "energy_cost": "45",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "bunker_buster",
+            "name": "Bunker Buster",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target an enemy colony or army with a Bunker Buster bomb. If a colony is affected it destroys 1 random colony structure, if there are any, and if an army is affected it deals 25% damage to all units in that hex.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "emergency_recon",
+            "name": "Emergency Recon",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Deploy an OWL from the colony reserves to provide emergency reconnaissance.",
+            "energy_cost": "60",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "supply_drop",
+            "name": "Supply Drop",
+            "tier": "VII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target friendly army is resupplied by Vanguard support drones, healing them to full <hp></hp> and increasing their damage by 20% until the end of next combat.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "emergency_shielding",
+            "name": "Emergency Shielding",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Deploy a protective shield on target unit, granting the unit +10<shield></shield> and Thermal Immunity for 2<turn></turn> turns. The unit cannot move for the duration of the effect. ",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "firestorm_projectile",
+            "name": "Firestorm Projectile",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Call in an airstrike that deals 25<DamageThermal></DamageThermal> damage to a target with <abilityRed>High Impact</abilityRed>. The projectile also deals 10<DamageThermal></DamageThermal> damage to all adjacent enemy units and leaves a PyrX Hazard on all affected hexes for 2<turn></turn> turns.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "aegis_protection_field",
+            "name": "Aegis Protection Field",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "All friendly units gain <actionblue>Aegis Protection</actionblue>, granting them +3<shield></shield>, as well as +2<DamageThermal></DamageThermal> and +2<DamageBio></DamageBio> resistance for 1<turn></turn> turns.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "pyrx_bomb",
+            "name": "PyrX Bomb",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Drops a bomb in tactical combat that disperses a PyrX cloud in a 3 hex radius area. Biological and Cyborg ground units caught in the cloud are inflicted with <abilityRed>Choking</abilityRed>. After 1<turn></turn>, the cloud explodes, dealing 30<DamageThermal></DamageThermal> damage with <abilityRed>Massive Impact</abilityRed>.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "incineration_strike",
+            "name": "Incineration Strike",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "A strike drone showers the enemy in napalm. Deals damage equal to 20% of their current <hp></hp>, and weakens their <DamageThermal></DamageThermal> resistance by 3 in combat for 1 Strategic <turn></turn>.<br><br>On failure, will only deal damage equal to 20% of their current <hp></hp>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "plasmoid_deployment",
+            "name": "Plasmoid Deployment",
+            "tier": "II",
+            "type": "Strategic Operation (Summon)",
+            "description": "Summon a Plasmoid unit onto the strategic map.",
+            "energy_cost": "60",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "pyrx_fumigation_protocols",
+            "name": "PyrX Fumigation Protocols",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Floods a non-Promethean enemy colony with PyrX gas for 10 <turn></turn>, which increases in strength as you build more PyrX Refineries.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "pyrx_flash_strike",
+            "name": "PyrX Flash Strike",
+            "tier": "VII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Fire a rapid-ignition missile at the target sector that damages enemy units for 20% of their current <hp></hp> and turns the sector into a Volcanic sector. If this operation targets an enemy Colony Core, it removes 3-5<population></population> Colonists from the target.",
+            "energy_cost": "200",
+            "casting": "20 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "plasma_ray_defense",
+            "name": "Plasma Ray Defense",
+            "tier": "VII",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Target friendly colony is defended by a Superheated Plasma Ray. For the first 5<turn></turn> of combat, 3 to 5 random non-Mineral and non-Ethereal units have a strength 12<StrengthThermal></StrengthThermal> chance to become <abilityRed>Immolated</abilityRed> every <turn></turn>.",
+            "energy_cost": "100",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "planetary_purification",
+            "name": "Planetary Purification",
+            "tier": "X",
+            "type": "Doomsday Finisher Operation",
+            "description": "The final step in the Promethean plan floods the entire world's atmosphere with PyrX.<br><br>Requires PyrX Fumigation Protocols level 3.<br>",
+            "energy_cost": "500",
+            "casting": "50 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "shredder_bomb",
+            "name": "Shredder Bomb",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Drops a Shredder Bomb onto the battlefield, dealing 12<DamagePhysical></DamagePhysical> damage in a 1 hex radius area of effect with a 12<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityRed>Bleeding</abilityRed> to Biological and Cyborg units.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "kinetic_vectoring_field",
+            "name": "Kinetic Vectoring Field",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Project a Kinetic Vectoring Field that covers a 2 hex radius area. All units inside the field are 25% harder to hit with ranged attacks and deal 30% added damage with Firearms attacks. This field lasts for 2<turn></turn>.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "cluster_shell",
+            "name": "Cluster Shell",
+            "tier": "VI",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Unleashes a volley of Cluster Shells on enemy targets.<br>At the end of your next 2<turn></turn> mortar shells hit between 3 to 5 random enemies, dealing 12<DamagePhysical></DamagePhysical> damage, and causing <abilityRed>Massive Impact</abilityRed>.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "mass-driver_cannon",
+            "name": "Mass-Driver Cannon",
+            "tier": "VIII",
+            "type": "Tactical Operation (Instant)",
+            "description": "The Mass-Driver cannon accelerates a particle to a fraction of light speed. Has a 12<StrengthPhysical></StrengthPhysical> strength chance to kill and disintegrate targeted unit in the center. Deals 25<DamagePhysical></DamagePhysical> damage in a 1 hex radius area of effect and causes <abilityRed>Massive Impact</abilityRed>.",
+            "energy_cost": "75",
+            "casting": "7 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "frontier_survival",
+            "name": "Frontier Survival",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "For as long as the Vanguard have been sent to remote worlds, they have been trained to sustain themselves while new supplies were en route. As a result, the military helps to maintain and control food consumption in our colony.<br><br>15<food></food> in your colonies.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "colony_militia",
+            "name": "Colony Militia",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "The population is armed and ready. Recruiting troops directly from our colony militia reduces training time, allowing us to bring troops to the field more rapidly.<br><br>Production cost of all units reduced by 10%<production></production> in your colonies. In addition, the production cost is further reduced by an extra 5%<production></production> for each Colony Militia Barracks or Defense building in your colony.<br><br><firecol>Unit costs can never be lowered more than 75%.</firecol>",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "integrated_support",
+            "name": "Integrated Support",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "We gain advantage over the enemy through the rapid deployment of our forces.<br><br>You are able to cast Tactical Operations starting from the first turn of combat.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "hearts_and_minds",
+            "name": "Hearts and Minds",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "We can pacify populations faster using our natural charisma and leadership.<br><br>+50%<influence></influence> gained from completing Quests. In addition, absorbing colonies is 3<turn></turn> faster.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "big_stick_diplomacy",
+            "name": "Big Stick Diplomacy",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "We can leverage military threats to bring peace.<br><br>Starting a war no longer gives reputation penalties, and other players no longer will receive a <casusBelli></casusBelli> against us when we have a negative reputation.<br>In addition, Dwelling Shop costs do not increase when you have a negative reputation and we gain a +200<reputation6></reputation6> increase.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "planetary_conquest",
+            "name": "Planetary Conquest",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Proclaiming our military success convinces the populace that we are unbeatable, final victory looming on the horizon.<br><br>You have an extra +200<happiness></happiness> Popular Support while this Doctrine is active.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "phoenix_colonization_protocols",
+            "name": "Phoenix Colonization Protocols",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "The vault still holds the protocols for post-purge colonization - these could help with our colonization efforts in hazardous terrain.<br><br>All of your Colonies ignore economic penalties from Hazards and Volcanic.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "phoenix_armament_protocol",
+            "name": "Phoenix Armament Protocol",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Phoenix armament theory promotes efficiency above all else.<br><br>Promethean units are 25% cheaper to build and their upkeep cost is reduced by 25%.<br><br><firecol>Unit costs can never be lowered more than 75%.</firecol><br><firecol>Unit upkeep can never be lowered more than 50%.</firecol>",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "extermination_protocols",
+            "name": "Extermination Protocols",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "It is our duty to cleanse all of the galaxy's impurities, and we will do so without hesitation.<br><br>Your units deal 10% extra damage. This is increased to 20% when fighting Xenoplague.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "phoenix_defense_protocol",
+            "name": "Phoenix Defense Protocol",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "We must keep hostiles away from our borders and out of reach of our colonies until we can unleash the full potential of the PyrX.<br><br>Your units gain +2<armor></armor> within your Domain and you gain +6<operationDefense></operationDefense>.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
 
 
     ]

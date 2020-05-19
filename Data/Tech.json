@@ -94,35 +94,7 @@ var jsonTech = {
 
     },
 
-                  // firearms
 
-        {
-
-            "slug": "firearms_subjugation_ordnance",
-
-    },
-        {
-
-            "slug": "firearms_electromagnetic_utilization",
-
-    },
-
-        {
-
-            "slug": "firearms_kinetic_force_manipulation",
-
-    },
-        {
-
-            "slug": "firearms_explosive_payloads",
-
-    },
-
-        {
-
-            "slug": "firearms_relativistic_projectiles",
-
-    },
 
                              // arc
 
@@ -1770,6 +1742,987 @@ var jsonTech = {
             "cost": "520",
         }
 
+             ,
+
+        {
+            "slug": "vanguard_nanite_support",
+            "name": "Nanite Support",
+
+            "mod_unlock": [
+                {
+                    "slug": "nanite_injectors"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "nanite_support_station"
+                }
+        ,
+                {
+                    "slug": "combat_assist_system"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "vanguard_engineering_corps",
+            "name": "Engineering Corps",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_shotgun"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "vanguard_engineer"
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "vanguard_smart_defense_modules",
+            "name": "Smart Defense Modules",
+
+            "mod_unlock": [
+                {
+                    "slug": "improved_combat_sensors_(detector)"
+                }
+        ,
+                {
+                    "slug": "interlocking_armor"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "vanguard_air_corps",
+            "name": "Air Corps",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_gunship"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "vanguard_gunship"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "vanguard_drone_deployment",
+            "name": "Drone Deployment",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "security_drones"
+                }
+        ,
+                {
+                    "slug": "bunker_buster"
+                }
+        ,
+                {
+                    "slug": "emergency_recon"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "vanguard_naval_command",
+            "name": "Naval Command",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "vanguard_battleship"
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "vanguard_rapid_maneuverability",
+            "name": "Rapid Maneuverability",
+
+            "mod_unlock": [
+                {
+                    "slug": "jetpack"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "deploy_valkyrie"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "vanguard_tank_corps",
+            "name": "Tank Corps",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_laser_tank"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "vanguard_laser_tank"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "vanguard_sentry_technology",
+            "name": "Sentry Technology",
+
+            "mod_unlock": [
+                {
+                    "slug": "mini_launcher"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "heavy_launcher_turret"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "vanguard_walker_corps",
+            "name": "Walker Corps",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_walker"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "vanguard_walker"
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "vanguard_orbital_station",
+            "name": "Orbital Station",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "supply_drop"
+                }
+        ,
+                {
+                    "slug": "orbital_laser_cannon"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "vanguard_predator_conditioning",
+            "name": "Predator Conditioning",
+
+            "mod_unlock": [
+                {
+                    "slug": "sequential_kill_system"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "direct_command"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "vanguard_carrier_command",
+            "name": "Carrier Command",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "vanguard_drone_carrier"
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "vanguard_force_concentration",
+            "name": "Force Concentration",
+
+            "mod_unlock": [
+                {
+                    "slug": "miniaturized_missile_array"
+                }
+        ,
+                {
+                    "slug": "reactive_armor_plating"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "firearms_subjugation_ordnance",
+            "name": "Subjugation Ordnance",
+
+            "mod_unlock": [
+                {
+                    "slug": "ammunition:_flechette"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "shredder_bomb"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "firearms_electromagnetic_utilization",
+            "name": "Electromagnetic Utilization",
+
+            "mod_unlock": [
+                {
+                    "slug": "ammunition:_electrified"
+                }
+        ,
+                {
+                    "slug": "rail_accelerators"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "firearms_kinetic_force_manipulation",
+            "name": "Kinetic Force Manipulation",
+
+            "mod_unlock": [
+                {
+                    "slug": "kinetic_phase_modulator"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "kinetic_vectoring_field"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "firearms_explosive_payloads",
+            "name": "Explosive Payloads",
+
+            "mod_unlock": [
+                {
+                    "slug": "ammunition:_fire_burst"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "cluster_shell"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "firearms_relativistic_projectiles",
+            "name": "Relativistic Projectiles",
+
+            "mod_unlock": [
+                {
+                    "slug": "shockwave_infuser"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "mass-drive_cannon"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "promethean_tactical_protection",
+            "name": "Tactical Protection",
+
+            "mod_unlock": [
+                {
+                    "slug": "purification_field"
+                }
+        ,
+                {
+                    "slug": "hazmat_protection"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "emergency_shielding"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "promethean_phoenix_op_station",
+            "name": "Phoenix Op Station",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "incineration_strike"
+                }
+        ,
+                {
+                    "slug": "plasmoid_deployment"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "promethean_purifier_corps",
+            "name": "Purifier Corps",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_purifier_gun"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_purifier"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "promethean_biosphere_subjugation",
+            "name": "Biosphere Subjugation",
+
+            "mod_unlock": [
+                {
+                    "slug": "thermal_targeting_relay"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "firestorm_projectile"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "promethean_advanced_aegis_shielding",
+            "name": "Advanced Aegis Shielding",
+
+            "mod_unlock": [
+                {
+                    "slug": "pyrx_absorption_panels"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "aegis_protection_field"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "promethean_aegis_tank_corps",
+            "name": "Aegis Tank Corps",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_aegis_tank"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "aegis_tank"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "promethean_pyrx_inception",
+            "name": "Pyrx Inception",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "pyrx_refinery"
+                }
+        ,
+                {
+                    "slug": "pyrx_fumigation_protocols"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "promethean_pyrx_sector_preparations",
+            "name": "PyrX Sector Preparations",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "pyrx_flash_strike"
+                }
+        ,
+                {
+                    "slug": "plasma_ray_defense"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "promethean_thermal_surge_modules",
+            "name": "Thermal Surge Modules",
+
+            "mod_unlock": [
+                {
+                    "slug": "superheated_plasma_actuators"
+                }
+        ,
+                {
+                    "slug": "backlash_projectors"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "promethean_phoenix_walker_corps",
+            "name": "Phoenix Walker Corps",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_phoenix_walker"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "promethean_phoenix_walker"
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "promethean_phoenix_rising",
+            "name": "Phoenix Rising",
+
+            "mod_unlock": [
+                {
+                    "slug": "phoenix_bomb_launchers"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "pyrx_bomb"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "promethean_planetary_purification",
+            "name": "Planetary Purification",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "planetary_purification"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "vanguard_frontier_policies",
+            "name": "Frontier Policies",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "frontier_survival"
+                }
+        ,
+                {
+                    "slug": "colony_militia"
+                }
+        ,
+                {
+                    "slug": "combat_simulation_center"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "vanguard_subjugation_protocols",
+            "name": "Subjugation Protocols",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "integrated_support"
+                }
+        ,
+                {
+                    "slug": "hearts_and_minds"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "vanguard_hegemony",
+            "name": "Hegemony",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "big_stick_diplomacy"
+                }
+        ,
+                {
+                    "slug": "planetary_conquest"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "promethean_phoenix_dawn_protocols",
+            "name": "Phoenix Dawn Protocols",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "phoenix_colonization_protocols"
+                }
+        ,
+                {
+                    "slug": "phoenix_armament_protocol"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_v"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "promethean_phoenix_nighttide_protocols",
+            "name": "Phoenix Nighttide Protocols",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "extermination_protocols"
+                }
+        ,
+                {
+                    "slug": "phoenix_defense_protocols"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
 
 
     ]
