@@ -32,8 +32,8 @@
      //alert("drawing" + sourceX);
  }
 
- var divState = ["amazon", "assembly", "vanguard", "kirko"]; // we store the status in this object
- var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics"];
+ var divState = ["amazon", "assembly", "vanguard", "kirko", "dvar"]; // we store the status in this object
+ var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics", "explosives"];
  var currentRace = "";
 
  function showhide(id, weapon, weapon2) {
@@ -78,7 +78,7 @@
      }
 
  }
- var divState2 = ["promethean", "synthesis", "voidtech"];
+ var divState2 = ["promethean", "synthesis", "voidtech", "psynumbra"];
 
  function showhide2(id) {
      if (document.getElementById) {

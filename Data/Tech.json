@@ -3797,6 +3797,999 @@ var jsonTech = {
         },
 
 
+        {
+            "slug": "dvar_perimeter_security",
+            "name": "Perimeter Security",
+
+            "mod_unlock": [
+                {
+                    "slug": "fortification_tools"
+                }
+        ,
+                {
+                    "slug": "ironbreaker_modifications"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "breach_protection_protocol"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "dvar_aerial_division",
+            "name": "Aerial Division",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_ramjet"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "dvar_ramjet"
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "dvar_drudges",
+            "name": "Drudges",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "factory_overdrive"
+                }
+        ,
+                {
+                    "slug": "deploy_trenchers"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "dvar_dreadnought_division",
+            "name": "Dreadnought Division",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "dvar_dreadnought"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "dvar_d-vr_mark_iv_upgrades",
+            "name": "D-VR Mark IV Upgrades",
+
+            "mod_unlock": [
+                {
+                    "slug": "advanced_target_recognition_(detector)"
+                }
+        ,
+                {
+                    "slug": "explosive_resistant_armor"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "general_alert_protocol"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "dvar_deep_detonation",
+            "name": "Deep Detonation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "land_torpedo"
+                }
+        ,
+                {
+                    "slug": "mountain_breaker"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "dvar_noble_division",
+            "name": "Noble Division",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_baron"
+                }
+        ,
+                {
+                    "slug": "equipment:_rotary_cannon"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "dvar_baron"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "dvar_risk_management",
+            "name": "Risk Management",
+
+            "mod_unlock": [
+                {
+                    "slug": "reconstruction_kit"
+                }
+        ,
+                {
+                    "slug": "vehicle:_sapper"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "deploy_sapper"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "dvar_excavations_division",
+            "name": "Excavations Division",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_excavator_tank"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "dvar_excavator_tank"
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "dvar_artillery_division",
+            "name": "Artillery Division",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "dvar_rocket_artillery"
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "dvar_advanced_dv-r_suits",
+            "name": "Advanced DV-R Suits",
+
+            "mod_unlock": [
+                {
+                    "slug": "super-powered_pistons"
+                }
+        ,
+                {
+                    "slug": "illuminator_targeting_system"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "localized_earthquake_generator"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "dvar_cataclysm_generation",
+            "name": "Cataclysm Generation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "tectonic_shift"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "dvar_seismic_supremacy",
+            "name": "Seismic Supremacy",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "dvar_earth_crusher"
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "dvar_peak_efficiency",
+            "name": "Peak Efficiency",
+
+            "mod_unlock": [
+                {
+                    "slug": "unleashed_stored_energy"
+                }
+        ,
+                {
+                    "slug": "captain's_regalia"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "explosives_enhanced_payloads",
+            "name": "Enhanced Payloads",
+
+            "mod_unlock": [
+                {
+                    "slug": "flash_payload"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "advanced_munitions_provision"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "explosives_thermodynamics",
+            "name": "Thermodynamics",
+
+            "mod_unlock": [
+                {
+                    "slug": "explosives_incendiary"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "time_on_target"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "explosives_advanced_launchers",
+            "name": "Advanced Launchers",
+
+            "mod_unlock": [
+                {
+                    "slug": "guiding_mechanism"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "creeping_barrage"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "explosives_augmented_payloads",
+            "name": "Augmented Payloads",
+
+            "mod_unlock": [
+                {
+                    "slug": "explosives:_electrical"
+                }
+        ,
+                {
+                    "slug": "smart_payload"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "explosives_nuclear_solution",
+            "name": "Nuclear Solution",
+
+            "mod_unlock": [
+                {
+                    "slug": "micro_nuclear_payload"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "tactical_nuclear_strike"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "psynumbra_foreboding_darkness",
+            "name": "Foreboding Darkness",
+
+            "mod_unlock": [
+                {
+                    "slug": "mark_of_the_dark_sun"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "embrace_of_darkness"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "psynumbra_initiation_into_agony",
+            "name": "Initiation into Agony",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_soul_splitter"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_initiate"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "psynumbra_whispers_and_visions",
+            "name": "Whispers and Visions",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "whisper_of_discord"
+                }
+        ,
+                {
+                    "slug": "vision_of_darkness"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "psynumbra_accursed_gifts",
+            "name": "Accursed Gifts",
+
+            "mod_unlock": [
+                {
+                    "slug": "consuming_gaze"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "dark_icon"
+                }
+        ,
+                {
+                    "slug": "gift_of_oblivion"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "psynumbra_dark_lament",
+            "name": "Dark Lament",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "spire_of_suffering"
+                }
+        ,
+                {
+                    "slug": "the_dirge"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "psynumbra_exploit_suffering",
+            "name": "Exploit Suffering",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_onyx_of_suffering"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_malictor"
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "psynumbra_communal_torment",
+            "name": "Communal Torment",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "torment_channelers"
+                }
+        ,
+                {
+                    "slug": "flagellation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "psynumbra_symbol_of_obliteration",
+            "name": "Symbol of Obliteration",
+
+            "mod_unlock": [
+                {
+                    "slug": "pain_mirror"
+                }
+        ,
+                {
+                    "slug": "the_forbidden_mantra"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "aria_of_emptiness"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "psynumbra_abyssal_shroud",
+            "name": "Abyssal Shroud",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "shroud_of_the_abyss"
+                }
+        ,
+                {
+                    "slug": "abyssal_tear"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "psynumbra_ruthless_dedication",
+            "name": "Ruthless Dedication",
+
+            "mod_unlock": [
+                {
+                    "slug": "avatar_of_the_abyss"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "sacrifice_to_the_abyss"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "psynumbra_looming_oblivion",
+            "name": "Looming Oblivion",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_ethereal_spear"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "herald_of_oblivion"
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "psynumbra_oblivion's_refrain",
+            "name": "Oblivion's Refrain",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "oblivio_mundi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "dvar_exploitation_campaign",
+            "name": "Exploitation Campaign",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "native_displacement_act"
+                }
+        ,
+                {
+                    "slug": "revised_safety_regulations"
+                }
+        ,
+                {
+                    "slug": "dv-r_terrain_security_bulwark"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "dvar_superior_engineering",
+            "name": "Superior Engineering",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "fortification_efforts"
+                }
+        ,
+                {
+                    "slug": "cosmite_collection_program"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "dvar_planetary_oligarchy",
+            "name": "Planetary Oligarchy",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "military-industrial_complex"
+                }
+        ,
+                {
+                    "slug": "chrysocracy"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "psynumbra_shadows_manifest",
+            "name": "Shadows Manifest",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "initiation_rites"
+                }
+        ,
+                {
+                    "slug": "sadistic_indoctrination"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_v"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "psynumbra_vile_manipulation",
+            "name": "Vile Manipulation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "sinister_chants"
+                }
+        ,
+                {
+                    "slug": "torture_regimens"
+                }
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+
+
 
     ]
 }

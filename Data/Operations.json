@@ -1176,5 +1176,360 @@ var jsonOperations = {
         },
 
 
+        {
+            "slug": "breach_protection_protocol",
+            "name": "Breach Protection Protocol",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target friendly unit gains +4<armor></armor> for 2<turn></turn> and is healed for 20<hp></hp>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "general_alert_protocol",
+            "name": "General Alert Protocol",
+            "tier": "III",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "All Dvar units within a 2 hex radius gain <actionblue>Alert Protocol</actionblue> for 1<turn></turn>, allowing them to enter defense mode even if they spend all their action points during their turn.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "deploy_sapper",
+            "name": "Deploy Sapper",
+            "tier": "V",
+            "type": "Tactical Operation (Summon)",
+            "description": "Summon a Sapper onto target hex during combat. The summon lasts until the end of combat.<br>This unit has various options for breaking enemy lines and cover.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "localized_earthquake_generator",
+            "name": "Localized Earthquake Generator",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "All Ground units within a 3 hex radius lose 1 level of <abilityRed>stagger resistance</abilityRed> for 1 <turn></turn>, and are staggered by a <abilityRed>Massive Impact</abilityRed>.<br>All Obstacles in the area of effect take 50 damage.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "factory_overdrive",
+            "name": "Factory Overdrive",
+            "tier": "II",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Production output of the target colony is increased by 30<production></production>, but happiness income is reduced by -4<unhappiness></unhappiness>.",
+            "energy_cost": "45",
+            "casting": "6 <stratPoint></stratPoint>",
+            "upkeep_cost": "6 <energy></energy> / <turn></turn>",
+        },
+
+        {
+            "slug": "land_torpedo",
+            "name": "Land Torpedo",
+            "tier": "IV",
+            "type": "Strategic Operation(Instant)",
+            "description": "Launch a torpedo that burrows underground toward an enemy army. When the torpedo hits its target, it deals damage equal to 20% of the target's maximum <hp></hp>, and gives <abilityRed>Slow Movement</abilityRed> for 2<turn></turn>.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "mountain_breaker",
+            "name": "Mountain Breaker",
+            "tier": "IV",
+            "type": "Strategic Operation(Instant)",
+            "description": "Makes uninhabitable Mountain sectors habitable, or turns habitable Mountain (<production></production>/<energy></energy>) sectors into Fertile Plains (<food></food>/<energy></energy>).",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "tectonic_shift",
+            "name": "Tectonic Shift",
+            "tier": "VIII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Spawn a <abilityRed>Geothermal Instability</abilityRed> Hazard and Mountains (<production></production>/<energy></energy>) overlay in target sector. If there is a colony in that sector, destroy a random colony structure. In addition, all units in the target sector lose their remaining <mp></mp> Move Points for the turn.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "native_displacement_act",
+            "name": "Native Displacement Act",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "We can't have a few unfortunates blocking our road to progress.<br><br>The cost of moving Independent armies is reduced by 30%<influence></influence>.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "revised_safety_regulations",
+            "name": "Revised Safety Regulations",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "By allowing us to bypass some of the official work regulations, we can finish structures more quickly and at a reduced cost.<br><br>Structures cost 20% less <production></production> to build.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "fortification_efforts",
+            "name": "Fortification Efforts",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "Establishing a good defense is always important to make sure you do not lose what you have worked for. By putting more resources into training proper colony militia and innovating with defensive structures, we can deploy them quicker and with better results.<br><br>Colony Militia units have an additional 10 <hp></hp> and Turrets have +3<armor></armor>. In addition, Defensive Colony Structures and Colony Militia Structures cost 30% less <production></production> to produce and no longer have an energy upkeep cost.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "cosmite_collection_program",
+            "name": "Cosmite Collection Program",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "By disregarding some of the standard safety procedures concerning the gathering of Cosmite, we can gather more resources in a shorter time span.<br><br>Income from every Cosmite node in your empire is increased by 20%.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "military_industrial_complex",
+            "name": "Military Industrial Complex",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Mobilize all possible work forces and factories to aid production efforts.<br><br>Rushing units is 25% cheaper. In addition, the upkeep of Heavy units is reduced by 35%.<br><br><firecol>Unit upkeep can never be lowered more than 50%.</firecol>",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "chrysocracy",
+            "name": "Chrysocracy",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "We can speed up our planetary exploitation by making the richest amongst us manage commerce and labor law. The workers won't be happy, but look at these profit margins!<br><br>All colonies gain +2<energy></energy> for each colonist, but lose 10<unhappiness></unhappiness>.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "advanced_munitions_provision",
+            "name": "Advanced Munitions Provision",
+            "tier": "I",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Target friendly unit with an Explosive attack gains +1 range, +25% damage and <abilityRed>Massive Impact</abilityRed> for 2<turn></turn>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "time_on_target",
+            "name": "Time on Target",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target a unit to drop a flare on. The flare gives units in a 1 hex radius <abilityRed>Illuminated</abilityRed>, making these 30% easier to hit.<br>At the start of the next turn, the targeted unit and allies in a 1 hex radius are hit with artillery fire, causing 30<DamagePhysical></DamagePhysical> and <abilityRed>Massive Impact</abilityRed>.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "creeping_barrage",
+            "name": "Creeping Barrage",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Artillery fire rains on a single hex target, dealing 20<DamagePhysical></DamagePhysical> damage with <abilityRed>High Impact</abilityRed>. This triggers at the start of each of your turns for 4<turn></turn>, and the area of effect's radius is increased by 1 hex each turn.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "tactical_nuclear_strike",
+            "name": "Tactical Nuclear Strike",
+            "tier": "VIII",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "A tactical nuclear missile lands in a 4 hex radius area, dealing 20<DamageThermal></DamageThermal> damage and <abilityRed>Massive Impact</abilityRed>. <br>In addition, every enemy unit in combat has a 12<StrengthPhysical></StrengthPhysical> strength chance to become <abilityRed>Blinded</abilityRed>.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "embrace_of_darkness",
+            "name": "Embrace of Darkness",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target enemy unit takes 20<DamagePsyche></DamagePsyche> damage and suffers <abilityRed>Massive Impact</abilityRed>. In addition, there is a strength 8<strengthpsyche></strengthpsyche> chance to apply <abilityRed>Broken Mind</abilityRed>, reducing morale and Psionic resistance for 3<turn></turn>.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "dark_icon",
+            "name": "Dark Icon",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target friendly unit is shrouded in shadows for 3<turn></turn>. Any enemy unit within 1 hexes of the targeted unit gains <abilityRed>Haunting Melody</abilityRed>, lowering all resistances and increasing fumble chance. Any friendly units within 1 hexes of the target gains <actionblue>Dark Elation</actionblue>, giving +400 <happiness></happiness> morale and +3<DamagePsyche></DamagePsyche>.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "gift_of_oblivion",
+            "name": "Gift of Oblivion",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "The target gains <actionblue>Spirit of Oblivion</actionblue> for 3<turn></turn>, granting it <actionblue>Psionic Drain</actionblue>, healing the unit each time it attacks a non-Mindless unit, and a damage boost of +25%.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "aria_of_emptiness",
+            "name": "Aria of Emptiness",
+            "tier": "VII",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "An Aria of Emptiness plays over the battlefield and all non-Mindless enemy units have a 8<strengthpsyche></strengthpsyche> strength chance to become <abilityRed>Catatonic</abilityRed> for 1<turn></turn>, rendering the unit unable to act. On failure, the unit suffers <abilityRed>Broken Mind</abilityRed> for 3<turn></turn> instead.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "sacrifice_to_the_abyss",
+            "name": "Sacrifice to the Abyss",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Destroy target friendly Biological or Cyborg unit to summon a Herald of Oblivion in its place. Adjacent enemy units have a strength 8<strengthpsyche></strengthpsyche> chance to be <abilityRed>Panicked</abilityRed> for 1<turn></turn>. The Herald of Oblivion disappears after 4<turn></turn>.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "whisper_of_discord",
+            "name": "Whisper of Discord",
+            "tier": "III",
+            "type": "Strategic Operation (Summon)",
+            "description": "Summon a Whisper of Discord, an invisible, Ethereal creature that makes an excellent scout.",
+            "energy_cost": "60",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "vision_of_darkness",
+            "name": "Vision of Darkness",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Unleash Psionic energy at the target army, inducing visions of the dark Abyss that lies beyond. They suffer 20% damage and -400<unhappiness></unhappiness> for 2<turn></turn>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "the_dirge",
+            "name": "The Dirge",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Infect a non-Psynumbra Colony and the surrounding area with The Dirge for 1<turn></turn>, a Psionically-induced darkness that increases in strength as you build more Spires of Suffering.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "torment_channelers",
+            "name": "Torment Channelers",
+            "tier": "VI",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Channel the pain of the populace to reinforce our armies. Target colony gains <abilityRed>8<unhappiness></unhappiness></abilityRed>, and all units produced in the colony gain <actionblue>Reinforced by Suffering</actionblue>, granting them +10<hp></hp> and +10% damage.",
+            "energy_cost": "60",
+            "casting": "8 <stratPoint></stratPoint>",
+            "upkeep_cost": "10 <energy></energy> / <turn></turn>"
+        },
+
+        {
+            "slug": "flagellation",
+            "name": "Flagellation",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "All non-Mindless units in the target friendly army regain all their <mp></mp> movement points, but lose 75% of their current <hp></hp> and have their damage resistances reduced by -2 for this round.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "shroud_of_the_abyss",
+            "name": "Shroud of the Abyss",
+            "tier": "VIII",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Target colony becomes engulfed in darkness, making all friendly units invisible while in the colony's domain. Enemy units affected by the shroud suffer <abilityRed>Blind</abilityRed>, reducing their accuracy in combat.",
+            "energy_cost": "120",
+            "casting": "16 <stratPoint></stratPoint>",
+            "upkeep_cost": "20 <energy></energy> / <turn></turn>"
+        },
+
+        {
+            "slug": "abyssal_tear",
+            "name": "Abyssal Tear",
+            "tier": "VIII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Spawn an <abilityRed>Abyssal Tear</abilityRed> hazard in the target sector that spawns maurauding armies, reduces the sector's economic value and weakens units.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "oblivio_mundi",
+            "name": "Oblivio Mundi",
+            "tier": "X",
+            "type": "Doomsday Finisher Operation",
+            "description": "The final step in the Psynumbra plan unleashes the most powerful Dirge upon the planet.<br><br>Requires The Dirge level 3.",
+            "energy_cost": "500",
+            "casting": "50 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "initiation_rites",
+            "name": "Initiation Rites",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "All newly-recruited Psynumbra units start with +1<x-medal_novice></x-medal_novice>. In addition, your Psynumbra units spawn an Echo of Despair upon death that lasts until the end of combat.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "sadistic_indoctrination",
+            "name": "Sadistic Indoctrination",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Intensive indoctrination of regular military units through the use of Psynumbra techniques can massively increase their offensive capabilities.<br><br>All of your non-Mindless units gain <actionblue>Sadism</actionblue>, causing them to deal +25% extra damage to units with low morale.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "torture_regimens",
+            "name": "Torture Regimens",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "Systematic and controlled torture of our military forces can unlock their hidden psionic potential.<br><br>All of your units gain +1 resistance to all damage, and deal +20%<DamagePsyche></DamagePsyche> extra damage with Psionic attacks.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "sinister_chants",
+            "name": "Sinister Chants",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "By lethal mandate, our people recite our creed over and over in unison. These dark chants will discourage anyone from interfering with our plans.<br><br>Enemy units within our Colonial Domains suffer -400<unhappiness></unhappiness> and -2<DamagePsyche></DamagePsyche> resistance.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+
+
     ]
 }
