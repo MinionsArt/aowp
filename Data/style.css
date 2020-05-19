@@ -675,6 +675,21 @@ tab {
 
 }
 
+.togglelink2 {
+    font-family: 'Duru Sans', sans-serif;
+    padding-left: 10px;
+
+    text-transform: uppercase;
+
+}
+
+.togglelink {
+    font-family: 'Duru Sans', sans-serif;
+    padding-left: 10px;
+    text-transform: uppercase;
+
+}
+
 .tech_name {
     font-size: 16px;
     position: relative;

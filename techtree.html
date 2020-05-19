@@ -420,8 +420,9 @@
 
             $(".togglelink").click(function() {
                 $(".togglelink").css("color", "white");
-
+                $(".togglelink").css("text-decoration", "none");
                 $(this).css("color", "cyan");
+                $(this).css("text-decoration", "underline");
                 $("#celest1").load("/aowp/techcard.html", function() {
                     showTech("celestian_test", "s");
 
@@ -444,8 +445,9 @@
 
             $(".togglelink2").click(function() {
                 $(".togglelink2").css("color", "white");
-
+                $(".togglelink2").css("text-decoration", "none");
                 $(this).css("color", "cyan");
+                $(this).css("text-decoration", "underline");
             });
         });
 
@@ -461,7 +463,7 @@
 
     <h1 style="color: aliceblue; text-align: center">Tech Tree</h1>
     <div class="buttons">
-        <a href="#/" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua" class="togglelink"> Amazon </a>
+        <a href="#/" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
         <a href="#/" onclick="showhide('assembly', 'biochemical', 'laser');" style="font-size: 20px" class="togglelink"> Assembly </a>
         <a href="#/" onclick="showhide('vanguard', 'firearms', 'laser');" style="font-size: 20px" class="togglelink"> Vanguard </a>
 
@@ -1089,7 +1091,7 @@
         <br><br>
 
         <div class="buttons" style="position: sticky">
-            <a href="#/" onclick="showhide2('promethean');" style="font-size: 20px ; color: aqua" class="togglelink2"> Promethean </a>
+            <a href="#/" onclick="showhide2('promethean');" style="font-size: 20px ; color: aqua; text-decoration: underline;" class="togglelink2"> Promethean </a>
             <a href="#/" onclick="showhide2('synthesis');" style="font-size: 20px" class="togglelink2"> Synthesis </a>
 
 
