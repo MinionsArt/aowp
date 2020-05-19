@@ -18,11 +18,14 @@
         $("#body").ready(function() {
 
             $("#header").load("/aowp/header.html");
+
+
             /// Amazon----------------------------------------------------------------------------------------------------------------------------------------Amazon
             $("#amazont1").load("/aowp/techcard.html", function() {
                 showTech("amazon_protective_grounding");
                 showhide('amazon', 'biochemical', 'laser');
                 showhide2('promethean');
+
             });
 
             $("#amazont2").load("/aowp/techcard.html", function() {
@@ -416,6 +419,7 @@
             });
             $("#syntht10").load("/aowp/techcard.html", function() {
                 showTech("synthesis_basilisk_singularity", "s");
+
             });
 
             $(".togglelink").click(function() {
@@ -449,9 +453,28 @@
                 $(this).css("color", "cyan");
                 $(this).css("text-decoration", "underline");
             });
+
+
+
+
+
         });
 
+
+
+        $(document).ready(function() {
+            var url = window.location.href;
+            console.log(url);
+            if (url.indexOf('#') < 0) {
+                window.location.replace(url + "#");
+            } else {
+                window.location.replace(url);
+            }
+
+
+        });
     </script>
+
 
 
     <title>Age of Wonders Planetfall - Tech Tree</title>
@@ -461,7 +484,8 @@
 
 <body>
 
-    <h1 style="color: aliceblue; text-align: center">Tech Tree</h1>
+
+    <h1 style=" color: aliceblue; text-align: center">Tech Tree</h1>
     <div class="buttons">
         <a href="#/" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
         <a href="#/" onclick="showhide('assembly', 'biochemical', 'laser');" style="font-size: 20px" class="togglelink"> Assembly </a>
@@ -471,7 +495,9 @@
 
     <img src="/aowp/UI/left2.png" width="48px" style="float: left; margin-left: -15px;">
     <img src="/aowp/UI/right2.png" width="48px" style="float: right;margin-right: -15px;">
+
     <div class="dragscroll">
+        <canvas id="myCanvas" width="3566 " height="942" style="position: absolute; z-index: 6;  pointer-events: none;"></canvas>
         <table>
             <tr>
                 <th></th>
@@ -490,7 +516,7 @@
         <!-- Amazon                                                                ----------------------------------------------------------Amazon -->
 
         <div class=" techbackground" id="amazon">
-            <svg height="1000" width="2000" style="position:absolute; float: left; z-index: -2">
+            <svg height="1000" width="2000" style="position:absolute; float: left; z-index: -1">
                 <line x1="400" y1="250" x2="1000" y2="250" style="stroke:rgb(220,220,255);stroke-width:2" />
                 <line x1="640" y1="250" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
                 <line x1="640" y1="50" x2="650" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
@@ -863,9 +889,25 @@
         </div>
 
         <!-- Biochemical                                                                ----------------------------------------------------------Biochemical -->
+        <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
 
+
+
+            <line x1="1000" y1="50" x2="1000" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+            <line x1="640" y1="50" x2="640" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+            <line x1="1640" y1="50" x2="1640" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+            <line x1="2340" y1="50" x2="2340" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+        </svg>
 
         <div class="techbackground" id="biochemical">
+            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+            </svg>
             <table id="BioTech" class="tabletech" style="background-color: rgba(20,50,0,0.3)">
 
 
@@ -922,7 +964,13 @@
         <div class="techbackground" id="laser">
             <table id="LaserTech" class="tabletech" style="background-color: rgba(50,0,0,0.3)">
 
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
 
+                    <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+                </svg>
                 <tr>
                     <td>
                         <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/thermal.png" width="50px"> Laser </p>
@@ -977,6 +1025,13 @@
 
 
         <div class="techbackground" id="firearms" style="display: none">
+            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+            </svg>
             <table id="LaserTech" class="tabletech">
 
                 <tr>
@@ -1031,6 +1086,13 @@
 
 
         <div class="techbackground" id="arc" style="display: none">
+            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+            </svg>
             <table id="LaserTech" class="tabletech">
 
                 <tr>
@@ -1095,9 +1157,10 @@
             <a href="#/" onclick="showhide2('synthesis');" style="font-size: 20px" class="togglelink2"> Synthesis </a>
 
 
+
         </div>
 
-
+        <br>
         <div class="techbackground" id="synthesis">
             <svg height="1000" width="2000" style="position:absolute; float: left; z-index: -2">
 
@@ -1347,6 +1410,4 @@
     </div>
 
 
-</body>
-
-</html>
+</body></html>

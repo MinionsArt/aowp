@@ -315,6 +315,9 @@ p {
     background-color: rgba(0, 255, 100, 0.05);
     box-shadow: inset 1px 1px 10px #074447;
     border: 1px solid #1f5659;
+
+    margin-top: -4px;
+    padding: 0px;
 }
 
 .modunlock_icon {
