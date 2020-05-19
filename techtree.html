@@ -137,6 +137,66 @@
 
             });
 
+            /// Kirko----------------------------------------------------------------------------------------------------------------------------------------Kirko
+
+            $("#kirt1").load("/aowp/techcard.html", function() {
+                showTech("kirko_unshackling");
+
+            });
+            $("#kirt2").load("/aowp/techcard.html", function() {
+                showTech("kirko_vigorous_emergence");
+
+            });
+            $("#kirt3").load("/aowp/techcard.html", function() {
+                showTech("kirko_engulfer_caste");
+
+            });
+            $("#kirt3b").load("/aowp/techcard.html", function() {
+                showTech("kirko_regeneration");
+
+            });
+            $("#kirt4").load("/aowp/techcard.html", function() {
+                showTech("kirko_deep_caste");
+
+            });
+            $("#kirtb").load("/aowp/techcard.html", function() {
+                showTech("kirko_infection");
+
+            });
+            $("#kirt5").load("/aowp/techcard.html", function() {
+                showTech("kirko_barrager_caste");
+
+            });
+            $("#kirt5b").load("/aowp/techcard.html", function() {
+                showTech("kirko_resilience");
+
+            });
+            $("#kirt6").load("/aowp/techcard.html", function() {
+                showTech("kirko_ravenous_caste");
+
+            });
+            $("#kirt6b").load("/aowp/techcard.html", function() {
+                showTech("kirko_swarm_expulsions");
+
+            });
+            $("#kirt7").load("/aowp/techcard.html", function() {
+                showTech("kirko_tormented_caste");
+
+            });
+            $("#kirt7b").load("/aowp/techcard.html", function() {
+                showTech("kirko_neogenesis");
+
+            });
+
+            $("#kirt9").load("/aowp/techcard.html", function() {
+                showTech("kirko_return_of_the_harbinger");
+
+            });
+            $("#kirt9b").load("/aowp/techcard.html", function() {
+                showTech("kirko_metamorphosis");
+
+            });
+
             /// vanguard----------------------------------------------------------------------------------------------------------------------------------------vanguard
 
             $("#vant1").load("/aowp/techcard.html", function() {
@@ -217,6 +277,28 @@
             });
             $("#biot8").load("/aowp/techcard.html", function() {
                 showTech("biochemical_blight_plague");
+
+            });
+
+            /// Psionics----------------------------------------------------------------------------------------------------------------------------------------Psionics
+            $("#psit1").load("/aowp/techcard.html", function() {
+                showTech("psionics_dominion_of_purification");
+
+            });
+            $("#psit2").load("/aowp/techcard.html", function() {
+                showTech("psionics_dominion_of_affliction");
+
+            });
+            $("#psit4").load("/aowp/techcard.html", function() {
+                showTech("psionics_dominion_of_vitality");
+
+            });
+            $("#psit6").load("/aowp/techcard.html", function() {
+                showTech("psionics_dominion_of_command");
+
+            });
+            $("#psit8").load("/aowp/techcard.html", function() {
+                showTech("psionics_dominion_of_aether");
 
             });
 
@@ -422,6 +504,52 @@
 
             });
 
+            /// voidtech----------------------------------------------------------------------------------------------------------------------------------------voidtech
+
+            $("#voit1").load("/aowp/techcard.html", function() {
+                showTech("voidtech_phase_manipulation", "s");
+            });
+            $("#voit3").load("/aowp/techcard.html", function() {
+                showTech("voidtech_echo_walker_program", "s");
+            });
+
+            $("#voit3b").load("/aowp/techcard.html", function() {
+                showTech("voidtech_void_technology", "s");
+            });
+            $("#voit3c").load("/aowp/techcard.html", function() {
+                showTech("voidtech_vortex_instability", "s");
+            });
+            $("#voit5").load("/aowp/techcard.html", function() {
+                showTech("voidtech_phase_manipulator_program", "s");
+            });
+            $("#voit5b").load("/aowp/techcard.html", function() {
+                showTech("voidtech_dimensional_control", "s");
+            });
+
+            $("#voit5c").load("/aowp/techcard.html", function() {
+                showTech("voidtech_phase_echo_generation", "s");
+            });
+
+            $("#voit6").load("/aowp/techcard.html", function() {
+                showTech("voidtech_void_tactics", "s");
+            });
+            $("#voit7").load("/aowp/techcard.html", function() {
+                showTech("voidtech_temporal_dislocation", "s");
+            });
+
+            $("#voit8").load("/aowp/techcard.html", function() {
+                showTech("voidtech_rift_generation", "s");
+            });
+            $("#voit8b").load("/aowp/techcard.html", function() {
+                showTech("voidtech_alter_reality", "s");
+            });
+            $("#voit9").load("/aowp/techcard.html", function() {
+                showTech("voidtech_dimension_weaponization", "s");
+            });
+            $("#voit10").load("/aowp/techcard.html", function() {
+                showTech("voidtech_dimensional_mastery", "s");
+            });
+
             $(".togglelink").click(function() {
                 $(".togglelink").css("color", "white");
                 $(".togglelink").css("text-decoration", "none");
@@ -443,6 +571,9 @@
                 });
                 $("#syntht3").load("/aowp/techcard.html", function() {
                     showTech("synthesis_information_control", "s");
+                });
+                $("#voit3").load("/aowp/techcard.html", function() {
+                    showTech("voidtech_echo_walker_program", "s");
                 });
             });
 
@@ -489,6 +620,7 @@
     <div class="buttons">
         <a href="#/" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
         <a href="#/" onclick="showhide('assembly', 'biochemical', 'laser');" style="font-size: 20px" class="togglelink"> Assembly </a>
+        <a href="#/" onclick="showhide('kirko', 'biochemical', 'psionics');" style="font-size: 20px" class="togglelink"> Kir'Ko </a>
         <a href="#/" onclick="showhide('vanguard', 'firearms', 'laser');" style="font-size: 20px" class="togglelink"> Vanguard </a>
 
     </div>
@@ -767,8 +899,129 @@
 
             </table>
         </div>
+        <!-- Kirko                                                                ----------------------------------------------------------Kirko -->
 
-        <!-- Assembly                                                                ----------------------------------------------------------Assembly -->
+        <div class="techbackground" id="kirko" style="display: none">
+
+            <table id="kirkoTech" class="tabletech">
+
+                <tr>
+                    <td>
+                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/kirko.png" width="50px"> Kir'Ko </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="kirt3"></div>
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="kirt5"></div>
+
+                    </td>
+                    <td>
+                        <div id="kirt6"></div>
+
+                    </td>
+                    <td>
+                        <div id="kirt7"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="kirt9"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+
+                    <td></td>
+                    <td>
+                        <div id="kirt2"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="kirt4"></div>
+                    </td>
+
+                    <td></td>
+                    <td>
+                        <div id="kirt6b"></div>
+                    </td>
+
+                    <td>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div id="kirt1"></div>
+
+                    </td>
+
+
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div id="kirt3b"></div>
+                    </td>
+                    <td>
+                        <div id="kirt4b"></div>
+                    </td>
+
+                    <td>
+                        <div id="kirt5b"></div>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="kirt7b"></div>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="kirt9b"></div>
+                    </td>
+                    <td>
+
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <!-- Vanguard                                                                ----------------------------------------------------------Vanguard -->
 
         <div class="techbackground" id="vanguard" style="display: none">
 
@@ -1144,6 +1397,64 @@
 
             </table>
         </div>
+
+        <div class="techbackground" id="psionics">
+            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+            </svg>
+            <table id="PsiTech" class="tabletech" style="background-color: rgba(20,50,0,0.3)">
+
+
+                <tr>
+                    <td>
+                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/psionic.png" width="50px"> Psionics </p>
+                    </td>
+                    <td>
+                        <div id="psit1"></div>
+
+                    </td>
+                    <td>
+                        <div id="psit2"></div>
+
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <div id="psit4"></div>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="psit6"></div>
+
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="psit8"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
         <br>
 
 
@@ -1155,6 +1466,7 @@
         <div class="buttons" style="position: sticky">
             <a href="#/" onclick="showhide2('promethean');" style="font-size: 20px ; color: aqua; text-decoration: underline;" class="togglelink2"> Promethean </a>
             <a href="#/" onclick="showhide2('synthesis');" style="font-size: 20px" class="togglelink2"> Synthesis </a>
+            <a href="#/" onclick="showhide2('voidtech');" style="font-size: 20px" class="togglelink2"> Voidtech </a>
 
 
 
@@ -1274,6 +1586,130 @@
                     </td>
                     <td>
                         <div id="syntht9"></div>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="techbackground" id="voidtech">
+            <svg height="1000" width="2000" style="position:absolute; float: left; z-index: -2">
+
+            </svg>
+            <table id="VoidtechT" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                <tr>
+                    <td>
+                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/voidtech_unit.png" width="50px"> Voidtech </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="voit3"></div>
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="voit5"></div>
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="voit8"></div>
+
+
+                    </td>
+                    <td>
+
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+
+                    <td></td>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <div id="voit3b"></div>
+
+                    </td>
+                    <td></td>
+
+                    <td>
+                        <div id="voit5b"></div>
+                    </td>
+                    <td>
+                        <div id="voit6"></div>
+                    </td>
+
+                    <td>
+
+                    </td>
+                    <td>
+
+                        <div id="voit8"></div>
+                    </td>
+                    <td></td>
+
+                    <td>
+                        <div id="voit10"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div id="voit1"></div>
+
+                    </td>
+
+
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div id="voit3c"></div>
+                    </td>
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div id="voit5c"></div>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="voit7"></div>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="voit9"></div>
                     </td>
                     <td>
 

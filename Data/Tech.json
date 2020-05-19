@@ -70,29 +70,7 @@ var jsonTech = {
 
     },
 
-             // bio
 
-        {
-
-            "slug": "biochemical_volatile_afflictions",
-
-    },
-        {
-
-            "slug": "biochemical_specialized_strains",
-
-    },
-
-        {
-
-            "slug": "biochemical_advanced_infections",
-
-    },
-        {
-
-            "slug": "biochemical_blight_plague",
-
-    },
 
 
 
@@ -2723,6 +2701,1154 @@ var jsonTech = {
             ],
             "cost": "1700",
         },
+
+
+        {
+            "slug": "kirko_unshackling",
+            "name": "Unshackling",
+
+            "mod_unlock": [
+                {
+                    "slug": "heightened_vision_(detector)"
+                }
+        ,
+                {
+                    "slug": "crippling_claws"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "kirko_vigorous_emergence",
+            "name": "Vigorous Emergence",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "spawn_emergent"
+                }
+        ,
+                {
+                    "slug": "berserker_pheromones"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "kirko_engulfer_caste",
+            "name": "Engulfer Caste",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_engulfer"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "kirko_engulfer"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "kirko_regeneration",
+            "name": "Regeneration",
+
+            "mod_unlock": [
+                {
+                    "slug": "regenerative_carapace"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "healing_surge"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "kirko_deep_caste",
+            "name": "Deep Caste",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "kirko_deep_one"
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "kirko_infection",
+            "name": "Infection",
+
+            "mod_unlock": [
+                {
+                    "slug": "psi-infected_claws"
+                }
+        ,
+                {
+                    "slug": "poison_excretion"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "kirko_barrager_caste",
+            "name": "Barrager Caste",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_barrager"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "kirko_barrager"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "kirko_resilience",
+            "name": "Resilience",
+
+            "mod_unlock": [
+                {
+                    "slug": "adaptive_carapace"
+                }
+        ,
+                {
+                    "slug": "tunneling_claws"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "deploy_abyssian"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "kirko_ravenous_caste",
+            "name": "Ravenous Caste",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_ravenous"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "kirko_ravenous"
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "kirko_swarm_expulsions",
+            "name": "Swarm Expulsions",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "call_of_the_hive"
+                }
+        ,
+                {
+                    "slug": "noxious_bombardment"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "kirko_tormented_caste",
+            "name": "Tormented Caste",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_rancor"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "kirko_tormented"
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "kirko_neogenesis",
+            "name": "Neogenesis",
+
+            "mod_unlock": [
+                {
+                    "slug": "resuscitation_glands"
+                }
+        ,
+                {
+                    "slug": "cloaking_carapace"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "one_with_the_swarm"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "kirko_return_of_the_harbinger",
+            "name": "Return of the Harbinger",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "kirko_harbinger"
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "kirko_metamorphosis",
+            "name": "Metamorphosis",
+
+            "mod_unlock": [
+                {
+                    "slug": "accelerated_metabolism"
+                }
+        ,
+                {
+                    "slug": "adrenal_response_glands"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "biochemical_biochemical_applications",
+            "name": "Biochemical Applications",
+
+            "mod_unlock": [
+                {
+                    "slug": "acidic_composite"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "biochemical_maceration"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "biochemical_volatile_afflictions",
+            "name": "Volatile Afflictions",
+
+            "mod_unlock": [
+                {
+                    "slug": "infusion:_ionic"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "corrosive_detonator"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "biochemical_specialized_strains",
+            "name": "Specialized Strains",
+
+            "mod_unlock": [
+                {
+                    "slug": "viscous_strain"
+                }
+        ,
+                {
+                    "slug": "cerebral_strain"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "biochemical_advanced_infections",
+            "name": "Advanced Infections",
+
+            "mod_unlock": [
+                {
+                    "slug": "blight_inflection"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "virulent_canister"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "biochemical_blight_plague",
+            "name": "Blight Plague",
+
+            "mod_unlock": [
+                {
+                    "slug": "blight_bringer"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "acid_rain"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "psionics_dominion_of_purification",
+            "name": "Dominion of Purification",
+
+            "mod_unlock": [
+                {
+                    "slug": "mantra_of_clarity"
+                }
+        ,
+                {
+                    "slug": "focus:_flames"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "cleansing_pulse"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "psionics_dominion_of_affliction",
+            "name": "Dominion of Affliction",
+
+            "mod_unlock": [
+                {
+                    "slug": "focus:_venom"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "mind_wipe"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "psionics_dominion_of_vitality",
+            "name": "Dominion of Vitality",
+
+            "mod_unlock": [
+                {
+                    "slug": "mantra_of_life"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "psionic_bolstering"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "psionics_dominion_of_command",
+            "name": "Dominion of Command",
+
+            "mod_unlock": [
+                {
+                    "slug": "mantra_of_control"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "psychic_control"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "psionics_dominion_of_aether",
+            "name": "Dominion of Aether",
+
+            "mod_unlock": [
+                {
+                    "slug": "aether_storm"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "mass_insanity"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "voidtech_phase_manipulation",
+            "name": "Phase Manipulation",
+
+            "mod_unlock": [
+                {
+                    "slug": "phasewalk_modulator"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "reactive_phase_protection"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "voidtech_echo_walker_program",
+            "name": "Echo Walker Program",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_void_blades"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_echo_walker"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "voidtech_void_technology",
+            "name": "Void Technology",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "localized_void_rift"
+                }
+        ,
+                {
+                    "slug": "void_barriers"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "voidtech_vortex_instability",
+            "name": "Vortex Instability",
+
+            "mod_unlock": [
+                {
+                    "slug": "void_augmentation"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "vortex_charge"
+                }
+        ,
+                {
+                    "slug": "time_warp"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "voidtech_phase_manipulator_program",
+            "name": "Phase Manipulator Program",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_energy_blaster"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "phase_manipulator"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "voidtech_dimensional_control",
+            "name": "Dimensional Control",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "dimensional_amplifier_tower"
+                }
+        ,
+                {
+                    "slug": "dimensional_collapse"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "voidtech_phase_echo_generation",
+            "name": "Phase Echo Generation",
+
+            "mod_unlock": [
+                {
+                    "slug": "gravity_pulse_grenade"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "create_phase_echo"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "voidtech_void_tactics",
+            "name": "Void Tactics",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "phase_echo_guard"
+                }
+        ,
+                {
+                    "slug": "emergency_redeploy"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "voidtech_temporal_dislocation",
+            "name": "Temporal Dislocation",
+
+            "mod_unlock": [
+                {
+                    "slug": "phase_drive"
+                }
+        ,
+                {
+                    "slug": "stasis_pocket_inducer"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "time_rewind"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "voidtech_rift_generation",
+            "name": "Rift Generation",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_rift_generator"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "rift_generator"
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "voidtech_alter_reality",
+            "name": "Alter Reality",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "void_storm"
+                }
+        ,
+                {
+                    "slug": "time_anomaly"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "voidtech_dimension_weaponization",
+            "name": "Dimension Weaponization",
+
+            "mod_unlock": [
+                {
+                    "slug": "quantum_avatar"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "dimensional_vortex_bomb"
+                }
+        ,
+                {
+                    "slug": "dimensional_collapse"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "voidtech_dimensional_mastery",
+            "name": "Dimensional Mastery",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "dimensional_cascade"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "kirko_nurturing",
+            "name": "Nurturing",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "dream_sharing"
+                }
+        ,
+                {
+                    "slug": "preserving_the_future"
+                }
+        ,
+                {
+                    "slug": "_brood_cluster"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "kirko_perspective",
+            "name": "Perspective",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "act_of_retribution"
+                }
+        ,
+                {
+                    "slug": "act_of_reconciliation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "kirko_the_new_hive",
+            "name": "The New Hive",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "planetary_swarming"
+                }
+        ,
+                {
+                    "slug": "hive's_embrace"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "voidtech_quantum_gain",
+            "name": "Quantum Gain",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "echo_protocols"
+                }
+        ,
+                {
+                    "slug": "preventative_surveillance"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_v"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "voidtech_quantum_leap",
+            "name": "Quantum Leap",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "quantum_energy_tapping"
+                }
+        ,
+                {
+                    "slug": "the_quantum_project"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
 
 
     ]

@@ -782,6 +782,399 @@ var jsonOperations = {
         },
 
 
+        {
+            "slug": "healing_surge",
+            "name": "Healing Surge",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target non-Mechanical unit is healed for 20<hp></hp>. This heal can jump to nearby friendly units within a 2 hex range up to 2 times.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "deploy_abyssian",
+            "name": "Deploy Abyssian",
+            "tier": "V",
+            "type": "Tactical Operation (Summon)",
+            "description": "Summon an Abyssian onto target hex during combat. The summon lasts until the end of combat.<br>This unit has strong Biochemical abilities that can <abilityRed>Encase</abilityRed> a target in a waxy cement.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "one_with_the_swarm",
+            "name": "One with the Swarm",
+            "tier": "VII",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Swarm Shield now grants an additional 3<shield></shield> for 2<turn></turn>.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "spawn_emergent",
+            "name": "Spawn Emergent",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Summons a Kir'Ko Emergent to the target hex. This unit can transform into a Hidden or Transcendent.",
+            "energy_cost": "50",
+            "casting": "7 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "berserker_phermones",
+            "name": "Berserker Phermones",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Heals all Biological and Cyborg units in the targeted army to full <hp></hp>, and all melee damage dealt is increased by 50% for 1<turn></turn>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "call_of_the_hive",
+            "name": "Call of the Hive",
+            "tier": "VI",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Target an owned colony. When friendly armies fight in that colony's domain, spawn 4 Kir'Ko Hive Guards to aid them during combat. The spawned units disappear at the end of combat.",
+            "energy_cost": "80",
+            "casting": "10 <stratPoint></stratPoint>",
+            "upkeep_cost": "14<energy></energy> / <turn></turn>"
+        },
+
+        {
+            "slug": "noxious_bombardment",
+            "name": "Noxious Bombardment",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "Damage target enemy army for 20% of their current <hp></hp> and give them -2 on all resistances for 1<turn></turn>.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "dream_sharing",
+            "name": "Dream Sharing",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "Sharing the past memories of our great warriors with the Kir'Ko that fight at the forefront helps them to improve more rapidly.<br><br>All Kir'Ko units gain +25% experience from combat.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "preserving_the_future",
+            "name": "Preserving the Future",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "The new generations are our future, so the larger the new generation is, the better.<br><br>All owned colonies benefit from an increase of +20% <food></food> income.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "act_of_retribution",
+            "name": "Act of Retribution",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "The Kir'Ko have not forgiven those who once enslaved them, and will take vengeance on their former oppressors.<br><br>Friendly units deal +10% damage to all non-Kir'Ko units.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "act_of_reconciliation",
+            "name": "Act of Reconciliation",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "The Kir'Ko have learned to forgive and welcome their old enemies as their new allies.<br><br>All owned Colonies receive +2 <happiness></happiness> for each Non-Aggression Pact with other players, +4<happiness></happiness> for each Defensive Pact with other players, and +6<happiness></happiness> for each Alliance with other players.<br>You also recieve +3 income per turn.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "planetary_swarming",
+            "name": "Planetary Swarming",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Sheer numbers will overwhelm any and all opposition. Together we are strong.<br><br>Upkeep for all Kir'Ko units is reduced by -35%<energy></energy>. In addition, all Light units are -20% cheaper to produce.<br><br><firecol>Unit costs can never be lowered more than 75%.</firecol><firecol>Unit upkeep can never be lowered more than 50%.</firecol>",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "hive's_embrace",
+            "name": "Hive's Embrace",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Happiness event rewards are doubled, and each non-Kir'Ko colony that you own contributes +2<influence></influence>.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "echo_protocols",
+            "name": "Echo Protocols",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Voidtech allows for the capability of creating limited echo copies of people that can perform actual tasks, increasing colony resource ouput.<br><br>All colonies' <food></food>, <energy></energy>, <production></production> and <research></research> slots produce +1 of their respective resource per colonist working it.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "preventative_surveillance",
+            "name": "Preventative Surveillance",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Voidtech technology can be applied to sensors, boosting the range and allowing them to read the dimensional signature of entities.<br><br>Scout units and colonies get +2 sensor and vision range. Non-Scout units get +1 sensor and vision range.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "quantum_energy_tapping",
+            "name": "Quantum Energy Tapping",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "If we're generating energy in this dimension, surely another version of us is doing the same in a different dimension. If we could find a way to tap into that energy...<br><br>Colonies produce an extra +20% <energy></energy>",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "the_quantum_project",
+            "name": "The Quantum Project",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "By implementing quantum networking, research speed can be boosted tremendously.<br><br>+15<research></research> in each colony for every research sector linked to it.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "biochemical_maceration",
+            "name": "Biochemical Maceration",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "A macerating Biochemical agent is released in a 1 hex radius, reducing affected units' Biochemical resistance by -3<DamageBio></DamageBio>  for 3<turn></turn>. These units also have a 8<StrengthBio></StrengthBio> strength chance of becoming <abilityRed>Slow</abilityRed> for that duration.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "corrosive_detonator",
+            "name": "Corrosive Detonator",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target area in a 1 hex radius is hit by a corrosive detonation with <abilityRed>Massive Impact</abilityRed>. All units in the target area lose -2<armor></armor> and take 10<DamageBio></DamageBio> damage.",
+            "energy_cost": "40",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "virulent_canister",
+            "name": "Virulent Canister",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "Flood a 1 hex radius area with a virulent strain, dealing 15<DamageBio></DamageBio> damage and infecting Biological and Cyborg units. Infected units take 10<DamageBio></DamageBio>  damage per turn for 3<turn></turn>. These units explode on death, spreading the effect to units in a 2 hex range.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "acid_rain",
+            "name": "Acid Rain",
+            "tier": "VIII",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Acidic rain pours down onto the battlefield, affecting enemy units. At the start of the enemy's turn, the rain melts 1<armor></armor> and deals 5<DamageBio></DamageBio>  damage. This effect lasts 5<turn></turn><br>This effect does not stack with itself.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "cleansing_pulse",
+            "name": "Cleansing Pulse",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Dispels all negative Status Effects on every friendly unit within a 1 hex radius.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "mind_wipe",
+            "name": "Mind Wipe",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "This operation has a strength 8<strengthpsyche></strengthpsyche> chance to apply <abilityRed>Catatonic</abilityRed> to a non-Mindless target unit for 2<turn></turn> turns. If resisted, applies <abilityRed>Broken Mind</abilityRed> instead.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "psionic_bolstering",
+            "name": "Psionic Bolstering",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "The target non-Mindless unit becomes <actionblue>Immune to Psionic Status Effects</actionblue>, <actionblue>Stagger Immune</actionblue> and increases maximum health by +15 <hp></hp> until the end of combat.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "psychic_control",
+            "name": "Psychic Control",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "This operation has a strength 12<strengthpsyche></strengthpsyche> chance for target non-Mindless enemy unit to become <abilityRed>Mind Controlled</abilityRed>. Affected units die at the end of combat. If resisted, apply <abilityRed>Broken Mind</abilityRed> instead.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "reactive_phase_protection",
+            "name": "Reactive Phase Protection",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target unit receives Reactive Phase Defense for 3 <turn></turn>. Each time the unit takes damage, it is teleported to a random hex within 2 hexes of their original position.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "vortex_charge",
+            "name": "Vortex Charge",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Drops a Vortex Charge in a 1 hex radius area, dealing  16<DamagePhysical></DamagePhysical> damage to all non-Voidtech units with a strength 8<StrengthPhysical></StrengthPhysical> chance to inflict <abilityRed>Dimensional Instability</abilityRed>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "time_warp",
+            "name": "Time Warp",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Affects all units in a 1 hex radius area. Friendly units gain <actionblue>Fast Movement</actionblue>, and enemy units are inflicted with <abilityRed>Slow Movement</abilityRed> for 2<turn></turn>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "create_phase_echo",
+            "name": "Create Phase Echo",
+            "tier": "V",
+            "type": "Tactical Operation (Instant)",
+            "description": "Create an Unstable Echo of target non-Hero unit. A copy of the unit appears adjacent to it and is under your control. Unstable Echos deal <abilityRed>50%</abilityRed> less damage, but are otherwise indistinguishable from the original.<br><br>The Unstable Echo dissipates at end of combat.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "time_rewind",
+            "name": "Time Rewind",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Resurrect target friendly dead non-Flying, non-Hero unit with full <hp></hp>.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "dimensional_vortex_bomb",
+            "name": "Dimensional Vortex Bomb",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Drop a Dimensional Vortex Bomb onto the target 1 hex radius area, dealing 24<DamagePhysical></DamagePhysical> damage with Massive Impact. All non-Voidtech units in the area are randomly teleported to a position up to 3 hexes away from their original location.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "dimensional_collapse",
+            "name": "Dimensional Collapse",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Collapse reality around the target, with a 12<StrengthPhysical></StrengthPhysical> strength chance to instantly killing them without leaving a corpse. If this fails, deal 30<DamagePhysical></DamagePhysical> damage and <abilityRed>Massive Impact</abilityRed> instead.<br><br>Cannot target Commander units.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "localized_void_rift",
+            "name": "Localized Void Rift",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Non-Mindless units in target army gain <abilityRed>Destabilized</abilityRed> for 1<turn></turn>, reducing damage resistance by 2 and decreasing morale by 300<unhappiness></unhappiness>.<br><br>On failure, they are <abilityRed>Demoralized</abilityRed> instead, reducing their morale by 300<unhappiness></unhappiness>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "void_barriers",
+            "name": "Void Barriers",
+            "tier": "III",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Enemy units within the affected friendly colony domain have to use 4<mp></mp> extra move points for every hex they move and every 2<turn></turn> have a 4<StrengthPhysical></StrengthPhysical> strength chance to gain <abilityRed>Slow</abilityRed>, for 2<turn></turn> when fighting in this domain.",
+            "energy_cost": "60",
+            "casting": "8 <stratPoint></stratPoint>",
+            "upkeep_cost": "10<energy></energy> / <turn></turn>"
+        },
+
+        {
+            "slug": "dimensional_rift",
+            "name": "Dimensional Rift",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Tear space-time at target non-Voidtech enemy colony, creating a Dimensional Rift for 10<turn></turn>. This effect increases in strength as you build more Dimensional Amplifier Tower.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "phase_echo_guard",
+            "name": "Phase Echo Guard",
+            "tier": "VI",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Prepare Phase Echoes in the target friendly colony. These will spawn during any combat that takes place within the colony's domain. At the start of combat, this will create Unstable Echoes of 4 random friendly units. The Echoes remain until end of combat.",
+            "energy_cost": "100",
+            "casting": "12 <stratPoint></stratPoint>",
+            "upkeep_cost": "16<energy></energy> / <turn></turn>"
+        },
+
+        {
+            "slug": "void_storm",
+            "name": "Void Storm",
+            "tier": "VIII",
+            "type": "Strategic Operation(Instant)",
+            "description": "A Void Storm hazard is spawned in the target sector, reducing <energy></energy> income by 20% and happiness by 8<unhappiness></unhappiness> in affected colonies. The Void Storm also has a chance to apply <abilityRed>Dimensional Instability</abilityRed> to all units in the sector every 3<turn></turn> in tactical combat.<br><br>In addition, all non-Voidtech units in the sector take damage equal to 20% of their current <hp></hp><br><br>On failure, the Void Storm does not spawn, but damage is still dealt to units.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "time_anomaly",
+            "name": "Time Anomaly",
+            "tier": "VIII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Units in target army lose all of their <mp></mp> move points. In addition, all of the units in the targeted army have <abilityRed>Very Slow Movement</abilityRed> for 3<turn></turn>.",
+            "energy_cost": "200",
+            "casting": "20 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "dimensional_cascade",
+            "name": "Dimensional Cascade",
+            "tier": "X",
+            "type": "Doomsday Finisher Operation",
+            "description": "The final step in the Voidtech plan opens Dimensional Rifts throughout various worlds, drawing a near infinite amount of energy from them.<br><br>Requires Instability Rift level 3.<br>",
+            "energy_cost": "500",
+            "casting": "50 <stratPoint></stratPoint>",
+        },
+
 
     ]
 }

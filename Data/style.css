@@ -1458,13 +1458,13 @@ rioter {
 casusBelli {
     max-height: 25px;
     top: 3px;
-    content: url(/aowp/Icons/Text/<PLACEHOLDER>.png);
+    content: url(/aowp/Icons/Text/casusbelli.png);
     position: relative;
 }
 
 reputation6 {
     max-height: 25px;
     top: 3px;
-    content: url(/aowp/Icons/Text/<PLACEHOLDER>.png);
+    content: url(/aowp/Icons/Text/reputation.png);
     position: relative;
 }
