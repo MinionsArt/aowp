@@ -145,185 +145,7 @@ var jsonTech = {
 
 
 
-                             // arc
 
-        {
-
-            "slug": "arc_magnetic_energy_storage",
-
-    },
-        {
-
-            "slug": "arc_electron_impact",
-
-    },
-
-        {
-
-            "slug": "arc_ionic_detachment",
-
-    },
-        {
-
-            "slug": "arc_neuro-electric_disruptors",
-
-    },
-
-        {
-
-            "slug": "arc_positron_technology",
-
-    },
-
-
-                             // celestian
-
-        {
-
-            "slug": "celestian_light's_embrace",
-
-    },
-        {
-
-            "slug": "celestian_penance",
-
-    },
-
-        {
-
-            "slug": "celestian_luminance",
-
-    },
-        {
-
-            "slug": "celestian_inner_fire",
-
-    },
-
-        {
-
-            "slug": "celestian_perseverance",
-
-    },
-        {
-
-            "slug": "celestian_star_presence",
-
-    },
-        {
-
-            "slug": "celestian_light_of_truth",
-
-    },
-
-        {
-
-            "slug": "celestian_star_ward",
-
-    },
-        {
-
-            "slug": "celestian_way_of_peace",
-
-    },
-
-        {
-
-            "slug": "celestian_colony_sanctuary",
-
-    },
-
-        {
-
-            "slug": "celestian_repercussion",
-
-    },
-        {
-
-            "slug": "celestian_axiom_of_light",
-
-    },
-
-        {
-
-            "slug": "celestian_ascension",
-
-    },
-
-
-                             // syndicate
-
-        {
-
-            "slug": "syndicate_exploit_weakness",
-
-    },
-        {
-
-            "slug": "syndicate_enforce_control",
-
-    },
-
-        {
-
-            "slug": "syndicate_employ_deception",
-
-    },
-        {
-
-            "slug": "syndicate_force_projection",
-
-    },
-
-        {
-
-            "slug": "syndicate_preventative_control",
-
-    },
-        {
-
-            "slug": "syndicate_military_dominance",
-
-    },
-        {
-
-            "slug": "syndicate_covert_offensive",
-
-    },
-
-        {
-
-            "slug": "syndicate_alternative_measures",
-
-    },
-        {
-
-            "slug": "syndicate_augmented_force",
-
-    },
-
-        {
-
-            "slug": "syndicate_cerebral_submission",
-
-    },
-
-        {
-
-            "slug": "syndicate_advancement_tactics",
-
-    },
-        {
-
-            "slug": "syndicate_illustrious_conquest",
-
-    },
-
-        {
-
-            "slug": "syndicate_technological_supremacy",
-
-    },
 
                                        // xenoplague
 
@@ -5077,6 +4899,995 @@ var jsonTech = {
             ],
             "cost": "1700",
         },
+
+        {
+            "slug": "syndicate_exploit_weakness",
+            "name": "Exploit Weakness",
+
+            "mod_unlock": [
+                {
+                    "slug": "exploitative_targeting_system"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "tactical_advantage_protocol"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "syndicate_enforce_control",
+            "name": "Enforce Control",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_pulse_sniper"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "syndicate_guild_assassin"
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "syndicate_employ_deception",
+            "name": "Employ Deception",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "sensor_infiltration"
+                }
+        ,
+                {
+                    "slug": "emergency_cloaking_field"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "syndicate_force_projection",
+            "name": "Force Projection",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_mirage"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "syndicate_mirage"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "syndicate_preventative_control",
+            "name": "Preventative Control",
+
+            "mod_unlock": [
+                {
+                    "slug": "psitec_vision_enhancers_(detector)"
+                }
+        ,
+                {
+                    "slug": "cerebral_control_collars"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "diversion_projector"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "syndicate_military_dominance",
+            "name": "Military Dominance",
+
+            "mod_unlock": [
+                {
+                    "slug": "spatial_acceleration_sails"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "deploy_sentinel"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "syndicate_covert_offensive",
+            "name": "Covert Offensive",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_wraith"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "syndicate_wraith"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "syndicate_alternative_measures",
+            "name": "Alternative Measures",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "pulse_beam_cannon"
+                }
+        ,
+                {
+                    "slug": "industrial_sabotage"
+                }
+        ,
+                {
+                    "slug": "bread_and_circuses"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "syndicate_augmented_force",
+            "name": "Augmented Force",
+
+            "mod_unlock": [
+                {
+                    "slug": "control_amplifier"
+                }
+        ,
+                {
+                    "slug": "adaptive_camouflage_projector"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "syndicate_cerebral_submission",
+            "name": "Cerebral Submission",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_subjugator"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "syndicate_subjugator"
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "syndicate_advancement_tactics",
+            "name": "Advancement Tactics",
+
+            "mod_unlock": [
+                {
+                    "slug": "advanced_dislocation_drive"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "psitec_cerebral_execution"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "syndicate_illustrious_conquest",
+            "name": "Illustrious Conquest",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "syndicate_zenith"
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "syndicate_technological_supremacy",
+            "name": "Technological Supremacy",
+
+            "mod_unlock": [
+                {
+                    "slug": "cerebral_amplifier"
+                }
+        ,
+                {
+                    "slug": "psitec_drive_modulator"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "arc_magnetic_energy_storage",
+            "name": "Magnetic Energy Storage",
+
+            "mod_unlock": [
+                {
+                    "slug": "static_buildup_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "arc_discharge"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "arc_electron_impact",
+            "name": "Electron Impact",
+
+            "mod_unlock": [
+                {
+                    "slug": "arc_retaliation_defense"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "arc_manifold"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "arc_ionic_detachment",
+            "name": "Ionic Detachment",
+
+            "mod_unlock": [
+                {
+                    "slug": "arc_impact_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "aeon_flux_charge"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "arc_neuro-electric_disruptors",
+            "name": "Neuro-electric Disruptors",
+
+            "mod_unlock": [
+                {
+                    "slug": "stun_module"
+                }
+        ,
+                {
+                    "slug": "arc_extension_module"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "pulse_disruption_lance"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "arc_positron_technology",
+            "name": "Positron Technology",
+
+            "mod_unlock": [
+                {
+                    "slug": "positron_arc_storm"
+                }
+        ,
+                {
+                    "slug": "positron_discharge_shield"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "positron_converter"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "celestian_light's_embrace",
+            "name": "Light's Embrace",
+
+            "mod_unlock": [
+                {
+                    "slug": "tenets_of_tranquility"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "cleanse"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "celestian_penance",
+            "name": "Penance",
+
+            "mod_unlock": [
+                {
+                    "slug": "shield_of_remorse"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "spirit_flash"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "celestian_luminance",
+            "name": "Luminance",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_inferno_fists"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_light_bringer"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "celestian_inner_fire",
+            "name": "Inner Fire",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "sway_ideology"
+                }
+        ,
+                {
+                    "slug": "soulfire"
+                }
+        ,
+                {
+                    "slug": "blessing_of_starlight"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "celestian_perseverance",
+            "name": "Perseverance",
+
+            "mod_unlock": [
+                {
+                    "slug": "tenets_of_healing"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "negate"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "celestian_star_presence",
+            "name": "Star Presence",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_light's_harmony"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_star_guide"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "celestian_light_of_truth",
+            "name": "Light of Truth",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "beacon_of_truth"
+                }
+        ,
+                {
+                    "slug": "declaration_of_truth"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "celestian_star_ward",
+            "name": "Star Ward",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "futility_of_war"
+                }
+        ,
+                {
+                    "slug": "ward_of_righteousness"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "celestian_way_of_peace",
+            "name": "Way of Peace",
+
+            "mod_unlock": [
+                {
+                    "slug": "tenets_of_pacifism"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "resurgence"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "celestian_colony_sanctuary",
+            "name": "Colony Sanctuary",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "compelling_cause"
+                }
+        ,
+                {
+                    "slug": "sanctuary_of_the_stars"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "celestian_repercussion",
+            "name": "Repercussion",
+
+            "mod_unlock": [
+                {
+                    "slug": "shield_of_reckoning"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "area_of_reprieve"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "celestian_axiom_of_light",
+            "name": "Axiom of Light",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_radiant_force"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "true_ascendancy"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "celestian_ascension",
+            "name": "Ascension",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "final_revelation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "celestian_celestial_reign",
+            "name": "Celestial Reign",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "karmic_amplification"
+                }
+        ,
+                {
+                    "slug": "celestial_judgement"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_v"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "celestian_neo_evangelicals",
+            "name": "Neo Evangelicals",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "harmonious_existence"
+                }
+        ,
+                {
+                    "slug": "disincentive_prayers"
+                }
+        ,
+                {
+                    "slug": "missionary_negotiators"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "syndicate_diplomatic_niceties",
+            "name": "Diplomatic Niceties",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "noble_diplomats"
+                }
+        ,
+                {
+                    "slug": "indentured_contracts"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "syndicate_clandestine_practices",
+            "name": "Clandestine Practices",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "one-way_trust"
+                }
+        ,
+                {
+                    "slug": "cloak_and_dagger"
+                }
+        ,
+                {
+                    "slug": "intelligence_gathering_bureau"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "syndicate_underhanded_exploitation",
+            "name": "Underhanded Exploitation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "indentured_servitude"
+                }
+        ,
+                {
+                    "slug": "deep_infiltration"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
 
 
 

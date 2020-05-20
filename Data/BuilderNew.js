@@ -532,7 +532,12 @@
                  if (jsonTech.tech[j].unit_unlock[k].slug != undefined) {
                      secret = jsonTech.tech[j].unit_unlock[k].slug;
                      if (jsonTech.tech[j].unit_unlock[k].slug.indexOf("secret") > -1) {
-                         secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace);
+                         if (currentRace == "syndicate" && jsonTech.tech[j].unit_unlock[k].slug == "secret_purifier") {
+                             secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace + "_indentured");
+                         } else {
+                             secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace);
+                         }
+
                      }
                      addUnitUnlock(secret, b);
                  }

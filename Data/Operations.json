@@ -1530,6 +1530,303 @@ var jsonOperations = {
         },
 
 
+        {
+            "slug": "tactical_advantage_protocol",
+            "name": "Tactical Advantage Protocol",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target friendly unit gains <actionblue>Always Flanking</actionblue>, allowing every attack to be a flanking attack for 3<turn></turn>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "diversion_projector",
+            "name": "Diversion Projector",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "All units in a 1 hex radius area of effect have a 12<strengthpsyche></strengthpsyche> strength chance to become <abilityRed>Blinded</abilityRed> and have -2 resistance against flanking attacks for 2<turn></turn>.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "deploy_sentinel",
+            "name": "Deploy Sentinel",
+            "tier": "IV",
+            "type": "Tactical Operation (Summon)",
+            "description": "Summon a Sentinel onto target hex during combat. The summon lasts until the end of combat.<br>This unit has long range Arc abilities to neutralize enemies.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "psitec_cerebral_execution",
+            "name": "PsiTec Cerebral Execution",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target Biological or Cyborg non-Commander unit has a 12<strengthpsyche></strengthpsyche> strength chance to be instantly killed. If this fails, the unit instead takes 30<DamagePsyche></DamagePsyche> damage and is <abilityRed>Staggered</abilityRed>.",
+            "energy_cost": "75",
+            "casting": "7 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "sensor_infiltration",
+            "name": "Sensor Infiltration",
+            "tier": "II",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Infiltrate the enemy army's sensory systems and gain Vision on that army for 5<turn></turn> turns.",
+            "energy_cost": "40",
+            "casting": "4 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "emergency_cloaking_field",
+            "name": "Emergency Cloaking Field",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Deploy an Emergency Cloaking Field to provide the target army with <actionblue>Universal Camouflage</actionblue> for 2<turn></turn> turns.",
+            "energy_cost": "60",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "pulse_beam_cannon",
+            "name": "Pulse Beam Cannon",
+            "tier": "V",
+            "type": "Strategic Operation(Instant)",
+            "description": "Fire the Pulse Beam Cannon at the target army and adjacent armies, inflicting 20% damage and reducing the target's Vision Range by 4 hexes for 3<turn></turn>.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "industrial_sabotage",
+            "name": "Industrial Sabotage",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Reduce the Production output of an enemy Colony by -70%<production></production> for 10<turn></turn>.",
+            "energy_cost": "150",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "bread_and_circuses",
+            "name": "Bread and Circuses",
+            "tier": "V",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Target owned Colony has +12<happiness></happiness> from distractions and festivities, and gains 50% more from happiness events.",
+            "energy_cost": "60",
+            "casting": "8 <stratPoint></stratPoint>",
+            "upkeep_cost": "10<energy></energy>/<turn></turn>"
+        },
+
+        {
+            "slug": "arc_discharge",
+            "name": "Arc Discharge",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Discharges an Arc blast on a single enemy unit, dealing 9<DamageWave></DamageWave> damage with <abilityRed>High Impact</abilityRed>. This attack can jump to 2 additional targets within 3 hexes of each other.",
+            "energy_cost": "21",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "arc_manifold",
+            "name": "Arc Manifold",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "The Arc Manifold strikes a random enemy unit, dealing 10<DamageWave></DamageWave> Arc damage and causing <abilityRed>High Impact</abilityRed> with a strength 8<StrengthWave></StrengthWave> chance of applying <abilityRed>Electrified</abilityRed> to non-Ethereal targets.<br>Arc Manifold strikes at the start of each enemy turn for 5<turn></turn>.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "aeon_flux_charge",
+            "name": "Aeon Flux Charge",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Infuse a Mechanical or Cyborg unit with an Aeon Flux Charge. The unit deals +50% damage, gains <actionblue>Fast Movement</actionblue> and 2<shield></shield> for 3<turn></turn>.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "pulse_disruption_lance",
+            "name": "Pulse Disruption Lance",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target unit suffers 30<DamageWave></DamageWave> damage. If it is biological it has a 12<StrengthWave></StrengthWave> strength chance to be <abilityRed>Electrified</abilityRed>. If it is Mechanical or Cyborg it has a 12<StrengthWave></StrengthWave> strength chance to be <abilityRed>Stunned</abilityRed>, and is <abilityRed>Staggered</abilityRed> instead if this is resisted.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "positron_converter",
+            "name": "Positron Converter",
+            "tier": "VIII",
+            "type": "Tactical Operation (Instant)",
+            "description": "The Positron Converter emits a field that flips the electron charge on friendly Arc weaponry. All owned units' Arc abilities can <abilityRed>Stun</abilityRed> targets and deal +60%<DamageWave></DamageWave> damage for 1<turn></turn>.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "cleansing_light",
+            "name": "Cleansing Light",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target unit is dispelled of negative status effects and is healed for 10<hp></hp>. This heals for an additional 5<hp></hp> for each <actionblue>Enlightened</actionblue> unit in battle up to a maximum of 30<hp></hp>.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "spirit_flash",
+            "name": "Spirit Flash",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target non-Mindless enemy's spirit flashes brightly, causing <abilityRed>Soulburn</abilityRed> and <abilityRed>High Impact Stagger</abilityRed> to itself and all enemy units in a 2 hex radius around it.",
+            "energy_cost": "40",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "negate",
+            "name": "Negate",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "For 2<turn></turn>, target friendly unit is immune to all damage, but they cannot move or use abilities during this time.  ",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "resurgence",
+            "name": "Resurgence",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target unit gains <actionblue>Regeneration</actionblue> for 3<turn></turn>, making it recover 8<hp></hp> per turn. Additionally, this unit gains <actionblue>Resurgence</actionblue> until the end of battle, returning to life with 50% of its max <hp></hp> if it died but the battle was won.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "sway_ideology",
+            "name": "Sway Ideology",
+            "tier": "III",
+            "type": "Covert Operation",
+            "description": "Lowers the targeted player's standing with his most renowned faction by 20<diplolinks></diplolinks> points and adds the same amount to your relation level with that faction.<br><br>On failure, both players receive 5<diplolinks></diplolinks> points.",
+            "energy_cost": "0",
+            "influence_cost": "45",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "soulfire",
+            "name": "Soulfire",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target enemy army takes 20% damage and suffers <abilityRed>Soulburn</abilityRed> if they engage in battle for 1<turn></turn>. ",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "blessing_of_starlight",
+            "name": "Blessing of Starlight",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target friendly army heals to 100%<hp></hp>. They also gain Stagger Resistance and +10% accuracy until the end of their next battle.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "beacon_of_truth",
+            "name": "Beacon of Truth",
+            "tier": "V",
+            "type": "Empire Upgrade",
+            "description": "The Beacon of Truth unlocks the Declaration of Truth Doomsday Weapon. Each additional Beacon of Truth that you build increases the level of the weapon, making it stronger.<br><br>Only one Beacon of Truth may be built per colony.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "declaration_of_truth",
+            "name": "Declaration of Truth",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Wash target non-Celestian enemy colony and its colonists in Psionically-enforced Truth for 10<turn></turn>. This increases in strength as you build more Beacons of Truth.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "futility_of_war",
+            "name": "Futility of War",
+            "tier": "VI",
+            "type": "Covert Operation",
+            "description": "Unwavering faith in the face of bloodshed discourages your enemies to engage in war. The targeted player cannot use any Casus Belli for 15<turn></turn>.",
+            "energy_cost": "0",
+            "influence_cost": "45",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "ward_of_righteousness",
+            "name": "Ward of Righteousness",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "Spawns a <abilityRed>Veil of Tranquility</abilityRed> in the target sector. This hazard affects the economy and units in this sector. It also has a tactical combat effect in the sector.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "compelling_cause",
+            "name": "Compelling Cause",
+            "tier": "VIII",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Target an enemy colony and compel them to your cause. Summon two Tier 2 units from the target faction, spawning them adjacent to the enemy colony.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "sanctuary_of_the_stars",
+            "name": "Sanctuary of the Stars",
+            "tier": "VIII",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Target owned colony cannot be targeted by harmful effects. Friendly armies within this colony's domain cannot be targeted by harmful operations, and enemies cannot use Tactical Operations within the colony's domain.",
+            "energy_cost": "160",
+            "casting": "20 <stratPoint></stratPoint>",
+            "upkeep_cost": "25<energy></energy>/<turn></turn>"
+        },
+
+        {
+            "slug": "true_ascendancy",
+            "name": "True Ascendancy",
+            "tier": "X",
+            "type": "Strategic Operation (Summon)",
+            "description": "The will of the Star manifests in ethereal form.<br>Summons an Ascended Teacher under your command.",
+            "energy_cost": "0",
+            "influence_cost": "100",
+            "casting": "20 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "final_revelation",
+            "name": "Final Revelation",
+            "tier": "X",
+            "type": "Doomsday Finisher Operation",
+            "description": "Expose the entire planet to the revelations brought on by the Light of Truth, showing them the Celestian way.<br><br>Requires Declaration of Truth level 3.<br>",
+            "energy_cost": "500",
+            "casting": "50 <stratPoint></stratPoint>",
+        },
+
+
+
 
     ]
 }
