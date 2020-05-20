@@ -70,6 +70,77 @@ var jsonTech = {
 
     },
 
+// heritor
+
+        {
+            "slug": "heritor_gift_of_the_es'teq",
+
+    }, {
+
+            "slug": "heritor_holy_presence",
+
+    },
+        {
+
+            "slug": "heritor_siphoner_awakening",
+
+    },
+        {
+
+            "slug": "heritor_wrath_of_the_ancients",
+
+    },
+        {
+
+            "slug": "heritor_zealous_conviction",
+
+    },
+        {
+
+            "slug": "heritor_transmigration_rituals",
+
+    },
+        {
+
+            "slug": "heritor_quintessence_ark_awakening",
+
+    },
+
+        {
+
+            "slug": "heritor_prelude_to_rapture",
+
+    },
+        {
+
+            "slug": "heritor_dissemination_rituals",
+
+    },
+        {
+
+            "slug": "heritor_sacred_providence",
+
+    },
+        {
+
+            "slug": "heritor_high_lord_awakening",
+
+    },
+        {
+
+            "slug": "heritor_forced_conversion",
+
+    },
+        {
+
+            "slug": "heritor_venerated_incarnation",
+
+    },
+        {
+
+            "slug": "heritor_final_revelation",
+
+    },
 
 
 
@@ -103,6 +174,225 @@ var jsonTech = {
             "slug": "arc_positron_technology",
 
     },
+
+
+                             // celestian
+
+        {
+
+            "slug": "celestian_light's_embrace",
+
+    },
+        {
+
+            "slug": "celestian_penance",
+
+    },
+
+        {
+
+            "slug": "celestian_luminance",
+
+    },
+        {
+
+            "slug": "celestian_inner_fire",
+
+    },
+
+        {
+
+            "slug": "celestian_perseverance",
+
+    },
+        {
+
+            "slug": "celestian_star_presence",
+
+    },
+        {
+
+            "slug": "celestian_light_of_truth",
+
+    },
+
+        {
+
+            "slug": "celestian_star_ward",
+
+    },
+        {
+
+            "slug": "celestian_way_of_peace",
+
+    },
+
+        {
+
+            "slug": "celestian_colony_sanctuary",
+
+    },
+
+        {
+
+            "slug": "celestian_repercussion",
+
+    },
+        {
+
+            "slug": "celestian_axiom_of_light",
+
+    },
+
+        {
+
+            "slug": "celestian_ascension",
+
+    },
+
+
+                             // syndicate
+
+        {
+
+            "slug": "syndicate_exploit_weakness",
+
+    },
+        {
+
+            "slug": "syndicate_enforce_control",
+
+    },
+
+        {
+
+            "slug": "syndicate_employ_deception",
+
+    },
+        {
+
+            "slug": "syndicate_force_projection",
+
+    },
+
+        {
+
+            "slug": "syndicate_preventative_control",
+
+    },
+        {
+
+            "slug": "syndicate_military_dominance",
+
+    },
+        {
+
+            "slug": "syndicate_covert_offensive",
+
+    },
+
+        {
+
+            "slug": "syndicate_alternative_measures",
+
+    },
+        {
+
+            "slug": "syndicate_augmented_force",
+
+    },
+
+        {
+
+            "slug": "syndicate_cerebral_submission",
+
+    },
+
+        {
+
+            "slug": "syndicate_advancement_tactics",
+
+    },
+        {
+
+            "slug": "syndicate_illustrious_conquest",
+
+    },
+
+        {
+
+            "slug": "syndicate_technological_supremacy",
+
+    },
+
+                                       // xenoplague
+
+        {
+
+            "slug": "xenoplague_alpha_strain_inception",
+
+    },
+        {
+
+            "slug": "xenoplague_militarized_strains",
+
+    },
+
+        {
+
+            "slug": "xenoplague_dispersion",
+
+    },
+        {
+
+            "slug": "xenoplague_destroyer_mutation",
+
+    },
+
+        {
+
+            "slug": "xenoplague_omega_strain",
+
+    },
+        {
+
+            "slug": "xenoplague_regenerative_stimulation",
+
+    },
+        {
+
+            "slug": "xenoplague_plague_lord_mutation",
+
+    },
+
+        {
+
+            "slug": "xenoplague_expedited_germination",
+
+    },
+        {
+
+            "slug": "xenoplague_proliferated_aggression",
+
+    },
+
+        {
+
+            "slug": "xenoplague_advanced_militarized_strains",
+
+    },
+
+        {
+
+            "slug": "xenoplague_symbiotic_superiority",
+
+    },
+        {
+
+            "slug": "xenoplague_omega_trancendace",
+
+    },
+
 
 
 ///////////////////amazon
@@ -838,8 +1128,8 @@ var jsonTech = {
         },
 
         {
-            "slug": "shakarn_gama_supremecy",
-            "name": "Gama Supremecy",
+            "slug": "shakarn_gama_supremacy",
+            "name": "Gama Supremacy",
 
             "mod_unlock": [
                 {
