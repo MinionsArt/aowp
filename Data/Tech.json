@@ -147,77 +147,7 @@ var jsonTech = {
 
 
 
-                                       // xenoplague
 
-        {
-
-            "slug": "xenoplague_alpha_strain_inception",
-
-    },
-        {
-
-            "slug": "xenoplague_militarized_strains",
-
-    },
-
-        {
-
-            "slug": "xenoplague_dispersion",
-
-    },
-        {
-
-            "slug": "xenoplague_destroyer_mutation",
-
-    },
-
-        {
-
-            "slug": "xenoplague_omega_strain",
-
-    },
-        {
-
-            "slug": "xenoplague_regenerative_stimulation",
-
-    },
-        {
-
-            "slug": "xenoplague_plague_lord_mutation",
-
-    },
-
-        {
-
-            "slug": "xenoplague_expedited_germination",
-
-    },
-        {
-
-            "slug": "xenoplague_proliferated_aggression",
-
-    },
-
-        {
-
-            "slug": "xenoplague_advanced_militarized_strains",
-
-    },
-
-        {
-
-            "slug": "xenoplague_symbiotic_superiority",
-
-    },
-        {
-
-            "slug": "xenoplague_omega_trancendace",
-
-    },
-
-
-
-///////////////////amazon
         {
             "slug": "amazon_protective_grounding",
             "name": "Protective Grounding",
@@ -240,10 +170,7 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "75",
-
-
-
+            "cost": "100",
         },
 
         {
@@ -268,67 +195,9 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "113",
-
-
-
-        },
-        {
-            "slug": "amazon_primal_control",
-            "name": "Primal Control",
-
-            "mod_unlock": [
-                {
-                    "slug": "primal_awareness_amplifier(detector)"
-                },
-                {
-                    "slug": "advanced_instinct_controller"
-                }
-
-
-            ],
-            "op_unlock": [
-                {
-                    "slug": "primal_override"
-                }
-            ],
-            "unit_unlock": [
-                {
-
-                }
-
-            ],
             "cost": "150",
-
-
-
-        }, {
-            "slug": "amazon_aquatica_commune",
-            "name": "Aquatica Commune",
-
-            "mod_unlock": [
-                {
-
-                }
-
-
-            ],
-            "op_unlock": [
-                {
-
-                }
-            ],
-            "unit_unlock": [
-                {
-                    "slug": "amazon_aquatica"
-                }
-
-            ],
-            "cost": "150",
-
-
-
         },
+
         {
             "slug": "amazon_forest_genesis",
             "name": "Forest Genesis",
@@ -338,14 +207,16 @@ var jsonTech = {
 
                 }
 
-
             ],
             "op_unlock": [
                 {
                     "slug": "rapid_reforestation"
-                }, {
+                }
+        ,
+                {
                     "slug": "entangling_overgrowth"
                 }
+
             ],
             "unit_unlock": [
                 {
@@ -354,9 +225,60 @@ var jsonTech = {
 
             ],
             "cost": "150",
+        },
 
+        {
+            "slug": "amazon_aquatica_commune",
+            "name": "Aquatica Commune",
 
+            "mod_unlock": [
+                {
 
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "amazon_aquatica"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "amazon_primal_control",
+            "name": "Primal Control",
+
+            "mod_unlock": [
+                {
+                    "slug": "primal_awareness_amplifier_(detector)"
+                }
+        ,
+                {
+                    "slug": "advanced_instinct_controller"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "primal_override"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
         },
 
         {
@@ -365,28 +287,23 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-
+                    "slug": "vehicle:_harrier"
                 }
-
 
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+
                 }
+
             ],
             "unit_unlock": [
                 {
-
+                    "slug": "amazon_harrier"
                 }
 
             ],
-            "cost": "150",
-
-
-
+            "cost": "520",
         },
 
         {
@@ -398,28 +315,21 @@ var jsonTech = {
 
                 }
 
-
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+
                 }
+
             ],
             "unit_unlock": [
                 {
-
+                    "slug": "amazon_bombardon"
                 }
 
             ],
-            "cost": "150",
-
-
-
-        }
-
-,
+            "cost": "800",
+        },
 
         {
             "slug": "amazon_regenerative_bio_resonance",
@@ -427,17 +337,15 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-
+                    "slug": "regenerative_bioregulator"
                 }
-
 
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+                    "slug": "nourishing_field_pylon"
                 }
+
             ],
             "unit_unlock": [
                 {
@@ -445,13 +353,8 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "150",
-
-
-
-        }
-
-             ,
+            "cost": "800",
+        },
 
         {
             "slug": "amazon_amplified_bio_resonance",
@@ -459,17 +362,15 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-
+                    "slug": "crushing_roots"
                 }
-
 
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+                    "slug": "amplifying_field_pylon"
                 }
+
             ],
             "unit_unlock": [
                 {
@@ -477,10 +378,7 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "150",
-
-
-
+            "cost": "1200",
         },
 
         {
@@ -489,29 +387,26 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-
+                    "slug": "vehicle:_tyrannodon"
                 }
-
 
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+
                 }
+
             ],
             "unit_unlock": [
                 {
-
+                    "slug": "amazon_tyrannodon"
                 }
 
             ],
-            "cost": "150",
+            "cost": "1700",
+        },
 
-
-
-        }, {
+        {
             "slug": "amazon_restorative_cloning",
             "name": "Restorative Cloning",
 
@@ -520,14 +415,16 @@ var jsonTech = {
 
                 }
 
-
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+                    "slug": "clone_predator"
                 }
+        ,
+                {
+                    "slug": "arcadian_restoration"
+                }
+
             ],
             "unit_unlock": [
                 {
@@ -535,27 +432,24 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "150",
+            "cost": "1700",
+        },
 
-
-
-        }, {
+        {
             "slug": "amazon_organism_stimulus",
             "name": "Organism Stimulus",
 
             "mod_unlock": [
                 {
-
+                    "slug": "blood_fury_inducers"
                 }
-
 
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+                    "slug": "luring_field_pylon"
                 }
+
             ],
             "unit_unlock": [
                 {
@@ -563,12 +457,10 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "150",
+            "cost": "1700",
+        },
 
-
-
-        }
-             , {
+        {
             "slug": "amazon_arborian_queen_commune",
             "name": "Arborian Queen Commune",
 
@@ -577,14 +469,41 @@ var jsonTech = {
 
                 }
 
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "amazon_arborian_queen"
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "amazon_gaialogical_affinity",
+            "name": "Gaialogical Affinity",
+
+            "mod_unlock": [
+                {
+                    "slug": "earth_link_mask"
+                }
+        ,
+                {
+                    "slug": "spirit_link_module"
+                }
 
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+
                 }
+
             ],
             "unit_unlock": [
                 {
@@ -592,28 +511,28 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "150",
+            "cost": "2750",
+        },
 
-
-
-        }
-   , {
-            "slug": "amazon_gaialogical_affinity",
-            "name": "Gaialogical Affinity",
+        {
+            "slug": "amazon_verdant_awakening",
+            "name": "Verdant Awakening",
 
             "mod_unlock": [
                 {
 
                 }
 
-
             ],
             "op_unlock": [
                 {
-                    "slug": "rapid_reforestation"
-                }, {
-                    "slug": "entangling_overgrowth"
+                    "slug": "ecological_construction"
                 }
+        ,
+                {
+                    "slug": "ecological_warfare"
+                }
+
             ],
             "unit_unlock": [
                 {
@@ -621,14 +540,464 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "150",
+            "cost": "100",
+        },
+
+        {
+            "slug": "amazon_gaian_stewardship",
+            "name": "Gaian Stewardship",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "progressive_cultivation"
+                }
+        ,
+                {
+                    "slug": "advanced_wildlife_militarization"
+                }
+        ,
+                {
+                    "slug": "arborian_monitoring_station"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "amazon_new_eden",
+            "name": "New Eden",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "bio_crusade"
+                }
+        ,
+                {
+                    "slug": "arboreal_eden"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "xenoplague_alpha_strain_inception",
+            "name": "Alpha Strain Inception",
+
+            "mod_unlock": [
+                {
+                    "slug": "xenoplague_parasite"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "parasitic_strike"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "xenoplague_militarized_strains",
+            "name": "Militarized Strains",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "sleeper_xenomomes"
+                }
+        ,
+                {
+                    "slug": "regenerative_infections"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "xenoplague_dispersion",
+            "name": "Dispersion",
+
+            "mod_unlock": [
+                {
+                    "slug": "plague_pods"
+                }
+        ,
+                {
+                    "slug": "xenografted_muscles"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "drop_spore_pod"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "xenoplague_destroyer_mutation",
+            "name": "Destroyer Mutation",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_acrimonious"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "destroyer"
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "xenoplague_omega_strain",
+            "name": "Omega Strain",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "omega_hive"
+                }
+        ,
+                {
+                    "slug": "omega_infection"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "xenoplague_regenerative_stimulation",
+            "name": "Regenerative Stimulation",
+
+            "mod_unlock": [
+                {
+                    "slug": "bio-spore_purification"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "xeno_restoration_beam"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "xenoplague_plague_lord_mutation",
+            "name": "Plague Lord Mutation",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_malady"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "plague_lord"
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "xenoplague_expedited_germination",
+            "name": "Expedited Germination",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "hyper-accelerate_evolution"
+                }
+        ,
+                {
+                    "slug": "fungal_spore_bomb"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "xenoplague_proliferated_aggression",
+            "name": "Proliferated Aggression",
+
+            "mod_unlock": [
+                {
+                    "slug": "hyper_aggression"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "xeno_contaminant_strike"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "xenoplague_advanced_militarized_strains",
+            "name": "Advanced Militarized Strains",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "xenobonic_plague_bomb"
+                }
+        ,
+                {
+                    "slug": "call_of_the_plague"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "xenoplague_symbiotic_superiority",
+            "name": "Symbiotic Superiority",
+
+            "mod_unlock": [
+                {
+                    "slug": "parasitic_symbiosis"
+                }
+        ,
+                {
+                    "slug": "bio-spore_proliferation"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "hyperstimulation_beam"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "xenoplague_omega_transcendance",
+            "name": "Omega Transcendance",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "omega_awakening"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+        },
+
+        {
+            "slug": "xenoplague_bio-matter_repurposing",
+            "name": "Bio-Matter Repurposing",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "biomatter_preparation_training"
+                }
+        ,
+                {
+                    "slug": "biomatter_scavenging"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_v"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "xenoplague_infection_experiments",
+            "name": "Infection Experiments",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "forced_infection"
+                }
+        ,
+                {
+                    "slug": "organic_mutation_research"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
 
 
 
-        }
 
-
-                ,
         {
             "slug": "shakarn_discerning_systems",
             "name": "Discerning Systems",

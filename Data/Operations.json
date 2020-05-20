@@ -1826,6 +1826,266 @@ var jsonOperations = {
         },
 
 
+        {
+            "slug": "protective_growth",
+            "name": "Protective Growth",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Summon thick roots to protect a friendly ground unit, healing it for 15<hp></hp> and preventing it from moving for 2<turn></turn>.<br>While immobilized in this manner, the unit gains +4<armor></armor> and regenerates 25% of its maximum <hp></hp> per turn.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "primal_override",
+            "name": "Primal Override",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Attempt to <abilityRed>Mind Control</abilityRed> a non-Mindless or non-Mechanical Tier I or Tier II Animal unit with a 8<StrengthBio></StrengthBio> strength chance.<br>If the target is under the effect of <abilityRed>Entangle</abilityRed> or <abilityRed>Sleep</abilityRed> the strength chance increases to 12<StrengthBio></StrengthBio>.<br>If mind controlled this way, the unit permanently comes under your control and will be implanted after battle to make it stronger. If resisted, apply <abilityRed>Insanity</abilityRed> instead.",
+            "energy_cost": "80",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "nourishing_field_pylon",
+            "name": "Nourishing Field Pylon",
+            "tier": "V",
+            "type": "Tactical Operation (Instant)",
+            "description": "Deploys a healing pylon to the battlefield. The pylon cannot act or move. All friendly Biological and Cyborg units within 2 hexes will heal for 15<hp></hp> when this ability is used as well as at the start of each turn.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "amplifying_field_pylon",
+            "name": "Amplifying Field Pylon",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "Deploys an amplifying pylon to the battlefield. The pylon cannot act or move. Friendly Biological and Cyborg units adjacent to this pylon gain +30% added damage while they remain adjacent to it. ",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "luring_field_pylon",
+            "name": "Luring Field Pylon",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Deploys a wildlife lure pylon to the battlefield. The pylon cannot act or move. It summons a random Tier II wildlife unit at the start of each turn. The pylon lasts for 5<turn></turn> or until destroyed.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "rapid_reforestation",
+            "name": "Rapid Reforestation",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Transform the target sector into a Forest (<food></food>/<production></production>) sector.<br><br><abilityRed>Cannot be launched on Mountain or Enemy sectors.</abilityRed>",
+            "energy_cost": "50",
+            "casting": "5 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "entangling_overgrowth",
+            "name": "Entangling Overgrowth",
+            "tier": "II",
+            "type": "Strategic Operation (Timed)",
+            "description": "Lowers <food></food> income of targeted enemy colony by -50%<food></food> for 10<turn></turn>. During this period, enemy units in that colony's domain spend an additional 4<mp></mp> when moving.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "clone_predator",
+            "name": "Clone Predator",
+            "tier": "VII",
+            "type": "Strategic Operation (Summon)",
+            "description": "Summons a powerful predator on the target location",
+            "energy_cost": "200",
+            "casting": "20 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "arcadian_restoration",
+            "name": "Arcadian Restoration",
+            "tier": "VII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target sector is terraformed into an Arcadian (<food></food> / <energy></energy>) sector.",
+            "energy_cost": "50",
+            "casting": "5 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "parasitic_strike",
+            "name": "Parasitic Strike",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target Biological or Cyborg unit takes 15<DamageBio></DamageBio> damage and has a strength 8<StrengthBio></StrengthBio> chance to contract a <abilityRed>Parasitic Infection</abilityRed>. The effect jumps up to 2 times to a nearby target within 2 hexes.",
+            "energy_cost": "40",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "drop_spore_pod",
+            "name": "Drop Spore Pod",
+            "tier": "III",
+            "type": "Tactical Operation (Summon)",
+            "description": "Launches a spore pod into tactical combat that bursts on impact with the ground. The pod deals 15<DamageBio></DamageBio> damage in a 1 hex radius area of effect with <abilityRed>High Impact</abilityRed>. The spore pod leaves behind a Bloated Pustule unit on the impact hex. The unit is destroyed at end of combat.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "xeno_restoration_beam",
+            "name": "Xeno Restoration Beam",
+            "tier": "V",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target Xenoplague unit is healed for 50<hp></hp> and all negative Status Effects are dispelled. The target also gains +2 resistance to all damage channels and increased <actionblue>Stagger Resistance</actionblue> for 5<turn></turn>.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "xeno_contaminant_strike",
+            "name": "Xeno Contaminant Strike",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target non-Xenoplague Biological or Cyborg unit and 2 other units within 2 hexes take 20<DamageBio></DamageBio> and have a 12<StrengthBio></StrengthBio> strength chance to gain <abilityRed>Parasitic Infection</abilityRed> and <abilityRed>Unstable Contamination</abilityRed> until the end of combat, causing them to explode upon death.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "hyperstimulation_beam",
+            "name": "Hyperstimulation Beam",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target non-Mindless Xenoplague unit and up to 2 Xenoplague units within 2 hexes heal for 15<hp></hp> and go <actionblue>Rabid</actionblue> for 3<turn></turn>. Rabid units are no longer under your control, and automatically attack the nearest enemy unit. In addition, the unit deals 25% extra damage, is immune to Status Effects, gains +25 maximum <hp></hp> and <actionblue>Fast Movement.</actionblue>",
+            "energy_cost": "60",
+            "casting": "5 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "sleeper_xenomomes",
+            "name": "Sleeper Xenomomes",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Infect the target army with Sleeper Xenomomes. The target army suffers 20% damage, and biological and cyborg units are afflicted with <abilityRed>Parasitic Infection</abilityRed> for 1<turn></turn>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "regenerative_infections",
+            "name": "Regenerative Infections",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Infect target friendly army with a regenerative virus, healing them to full and granting them +4 resistance to status effects for 1<turn></turn>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "omega_infection",
+            "name": "Omega Infection",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Infect a non-Xenoplague enemy colony and the surrounding area with the Omega Strain for 8<turn></turn>, a powerful viral agent that strengthens in effect as you build more Omega Hives.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "hyper-accelerate_evolution",
+            "name": "Hyper-accelerate Evolution",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "Accelerate the plague process of within the target Pustule, transforming it into a Destroyer.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "fungal_spore_bomb",
+            "name": "Fungal Spore Bomb",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "Launch a bomb loaded with infected fungal spores. Target sector is terraformed to a Fungal sector, and a <abilityRed>Spore Cloud</abilityRed> is spawned. This Hazard reduces economic income and weakens any units in the sector.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "xenobonic_plague_bomb",
+            "name": "Xenobonic Plague Bomb",
+            "tier": "VIII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Deploy a Xenobonic Plague Bomb in the target colony. The colony loses -4<population></population> and any non-Xenoplague Biological and Cyborg units in the colony get infected with <abilityRed>Parasitic Infection</abilityRed> for 1<turn></turn>.<br>In addition, 2 Xenoplague Pustules spawn near the colony.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "call_of_the_plague",
+            "name": "Call of the Plague",
+            "tier": "VIII",
+            "type": "Strategic Operation (Sustained)",
+            "description": "The target colony begins transmitting the call of the plague, summoning a Bloated Pustule into combat every turn for 8<turn></turn> during battle in this colony's territory.",
+            "energy_cost": "120",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "omega_awakening",
+            "name": "Omega Awakening",
+            "tier": "X",
+            "type": "Doomsday Finisher Operation",
+            "description": "The final step in the Xenoplague plan unleashes the ultimate form of the Omega Strain upon the whole world.<br><br>Requires Omega Strain Level 3.<br>",
+            "energy_cost": "500",
+            "casting": "50 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "biomatter_preparation_training",
+            "name": "Biomatter Preparation Training",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Train your commanders in how the bodies of defeated enemies can be optimized for use by the Xenoplague virus.<br><br>The chance of Xenoplague units spawning or evolving is increased by 30% for each hero you have in battle.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "biomatter_scavenging",
+            "name": "Biomatter Scavenging",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Xenoplague science allows for the scavenging of biomatter for regenerative purposes.<br><br>After every victorious battle, units in Xenoplague armies heal for 5<hp></hp> per killed Biological or Cyborg unit.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "forced_infection",
+            "name": "Forced Infection",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "To further our cause, we will enforce that all of our troops be infected with the Xeno-strain. This is a unique infection of the Xeno-strain and will not weaken our troops as it grows within them.<br><br>Losing units in battle while this Doctrine is active will contribute to spawning Xenoplague Pustules and evolving other Xenoplague units at the end of combat.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "organic_mutation_research",
+            "name": "Organic Mutation Research",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "By unleashing a hyper-intelligent virus onto our population, we can boost scientific progress. In the long run, this will help us further the development of the Omega strain.<br><br>+20%<research></research> in your colonies.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
 
 
     ]
