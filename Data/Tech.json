@@ -2530,7 +2530,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "ammunition:_flechette"
+                    "slug": "ammunition_flechette"
                 }
 
             ],
@@ -2555,7 +2555,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "ammunition:_electrified"
+                    "slug": "ammunition_electrified"
                 }
         ,
                 {
@@ -2609,7 +2609,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "ammunition:_fire_burst"
+                    "slug": "ammunition_fire_burst"
                 }
 
             ],
@@ -2640,7 +2640,7 @@ var jsonTech = {
             ],
             "op_unlock": [
                 {
-                    "slug": "mass-drive_cannon"
+                    "slug": "mass-driver_cannon"
                 }
 
             ],
@@ -3648,7 +3648,7 @@ var jsonTech = {
                 }
         ,
                 {
-                    "slug": "focus:_flames"
+                    "slug": "focus_flames"
                 }
 
             ],
@@ -3673,7 +3673,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "focus:_venom"
+                    "slug": "focus_venom"
                 }
 
             ],
@@ -4741,7 +4741,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "explosives:_electrical"
+                    "slug": "explosives_electrical"
                 }
         ,
                 {

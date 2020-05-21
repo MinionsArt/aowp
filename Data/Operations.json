@@ -802,8 +802,8 @@ var jsonOperations = {
         },
 
         {
-            "slug": "berserker_phermones",
-            "name": "Berserker Phermones",
+            "slug": "berserker_pheromones",
+            "name": "Berserker Pheromones",
             "tier": "II",
             "type": "Strategic Operation(Instant)",
             "description": "Heals all Biological and Cyborg units in the targeted army to full <hp></hp>, and all melee damage dealt is increased by 50% for 1<turn></turn>.",

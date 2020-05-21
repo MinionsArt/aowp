@@ -551,6 +551,7 @@ function showMod(a) {
 
 function showTech(a, b) {
     var modName, description, cost, type, tier, secret = "";
+    var found = false;
     for (j in jsonTech.tech) {
         if (a == jsonTech.tech[j].slug) {
             modName = document.getElementById("techname");
@@ -596,9 +597,13 @@ function showTech(a, b) {
 
             }
             document.getElementById("unlockholder").setAttribute("id", "unlockholder" + a);
+            found = true;
         }
 
 
+    }
+    if (found == false) {
+        console.log("Couldn't find tech: " + a);
     }
 }
 
