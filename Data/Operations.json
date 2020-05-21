@@ -1,26 +1,5 @@
 var jsonOperations = {
-    "operations": [{
-            "slug": "protective_growth",
-            "name": "Protective Growth",
-            "tier": "I",
-            "type": "Tactical Operation(Instant)",
-            "description": "Summon thick roots to protect a friendly ground unit, healing it for 10 <hp></hp> and preventing it from moving for 2 <turn></turn>. <br> While immobilized in this manner, the unit gains +4 <armor></armor> and regenerates 25% of its maximum <hp></hp> per turn.",
-            "energy_cost": "30",
-            "casting": "2 <tacticalPoint></tacticalPoint>",
-
-
-        },
-        {
-            "slug": "primal_override",
-            "name": "Primal Override",
-            "tier": "III",
-            "type": "Tactical Operation(Instant)",
-            "description": "Attempt to <abilityred>Mind Control</abilityred> a non-Mindless or non-Mechanical Tier 1 or Tier II Animal unit with a 8 strength chance. <br> If the target is under the effect of Entangle or Sleep the strength chance increases up to 12. <br> If mind controlled this way, the unit permanently comes under your control. If resisted, apply insanity instead",
-            "energy_cost": "80",
-            "casting": "4 <tacticalPoint></tacticalPoint>",
-
-
-        },
+    "operations": [
 
         {
             "slug": "replicating_restoration",

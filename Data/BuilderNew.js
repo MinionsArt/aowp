@@ -554,6 +554,7 @@
 
  function addModUnlock(a, b) {
      var modUnlockName, modUnlockIcon, modUnlockAbility, j = "";
+     var found = false;
      for (j in jsonMods.mods) {
          if (a == jsonMods.mods[j].slug) {
              if (jsonMods.mods[j].type.includes("Weapon")) {
@@ -603,11 +604,14 @@
                  spa.className = "tooltiptext";
              }
 
-
+             found = true;
 
              // btn.appendChild(tex);
 
          }
+     }
+     if (found == false) {
+         console.log("Couldn't find mod: " + a);
      }
 
  }
@@ -615,6 +619,7 @@
 
  function addOpUnlock(a, b) {
      var opUnlockName, opUnlockIcon, opUnlockAbility, j = "";
+     var found = false;
      for (j in jsonOperations.operations) {
          if (a == jsonOperations.operations[j].slug) {
              opUnlockName = "<titlebrown>" + jsonOperations.operations[j].name + "</titlebrown>";
@@ -669,16 +674,21 @@
              } else {
                  spa.className = "tooltiptext";
              }
+             found = true;
              // btn.appendChild(tex);
 
          }
+     }
+
+     if (found == false) {
+         console.log("Couldn't find operation: " + a);
      }
 
  }
 
  function addUnitUnlock(a, b) {
      var unitUnlockName, unitUnlockIcon, unitUnlockAbility, j = "";
-
+     var found = false;
      for (j in jsonUnits.units) {
 
 
@@ -746,9 +756,15 @@
                  spa.className = "tooltiptext";
              }
              // btn.appendChild(tex);
-
+             found = true;
          }
      }
+
+
+     if (found == false) {
+         console.log("Couldn't find unit: " + a);
+     }
+
 
  }
 

@@ -21,7 +21,7 @@ var jsonMods = {
 
         },
         {
-            "slug": "primal_awareness_amplifier(detector)",
+            "slug": "primal_awareness_amplifier_(detector)",
             "tier": "III",
             "name": "Primal Awareness Amplifier (Detector)",
 
@@ -86,7 +86,7 @@ var jsonMods = {
 
         },
         {
-            "slug": "ocular_implants(detector)",
+            "slug": "ocular_implants_(detector)",
             "tier": "I",
             "name": "Ocular Implants(Detector)",
 
@@ -221,7 +221,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "advanced_target_recognition(detector)",
+            "slug": "advanced_target_recognition_(detector)",
             "tier": "III",
             "name": "Advanced Target Recognition(Detector)",
 
@@ -278,7 +278,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "captains_regalia",
+            "slug": "captain's_regalia",
             "tier": "IX",
             "name": "Capain's Regalia",
 
@@ -300,7 +300,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "heightened_vision(detector)",
+            "slug": "heightened_vision_(detector)",
             "tier": "I",
             "name": "Heightened Vision(Detector)",
 
@@ -433,9 +433,9 @@ var jsonMods = {
 
     },
         {
-            "slug": "psitec_vision_enhancers(detector)",
+            "slug": "psitec_vision_enhancers_(detector)",
             "tier": "III",
-            "name": "PsiTec Vision Enhancers",
+            "name": "PsiTec Vision Enhancers(Detector)",
 
             "type": "Defense Mod - Shields",
             "cost": "5 <tricorium></tricorium>",
@@ -514,7 +514,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "improved_combat_sensors(detector)",
+            "slug": "improved_combat_sensors_(detector)",
             "tier": "II",
             "name": "Improved Combat Sensors(Detector)",
 
@@ -1336,9 +1336,9 @@ var jsonMods = {
 
     },
         {
-            "slug": "statis_pocket_inducer",
+            "slug": "stasis_pocket_inducer",
             "tier": "VII",
-            "name": "Statis Pocket Inducer",
+            "name": "Stasis Pocket Inducer",
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
