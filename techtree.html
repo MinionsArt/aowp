@@ -26,6 +26,9 @@
                 showhide('amazon', 'biochemical', 'laser');
                 showhide2('celestian');
 
+                showhideSoc('amazond', 'amazond5', 'amazond9');
+                showhideSocST('celestiand', 'celestiand7');
+                showhideTree("military");
             });
 
             $("#amazont2").load("/aowp/techcard.html", function() {
@@ -824,6 +827,127 @@
                 showTech("xenoplague_omega_transcendance", "s");
             });
 
+            /// Doctrines----------------------------------------------------------------------------------------------------------------------------------------Doctrines
+
+            $("#amazond").load("/aowp/techcard.html", function() {
+                showTech("amazon_verdant_awakening");
+            });
+
+            $("#amazond5").load("/aowp/techcard.html", function() {
+                showTech("amazon_gaian_stewardship");
+            });
+
+            $("#amazond9").load("/aowp/techcard.html", function() {
+                showTech("amazon_new_eden");
+            });
+            $("#assemblyd").load("/aowp/techcard.html", function() {
+                showTech("assembly_efficient_scavenging");
+            });
+
+            $("#assemblyd5").load("/aowp/techcard.html", function() {
+                showTech("assembly_social_reconstruction");
+            });
+            $("#assemblyd9").load("/aowp/techcard.html", function() {
+                showTech("assembly_universal_reassembly");
+            });
+
+            $("#dvard").load("/aowp/techcard.html", function() {
+                showTech("dvar_exploitation_campaign");
+            });
+
+            $("#dvard5").load("/aowp/techcard.html", function() {
+                showTech("dvar_superior_engineering");
+            });
+            $("#dvard9").load("/aowp/techcard.html", function() {
+                showTech("dvar_planetary_oligarchy");
+            });
+            $("#kirkod").load("/aowp/techcard.html", function() {
+                showTech("kirko_nurturing");
+            });
+
+            $("#kirkod5").load("/aowp/techcard.html", function() {
+                showTech("kirko_perspective");
+            });
+
+            $("#kirkod9").load("/aowp/techcard.html", function() {
+                showTech("kirko_the_new_hive");
+            });
+            $("#syndicated").load("/aowp/techcard.html", function() {
+                showTech("syndicate_diplomatic_niceties");
+            });
+
+            $("#syndicated5").load("/aowp/techcard.html", function() {
+                showTech("syndicate_clandestine_practices");
+            });
+
+            $("#syndicated9").load("/aowp/techcard.html", function() {
+                showTech("syndicate_underhanded_exploitation");
+            });
+            $("#vanguardd").load("/aowp/techcard.html", function() {
+                showTech("vanguard_frontier_policies");
+            });
+
+            $("#vanguardd5").load("/aowp/techcard.html", function() {
+                showTech("vanguard_subjugation_protocols");
+            });
+            $("#vanguardd9").load("/aowp/techcard.html", function() {
+                showTech("vanguard_hegemony");
+            });
+
+            $("#celestiand").load("/aowp/techcard.html", function() {
+                showTech("celestian_celestian_reign");
+            });
+
+            $("#celestiand7").load("/aowp/techcard.html", function() {
+                showTech("celestian_neo_evangelicals");
+            });
+
+            $("#heritord").load("/aowp/techcard.html", function() {
+                showTech("heritor_ancestral_creed");
+            });
+
+            $("#heritord7").load("/aowp/techcard.html", function() {
+                showTech("heritor_sacred_resurgence");
+            });
+
+            $("#prometheand").load("/aowp/techcard.html", function() {
+                showTech("promethean_phoenix_dawn_protocols");
+            });
+
+            $("#prometheand7").load("/aowp/techcard.html", function() {
+                showTech("promethean_nighttide_protocols");
+            });
+            $("#psynumbrad").load("/aowp/techcard.html", function() {
+                showTech("psynumbra_shadows_manifest");
+            });
+
+            $("#psynumbrad7").load("/aowp/techcard.html", function() {
+                showTech("psynumbra_vile_manipulation");
+            });
+
+            $("#synthesisd").load("/aowp/techcard.html", function() {
+                showTech("synthesis_cyber_optimization");
+            });
+
+            $("#synthesisd7").load("/aowp/techcard.html", function() {
+                showTech("synthesis_cyber_society");
+            });
+
+
+            $("#voidtechd").load("/aowp/techcard.html", function() {
+                showTech("voidtech_quantum_gain");
+            });
+
+            $("#voidtechd7").load("/aowp/techcard.html", function() {
+                showTech("voidtech_quantum_leap");
+            });
+            $("#xenoplagued").load("/aowp/techcard.html", function() {
+                showTech("xenoplague_bio-matter_repurposing");
+            });
+
+            $("#xenoplagued7").load("/aowp/techcard.html", function() {
+                showTech("xenoplague_infection_experiments");
+            });
 
             $(".togglelink").click(function() {
                 $(".togglelink").css("color", "white");
@@ -862,7 +986,12 @@
                 $(this).css("text-decoration", "underline");
             });
 
-
+            $(".togglelink3").click(function() {
+                $(".togglelink3").css("color", "white");
+                $(".togglelink3").css("text-decoration", "none");
+                $(this).css("color", "cyan");
+                $(this).css("text-decoration", "underline");
+            });
 
 
 
@@ -881,6 +1010,7 @@
 
 
         });
+
     </script>
 
 
@@ -894,2119 +1024,2568 @@
 
 
     <h1 style=" color: aliceblue; text-align: center">Tech Tree</h1>
+
     <div class="buttons">
-        <a href="#/" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
-        <a href="#/" onclick="showhide('assembly', 'arc', 'firearms');" style="font-size: 20px" class="togglelink"> Assembly </a>
-        <a href="#/" onclick="showhide('dvar', 'firearms', 'explosives');" style="font-size: 20px" class="togglelink"> Dvar </a>
-        <a href="#/" onclick="showhide('kirko', 'biochemical', 'psionics');" style="font-size: 20px" class="togglelink"> Kir'Ko </a>
-        <a href="#/" onclick="" style="font-size: 20px; text-shadow: 0 -1px 10px orange, 2px 1px 4px red;" class="togglelink"> Shakarn </a>
-        <a href="#/" onclick="showhide('syndicate', 'arc', 'psionics');" style="font-size: 20px" class="togglelink"> Syndicate </a>
-        <a href="#/" onclick="showhide('vanguard', 'firearms', 'laser');" style="font-size: 20px" class="togglelink"> Vanguard </a>
+        <a href="#/" onclick="showhideTree('military');" style="font-size: 20px; color: aqua" class="togglelink3"> Military </a>
+        <a href="#/" onclick="showhideTree('society');" style="font-size: 20px" class="togglelink3"> Society </a>
+
+    </div>
+    <br>
+    <br>
+    <div id="military">
+        <div class="buttons">
+            <a href="#/" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
+            <a href="#/" onclick="showhide('assembly', 'arc', 'firearms');" style="font-size: 20px" class="togglelink"> Assembly </a>
+            <a href="#/" onclick="showhide('dvar', 'firearms', 'explosives');" style="font-size: 20px" class="togglelink"> Dvar </a>
+            <a href="#/" onclick="showhide('kirko', 'biochemical', 'psionics');" style="font-size: 20px" class="togglelink"> Kir'Ko </a>
+            <a href="#/" onclick="" style="font-size: 20px; text-shadow: 0 -1px 10px orange, 2px 1px 4px red;" class="togglelink"> Shakarn </a>
+            <a href="#/" onclick="showhide('syndicate', 'arc', 'psionics');" style="font-size: 20px" class="togglelink"> Syndicate </a>
+            <a href="#/" onclick="showhide('vanguard', 'firearms', 'laser');" style="font-size: 20px" class="togglelink"> Vanguard </a>
+
+        </div>
+
+        <br>
+
+        <img src="/aowp/UI/left2.png" width="48px" style="float: left; margin-left: -15px;">
+        <img src="/aowp/UI/right2.png" width="48px" style="float: right;margin-right: -15px;">
+
+        <div class="dragscroll">
+            <canvas id="myCanvas" width="3566 " height="942" style="position: absolute; z-index: 6;  pointer-events: none;"></canvas>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th>IV</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                    <th>VIII</th>
+                    <th>IX</th>
+                    <th>X</th>
+                </tr>
+            </table>
+            <!-- Amazon                                                                ----------------------------------------------------------Amazon -->
+
+            <div class=" techbackground" id="amazon">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="AmazonTech" class="tabletech" style="background-color: rgba(0,50,10,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/amazon.png" width="50px"> Amazon </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="amazont2"></div>
+
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="amazont4"></div>
+
+                        </td>
+                        <td>
+                            <div id="amazont5"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="amazont7"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="amazont9"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <div id="amazont2b"></div>
+
+                        </td>
+                        <td>
+                            <div id="amazont3"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td></td>
+                        <td></td>
+
+                        <td>
+                            <div id="amazont7b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="amazont1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="amazont3b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="amazont5b"></div>
+                        </td>
+                        <td>
+                            <div id="amazont6"></div>
+                        </td>
+                        <td>
+                            <div id="amazont7c"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="amazont9b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!-- Assembly                                                                ----------------------------------------------------------Assembly -->
+
+            <div class="techbackground" id="assembly" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="AssemblyTech" class="tabletech">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/assembly.png" width="50px"> Assembly </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="asst2"></div>
+
+                        </td>
+                        <td>
+                            <div id="asst3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="asst6"></div>
+
+                        </td>
+                        <td>
+                            <div id="asst7"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="asst9"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <div id="asst2b"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="asst4"></div>
+                        </td>
+
+                        <td></td>
+                        <td>
+                            <div id="asst6b"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="asst1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="asst3b"></div>
+                        </td>
+                        <td>
+                            <div id="asst4b"></div>
+                        </td>
+
+                        <td>
+                            <div id="asst5"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="asst7b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="asst9b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!-- Dvar                                                                ----------------------------------------------------------Dvar -->
+
+            <div class="techbackground" id="dvar" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="DvarTech" class="tabletech">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/dvar.png" width="50px"> Dvar </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="dvat2"></div>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="dvat5"></div>
+
+                        </td>
+                        <td>
+                            <div id="dvat6"></div>
+
+                        </td>
+                        <td>
+                            <div id="dvat7"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="dvat9"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <div id="dvat2b"></div>
+
+                        </td>
+                        <td>
+
+                            <div id="dvat3"></div>
+                        </td>
+                        <td>
+                            <div id="dvat4"></div>
+                        </td>
+
+                        <td></td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+                            <div id="dvat8"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="dvat1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="dvat3b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="dvat5b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="dvat7b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="dvat9b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <!-- Kirko                                                                ----------------------------------------------------------Kirko -->
+
+            <div class="techbackground" id="kirko" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="kirkoTech" class="tabletech">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/kirko.png" width="50px"> Kir'Ko </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="kirt3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="kirt5"></div>
+
+                        </td>
+                        <td>
+                            <div id="kirt6"></div>
+
+                        </td>
+                        <td>
+                            <div id="kirt7"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="kirt9"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <div id="kirt2"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="kirt4"></div>
+                        </td>
+
+                        <td></td>
+                        <td>
+                            <div id="kirt6b"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="kirt1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="kirt3b"></div>
+                        </td>
+                        <td>
+                            <div id="kirt4b"></div>
+                        </td>
+
+                        <td>
+                            <div id="kirt5b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="kirt7b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="kirt9b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <!-- Syndicate                                                                ----------------------------------------------------------Syndicate -->
+
+            <div class="techbackground" id="syndicate" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="SyndTech" class="tabletech">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/syndicate.png" width="50px"> Syndicate </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="syt2"></div>
+
+                        </td>
+                        <td>
+                            <div id="syt3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="syt5"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="syt7"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="syt9"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <div id="syt2b"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="syt5b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="syt1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="syt3b"></div>
+                        </td>
+                        <td>
+                            <div id="syt4"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="syt6"></div>
+                        </td>
+                        <td>
+                            <div id="syt7b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="syt9b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <!-- Vanguard                                                                ----------------------------------------------------------Vanguard -->
+
+            <div class="techbackground" id="vanguard" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="VanguardTech" class="tabletech">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/vanguard.png" width="50px"> Vanguard </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="vant2"></div>
+
+                        </td>
+                        <td>
+                            <div id="vant3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+                            <div id="vant5"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="vant7"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="vant9"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="vant3b"></div>
+
+                        </td>
+                        <td>
+                            <div id="vant4"></div>
+                        </td>
+
+                        <td></td>
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="vant7b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="vant1"></div>
+
+                        </td>
+
+
+                        <td>
+                            <div id="vant2b"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="vant4b"></div>
+                        </td>
+
+                        <td>
+                        </td>
+                        <td>
+                            <div id="vant6"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="vant8"></div>
+                        </td>
+                        <td>
+                            <div id="vant9b"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!-- Biochemical                                                                ----------------------------------------------------------Biochemical -->
+            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+
+
+                <line x1="1000" y1="50" x2="1000" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="640" y1="50" x2="640" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="1640" y1="50" x2="1640" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+                <line x1="2340" y1="50" x2="2340" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+            </svg>
+
+            <div class="techbackground" id="biochemical">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                    <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+                </svg>
+                <table id="BioTech" class="tabletech" style="background-color: rgba(20,50,0,0.3)">
+
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/biochemical.png" width="50px"> Biochemical </p>
+                        </td>
+                        <td>
+                            <div id="biot1"></div>
+
+                        </td>
+                        <td>
+                            <div id="biot2"></div>
+
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="biot4"></div>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="biot6"></div>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="biot8"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+
+
+
+            <!-- Laser                                                                ----------------------------------------------------------Laser -->
+
+
+
+            <div class="techbackground" id="laser">
+                <table id="LaserTech" class="tabletech" style="background-color: rgba(50,0,0,0.3)">
+
+                    <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                        <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+                    </svg>
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/thermal.png" width="50px"> Laser </p>
+                        </td>
+                        <td>
+                            <div id="last1"></div>
+
+                        </td>
+                        <td>
+                            <div id="last2"></div>
+
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="last4"></div>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="last6"></div>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="last8"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+
+
+
+            <!-- firearms                                                                ----------------------------------------------------------firearms -->
+
+
+
+            <div class="techbackground" id="firearms" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                    <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+                </svg>
+                <table id="LaserTech" class="tabletech">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/kinetic.png" width="50px"> Firearms </p>
+                        </td>
+                        <td>
+                            <div id="firt1"></div>
+
+                        </td>
+                        <td>
+                            <div id="firt2"></div>
+
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="firt4"></div>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="firt6"></div>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="firt8"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!-- explosives                                                                ----------------------------------------------------------explosives -->
+
+
+
+            <div class="techbackground" id="explosives">
+                <table id="exTech" class="tabletech" style="background-color: rgba(50,0,0,0.3)">
+
+                    <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                        <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+                    </svg>
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/kinetic.png" width="50px"> Explosive </p>
+                        </td>
+                        <td>
+                            <div id="ext1"></div>
+
+                        </td>
+                        <td>
+                            <div id="ext2"></div>
+
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="ext4"></div>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="ext6"></div>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="ext8"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+            <!-- arc                                                                ----------------------------------------------------------arc -->
+
+
+
+            <div class="techbackground" id="arc" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                    <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+                </svg>
+                <table id="LaserTech" class="tabletech">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/arc.png" width="50px"> Arc </p>
+                        </td>
+                        <td>
+                            <div id="arct1"></div>
+                        </td>
+                        <td>
+                            <div id="arct2"></div>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="arct4"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="arct6"></div>
+                        </td>
+                        <td>
+
+
+
+                        </td>
+                        <td>
+                            <div id="arct8"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+
+
+                    </tr>
+
+
+                </table>
+            </div>
+
+            <div class="techbackground" id="psionics">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
+
+                    <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+
+                </svg>
+                <table id="PsiTech" class="tabletech" style="background-color: rgba(20,50,0,0.3)">
+
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/psionic.png" width="50px"> Psionics </p>
+                        </td>
+                        <td>
+                            <div id="psit1"></div>
+
+                        </td>
+                        <td>
+                            <div id="psit2"></div>
+
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="psit4"></div>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="psit6"></div>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="psit8"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+            <br>
+
+
+
+
+
+            <br><br>
+
+            <div class="buttons" style="position: sticky">
+                <a href="#/" onclick="showhide2('celestian');" style="font-size: 20px ; color: aqua; text-decoration: underline;" class="togglelink2"> Celestian </a>
+                <a href="#/" onclick="showhide2('heritor');" style="font-size: 20px; text-shadow: 0 0 20px blue, 2px 1px 4px cyan;" class="togglelink2"> Heritor </a>
+                <a href="#/" onclick="showhide2('promethean');" style="font-size: 20px" class="togglelink2">Promethean </a>
+                <a href="#/" onclick="showhide2('psynumbra');" style="font-size: 20px" class="togglelink2"> Psynumbra </a>
+                <a href="#/" onclick="showhide2('synthesis');" style="font-size: 20px" class="togglelink2"> Synthesis </a>
+                <a href="#/" onclick="showhide2('voidtech');" style="font-size: 20px" class="togglelink2"> Voidtech </a>
+                <a href="#/" onclick="showhide2('xenoplague');" style="font-size: 20px" class="togglelink2"> Xenoplague </a>
+
+
+
+            </div>
+
+            <br>
+            <div class="techbackground" id="synthesis">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="Synthesis" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/synthesis_unit.png" width="50px"> Synthesis </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="syntht3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="syntht5"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="syntht8"></div>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <div id="syntht2"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="syntht5b"></div>
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="syntht7"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="syntht10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="syntht1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="syntht3b"></div>
+                        </td>
+                        <td>
+                            <div id="syntht4"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="syntht6"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="syntht9"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="techbackground" id="psynumbra">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="psynumtech" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/psynumbra_unit.png" width="50px"> Psynumbra </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="psynt3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="psynt6"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="psynt10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="psynt3b"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="psynt5"></div>
+                        </td>
+                        <td>
+                            <div id="psynt6b"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="psynt8"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="psynt10b"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="psynt1"></div>
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="psynt4"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="psynt7"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="psynt9"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="techbackground" id="heritor">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="hertech" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/heritor_unit.png" width="50px"> Heritor </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="het3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="het5"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="het8"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="psynt10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+
+                            <div id="het2"></div>
+                        </td>
+                        <td>
+
+                            <div id="het3b"></div>
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="het5b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="het8b"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="het10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="het1"></div>
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="het3c"></div>
+                        </td>
+                        <td>
+                            <div id="het4"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="het6"></div>
+                        </td>
+                        <td>
+                            <div id="het7"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="het9"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="techbackground" id="celestian">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="celtech" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/celestian_unit.png" width="50px"> Celestian </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="cet3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+                            <div id="cet5"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="cet10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="cet3b"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="cet5b"></div>
+                        </td>
+                        <td>
+                            <div id="cet6"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="cet8"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="cet10b"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="cet1"></div>
+                        </td>
+
+
+                        <td>
+                            <div id="cet2"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="cet4"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="cet6"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="cet9"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="techbackground" id="voidtech">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="VoidtechT" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/voidtech_unit.png" width="50px"> Voidtech </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="voit3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="voit5"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="voit8"></div>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="voit3b"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="voit5b"></div>
+                        </td>
+                        <td>
+                            <div id="voit6"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+                            <div id="voit8b"></div>
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="voit10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="voit1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="voit3c"></div>
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="voit5c"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="voit7"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="voit9"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="techbackground" id="xenoplague">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="xenoT" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/xenoplague_unit.png" width="50px"> Xenoplague </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="xet4"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+                            <div id="xet6"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="xet3"></div>
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="xet5"></div>
+                        </td>
+                        <td>
+                            <div id="xet6b"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+                            <div id="xet8"></div>
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="xet10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="xet1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="xet3b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="xet5b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="xet7"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="xet9"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="techbackground" id="promethean" style="display: none">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+                </svg>
+                <table id="prometheantable" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/promethean_unit.png" width="50px"> Promethean </p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="promt3"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="promt5"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td>
+                            <div id="promt8"></div>
+
+
+                        </td>
+                        <td>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td></td>
+                        <td>
+                            <div id="promt2"></div>
+
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="promt5b"></div>
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="promt7"></div>
+                        </td>
+                        <td>
+
+
+                        </td>
+                        <td></td>
+
+                        <td>
+                            <div id="promt10"></div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="promt1"></div>
+
+                        </td>
+
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <div id="promt3b"></div>
+                        </td>
+                        <td>
+                            <div id="promt4"></div>
+                        </td>
+
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="promt7b"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="promt9"></div>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+
+
 
     </div>
 
-    <img src="/aowp/UI/left2.png" width="48px" style="float: left; margin-left: -15px;">
-    <img src="/aowp/UI/right2.png" width="48px" style="float: right;margin-right: -15px;">
+    <div id="society">
+        <div class="buttons">
+            <a href="#/" onclick="showhideSoc('amazond', 'amazond5', 'amazond9');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
+            <a href="#/" onclick="showhideSoc('assemblyd', 'assemblyd5', 'assembly9');" style="font-size: 20px" class="togglelink"> Assembly </a>
+            <a href="#/" onclick="showhideSoc('dvard', 'dvard5', 'dvard9');" style="font-size: 20px" class="togglelink"> Dvar </a>
+            <a href="#/" onclick="showhideSoc('kirkod', 'kirkod5', 'kirkod9');" style="font-size: 20px" class="togglelink"> Kir'Ko </a>
+            <a href="#/" onclick="" style="font-size: 20px; text-shadow: 0 -1px 10px orange, 2px 1px 4px red;" class="togglelink"> Shakarn </a>
+            <a href="#/" onclick="showhideSoc('syndicated', 'syndicated5','syndicated9');" style="font-size: 20px" class="togglelink"> Syndicate </a>
+            <a href="#/" onclick="showhideSoc('vanguardd','vanguardd5', 'vanguardd9');" style="font-size: 20px" class="togglelink"> Vanguard </a>
 
-    <div class="dragscroll">
-        <canvas id="myCanvas" width="3566 " height="942" style="position: absolute; z-index: 6;  pointer-events: none;"></canvas>
-        <table>
-            <tr>
-                <th></th>
-                <th>I</th>
-                <th>II</th>
-                <th>III</th>
-                <th>IV</th>
-                <th>V</th>
-                <th>VI</th>
-                <th>VII</th>
-                <th>VIII</th>
-                <th>IX</th>
-                <th>X</th>
-            </tr>
-        </table>
-        <!-- Amazon                                                                ----------------------------------------------------------Amazon -->
-
-        <div class=" techbackground" id="amazon">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="AmazonTech" class="tabletech" style="background-color: rgba(0,50,10,0.3)">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/amazon.png" width="50px"> Amazon </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="amazont2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="amazont4"></div>
-
-                    </td>
-                    <td>
-                        <div id="amazont5"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="amazont7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="amazont9"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-                        <div id="amazont2b"></div>
-
-                    </td>
-                    <td>
-                        <div id="amazont3"></div>
-
-                    </td>
-                    <td></td>
-
-                    <td></td>
-                    <td></td>
-
-                    <td>
-                        <div id="amazont7b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="amazont1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="amazont3b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="amazont5b"></div>
-                    </td>
-                    <td>
-                        <div id="amazont6"></div>
-                    </td>
-                    <td>
-                        <div id="amazont7c"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="amazont9b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-            </table>
         </div>
-
-        <!-- Assembly                                                                ----------------------------------------------------------Assembly -->
-
-        <div class="techbackground" id="assembly" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="AssemblyTech" class="tabletech">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/assembly.png" width="50px"> Assembly </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="asst2"></div>
-
-                    </td>
-                    <td>
-                        <div id="asst3"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="asst6"></div>
-
-                    </td>
-                    <td>
-                        <div id="asst7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="asst9"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-                        <div id="asst2b"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="asst4"></div>
-                    </td>
-
-                    <td></td>
-                    <td>
-                        <div id="asst6b"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="asst1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="asst3b"></div>
-                    </td>
-                    <td>
-                        <div id="asst4b"></div>
-                    </td>
-
-                    <td>
-                        <div id="asst5"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="asst7b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="asst9b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-        <!-- Dvar                                                                ----------------------------------------------------------Dvar -->
-
-        <div class="techbackground" id="dvar" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="DvarTech" class="tabletech">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/dvar.png" width="50px"> Dvar </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="dvat2"></div>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="dvat5"></div>
-
-                    </td>
-                    <td>
-                        <div id="dvat6"></div>
-
-                    </td>
-                    <td>
-                        <div id="dvat7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="dvat9"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-                        <div id="dvat2b"></div>
-
-                    </td>
-                    <td>
-
-                        <div id="dvat3"></div>
-                    </td>
-                    <td>
-                        <div id="dvat4"></div>
-                    </td>
-
-                    <td></td>
-                    <td>
-
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-
-                        <div id="dvat8"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="dvat1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="dvat3b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="dvat5b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="dvat7b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="dvat9b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-        <!-- Kirko                                                                ----------------------------------------------------------Kirko -->
-
-        <div class="techbackground" id="kirko" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="kirkoTech" class="tabletech">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/kirko.png" width="50px"> Kir'Ko </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="kirt3"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="kirt5"></div>
-
-                    </td>
-                    <td>
-                        <div id="kirt6"></div>
-
-                    </td>
-                    <td>
-                        <div id="kirt7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="kirt9"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-                        <div id="kirt2"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="kirt4"></div>
-                    </td>
-
-                    <td></td>
-                    <td>
-                        <div id="kirt6b"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="kirt1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="kirt3b"></div>
-                    </td>
-                    <td>
-                        <div id="kirt4b"></div>
-                    </td>
-
-                    <td>
-                        <div id="kirt5b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="kirt7b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="kirt9b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-
-        <!-- Syndicate                                                                ----------------------------------------------------------Syndicate -->
-
-        <div class="techbackground" id="syndicate" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="SyndTech" class="tabletech">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/syndicate.png" width="50px"> Syndicate </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="syt2"></div>
-
-                    </td>
-                    <td>
-                        <div id="syt3"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="syt5"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="syt7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="syt9"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-                        <div id="syt2b"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="syt5b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="syt1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="syt3b"></div>
-                    </td>
-                    <td>
-                        <div id="syt4"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="syt6"></div>
-                    </td>
-                    <td>
-                        <div id="syt7b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="syt9b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-
-        <!-- Vanguard                                                                ----------------------------------------------------------Vanguard -->
-
-        <div class="techbackground" id="vanguard" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="VanguardTech" class="tabletech">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/vanguard.png" width="50px"> Vanguard </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="vant2"></div>
-
-                    </td>
-                    <td>
-                        <div id="vant3"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-                        <div id="vant5"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="vant7"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="vant9"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="vant3b"></div>
-
-                    </td>
-                    <td>
-                        <div id="vant4"></div>
-                    </td>
-
-                    <td></td>
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="vant7b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="vant1"></div>
-
-                    </td>
-
-
-                    <td>
-                        <div id="vant2b"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="vant4b"></div>
-                    </td>
-
-                    <td>
-                    </td>
-                    <td>
-                        <div id="vant6"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="vant8"></div>
-                    </td>
-                    <td>
-                        <div id="vant9b"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-        <!-- Biochemical                                                                ----------------------------------------------------------Biochemical -->
-        <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
-
-
-
-            <line x1="1000" y1="50" x2="1000" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
-            <line x1="640" y1="50" x2="640" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
-            <line x1="1640" y1="50" x2="1640" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
-            <line x1="2340" y1="50" x2="2340" y2="148" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-        </svg>
-
-        <div class="techbackground" id="biochemical">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
-
-                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-
-
-            </svg>
-            <table id="BioTech" class="tabletech" style="background-color: rgba(20,50,0,0.3)">
-
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/biochemical.png" width="50px"> Biochemical </p>
-                    </td>
-                    <td>
-                        <div id="biot1"></div>
-
-                    </td>
-                    <td>
-                        <div id="biot2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="biot4"></div>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="biot6"></div>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="biot8"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-
-            </table>
-        </div>
-
-
-
-        <!-- Laser                                                                ----------------------------------------------------------Laser -->
-
-
-
-        <div class="techbackground" id="laser">
-            <table id="LaserTech" class="tabletech" style="background-color: rgba(50,0,0,0.3)">
-
-                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
-
-                    <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-
-
-                </svg>
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/thermal.png" width="50px"> Laser </p>
-                    </td>
-                    <td>
-                        <div id="last1"></div>
-
-                    </td>
-                    <td>
-                        <div id="last2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="last4"></div>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="last6"></div>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="last8"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-
-            </table>
-        </div>
-
-
-
-        <!-- firearms                                                                ----------------------------------------------------------firearms -->
-
-
-
-        <div class="techbackground" id="firearms" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
-
-                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-
-
-            </svg>
-            <table id="LaserTech" class="tabletech">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/kinetic.png" width="50px"> Firearms </p>
-                    </td>
-                    <td>
-                        <div id="firt1"></div>
-
-                    </td>
-                    <td>
-                        <div id="firt2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="firt4"></div>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="firt6"></div>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="firt8"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-        <!-- explosives                                                                ----------------------------------------------------------explosives -->
-
-
-
-        <div class="techbackground" id="explosives">
-            <table id="exTech" class="tabletech" style="background-color: rgba(50,0,0,0.3)">
-
-                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
-
-                    <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-
-
-                </svg>
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/kinetic.png" width="50px"> Explosive </p>
-                    </td>
-                    <td>
-                        <div id="ext1"></div>
-
-                    </td>
-                    <td>
-                        <div id="ext2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="ext4"></div>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="ext6"></div>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="ext8"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-
-            </table>
-        </div>
-        <!-- arc                                                                ----------------------------------------------------------arc -->
-
-
-
-        <div class="techbackground" id="arc" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
-
-                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-
-
-            </svg>
-            <table id="LaserTech" class="tabletech">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/arc.png" width="50px"> Arc </p>
-                    </td>
-                    <td>
-                        <div id="arct1"></div>
-                    </td>
-                    <td>
-                        <div id="arct2"></div>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="arct4"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="arct6"></div>
-                    </td>
-                    <td>
-
-
-
-                    </td>
-                    <td>
-                        <div id="arct8"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-
-
-                </tr>
-
-
-            </table>
-        </div>
-
-        <div class="techbackground" id="psionics">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -2">
-
-                <line x1="400" y1="50" x2="2700" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-
-
-            </svg>
-            <table id="PsiTech" class="tabletech" style="background-color: rgba(20,50,0,0.3)">
-
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/psionic.png" width="50px"> Psionics </p>
-                    </td>
-                    <td>
-                        <div id="psit1"></div>
-
-                    </td>
-                    <td>
-                        <div id="psit2"></div>
-
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <div id="psit4"></div>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="psit6"></div>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="psit8"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                </tr>
-
-
-            </table>
-        </div>
-        <br>
-
-
-
-
 
         <br><br>
 
-        <div class="buttons" style="position: sticky">
-            <a href="#/" onclick="showhide2('celestian');" style="font-size: 20px ; color: aqua; text-decoration: underline;" class="togglelink2"> Celestian </a>
-            <a href="#/" onclick="showhide2('heritor');" style="font-size: 20px; text-shadow: 0 0 20px blue, 2px 1px 4px cyan;" class="togglelink2"> Heritor </a>
-            <a href="#/" onclick="showhide2('promethean');" style="font-size: 20px" class="togglelink2">Promethean </a>
-            <a href="#/" onclick="showhide2('psynumbra');" style="font-size: 20px" class="togglelink2"> Psynumbra </a>
-            <a href="#/" onclick="showhide2('synthesis');" style="font-size: 20px" class="togglelink2"> Synthesis </a>
-            <a href="#/" onclick="showhide2('voidtech');" style="font-size: 20px" class="togglelink2"> Voidtech </a>
-            <a href="#/" onclick="showhide2('xenoplague');" style="font-size: 20px" class="togglelink2"> Xenoplague </a>
 
 
+        <img src="/aowp/UI/left2.png" width="48px" style="float: left; margin-left: -15px;">
+        <img src="/aowp/UI/right2.png" width="48px" style="float: right;margin-right: -15px;">
 
-        </div>
-
-        <br>
-        <div class="techbackground" id="synthesis">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="Synthesis" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
-
+        <div class="dragscroll">
+            <canvas id="myCanvas" width="3566 " height="942" style="position: absolute; z-index: 6;  pointer-events: none;"></canvas>
+            <table>
                 <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/synthesis_unit.png" width="50px"> Synthesis </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="syntht3"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="syntht5"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="syntht8"></div>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
+                    <th></th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th>IV</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                    <th>VIII</th>
+                    <th>IX</th>
+                    <th>X</th>
                 </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-                        <div id="syntht2"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="syntht5b"></div>
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="syntht7"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="syntht10"></div>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="syntht1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="syntht3b"></div>
-                    </td>
-                    <td>
-                        <div id="syntht4"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="syntht6"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="syntht9"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-
             </table>
-        </div>
+            <!-- Amazon                                                                ----------------------------------------------------------Amazon -->
+
+            <div class=" techbackground">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+
+
+                </svg>
+                <table id="AmazonTech" class="tabletech" style="background-color: rgba(0,50,10,0.3)">
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Text/doctrine.png" width="50px"> Doctrine </p>
+                        </td>
+                        <td>
+                            <div id="amazond"></div>
+                            <div id="assemblyd"></div>
+                            <div id="dvard"></div>
+                            <div id="kirkod"></div>
+                            <div id="syndicated"></div>
+                            <div id="vanguardd"></div>
+                        </td>
+
+                        <td>
+                        </td>
+
+                        <td>
+                            <div id="celestiand"></div>
+                            <div id="heritord"></div>
+                            <div id="psynumbrad"></div>
+                            <div id="prometheand"></div>
+                            <div id="voidtechd"></div>
+
+                            <div id="synthesisd"></div>
+                            <div id="xenoplagued"></div>
+                        </td>
 
-        <div class="techbackground" id="psynumbra">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                        <td>
 
-            </svg>
-            <table id="psynumtech" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+                        </td>
+                        <td>
+                            <div id="amazond5"></div>
+                            <div id="assemblyd5"></div>
+                            <div id="dvard5"></div>
+                            <div id="kirkod5"></div>
+                            <div id="syndicated5"></div>
+                            <div id="vanguardd5"></div>
 
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/psynumbra_unit.png" width="50px"> Psynumbra </p>
-                    </td>
-                    <td>
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
 
+                        </td>
+                        <td>
+                            <div id="celestiand7"></div>
+                            <div id="heritord7"></div>
+                            <div id="psynumbrad7"></div>
+                            <div id="prometheand7"></div>
+                            <div id="synthesisd7"></div>
+                            <div id="voidtechd7"></div>
 
-                    </td>
-                    <td>
-                        <div id="psynt3"></div>
-                    </td>
-                    <td>
+                            <div id="xenoplagued7"></div>
+                        </td>
+                        <td>
 
 
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                            <div id="amazond9"></div>
+                            <div id="assemblyd9"></div>
+                            <div id="dvard9"></div>
+                            <div id="kirkod9"></div>
+                            <div id="syndicated9"></div>
+                            <div id="vanguardd9"></div>
 
+                        </td>
 
-                    </td>
-                    <td>
-                        <div id="psynt6"></div>
+                    </tr>
 
-                    </td>
-                    <td>
+                </table>
+            </div>
+            <br><br>
+            <div class="buttons" style="position: sticky">
+                <a href="#/" onclick="showhideSocST('celestiand', 'celestiand7');" style="font-size: 20px ; color: aqua; text-decoration: underline;" class="togglelink2"> Celestian </a>
+                <a href="#/" onclick="showhideSocST('heritord', 'heritord7');" style="font-size: 20px; text-shadow: 0 0 20px blue, 2px 1px 4px cyan;" class="togglelink2"> Heritor </a>
+                <a href="#/" onclick="showhideSocST('prometheand', prometheand7');" style="font-size: 20px" class="togglelink2">Promethean </a>
+                <a href="#/" onclick="showhideSocST('psynumbrad', 'psynumbrad7');" style="font-size: 20px" class="togglelink2"> Psynumbra </a>
+                <a href="#/" onclick="showhideSocST('synthesisd', 'synthesisd7');" style="font-size: 20px" class="togglelink2"> Synthesis </a>
+                <a href="#/" onclick="showhideSocST('voidtechd', 'voidtechd7');" style="font-size: 20px" class="togglelink2"> Voidtech </a>
+                <a href="#/" onclick="showhideSocST('xenoplagued', 'xenoplagued7');" style="font-size: 20px" class="togglelink2"> Xenoplague </a>
 
 
-                    </td>
-                    <td>
 
+            </div>
+            <br>
+            <!-- Econ                                                                ----------------------------------------------------------Econ -->
 
-                    </td>
-                    <td>
+            <div class="techbackground">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
 
 
-                    </td>
-                    <td>
-                        <div id="psynt10"></div>
-                    </td>
+                </svg>
+                <table id="AssemblyTech" class="tabletech">
 
-                </tr>
-                <tr>
-                    <td></td>
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/assembly.png" width="50px"> Economy </p>
+                        </td>
+                        <td>
 
-                    <td></td>
-                    <td>
+                        </td>
+                        <td>
+                            <div id="asst2"></div>
 
+                        </td>
+                        <td>
+                            <div id="asst3"></div>
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
-                        <div id="psynt3b"></div>
 
-                    </td>
-                    <td></td>
+                        </td>
+                        <td>
 
-                    <td>
-                        <div id="psynt5"></div>
-                    </td>
-                    <td>
-                        <div id="psynt6b"></div>
-                    </td>
 
-                    <td>
+                        </td>
+                        <td>
+                            <div id="asst6"></div>
 
-                    </td>
-                    <td>
-                        <div id="psynt8"></div>
+                        </td>
+                        <td>
+                            <div id="asst7"></div>
 
-                    </td>
-                    <td></td>
+                        </td>
+                        <td>
 
-                    <td>
-                        <div id="psynt10b"></div>
-                    </td>
 
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="psynt1"></div>
-                    </td>
+                        </td>
+                        <td>
+                            <div id="asst9"></div>
 
+                        </td>
+                        <td>
 
-                    <td>
 
-                    </td>
+                        </td>
 
-                    <td>
+                    </tr>
+                    <tr>
+                        <td></td>
 
-                    </td>
-                    <td>
-                        <div id="psynt4"></div>
-                    </td>
+                        <td></td>
+                        <td>
+                            <div id="asst2b"></div>
 
-                    <td>
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
 
-                    </td>
-                    <td>
-                        <div id="psynt7"></div>
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                            <div id="asst4"></div>
+                        </td>
 
-                    </td>
-                    <td>
-                        <div id="psynt9"></div>
-                    </td>
-                    <td>
+                        <td></td>
+                        <td>
+                            <div id="asst6b"></div>
+                        </td>
 
-                    </td>
-                </tr>
+                        <td>
 
-            </table>
-        </div>
+                        </td>
+                        <td>
 
-        <div class="techbackground" id="heritor">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
 
-            </svg>
-            <table id="hertech" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="asst1"></div>
 
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/heritor_unit.png" width="50px"> Heritor </p>
-                    </td>
-                    <td>
+                        </td>
 
-                    </td>
-                    <td>
 
+                        <td>
 
-                    </td>
-                    <td>
-                        <div id="het3"></div>
-                    </td>
-                    <td>
+                        </td>
 
+                        <td>
+                            <div id="asst3b"></div>
+                        </td>
+                        <td>
+                            <div id="asst4b"></div>
+                        </td>
 
-                    </td>
-                    <td>
-                        <div id="het5"></div>
+                        <td>
+                            <div id="asst5"></div>
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                            <div id="asst7b"></div>
+                        </td>
+                        <td>
 
+                        </td>
+                        <td>
+                            <div id="asst9b"></div>
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="asst1"></div>
 
-                    </td>
-                    <td>
-                        <div id="het8"></div>
+                        </td>
 
-                    </td>
-                    <td>
 
+                        <td>
 
-                    </td>
-                    <td>
-                        <div id="psynt10"></div>
-                    </td>
+                        </td>
 
-                </tr>
-                <tr>
-                    <td></td>
+                        <td>
+                            <div id="asst3b"></div>
+                        </td>
+                        <td>
+                            <div id="asst4b"></div>
+                        </td>
 
-                    <td></td>
-                    <td>
+                        <td>
+                            <div id="asst5"></div>
+                        </td>
+                        <td>
 
-                        <div id="het2"></div>
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                            <div id="asst7b"></div>
+                        </td>
+                        <td>
 
-                        <div id="het3b"></div>
-                    </td>
-                    <td></td>
+                        </td>
+                        <td>
+                            <div id="asst9b"></div>
+                        </td>
+                        <td>
 
-                    <td>
-                        <div id="het5b"></div>
-                    </td>
-                    <td>
 
-                    </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="asst1"></div>
 
-                    <td>
+                        </td>
 
-                    </td>
-                    <td>
-                        <div id="het8b"></div>
 
-                    </td>
-                    <td></td>
+                        <td>
 
-                    <td>
-                        <div id="het10"></div>
-                    </td>
+                        </td>
 
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="het1"></div>
-                    </td>
+                        <td>
+                            <div id="asst3b"></div>
+                        </td>
+                        <td>
+                            <div id="asst4b"></div>
+                        </td>
 
+                        <td>
+                            <div id="asst5"></div>
+                        </td>
+                        <td>
 
-                    <td>
+                        </td>
+                        <td>
+                            <div id="asst7b"></div>
+                        </td>
+                        <td>
 
-                    </td>
+                        </td>
+                        <td>
+                            <div id="asst9b"></div>
+                        </td>
+                        <td>
 
-                    <td>
-                        <div id="het3c"></div>
-                    </td>
-                    <td>
-                        <div id="het4"></div>
-                    </td>
 
-                    <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="techbackground" id="synthesis">
+                <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
+                    <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                    <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
 
-                    </td>
-                    <td>
-                        <div id="het6"></div>
-                    </td>
-                    <td>
-                        <div id="het7"></div>
-                    </td>
-                    <td>
+                </svg>
+                <table id="Synthesis" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
 
-                    </td>
-                    <td>
-                        <div id="het9"></div>
-                    </td>
-                    <td>
+                    <tr>
+                        <td>
+                            <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/synthesis_unit.png" width="50px"> Operations </p>
+                        </td>
+                        <td>
 
-                    </td>
-                </tr>
+                        </td>
+                        <td>
 
-            </table>
-        </div>
 
-        <div class="techbackground" id="celestian">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
+                        </td>
+                        <td>
+                            <div id="syntht3"></div>
+                        </td>
+                        <td>
 
-            </svg>
-            <table id="celtech" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
 
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/celestian_unit.png" width="50px"> Celestian </p>
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                            <div id="syntht5"></div>
 
-                    </td>
-                    <td>
+                        </td>
+                        <td>
 
 
-                    </td>
-                    <td>
-                        <div id="cet3"></div>
-                    </td>
-                    <td>
+                        </td>
+                        <td>
 
 
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                            <div id="syntht8"></div>
 
-                        <div id="cet5"></div>
-                    </td>
-                    <td>
 
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
 
+                        </td>
 
-                    </td>
-                    <td>
+                    </tr>
 
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="syntht1"></div>
 
-                    </td>
-                    <td>
+                        </td>
 
 
-                    </td>
-                    <td>
-                        <div id="cet10"></div>
-                    </td>
+                        <td>
 
-                </tr>
-                <tr>
-                    <td></td>
+                        </td>
 
-                    <td></td>
-                    <td>
+                        <td>
+                            <div id="syntht3b"></div>
+                        </td>
+                        <td>
+                            <div id="syntht4"></div>
+                        </td>
 
+                        <td>
 
-                    </td>
-                    <td>
-                        <div id="cet3b"></div>
+                        </td>
+                        <td>
+                            <div id="syntht6"></div>
+                        </td>
+                        <td>
 
-                    </td>
-                    <td></td>
+                        </td>
+                        <td>
 
-                    <td>
-                        <div id="cet5b"></div>
-                    </td>
-                    <td>
-                        <div id="cet6"></div>
-                    </td>
+                        </td>
+                        <td>
+                            <div id="syntht9"></div>
+                        </td>
+                        <td>
 
-                    <td>
+                        </td>
+                    </tr>
 
-                    </td>
-                    <td>
-                        <div id="cet8"></div>
+                </table>
+            </div>
 
-                    </td>
-                    <td></td>
 
-                    <td>
-                        <div id="cet10b"></div>
-                    </td>
 
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="cet1"></div>
-                    </td>
-
-
-                    <td>
-                        <div id="cet2"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="cet4"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="cet6"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="cet9"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-        <div class="techbackground" id="voidtech">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="VoidtechT" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/voidtech_unit.png" width="50px"> Voidtech </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="voit3"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="voit5"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="voit8"></div>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="voit3b"></div>
-
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="voit5b"></div>
-                    </td>
-                    <td>
-                        <div id="voit6"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-
-                        <div id="voit8b"></div>
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="voit10"></div>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="voit1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="voit3c"></div>
-                    </td>
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="voit5c"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="voit7"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="voit9"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-        <div class="techbackground" id="xenoplague">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="xenoT" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/UnitTypes/xenoplague_unit.png" width="50px"> Xenoplague </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="xet4"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-                        <div id="xet6"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="xet3"></div>
-
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="xet5"></div>
-                    </td>
-                    <td>
-                        <div id="xet6b"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-
-                        <div id="xet8"></div>
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="xet10"></div>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="xet1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="xet3b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="xet5b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="xet7"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="xet9"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-
-        <div class="techbackground" id="promethean" style="display: none">
-            <svg height="1000" width="3000" style="position:absolute; float: left; z-index: -1">
-                <line x1="400" y1="240" x2="3000" y2="240" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="240" x2="640" y2="50" x3="650" y3="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="50" x2="3300" y2="50" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="640" y1="150" x2="650" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-                <line x1="1000" y1="50" x2="1000" y2="150" style="stroke:rgb(220,220,255);stroke-width:2" />
-
-            </svg>
-            <table id="prometheantable" class="tabletech" style="background-color: rgba(50,50,0,0.3)">
-
-                <tr>
-                    <td>
-                        <p style="font-size: 20px;padding: 10px;   font-family: 'Duru Sans', sans-serif;   text-transform: uppercase;"><img src="/aowp/Icons/Passives/promethean_unit.png" width="50px"> Promethean </p>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="promt3"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="promt5"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td>
-                        <div id="promt8"></div>
-
-
-                    </td>
-                    <td>
-
-
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-
-                    <td></td>
-                    <td>
-                        <div id="promt2"></div>
-
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="promt5b"></div>
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="promt7"></div>
-                    </td>
-                    <td>
-
-
-                    </td>
-                    <td></td>
-
-                    <td>
-                        <div id="promt10"></div>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div id="promt1"></div>
-
-                    </td>
-
-
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <div id="promt3b"></div>
-                    </td>
-                    <td>
-                        <div id="promt4"></div>
-                    </td>
-
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="promt7b"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <div id="promt9"></div>
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-
-            </table>
         </div>
 
 
 
-        <div id="footer" style="height: 50px">
-        </div>
     </div>
 
 
-</body></html>
+</body>
+
+</html>

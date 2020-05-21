@@ -292,6 +292,7 @@ ul.egmenu li:hover ul {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+
 }
 
 p {
@@ -351,7 +352,9 @@ p {
 .buttons {
     display: table;
     margin: 0 auto;
+
 }
+
 
 
 .mod_description {
@@ -683,14 +686,32 @@ tab {
     padding-left: 10px;
 
     text-transform: uppercase;
+    box-shadow: 0px 0px 2px 2px rgba(0, 100, 100, 0.3);
+    background-color: #051221;
 
+    padding: 5px;
+}
+
+
+.togglelink3 {
+    font-family: 'Duru Sans', sans-serif;
+    padding-left: 10px;
+
+    text-transform: uppercase;
+    box-shadow: 0px 0px 2px 2px rgba(0, 100, 100, 0.3);
+    background-color: #051221;
+
+    padding: 5px;
 }
 
 .togglelink {
     font-family: 'Duru Sans', sans-serif;
     padding-left: 10px;
     text-transform: uppercase;
+    box-shadow: 0px 0px 2px 2px rgba(0, 100, 100, 0.3);
+    background-color: #051221;
 
+    padding: 5px;
 }
 
 .tech_name {
