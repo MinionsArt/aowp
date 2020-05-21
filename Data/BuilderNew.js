@@ -707,6 +707,13 @@ function addOpUnlock(a, b) {
                 imag2.className = "corner_icon";
                 btn.appendChild(imag2);
             }
+
+            if (jsonOperations.operations[j].type.includes("Doctrine")) {
+                var imag2 = document.createElement("IMG");
+                imag2.setAttribute("src", "/aowp/Icons/Text/doctrine.png");
+                imag2.className = "corner_icon";
+                btn.appendChild(imag2);
+            }
             if (jsonOperations.operations[j].type.includes("Strategic")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/strat_ops.png");
