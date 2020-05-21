@@ -1185,6 +1185,17 @@ var jsonOperations = {
             "casting": "3 <tacticalPoint></tacticalPoint>",
         },
 
+
+        {
+            "slug": "deploy_trenchers",
+            "name": "Deploy Trenchers",
+            "tier": "II",
+            "type": "Strategic Operation (Summon)",
+            "description": "Deploy a pod of reinforcements, spawning 1 Trencher unit on the targeted hex.",
+            "energy_cost": "80",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
         {
             "slug": "localized_earthquake_generator",
             "name": "Localized Earthquake Generator",
