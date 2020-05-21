@@ -320,6 +320,18 @@ var jsonMods = {
 
 
     },
+
+        {
+            "slug": "crippling_claws",
+            "tier": "I",
+            "name": "Crippling Claws",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's melee attacks gain a 12<StrengthPhysical></StrengthPhysical> strength chance( 8 <StrengthPhysical></StrengthPhysical> for repeating attacks) to apply <abilityred>Crippled</abilityred> to Biological or Cyborg units, for 3 <turn></turn>. <br><br>Additionally, this mod grants the unit 10% increased damage on all abilities. <br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko and Cyborg units that have a Melee ability. </abilityred> ",
+
+
+    },
         {
             "slug": "regenerative_carapace",
             "tier": "III",
@@ -1769,7 +1781,7 @@ var jsonMods = {
     ////// DLC REVELATIONS
 
         {
-            "slug": "esteq_confiscator",
+            "slug": "es'teq_confiscator",
             "tier": "I",
             "name": "Es'Teq Confiscator",
 
@@ -1780,7 +1792,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "esteq_gauntlet",
+            "slug": "es'teq_gauntlet",
             "tier": "I",
             "name": "Es'Teq Gauntlet",
 
@@ -1792,7 +1804,7 @@ var jsonMods = {
     },
 
         {
-            "slug": "esteq_protector_incarnation",
+            "slug": "es'teq_protector_incarnation",
             "tier": "III",
             "name": "Es'Teq Protector Incarnation",
 
@@ -1814,7 +1826,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "esteq_acolyte_incarnation",
+            "slug": "es'teq_acolyte_incarnation",
             "tier": "IV",
             "name": "Es'Teq Acolyte Incarnation",
 
@@ -1825,7 +1837,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "esteq_conduit",
+            "slug": "es'teq_conduit",
             "tier": "VI",
             "name": "Es'Teq Conduit",
 
@@ -1847,7 +1859,7 @@ var jsonMods = {
 
     },
         {
-            "slug": "esteq_lord_incarnation",
+            "slug": "es'teq_lord_incarnation",
             "tier": "IX",
             "name": "Es'teq Lord Incarnation",
 
@@ -1902,16 +1914,534 @@ var jsonMods = {
             "description": "This unit's Entropy attacks gain a 8 <strengthentropy></strengthentropy> strength chance (4 <strengthentropy></strengthentropy> strength chance on repeating attacks) to apply 2 random debuffs to non-Mindless, non-Mineral or non-Ethereal units for 1 <turn></turn> <br><br> Additionally,this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Entropy ability. </abilityred> ",
 
 
-    }, {
+    },
+
+             ///equipment =============================================================================================================================equipment
+
+        {
+
             "slug": "hasher_smg",
             "tier": "I",
             "name": "Hasher SMG",
 
             "type": "Primary Weapon",
-            "cost": "16<energy></energy> 8 <tricorium></tricorium>",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
 
 
             "description": "<popUpHeader3><titleBrown>Hasher SMG</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamageWave></DamageWave> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Hasher SMG at an enemy target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc> <br> <br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_shotgun",
+            "tier": "I",
+            "name": "Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Shotgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Shotgun at the target.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_rancor",
+            "tier": "III",
+            "name": "Rancor",
+
+            "type": "Primary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Focused Hate</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePsyche></DamagePsyche> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>This unit channels their intense hatred for the target, dealing Psionic damage.<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Broken Mind</xpCol> 12<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
+    },
+
+
+        {
+
+            "slug": "equipment:_pulse_sniper",
+            "tier": "II",
+            "name": "Pulse Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Pulse Sniper</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>22<DamageWave></DamageWave> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a precise bolt of Arc energy at the target.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_arc_blaster",
+            "tier": "II",
+            "name": "Arc Blaster",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Arc Blaster</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a blast of Arc energy at the target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_purifier_gun",
+            "tier": "II",
+            "name": "Purifier Gun",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Plasma Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamageThermal></DamageThermal> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a burst of ignited plasma at a target, setting the target hex on fire for 2<turn></turn>.<br><bulletList><bullet><xpCol>Incendiary</xpCol> 8<StrengthThermal></StrengthThermal> strength chance to apply <abilityRed>Burning</abilityRed> to non-Ethereal and non-Mineral targets for 3<turn></turn>.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Plasma)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_inferno_fists",
+            "tier": "II",
+            "name": "Inferno Fists",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Inferno Strike</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>13<DamageThermal></DamageThermal> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>A melee attack that unleashes the infernal power of a thousand suns.<br><bulletList><bullet><xpCol>Assimilate</xpCol> Heals for 3<hp></hp> when attacking non-Mineral, non-Ethereal units.</bullet><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_lights'_harmony",
+            "tier": "II",
+            "name": "Lights' Harmony",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Cleansing Light</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target unit heals for 20<hp></hp> and is dispelled of all negative status effects.<br><bulletList><bullet><xpCol>Enlightened: Healing</xpCol> +5<hp></hp> for each Enlightened unit in battle. Stacks up to 5 times.</bullet></bulletList><br><bulletList><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Psionic Buff)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_type-s_mobile_network",
+            "tier": "II",
+            "name": "Type-S Mobile Network",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Upload AC Data</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Upload an artificial consiousness to a susceptible unit. This resets the target friendly <actionblue>Integrated</actionblue> unit's cooldowns and once per bettle abilities.</bullet></bulletList><br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_radiant_force",
+            "tier": "III",
+            "name": "Radiant Force",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Radiant Blast </titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>13<DamagePsyche></DamagePsyche> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Ranged Psionic attack.<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Enlightened</xpCol> +20% damage against units with Soulburn.</bullet><bullet><xpCol>Soulburn</xpCol> Strength 8<strengthpsyche></strengthpsyche> chance to apply <abilityRed>Soulburn</abilityRed> until end of combat.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_soul_splitter",
+            "tier": "II",
+            "name": "Soul Splitter",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Soul Spear</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a Psionic soul spear at the target enemy unit.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Broken Mind</xpCol> 12<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_rotary_cannon",
+            "tier": "II",
+            "name": "Rotary Cannon",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Rotary Cannon</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>12<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire the Rotary Cannon at the target.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
+    },
+
+
+        {
+
+            "slug": "equipment:_void_blades",
+            "tier": "II",
+            "name": "Void Blades",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Void Blades</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Melee attack with dimensional blades.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Dimensional Instability</xpCol> 4<StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Dimensional Instability</abilityred> until the end of combat. </bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_energy_blaster",
+            "tier": "II",
+            "name": "Energy Blaster",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Energy Blaster Rifle</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamageWave></DamageWave> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a blast of energy at the target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc><br><popUpDesc><titleBrown>Voidtech Unit</titleBrown></popUpHeader3><popUpDesc><br>This unit is considered a Voidtech Unit and is protected from offensive Voidtech Operations and abilities.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_onyx_of_suffering",
+            "tier": "III",
+            "name": "Onyx of Suffering",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Cage of Suffering</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Lock the target in a cage of their own discord. The unit is unable to move or act, takes damage at the end of its turn and becomes <abilityred>Filled with Despair</abilityred>.<br><bulletList><bullet><xpCol>Cage of Suffering</xpCol> 8<strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Psionic Cage</abilityred> to non-Mindless for 3<turn></turn> turns, or until the caster is staggered or killed. If this is resisted, apply <abilityred>Broken Mind</abilityred>.</bullet></bulletList><br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_link_shard",
+            "tier": "III",
+            "name": "Link Shard",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Essence Link</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target a friendly Biological, Cyborg, or Mineral unit. Both units are linked together in an <actionblue>Essence Link</actionblue>.<br> While the link is active, both units gain +1 <shield></shield> plus and additional +1 <shield></shield> for each Essance Charge they have.<br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_ethereal_spear",
+            "tier": "III",
+            "name": "Ethereal Spear",
+
+            "type": "Primary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Ethereal Spear Thrust</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamagePsyche></DamagePsyche> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Stab with the Ethereal Spear.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Broken Mind</xpCol> 12<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic, Melee)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_disruption_relay",
+            "tier": "III",
+            "name": "Disruption Relay",
+
+            "type": "Primary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Disruption Virus</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Use an arc node to fire a Disruption Virus at target enemy unit. This attack jumps 2 times to other enemy units within 2 hexes.<br><bulletList><bullet><xpCol>Compromised</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Compromised</abilityred> to Mechanical and Cyborg units.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_siphoner_staff",
+            "tier": "II",
+            "name": "Siphoner Staff",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Es'Teq Siphon</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageEntropy></DamageEntropy> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Connect to the Essence of target enemy, draining them and dealing entropy damage.<br><bulletList><bullet><xpCol>Energy Drain</xpCol> 8<strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred> to targets for 3<turn></turn>. On success, the caster gains an <abilityblue>Essence Charge</abilityblue>.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_acrimonious",
+            "tier": "II",
+            "name": "Acrimonious",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Acrinomious</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire Acrimonious at a target.<br><bulletList><bullet><xpCol>Armor Melt</xpCol> Destroys 1 <armor></armor> per hit.</bullet><bullet><xpCol>Parasitic Infection</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Parasitic Infection</abilityred> to Biological and Cyborg units until the end of combat.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_malady",
+            "tier": "III",
+            "name": "Malady",
+
+            "type": "Primary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Malady</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamageBio></DamageBio> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire Malady at a target.<br><bulletList><bullet><xpCol>Parasitic Infection</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Parasitic Infection</abilityred> to Biological and Cyborg units until the end of combat.</bullet><bullet><xpCol>Hyper Infection</xpCol> 8<StrengthBio></StrengthBio> strength chance to <abilityred>Stun</abilityred> a Biological or Cyborg unit for 1<turn></turn>. If resisted, apply <abilityred>Staggered</abilityred> instead.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
+    },
+              ///vehicle =============================================================================================================================vehicle
+
+        {
+
+            "slug": "vehicle:_engulfer",
+            "tier": "II",
+            "name": "Vehicle: Engulfer",
+
+            "type": "Hero Equipment",
+            "cost": "80 <energy></energy> 10 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Engulfer</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Gunk Thrower 9 <DamageBio></DamageBio></bullet> <bullet>Caustic Smoke 8 <DamageBio></DamageBio></bullet><bullet>Biological</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }
+             , {
+
+            "slug": "vehicle:_lightning_rider",
+            "tier": "II",
+            "name": "Vehicle: Lightning Rider",
+
+            "type": "Hero Equipment",
+            "cost": "80 <energy></energy> 10 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Lightning Rider</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Arc Thrower 9 <DamageWave></DamageWave></bullet> <bullet>Arc Strike 14 <DamageWave></DamageWave></bullet><bullet>Arc Charge</bullet><bullet>Cyborg</bullet> <bullet>Heavy Unit</bullet><bullet>Evasive Maneuvers</bullet></bulletList></popUpDesc>",
+    }
+                , {
+
+            "slug": "vehicle:_ramjet",
+            "tier": "II",
+            "name": "Vehicle: Ramjet",
+
+            "type": "Hero Equipment",
+            "cost": "80 <energy></energy> 10 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Ramjet</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Aerial Ram 18 <DamagePhysical></DamagePhysical></bullet> <bullet>Ramjet Rocket 14 <DamagePhysical></DamagePhysical></bullet><bullet>Afterburners</bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_gunship",
+            "tier": "II",
+            "name": "Vehicle: Gunship",
+
+            "type": "Hero Equipment",
+            "cost": "80 <energy></energy> 10 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Gunship</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Aircraft Gun 9 <DamagePhysical></DamagePhysical></bullet> <bullet>Buster Missile 14 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet><bullet>Evasive Maneuvers</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_sapper",
+            "tier": "II",
+            "name": "Vehicle: Sapper",
+
+            "type": "Hero Equipment",
+            "cost": "80 <energy></energy> 10 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Sapper</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Support Guns 18 <DamagePhysical></DamagePhysical></bullet> <bullet>Seismic Charge</bullet><bullet>Assault Tunnel 14 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_baron",
+            "tier": "III",
+            "name": "Vehicle: Baron",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Baron</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Specialist</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Rotary Cannon 12 <DamagePhysical></DamagePhysical></bullet> <bullet>Reinforcement Kit</bullet><bullet>Nitro Battery</bullet><bullet>Disruptor Device 12 <DamageWave></DamageWave></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_excavator_tank",
+            "tier": "III",
+            "name": "Vehicle: Excavator Tank",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Excavator Tank</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+3<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Ram 20 <DamagePhysical></DamagePhysical></bullet> <bullet>Demolisher Cannon 18 <DamagePhysical></DamagePhysical></bullet><bullet>Defensive Flamer 16 <DamageThermal></DamageThermal></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }
+              ,
+        {
+
+            "slug": "vehicle:_rift_generator",
+            "tier": "III",
+            "name": "Vehicle: Rift Generator",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Rift Generator</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Distortion Rift Coils 20 <DamagePhysical></DamagePhysical></bullet> <bullet>Dimensional Desync</bullet><bullet>Dimensional Rift 18 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }
+              , {
+
+            "slug": "vehicle:_barrager",
+            "tier": "III",
+            "name": "Vehicle: Barrager",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Barrager</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Biochemical Discharge 20 <DamageBio></DamageBio></bullet><bullet>Blinding Gas</bullet> <bullet>Biochemical Barrage 8 <DamageBio></DamageBio></bullet><bullet>Biological</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }
+               , {
+
+            "slug": "vehicle:_ravenous",
+            "tier": "III",
+            "name": "Vehicle: Ravenous",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Ravenous</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+3<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Ripclaw Gash 15 <DamagePhysical></DamagePhysical></bullet> <bullet>Devour 20 <DamagePhysical></DamagePhysical></bullet><bullet>Biological</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_wrecker",
+            "tier": "III",
+            "name": "Vehicle: Wrecker",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Wrecker</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+3<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Hammer Strike 15 <DamagePhysical></DamagePhysical></bullet> <bullet>Wild Swing 20 <DamagePhysical></DamagePhysical></bullet><bullet>Cyborg</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }
+, {
+
+            "slug": "vehicle:_disassembler",
+            "tier": "III",
+            "name": "Vehicle: Disassembler",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Disassembler</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Gatling Gun 13 <DamagePhysical></DamagePhysical></bullet> <bullet>Disassembler Shot 15 <DamagePhysical></DamagePhysical></bullet><bullet>Cyborg</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }
+
+                   , {
+
+            "slug": "vehicle:_aegis_tank",
+            "tier": "III",
+            "name": "Vehicle: Aegis Tank",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Aegis Tank</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Specialist</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Force Projector 22 <DamagePhysical></DamagePhysical></bullet> <bullet>Wide Force Blast 14 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_walker",
+            "tier": "III",
+            "name": "Vehicle: Walker",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Walker</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Gatling Gun 13 <DamagePhysical></DamagePhysical></bullet> <bullet>Upgraded Strike Missile <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }
+
+                   , {
+
+            "slug": "vehicle:_phoenix_walker",
+            "tier": "III",
+            "name": "Vehicle: Phoenix Walker",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Phoenix Walker</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Plasma Cutter 22 <DamageThermal></DamageThermal></bullet> <bullet>Firestorm 16 <DamageThermal></DamageThermal></bullet><bullet>Torrent of Flame 16 <DamageThermal></DamageThermal></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_laser_tank",
+            "tier": "III",
+            "name": "Vehicle: Laser Tank",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Laser Tank</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Laser Cannon 13 <DamageThermal></DamageThermal></bullet> <bullet>Overcharge Laser Cannon <DamageThermal></DamageThermal></bullet><bullet>Deploy Smoke</bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_mirage",
+            "tier": "II",
+            "name": "Vehicle: Mirage",
+
+            "type": "Hero Equipment",
+            "cost": "80 <energy></energy> 10 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Mirage</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Specialist</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>PsiTec Blasters 7 <DamagePsyche></DamagePsyche></bullet> <bullet>Hallucination Projector</bullet><bullet>Mechanical</bullet> <bullet>Light Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_wraith",
+            "tier": "III",
+            "name": "Vehicle: Wraith",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Wraith</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>PsiTec Cannon 12 <DamagePsyche></DamagePsyche></bullet> <bullet>PsiTec Blast 20 <DamagePsyche></DamagePsyche></bullet> <bullet>Activate Wraith Drive 10 <DamagePsyche></DamagePsyche></bullet> <bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_subjugator",
+            "tier": "III",
+            "name": "Vehicle: Subjugator",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Subjugator</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>PsiTec Heavy Repeaters 11 <DamagePsyche></DamagePsyche></bullet> <bullet>Deploy Cerebral Control Collars</bullet> <bullet>Activate Reanimation Collars</bullet> <bullet>Project Agony Field 20 <DamagePsyche></DamagePsyche></bullet> <bullet>Biological</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_harrier",
+            "tier": "II",
+            "name": "Vehicle: Harrier",
+
+            "type": "Hero Equipment",
+            "cost": "80 <energy></energy> 10 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Harrier</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Interception Blasters 10 <DamageThermal></DamageThermal></bullet> <bullet>Laser Bombardment 18 <DamageThermal></DamageThermal></bullet><bullet>Biological</bullet> <bullet>Heavy Unit</bullet> <bullet>Mounted</bullet></bulletList></popUpDesc>",
+    }
+             ,
+        {
+
+            "slug": "vehicle:_tyrannodon",
+            "tier": "III",
+            "name": "Vehicle: Tyrannodon",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Tyrannodon</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Rapid Laser Cannons 15 <DamageThermal></DamageThermal></bullet> <bullet>Tail Swipe 23 <DamagePhysical></DamagePhysical></bullet> <bullet>Mighty Roar</bullet><bullet>Biological</bullet> <bullet>Heavy Unit</bullet> <bullet>Mounted</bullet></bulletList></popUpDesc>",
+    }
+                   ,
+        {
+
+            "slug": "vehicle:_high_lord",
+            "tier": "III",
+            "name": "Vehicle: High Lord",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>High Lord</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Essence Drain 12 <DamageEntropy></DamageEntropy></bullet> <bullet>Ruin Machina 10 <DamageEntropy></DamageEntropy></bullet> <bullet>Mind Puppet</bullet><bullet>Es'Teq Judgment 10 <DamageEntropy></DamageEntropy></bullet> <bullet>Cyborg</bullet> <bullet>Heavy Unit</bullet> </bulletList></popUpDesc>",
     }
 ]
 }

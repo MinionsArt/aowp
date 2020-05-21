@@ -2078,5 +2078,374 @@ var jsonOperations = {
 
 
 
+        {
+            "slug": "signal_shredding",
+            "name": "Signal Shredding",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Send a pulse of disruptive energy through target enemy Mechanical or Cyborg unit. Signal Shredding has a strength 12<StrengthWave></StrengthWave> chance to apply <abilityRed>Stunned</abilityRed> for 1<turn></turn>. If the stun fails, the unit receives <abilityRed>Massive Impact</abilityRed> instead, potentially staggering it.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "remote_system_purge",
+            "name": "Remote System Purge",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Sometimes it is necessary to hard reset a computer, and Cyborgs are no exception. Removes all negative Status Effects from target friendly Cyborg unit. The effect can then jump to 2 additional friendly targets within 3 hexes.",
+            "energy_cost": "30",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "linear_accelerator",
+            "name": "Linear Accelerator",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Supercharge target Mechanical or Cyborg unit, restoring all of its action points<mp></mp>. Units can only be supercharged once per turn.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "deploy_constrictor",
+            "name": "Deploy Constrictor",
+            "tier": "VI",
+            "type": "Tactical Operation (Summon)",
+            "description": "Summon a Constrictor onto target hex during combat. The summoned unit lasts until the end of combat.<br>The Constrictor is a Melee unit with strong incapacitating abilities that can disable other units and then deal tremendous damage.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "adhesive_artillery",
+            "name": "Adhesive Artillery",
+            "tier": "V",
+            "type": "Tactical Operation (Instant)",
+            "description": "Fire adhesive-containing shells at the targeted area that burst open just before impact and cover a 2 hex radius in an adhesive Biochemical foam, dealing 10<DamageBio></DamageBio> damage, with a 8<StrengthPhysical></StrengthPhysical> strength chance to <abilityRed>Slow</abilityRed> to the affected units for 2<turn></turn>.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "temporal_disruption",
+            "name": "Temporal Disruption",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Disables 1 unit mod on all enemy units for 2<turn></turn>.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "reprocess_colonist",
+            "name": "Reprocess Colonist",
+            "tier": "II",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Reprocess one of your colonists to temporarily boost your production facilities. Removes 1<population></population> and provides a 50%<production></production> increase. This effect lasts for 3<turn></turn>.",
+            "energy_cost": "40",
+            "casting": "4 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "sample_collection",
+            "name": "Sample Collection",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Assembly nanites assault the target army, retrieving valuable samples. Damages all units in the target army for 20% of their current <hp></hp>, reduces all their resistances by -1 for this round and provides 3-5<research></research> for every unit damaged this way.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "ion_storm",
+            "name": "Ion Storm",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "By drawing static electricity from the air and channeling it all into a small target area, we can unleash a powerful <abilityRed>Ion Storm</abilityRed>, which reduces economic income and weakens any units in the sector. All Mechanical units in the targeted sector lose all of their <mp></mp>.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "ionic_overdrive",
+            "name": "Ionic Overdrive",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "Channel raw ionic energy into target friendly army. All Cyborg units lose 25%<hp></hp> and gain <actionblue>Ionic Overdrive</actionblue> for 1<turn></turn>. Ionic Overdrive gives units <actionblue>Fast Movement Speed</actionblue>, causes their melee attacks to <abilityRed>Stun</abilityRed> targets, and deal 25% extra damage.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "condemn_to_drained",
+            "name": "Condemn to Drained",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Condemn an enemy in the name of the Es'Teq, transforming them to a Drained unit. Target enemy non-Mindless Infantry unit has a 12<strengthEntropy></strengthEntropy> strength chance to gain <abilityRed>Condemned</abilityRed> until end of battle. Condemned units have -400<unhappiness></unhappiness> and -2<damageEntropy></damageEntropy>].<br><br>When a unit with <abilityRed>Condemned</abilityRed> dies, instead of leaving behind a corpse, a Drained unit is summoned under the caster's control. This unit is permanent, and will not be removed at the end of battle.<br>Cannot target Heroes or Commanders.",
+            "energy_cost": "60",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "rite_of_revitalization",
+            "name": "Rite of Revitalization",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target the Essence in a unit to trigger a revitalizing reaction, healing them. Target friendly unit heals for 15<hp></hp>. If the unit has an <actionblue><essenceCharge></essenceCharge>Essence Charge</actionblue>, it is instead healed for 30<hp></hp>, dispelled of all hostile status effects and loses 1 <actionblue><essenceCharge></essenceCharge>Essence Charge</actionblue>.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "rite_of_reincarnation",
+            "name": "Rite of Reincarnation",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "By implanting an ancient Es'Teq mind, a consciousness, into a freshly-deceased body, they can be brought back to life.<br>Target friendly non-Mechanical, non-Hero, tier I, II or III corpse is revived with 50%<hp></hp>. In addition, it gains +200<happiness></happiness> until end of combat.",
+            "energy_cost": "60",
+            "casting": "4 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "rite_of_dissemination",
+            "name": "Rite of Dissemination",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "Spread Essence throughout units, granting them <actionblue><essenceCharge></essenceCharge>Essence Charges</actionblue> and increasing their morale. All friendly units in combat gain 1 <actionblue><essenceCharge></essenceCharge>Essence Charge</actionblue> and +200<happiness></happiness> until end of combat.",
+            "energy_cost": "60",
+            "casting": "5 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "bestow_essence",
+            "name": "Bestow Essence",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "Bestow Es'Teq Essence on a unit. Target friendly unit gains their maximum number of <actionblue><essenceCharge></essenceCharge>Essence Charges</actionblue>. ",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "convert_heretic",
+            "name": "Convert Heretic",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Unleash an Es'Teq mind in an attempt to take possession of an enemy unit. Target non-Mindless, non-Mechanical enemy unit has a 8<strengthEntropy></strengthEntropy> strength chance to switch allegiance and gain <actionblue>Es'Teq Possession</actionblue> until end of battle. On failure, the unit is <abilityRed>Stunned</abilityRed> instead.<br><br>Should a unit with <actionblue>Es'Teq Possession</actionblue> die, the Es'Teq Mind escapes and has a 4<strengthEntropy></strengthEntropy> strength chance spread to another viable enemy unit within 2 hexes. ",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "ancestral_smite",
+            "name": "Ancestral Smite",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Bring forth a violent barrage of pure Essence, tearing through enemies. All enemy units within a 2 hex radius area of effect take 25<damageEntropy></damageEntropy>, lose -200<happiness></happiness> and have a 12<strengthEntropy></strengthEntropy> strength chance to gain <abilityRed>Entropic Decay</abilityRed>.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "blessing_of_the_es'teq",
+            "name": "Blessing of the Es'Teq",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target friendly army is healed for 50%<hp></hp> and all units gain 1 stack of <actionblue><essenceCharge></essenceCharge>Essence Charge</actionblue> in combat. This lasts for 1<turn></turn> strategic map turn.",
+            "energy_cost": "40",
+            "casting": "4 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "uncover_ancient_secrets",
+            "name": "Uncover Ancient Secrets",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Reveals the location of the nearest Anomalous Site to the target colony.",
+            "energy_cost": "50",
+            "casting": "5 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "haunt_colony",
+            "name": "Haunt Colony",
+            "tier": "III",
+            "type": "Strategic Operation (Sustained)",
+            "description": "All <population></population> in target enemy colony now produce 2 income in the resource slot they occupy and the colony suffers from -15<unhappiness></unhappiness> for 10<turn></turn>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "curse_of_the_es'teq",
+            "name": "Curse of the Es'Teq",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target enemy army takes 20% of their current <hp></hp> in damage and all units have -3<damageEntropy></damageEntropy> for 1<turn></turn> on the world map.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "essence_spire",
+            "name": "Essence Spire",
+            "tier": "V",
+            "type": "Empire UpgradeM",
+            "description": "The Essence Spire unlocks the Mind Rebirth Doomsday Weapon. Each additional Essence Spire that you build increases the level of the weapon, making it stronger.<br><br>Only one Essence Spire may be built per colony.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "mind_rebirth",
+            "name": "Mind Rebirth",
+            "tier": "V",
+            "type": "Strategic Operation (Timed)",
+            "description": "Unleash recently freed Es'Teq minds on a non-Heritor enemy colony, infiltrating the minds of their colonists and attempting to take over their physical form through Es'Teq reincarnation for 10<turn></turn>. This ability becomes stronger the more Essence Spires you build.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "conversion_cult_infiltration",
+            "name": "Conversion Cult Infiltration",
+            "tier": "VIII",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Send in Siphon Priests to attempt to persuade enemy colonists to switch allegiance, before converting them into energy. <br><br>Target enemy colony has a 30% chance to lose a colonist every <turn></turn>, for 5<turn></turn>. For each colonist lost this way, the caster gains 25<energy></energy>.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "ancestral_wrath",
+            "name": "Ancestral Wrath",
+            "tier": "VIII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target enemy colony loses 2<population></population>, and 2 Drained units are summoned under your control adjacent to the Colony Center. Additionally, an <abilityRed>Essence Gash</abilityRed> hazard is created in the sector.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "final_rapture",
+            "name": "Final Rapture",
+            "tier": "X",
+            "type": "Doomsday Finisher Operation",
+            "description": "The final step in the Heritor plan starts the Mind Transference across the whole planet, starting the Final Rapture.<br><br>Requires Mind Rebirth Level 3.<br>",
+            "energy_cost": "500",
+            "casting": "50 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "inner_communion",
+            "name": "Inner Communion",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "By giving your people space to focus and commune with the Essence within them, they become more susceptible to receiving the bounty that Essence has to offer.<br><br>All units can carry 1 additional <actionblue><essenceCharge></essenceCharge>Essence Charge</actionblue>.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "technoclast_crusade",
+            "name": "Technoclast Crusade",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Rally your forces in a crusade against the wickedness of machine intelligence.<br><br>Against Mechanical and Integrated units, all friendly units gain +10% damage and have a 30<strengthEntropy></strengthEntropy> strength chance (8<strengthEntropy></strengthEntropy> for repeating attacks) to inflict <abilityRed>Entropic Decay</abilityRed>.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "divine_legion",
+            "name": "Divine Legion",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "Infuse your Drained with Essence, forming a divine legion that cannot be stopped.<br><br>All Drained units gain <actionblue>Essence Infusion</actionblue>, granting them  +2<shield></shield>, <actionblue>Resurgence</actionblue> and allowing them to carry 2 additional <actionblue><essenceCharge></essenceCharge>Essence Charges</actionblue>.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "city_of_the_awakened",
+            "name": "City of the Awakened",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "Release select Es'Teq minds from their millennia-long slumber and reincarnate them into your colonies, to the enjoyment of your people.<br><br>All colonies gain +20<happiness></happiness> and the colonist acquisition threshold is reduced by 20%.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "battlefield_autopsies",
+            "name": "Battlefield Autopsies",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "The Assembly pick through the bodies of the dead, examining every nut, bolt and organ for their sinister research.<br><br>After winning Tactical Combat, gain 3<research></research> for each enemy unit killed, multiplied by their tier.<br><br>15<research></research> is gained from each enemy commander and hero defeated.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "efficient_scavenging",
+            "name": "Efficient Scavenging",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "The assembly can see uses for things others would discard.<br><br>Rewards from clearing Structures on the World Map are increased by 50%.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "connected_society",
+            "name": "Connected Society",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "Jack into the brains of your colonists to borrow spare processing power. They're probably not using it anyway...<br><br>All Colonists provide +1<research></research>, but our Colonies suffer 4<unhappiness></unhappiness>.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "neural-interfacing_datacore",
+            "name": "Neural-Interfacing Datacore",
+            "tier": "V",
+            "type": "Empire Upgrade",
+            "description": "Neural Interfacing colonists to imperial datacores found in ruins can provide a boost to research.<br><br>Colony gains +10<research></research> knowledge income for each Ruins sector within its domain.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "the_great_harvest",
+            "name": "The Great Harvest",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Our mastery of reassembly approaches completion. Nothing is wasted; everything has a purpose.<br><br>After winning Tactical Combat, gain 5<food></food> and 10<production></production> for each enemy unit killed, multiplied by their tier.<br><br>20<food></food> and 40<production></production> is gained from each enemy commander and hero defeated.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "re-cycle_of_life",
+            "name": "Re-cycle of Life",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Knowing that our troops can be assembled again and again upon their destruction increases their willingness to keep on fighting as their end eludes them.<br><br>Your Cyborg units gain +400<happiness></happiness>.<br>After winning Tactical Combat, gain 25<energy></energy> for each friendly Cyborg unit killed, multiplied by their tier.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "military_engineering_guild",
+            "name": "Military Engineering Guild",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "Focusing your industry on military engineering allows for quicker build times for military assets. At higher levels, units are built so well that their defenses are improved.<br><br><abilityRed>This can only be built in an industrial exploitation sector.</abilityRed><br><br><abilityRed>Unit costs can never be lowered more than 75%.</abilityRed><br><br><bullet> Level 1<br>-10% <production></production> cost for non-Elite units.</bullet><bullet> Level 2<br>-15% <production></production> cost for non-Elite units.</bullet><bullet> Level 3<br>-20% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1[/armor].</bullet><bullet> Level 4<br>-25% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1<armor></armor>.</bullet><bullet> Level 5<br>-30% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1<armor></armor>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+        },
+
     ]
 }

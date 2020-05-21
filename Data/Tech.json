@@ -1,154 +1,8 @@
 var jsonTech = {
-    "tech": [{ // assembly
+    "tech": [{
 
-            "slug": "assembly_molecular_computing",
 
-    }, {
 
-            "slug": "assembly_reverse_engineering",
-
-    },
-        {
-
-            "slug": "assembly_auxiliary_resource_extraction",
-
-    },
-        {
-
-            "slug": "assembly_harness_the_storm",
-
-    },
-        {
-
-            "slug": "assembly_advanced_bionics",
-
-    },
-        {
-
-            "slug": "assembly_naval_demolitions",
-
-    },
-        {
-
-            "slug": "assembly_adaptive_systems",
-
-    },
-
-        {
-
-            "slug": "assembly_toxic_applications",
-
-    },
-        {
-
-            "slug": "assembly_destructive_means",
-
-    },
-        {
-
-            "slug": "assembly_ionic_manipulation",
-
-    },
-        {
-
-            "slug": "assembly_disassemblers",
-
-    },
-        {
-
-            "slug": "assembly_system_reload",
-
-    },
-        {
-
-            "slug": "assembly_ultimate_form",
-
-    },
-        {
-
-            "slug": "assembly_quantric_technology",
-
-    },
-
-// heritor
-
-        {
-            "slug": "heritor_gift_of_the_es'teq",
-
-    }, {
-
-            "slug": "heritor_holy_presence",
-
-    },
-        {
-
-            "slug": "heritor_siphoner_awakening",
-
-    },
-        {
-
-            "slug": "heritor_wrath_of_the_ancients",
-
-    },
-        {
-
-            "slug": "heritor_zealous_conviction",
-
-    },
-        {
-
-            "slug": "heritor_transmigration_rituals",
-
-    },
-        {
-
-            "slug": "heritor_quintessence_ark_awakening",
-
-    },
-
-        {
-
-            "slug": "heritor_prelude_to_rapture",
-
-    },
-        {
-
-            "slug": "heritor_dissemination_rituals",
-
-    },
-        {
-
-            "slug": "heritor_sacred_providence",
-
-    },
-        {
-
-            "slug": "heritor_high_lord_awakening",
-
-    },
-        {
-
-            "slug": "heritor_forced_conversion",
-
-    },
-        {
-
-            "slug": "heritor_venerated_incarnation",
-
-    },
-        {
-
-            "slug": "heritor_final_revelation",
-
-    },
-
-
-
-
-
-
-
-        {
             "slug": "amazon_protective_grounding",
             "name": "Protective Grounding",
 
@@ -171,7 +25,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "amazon_arborian_commune",
@@ -196,7 +50,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "amazon_forest_genesis",
@@ -225,7 +79,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "amazon_aquatica_commune",
@@ -250,7 +104,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "amazon_primal_control",
@@ -279,7 +133,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "amazon_harrier_commune",
@@ -304,7 +158,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "amazon_bombardon_commune",
@@ -329,7 +183,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "amazon_regenerative_bio_resonance",
@@ -354,7 +208,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "amazon_amplified_bio_resonance",
@@ -379,7 +233,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "amazon_tyrannodon_commune",
@@ -404,7 +258,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "amazon_restorative_cloning",
@@ -433,7 +287,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "amazon_organism_stimulus",
@@ -458,7 +312,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "amazon_arborian_queen_commune",
@@ -483,7 +337,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "amazon_gaialogical_affinity",
@@ -512,7 +366,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "amazon_verdant_awakening",
@@ -541,7 +395,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "amazon_gaian_stewardship",
@@ -574,7 +428,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "amazon_new_eden",
@@ -607,7 +461,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "xenoplague_alpha_strain_inception",
@@ -632,7 +486,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "xenoplague_militarized_strains",
@@ -661,7 +515,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "xenoplague_dispersion",
@@ -690,7 +544,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "xenoplague_destroyer_mutation",
@@ -715,7 +569,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "xenoplague_omega_strain",
@@ -744,7 +598,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "xenoplague_regenerative_stimulation",
@@ -769,7 +623,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "xenoplague_plague_lord_mutation",
@@ -794,7 +648,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "xenoplague_expedited_germination",
@@ -823,7 +677,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "xenoplague_proliferated_aggression",
@@ -848,7 +702,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "xenoplague_advanced_militarized_strains",
@@ -877,7 +731,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "xenoplague_symbiotic_superiority",
@@ -906,7 +760,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "xenoplague_omega_transcendance",
@@ -931,7 +785,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "xenoplague_bio-matter_repurposing",
@@ -964,7 +818,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "xenoplague_infection_experiments",
@@ -993,7 +847,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
 
 
@@ -1021,7 +875,7 @@ var jsonTech = {
 
             ],
             "cost": "100"
-        },
+                },
 
         {
             "slug": "shakarn_propaganda_propagation",
@@ -1050,7 +904,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "shakarn_caste_military_applications",
@@ -1079,7 +933,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "shakarn_propagator_deployment",
@@ -1104,7 +958,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "shakarn_holotech_applications",
@@ -1133,7 +987,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "shakarn_firebrand_deployment",
@@ -1158,7 +1012,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "shakarn_orbit_tactics",
@@ -1183,7 +1037,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "shakarn_tactician_deployment",
@@ -1208,7 +1062,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "shakarn_cold_war_measures",
@@ -1237,7 +1091,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "shakarn_refractor_deployment",
@@ -1262,7 +1116,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "shakarn_caste_advancements",
@@ -1291,7 +1145,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "shakarn_perfected_holotech",
@@ -1316,7 +1170,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "shakarn_gama_supremacy",
@@ -1341,7 +1195,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "shakarn_gama_omnitech_research",
@@ -1370,7 +1224,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "laser_heavy_laser_applications",
@@ -1395,7 +1249,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "laser_photon_acceleration",
@@ -1420,7 +1274,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "laser_non-refracting_lasers",
@@ -1445,7 +1299,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "laser_crystalline_technology",
@@ -1474,7 +1328,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "laser_plasma_weaponry",
@@ -1499,7 +1353,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "sonic_deafening_frequencies",
@@ -1524,7 +1378,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "sonic_sonolysis_application",
@@ -1549,7 +1403,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "sonic_sound_augmentation",
@@ -1578,7 +1432,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "sonic_accelerated_sound_waves",
@@ -1603,7 +1457,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "sonic_perfect_resonance",
@@ -1628,7 +1482,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "synthesis_synthesis_integration",
@@ -1657,7 +1511,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "synthesis_daemon_deployment",
@@ -1690,7 +1544,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "synthesis_information_control",
@@ -1715,7 +1569,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "synthesis_combat_subroutines",
@@ -1744,7 +1598,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "synthesis_motion_disruption",
@@ -1773,7 +1627,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "synthesis_network_connectivity",
@@ -1781,7 +1635,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "type-s_mobile_network"
+                    "slug": "equipment:_type-s_mobile_network"
                 }
 
             ],
@@ -1798,7 +1652,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "synthesis_basilisk_network",
@@ -1827,7 +1681,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "synthesis_pacification_cypher",
@@ -1852,7 +1706,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "synthesis_systems_regulation",
@@ -1881,7 +1735,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "synthesis_neural_integration",
@@ -1889,7 +1743,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "disruption_relay"
+                    "slug": "equipment:_disruption_relay"
                 }
 
             ],
@@ -1906,7 +1760,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "synthesis_autonomous_malware",
@@ -1931,7 +1785,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "synthesis_basilisk_singularity",
@@ -1956,7 +1810,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "shakarn_planetfall_procedures",
@@ -1989,7 +1843,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "shakarn_manipulation_campaigns",
@@ -2018,7 +1872,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "shakarn_expert_council",
@@ -2051,7 +1905,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "synthesis_cyber_optimization",
@@ -2084,7 +1938,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "synthesis_cyber_society",
@@ -2113,7 +1967,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "doctrine_dawn_of_a_new_union",
@@ -2146,9 +2000,9 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        }
+                }
 
-             ,
+                ,
 
         {
             "slug": "vanguard_nanite_support",
@@ -2177,7 +2031,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "vanguard_engineering_corps",
@@ -2202,7 +2056,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "vanguard_smart_defense_modules",
@@ -2231,7 +2085,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "vanguard_air_corps",
@@ -2256,7 +2110,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "vanguard_drone_deployment",
@@ -2289,7 +2143,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "vanguard_naval_command",
@@ -2314,7 +2168,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "vanguard_rapid_maneuverability",
@@ -2339,7 +2193,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "vanguard_tank_corps",
@@ -2364,7 +2218,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "vanguard_sentry_technology",
@@ -2372,7 +2226,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "mini_launcher"
+                    "slug": "launcher_turret_pack"
                 }
 
             ],
@@ -2389,7 +2243,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "vanguard_walker_corps",
@@ -2414,7 +2268,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "vanguard_orbital_station",
@@ -2443,7 +2297,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "vanguard_predator_conditioning",
@@ -2468,7 +2322,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "vanguard_carrier_command",
@@ -2493,7 +2347,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "vanguard_force_concentration",
@@ -2522,7 +2376,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "firearms_subjugation_ordnance",
@@ -2547,7 +2401,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "firearms_electromagnetic_utilization",
@@ -2576,7 +2430,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "firearms_kinetic_force_manipulation",
@@ -2601,7 +2455,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "firearms_explosive_payloads",
@@ -2626,7 +2480,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "firearms_relativistic_projectiles",
@@ -2651,7 +2505,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "promethean_tactical_protection",
@@ -2680,7 +2534,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "promethean_phoenix_op_station",
@@ -2709,7 +2563,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "promethean_purifier_corps",
@@ -2734,7 +2588,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "promethean_biosphere_subjugation",
@@ -2759,7 +2613,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "promethean_advanced_aegis_shielding",
@@ -2784,7 +2638,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "promethean_aegis_tank_corps",
@@ -2809,7 +2663,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "promethean_pyrx_inception",
@@ -2838,7 +2692,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "promethean_pyrx_sector_preparations",
@@ -2867,7 +2721,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "promethean_thermal_surge_modules",
@@ -2896,7 +2750,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "promethean_phoenix_walker_corps",
@@ -2921,7 +2775,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "promethean_phoenix_rising",
@@ -2946,7 +2800,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "promethean_planetary_purification",
@@ -2971,7 +2825,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "vanguard_frontier_policies",
@@ -3004,7 +2858,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "vanguard_subjugation_protocols",
@@ -3033,7 +2887,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "vanguard_hegemony",
@@ -3066,7 +2920,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "promethean_phoenix_dawn_protocols",
@@ -3099,7 +2953,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "promethean_phoenix_nighttide_protocols",
@@ -3128,7 +2982,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
 
         {
@@ -3158,7 +3012,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "kirko_vigorous_emergence",
@@ -3187,7 +3041,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "kirko_engulfer_caste",
@@ -3212,7 +3066,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "kirko_regeneration",
@@ -3237,7 +3091,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "kirko_deep_caste",
@@ -3262,7 +3116,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "kirko_infection",
@@ -3291,7 +3145,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "kirko_barrager_caste",
@@ -3316,7 +3170,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "kirko_resilience",
@@ -3345,7 +3199,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "kirko_ravenous_caste",
@@ -3370,7 +3224,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "kirko_swarm_expulsions",
@@ -3399,7 +3253,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "kirko_tormented_caste",
@@ -3424,7 +3278,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "kirko_neogenesis",
@@ -3453,7 +3307,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "kirko_return_of_the_harbinger",
@@ -3478,7 +3332,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "kirko_metamorphosis",
@@ -3507,7 +3361,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "biochemical_biochemical_applications",
@@ -3532,7 +3386,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "biochemical_volatile_afflictions",
@@ -3557,7 +3411,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "biochemical_specialized_strains",
@@ -3586,7 +3440,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "biochemical_advanced_infections",
@@ -3611,7 +3465,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "biochemical_blight_plague",
@@ -3636,7 +3490,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "psionics_dominion_of_purification",
@@ -3665,7 +3519,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "psionics_dominion_of_affliction",
@@ -3690,7 +3544,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "psionics_dominion_of_vitality",
@@ -3715,7 +3569,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "psionics_dominion_of_command",
@@ -3740,7 +3594,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "psionics_dominion_of_aether",
@@ -3765,7 +3619,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "voidtech_phase_manipulation",
@@ -3790,7 +3644,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "voidtech_echo_walker_program",
@@ -3815,7 +3669,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "voidtech_void_technology",
@@ -3844,7 +3698,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "voidtech_vortex_instability",
@@ -3873,7 +3727,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "voidtech_phase_manipulator_program",
@@ -3898,7 +3752,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "voidtech_dimensional_control",
@@ -3927,7 +3781,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "voidtech_phase_echo_generation",
@@ -3952,7 +3806,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "voidtech_void_tactics",
@@ -3981,7 +3835,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "voidtech_temporal_dislocation",
@@ -4010,7 +3864,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "voidtech_rift_generation",
@@ -4035,7 +3889,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "voidtech_alter_reality",
@@ -4064,7 +3918,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "voidtech_dimension_weaponization",
@@ -4093,7 +3947,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "voidtech_dimensional_mastery",
@@ -4118,7 +3972,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "kirko_nurturing",
@@ -4151,7 +4005,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "kirko_perspective",
@@ -4180,7 +4034,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "kirko_the_new_hive",
@@ -4213,7 +4067,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "voidtech_quantum_gain",
@@ -4246,7 +4100,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "voidtech_quantum_leap",
@@ -4275,7 +4129,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
 
         {
@@ -4305,7 +4159,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "dvar_aerial_division",
@@ -4330,7 +4184,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "dvar_drudges",
@@ -4359,7 +4213,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "dvar_dreadnought_division",
@@ -4384,7 +4238,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "dvar_d-vr_mark_iv_upgrades",
@@ -4413,7 +4267,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "dvar_deep_detonation",
@@ -4442,7 +4296,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "dvar_noble_division",
@@ -4471,7 +4325,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "dvar_risk_management",
@@ -4500,7 +4354,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "dvar_excavations_division",
@@ -4525,7 +4379,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "dvar_artillery_division",
@@ -4550,7 +4404,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "dvar_advanced_dv-r_suits",
@@ -4579,7 +4433,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "dvar_cataclysm_generation",
@@ -4604,7 +4458,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "dvar_seismic_supremacy",
@@ -4629,7 +4483,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "dvar_peak_efficiency",
@@ -4637,7 +4491,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "unleashed_stored_energy"
+                    "slug": "reactive_kinetic_battery"
                 }
         ,
                 {
@@ -4658,7 +4512,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "explosives_enhanced_payloads",
@@ -4683,7 +4537,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "explosives_thermodynamics",
@@ -4708,7 +4562,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "explosives_advanced_launchers",
@@ -4716,7 +4570,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "guiding_mechanism"
+                    "slug": "guided_delivery_mechanisms"
                 }
 
             ],
@@ -4733,7 +4587,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "explosives_augmented_payloads",
@@ -4762,7 +4616,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "explosives_nuclear_solution",
@@ -4787,7 +4641,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "psynumbra_foreboding_darkness",
@@ -4812,7 +4666,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "psynumbra_initiation_into_agony",
@@ -4837,7 +4691,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "psynumbra_whispers_and_visions",
@@ -4866,7 +4720,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "psynumbra_accursed_gifts",
@@ -4895,7 +4749,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "psynumbra_dark_lament",
@@ -4924,7 +4778,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "psynumbra_exploit_suffering",
@@ -4949,7 +4803,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "psynumbra_communal_torment",
@@ -4978,7 +4832,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "psynumbra_symbol_of_obliteration",
@@ -5007,7 +4861,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "psynumbra_abyssal_shroud",
@@ -5036,7 +4890,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "psynumbra_ruthless_dedication",
@@ -5061,7 +4915,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "psynumbra_looming_oblivion",
@@ -5086,7 +4940,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "psynumbra_oblivion's_refrain",
@@ -5111,7 +4965,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "dvar_exploitation_campaign",
@@ -5144,7 +4998,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "dvar_superior_engineering",
@@ -5173,7 +5027,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "dvar_planetary_oligarchy",
@@ -5206,7 +5060,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "psynumbra_shadows_manifest",
@@ -5239,7 +5093,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "psynumbra_vile_manipulation",
@@ -5267,7 +5121,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "syndicate_exploit_weakness",
@@ -5292,7 +5146,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "syndicate_enforce_control",
@@ -5317,7 +5171,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "syndicate_employ_deception",
@@ -5346,7 +5200,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "syndicate_force_projection",
@@ -5371,7 +5225,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "syndicate_preventative_control",
@@ -5400,7 +5254,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "syndicate_military_dominance",
@@ -5425,7 +5279,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "syndicate_covert_offensive",
@@ -5450,7 +5304,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "syndicate_alternative_measures",
@@ -5483,7 +5337,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "syndicate_augmented_force",
@@ -5512,7 +5366,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "syndicate_cerebral_submission",
@@ -5537,7 +5391,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "syndicate_advancement_tactics",
@@ -5562,7 +5416,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "syndicate_illustrious_conquest",
@@ -5587,7 +5441,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "syndicate_technological_supremacy",
@@ -5616,7 +5470,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "arc_magnetic_energy_storage",
@@ -5641,7 +5495,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "arc_electron_impact",
@@ -5666,7 +5520,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "arc_ionic_detachment",
@@ -5691,7 +5545,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "arc_neuro-electric_disruptors",
@@ -5720,7 +5574,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "arc_positron_technology",
@@ -5728,7 +5582,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "positron_arc_storm"
+                    "slug": "positron_arc_storm_projector"
                 }
         ,
                 {
@@ -5749,7 +5603,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "celestian_light's_embrace",
@@ -5774,7 +5628,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "celestian_penance",
@@ -5799,7 +5653,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+                },
 
         {
             "slug": "celestian_luminance",
@@ -5824,7 +5678,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "celestian_inner_fire",
@@ -5857,7 +5711,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "celestian_perseverance",
@@ -5882,7 +5736,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+                },
 
         {
             "slug": "celestian_star_presence",
@@ -5890,7 +5744,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "equipment:_light's_harmony"
+                    "slug": "equipment:_lights'_harmony"
                 }
 
             ],
@@ -5907,7 +5761,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "celestian_light_of_truth",
@@ -5936,7 +5790,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "celestian_star_ward",
@@ -5965,7 +5819,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "celestian_way_of_peace",
@@ -5990,7 +5844,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+                },
 
         {
             "slug": "celestian_colony_sanctuary",
@@ -6019,7 +5873,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+                },
 
         {
             "slug": "celestian_repercussion",
@@ -6044,7 +5898,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-        },
+                },
 
         {
             "slug": "celestian_axiom_of_light",
@@ -6069,7 +5923,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "celestian_ascension",
@@ -6094,7 +5948,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+                },
 
         {
             "slug": "celestian_celestial_reign",
@@ -6127,7 +5981,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+                },
 
         {
             "slug": "celestian_neo_evangelicals",
@@ -6160,7 +6014,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+                },
 
         {
             "slug": "syndicate_diplomatic_niceties",
@@ -6189,7 +6043,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+                },
 
         {
             "slug": "syndicate_clandestine_practices",
@@ -6222,7 +6076,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+                },
 
         {
             "slug": "syndicate_underhanded_exploitation",
@@ -6255,11 +6109,1578 @@ var jsonTech = {
 
             ],
             "cost": "2750",
+                },
+
+        {
+            "slug": "assembly_reverse_engineering",
+            "name": "Reverse Engineering",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_arc_blaster"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "assembly_reverse_engineer"
+                }
+
+            ],
+            "cost": "150",
+                },
+
+        {
+            "slug": "assembly_auxiliary_resource_extraction",
+            "name": "Auxiliary Resource Extraction",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "reprocess_colonist"
+                }
+        ,
+                {
+                    "slug": "sample_collection"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+                },
+
+        {
+            "slug": "assembly_harness_the_storm",
+            "name": "Harness the Storm",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_lightning_rider"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "assembly_lightning_rider"
+                }
+
+            ],
+            "cost": "300",
+                },
+
+        {
+            "slug": "assembly_advanced_bionics",
+            "name": "Advanced Bionics",
+
+            "mod_unlock": [
+                {
+                    "slug": "flesh_tearer_implants"
+                }
+        ,
+                {
+                    "slug": "miniaturized_corpse_processor"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "remote_system_purge"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+                },
+
+        {
+            "slug": "assembly_naval_demolitions",
+            "name": "Naval Demolitions",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "assembly_wrecking_ship"
+                }
+
+            ],
+            "cost": "520",
+                },
+
+        {
+            "slug": "assembly_adaptive_systems",
+            "name": "Adaptive Systems",
+
+            "mod_unlock": [
+                {
+                    "slug": "cloaking_implants"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "linear_accelerator"
+                }
+        ,
+                {
+                    "slug": "deploy_constrictor"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+                },
+
+        {
+            "slug": "assembly_molecular_computing",
+            "name": "Molecular Computing",
+
+            "mod_unlock": [
+                {
+                    "slug": "ocular_implants_(detector)"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "signal_shredding"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+
+
+
+        },
+
+        {
+            "slug": "assembly_toxic_applications",
+            "name": "Toxic Applications",
+
+            "mod_unlock": [
+                {
+                    "slug": "toxin_nanites_ammunition"
+                }
+        ,
+                {
+                    "slug": "neurotoxic_implants"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "adhesive_artillery"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+                },
+
+        {
+            "slug": "assembly_destructive_means",
+            "name": "Destructive Means",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_wrecker"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "assembly_wrecker"
+                }
+
+            ],
+            "cost": "1200",
+                },
+
+        {
+            "slug": "assembly_ionic_manipulation",
+            "name": "Ionic Manipulation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "ion_storm"
+                }
+        ,
+                {
+                    "slug": "ionic_overdrive"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+                },
+
+        {
+            "slug": "assembly_disassemblers",
+            "name": "Disassemblers",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_disassembler"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "assembly_disassembler"
+                }
+
+            ],
+            "cost": "1700",
+                },
+
+        {
+            "slug": "assembly_system_reload",
+            "name": "System Reload",
+
+            "mod_unlock": [
+                {
+                    "slug": "reassembly_module"
+                }
+        ,
+                {
+                    "slug": "advanced_re-engineering"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "temporal_disruption"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+                },
+
+        {
+            "slug": "assembly_ultimate_form",
+            "name": "Ultimate Form",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "assembly_reaver"
+                }
+
+            ],
+            "cost": "2750",
+                },
+
+        {
+            "slug": "assembly_quantric_technology",
+            "name": "Quantric Technology",
+
+            "mod_unlock": [
+                {
+                    "slug": "emergency_quantric_shielding"
+                }
+        ,
+                {
+                    "slug": "quantum_support_nanites"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+                },
+
+        {
+            "slug": "assembly_efficient_scavenging",
+            "name": "Efficient Scavenging",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "scavengers",
+                    "slug": "battlefield_autopsies"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+                },
+
+        {
+            "slug": "assembly_social_reconstruction",
+            "name": "Social Reconstruction",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "connected_society"
+                }
+        ,
+                {
+                    "slug": "neural-interfacing_datacore"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+                },
+
+        {
+            "slug": "assembly_universal_reassembly",
+            "name": "Universal Reassembly",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "the_great_harvest"
+                }
+        ,
+                {
+                    "slug": "re-cycle_of_life"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+                },
+
+        {
+            "slug": "heritor_gift_of_the_es'teq",
+            "name": "Gift of the Es'Teq",
+
+            "mod_unlock": [
+                {
+                    "slug": "es'teq_confiscator"
+                }
+        ,
+                {
+                    "slug": "es'teq_gauntlet"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "condemn_to_drained"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+                },
+
+        {
+            "slug": "heritor_holy_presence",
+            "name": "Holy Presence",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "blessing_of_the_es'teq"
+                }
+        ,
+                {
+                    "slug": "uncover_ancient_secrets"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+                },
+
+        {
+            "slug": "heritor_siphoner_awakening",
+            "name": "Siphoner Awakening",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_siphoner_staff"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "heritor_siphoner"
+                }
+
+            ],
+            "cost": "300",
+                },
+
+        {
+            "slug": "heritor_wrath_of_the_ancients",
+            "name": "Wrath of the Ancients",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "haunt_colony"
+                }
+        ,
+                {
+                    "slug": "curse_of_the_es'teq"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+                },
+
+        {
+            "slug": "heritor_zealous_conviction",
+            "name": "Zealous Conviction",
+
+            "mod_unlock": [
+                {
+                    "slug": "es'teq_protector_incarnation"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rite_of_revitalization"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+                },
+
+        {
+            "slug": "heritor_transmigration_rituals",
+            "name": "Transmigration Rituals",
+
+            "mod_unlock": [
+                {
+                    "slug": "es'teq_acolyte_incarnation"
+                }
+        ,
+                {
+                    "slug": "empowered_drained"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rite_of_reincarnation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+                },
+
+        {
+            "slug": "heritor_quintessence_ark_awakening",
+            "name": "Quintessence Ark Awakening",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_link_shard"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "heritor_quintessence_ark"
+                }
+
+            ],
+            "cost": "800",
+                },
+
+        {
+            "slug": "heritor_prelude_to_rapture",
+            "name": "Prelude to Rapture",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "essence_spire"
+                }
+        ,
+                {
+                    "slug": "mind_rebirth"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+                },
+
+        {
+            "slug": "heritor_dissemination_rituals",
+            "name": "Dissemination Rituals",
+
+            "mod_unlock": [
+                {
+                    "slug": "es'teq_conduit"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "rite_of_dissemination"
+                }
+        ,
+                {
+                    "slug": "bestow_essence"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+                },
+
+        {
+            "slug": "heritor_sacred_providence",
+            "name": "Sacred Providence",
+
+            "mod_unlock": [
+                {
+                    "slug": "empowered_ark"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "convert_heretic"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+                },
+
+        {
+            "slug": "heritor_high_lord_awakening",
+            "name": "High Lord Awakening",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_high_lord"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "heritor_high_lord"
+                }
+
+            ],
+            "cost": "2200",
+                },
+
+        {
+            "slug": "heritor_forced_conversion",
+            "name": "Forced Conversion",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "conversion_cult_infiltration"
+                }
+        ,
+                {
+                    "slug": "ancestral_wrath"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+                },
+
+        {
+            "slug": "heritor_venerated_incarnation",
+            "name": "Venerated Incarnation",
+
+            "mod_unlock": [
+                {
+                    "slug": "es'teq_lord_incarnation"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "ancestral_smite"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+                },
+
+        {
+            "slug": "heritor_final_revelation",
+            "name": "Final Revelation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "final_rapture"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
+                },
+
+        {
+            "slug": "heritor_ancestral_creed",
+            "name": "Ancestral Creed",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "inner_communion"
+                }
+        ,
+                {
+                    "slug": "technoclast_crusade"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_v"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+                },
+
+        {
+            "slug": "heritor_sacred_resurgence",
+            "name": "Sacred Resurgence",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "divine_legion"
+                }
+        ,
+                {
+                    "slug": "city_of_the_awakened"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+                },
+
+
+
+        {
+            "slug": "society_aquatic_deployment",
+            "name": "Aquatic Deployment",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "water_base"
+                }
+        ,
+                {
+                    "slug": "sea_transport"
+                }
+        ,
+                {
+                    "slug": "river_crossing_expertise"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "society_frontier_facilities",
+            "name": "Frontier Facilities",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "recreational_dome"
+                }
+        ,
+                {
+                    "slug": "standard_military_infrastructure"
+                }
+        ,
+
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "secret_colonizer"
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "society_production_development_i",
+            "name": "Production Development I",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "production_sectors_upgrade"
+                }
+        ,
+                {
+                    "slug": "military_engineering_guild"
+                }
+        ,
+                {
+                    "slug": "civil_engineering_guild"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "society_energy_development_i",
+            "name": "Energy Development I",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "energy_sectors_upgrade"
+                }
+        ,
+                {
+                    "slug": "energy_efficient_assembly_line"
+                }
+        ,
+                {
+                    "slug": "optimization_control_agency"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "society_food_development_i",
+            "name": "Food Development I",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "food_sectors_upgrade"
+                }
+        ,
+                {
+                    "slug": "bioengineered_food_plantation"
+                }
+        ,
+                {
+                    "slug": "agricultural_export_center"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "society_research_development_i",
+            "name": "Research Development I",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "research_sectors_upgrade"
+                }
+        ,
+                {
+                    "slug": "society_investment_center"
+                }
+        ,
+                {
+                    "slug": "military_innovation_center"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "society_aquatic_development",
+            "name": "Aquatic Development",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "water_sectors_upgrade"
+                }
+        ,
+                {
+                    "slug": "algae_farms"
+                }
+        ,
+                {
+                    "slug": "maritime_research_facility"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "society_colony_infrastructure",
+            "name": "Colony Infrastructure",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "cosmite_research_center"
+                }
+        ,
+                {
+                    "slug": "diplomatic_analysis_wing"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "society_environmental_conditioning",
+            "name": "Environmental Conditioning",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "hazard_removal"
+                }
+        ,
+                {
+                    "slug": "river_exploitation"
+                }
+        ,
+                {
+                    "slug": "botanical_gardens"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "society_anthropologic_research",
+            "name": "Anthropologic Research",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "xeno-relations_division"
+                }
+        ,
+                {
+                    "slug": "cosmite_growth_chambers"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "society_accelerated_force_deployment",
+            "name": "Accelerated Force Deployment",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "transit_infrastructure"
+                }
+        ,
+                {
+                    "slug": "ruins_navigation"
+                }
+        ,
+                {
+                    "slug": "mountain_navigation"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1000",
+        },
+
+        {
+            "slug": "society_orbital_relay_development",
+            "name": "Orbital Relay Development",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "orbital_relay_exploitation"
+                }
+        ,
+                {
+                    "slug": "orbital_logistics_base"
+                }
+        ,
+                {
+                    "slug": "military_assembly_base"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "society_production_development_ii",
+            "name": "Production Development II",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "production_sectors_advanced_upgrade"
+                }
+        ,
+                {
+                    "slug": "advanced_military_engineering_guild"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "society_energy_development_ii",
+            "name": "Energy Development II",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "energy_sectors_advanced_upgrade"
+                }
+        ,
+                {
+                    "slug": "high_energy_scanning_station"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "society_food_development_ii",
+            "name": "Food Development II",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "food_sectors_advanced_upgrade"
+                }
+        ,
+                {
+                    "slug": "community_wellness_center"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "society_research_development_ii",
+            "name": "Research Development II",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "research_sectors_advanced_upgrade"
+                }
+        ,
+                {
+                    "slug": "cosmite_amplification_lab"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "society_hydro-expertise",
+            "name": "Hydro-Expertise",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "water_sectors_advanced_upgrade"
+                }
+        ,
+                {
+                    "slug": "naval_training_facility"
+                }
+        ,
+                {
+                    "slug": "hydro_battery"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "society_virtual_hospitality_systems",
+            "name": "Virtual Hospitality Systems",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "holistic_military_care_center"
+                }
+        ,
+                {
+                    "slug": "virtual_entertainment_plaza"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "society_adaptive_exploitation",
+            "name": "Adaptive Exploitation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "lava_exploitation"
+                }
+        ,
+                {
+                    "slug": "volcanic_exploitation"
+                }
+        ,
+                {
+                    "slug": "cosmite_harvesting_center"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "society_advanced_relay_infrastructure",
+            "name": "Advanced Relay Infrastructure",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "forward_relays"
+                }
+        ,
+                {
+                    "slug": "orbital_reinforcement_platform"
+                }
+        ,
+                {
+                    "slug": "strategic_operations_platform"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "society_cosmite_mastery",
+            "name": "Cosmite Mastery",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "cosmite_generation_reactor"
+                }
+        ,
+                {
+                    "slug": "cosmite_catalyst"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "3600",
         },
 
 
-
-
-
-    ]
+            ]
 }

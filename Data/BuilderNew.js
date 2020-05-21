@@ -115,6 +115,8 @@ function showhideSoc(id, id2, id3) {
         divid.style.display = 'contents';
         divid2.style.display = 'contents';
         divid3.style.display = 'contents';
+
+
     }
 }
 
@@ -620,6 +622,13 @@ function addModUnlock(a, b) {
             }
             modUnlockName = "<titlebrown>" + modUnlockName + "</titlebrown>";
             modUnlockIcon = jsonMods.mods[j].slug;
+
+            if (jsonMods.mods[j].name.includes("Vehicle")) {
+                modUnlockIcon = modUnlockIcon.replace("vehicle:_", "");
+            }
+            if (jsonMods.mods[j].type.includes("Weapon")) {
+                modUnlockIcon = modUnlockIcon.replace("equipment:_", "");
+            }
             modUnlockAbility = jsonMods.mods[j].description;
 
 
@@ -639,13 +648,22 @@ function addModUnlock(a, b) {
             spa.innerHTML += "<img src=\"/aowp/Icons/Mods/" + modUnlockIcon + ".png\" width='200'\">";
             spa.innerHTML += "<br>" + modUnlockAbility;
 
-            if (jsonMods.mods[j].type.includes("Weapon")) {
+            if (jsonMods.mods[j].type.includes("Weapon") || jsonMods.mods[j].name.includes("Vehicle")) {
                 spa.innerHTML += "<hr> Base Cost: " + jsonMods.mods[j].cost;
             } else {
                 spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods.mods[j].cost;
             }
 
             imag.setAttribute("height", "30");
+
+            if (jsonMods.mods[j].name.includes("Vehicle") || jsonMods.mods[j].type.includes("Weapon")) {
+                var imag2 = document.createElement("IMG");
+                imag2.setAttribute("src", "/aowp/Icons/Text/arsenal.png");
+                imag2.className = "corner_icon";
+                btn.appendChild(imag2);
+            }
+
+
             var newID = document.getElementById("unlockholder");
             newID.appendChild(btn);
             btn.appendChild(imag);
