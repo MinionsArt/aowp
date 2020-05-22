@@ -108,7 +108,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "All Infiltrator units you control gain +1[armor/] and 10% damage increase, even when Holoshifted.<br>Holoshift can now target Mechanical units. ",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -118,7 +118,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "All Infiltrator units you control gain +2<shield></shield> and 10% damage increase, even when Holoshifted.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -751,8 +751,8 @@ var jsonOperations = {
         },
 
         {
-            "slug": "phoenix_defense_protocol",
-            "name": "Phoenix Defense Protocol",
+            "slug": "phoenix_defense_protocols",
+            "name": "Phoenix Defense Protocols",
             "tier": "VII",
             "type": "Doctrine Operation",
             "description": "We must keep hostiles away from our borders and out of reach of our colonies until we can unleash the full potential of the PyrX.<br><br>Your units gain +2<armor></armor> within your Domain and you gain +6<operationDefense></operationDefense>.",
@@ -1739,7 +1739,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "The Beacon of Truth unlocks the Declaration of Truth Doomsday Weapon. Each additional Beacon of Truth that you build increases the level of the weapon, making it stronger.<br><br>Only one Beacon of Truth may be built per colony.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2295,7 +2295,7 @@ var jsonOperations = {
             "type": "Empire UpgradeM",
             "description": "The Essence Spire unlocks the Mind Rebirth Doomsday Weapon. Each additional Essence Spire that you build increases the level of the weapon, making it stronger.<br><br>Only one Essence Spire may be built per colony.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2415,7 +2415,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Neural Interfacing colonists to imperial datacores found in ruins can provide a boost to research.<br><br>Colony gains +10<research></research> knowledge income for each Ruins sector within its domain.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2448,7 +2448,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Unlocks the ability to build bases on water and coastal sectors.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2458,7 +2458,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Allows units to embark into a transport to travel across the water.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2468,7 +2468,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Unlocks the ability to remove Hazards from the world map using special operations.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2478,7 +2478,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Colonies with a River going through their domain generate +10<food></food> food income.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2488,7 +2488,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Upgrading the transit infrastructure will reduce travel time within the empire's domain.<br><br>Reduces the movement cost of all hexes for friendly units within the colony's domain by 2.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2508,7 +2508,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "All units with Amphibious or Land Movement gain Expedited Movement in Mountains, reducing the cost of moving through this terrain.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2518,7 +2518,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Colonies generate +10<energy></energy> for each sector with a lava within its domain.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2528,7 +2528,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Colonies ignore all economic penalties from Volcanic terrain.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -2538,7 +2538,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Unlocks the ability to upgrade Forward Bases into Forward Relays, this lets them be used like an <actionblue>Orbital Relay</actionblue> sector and grants them a <actionblue>Tier 3 Garrison</actionblue>.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -3089,7 +3089,7 @@ var jsonOperations = {
             "type": "Strategic Operation(Instant)",
             "description": "Attempt to disrupt and shut down an enemy operation. Success is determined by Operation Strength vs the enemy's Operation Defense.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -3129,7 +3129,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Upgrades the scanners in your colonies. All colonies now have +3 vision and scanner range.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -3199,7 +3199,7 @@ var jsonOperations = {
             "type": "Empire Upgrade",
             "description": "Upgrades the scanners in your colonies. All colonies now show faction information of all targets within scanner range.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
         },
 
         {
@@ -3560,7 +3560,7 @@ var jsonOperations = {
             "type": "Colony Upgrade",
             "description": "Much knowledge can be gained through the analysis and monitoring of nearby Forest and the creatures within them.<br><br>Colony gains 6<research></research> for each Forest sector within its domain. In addition, colony vision range is increased by 2 hexes.",
             "energy_cost": "0",
-            "casting": "0 <stratPoint></stratPoint>",
+
             "production_cost": "300 <Production></Production>"
         },
 
@@ -3575,8 +3575,8 @@ var jsonOperations = {
         },
 
         {
-            "slug": "aboreal_eden",
-            "name": "Aboreal Eden",
+            "slug": "arboreal_eden",
+            "name": "Arboreal Eden",
             "tier": "IX",
             "type": "Doctrine Operation",
             "description": "Through the holistic integration of the forest and its organisms into every aspect of Amazon society, perfect symbiosis can be achieved.<br><br>Forest sectors grant 6 <happiness></happiness> when linked to colonies.<br>The movement cost of forests is further reduced, and your units gain an additional 200<happiness></happiness> morale when fighting within them.",
@@ -3614,6 +3614,223 @@ var jsonOperations = {
             "description": "Resurrect a fallen Hero by a process of genetic manipulation and regenerative medicine.",
             "energy_cost": "80",
             "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "orbital_laser_cannon",
+            "name": "Orbital Laser Cannon",
+            "tier": "VII",
+            "type": "Strategic Operation(Instant)",
+            "description": "Deals damage equal to 40% of the targeted army's <hp></hp>. If a colony center is targeted, it will kill 2-3<population></population> colonists and reduce colony happiness by -12<unhappiness></unhappiness> for 3<turn></turn>. On failure, targeted army suffers 20% damage.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "mass_insanity",
+            "name": "Mass Insanity",
+            "tier": "VIII",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "This operation has a strength 6<strengthpsyche></strengthpsyche> chance to turn all non-Mindless enemy units <abilityRed>Insane</abilityRed> for 1<turn></turn>. If resisted, applies <abilityRed>Broken Mind</abilityRed> instead.",
+            "energy_cost": "100",
+            "casting": "9 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "area_of_reprieve",
+            "name": "Area of Reprieve",
+            "tier": "IX",
+            "type": "Tactical Operation (Battlefield)",
+            "description": "Block all Tactical Operations and unit damaging abilities for 1<turn></turn> combat turn. Enlightened units heal for 10<hp></hp>.",
+            "energy_cost": "100",
+            "casting": "9 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "river_crossing_expertise",
+            "name": "River Crossing Expertise",
+            "tier": "I",
+            "type": "Empire Upgrade",
+            "description": "All of your units gain <actionblue>River Crossing Expertise</actionblue>, allowing them to cross rivers for fewer move points.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "emergency_redeploy",
+            "name": "Emergency Redeploy",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "Teleport the target owned army to the capital colony and give all units in the army <actionblue>Fast Movement</actionblue> for 3<turn></turn>.",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+
+        {
+            "slug": "dv-r_terrain_security_bulwark",
+            "name": "DV-R Terrain Security Bulwark",
+            "tier": "I",
+            "type": "Colony Upgrade",
+            "description": "This institute of protection against hostile operations instills confidence in all under its protection.<br><br>Allied units in this colony's domain gain 200<happiness></happiness>. This colony dosn't suffer from penalties from Volcanic terrain in any of the sectors in its domain.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "combat_simulation_center",
+            "name": "Combat Simulation Center",
+            "tier": "I",
+            "type": "Colony Upgrade",
+            "description": "VR combat sims are a vital tool in preparing forces for battles.<br><br>Grants 3 experience per turn to all units in any stack currently on or adjacent to the colony center hex.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "intelligence_gathering_bureau",
+            "name": "Intelligence Gathering Bureau",
+            "tier": "V",
+            "type": "Colony Upgrade",
+            "description": "The IGB is a critical component to the Syndicate society. How else could you successfully engage in politics?<br><br>Colony gains True Sight and +2<operationDefense></operationDefense> Operational Defense.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "water_sectors_advanced_upgrade",
+            "name": "Water Sectors Advanced Upgrade",
+            "tier": "VII",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all water sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "naval_training_facility",
+            "name": "Naval Training Facility",
+            "tier": "VII",
+            "type": "Sector Upgrade",
+            "description": "Specialized naval training facilities can decrease production times for naval units. At higher levels, naval units produced gain experience levels.<br><br><abilityRed>This can only be built in an hydro-exploitation sector.<br><br>Unit costs can never be lowered more than 75%</abilityRed><br><br><bullet> Level 1<br>-15%<production></production> cost for naval units.<br>Naval units produced have +1<x-medal_novice></x-medal_novice>.</bullet><bullet> Level 2<br>-30%<production></production> cost for naval units. Naval units produced have +2<x-medal_novice></x-medal_novice>.</bullet><bullet> Level 3<br>-45%<production></production> cost for naval units.<br>Naval units produced have +3<x-medal_novice></x-medal_novice>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "hydro_battery",
+            "name": "Hydro Battery",
+            "tier": "VII",
+            "type": "Sector Upgrade",
+            "description": "The currents and electrostatic charge of the ocean can be harnessed into energy by building special hydro batteries along the coast. By storing energy during down periods and injecting it into regular energy processes during peak periods, energy gains can be boosted for all exploitations. At higher levels, dedicating the colony to energy production can boost yields even further.<br><br><abilityRed>This can only be built in an hydro-exploitation sector.</abilityRed><br><br><bullet> Level 1<br> +5<energy></energy> for each <energy></energy> and <watersector></watersector> exploitation.</bullet><bullet> Level 2<br> +10<energy></energy> for each <energy></energy> and <watersector></watersector> exploitation.</bullet><bullet> Level 3<br> +10<energy></energy> for each <energy></energy> and <watersector></watersector> exploitation.<br>+10%<energy></energy> income.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "brood_cluster",
+            "name": "Brood Cluster",
+            "tier": "I",
+            "type": "Colony Upgrade",
+            "description": "Gathering all broods together allows for more efficient reproduction turnover.<br><br>Colony gains+50% of their food<food></food> income (after upkeep) as a production<production></production> discount when producing units. Food income from Food sharing is excluded. Food converted this way can never exceed 50% of current production income.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "spire_of_suffering",
+            "name": "Spire of Suffering",
+            "tier": "V",
+            "type": "Sector Upgrade",
+            "description": "The Spire of Suffering unlocks The Dirge Doomsday weapon. Each additional Spire of Suffering that you build increases the level fo the weapon, making it stronger.<br><br>Only one Spire of Suffering may be built per colony.",
+            "production_cost": "800 <production></production> Production",
+            "energy_cost": "200 <energy></energy> Energy",
+            "cosmite_cost": "50 <tricorium></tricorium> Cosmite",
+
+        },
+
+        {
+            "slug": "pyrx_refinery",
+            "name": "PyrX Refinery",
+            "tier": "V",
+            "type": "Sector Upgrade",
+            "description": "The PyrX Refinery unlocks the PyrX Fumigation Protocols Doomsday Weapon. Each additional PyrX Refinery you build increases the level of the weapon, making it stronger.<br><br>Only one PyrX Refinery may be built per Colony.",
+            "production_cost": "800 <production></production> Production",
+            "energy_cost": "200 <energy></energy> Energy",
+            "cosmite_cost": "50 <tricorium></tricorium> Cosmite",
+
+        },
+
+        {
+            "slug": "basilisk_node",
+            "name": "Basilisk Node",
+            "tier": "V",
+            "type": "Sector Upgrade",
+            "description": "The Basilisk Node unlocks the Cyber Attack Doomsday Weapon. Each additional Basilisk Node that you build increases the level of the weapon, making it stronger.<br><br>Only one Basilisk Node may be built per colony.",
+            "production_cost": "800 <production></production> Production",
+            "energy_cost": "200 <energy></energy> Energy",
+            "cosmite_cost": "50 <tricorium></tricorium> Cosmite",
+
+        },
+
+        {
+            "slug": "dimensional_amplifier_tower",
+            "name": "Dimensional Amplifier Tower",
+            "tier": "V",
+            "type": "Sector Upgrade",
+            "description": "The Dimensional Amplifier Tower unlocks the Dimensional Rift Doomsday Weapon. Each additional Dimensional Amplifier Tower you build increases the level of the weapon, making it stronger.<br><br>Only one Dimensional Amplifier Tower may be build per colony.",
+            "production_cost": "800 <production></production> Production",
+            "energy_cost": "200 <energy></energy> Energy",
+            "cosmite_cost": "50 <tricorium></tricorium> Cosmite",
+
+        },
+
+        {
+            "slug": "beacon_of_truth",
+            "name": "Beacon of Truth",
+            "tier": "V",
+            "type": "Empire Upgrade",
+            "description": "The Beacon of Truth unlocks the Declaration of Truth Doomsday Weapon. Each additional Beacon of Truth that you build increases the level of the weapon, making it stronger.<br><br>Only one Beacon of Truth may be built per colony.",
+            "production_cost": "800 <production></production> Production",
+            "energy_cost": "200 <energy></energy> Energy",
+            "cosmite_cost": "50 <tricorium></tricorium> Cosmite"
+        },
+        {
+            "slug": "omega_hive",
+            "name": "Omega Hive",
+            "tier": "V",
+            "type": "Sector Upgrade",
+            "description": "The Omega Hive unlocks the Omega Strain Doomsday Weapon. Each additional Omega Hive that you build increases the level of the weapon, making it stronger.<br><br>Only one Omega Hive may be built per colony.",
+            "production_cost": "800 <production></production> Production",
+            "energy_cost": "200 <energy></energy> Energy",
+            "cosmite_cost": "50 <tricorium></tricorium> Cosmite",
+
+        },
+
+        {
+            "slug": "essence_spire",
+            "name": "Essence Spire",
+            "tier": "V",
+            "type": "Sector Upgrade",
+            "description": "The Essence Spire unlocks the Mind Rebirth Doomsday Weapon. Each additional Essence Spire that you build increases the level of the weapon, making it stronger.<br><br>Only one Essence Spire may be built per colony.",
+            "production_cost": "800 <production></production> Production",
+            "energy_cost": "200 <energy></energy> Energy",
+            "cosmite_cost": "50 <tricorium></tricorium> Cosmite",
+
         },
 
 

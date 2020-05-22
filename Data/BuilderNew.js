@@ -723,6 +723,14 @@ function addOpUnlock(a, b) {
                 spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
             }
 
+            if (jsonOperations.operations[j].production_cost != undefined) {
+                spa.innerHTML += "<hr>" + "Cost: " + jsonOperations.operations[j].production_cost;
+            }
+
+            if (jsonOperations.operations[j].influence_cost != undefined) {
+                spa.innerHTML += "<hr>" + "Cost: " + jsonOperations.operations[j].influence_cost + "<influence></influence>";
+            }
+
             imag.setAttribute("height", "35");
             if (jsonOperations.operations[j].type.includes("Tactical")) {
                 var imag2 = document.createElement("IMG");
