@@ -1732,15 +1732,7 @@ var jsonOperations = {
             "casting": "8 <stratPoint></stratPoint>",
         },
 
-        {
-            "slug": "beacon_of_truth",
-            "name": "Beacon of Truth",
-            "tier": "V",
-            "type": "Empire Upgrade",
-            "description": "The Beacon of Truth unlocks the Declaration of Truth Doomsday Weapon. Each additional Beacon of Truth that you build increases the level of the weapon, making it stronger.<br><br>Only one Beacon of Truth may be built per colony.",
-            "energy_cost": "0",
 
-        },
 
         {
             "slug": "declaration_of_truth",
