@@ -1288,7 +1288,7 @@ var jsonOperations = {
         },
 
         {
-            "slug": "military_industrial_complex",
+            "slug": "military-industrial_complex",
             "name": "Military Industrial Complex",
             "tier": "IX",
             "type": "Doctrine Operation",
@@ -3401,6 +3401,221 @@ var jsonOperations = {
             "energy_cost": "",
             "casting": " <stratPoint></stratPoint>",
         },
+
+
+        {
+            "slug": "noble_diplomats",
+            "name": "Noble Diplomats",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "Our noble houses produce many scions whose life at court has prepared them well for diplomacy and intrigue. Let us put them to use among the aliens of this world.<br><br>Receive +1<influence></influence> and +15<energy></energy> per <turn></turn> for every Faction you are at Peace with. This amount increases as your relationship improves. ",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "indentured_contracts",
+            "name": "Indentured Contracts",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "The Indentured are seeking rights. We can take advantage of this by making them sign a maintenance and ration reduction contract, and in trade they get citizenship and freedom at the end of this venture... should they survive.<br><br>Innate Indentured units have their <energy></energy> cost reduced by 33% in colonies.<br>All Indentured units, including those who became so due to mods, have their upkeep reduced by 50%.<br><br><abilityRed>Unit upkeep can never be reduced by more than 50%.</abilityRed>",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "one-way_trust",
+            "name": "One-Way Trust",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "Mutual trust is important amongst allies, but complete trust is a fallacy, so we must keep them on a leash and feed them false information in return for their data.<br><br>You do not suffer from the negative effects of having an intelligence sharing pact with other players. In addition, you get +4<operationDefense></operationDefense>.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "cloak_and_dagger",
+            "name": "Cloak and Dagger",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "We can easily trigger wars far away from our borders to distract our enemies and leave us free reign. All we have to do is point them in the right direction.<br><br>You get +3<operationstrength></operationstrength>. In addition, covert operations are now 20% cheaper.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "indentured_servitude",
+            "name": "Indentured Servitude",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "In these desperate times, everyone must make sacrifices, but the lower class should sacrifice the most.<br><br>All Colonies gain +40%<production></production>, but suffer -8<happiness></happiness>.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "deep_infiltration",
+            "name": "Deep Infiltration",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Our spies are provided with extra training in stealing military intelligence, granting us a huge advantage on the battlefield.<br><br>Infiltrating a Player will give all units a +20% damage bonus against their units.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "karmic_amplification",
+            "name": "Karmic Amplification",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "We accept everyone who we can possibly sway to follow the Celestian way. By aiding others, we reveal to them the one and only truth.<br><br>The cooldown for requesting a new quest from a faction is reduced by 1<turn></turn>.<br>While active, factions will make demands at a slower rate.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "celestial_judgment",
+            "name": "Celestial Judgment",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "Not everyone can be shown the light through talking and scriptures - some will have to be forced to bend the knee to our teachings.<br><br>Your Enlightened units deal 10% added damage to non-Enlightened units.",
+            "energy_cost": "40",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "harmonious_existence",
+            "name": "Harmonious Existence",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "By teaching your population to live in harmony with the world and each other, they will live a happier life.<br><br>Each Colony you own that is not of your starting race provides an additional +100 to relations with that race.<br>All your Colonies have +6<happiness></happiness>.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "disincentive_prayers",
+            "name": "Disincentive Prayers",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "By chanting our beliefs every day, we can disincentivize most unwanted visitors from coming near us again.<br><br>Marauders no longer attack your Colonies and sector bases, nor do they trespass in your domain.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "missionary_negotiators",
+            "name": "Missionary Negotiators",
+            "tier": "VII",
+            "type": "Doctrine Operation",
+            "description": "Convincing others of the justness of your cause makes them more inclined to sell their treasures for less.<br><br>Cost of bribing NPC Faction stacks is reduced by 20%.<br>The <influence></influence> cost of items you can buy from Dwelling Shops is reduced by 20%.<br><br><abilityRed>Dwelling Shop discounts can never exceed 50%</abilityRed>",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "ecological_construction",
+            "name": "Ecological Construction",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "Intelligent use of wood and local materials allows for green, cost-effective infrastructure development without having to harm or exploit nature.<br><br>Your colonies each gain +10<production></production> for every forest sector within its domain.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "ecological_warfare",
+            "name": "Ecological Warfare",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "Train your soldiers in techniques to extract chemicals from local plants and animals for combat purposes.<br><br>Your units' Melee and Biological attacks have a strength 8<StrengthBio></StrengthBio> chance to apply <abilityRed>Poison</abilityRed> to Biological and Cyborg targets, reducing their morale and doing damage over time.<br><br>In addition your non-mechanical units heal an additional 6<hp></hp> per turn on the world map.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "progressive_cultivation",
+            "name": "Progressive Cultivation",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "We can invest in genetically-modified crops that exploit fertile land to the fullest, making our harvests more bountiful.<br><br>Your colonies gain +8<food></food>, and an additional +8<food></food> for every Arcadian sector connected to them.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "advanced_wildlife_militarization",
+            "name": "Advanced Wildlife Militarization",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "By dedicating extra resources to animal welfare and implantation, we can further integrate non-sapient beings into our military forces, boosting their general wellbeing as well as their effectiveness in combat.<br><br>All Animal and Mounted units gain 200<happiness></happiness>, 10<hp></hp>, and gain [xp/] 50% faster.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "arborean_monitoring_station",
+            "name": "Arborean Monitoring Station",
+            "tier": "V",
+            "type": "Colony Upgrade",
+            "description": "Much knowledge can be gained through the analysis and monitoring of nearby Forest and the creatures within them.<br><br>Colony gains 6<research></research> for each Forest sector within its domain. In addition, colony vision range is increased by 2 hexes.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+            "production_cost": "300 <Production></Production>"
+        },
+
+        {
+            "slug": "bio_crusade",
+            "name": "Bio Crusade",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "We must focus our efforts in cleansing this planet of all machines and non-organics. They are unnatural beings that need to be destroyed in order to let nature prosper.<br><br>Your units deal +20% added damage when fighting Mechanical and Cyborg units.<br>Your Mounted or Animal units with Melee attacks gain <actionblue>Frenzy</actionblue>",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "aboreal_eden",
+            "name": "Aboreal Eden",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Through the holistic integration of the forest and its organisms into every aspect of Amazon society, perfect symbiosis can be achieved.<br><br>Forest sectors grant 6 <happiness></happiness> when linked to colonies.<br>The movement cost of forests is further reduced, and your units gain an additional 200<happiness></happiness> morale when fighting within them.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+
+        {
+            "slug": "planetary_unification_protocol",
+            "name": "Planetary Unification Protocol",
+            "tier": "IV",
+            "type": "Strategic Operation(Instant)",
+            "description": "Awaken the Planet-CORE node and petition for the status of Planetary Unifier. This will start a timer that can end the game.<br><br>Requirements:<br><bullet>Friendly dwellings under alliance control: 2</bullet><bullet>Required reputation level: Virtuous</bullet><br>Projected Countdown: 25<turn></turn>",
+            "energy_cost": "",
+            "casting": "20 <stratPoint></stratPoint>",
+            "influence_cost": "100",
+        },
+
+        {
+            "slug": "unification_efforts",
+            "name": "Unification Efforts",
+            "tier": "IV",
+            "type": "Doctrine Operation",
+            "description": "Instead of using force to conquer this planet, we will use our influence and alliances to come out on top.<br><br>Relation gains for completing quests is increased by +50% and you get a +100<reputation6></reputation6> increase to your reputation.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "hero_resurrection_protocol",
+            "name": "Hero Resurrection Protocol",
+            "tier": "IV",
+            "type": "Strategic Operation(Instant)",
+            "description": "Resurrect a fallen Hero by a process of genetic manipulation and regenerative medicine.",
+            "energy_cost": "80",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
 
 
 

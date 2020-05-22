@@ -5617,7 +5617,7 @@ var jsonTech = {
             ],
             "op_unlock": [
                 {
-                    "slug": "cleanse"
+                    "slug": "cleansing_light"
                 }
 
             ],
@@ -5966,7 +5966,7 @@ var jsonTech = {
                 }
         ,
                 {
-                    "slug": "celestial_judgement"
+                    "slug": "celestial_judgment"
                 }
         ,
                 {
@@ -7602,7 +7602,7 @@ var jsonTech = {
                 }
         ,
                 {
-                    "slug": "volcanic_exploitation"
+                    "slug": "volcanic_adaptation"
                 }
         ,
                 {
