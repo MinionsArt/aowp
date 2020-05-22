@@ -3029,5 +3029,380 @@ var jsonOperations = {
         },
 
 
+        {
+            "slug": "deploy_monitor",
+            "name": "Deploy Monitor",
+            "tier": "I",
+            "type": "Strategic Operation (Sustained)",
+            "description": "A monitoring station appears on the targeted hex. The station provides the deploying player with vision for 6 hexes and sensor coverage for 12 hexes.<br>The station is concealed, and can only be detected by other players with Detection, or if they move adjacent to it. Monitoring stations are not marked as belonging to a particular player, and can be destroyed by other players without triggering war.",
+            "energy_cost": "40",
+            "casting": "4 <stratPoint></stratPoint>",
+            "upkeep_cost": "5 <energy></energy> / <turn></turn>"
+        },
+
+        {
+            "slug": "native_threat_locator",
+            "name": "Native Threat Locator",
+            "tier": "I",
+            "type": "Strategic Operation(Instant)",
+            "description": "Reveals the location of the nearest, unexplored hostile Spawner to the target colony.",
+            "energy_cost": "40",
+            "casting": "4 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "capability_ranking",
+            "name": "Capability Ranking",
+            "tier": "I",
+            "type": "Empire Upgrade",
+            "description": "Unlocks capability rankings, shown in the Empire Tasks interface, allowing you to see how your Empire compares to that of other players.<br><br>Capability is visible for your Empire and its allies. To see the ranks of other players you must use <actionblue>Infiltrate Operation Center</actionblue>.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "fabricate_casus_belli",
+            "name": "Fabricate Casus Belli",
+            "tier": "II",
+            "type": "Covert Operation",
+            "description": "Use stolen data and forgery to fabricate a Casus Belli justifying a war against this player. Only one fabricated Casus Belli may be active on a player at once.<br>On failure, a minor Casus Belli will still be applied.",
+            "energy_cost": "0",
+            "casting": "6 <stratPoint></stratPoint>",
+            "influence_cost": "20"
+        },
+
+
+        {
+            "slug": "steal_maps",
+            "name": "Steal Maps",
+            "tier": "II",
+            "type": "Covert Operation",
+            "description": "Steal map data from the target player, revealing all areas of the world map that they have explored.",
+            "energy_cost": "60",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "counter_operation",
+            "name": "Counter Operation",
+            "tier": "III",
+            "type": "Strategic Operation(Instant)",
+            "description": "Attempt to disrupt and shut down an enemy operation. Success is determined by Operation Strength vs the enemy's Operation Defense.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "internal_purge",
+            "name": "Internal Purge",
+            "tier": "III",
+            "type": "Covert Operation",
+            "description": "Attempt to identify and remove any Covert Operations that are currently affecting you. This will also raise your <actionblue>Alert Level[/abilitylevel] by 2, increasing your Operation Defense.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "secret_state",
+            "name": "Secret State",
+            "tier": "III",
+            "type": "Doctrine Operation",
+            "description": "A secret department is instituted with the task of preventing any possible threat to your populace and territories.<br><br>You gain +5 <operationDefense></operationDefense> Operational Defence.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "infiltrate_operations_center",
+            "name": "Infiltrate Operations Center",
+            "tier": "IV",
+            "type": "Covert Operation",
+            "description": "Reduce the target player's Operation Defense by 4<operationDefense></operationDefense> against our operations, and allow us to view their personality traits, as well as  a list of that player's active special, non-covert operations.<br><br>Players whose Operation Center you have infilitrated will also be shown in the Capability rankings.",
+            "energy_cost": "45",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "scanner_upgrade_range",
+            "name": "Scanner Upgrade: Range",
+            "tier": "IV",
+            "type": "Empire Upgrade",
+            "description": "Upgrades the scanners in your colonies. All colonies now have +3 vision and scanner range.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "research_taps",
+            "name": "Research Taps",
+            "tier": "V",
+            "type": "Covert Operation",
+            "description": "Collect research data from the target player over a number of turns. The data is transmitted to us and the target's research efforts are sabotaged once the operation has run for 5<turn></turn>.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "energy_siphon",
+            "name": "Energy Siphon",
+            "tier": "V",
+            "type": "Covert Operation",
+            "description": "Collect 25% of the targeted player's total energy income over a fixed number of turns. The energy will transfer to us once the operation has run for 5<turn></turn>.",
+            "energy_cost": "0",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "guerrilla_strike",
+            "name": "Guerrilla Strike",
+            "tier": "VI",
+            "type": "Covert Operation",
+            "description": "Spawn an army of the selected non-hostile faction to attack the target player. Not usable if no non-hostile factions are known.",
+            "energy_cost": "0",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "relay_disruption",
+            "name": "Relay Disruption",
+            "tier": "VI",
+            "type": "Covert Operation",
+            "description": "Disrupt the Orbital Relay network of the target player, blocking their use of Orbital Relays for 10<turn></turn>",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "trigger_war_with_faction",
+            "name": "Trigger War With Faction",
+            "tier": "VI",
+            "type": "Covert Operation",
+            "description": "Sabotage target enemy player's relationship with a faction, degrading their relation over time until they eventually reach a state in which they will go to war with the player.",
+            "energy_cost": "0",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "sensor_jammers",
+            "name": "Sensor Jammers",
+            "tier": "VII",
+            "type": "Covert Operation",
+            "description": "Disable the target player's Detection for 10<turn></turn>, meaning they will only detect concealed units that are adjacent to their own stacks and structures. In addition, this ensures that our armies will not appear on the target player's sensors.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "scanner_upgrade_faction_information",
+            "name": "Scanner Upgrade: Faction Information",
+            "tier": "VII",
+            "type": "Empire Upgrade",
+            "description": "Upgrades the scanners in your colonies. All colonies now show faction information of all targets within scanner range.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "locate_armies",
+            "name": "Locate Armies",
+            "tier": "VIII",
+            "type": "Covert Operation",
+            "description": "For the next 10<turn></turn> turns, all of the target player�s armies are visible to the casting player. Each army is marked using a sensor particle effect of the target player�s primary color. Armies that consist solely of camouflaged units are not displayed.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "falsify_atrocities",
+            "name": "Falsify Atrocities",
+            "tier": "VIII",
+            "type": "Covert Operation",
+            "description": "Expertly falsify claims of grievous war crimes against target enemy player. The enemy player loses reputation, and all other players gain a maximum level Casus Belli against that player.",
+            "energy_cost": "0",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "universal_data_siphon",
+            "name": "Universal Data Siphon",
+            "tier": "IX",
+            "type": "Covert Operation",
+            "description": "Gain access to the target player's vision for 20<turn></turn>",
+            "energy_cost": "120",
+            "casting": "12 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "cosmite_translocators",
+            "name": "Cosmite Translocators",
+            "tier": "IX",
+            "type": "Covert Operation",
+            "description": "Collect 50% of the targeted player's total cosmite income over a fixed number of turns. The cosmite will transfer to us once the operation has run for 5<turn></turn>.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_support_i",
+            "name": "Operational Support I",
+            "tier": "II",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Strategic Operation points and +3 Tactical Operation points.<br><br>This allows you to use more operations each turn, both in and out of combat.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_support_ii",
+            "name": "Operational Support II",
+            "tier": "IV",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Strategic Operation points and +3 Tactical Operation points.<br><br>This allows you to use more operations each turn, both in and out of combat.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_support_iii",
+            "name": "Operational Support III",
+            "tier": "VI",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Strategic Operation points and +3 Tactical Operation points.<br><br>This allows you to use more operations each turn, both in and out of combat.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_support_iv",
+            "name": "Operational Support IV",
+            "tier": "VIII",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Strategic Operation points and +3 Tactical Operation points.<br><br>This allows you to use more operations each turn, both in and out of combat.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "doctrine_development_i",
+            "name": "Doctrine Development I",
+            "tier": "II",
+            "type": "Empire Upgrade",
+            "description": "Gain +1 doctrine slot, increasing the number of Doctrines that can be active at the same time.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "doctrine_development_ii",
+            "name": "Doctrine Development II",
+            "tier": "IV",
+            "type": "Empire Upgrade",
+            "description": "Gain +1 doctrine slot, increasing the number of Doctrines that can be active at the same time.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "doctrine_development_iii",
+            "name": "Doctrine Development III",
+            "tier": "VI",
+            "type": "Empire Upgrade",
+            "description": "Gain +1 doctrine slot, increasing the number of Doctrines that can be active at the same time.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "doctrine_development_iv",
+            "name": "Doctrine Development IV",
+            "tier": "VIII",
+            "type": "Empire Upgrade",
+            "description": "Gain +1 doctrine slot, increasing the number of Doctrines that can be active at the same time.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "doctrine_development_v",
+            "name": "Doctrine Development V",
+            "tier": "III",
+            "type": "Empire Upgrade",
+            "description": "Gain +1 doctrine slot, increasing the number of Doctrines that can be active at the same time.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "doctrine_development_vi",
+            "name": "Doctrine Development VI",
+            "tier": "VII",
+            "type": "Empire Upgrade",
+            "description": "Gain +1 doctrine slot, increasing the number of Doctrines that can be active at the same time.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_prowess_i",
+            "name": "Operational Prowess I",
+            "tier": "II",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Operational Strength and +3 Operational Defence.<br><br>This makes your operations more likely to succeed on your enemies, and your enemies' operations less like to succeed against you.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_prowess_ii",
+            "name": "Operational Prowess II",
+            "tier": "IV",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Operational Strength and +3 Operational Defence.<br><br>This makes your operations more likely to succeed on your enemies, and your enemies' operations less like to succeed against you.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_prowess_iii",
+            "name": "Operational Prowess III",
+            "tier": "VI",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Operational Strength and +3 Operational Defence.<br><br>This makes your operations more likely to succeed on your enemies, and your enemies' operations less like to succeed against you.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_prowess_iv",
+            "name": "Operational Prowess IV",
+            "tier": "VIII",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Operational Strength and +3 Operational Defence.<br><br>This makes your operations more likely to succeed on your enemies, and your enemies' operations less like to succeed against you.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_prowess_v",
+            "name": "Operational Prowess V",
+            "tier": "II",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Operational Strength and +3 Operational Defence.<br><br>This makes your operations more likely to succeed on your enemies, and your enemies' operations less like to succeed against you.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "operational_prowess_vi",
+            "name": "Operational Prowess VI",
+            "tier": "IV",
+            "type": "Empire Upgrade",
+            "description": "Gain +3 Operational Strength and +3 Operational Defence.<br><br>This makes your operations more likely to succeed on your enemies, and your enemies' operations less like to succeed against you.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+
+
     ]
 }

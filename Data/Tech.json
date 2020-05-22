@@ -7682,5 +7682,428 @@ var jsonTech = {
         },
 
 
+        {
+            "slug": "society_area_surveillance",
+            "name": "Area Surveillance",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "deploy_monitor"
+                }
+        ,
+                {
+                    "slug": "native_threat_locator"
+                }
+        ,
+                {
+                    "slug": "capability_ranking"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "society_covert_infiltration",
+            "name": "Covert Infiltration",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "fabricate_casus_belli"
+                }
+        ,
+                {
+                    "slug": "steal_maps"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_i"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "society_operation_effectiveness_i",
+            "name": "Operation Effectiveness I",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "operational_support_i"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_i"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_i"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "society_counter_ops",
+            "name": "Counter Ops",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "counter_operation"
+                }
+        ,
+                {
+                    "slug": "internal_purge"
+                }
+        ,
+                {
+                    "slug": "secret_state"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "250",
+        },
+
+        {
+            "slug": "society_intelligence_gathering",
+            "name": "Intelligence Gathering",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "infiltrate_operations_center"
+                }
+        ,
+                {
+                    "slug": "scanner_upgrade_range"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_iv"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "420",
+        },
+
+        {
+            "slug": "society_operation_effectiveness_ii",
+            "name": "Operation Effectiveness II",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "operational_support_i"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_ii"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_ii"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "society_espionage",
+            "name": "Espionage",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "research_taps"
+                }
+        ,
+                {
+                    "slug": "energy_siphon"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "650",
+        },
+
+        {
+            "slug": "society_insurrection_program",
+            "name": "Insurrection Program",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "guerrilla_strike"
+                }
+        ,
+                {
+                    "slug": "relay_disruption"
+                }
+        ,
+                {
+                    "slug": "trigger_war_with_faction"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1000",
+        },
+
+        {
+            "slug": "society_operation_effectiveness_iii",
+            "name": "Operation Effectiveness III",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "operational_support_iii"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_iii"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_iii"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "society_sensor_technologies",
+            "name": "Sensor Technologies",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "sensor_jammers"
+                }
+        ,
+                {
+                    "slug": "scanner_upgrade_faction_information"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_iii"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1400",
+        },
+
+        {
+            "slug": "society_deep_infiltration",
+            "name": "Deep Infiltration",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "locate_armies"
+                }
+        ,
+                {
+                    "slug": "falsify_atrocities"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1800",
+        },
+
+        {
+            "slug": "society_operation_effectiveness_iv",
+            "name": "Operation Effectiveness IV",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "operational_support_iv"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_iv"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_iv"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "society_global_information_control",
+            "name": "Global Information Control",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "universal_data_siphon"
+                }
+        ,
+                {
+                    "slug": "cosmite_translocators"
+                }
+        ,
+                {
+                    "slug": "operational_prowess_iv"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2250",
+        },
+
+
+
             ]
 }
