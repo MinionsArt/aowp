@@ -2280,15 +2280,6 @@ var jsonOperations = {
             "casting": "8 <stratPoint></stratPoint>",
         },
 
-        {
-            "slug": "essence_spire",
-            "name": "Essence Spire",
-            "tier": "V",
-            "type": "Empire UpgradeM",
-            "description": "The Essence Spire unlocks the Mind Rebirth Doomsday Weapon. Each additional Essence Spire that you build increases the level of the weapon, making it stronger.<br><br>Only one Essence Spire may be built per colony.",
-            "energy_cost": "0",
-
-        },
 
         {
             "slug": "mind_rebirth",
