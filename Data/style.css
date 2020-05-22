@@ -342,8 +342,8 @@ p {
     cursor: grab;
     position: relative;
     z-index: 5;
-    width: auto;
-    height: 1200x;
+    width: inherit;
+    height: auto;
     overflow: auto hidden;
     background: url("/aowp/UI/hex35.png");
     background-color: #051221;
