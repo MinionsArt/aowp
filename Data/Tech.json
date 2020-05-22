@@ -3994,7 +3994,7 @@ var jsonTech = {
                 }
         ,
                 {
-                    "slug": "_brood_cluster"
+                    "slug": "brood_cluster"
                 }
 
             ],

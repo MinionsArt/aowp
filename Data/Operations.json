@@ -2438,14 +2438,596 @@ var jsonOperations = {
             "casting": "15 <stratPoint></stratPoint>",
         },
 
+
+
+
+        {
+            "slug": "water_base",
+            "name": "Water Base",
+            "tier": "I",
+            "type": "Empire Upgrade",
+            "description": "Unlocks the ability to build bases on water and coastal sectors.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "sea_transport",
+            "name": "Sea Transport",
+            "tier": "I",
+            "type": "Empire Upgrade",
+            "description": "Allows units to embark into a transport to travel across the water.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "hazard_removal",
+            "name": "Hazard Removal",
+            "tier": "III",
+            "type": "Empire Upgrade",
+            "description": "Unlocks the ability to remove Hazards from the world map using special operations.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "river_exploitation",
+            "name": "River Exploitation",
+            "tier": "III",
+            "type": "Empire Upgrade",
+            "description": "Colonies with a River going through their domain generate +10<food></food> food income.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "transit_infrastructure",
+            "name": "Transit Infrastructure",
+            "tier": "V",
+            "type": "Empire Upgrade",
+            "description": "Upgrading the transit infrastructure will reduce travel time within the empire's domain.<br><br>Reduces the movement cost of all hexes for friendly units within the colony's domain by 2.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "ruins_navigation",
+            "name": "Ruins Navigation",
+            "tier": "V",
+            "type": "Empire Upgrade",
+            "description": "All units with Amphibious or Land Movement gain Expedited Movement in Ruins, reducing the cost of moving through this terrain.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "mountain_navigation",
+            "name": "Mountain Navigation",
+            "tier": "V",
+            "type": "Empire Upgrade",
+            "description": "All units with Amphibious or Land Movement gain Expedited Movement in Mountains, reducing the cost of moving through this terrain.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "lava_exploitation",
+            "name": "Lava Exploitation",
+            "tier": "VII",
+            "type": "Empire Upgrade",
+            "description": "Colonies generate +10<energy></energy> for each sector with a lava within its domain.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "volcanic_adaptation",
+            "name": "Volcanic Adaptation",
+            "tier": "VII",
+            "type": "Empire Upgrade",
+            "description": "Colonies ignore all economic penalties from Volcanic terrain.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "forward_relays",
+            "name": "Forward Relays",
+            "tier": "VIII",
+            "type": "Empire Upgrade",
+            "description": "Unlocks the ability to upgrade Forward Bases into Forward Relays, this lets them be used like an <actionblue>Orbital Relay</actionblue> sector and grants them a <actionblue>Tier 3 Garrison</actionblue>.",
+            "energy_cost": "0",
+            "casting": "0 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "cosmite_catalyst",
+            "name": "Cosmite Catalyst",
+            "tier": "X",
+            "type": "Empire Upgrade",
+            "description": "Applying a Cosmite catalyst to all Cosmite-generating structures can boost yields.<br><br>Global Income of Cosmite increased by +10%.",
+            "energy_cost": "",
+            "casting": " <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "recreational_dome",
+            "name": "Recreational Dome",
+            "tier": "I",
+            "type": "Colony Upgrade",
+            "description": "The colony gains 2<population></population> happiness slots and +6<happiness></happiness> happiness income.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "standard_military_infrastructure",
+            "name": "Standard Military Infrastructure",
+            "tier": "I",
+            "type": "Colony Upgrade",
+            "description": "Upgrades the colony militia army to include more powerful units.",
+            "production_cost": "150 <production></production> Production",
+
+
+            "upkeep_cost": "4 <energy></energy> / <turn></turn>"
+        },
+
+        {
+            "slug": "production_sectors_upgrade",
+            "name": "Production Sectors Upgrade",
+            "tier": "II",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all production sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
         {
             "slug": "military_engineering_guild",
             "name": "Military Engineering Guild",
             "tier": "II",
             "type": "Sector Upgrade",
-            "description": "Focusing your industry on military engineering allows for quicker build times for military assets. At higher levels, units are built so well that their defenses are improved.<br><br><abilityRed>This can only be built in an industrial exploitation sector.</abilityRed><br><br><abilityRed>Unit costs can never be lowered more than 75%.</abilityRed><br><br><bullet> Level 1<br>-10% <production></production> cost for non-Elite units.</bullet><bullet> Level 2<br>-15% <production></production> cost for non-Elite units.</bullet><bullet> Level 3<br>-20% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1[/armor].</bullet><bullet> Level 4<br>-25% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1<armor></armor>.</bullet><bullet> Level 5<br>-30% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1<armor></armor>.</bullet>",
+            "description": "Focusing your industry on military engineering allows for quicker build times for military assets. At higher levels, units are built so well that their defenses are improved.<br><br><abilityRed>This can only be built in an industrial exploitation sector.</abilityRed><br><br><abilityRed>Unit costs can never be lowered more than 75%.</abilityRed><br><br><bullet> Level 1<br>-10% <production></production> cost for non-Elite units.</bullet><bullet> Level 2<br>-15% <production></production> cost for non-Elite units.</bullet><bullet> Level 3<br>-20% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1<armor></armor>.</bullet><bullet> Level 4<br>-25% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1<armor></armor>.</bullet><bullet> Level 5<br>-30% <production></production> cost for non-Elite units.<br>Non-Elite units are produced with +1<armor></armor>.</bullet>",
             "production_cost": "250 <production></production> Production",
         },
+
+        {
+            "slug": "civil_engineering_guild",
+            "name": "Civil Engineering Guild",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "Dedicating industrial capacity to civil engineering projects allows for quicker build times. At higher levels, kinetic generators can be built into existing constructions, generating a small passive production bonus.<br><br><abilityRed>This can only be built in an industrial exploitation sector.</abilityRed><br><br><bullet> Level 1<br>-10% <production></production> cost for colony structures.</bullet><bullet> Level 2<br>-15% <production></production> cost for colony structures.</bullet><bullet> Level 3<br>-20% <production></production> cost for colony structures.<br>+2<production></production> for each colony structure built.</bullet><bullet> Level 4<br>-25% <production></production> cost for colony structures.<br>+4<production></production> for each colony structure built.</bullet><bullet> Level 5<br>-30% <production></production> cost for colony structures.<br>+6<production></production> for each colony structure built.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "energy_sectors_upgrade",
+            "name": "Energy Sectors Upgrade",
+            "tier": "II",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all energy sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "energy_efficient_assembly_line",
+            "name": "Energy Efficient Assembly Line",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "By focusing on energy efficiency, the production of units can be made significantly cheaper. At higher levels, this can reduce the upkeep costs of any unit produced in this colony.<br><br><abilityRed>This can only be built in an energy exploitation sector.</abilityRed><br><br><abilityRed>Unit costs can never be lowered more than 75%.</abilityRed><br><abilityRed>Unit upkeep can never be lowered more than 50%.</abilityRed><br><br><bullet> Level 1<br>-10% <energy></energy> cost for units.</bullet><bullet> Level 2<br>-15% <energy></energy> cost for units.</bullet><bullet> Level 3<br>-20% <energy></energy> cost for units.<br>Units are produced with -10% <energy></energy> upkeep.</bullet><bullet> Level 4<br>-25% <energy></energy> cost for units.<br>Units are produced with -20% <energy></energy> upkeep.</bullet><bullet> Level 5<br>-30% <energy></energy> cost for units.<br>Units are produced with -30% <energy></energy> upkeep.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "optimization_control_agency",
+            "name": "Optimization Control Agency",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "By controlling colonists and optimizing work processes, efficient gains can be reached during times of focused effort. At higher levels, increased energy gains can be gained from all energy workers.<br><br><abilityRed>This can only be built in an energy exploitation sector.</abilityRed><br><br><bullet> Level 1<br>	\"Buy Now\" costs -10% less <energy></energy>.</bullet><bullet> Level 2<br>\"Buy Now\" costs -15% less <energy></energy>.</bullet><bullet> Level 3<br>\"Buy Now\" costs -20% less <energy></energy>.<br>+1<energy></energy> per colonist in <energyslot></energyslot>.</bullet><bullet> Level 4<br>\"Buy Now\" costs -25% less <energy></energy>.<br>+2<energy></energy> per colonist in <energyslot></energyslot>.</bullet><bullet> Level 5<br>\"Buy Now\" costs -30% less <energy></energy>.<br>+3<energy></energy> per colonist in <energyslot></energyslot>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "food_sectors_upgrade",
+            "name": "Food Sectors Upgrade",
+            "tier": "II",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all food sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "research_sectors_upgrade",
+            "name": "Research Sectors Upgrade",
+            "tier": "II",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all research sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector epecializations in that sector.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "bioengineered_food_plantation",
+            "name": "Bioengineered Food Plantation",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "Advanced bioengineering can create super foods that have a beneficial effect on colonist biology and the growth rate of the colony. At higher levels, your colonists will need less food as upkeep.<br><br><abilityRed>This can only be built in an agriculture exploitation sector.</abilityRed><br><br><bullet> Level 1<br>-10% <food></food> for <population></population> growth. </bullet><bullet> Level 2<br>-15% <food></food> for <population></population> growth. </bullet><bullet> Level 3<br>-20% <food></food> for <population></population> growth.<br>-1<food></food> upkeep per <population></population>.</bullet><bullet> Level 4<br>-25% <food></food> for <population></population> growth.<br>-1<food></food> upkeep per <population></population>.</bullet><bullet> Level 5<br>-30% <food></food> for <population></population> growth.<br>-2<food></food> upkeep per <population></population>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "agricultural_export_center",
+            "name": "Agricultural Export Center",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "A dedicated agricultural export center is vital for the efficient distribution of food to other colonies. At higher levels, increased food yields can be achieved by organized effort towards food production.<br><br><abilityRed>This can only be built in an agriculture exploitation sector.</abilityRed><br><br><bullet> Level 1<br><food></food> sharing tax reduced to 30%.</bullet><bullet> Level 2<br><food></food> sharing tax reduced to 25%.</bullet><bullet> Level 3<br><food></food> sharing tax reduced to 20%.<br>+1<food></food> per colonist in <foodslot></foodslot>.</bullet><bullet> Level 4<br><food></food> sharing tax reduced to 15%.<br>+2<food></food> per colonist in <foodslot></foodslot>.</bullet><bullet> Level 5<br><food></food> sharing tax reduced to 10%.<br>+3<food></food> per colonist in <foodslot></foodslot>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "society_investment_center",
+            "name": "Society Investment Center",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "Investing research into society progression will allow quicker access to exploitations of the land, leading to long term economic advantages over other factions, as well as faster access to advanced governmental doctrines and espionage opportunities. At higher levels, we can increase the general output of all our science workers.<br><br><abilityRed>This can only be built in an research exploitation sector.</abilityRed><br><br><bullet> Level 1<br>+10% <research></research> for Society research.</bullet><bullet> Level 2<br>+15% <research></research> for Society research.</bullet><bullet> Level 3<br>+20% <research></research> for Society research.<br>+1<research></research> per colonist in <researchslot></researchslot>.</bullet><bullet> Level 4<br>+25% <research></research> for Society research.<br>+2<research></research> per colonist in <researchslot></researchslot>.</bullet><bullet> Level 5<br>+30% <research></research> for Society research.<br>+3<research></research> per colonist in <researchslot></researchslot>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "military_innovation_center",
+            "name": "Military Innovation Center",
+            "tier": "II",
+            "type": "Sector Upgrade",
+            "description": "Dedicating research to military innovation allows the unlocking of units, unit modifications and operations to increase the defensive capabilities of your forces. At higher levels, we can insert scientists into training teams, increasing the quality of produced troops.<br><br><abilityRed>This can only be built in an research exploitation sector.</abilityRed><br><br><bullet> Level 1<br>10% <research></research> for Military research.</bullet><bullet> Level 2<br>10% <research></research> for Military research.</bullet><bullet> Level 3<br>+20% <research></research> for Military research.<br>Units produced gain +1 <x-medal_novice></x-medal_novice>.</bullet><bullet> Level 4<br>+25% <research></research> for Military research.<br>Units produced gain +2 <x-medal_novice></x-medal_novice>.</bullet><bullet> Level 5<br>+30% <research></research> for Military research.<br>Units produced gain +3 <x-medal_novice></x-medal_novice>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "water_sectors_upgrade",
+            "name": "Water Sectors Upgrade",
+            "tier": "III",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all water sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "algae_farms",
+            "name": "Algae Farms",
+            "tier": "III",
+            "type": "Sector Upgrade",
+            "description": "By utilizing the biodiverse climate of the ocean for algae farms, more food can be rapidly grown along coast lines. The addition of algae in regular food growth processes can lead to increased yields. At higher levels, food can be exponentially grown with enough dedication.<br><br><abilityRed>This can only be built in an hydro-exploitation sector.</abilityRed><br><br><bullet> Level 1<br> +5<food></food> for each <food></food> and <watersector></watersector> exploitation.</bullet><bullet> Level 2<br> +10<food></food> for each <food></food> and <watersector></watersector> exploitation.</bullet><bullet> Level 3<br> ++15<food></food> for each <food></food> and <watersector></watersector> exploitation.<br>+10%<food></food> income.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "maritime_research_facility",
+            "name": "Maritime Research Facility",
+            "tier": "III",
+            "type": "Sector Upgrade",
+            "description": "The biodiverse climate of the ocean is provides plenty of research opportunities. Combining the knowledge gained from oceanic research with more conventional research centers boosts gains. At higher levels, knowledge gains increase exponentially with the amount of research that is conducted.<br><br><abilityRed>This can only be built in an hydro-exploitation sector.</abilityRed><br><br><bullet> Level 1<br> +5<research></research> for each <research></research> and <watersector></watersector> exploitation.</bullet><bullet> Level 2<br> ++10<research></research> for each <research></research> and <watersector></watersector> exploitation.</bullet><bullet> Level 3<br> ++10<research></research> for each <research></research> and <watersector></watersector> exploitation.<br>+10%<research></research> income.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "cosmite_research_center",
+            "name": "Cosmite Research Center",
+            "tier": "III",
+            "type": "Colony Upgrade",
+            "description": "A reseach center where the origins and properties of Cosmite are being researched.<br><br>Provides +5[tricorium/] Cosmite income when built in your HQ.<br><br>This is an upgrade to your HQ and can only be built in your HQ colony. When your HQ is moved to another colony, this building is moved as well.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "diplomatic_analysis_wing",
+            "name": "Diplomatic Analysis Wing",
+            "tier": "III",
+            "type": "Colony Upgrade",
+            "description": "A wing in your headquarters dedicated to research into diplomatic interactions with other factions.<br><br>+2<influence></influence>  Influence income in your HQ colony.<br><br>This is an upgrade to your HQ and can only be built in your HQ colony. When your HQ is moved to another colony, this building is moved as well.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "botanical_gardens",
+            "name": "Botanical Gardens",
+            "tier": "III",
+            "type": "Colony Upgrade",
+            "description": "The colony gains 2<population></population> happiness slots and +6<happiness></happiness> happiness income.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "xeno-relations_division",
+            "name": "Xeno-Relations Division",
+            "tier": "V",
+            "type": "Colony Upgrade",
+            "description": "A division in your headquarters developing and monitoring relations with all sentient beings.<br><br>+3<influence></influence>  Influence income in your HQ colony.<br><br>Requires Diplomatic Analysis Wing.<br><br>This is an upgrade to your HQ and can only be built in your HQ colony. When your HQ is moved to another colony, this building is moved as well.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "cosmite_growth_chambers",
+            "name": "Cosmite Growth Chambers",
+            "tier": "V",
+            "type": "Colony Upgrade",
+            "description": "Using advanced research, Cosmite can be grown using specialized growth chambers.<br><br>Provides +5<tricorium></tricorium> Cosmite income when built in your HQ.<br><br>This is an upgrade to your HQ and can only be built in your HQ colony. When your HQ is moved to another colony, this building is moved as well.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "cosmite_harvesting_center",
+            "name": "Cosmite Harvesting Center",
+            "tier": "VII",
+            "type": "Colony Upgrade",
+            "description": "Harvesting centers allow for increased yields from Cosmite growth chambers.<br><br>Provides +5<tricorium></tricorium> cosmite income when built in your HQ.<br><br>This is an upgrade to your HQ and can only be built in your HQ colony. When your HQ is moved to another colony, this building is moved as well.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "cosmite_generation_reactor",
+            "name": "Cosmite Generation Reactor",
+            "tier": "X",
+            "type": "Colony Upgrade",
+            "description": "A specialized reactor that can create Cosmite at an expedited rate, converting energy into Cosmite.<br><br>Provides +5<tricorium></tricorium> Cosmite income, when built in your HQ. Additionally, your HQ generates +10<tricorium></tricorium> income while generating energy or research.<br><br>This is an upgrade to your HQ and can only be built in your HQ colony. When your HQ is moved to another colony, this building is moved as well.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "orbital_logistics_base",
+            "name": "Orbital Logistics Base",
+            "tier": "V",
+            "type": "Colony Upgrade",
+            "description": "Converting this relay into a logistics base will increase the efficiency of all other exploited sectors. <br><br><abilityRed>This can only be built in an Orbital Relay exploitation sector that does not have a Military Assembly Base.</abilityRed><br><br><bullet>Level 1<br>Each exploited sector generates an additional +10 income of its exploitation type.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "orbital_relay_exploitation",
+            "name": "Orbital Relay Exploitation",
+            "tier": "V",
+            "type": "Sector Upgrade",
+            "description": "This is an orbital relay exploitation. It allows your units to travel through it to another connected orbital relay. Traveling through a relay will deplete all movepoints. The relay network can also be expanded through diplomacy, by signing <actionblue>Open Relay Agreements</actionblue> with your allies.<br><br><bullet>Level 1<br>+1<productionSlot></productionSlot>, +1<energySlot></energySlot>, +1<foodSlot></foodSlot>, +1<researchSlot></researchSlot>, +1<happinessSlot></happinessSlot></bullet>",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "_military_assembly_base",
+            "name": " Military Assembly Base",
+            "tier": "V",
+            "type": "Colony Upgrade",
+            "description": "Converting this relay into a military assembly base will allow it to rapidly resupply arriving troops and add military grade turrets and walls to its defenses.<br><br><abilityRed>This can only be built in an Orbital Relay exploitation sector that does not have an Orbital Logistics Base.</abilityRed>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "military_assembly_base",
+            "name": "Military Assembly Base",
+            "tier": "V",
+            "type": "Colony Upgrade",
+            "description": "Converting this relay into a military assembly base will allow it to rapidly resupply arriving troops and add military grade turrets and walls to its defenses.<br><br><abilityRed>This can only be built in an Orbital Relay exploitation sector that does not have an Orbital Logistics Base.</abilityRed><br><br><bullet> Level 1<br>Friendly armies arriving at this relay are fully <actionblue>healed</actionblue> and gain <actionblue>Resupplied</actionblue><br>This relay now has walls and turrets in tactical combat.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "orbital_reinforcement_platform",
+            "name": "Orbital Reinforcement Platform",
+            "tier": "VIII",
+            "type": "Colony Upgrade",
+            "description": "Establishes a launch platform for quick response units. Any combat in the domain of the attached colony gains the <actionblue>Rapid Reinforcement</actionblue> combat effect.<br><br><abilityRed>This can only be built in an Orbital Relay exploitation sector that does not have an Strategic Operations Platform.</abilityRed><br><br><bullet> Level 1<br>Grants <actionblue>Orbital Garrison</actionblue> combat effect in tactical combat while within the colony's domain. Every 2 turns, a drop pod crashes into an enemy unit, displacing them and spawning a friendly Tier 1 or 2 Ground unit (excluding scouts).</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "strategic_operations_platform",
+            "name": "Strategic Operations Platform",
+            "tier": "VII",
+            "type": "Colony Upgrade",
+            "description": "Utilizing the relay's impressive sensor array, a strategic operations platform can be established.<br><br><abilityRed>This can only be built in an Orbital Relay exploitation sector that does not have an Orbital Reinforcement Platform.</abilityRed><br><br><bullet> Level 1<br>+1<stratPoint></stratPoint>. +6<operationDefense></operationDefense> within the domain of the attached colony.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "holistic_military_care_center",
+            "name": "Holistic Military Care Center",
+            "tier": "VII",
+            "type": "Colony Upgrade",
+            "description": "The Holistic Military Care Center provides comprehensive care and recouperation to friendly armies within the colony's domain.<br><br>Friendly units within this colony's domain have 300<happiness></happiness> and regenerate an extra 18<hp></hp> each turn.",
+            "production_cost": "300 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "virtual_entertainment_plaza",
+            "name": "Virtual Entertainment Plaza",
+            "tier": "VII",
+            "type": "Colony Upgrade",
+            "description": "The colony gains 5<population></population> happiness slots and +2<happiness></happiness> happiness income per colonist in a happiness slot.",
+            "production_cost": "600 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "production_sectors_advanced_upgrade",
+            "name": "Production Sectors Advanced Upgrade",
+            "tier": "VI",
+            "type": "Sector Upgrade",
+            "description": "Gives +1 level to all production sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "energy_sectors_advanced_upgrade",
+            "name": "Energy Sectors Advanced Upgrade",
+            "tier": "VI",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all energy sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "food_sectors_advanced_upgrade",
+            "name": "Food Sectors Advanced Upgrade",
+            "tier": "VI",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all food sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector specializations in that sector.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "research_sectors_advanced_upgrade",
+            "name": "Research Sectors Advanced Upgrade",
+            "tier": "VI",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all research sectors. Raising the sector level of a sector will increase the benefits from sector exploitations and sector epecializations in that sector.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "advanced_military_engineering_guild",
+            "name": "Advanced Military Engineering Guild",
+            "tier": "VI",
+            "type": "Sector Upgrade",
+            "description": "Further development in military engineering allows for quicker build times for complex military assets. At higher levels, units are built so well that their defenses are improved.<br><br><abilityRed>This can only be built in an industrial exploitation sector.</abilityRed><br><br><bullet> Level 1<br>-10% <production></production> cost for Elite units.</bullet><bullet> Level 2<br>-15% <production></production> cost for Elite units.</bullet><bullet> Level 3<br>-20% <production></production> cost for Elite units.<br>Elite units are produced with +1<armor></armor>.</bullet><bullet> Level 4<br>-25% <production></production> cost for Elite units.<br>Elite units are produced with +1<armor></armor>.</bullet><bullet> Level 5<br>-30% <production></production> cost for Elite units.<br>Elite units are produced with +2<armor></armor>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "high_energy_scanning_station",
+            "name": "High Energy Scanning Station",
+            "tier": "VI",
+            "type": "Sector Upgrade",
+            "description": "Deploying an Arc defense grid provides vision and scanner coverage to your colony borders. At higher levels, the defense grid becomes so strong that it increases the colony domain's operational defense.<br><br><abilityRed>This can only be built in an energy exploitation sector.</abilityRed><br><br><bullet> Level 1<br>+1 to colony Vision and Sensor range.</bullet><bullet> Level 2<br>+2 to colony Vision and Sensor range. Colony gains True Sight.</bullet><bullet> Level 3<br>+3 to colony Vision and Sensor range.<br>Colony gains True Sight and +4 <operationDefense></operationDefense>.</bullet><bullet> Level 4<br>+4 to colony Vision and Sensor range.<br>Colony gains True Sight and +8 <operationDefense></operationDefense>.</bullet><bullet> Level 5<br>+5 to colony Vision and Sensor range.<br>Colony gains True Sight and +12 <operationDefense></operationDefense>.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "community_wellness_center",
+            "name": "Community Wellness Center",
+            "tier": "VI",
+            "type": "Sector Upgrade",
+            "description": "By focusing on the wellness of your colonists, their overall health and happiness can be improved and they are quicker to generate happiness events. At higher levels, the rewards from happiness events can be increased.<br><br><abilityRed>This can only be built in an agriculture exploitation sector.</abilityRed><br><br><bullet> Level 1<br><happiness></happiness> events require 10% less <happiness></happiness>.</bullet><bullet> Level 2<br><happiness></happiness> events require 20% less <happiness></happiness>.</bullet><bullet> Level 3<br><happiness></happiness> events require 30% less <happiness></happiness>.<br><happiness></happiness> events generate +50%.</bullet><bullet> Level 4<br><happiness></happiness> events require 40% less <happiness></happiness>.<br><happiness></happiness> events generate +100%.</bullet><bullet> Level 5<br><happiness></happiness> events require 50% less <happiness></happiness>.<br><happiness></happiness> events generate +150%.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "cosmite_amplification_lab",
+            "name": "Cosmite Amplification Lab",
+            "tier": "VI",
+            "type": "Sector Upgrade",
+            "description": "High powered quantum accelerators can amplify the energetic properties of Comsite, meaning less is required for military applications. At higher levels, we can merge traces of stabilized cosmites into our armor, boosting our troops resistance to enemy attacks.<br><br><abilityRed>This can only be built in an research exploitation sector.</abilityRed><br><br><bullet> Level 1<br>-10% <tricorium></tricorium> cost for units.</bullet><bullet> Level 2<br>-15% <tricorium></tricorium> cost for units.</bullet><bullet> Level 3<br>-20% <tricorium></tricorium> cost for units.<br>Units are produced with +1 resistance to status effects.</bullet><bullet> Level 4<br>-25% <tricorium></tricorium> cost for units.<br>Units are produced with +2 resistance to status effects.</bullet><bullet> Level 5<br>-30% <tricorium></tricorium> cost for units.<br>Units are produced with +3 resistance to status effects.</bullet>",
+            "production_cost": "250 <production></production> Production",
+
+
+
+        },
+
 
     ]
 }

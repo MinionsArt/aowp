@@ -1496,3 +1496,45 @@ diplolinks {
     content: url(/aowp/Icons/Text/diplolinks.png);
     position: relative;
 }
+
+watersector {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/watersector.png);
+    position: relative;
+}
+
+foodSlot {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/foodslot.png);
+    position: relative;
+}
+
+researchSlot {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/researchslot.png);
+    position: relative;
+}
+
+productionSlot {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/productionslot.png);
+    position: relative;
+}
+
+energySlot {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/energyslot.png);
+    position: relative;
+}
+
+happinessSlot {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/happinessslot.png);
+    position: relative;
+}
