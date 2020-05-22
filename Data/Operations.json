@@ -2389,8 +2389,8 @@ var jsonOperations = {
         },
 
         {
-            "slug": "efficient_scavenging",
-            "name": "Efficient Scavenging",
+            "slug": "scavengers",
+            "name": "Scavengers",
             "tier": "I",
             "type": "Doctrine Operation",
             "description": "The assembly can see uses for things others would discard.<br><br>Rewards from clearing Structures on the World Map are increased by 50%.",

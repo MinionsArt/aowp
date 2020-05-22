@@ -6504,11 +6504,14 @@ var jsonTech = {
             ],
             "op_unlock": [
                 {
-                    "slug": "scavengers",
-                    "slug": "battlefield_autopsies"
+                    "slug": "scavengers"
                 }
+                ,
+                {
+                    "slug": "battlefield_autopsies"
+            },
 
-            ],
+        ],
             "unit_unlock": [
                 {
 
@@ -6516,7 +6519,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-                },
+    },
 
         {
             "slug": "assembly_social_reconstruction",
@@ -6545,7 +6548,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-                },
+    },
 
         {
             "slug": "assembly_universal_reassembly",
@@ -6578,7 +6581,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-                },
+    },
 
         {
             "slug": "heritor_gift_of_the_es'teq",
@@ -6607,7 +6610,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-                },
+    },
 
         {
             "slug": "heritor_holy_presence",
@@ -6636,7 +6639,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-                },
+    },
 
         {
             "slug": "heritor_siphoner_awakening",
@@ -6661,7 +6664,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-                },
+    },
 
         {
             "slug": "heritor_wrath_of_the_ancients",
@@ -6690,7 +6693,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-                },
+    },
 
         {
             "slug": "heritor_zealous_conviction",
@@ -6715,7 +6718,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-                },
+    },
 
         {
             "slug": "heritor_transmigration_rituals",
@@ -6744,7 +6747,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-                },
+    },
 
         {
             "slug": "heritor_quintessence_ark_awakening",
@@ -6769,7 +6772,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-                },
+    },
 
         {
             "slug": "heritor_prelude_to_rapture",
@@ -6798,7 +6801,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-                },
+    },
 
         {
             "slug": "heritor_dissemination_rituals",
@@ -6827,7 +6830,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-                },
+    },
 
         {
             "slug": "heritor_sacred_providence",
@@ -6852,7 +6855,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-                },
+    },
 
         {
             "slug": "heritor_high_lord_awakening",
@@ -6877,7 +6880,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-                },
+    },
 
         {
             "slug": "heritor_forced_conversion",
@@ -6906,7 +6909,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-                },
+    },
 
         {
             "slug": "heritor_venerated_incarnation",
@@ -6931,7 +6934,7 @@ var jsonTech = {
 
             ],
             "cost": "2750",
-                },
+    },
 
         {
             "slug": "heritor_final_revelation",
@@ -6956,7 +6959,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-                },
+    },
 
         {
             "slug": "heritor_ancestral_creed",
@@ -6989,7 +6992,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-                },
+    },
 
         {
             "slug": "heritor_sacred_resurgence",
@@ -7018,7 +7021,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-                },
+    },
 
 
 
@@ -7053,7 +7056,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+    },
 
         {
             "slug": "society_frontier_facilities",
@@ -7084,7 +7087,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+    },
 
         {
             "slug": "society_production_development_i",
@@ -7117,7 +7120,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+    },
 
         {
             "slug": "society_energy_development_i",
@@ -7150,7 +7153,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+    },
 
         {
             "slug": "society_food_development_i",
@@ -7183,7 +7186,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+    },
 
         {
             "slug": "society_research_development_i",
@@ -7216,7 +7219,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+    },
 
         {
             "slug": "society_aquatic_development",
@@ -7249,7 +7252,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+    },
 
         {
             "slug": "society_colony_infrastructure",
@@ -7278,7 +7281,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+    },
 
         {
             "slug": "society_environmental_conditioning",
@@ -7311,7 +7314,7 @@ var jsonTech = {
 
             ],
             "cost": "300",
-        },
+    },
 
         {
             "slug": "society_anthropologic_research",
@@ -7340,7 +7343,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+    },
 
         {
             "slug": "society_accelerated_force_deployment",
@@ -7373,7 +7376,7 @@ var jsonTech = {
 
             ],
             "cost": "1000",
-        },
+    },
 
         {
             "slug": "society_orbital_relay_development",
@@ -7406,7 +7409,7 @@ var jsonTech = {
 
             ],
             "cost": "800",
-        },
+    },
 
         {
             "slug": "society_production_development_ii",
@@ -7435,7 +7438,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+    },
 
         {
             "slug": "society_energy_development_ii",
@@ -7464,7 +7467,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+    },
 
         {
             "slug": "society_food_development_ii",
@@ -7493,7 +7496,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+    },
 
         {
             "slug": "society_research_development_ii",
@@ -7522,7 +7525,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+    },
 
         {
             "slug": "society_hydro-expertise",
@@ -7555,7 +7558,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+    },
 
         {
             "slug": "society_virtual_hospitality_systems",
@@ -7584,7 +7587,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+    },
 
         {
             "slug": "society_adaptive_exploitation",
@@ -7617,7 +7620,7 @@ var jsonTech = {
 
             ],
             "cost": "1700",
-        },
+    },
 
         {
             "slug": "society_advanced_relay_infrastructure",
@@ -7650,7 +7653,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+    },
 
         {
             "slug": "society_cosmite_mastery",
@@ -7679,7 +7682,7 @@ var jsonTech = {
 
             ],
             "cost": "3600",
-        },
+    },
 
 
         {
@@ -7713,7 +7716,7 @@ var jsonTech = {
 
             ],
             "cost": "100",
-        },
+    },
 
         {
             "slug": "society_covert_infiltration",
@@ -7746,7 +7749,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+    },
 
         {
             "slug": "society_operation_effectiveness_i",
@@ -7779,7 +7782,7 @@ var jsonTech = {
 
             ],
             "cost": "150",
-        },
+    },
 
         {
             "slug": "society_counter_ops",
@@ -7812,7 +7815,7 @@ var jsonTech = {
 
             ],
             "cost": "250",
-        },
+    },
 
         {
             "slug": "society_intelligence_gathering",
@@ -7845,7 +7848,7 @@ var jsonTech = {
 
             ],
             "cost": "420",
-        },
+    },
 
         {
             "slug": "society_operation_effectiveness_ii",
@@ -7878,7 +7881,7 @@ var jsonTech = {
 
             ],
             "cost": "520",
-        },
+    },
 
         {
             "slug": "society_espionage",
@@ -7907,7 +7910,7 @@ var jsonTech = {
 
             ],
             "cost": "650",
-        },
+    },
 
         {
             "slug": "society_insurrection_program",
@@ -7940,7 +7943,7 @@ var jsonTech = {
 
             ],
             "cost": "1000",
-        },
+    },
 
         {
             "slug": "society_operation_effectiveness_iii",
@@ -7973,7 +7976,7 @@ var jsonTech = {
 
             ],
             "cost": "1200",
-        },
+    },
 
         {
             "slug": "society_sensor_technologies",
@@ -8006,7 +8009,7 @@ var jsonTech = {
 
             ],
             "cost": "1400",
-        },
+    },
 
         {
             "slug": "society_deep_infiltration",
@@ -8035,7 +8038,7 @@ var jsonTech = {
 
             ],
             "cost": "1800",
-        },
+    },
 
         {
             "slug": "society_operation_effectiveness_iv",
@@ -8068,7 +8071,7 @@ var jsonTech = {
 
             ],
             "cost": "2200",
-        },
+    },
 
         {
             "slug": "society_global_information_control",
@@ -8101,9 +8104,9 @@ var jsonTech = {
 
             ],
             "cost": "2250",
-        },
+    },
 
 
 
-            ]
+]
 }
