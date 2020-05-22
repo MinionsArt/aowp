@@ -743,27 +743,34 @@ function addOpUnlock(a, b) {
                 imag2.className = "corner_icon";
                 btn.appendChild(imag2);
             }
-            document.getElementById("unlockholder").appendChild(btn);
-            btn.appendChild(imag);
-
-
-            btn.appendChild(spa);
-
-
-            if (b == "s") {
-                spa.className = "tooltiptext2";
-            } else {
-                spa.className = "tooltiptext";
-            }
-            found = true;
-            // btn.appendChild(tex);
-
         }
-    }
+        if (jsonOperations.operations[j].type.includes("Covert")) {
+            var imag2 = document.createElement("IMG");
+            imag2.setAttribute("src", "/aowp/Icons/Text/covert.png");
+            imag2.className = "corner_icon";
+            btn.appendChild(imag2);
+        }
+        document.getElementById("unlockholder").appendChild(btn);
+        btn.appendChild(imag);
 
-    if (found == false) {
-        console.log("Couldn't find operation: " + a);
+
+        btn.appendChild(spa);
+
+
+        if (b == "s") {
+            spa.className = "tooltiptext2";
+        } else {
+            spa.className = "tooltiptext";
+        }
+        found = true;
+        // btn.appendChild(tex);
+
     }
+}
+
+if (found == false) {
+    console.log("Couldn't find operation: " + a);
+}
 
 }
 
