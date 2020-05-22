@@ -111,7 +111,18 @@ function showhideSoc(id, id2, id3) {
             //  divStateweapon1[div] = false; // reset status
         }
 
+        var end = id.lastIndexOf("d"); //this finds the first occurrence of "." 
+        //in string thus giving you the index of where it is in the string
 
+        // Now iend can be -1, if lets say the string had no "." at all in it i.e. no "." is found. 
+        //So check and account for it.
+
+        var subString;
+        if (end != -1) {
+            subString = id.substring(0, end); //this will give abc
+        }
+
+        currentRace = subString;
         divid.style.display = 'contents';
         divid2.style.display = 'contents';
         divid3.style.display = 'contents';
