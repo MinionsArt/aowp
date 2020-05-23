@@ -30,6 +30,7 @@
 
             $(this).css("color", "cyan");
         });
+
     </script>
     <title>Age of Wonders Planetfall - Search</title>
 </head>
@@ -166,6 +167,22 @@
 
 
             }
+
+            textvalue = jsonMods.mods[i].type;
+            if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
+                if (listMod.length >= 1) {
+                    if (!isInArray(listMod, jsonMods.mods[i].slug)) {
+                        listMod.push(jsonMods.mods[i].slug);
+                    }
+                } else {
+                    listMod.push(jsonMods.mods[i].slug);
+                }
+
+
+
+            }
+
+
         }
         result.innerHTML = listMod.length.toString() + " results found";
         for (j = 0; j < listMod.length; j++) {
@@ -402,4 +419,7 @@
 
 
     }
-</script></html>
+
+</script>
+
+</html>

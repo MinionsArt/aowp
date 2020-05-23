@@ -574,6 +574,14 @@ function showMod(a) {
             cost.innerHTML = "Purchase Cost : " + jsonMods.mods[j].cost;
             cost.setAttribute("id", "modcost" + a);
             imagelink = document.getElementById("modicon");
+
+            if (jsonMods.mods[j].name.includes("Vehicle")) {
+                a = a.replace("vehicle:_", "");
+            }
+            if (jsonMods.mods[j].type.includes("Weapon")) {
+                a = a.replace("equipment:_", "");
+            }
+
             imagelink.setAttribute("src", "/aowp/Icons/Mods/" + a + ".png");
             imagelink.setAttribute("id", "modicon" + a);
         }
