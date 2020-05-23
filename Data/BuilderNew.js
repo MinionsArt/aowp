@@ -79,6 +79,24 @@ function showhideTree(id) {
     }
 }
 
+var divsearch = ["unitS", "modS"];
+
+function showhide3(id) {
+    if (document.getElementById) {
+        var divid = document.getElementById(id);
+        //close others
+        for (var i = 0; i < divsearch.length; i++) {
+
+            var e = document.getElementById(divsearch[i])
+            e.style.display = 'none'; // hide
+            //  divStateweapon1[div] = false; // reset status
+        }
+
+
+        divid.style.display = 'contents';
+    }
+}
+
 var divTreesSoc = ["amazond", "assemblyd", "dvard", "kirkod", "syndicated", "vanguardd"];
 var divTreesSoc2 = ["amazond5", "assemblyd5", "dvard5", "kirkod5", "syndicated5", "vanguardd5"];
 
