@@ -1,5 +1,7 @@
-var divState = ["amazon", "assembly", "vanguard", "kirko", "dvar", "syndicate", "shakarn"]; // we store the status in this object
-var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics", "explosives", "sonic"];
+var divState = ["amazon", "assembly", "vanguard", "kirko", "dvar", "syndicate"]; // we store the status in this object
+//var divState = ["amazon", "assembly", "vanguard", "kirko", "dvar", "syndicate", "shakarn"]; // we store the status in this object
+var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics", "explosives"];
+//var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics", "explosives", "sonic"];
 var currentRace = "amazon";
 
 function showhide(id, weapon, weapon2) {
