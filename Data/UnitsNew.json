@@ -16256,61 +16256,6 @@ var jsonUnits = {
                     "slug": "stagger_resistance"
    }
   ],
-            "upkeep": "12<energy></energy>",
-            "id": "shakarn_refractor",
-            "abilities": [
-                {
-                    "slug": "sonic_ebb_shakarn_refractor"
-   },
-                {
-                    "slug": "sonic_flow_shakarn_refractor"
-   },
-                {
-                    "slug": "defense_mode_shields_up"
-   }
-  ],
-            "mp": 32,
-            "icon": "shakarn_refractor_icon",
-            "name": "Shakarn - Refractor",
-            "hp": 60,
-            "armor": 2,
-            "tier": 3,
-            "passives": [
-                {
-                    "slug": "large_target"
-   },
-                {
-                    "slug": "water_camouflage"
-   }
-  ],
-            "unit_types": [
-                {
-                    "slug": "elite"
-   },
-                {
-                    "slug": "floating"
-   },
-                {
-                    "slug": "heavy_unit"
-   },
-                {
-                    "slug": "mechanical"
-   },
-                {
-                    "slug": "shakarn"
-   }
-  ],
-            "shield": 3,
-            "cost": "125<energy></energy>  440<production></production>  25<tricorium></tricorium>",
-            "description": "“While being probed, they stored me in a military hangar where I saw vehicles that the Shakarn use in their invading force. I beheld ships of power covered in a pearlescent shell that appeared to evaporate in water. I saw great tank-like vehicles with sonic powers that could rally their forces into a fighting frenzy, and release powerful blasts that shook the earth, leaving no enemies standing. I only caught glimpses of their power, but when they come in full force, only preppers will be ready.” –Hollis Barker, Owner of Doomsday Gun Club “RV-66099E: Alien Abduction Stories: Lizard People”",
-            "elite_rewards": [
-                {
-                    "slug": "prime_rank_overwatch"
-   }
-  ]
- },
-        {
-            "resistances": [],
             "upkeep": "4<energy></energy>",
             "id": "shakarn_sleeper_agent",
             "abilities": [
@@ -17126,77 +17071,6 @@ var jsonUnits = {
             "cost": "50<energy></energy>  200<production></production>  10<tricorium></tricorium>1<population></population>",
             "description": "“From the ashes of the Star Union, a new age will dawn. The fallen empire hides powerful secrets yet to be found, a race in earnest to revive the powers hidden in our past. The colonizer is the first step towards that revival. The nurturing of colonies and the development of society is of delicate importance, more so for a foreign and unfamiliar planet with dangers unknown. The cosmic Dark Age is over, and the legendary remnants of the Empire lay dormant, waiting to be rediscovered.”— Quinlinn T. Ortivexis, “RV-4367H: Universal Coincidental History”",
             "elite_rewards": []
- },
-        {
-            "resistances": [
-                {
-                    "slug": "psionic_resistance_4"
-   },
-                {
-                    "slug": "arc_weakness_2"
-   },
-                {
-                    "slug": "stagger_resistance"
-   }
-  ],
-            "upkeep": "8<energy></energy>",
-            "id": "shakarn_propagator",
-            "abilities": [
-                {
-                    "slug": "sono-repeater_shakarn_propagator"
-   },
-                {
-                    "slug": "dissonos_shakarn_propagator"
-   },
-                {
-                    "slug": "holo_mend_shakarn_propagator"
-   },
-                {
-                    "slug": "defense_mode"
-   }
-  ],
-            "mp": 32,
-            "icon": "shakarn_propagator_icon",
-            "name": "Shakarn - Propagator",
-            "hp": 40,
-            "armor": 1,
-            "tier": 2,
-            "passives": [
-                {
-                    "slug": "farsight"
-   },
-                {
-                    "slug": "propagation"
-   },
-                {
-                    "slug": "water_camouflage"
-   }
-  ],
-            "unit_types": [
-                {
-                    "slug": "flying"
-   },
-                {
-                    "slug": "heavy_unit"
-   },
-                {
-                    "slug": "mechanical"
-   },
-                {
-                    "slug": "shakarn"
-   },
-                {
-                    "slug": "specialist"
-   }
-  ],
-            "shield": 1,
-            "cost": "90<energy></energy>  300<production></production>  10<tricorium></tricorium>",
-            "description": "“They’ll rise unseen from the sea. Their technology controls the skies. You will be forced to hide. But how does one hide from sound? The Propagator’s weaponry will envelope the very air you breathe. Their pearlescent vessels will hover above their troops, mending their reptilian wounds with rippling waves of holography. When you’re enslaved, being probed for their meat-processing plants, you will weep and wail for ignoring me… but by then, I’ll be gone off to warn the next community that will laugh and deride me.” – GBI Agent Dan Cranney, “RV-\\<Reference Redacted\\>: Arkhanrock City Council Harassment Complaint”",
-            "elite_rewards": [
-                {
-                    "slug": "prime_rank_bypass_cover"
-   }
-  ]
  },
         {
             "resistances": [
