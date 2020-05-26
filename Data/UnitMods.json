@@ -1695,7 +1695,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
-            "description": "This unit's Laser weapons have a 12 <StrengthPhysical></StrengthPhysical> strength chance(8 <StrengthPhysical></StrengthPhysical> for repeating attacks) to <abilityred>Blind</abilityred> units for 2 <turn></turn>. <br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+            "description": "This unit's Laser weapons have a 12 <StrengthPhysical></StrengthPhysical> strength chance(8 <StrengthPhysical></StrengthPhysical> for repeating attacks) to <abilityred>Blind</abilityred> units for 2 <turn></turn>. <br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
