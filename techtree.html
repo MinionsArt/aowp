@@ -970,8 +970,16 @@
                 showTech("syndicate_clandestine_practices");
             });
 
-            $("#syndicated9").load("/aowp/techcard.html", function() {
-                showTech("syndicate_underhanded_exploitation");
+            $("#shakarnd").load("/aowp/techcard.html", function() {
+                showTech("shakarn_planetfall_procedures");
+            });
+
+            $("#shakarnd5").load("/aowp/techcard.html", function() {
+                showTech("shakarn_manipulation_campaigns");
+            });
+
+            $("#shakarnd9").load("/aowp/techcard.html", function() {
+                showTech("shakarn_expert_council");
             });
             $("#vanguardd").load("/aowp/techcard.html", function() {
                 showTech("vanguard_frontier_policies");
@@ -1270,7 +1278,7 @@
             <a href="#/" onclick="showhide('assembly', 'arc', 'firearms');" style="font-size: 20px" class="togglelink"> Assembly </a>
             <a href="#/" onclick="showhide('dvar', 'firearms', 'explosives');" style="font-size: 20px" class="togglelink"> Dvar </a>
             <a href="#/" onclick="showhide('kirko', 'biochemical', 'psionics');" style="font-size: 20px" class="togglelink"> Kir'Ko </a>
-            <a href="#/" onclick="showhide('shakarn', 'sonic', 'laser');" style="font-size: 20px; text-shadow: 0 -1px 10px orange, 2px 1px 4px red;" class="togglelink"> Shakarn(Soon) </a>
+            <a href="#/" onclick="showhide('shakarn', 'sonic', 'laser');" style="font-size: 20px; text-shadow: 0 -1px 10px orange, 2px 1px 4px red;" class="togglelink"> Shakarn </a>
             <a href="#/" onclick="showhide('syndicate', 'arc', 'psionics');" style="font-size: 20px" class="togglelink"> Syndicate </a>
             <a href="#/" onclick="showhide('vanguard', 'firearms', 'laser');" style="font-size: 20px" class="togglelink"> Vanguard </a>
 
@@ -3638,7 +3646,7 @@
             <a href="#/" onclick="showhideSoc('assemblyd', 'assemblyd5', 'assemblyd9');" style="font-size: 20px" class="togglelink"> Assembly </a>
             <a href="#/" onclick="showhideSoc('dvard', 'dvard5', 'dvard9');" style="font-size: 20px" class="togglelink"> Dvar </a>
             <a href="#/" onclick="showhideSoc('kirkod', 'kirkod5', 'kirkod9');" style="font-size: 20px" class="togglelink"> Kir'Ko </a>
-            <a href="#/" onclick="" style="font-size: 20px; text-shadow: 0 -1px 10px orange, 2px 1px 4px red;" class="togglelink"> Shakarn </a>
+            <a href="#/" onclick="showhideSoc('shakarnd', 'shakarnd5', 'shakarnd9');" style="font-size: 20px; text-shadow: 0 -1px 10px orange, 2px 1px 4px red;" class="togglelink"> Shakarn </a>
             <a href="#/" onclick="showhideSoc('syndicated', 'syndicated5','syndicated9');" style="font-size: 20px" class="togglelink"> Syndicate </a>
             <a href="#/" onclick="showhideSoc('vanguardd','vanguardd5', 'vanguardd9');" style="font-size: 20px" class="togglelink"> Vanguard </a>
 
@@ -3692,6 +3700,7 @@
                             <div id="kirkod"></div>
                             <div id="syndicated"></div>
                             <div id="vanguardd"></div>
+                            <div id="shakarnd"></div>
                         </td>
 
                         <td>
@@ -3718,7 +3727,7 @@
                             <div id="kirkod5"></div>
                             <div id="syndicated5"></div>
                             <div id="vanguardd5"></div>
-
+                            <div id="shakarnd5"></div>
                         </td>
                         <td>
 
@@ -3745,7 +3754,7 @@
                             <div id="kirkod9"></div>
                             <div id="syndicated9"></div>
                             <div id="vanguardd9"></div>
-
+                            <div id="shakarnd9"></div>
                         </td>
                         <td>
 
