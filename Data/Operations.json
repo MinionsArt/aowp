@@ -152,8 +152,8 @@ var jsonOperations = {
         },
 
         {
-            "slug": "field-wide_resonsant_frequencies",
-            "name": "Field-Wide Resonsant Frequencies",
+            "slug": "field-wide_resonant_frequencies",
+            "name": "Field-Wide Resonant Frequencies",
             "tier": "VIII",
             "type": "Tactical Operation (Instant)",
             "description": "At the end of each enemy turn, for 5<turn></turn>, all enemy units take 6<DamagePhysical></DamagePhysical> and gain <abilityRed>Resonance</abilityRed>, reducing their <DamagePhysical></DamagePhysical> resistance for 2<turn></turn>.",

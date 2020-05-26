@@ -103,7 +103,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Melee attacks against to Biological and Cyborg units heal the user for 4 <hp></hp>, and have a 12 <StrengthPhysical></StrengthPhysical> strength chance( 8 <StrengthPhysical></StrengthPhysical> for repeating attacks) to apply <abilityred>Bleeding</abilityred>, for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Animal, Kir'Ko and Cyborg units that have a Melee ability. </abilityred> ",
+            "description": "Melee attacks against to Biological and Cyborg units heal the user for 4 <hp></hp>, and have a 12 <StrengthPhysical></StrengthPhysical> strength chance( 8 <StrengthPhysical></StrengthPhysical> for repeating attacks) to apply <abilityred>Bleeding</abilityred>, for 3 <turn></turn> <br><br> Additionally, this mod grants the unit 10 % increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Assembly Melee unit or a Unit with a Claw ability. </abilityred> ",
 
 
         },
@@ -1008,7 +1008,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Bio-Spore Purification</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Inject target Biological or Cyborg unit with a specific concoction of purifying spores. The target is healed for 30 <hp></hp> and all negative Status Effects are cleared. <br> Mechanical units with Xenoplague upgrades can also be affected<bulletList><bullet>Can only be used once per battle</bullet></bulletList><br></popUpDesc>",
+            "description": "Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Bio-Spore Purification</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Inject target Biological or Cyborg unit with a specific concoction of purifying spores. The target is healed for 30 <hp></hp> and all negative Status Effects are cleared. <br> Mechanical units with Xenoplague upgrades can also be affected<bulletList><bullet>Can only be used once per battle</bullet></bulletList><br></popUpDesc>",
 
 
     },
@@ -1042,7 +1042,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
-            "description": "This unit is infected with a strong strain of Xenoplague and gains:<br> <actionblue>Hyper Evolved Immune System</actionblue>, granting it +2 resistance on all non-Psionic Status Effects.<br> <actionblue>Ferocious Determination</actionblue>, granting it immunity to negative Morale and Mind Control effects. <br><actionblue>Regeneration</actionblue>, granting it 8 <hp></hp> regeneration per combat turn and full <hp></hp> recovery per turn on the World Map.<br><actionblue>Regenerative Spore Cloud</actionblue>, granting all friendly adjacent Biological and Cyborg units <actionblue>Regeneration</actionblue>.<br><br> Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units </abilityred> ",
+            "description": "This unit is infected with a strong strain of Xenoplague and gains:<br> <actionblue>Hyper Evolved Immune System</actionblue>, granting it +2 resistance on all non-Psionic Status Effects.<br> <actionblue>Ferocious Determination</actionblue>, granting it immunity to negative Morale and Mind Control effects. <br><actionblue>Regeneration</actionblue>, granting it 8 <hp></hp> regeneration per combat turn and full <hp></hp> recovery per turn on the World Map.<br><actionblue>Regenerative Spore Cloud</actionblue>, granting all friendly adjacent Biological and Cyborg units <actionblue>Regeneration</actionblue>.<br><br> Additionally, this mod grants the unit +20 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units </abilityred> ",
 
 
     },
@@ -1332,7 +1332,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to Infantry and Mounted units. </abilityred> <br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Gravity Pulse Grenade</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>9<DamagePhysical></DamagePhysical> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Throw a Gravity Pulse Grenade dealing damage in a 1 hex radius area.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles.<br>Can destroy fortified obstacles.</bullet><bullet><xpCol>Dimensional Instability</xpCol> 4<StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Dimensional Instability</abilityred> until the end of combat. </bullet></bulletList><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Grenade)</silver></popUpDesc>",
+            "description": "Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Gravity Pulse Grenade</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>9<DamagePhysical></DamagePhysical> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Throw a Gravity Pulse Grenade dealing damage in a 1 hex radius area.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles.<br>Can destroy fortified obstacles.</bullet><bullet><xpCol>Dimensional Instability</xpCol> 4<StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Dimensional Instability</abilityred> until the end of combat. </bullet></bulletList><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Grenade)</silver></popUpDesc>",
 
 
     },
@@ -1365,7 +1365,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Whenever the unit takes damage, its attacker is teleported 1 hex away from their current position, receives <abilityred>Dimensional Instability</abilityred> and becomes <abilityred>Staggered</abilityred>.<br> Voidtech or Voidtech-modded units adjacent to this one receive 3 <shield></shield> and gain a level of <actionblue>Stagger Resistance</actionblue>. <br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+            "description": "Whenever the unit takes damage, its attacker is teleported 1 hex away from their current position, receives <abilityred>Dimensional Instability</abilityred>.<br> Voidtech or Voidtech-modded units adjacent to this one receive 3 <shield></shield> and gain a level of <actionblue>Stagger Resistance</actionblue>. <br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
 
 
     },
@@ -1376,7 +1376,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Attacks from Arc weapons have a 12 <StrengthWave></StrengthWave> strength chance (8 <StrengthWave></StrengthWave> for repeating attacks) to apply <abilityred>Static Charge</abilityred>, a stacking debuff that lowers the target's Arc resistance by 1 <DamageWave></DamageWave> resistance for 1 <turn></turn>.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+            "description": "Attacks from Arc weapons have a 12 <StrengthWave></StrengthWave> strength chance (8 <StrengthWave></StrengthWave> for repeating attacks) to apply <abilityred>Static Charge</abilityred>, a stacking debuff that lowers the target's Arc resistance by 1 <DamageWave></DamageWave> resistance for 2 <turn></turn>.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
 
 
     },
@@ -1387,7 +1387,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Unit becomes statically charged, gaining 2 <DamageWave></DamageWave> resistance. Whenever this unit is damaged by an enemy unit within 2 hexes, that unit has a 4 <StrengthWave></StrengthWave> strength chance to become <abilityred>Stunned</abilityred> and receives 6 <DamageWave></DamageWave> damage.<br><br> Additionally, this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "Unit becomes statically charged, gaining 2 <DamageWave></DamageWave> resistance. Whenever this unit is damaged by an enemy unit within 3 hexes, that unit has a 4 <StrengthWave></StrengthWave> strength chance to become <abilityred>Stunned</abilityred> and receives 6 <DamageWave></DamageWave> damage.<br><br> Additionally, this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
@@ -1398,7 +1398,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Attacks from Arc weapons gain an extra impact level, allowing them to <abilityred>Stagger</abilityred> enemy units.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+            "description": "Attacks from Arc weapons gain an extra impact level, allowing them to <abilityred>Stagger</abilityred> enemy units.<br>Additionally, Arc weapons gain a 12 <StrengthWave></StrengthWave> strength chance( 8 <StrengthWave></StrengthWave> for repeating attacks) to apply <abilityred>Electrified</abilityred> to non-Ethereal units for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
 
 
     },
@@ -1431,7 +1431,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": " Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred><br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Positron Arc Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><bulletList><bullet><xpCol>Stun</xpCol> 4<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> instead.</bullet><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet></bulletList><br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+            "description": " Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred><br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Positron Arc Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><bulletList><bullet><xpCol>Stun</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> instead.</bullet><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet></bulletList><br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
 
 
     },
@@ -1442,7 +1442,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shield",
             "cost": "15 <tricorium></tricorium>",
-            "description": "This unit is shrouded in a powerful Arc field, making it 25% harder to hit with ranged attacks and granting it 5 <DamageWave></DamageWave> resistance. At the start of each turn of combat, a random enemy within a 2 hex radius area of effect gets hit with discharge, taking 12 <DamageWave></DamageWave> damage.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
+            "description": "This unit is shrouded in a powerful Arc field, making it 25% harder to hit with ranged attacks and granting it 6 <DamageWave></DamageWave> resistance. At the start of each turn of combat, a random enemy within a 2 hex radius area of effect gets hit with discharge, taking 12 <DamageWave></DamageWave> damage.<br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to units that have an Arc ability. </abilityred> ",
 
 
     },
@@ -1453,13 +1453,13 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Attacks from Biochemical weapons are infused with acid, giving <abilityred>Melt Armor</abilityred>, removing 1 <armor></armor> with each hit.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+            "description": "Attacks from Biochemical weapons are infused with acid, giving <abilityred>Melt Armor</abilityred>, removing 1 <armor></armor> with each hit.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical or Claw ability. </abilityred> ",
 
 
     },
         {
             "slug": "infusion_ionic",
-            "tier": "III",
+            "tier": "II",
             "name": "Infusion: Ionic",
 
             "type": "Offensive Mod",
@@ -1470,7 +1470,7 @@ var jsonMods = {
     },
         {
             "slug": "cerebral_strain",
-            "tier": "V",
+            "tier": "IV",
             "name": "Cerebral Strain",
 
             "type": "Offensive Mod",
@@ -1481,7 +1481,7 @@ var jsonMods = {
     },
         {
             "slug": "viscous_strain",
-            "tier": "V",
+            "tier": "VI",
             "name": "Viscous Strain",
 
             "type": "Offensive Mod",
@@ -1492,23 +1492,23 @@ var jsonMods = {
     },
         {
             "slug": "blight_infection",
-            "tier": "VII",
+            "tier": "VIII",
             "name": "Blight Infection",
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Biochemical attacks have a 12 <StrengthBio></StrengthBio> strength chance ( 8 <StrengthBio></StrengthBio> for repeating attacks) to apply <abilityred>Blight Infection</abilityred> until end of combat. <br> A unit infected will explode in a 2 hex radius when it dies, dealing 14 <DamageBio></DamageBio> Biochemical damage to all units in the explosion.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+            "description": "Biochemical attacks have a 12 <StrengthBio></StrengthBio> strength chance ( 8 <StrengthBio></StrengthBio> for repeating attacks) to apply <abilityred>Blight Infection</abilityred> until end of combat. <br> A unit infected will explode in a 2 hex radius when it dies, dealing 14 <DamageBio></DamageBio> Biochemical damage to all units in the explosion.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical or Claw ability. </abilityred> ",
 
 
     },
         {
             "slug": "blight_bringer",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Blight Bringer",
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Unit gains +5 <DamageBio></DamageBio> resistance and Immunity to <actionblue>Biochemical Status Effects and Hazards</actionblue>. <br> at the end of this unit's turn, any Biological or Cyborg units within 2 hexes of this unit have a 8 <StrengthBio></StrengthBio> strength chance to be affected by <abilityred>Blighted Plague</abilityred> for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+            "description": "Unit gains +5 <DamageBio></DamageBio> resistance and Immunity to <actionblue>Biochemical Status Effects and Hazards</actionblue>. <br> at the end of this unit's turn, any Biological or Cyborg units within 2 hexes of this unit have a 8 <StrengthBio></StrengthBio> strength chance to be affected by <abilityred>Blighted Plague</abilityred> for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical or Claw ability. </abilityred> ",
 
 
     },
@@ -1529,7 +1529,7 @@ var jsonMods = {
             "name": "Explosives: Incendiary",
 
             "type": "Offensive Mod",
-            "cost": "10 <tricorium></tricorium>",
+            "cost": "5 <tricorium></tricorium>",
             "description": "Explosive attacks now deal Thermal damage and have a 12 <StrengthThermal></StrengthThermal> strength chance( 8 <StrengthThermal></StrengthThermal> for repeating attacks) to apply <abilityred>Burning</abilityred>.<br><br><abilityred>Cannot be combined with Explosives: Electrical.</abilityred><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Explosive ability. </abilityred> ",
 
 
@@ -1651,7 +1651,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "This unit's Laser weapons have a 10 <StrengthThermal></StrengthThermal> strength chance (6 <StrengthThermal></StrengthThermal> for repeating attacks) to inflict <abilityred>Immulation</abilityred> for 3 <turn></turn>. Immolation deals 10 <DamageThermal></DamageThermal> per <turn></turn> as well as making the affected unit 30% easier to hit. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+            "description": "This unit's Laser weapons have a 10 <StrengthThermal></StrengthThermal> strength chance (6 <StrengthThermal></StrengthThermal> for repeating attacks) to inflict <abilityred>Immolation</abilityred> for 3 <turn></turn>. Immolation deals 10 <DamageThermal></DamageThermal> per <turn></turn> as well as making the affected unit 30% easier to hit. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
 
 
     },
@@ -1717,7 +1717,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Psionic attacks are empowered with flame, dealing Thermal damage and have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks)to inflict <abilityred>Burning</abilityred>. <br> Psionic buffs increase Thermal Resistance by 6 <DamageThermal></DamageThermal><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+            "description": "Psionic attacks are empowered with flame, dealing Thermal damage and have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks)to inflict <abilityred>Burning</abilityred>. <br> Psionic buffs increase Thermal Resistance by 6 <DamageThermal></DamageThermal><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
 
 
     },
@@ -1738,7 +1738,7 @@ var jsonMods = {
             "name": "Focus: Venom",
 
             "type": "Offensive Mod",
-            "cost": "10 <tricorium></tricorium>",
+            "cost": "5 <tricorium></tricorium>",
             "description": "Psionic attacks are infused with acid, dealing Biochemical damage and have a 12 <StrengthBio></StrengthBio> strength chance ( 8 <StrengthBio></StrengthBio> for repeating attacks)to apply <abilityred>Poison</abilityred>. <br> Psionic buffs increase Biochemical Resistance by 6 <DamageBio></DamageBio><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
 
 
@@ -1915,6 +1915,177 @@ var jsonMods = {
 
 
     },
+
+        {
+            "slug": "acute_pitch",
+            "tier": "IV",
+            "name": "Acute Pitch",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's Sonic attacks gain a 12<strengthPhysical></strengthPhysical> strength chance (8 <strengthPhysical></strengthPhysical> for repeating attacks) to apply <abilityred>Resonance</abilityred> reducing their <damagePhysical></damagePhysical> resistance for 2 <turn></turn> <br><br> Additionally,this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Sonic ability. </abilityred> ",
+
+
+    },
+        {
+            "slug": "cavitation_module",
+            "tier": "IV",
+            "name": "Cavitation Module",
+
+            "type": "Offensive Mod",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "This unit's Sonic weapons apply <abilityred>Reverb</abilityred>( 12<strengthPhysical></strengthPhysical> for repeating attacks) a stacking effect that deals 15 <damagePhysical></damagePhysical> damage to the unit and its adjacent allies when it reaches 3 stacks. <br><br> Additionally,this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Sonic ability. </abilityred> ",
+
+
+    },
+        {
+            "slug": "deafening_amplifiers",
+            "tier": "I",
+            "name": "Deafening Amplifiers",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's Sonic weapons have a 12<strengthPhysical></strengthPhysical> chance (8 <strengthPhysical></strengthPhysical> for repeating attacks) to apply <abilityred>Disoriented</abilityred> to non-Ethereal units, giving the unit a 30% fumble chance to its attacks, for 2 <turn></turn>. <br><br> Additionally,this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Sonic ability. </abilityred> ",
+
+
+    },
+
+        {
+            "slug": "focused_sonolysis_module",
+            "tier": "II",
+            "name": "Focused Sonolysis Module",
+
+            "type": "Offensive Mod",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "This unit's Sonic weapons gain <abilityred>Armor Melt</abilityred> destroying 1 <armor></armor> per hit. <br><br> Additionally,this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Sonic ability. </abilityred> ",
+
+
+    },
+        {
+            "slug": "reverbing_shields",
+            "tier": "VI",
+            "name": "Reverbing Shields",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit gains 3 <strengthPhysical></strengthPhysical> resistance.<br>In Addition, attacks on this unit have a 12<strengthPhysical></strengthPhysical> chance of applying a stack of <abilityred>Reverb</abilityred> to the attacker, which deals 15 <damagePhysical></damagePhysical> damage to the unit and its adjacent allies when it reaches 3 stacks. On failure, applies <abilityred>Resonance</abilityred> instead. <br><br> Additionally,this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to units that have an Sonic ability. </abilityred> ",
+
+
+    },
+        {
+            "slug": "sono-interference_module",
+            "tier": "III",
+            "name": "Sono-Interference Module",
+
+            "type": "Offensive Mod",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "This unit's Sonic weapons have a 12<strengthPhysical></strengthPhysical> chance (8 <strengthPhysical></strengthPhysical> for repeating attacks) to apply <abilityred>Impaired</abilityred> to non-Ethereal units, disabling their mods and applying <abilityred>Slow</abilityred>. On failure, it only applies <abilityred>Slow</abilityred>. <br><br> Additionally,this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Sonic ability. </abilityred> ",
+
+
+    },
+
+        {
+            "slug": "assault_exoskeleton",
+            "tier": "VII",
+            "name": "Assault Exoskeleton",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Unit gains +25% critical chance, +20% accuracy, and 1 level of <actionblue>Stagger Resistance</actionblue>. <br><br> Additionally,this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can only be applied to non-Mechanical units. </abilityred> ",
+
+
+    },
+        {
+            "slug": "holochromatic_engines",
+            "tier": "IX",
+            "name": "Holochromatic Engines",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Unit gains 1 level of <actionblue>Stagger Resistance</actionblue>.<br> When this unit takes enemy damage, it gains a <actionblue>Free Action Damaging ability</actionblue> of the same damage channel. <br> When used, it expires all abilities gained this way. <br><br> Additionally,this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+
+
+    },
+
+        {
+            "slug": "holodisplacement_shields",
+            "tier": "IV",
+            "name": "Holodisplacement Shields",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Unit gains <actionblue>Skitter</actionblue>, making it 5% harder to hit for each hex moved during its last turn, as well as gaining <actionblue>Water and River Camouflage</actionblue> , making it undetectable when on water and river hexes. <br><br> Additionally,this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+
+
+    },
+
+        {
+            "slug": "portable_scanners",
+            "tier": "I",
+            "name": "Portable Scanners",
+
+            "type": "Defense Mod - Shields",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Unit gains <actionblue>Detection</actionblue>, +2 Sensor Range, and its damaging abilites gain a 10<strengthPhysical></strengthPhysical> chance (6 <strengthPhysical></strengthPhysical> for repeating attacks) to apply <abilityred>Analyzed</abilityred>, reducing their resistances by 2 for 2 <turn></turn>. <br><br> Additionally,this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units. </abilityred> ",
+
+
+    },
+
+        {
+            "slug": "xeno_defense_module",
+            "tier": "III",
+            "name": "Xeno Defense Module",
+
+            "type": "Defense Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Unit gains +3 damage resistance to the last damage type it received. <br> This effect lasts until the end of combat or until a different damage is dealt to the unit. <br><br> Additionally,this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+
+
+    },
+
+        {
+            "slug": "orbital_recall_systems",
+            "tier": "V",
+            "name": "Orbital Recall Systems",
+
+            "type": "Defense Mod - Shields",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Additionally,this mod grants the unit +1 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred>  <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Tactical Redeploy</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Leave One Point<leaveoneaction></leaveoneaction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Unit is quickly repositioned to target hex. Then gains +2 <shield></shield> for 1 <turn></turn><br><bulletList><bullet>Cooldown: 3 <turn></turn></bullet> <bullet>Starts on cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
+
+    },
+        {
+            "slug": "holoreality_mantle",
+            "tier": "VII",
+            "name": "Holoreality Mantle",
+
+            "type": "Defense Mod - Shields",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Non-Mindless units that attack this one from within 4 hexes have a 8 strengthPsyche strength chance of gaining <abilityred>Hallucinating</abilityred> for 2 <turn></turn>. <br><br> Additionally,this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred>  <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Tactical Redeploy</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Leave One Point<leaveoneaction></leaveoneaction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Create cover at target hex. Adjacent non-mindless enemy units have a 12 <strengthPsyche></strengthPsyche> to become <abilityred>Hallucinating</abilityred> for 2 <turn></turn>. On resist, apply <abilityred>Broken Mind</abilityred>.  <br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
+
+    },
+        {
+            "slug": "impairing_grenade",
+            "tier": "III",
+            "name": "Impairing Grenade",
+
+            "type": "Defense Mod - Armor",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Additionally,this mod grants the unit +1 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit except Animals. </abilityred>  <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Grenade</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>14<DamagePhysical></DamagePhysical> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Throw a grenade, dealing Sonic damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Impaired</xpCol> 8 <strengthPhysical></strengthPhysical> strength chance to apply <abilityred>Impaired</abilityred> for 1 <turn></turn></bullet></bulletList><br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Explosive, Sonic)</silver></popUpDesc>",
+
+    },
+
+        {
+            "slug": "trigger-phrase_systems",
+            "tier": "IX",
+            "name": "Trigger-Phrase Systems",
+
+            "type": "Defense Mod - Armor",
+            "cost": "15 <tricorium></tricorium>",
+            "description": "Additionally,this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can be applied to Biological and Cyborg units. </abilityred>  <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Omni Activation</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Unit gains <actionblue>Resurgence</actionblue> until the end of combat and enters <actionblue>Defense Mode</actionblue>. At the start of the next turn, this unit gains <abilityred>Insanity</abilityred>, attacking enemy units at random for 3 <turn></turn>. During this time, it also gains +30% damage increase and +3 resistance to all Damage Channels.<br><br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>",
+
+    },
+
+
 
              ///equipment =============================================================================================================================equipment
 
@@ -2120,6 +2291,19 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Essence Link</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target a friendly Biological, Cyborg, or Mineral unit. Both units are linked together in an <actionblue>Essence Link</actionblue>.<br> While the link is active, both units gain +1 <shield></shield> plus and additional +1 <shield></shield> for each Essance Charge they have.<br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
     },
+        {
+
+            "slug": "equipment:_sono_fins",
+            "tier": "III",
+            "name": "Sono Fins",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Fallback</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target friendly unit heals for 25<hp></hp> and has its negative Status Effects removed. The unit is pulled to a hex adjacent to this unit.<br><bulletList><bullet>Cooldown: 3 <turn></turn></bullet></bulletList></popUpDesc><br><popUpDesc><titleBrown>Press The Advantage</titleBrown></popUpHeader3><popUpDesc><br>Target non-Tactician friendly unit regains all action points.</popUpDesc>",
+    },
+
 
         {
 
@@ -2133,6 +2317,20 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Ethereal Spear Thrust</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamagePsyche></DamagePsyche> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Stab with the Ethereal Spear.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defensive modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Broken Mind</xpCol> 12<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic, Melee)</silver></popUpDesc>",
     },
+
+        {
+
+            "slug": "equipment:_omni_claw",
+            "tier": "III",
+            "name": "Omni Claw",
+
+            "type": "Primary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Omni Claw</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> 8<DamageThermal></DamageThermal> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Melee combined Sonic Laser attack.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee, Laser, Sonic, Claw)</silver></popUpDesc><br><popUpDesc><titleBrown>Omni Shot</titleBrown></popUpHeader3><popUpDesc><br>Fire a combined Sonic Laser attack at the target.</popUpDesc>",
+    },
+
 
         {
 
@@ -2221,6 +2419,18 @@ var jsonMods = {
     },
         {
 
+            "slug": "vehicle:_propagator",
+            "tier": "II",
+            "name": "Vehicle: Propagator",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Propagator</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Specialist</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Sono Repeater 8 <DamagePhysical></DamagePhysical></bullet> <bullet>Dissonos 16 <DamagePhysical></DamagePhysical></bullet><bullet>Holo Mend</bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
             "slug": "vehicle:_gunship",
             "tier": "II",
             "name": "Vehicle: Gunship",
@@ -2252,6 +2462,19 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Baron</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Specialist</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Rotary Cannon 12 <DamagePhysical></DamagePhysical></bullet> <bullet>Reinforcement Kit</bullet><bullet>Nitro Battery</bullet><bullet>Disruptor Device 12 <DamageWave></DamageWave></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+
+        {
+
+            "slug": "vehicle:_refractor",
+            "tier": "III",
+            "name": "Vehicle: Refractor",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Refractor</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Sonic Ebb 13 <DamagePhysical></DamagePhysical></bullet> <bullet>Sonic Flow 20 <DamageWave></DamageWave></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
     },
         {
 

@@ -953,7 +953,7 @@ var jsonTech = {
             ],
             "unit_unlock": [
                 {
-                    "slug": "propagator"
+                    "slug": "shakarn_propagator"
                 }
 
             ],
@@ -995,7 +995,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "omni_claw"
+                    "slug": "equipment:_omni_claw"
                 }
 
             ],
@@ -1045,7 +1045,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "sono_fins"
+                    "slug": "equipment:_sono_fins"
                 }
 
             ],
@@ -1361,7 +1361,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "deafning_amplifiers"
+                    "slug": "deafening_amplifiers"
                 }
 
             ],
