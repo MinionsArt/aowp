@@ -10,6 +10,17 @@ var jsonOperations = {
             "energy_cost": "40",
             "casting": "2 <tacticalPoint></tacticalPoint>",
         },
+        {
+            "slug": "propagation_towers",
+            "name": "Propagation Towers",
+            "tier": "I",
+            "type": "Colony Upgrade",
+            "description": "The Propagation Towers allow the latest developments to be transmitted to your citizens, as well as also help project holorealities through the city, keeping the populace distracted.<br><br>Colony gains 4<happiness></happiness>.<br>Further bonuses can be granted to colonies with Propagation Towers through the use of Strategic Operation <actionblue>Broadcasts</actionblue>",
+            "production_cost": "200 <production></production> Production",
+
+
+
+        },
 
         {
             "slug": "hololusion",
