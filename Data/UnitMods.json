@@ -1774,7 +1774,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Psionic attacks are empowered with flame, dealing Thermal damage and have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks)to inflict <abilityred>Burning</abilityred>. <br> Psionic buffs increase Thermal Resistance by 6 <DamageThermal></DamageThermal><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+            "description": "Psionic attacks are empowered with flame, dealing Thermal damage and have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks)to inflict <abilityred>Burning</abilityred>, but attacks will only bypass 2 <armor></armor>. <br> Psionic buffs increase Thermal Resistance by 4 <DamageThermal></DamageThermal><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
 
 
     },
@@ -1796,7 +1796,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Psionic attacks are infused with acid, dealing Biochemical damage and have a 12 <StrengthBio></StrengthBio> strength chance ( 8 <StrengthBio></StrengthBio> for repeating attacks)to apply <abilityred>Poison</abilityred>. <br> Psionic buffs increase Biochemical Resistance by 6 <DamageBio></DamageBio><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
+            "description": "Psionic attacks are infused with acid, dealing Biochemical damage and have a 12 <StrengthBio></StrengthBio> strength chance ( 8 <StrengthBio></StrengthBio> for repeating attacks)to apply <abilityred>Poison</abilityred>, but attacks will only bypass 2 <armor></armor>. <br> Psionic buffs increase Biochemical Resistance by 4 <DamageBio></DamageBio><br><br> <abilityred>Only one Focus mod can be active at a time. </abilityred> <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
 
 
     },
@@ -1807,7 +1807,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Psionic buffs now also heal units for 15<hp></hp> and grant them 2 <shield></shield> for 2 <turn></turn>. This can stack. <br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic Buff ability. </abilityred> ",
+            "description": "Psionic attacks heal the caster for 8<hp></hp> on use. <br><br> Psionic buffs grant 2 <shield></shield>. <br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic Buff ability. </abilityred> ",
 
 
     },
