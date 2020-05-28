@@ -1254,8 +1254,8 @@ var jsonMods = {
             "name": "Hazmat Protection",
 
             "type": "Defense Mod - Armor",
-            "cost": "10 <tricorium></tricorium>",
-            "description": "Provides the unit with a protective system, granting them +4 <DamageBio></DamageBio> resistance and <actionblue>Hazard Immunity</actionblue>.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units </abilityred> ",
+            "cost": "5 <tricorium></tricorium>",
+            "description": "Provides the unit with a protective system, granting them +4 <DamageBio></DamageBio> resistance and <actionblue>Tactical Hazard Immunity</actionblue>.<br><br> Additionally, this mod grants the unit +1<armor></armor><br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units </abilityred> ",
 
 
     },
