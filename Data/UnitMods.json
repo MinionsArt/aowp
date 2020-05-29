@@ -1806,8 +1806,8 @@ var jsonMods = {
             "name": "Mantra of Life",
 
             "type": "Offensive Mod",
-            "cost": "5 <tricorium></tricorium>",
-            "description": "Psionic attacks heal the caster for 8<hp></hp> on use. <br><br> Psionic buffs grant 2 <shield></shield>. <br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic Buff ability. </abilityred> ",
+            "cost": "10 <tricorium></tricorium>",
+            "description": "Psionic attacks heal the caster for 8<hp></hp> on use. <br><br> Psionic buffs grant 2 <shield></shield>. <br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to units that have an Psionic ability. </abilityred> ",
 
 
     },
