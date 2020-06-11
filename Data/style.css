@@ -4,7 +4,7 @@ html {
 
 }
 
-table {}
+
 
 th {
     min-width: 320px;
@@ -22,12 +22,34 @@ td {
 
 }
 
+.hometd {
+    min-width: 400px;
+    max-width: 400px;
+    height: 90px;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+
+
+    border: 1px solid #040605;
+}
+
+.homebullet {
+    margin-top: 5px;
+}
+
 ul {
     padding: 0px;
 }
 
 .togglelink {
     padding: 10px;
+}
+
+.homelink {
+    text-decoration: underline;
+    color: aqua;
+    font-size: 16px;
 }
 
 a {
@@ -1113,7 +1135,7 @@ bullet {
     display: block;
     color: white;
     text-align: left;
-    margin: 0px;
+    margin-left: 5px;
     padding: 0px;
     text-decoration: none;
 }
