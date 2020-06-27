@@ -1243,7 +1243,7 @@ var jsonOperations = {
             "name": "Mountain Breaker",
             "tier": "IV",
             "type": "Strategic Operation(Instant)",
-            "description": "Makes uninhabitable Mountain sectors habitable, or turns habitable Mountain (<production></production>/<energy></energy>) sectors into Fertile Plains (<food></food>/<energy></energy>).",
+            "description": "Makes uninhabitable Mountain sectors habitable, or turns habitable Mountain (<production></production>/<energy></energy>) sectors into Fertile Plains (<food></food>/<research></research>).",
             "energy_cost": "120",
             "casting": "12 <stratPoint></stratPoint>",
         },
