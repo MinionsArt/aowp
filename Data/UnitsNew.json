@@ -229,9 +229,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -2266,9 +2263,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -2345,9 +2339,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -2418,9 +2409,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "metamorphosis"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
@@ -2500,9 +2488,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "kinetic_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
@@ -2592,9 +2577,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "maternal_instinct"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
@@ -6665,9 +6647,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -7647,9 +7626,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -7724,9 +7700,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "kinetic_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
@@ -8633,9 +8606,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -8910,9 +8880,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "ruthless_killer"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
@@ -17225,9 +17192,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -17313,9 +17277,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -17398,9 +17359,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "psionic_form"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
@@ -17499,9 +17457,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "psionic_form"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
@@ -18013,9 +17968,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
@@ -18278,9 +18230,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "steady_aim"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    },
                 {
                     "slug": "thermal_status_effect_immunity"
