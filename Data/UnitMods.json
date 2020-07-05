@@ -1532,7 +1532,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Biochemical attacks deal +10% damage against non-Mindless units and have a 8 <strengthpsyche></strengthpsyche> strength chance(4 <strengthpsyche></strengthpsyche> for repeating attacks) to apply <abilityred>Catatonic</abilityred> to non-Mindless Psionic units for 1 <turn></turn><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+            "description": "Biochemical attacks deal +10% damage against non-Mindless units and have a 8 <strengthpsyche></strengthpsyche> strength chance(4 <strengthpsyche></strengthpsyche> for repeating attacks) to apply <abilityred>Catatonic</abilityred> to non-Mindless Psionic units for 1 <turn></turn><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical or Claw ability. </abilityred> ",
 
 
     },
@@ -1543,7 +1543,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Biochemical attacks have a 12 <StrengthBio></StrengthBio> strength chance (8 <StrengthBio></StrengthBio> on repeating attacks) strength chance to apply <abilityred>Slow</abilityred> to non-Ethereal units for 3 <turn></turn>. <br><br> If a unit is already <abilityred>Slowed</abilityred>, that unit has a 8 <StrengthBio></StrengthBio> strength chance(4 <StrengthBio></StrengthBio> on repeating attacks) to become for <abilityred>Immobilized</abilityred> 1 <turn></turn><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical ability. </abilityred> ",
+            "description": "Biochemical attacks have a 12 <StrengthBio></StrengthBio> strength chance (8 <StrengthBio></StrengthBio> on repeating attacks) strength chance to apply <abilityred>Slow</abilityred> to non-Ethereal units for 3 <turn></turn>. <br><br> If a unit is already <abilityred>Slowed</abilityred>, that unit has a 8 <StrengthBio></StrengthBio> strength chance(4 <StrengthBio></StrengthBio> on repeating attacks) to become for <abilityred>Immobilized</abilityred> 1 <turn></turn><br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical or Claw ability. </abilityred> ",
 
 
     },
