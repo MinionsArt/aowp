@@ -293,7 +293,7 @@ ul.egmenu li:hover ul {
 
 
 .collapsible {
-    background-color: #777;
+    background-color: #371847;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -301,19 +301,24 @@ ul.egmenu li:hover ul {
     border: none;
     text-align: left;
     outline: none;
+    box-shadow:
+        inset 0px 0px 20px 10px #4b1d63;
+    /* left magenta */
+
     font-size: 15px;
+    margin: 10px;
 }
 
 .active,
 .collapsible:hover {
-    background-color: #555;
+    background-color: #4b1d63;
 }
 
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #040605;
 
 }
 
