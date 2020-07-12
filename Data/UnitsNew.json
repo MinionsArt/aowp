@@ -1,6 +1,5 @@
 var jsonUnits = {
-    "units": [
-        {
+    "units": [{
             "resistances": [],
             "upkeep": "8<energy></energy>",
             "id": "penguin",
@@ -9131,7 +9130,7 @@ var jsonUnits = {
             "icon": "amazon_initiate_icon",
             "name": "Amazon - Initiate",
             "hp": 40,
-            S "armor": 1,
+            "armor": 1,
             "tier": 2,
             "passives": [
                 {
