@@ -1628,7 +1628,7 @@ var jsonOperations = {
             "tier": "I",
             "type": "Tactical Operation (Instant)",
             "description": "Discharges an Arc blast on a single enemy unit, dealing 9<DamageWave></DamageWave> damage with <abilityRed>High Impact</abilityRed>. This attack can jump to 2 additional targets within 3 hexes of each other.",
-            "energy_cost": "21",
+            "energy_cost": "25",
             "casting": "1 <tacticalPoint></tacticalPoint>",
         },
 
