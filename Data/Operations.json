@@ -3144,6 +3144,7 @@ var jsonOperations = {
             "description": "Collect 25% of the targeted player's total energy income over a fixed number of turns. The energy will transfer to us once the operation has run for 5<turn></turn>.",
             "energy_cost": "0",
             "casting": "8 <stratPoint></stratPoint>",
+            "influence_cost": "30",
         },
 
         {
