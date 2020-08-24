@@ -3155,6 +3155,7 @@ var jsonOperations = {
             "description": "Spawn an army of the selected non-hostile faction to attack the target player. Not usable if no non-hostile factions are known.",
             "energy_cost": "0",
             "casting": "8 <stratPoint></stratPoint>",
+            "influence_cost": "30",
         },
 
         {
@@ -3215,6 +3216,8 @@ var jsonOperations = {
             "description": "Expertly falsify claims of grievous war crimes against target enemy player. The enemy player loses reputation, and all other players gain a maximum level Casus Belli against that player.",
             "energy_cost": "0",
             "casting": "16 <stratPoint></stratPoint>",
+            "influence_cost": "80",
+            
         },
 
         {
