@@ -2347,7 +2347,7 @@ var jsonOperations = {
             "name": "Technoclast Crusade",
             "tier": "III",
             "type": "Doctrine Operation",
-            "description": "Rally your forces in a crusade against the wickedness of machine intelligence.<br><br>Against Mechanical and Integrated units, all friendly units gain +10% damage and have a 30<strengthEntropy></strengthEntropy> strength chance (8<strengthEntropy></strengthEntropy> for repeating attacks) to inflict <abilityRed>Entropic Decay</abilityRed>.",
+            "description": "Rally your forces in a crusade against the wickedness of machine intelligence.<br><br>Against Mechanical and Integrated units, all friendly units gain +10% damage and have a 8<strengthEntropy></strengthEntropy> strength chance (4<strengthEntropy></strengthEntropy> for repeating attacks) to inflict <abilityRed>Entropic Decay</abilityRed>.",
             "energy_cost": "50",
             "casting": "6 <stratPoint></stratPoint>",
         },
