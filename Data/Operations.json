@@ -1433,7 +1433,7 @@ var jsonOperations = {
             "name": "The Dirge",
             "tier": "V",
             "type": "Strategic Operation (Timed)",
-            "description": "Infect a non-Psynumbra Colony and the surrounding area with The Dirge for 1<turn></turn>, a Psionically-induced darkness that increases in strength as you build more Spires of Suffering.<br><br>On failure, applies <abilityRed>Civil Unrest</abilityRed> to the colony, which causes 12<anger></anger> for 3<turn></turn>.<br><bullet>Level 1<br>-30<anger></anger><br>Martial Law always kills Rioters.</bullet><bullet>Level 2<br>-30<anger></anger><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.</bullet><bullet>Level 3<br>-30<anger></anger><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.<br>Psynumbra units have <abilityBlue>Dark Elation</abilityBlue> in combat.</bullet>",
+            "description": "Infect a non-Psynumbra Colony and the surrounding area with The Dirge for 1<turn></turn>, a Psionically-induced darkness that increases in strength as you build more Spires of Suffering.<br><br>On failure, applies <abilityRed>Civil Unrest</abilityRed> to the colony, which causes 12<anger></anger> for 3<turn></turn>.<br><bullet>Level 1<br>-30<unhappiness></unhappiness><br>Martial Law always kills Rioters.</bullet><bullet>Level 2<br>-30<unhappiness></unhappiness><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.</bullet><bullet>Level 3<br>-30<unhappiness></unhappiness><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.<br>Psynumbra units have <abilityBlue>Dark Elation</abilityBlue> in combat.</bullet>",
             "energy_cost": "120",
             "casting": "12 <stratPoint></stratPoint>",
         },
@@ -1443,7 +1443,7 @@ var jsonOperations = {
             "name": "Torment Channelers",
             "tier": "VI",
             "type": "Strategic Operation (Sustained)",
-            "description": "Channel the pain of the populace to reinforce our armies. Target colony gains <abilityRed>8<unhappiness></unhappiness></abilityRed>, and all units produced in the colony gain <actionblue>Reinforced by Suffering</actionblue>, granting them +10<hp></hp> and +10% damage.",
+            "description": "Channel the pain of the populace to reinforce our armies. Target colony gains <abilityRed>-8<unhappiness></unhappiness></abilityRed>, and all units produced in the colony gain <actionblue>Reinforced by Suffering</actionblue>, granting them +10<hp></hp> and +10% damage.",
             "energy_cost": "60",
             "casting": "8 <stratPoint></stratPoint>",
             "upkeep_cost": "10 <energy></energy> / <turn></turn>"
