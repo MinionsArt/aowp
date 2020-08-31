@@ -177,7 +177,7 @@ var jsonOperations = {
             "name": "Laser Strike",
             "tier": "I",
             "type": "Tactical Operation (Instant)",
-            "description": "Call in a Laser Strike at the target that deals 25 damage with <abilityRed>Massive Impact</abilityRed> and has 8 strength chance to inflict <abilityRed>Burning</abilityRed>.",
+            "description": "Call in a Laser Strike at the target that deals 25<DamageThermal></DamageThermal> damage with <abilityRed>Massive Impact</abilityRed> and has 8 <StrengthThermal></StrengthThermal> strength chance to inflict <abilityRed>Burning</abilityRed>.",
             "energy_cost": "30",
             "casting": "2 <tacticalPoint></tacticalPoint>",
         },
@@ -187,7 +187,7 @@ var jsonOperations = {
             "name": "Photonic Countermeasures",
             "tier": "II",
             "type": "Tactical Operation (Instant)",
-            "description": "Fire a blinding Laser beam, dealing 10 damage in a 1 hex radius. All enemy units hit by this ability have 12 strength chance to be <abilityRed>Blinded</abilityRed>, decreasing their accuracy for 2.",
+            "description": "Fire a blinding Laser beam, dealing 10<DamageThermal></DamageThermal> damage in a 1 hex radius. All enemy units hit by this ability have 12<StrengthThermal></StrengthThermal> strength chance to be <abilityRed>Blinded</abilityRed>, decreasing their accuracy for 2<turn></turn>.",
             "energy_cost": "40",
             "casting": "3 <tacticalPoint></tacticalPoint>",
         },
@@ -197,7 +197,7 @@ var jsonOperations = {
             "name": "Laser Ablation",
             "tier": "IV",
             "type": "Tactical Operation (Instant)",
-            "description": "Deal 25 damage with <abilityRed>Massive Impact</abilityRed> to target unit, bypassing and removing 3 and 3.",
+            "description": "Deal 25<DamageThermal></DamageThermal> damage with <abilityRed>Massive Impact</abilityRed> to target unit, bypassing and removing 3<armor></armor> and 3<shield></shield>.",
             "energy_cost": "60",
             "casting": "4 <tacticalPoint></tacticalPoint>",
         },
@@ -207,7 +207,7 @@ var jsonOperations = {
             "name": "Starlight Projector",
             "tier": "VIII",
             "type": "Tactical Operation (Instant)",
-            "description": "Bathe the battlefield in Thermal energy, reducing the defenses of enemy units by 5 and 3 for 2. Also, enemy units have a have strength 8 chance to become <abilityRed>Blinded</abilityRed> for 2",
+            "description": "Bathe the battlefield in Thermal energy, reducing the defenses of enemy units by -5<shield></shield> and -3<DamageThermal></DamageThermal> for 2<turn></turn>. Also, enemy units have a have strength 8<strengthThermal></strengthThermal> chance to become <abilityRed>Blinded</abilityRed> for 2<turn></turn>",
             "energy_cost": "100",
             "casting": "9 <tacticalPoint></tacticalPoint>",
         },
@@ -1433,7 +1433,7 @@ var jsonOperations = {
             "name": "The Dirge",
             "tier": "V",
             "type": "Strategic Operation (Timed)",
-            "description": "Infect a non-Psynumbra Colony and the surrounding area with The Dirge for 1<turn></turn>, a Psionically-induced darkness that increases in strength as you build more Spires of Suffering.<br><br>On failure, applies <abilityRed>Civil Unrest</abilityRed> to the colony, which causes 12<anger></anger> for 3<turn></turn>.<br><bullet>Level 1<br>-30<anger></anger><br>Martial Law always kills Rioters.</bullet><bullet>Level 2<br>-30<anger></anger><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.</bullet><bullet>Level 3<br>-30<anger></anger><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.<br>Psynumbra units have <abilityBlue>Dark Elation</abilityBlue> in combat.</bullet>",
+            "description": "Infect a non-Psynumbra Colony and the surrounding area with The Dirge for 1<turn></turn>, a Psionically-induced darkness that increases in strength as you build more Spires of Suffering.<br><br>On failure, applies <abilityRed>Civil Unrest</abilityRed> to the colony, which causes 12<anger></anger> for 3<turn></turn>.<br><bullet>Level 1<br>-30<unhappiness></unhappiness><br>Martial Law always kills Rioters.</bullet><bullet>Level 2<br>-30<unhappiness></unhappiness><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.</bullet><bullet>Level 3<br>-30<unhappiness></unhappiness><br>Martial Law always kills Rioters.<br>Non-Psynumbra units have a 8<strengthPsyche></strengthPsyche> strength chance to get <abilityRed>Broken Mind</abilityRed> every 2 <turn></turn> in combat.<br>Psynumbra units have <abilityBlue>Dark Elation</abilityBlue> in combat.</bullet>",
             "energy_cost": "120",
             "casting": "12 <stratPoint></stratPoint>",
         },
@@ -1443,7 +1443,7 @@ var jsonOperations = {
             "name": "Torment Channelers",
             "tier": "VI",
             "type": "Strategic Operation (Sustained)",
-            "description": "Channel the pain of the populace to reinforce our armies. Target colony gains <abilityRed>8<unhappiness></unhappiness></abilityRed>, and all units produced in the colony gain <actionblue>Reinforced by Suffering</actionblue>, granting them +10<hp></hp> and +10% damage.",
+            "description": "Channel the pain of the populace to reinforce our armies. Target colony gains <abilityRed>-8<unhappiness></unhappiness></abilityRed>, and all units produced in the colony gain <actionblue>Reinforced by Suffering</actionblue>, granting them +10<hp></hp> and +10% damage.",
             "energy_cost": "60",
             "casting": "8 <stratPoint></stratPoint>",
             "upkeep_cost": "10 <energy></energy> / <turn></turn>"
@@ -2347,7 +2347,7 @@ var jsonOperations = {
             "name": "Technoclast Crusade",
             "tier": "III",
             "type": "Doctrine Operation",
-            "description": "Rally your forces in a crusade against the wickedness of machine intelligence.<br><br>Against Mechanical and Integrated units, all friendly units gain +10% damage and have a 30<strengthEntropy></strengthEntropy> strength chance (8<strengthEntropy></strengthEntropy> for repeating attacks) to inflict <abilityRed>Entropic Decay</abilityRed>.",
+            "description": "Rally your forces in a crusade against the wickedness of machine intelligence.<br><br>Against Mechanical and Integrated units, all friendly units gain +10% damage and have a 8<strengthEntropy></strengthEntropy> strength chance (4<strengthEntropy></strengthEntropy> for repeating attacks) to inflict <abilityRed>Entropic Decay</abilityRed>.",
             "energy_cost": "50",
             "casting": "6 <stratPoint></stratPoint>",
         },
@@ -3144,6 +3144,7 @@ var jsonOperations = {
             "description": "Collect 25% of the targeted player's total energy income over a fixed number of turns. The energy will transfer to us once the operation has run for 5<turn></turn>.",
             "energy_cost": "0",
             "casting": "8 <stratPoint></stratPoint>",
+            "influence_cost": "30",
         },
 
         {
@@ -3154,6 +3155,7 @@ var jsonOperations = {
             "description": "Spawn an army of the selected non-hostile faction to attack the target player. Not usable if no non-hostile factions are known.",
             "energy_cost": "0",
             "casting": "8 <stratPoint></stratPoint>",
+            "influence_cost": "30",
         },
 
         {
@@ -3214,6 +3216,8 @@ var jsonOperations = {
             "description": "Expertly falsify claims of grievous war crimes against target enemy player. The enemy player loses reputation, and all other players gain a maximum level Casus Belli against that player.",
             "energy_cost": "0",
             "casting": "16 <stratPoint></stratPoint>",
+            "influence_cost": "80",
+            
         },
 
         {
