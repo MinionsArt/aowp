@@ -2148,7 +2148,7 @@ var jsonMods = {
 
         {
 
-            "slug": "hasher_smg",
+            "slug": "equipment:hasher_smg",
             "tier": "I",
             "name": "Hasher SMG",
 
@@ -2779,6 +2779,715 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Apex</titleBrown></popUpHeader3><br><HelpText>Tier IV, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Carbon Sword 15 <DamagePhysical></DamagePhysical></bullet> <bullet>Inspiring Roar</bullet><bullet>Pounce 22<DamagePhysical></DamagePhysical></bullet>  <bullet>Biological</bullet> <bullet>Heavy Unit</bullet> </bulletList></popUpDesc>",
-    }
+    },
+        {
+
+            "slug": "equipment:arc_projector",
+            "tier": "I",
+            "name": "Arc Projector",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Arc Projector</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamageWave></DamageWave> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>A medium-range Arc weapon.<br><bulletList><bullet><xpCol>Electrified</xpCol> 4<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:arc_sword",
+            "tier": "I",
+            "name": "Arc Sword",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Arc Sword</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>95%<accuracy></accuracy><tab></tab>12<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Strike the target with an Arc Sword.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet></bulletList><br><bulletList><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee, Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:volt_pike",
+            "tier": "I",
+            "name": "Volt Pike",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Volt Pike</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Strike an enemy with an arc-charged pike.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee, Arc)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:assault_rifle",
+            "tier": "I",
+            "name": "Assault Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Assault Rifle</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire an Assault Rifle at the target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:draining_shotgun",
+            "tier": "I",
+            "name": "Draining Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Devour Essence</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageEntropy></DamageEntropy> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Forcefully extract essence from the target and feed on it.<br><bulletList><bullet><xpCol>Energy Drain</xpCol> 8<strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred> to targets for 3<turn></turn>. On success, the caster gains an <abilityblue>Essence Charge</abilityblue>.</bullet><bullet><xpCol>Devour Essence</xpCol> Each hit heals this unit for 8<hp></hp>.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Essence Charge</titleBrown></popUpHeader3><popUpDesc><br>This unit is capable of carrying 1 additional <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue> per stack</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:heavy_spike_gun",
+            "tier": "I",
+            "name": "Heavy Spike Gun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Heavy Spike Gun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Heavy Spike Gun at the target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:laser_glaive",
+            "tier": "I",
+            "name": "Laser Glaive",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Laser Glaive Strike</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageThermal></DamageThermal> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Strikes the target with a Laser glaive.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee, Laser)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:laser_rifle",
+            "tier": "I",
+            "name": "Laser Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Laser Rifle</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamageThermal></DamageThermal> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Laser Rifle at the target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Laser)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:laser_shotgun",
+            "tier": "I",
+            "name": "Laser Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Laser Shotgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageThermal></DamageThermal> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a laser blast at the target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Laser)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:laser_sniper",
+            "tier": "I",
+            "name": "Laser Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Laser Sniper</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageThermal></DamageThermal> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Laser Sniper rifle at the target.<br><br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Laser)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:laser_sword",
+            "tier": "I",
+            "name": "Laser Sword",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Laser Sword</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating Action<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageThermal></DamageThermal> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Laser Sniper rifle at the target.<br><br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Laser)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:mx-2000_sniper",
+            "tier": "I",
+            "name": "MX-2000 Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>MX-2000 Sniper</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a MX-2000 Sniper rifle at the target.<br><br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:omni_carbine",
+            "tier": "I",
+            "name": "Omni Carbine",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Omni Carbine</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>6<DamagePhysical></DamagePhysical> 6<DamageThermal></DamageThermal> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a combined Sonic Laser attack at the target.<br><bulletList><bullet><warningRed>Close Assault</warningRed> Deals -1<damagePhysical></damagePhysical> per each hex away from target.</bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Laser, Sonic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:psitec_staff",
+            "tier": "I",
+            "name": "PsiTec Staff",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>PsiTec Staff</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamagePsyche></DamagePsyche> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Point the tip of a staff at the target enemy to fire blasts of Psionic energy.<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:pulse_repeater",
+            "tier": "I",
+            "name": "Pulse Repeater",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Pulse Repeater</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageWave></DamageWave> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire blasts of Arc energy at the target.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:rocket_hammer",
+            "tier": "I",
+            "name": "Rocket Hammer",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Rocket Hammer</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>A powerful hammer Smash<br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:scavenger_shotgun",
+            "tier": "I",
+            "name": "Scavenger Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Shotgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Shotgun at the target.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:shotgun",
+            "tier": "I",
+            "name": "Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Shotgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Shotgun at the target.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:augurs_catalyst",
+            "tier": "II",
+            "name": "Augur's Catalyst",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Entropic Shot</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamageEntropy></DamageEntropy> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Shoot an enemy with entropic energy.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Entropy)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:beamer_rifle",
+            "tier": "II",
+            "name": "Beamer Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Mounted Laser Repeater</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageThermal></DamageThermal> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Charred</xpCol> 4<StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Charred</abilityred> to non-Ethereal, non-Mineral and non-Mechanical targets for 2<turn></turn>.</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:bio_staff",
+            "tier": "II",
+            "name": "Bio Staff",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Bio Staff</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageBio></DamageBio> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Biochemical ranged attack.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Rejuvenating Ray</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Heal target Biological or Cyborg unit for 30<hp></hp>. If the target is dead, revive it for 50% of its max <hp></hp>.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:dazzling_rifle",
+            "tier": "II",
+            "name": "Dazzling Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Dazzling Rifle</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Blind</xpCol> 4<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityRed>Blinded</abilityRed> to non-Ethereal targets for 2<turn></turn>.</bullet></bulletList><br><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:dindin",
+            "tier": "II",
+            "name": "Dindin",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Dindin</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Melee attack.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Feast</xpCol> Heal for 5 to 10 <hp</hp> when damaging Biological or Cyborg units</bullet><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:ego_rifle",
+            "tier": "II",
+            "name": "Ego Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Ego Rifle</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamagePsyche></DamagePsyche> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Broken Mind</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br><br><silver>(Psionic)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:esteq_fangs",
+            "tier": "II",
+            "name": "Es'Teq Fangs",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Essence Fangs</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageEntropy></DamageEntropy> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Melee attack with sharp fangs that dissolve and drain Essence.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Energy Drain</xpCol> 4<strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred> to targets for 3<turn></turn>. On success, the caster gains an <abilityblue>Essence Charge</abilityblue>.</bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee, Entropy)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Essence Charge</titleBrown></popUpHeader3><popUpDesc><br>This unit is capable of carrying 1 additional <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue>per stack</popUpDesc><br><br> <popUpHeader3><titleBrown>Rot Emanation</titleBrown></popUpHeader3><popUpDesc><br>Requires and uses 1 <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue>. This unit expesls a 3 hex cone of rotting essence.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:esteq_shotgun",
+            "tier": "II",
+            "name": "Es'Teq Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Es'Teq Shotgun</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>17<DamageEntropy></DamageEntropy> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Energy Drain</xpCol> 8<strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred> to targets for 3<turn></turn>. On success, the caster gains an <abilityblue>Essence Charge</abilityblue>.</bullet><bullet><xpCol>Entropic Decay</xpCol> 8<strengthEntropy></strengthEntropy> strength chance to apply <abilityred>Entropic Decay</abilityred> to units for 3<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Entropy)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Essence Charge</titleBrown></popUpHeader3><popUpDesc><br>This unit is capable of carrying 1 additional <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue>per stack</popUpDesc><br><br> <popUpHeader3><titleBrown>Rot Emanation</titleBrown></popUpHeader3><popUpDesc><br>Requires and uses 1 <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue>. This unit expesls a 3 hex cone of rotting essence.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:esteq_sniper",
+            "tier": "II",
+            "name": "Es'Teq Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Es'Teq Sniper</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>19<DamageEntropy></DamageEntropy> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Entropic Decay</xpCol> 8<strengthEntropy></strengthEntropy> strength chance to apply <abilityred>Entropic Decay</abilityred> to units for 3<turn></turn></bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Entropy)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:glint_shotgun",
+            "tier": "II",
+            "name": "Glint Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Glint Shotgun</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageThermal></DamageThermal> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Immolate</xpCol> 4<StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Immolated</abilityred> to non-Mineral or non-Ethereal targets for 3<turn></turn></bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:hand_mortar",
+            "tier": "II",
+            "name": "Hand Mortar",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Hand Mortar</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Hand Mortar, damaging units in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet></bulletList><br></br><silver>(Explosive)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:heavy_hitter",
+            "tier": "II",
+            "name": "Heavy Hitter",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Heavy Hitter</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>22<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>A melee attack.<br></br><bulletList><bullet><xpCol>Concussion</xpCol> 12<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Concussion</abilityred> to non-Ethereal or non-Mechanical for 1<turn></turn>. If resisted, cause <abilityred>Massive Impact</abilityred> instead.</bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet></bulletList><br></br><silver>(Melee)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:hunting_bow",
+            "tier": "II",
+            "name": "Hunting Bow",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Bio Arrows</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire arrows with Biochemical tips at the target.<br></br><bulletList><bullet><xpCol>Poison</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet>Ignores cover and unit penalties</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:imperial_rifle",
+            "tier": "II",
+            "name": "Imperial Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Assault Rifle</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire an Assault Rifle at the target.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:imperial_shotgun",
+            "tier": "II",
+            "name": "Imperial Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Shotgun</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Shotgun at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:imperial_sniper_rifle",
+            "tier": "II",
+            "name": "Imperial Sniper Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Sniper Shot</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a sniper rifle at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:lacerating_shotgun",
+            "tier": "II",
+            "name": "Lacerating Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Shotgun</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Shotgun at the target.<br></br><bulletList><bullet><xpCol>Bleeding</xpCol> 12<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Bleeding</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:lightning_sniper",
+            "tier": "II",
+            "name": "Lightning Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Lightning Sniper</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>19<DamageWave></DamageWave> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a precise bolt of Arc energy at the target.<br></br><bulletList><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:omni_cannon",
+            "tier": "II",
+            "name": "Omni Cannon",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Omni Cannon</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamagePhysical></DamagePhysical> 9<DamageThermal></DamageThermal> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a combined Sonic Laser attack at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser, Sonic)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:paragon_guard_spear",
+            "tier": "II",
+            "name": "Paragon Guard Spear",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>Paragon Guard Spear</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>A melee attack. The unit enters defense mode after attacking<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:pestilence",
+            "tier": "II",
+            "name": "Pestilence",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Pestilence</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>13<DamageBio></DamageBio> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Strike the target with Pestilence.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Parasitic Infection</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Parasitic Infection</abilityred> to Biological and Cyborg units until the end of combat.</bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee,Biochemical)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:psi-rifle",
+            "tier": "II",
+            "name": "Psi-Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Psi-Rifle</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePsyche></DamagePsyche> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a long-range Psionic damage shot.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Flanker</xpCol> Unit deals an additional 25% damage when flanking.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:psitec_fists",
+            "tier": "II",
+            "name": "PsiTec Fists",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>PsiTec Strike</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePsyche></DamagePsyche> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Crush an opponent with Psionic Gauntlets<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee, Psionic)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:pulse_sniper",
+            "tier": "II",
+            "name": "Pulse Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Pulse Sniper</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>22<DamageWave></DamageWave> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a precise bolt of Arc energy at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:reaper_sniper",
+            "tier": "II",
+            "name": "Reaper Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Reaper Shot</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>22<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a hindering shot at the target.<br></br><bulletList><bullet><xpCol>Cripple</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityRed>Crippled</abilityRed> to Biological and Cyborg targets for 3<turn></turn>.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:rending_claws",
+            "tier": "II",
+            "name": "Rending Claws",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Rending Claws</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Strike the target with rending claws.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee, Claw)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:rotary_cannon",
+            "tier": "II",
+            "name": "Rotary Cannon",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Rotary Cannon</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>12<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire the Rotary Cannon at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:smog_sniper",
+            "tier": "II",
+            "name": "Smog Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Smog Sniper</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamageThermal></DamageThermal> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire the Rotary Cannon at the target.<br></br><bulletList><bullet><xpCol>Choking</xpCol> 12 <StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Choking</abilityred> to biological or Cyborg units for 1 <turn></turn> </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:sono_shotgun",
+            "tier": "II",
+            "name": "Sono Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Sono-Frequency</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Project a Sonic attack at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Sonic)</silver>
+    },
+
+        {
+
+            "slug": "equipment:sunbringer",
+            "tier": "II",
+            "name": "Sunbringer",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Sunbringer</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamageThermal></DamageThermal> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deals its damage to enemy units adjacent to target unit.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee, Laser)</silver>
+    },
+
+        {
+
+            "slug": "equipment:thadeus_memory",
+            "tier": "II",
+            "name": "Thadeus' Memory",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Thadeus' Memory</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>11<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at the target.<br></br><bulletList><bullet><xpCol>Catatonic</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Catatonic</abilityred> to non-Mindless units for 1<turn></turn>. If resisted, apply <abilityred>Broken Mind</abilityred> instead.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:thrax_rifle",
+            "tier": "II",
+            "name": "Thrax Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Thrax Rifle</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>10<DamageBio></DamageBio> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>A medium-range Biochemical attack.<br></br><bulletList<bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:trance_sniper",
+            "tier": "II",
+            "name": "Trance Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Trance Sniper</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>17<DamagePsyche></DamagePsyche> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at the target.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br><bulletList><bullet><bullet><xpCol>Catatonic</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Catatonic</abilityred> to non-Mindless units for 1<turn></turn>. If resisted, apply <abilityred>Broken Mind</abilityred> instead.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:venom_rifle",
+            "tier": "II",
+            "name": "Venom Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Venom Rifle</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamageBio></DamageBio> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire arrows with Biochemical tips at the target.<br></br><bulletList><bullet><xpCol>Poison</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet>Affected by line of sight rules.</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:venom_sniper",
+            "tier": "II",
+            "name": "Venom Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Venom Sniper</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>19<DamageBio></DamageBio> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at the target.<br></br><bulletList><bullet><xpCol>Poison</xpCol> 12<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:viral_sniper_rifle",
+            "tier": "II",
+            "name": "Viral Sniper Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Viral Precision Shot</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageBio></DamageBio> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a viral round at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Debilitating Infection</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg targets for 3<turn></turn></bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc><br><br><popUpDesc><titleBrown>Healing Shot</titleBrown></popUpHeader3><popUpDesc><br>Target friendly Biological or Cyborg unit to restore 25 <hp></hp></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:void_glaive",
+            "tier": "II",
+            "name": "Void Glaive",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Void Glaive</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>15<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Melee attack with dimensional blades.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Flanker</xpCol> Unit deals an additional 25% damage when flanking.</bullet><bullet><xpCol>Dimensional Instability</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Dimensional Instability</abilityred> until the end of combat. </bullet><bullet><xpCol>Charge</xpCol> +20% damage if this unit moves at least 3 hexes</bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:void_hammer",
+            "tier": "II",
+            "name": "Void Hammer",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Void Hammer</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Powerful melee attack that <abilityred>knocks back</abilityred> Light units.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Dimensional Instability</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to cause <abilityred>Dimensional Instability</abilityred> until the end of combat. </bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:volt_shotgun",
+            "tier": "II",
+            "name": "Volt Shotgun",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Volt Pike</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:vorpal_sniper_rifle",
+            "tier": "II",
+            "name": "Vorpal Sniper Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Vorpal Shot</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire the Vorpal Sniper rifle at the target.<br></br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Power Shot</xpCol> +15% critical chance.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc><br><br><popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
+    },
+
 ]
 }
