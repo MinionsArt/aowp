@@ -4026,7 +4026,7 @@ var jsonMods = {
             "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
 
 
-            "description": "<popUpHeader3><titleBrown>Screech</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>16<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Unleash a psionic screech at the target.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><bullet><xpCol>Panic</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to <abilityred>Panic</abilityred> to non-Mindless for 1<turn></turn>.</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
+            "description": "<popUpHeader3><titleBrown>Screech</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>16<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Unleash a psionic screech at the target.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Panic</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to <abilityred>Panic</abilityred> to non-Mindless for 1<turn></turn>.</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
     },
 
         {
@@ -4355,5 +4355,645 @@ var jsonMods = {
             "description": "<popUpHeader3><titleBrown>Void Seeker</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target. Shots travel through the Void, shifting and changing direction, causing all attacks from this weapon to flack the target.<br><br><bulletList><bullet><xpCol>Always Flanks</xpCol> Always counts as Flanking </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> ",
     },
 
+             /// secondary weapons
+
+        {
+
+            "slug": "equipment:_arc_bolas",
+            "tier": "I",
+            "name": "Arc Bolas",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Arc Bolas</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw an advanced bolas to capture and immobilize units.<br></br><bulletList><bullet><xpCol>Flanker</xpCol> Unit deals an additional 25% damage when flanking.</bullet><bullet><xpCol>Immobilize</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Immobilized</abilityred> for 2<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_arc_grenade",
+            "tier": "I",
+            "name": "Arc Grenade",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Arc Grenade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>8<DamageWave></DamageWave> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a grenade that explodes in shrapnel, dealing damage in a 1 hex radius.</abilityred>.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Grenade,Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_arc_rod",
+            "tier": "I",
+            "name": "Arc Rod",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Arc Rod</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>7<DamageWave></DamageWave> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>A medium-range Arc weapon.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_basic_grenade",
+            "tier": "I",
+            "name": "Basic Grenade",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Grenade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a grenade, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></br><silver>(Explosive, Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_bio_grenade",
+            "tier": "I",
+            "name": "Bio Grenade",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Bio Grenade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<DamageBio></DamageBio> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a Biochemical grenade, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Poison</xpCol> 12<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></br><silver>(Biochemical, Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_entropic_revolver",
+            "tier": "I",
+            "name": "Entropic Revolver",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Entropic Shock</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>7<DamageEntropy></DamageEntropy> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Shock an enemy with entropic energy.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Entropy)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_imperial_revolver",
+            "tier": "I",
+            "name": "Imperial Revolver",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Imperial Revolver</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePhysical></DamagePhysical> <tab></tab>6<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_laser_pistol",
+            "tier": "I",
+            "name": "Laser Pistol",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Laser Pistol</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePhysical></DamagePhysical> <tab></tab>6<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_med_kit",
+            "tier": "I",
+            "name": "Med Kit",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Med Kit</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Instantly heal target unit for 20 <hp></hp>. Does not affect Mechanical units.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_repair_kit",
+            "tier": "I",
+            "name": "Repair Kit",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Repair Kit</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Instantly heal target Mechanical or Cyborg unit for 30<hp></hp><br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_mining_shield",
+            "tier": "I",
+            "name": "Mining Shield",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Shield Bash</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Bash the target with a shield, <abilityred>knocking back</abilityred> Light units.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet></bulletList><br></br><silver>(Melee)</silver></popUpDesc> <br><br><popUpDesc><titleBrown>Extra Armor</titleBrown></popUpHeader3><popUpDesc><br>Unit has +2 <armor></armor></popUpDesc><br><br><popUpDesc><titleBrown>Exposed Flanks</titleBrown></popUpHeader3><popUpDesc><br>Flanking attacks against this unit will ignore up to 2 <armor></armor></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_pistol",
+            "tier": "I",
+            "name": "Pistol",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Pistol</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>7<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Pistol at the target.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_psi-stones_of_dissonance",
+            "tier": "I",
+            "name": "Psi-Stones of Dissonance",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Psi-Stones of Dissonance</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>9<DamagePsyche></DamagePsyche> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>A short-range cone attack that deals Psionic damage to all units.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br></br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_psi-stones_of_harmony",
+            "tier": "I",
+            "name": "Psi-Stones of Harmony",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Psi-Stones of Harmony</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Heals a friendly unit for 15<hp></hp> and grants them 200 <morale></morale> bonus to Morale.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Psionic Buff)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_psitec_grenade",
+            "tier": "I",
+            "name": "PsiTec Grenade",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>PsiTec Grenade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>6<DamagePsyche></DamagePsyche> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a Psionic-charged grenade that deals damage in an area.<br></br><bulletList><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Cripple</xpCol> 4<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityRed>Crippled</abilityRed> to Biological and Cyborg targets for 3<turn></turn>.</bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Grenade, Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_sono_pistol",
+            "tier": "I",
+            "name": "Sono Pistol",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Sono Pistol</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>6<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Pistol at the target.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Sonic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_thermal_grenade",
+            "tier": "I",
+            "name": "Thermal Grenade",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Thermal Grenade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>10<DamageThermal></DamageThermal> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a Thermal grenade, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Incendiary</xpCol> 8<StrengthThermal></StrengthThermal> strength chance to apply <abilityRed>Burning</abilityRed> to non-Ethereal and non-Mineral targets for 3<turn></turn>.</bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></br><silver>(Thermal, Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_volt_pistol",
+            "tier": "I",
+            "name": "Volt Pistol",
+
+            "type": "Secondary Weapon",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Volt Pistol</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at target.</abilityred>.<br></br><bulletList><bullet>Affected by line of sight penalties</bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_bio_blaster",
+            "tier": "II",
+            "name": "Bio Blaster",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Bio Blaster</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at target.</abilityred>.<br></br><bulletList><bullet>Affected by line of sight penalties</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_dispersing_gas_bomb",
+            "tier": "II",
+            "name": "Dispersing Gas Bomb",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Thermal Grenade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>10<DamageThermal></DamageThermal> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Thros a canister that deals damage in a 1 hex radius and creates a cloud of choking smoke.<br></br><bulletList><bullet><xpCol>Choking</xpCol> 8 <StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Choking</abilityred> to biological or Cyborg units for 1 <turn></turn> </bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></br><silver>(Thermal, Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_ego_bomb",
+            "tier": "II",
+            "name": "Ego Bomb",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Ego Bomb</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>6<DamagePsyche></DamagePsyche> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a bomb that deals damage in an area.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Broken Mind</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Ingores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></br><silver>(Grenade,Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_electrical_blaster",
+            "tier": "II",
+            "name": "Electrical Blaster",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Electrical Blaster</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>6<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at target.</abilityred>.<br></br><bulletList><bullet><xpCol>Static Charge</xpCol> Applies one stack of <abilityred>Static Charge</abilityred> for 2<turn></turn></bullet><bullet>Affected by line of sight penalties</bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_imperial_launcher",
+            "tier": "I",
+            "name": "Imperial Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Strike Missile</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamagePhysical></DamagePhysical> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Launch a missile, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Explosive)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_imperial_pistol",
+            "tier": "II",
+            "name": "Imperial Pistol",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Imperial Pistol</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire a Pistol at the target.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_improved_imperial_revolver",
+            "tier": "II",
+            "name": "Improved Imperial Revolver",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Improved Imperial Revolver</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>6<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_inferno_handgun",
+            "tier": "II",
+            "name": "Inferno Handgun",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Inferno Handgun</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>7<DamageThermal></DamageThermal> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at the target.<br></br><bulletList><bullet><xpCol>Charred</xpCol> 12<StrengthThermal></StrengthThermal> strength chance to apply <abilityred>Charred</abilityred> to non-Ethereal, non-Mineral and non-Mechanical targets for 2<turn></turn>.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_jet_of_dismay",
+            "tier": "II",
+            "name": "Jet of Dismay",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Jet of Dismay</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Concentrate on a target, attempting to induce <abilityred>Panic</abilityred>.<br></br><bulletList><bullet><xpCol>Panic</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to <abilityred>Panic</abilityred> to non-Mindless for 1<turn></turn>.</bullet><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_thrax_pistol",
+            "tier": "II",
+            "name": "Thrax Pistol",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Thrax Pistol</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>6<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at target.</abilityred>.<br></br><bulletList><bullet>Affected by line of sight penalties</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_watchers_scrolls",
+            "tier": "II",
+            "name": "Watcher's Scrolls",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Gift of Providence</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Target friendly unit gains <abilityblue>Providence</abilityblue> for 1<turn></turn>, making all of its attacks critically hit.<br></br><bulletList><bullet>Cooldown: 3 <turn></turn></bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_static_bomb",
+            "tier": "II",
+            "name": "Static Bomb",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Static Bomb</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>10<DamageWave></DamageWave> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Thros a static bomb that deals damage in a 1 hex radius.</abilityred>.<br></br><bulletList><bullet><xpCol>Static Charge</xpCol> Applies one stack of <abilityred>Static Charge</abilityred> for 2<turn></turn></bullet><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_acorn_assault_pouch",
+            "tier": "III",
+            "name": "Acorn Assault Pouch",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Bio Acorn</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>18<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a Biochemical acorn grenade.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Poison</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 2<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Cooldown: 1 <turn></turn></bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc><br><br><popUpHeader3><titleBrown>Slowing Acorn</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>10<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a grenade that releases a slowing cloud for 2<turn></turn>.<br></br><br></br>The cloud deals 10<damagebio></damagebio>, and has 12<strengthPhysical></strengthPhysical> chance to cause <abilityred>Slowed</abilityred> for 3<turn></turn> on units moving through or ending their turn in it.<br></br><bulletList><bullet><xpCol>Slow</xpCol> 12<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Slow</abilityred> to non-Ethereal units for 2<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 1 <turn></turn></bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_acorn_support_pouch",
+            "tier": "III",
+            "name": "Acorn Support Pouch",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Resistance Acorn</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a grenade that releases a resistance cloud for 2<turn></turn>. Friendly units hit gain 2 resistance to all damage channels for 2<turn></turn>.<br></br><br></br>The cloud has the same effect for units moving through or ending their turn in it. <br></br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc><br><br><popUpHeader3><titleBrown>Healing Acorn</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a grenade that releases a healing cloud for 2<turn></turn>. Heals Biological and Cyborg units for 12<HP></HP> and dispels negative effects.<br></br><br></br>The cloud has the same effect for units ending their turn in it. <br></br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_assassins_persistence",
+            "tier": "III",
+            "name": "Assassin's Persistence",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Assassin's Persistence</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamagePhysical></DamagePhysical><tab></tab>6<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target; part of the Assassin's Kit <br><br> When equipped with <titleBrown>Assassin's Fixation</titleBrown>, hero gains the <actionblue>Assassin's Kit</actionblue> buff<br></br><bulletList><bullet><xpCol>Finish the Job</xpCol> +50% damage against targets affected by: <abilityred>Subject of Fixation, Catatonic, Concussed, Crippled or Disabled</abilityred></bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_bio_launcher",
+            "tier": "III",
+            "name": "Bio Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Bio Launcher</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamageBio></DamageBio> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Launch a missile, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Poison</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_cementing_bomb",
+            "tier": "III",
+            "name": "Bio Grenade",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Cementing Bomb</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>15<DamageBio></DamageBio> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a single target bomb that is filled with a hardening cocktail.<br></br><bulletList><bullet><xpCol>Encase</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Encase</abilityred> for 2<turn></turn>. If resisted, this ability causes <abilityred>Stagger</abilityred> instead.</bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></br><silver>(Biochemical, Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_debilitating_revolver",
+            "tier": "III",
+            "name": "Debilitating Revolver",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Debilitating Revolver</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>16<DamageBio></DamageBio> <tab></tab>6<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target.<br></br><bulletList><bullet><xpCol>Debilitating Infection</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Debilitating Infection</abilityred> to Biological and Cyborg targets for 3<turn></turn></bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Biochemical)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_ego_launcher",
+            "tier": "III",
+            "name": "Ego Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Ego Launcher</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePsyche></DamagePsyche> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Launch a missile, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Broken Mind</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_inferno_launcher",
+            "tier": "III",
+            "name": "Inferno Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Inferno Launcher</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageThermal></DamageThermal> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Launch a missile, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Incendiary</xpCol> 8<StrengthThermal></StrengthThermal> strength chance to apply <abilityRed>Burning</abilityRed> to non-Ethereal and non-Mineral targets for 3<turn></turn>.</bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></br></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_last_resort",
+            "tier": "III",
+            "name": "Last Resort",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Last Resort</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamageThermal></DamageThermal> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>A short range thirmal shotgun, for when escape isn't an option.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><<bullet><xpCol>Knockback</xpCol> 12<StrengthThermal></StrengthThermal> chance to <abilityred>knock back</abilityred> a non-Ethereal, non-Heavy enemy unit 1 hex.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Laser)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_lightning_launcher",
+            "tier": "III",
+            "name": "Lightning Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Lightning Launcher</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamageWave></DamageWave> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Launch a missile, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_obsidian_of_despair",
+            "tier": "III",
+            "name": "Obsidian of Despair",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Obsidian of Despair</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Launch a missile, dealing damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>Filled With Despair</xpCol> 8<strengthPsyche></strengthPsyche> strength chance to apply <abilityred>Filled with Despair</abilityred> to non-Mindless units until the end of combat. If resisted, apply <abilityRed>Broken Mind</abilityRed> for 3<turn></turn> instead</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_onyx_of_conversion",
+            "tier": "III",
+            "name": "Onyx of Conversion",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Onyx of Conversion</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Dark energy springs forth from this psi-stone, allowing you to try to control an enemy unit. <br> Attempts to Mind Control (Strength 12 <StrengthPsyche></StrengthPsyche> ) for as long as the hero lives. On resist, apply Broken Mind.<br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_psi-stone_of_misfortune",
+            "tier": "III",
+            "name": "Psi-stone of Misfortune",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Psi-stone of Misfortune</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Gain a 15% Fumble chance, and summon 3 Whispers of Discord adjacent to you that last until end of combat<br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_seed_shrapnel",
+            "tier": "III",
+            "name": "Seed Shrapnel",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Seed Shrapnel</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Maim enemies with an exploding seed pod.</abilityred>.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Bleeding</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Bleeding</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></br><silver>(Explosive, Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_sonic_emitter_drone",
+            "tier": "III",
+            "name": "Sonic Emitter Drone",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Sonic Emitter Drone</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deploys a sonic Emitter Drone that damages nearby units and then self-destructs after 2 <turn></turn>.<br></br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_stupor_grenade",
+            "tier": "III",
+            "name": "Stupor Grenade",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Stupor Grenade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>10<DamageWave></DamageWave> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a grenade that deals damage in a 1 hex radius.</abilityred>.<br></br><bulletList><bullet><xpCol>Stun</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> for 2<turn></turn> instead.</bullet><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></br><silver>(Arc, Grenade)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_the_burden_bearer",
+            "tier": "III",
+            "name": "The Burden Bearer",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Unburden</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Dispel all negative status effects from target ally. When used, this damages the user for 5 <DamageEntropy></DamageEntropy> and grants the user 1 Essence Charge.<br></br><bulletList><bullet>Cooldown: 3<turn></turn></bullet></bulletList></popUpDesc><br></br><silver>(Entropy)</silver></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_thumper",
+            "tier": "III",
+            "name": "Thumper",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Thumper</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>14<DamagePhysical></DamagePhysical> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw an advanced mining grenade that deals damage in a 1 hex radius.<br></br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Grenade, Explosive)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_avarice",
+            "tier": "IV",
+            "name": "Avarice",
+
+            "type": "Secondary Weapon",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Avarice</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>120%<accuracy></accuracy><tab></tab>15<DamagePhysical></DamagePhysical> <tab></tab>6<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Fire at a target. Avarice will become the preferred overwatch ability when equipped.<br></br><bulletList><bullet><xpCol>Improved Critical Chance</xpCol>+30% critical hit chance.</bullet><bullet><xpCol>Improved Accuracy</xpCol>+30% accuracy.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_delirium_throwing_blade",
+            "tier": "IV",
+            "name": "Delirium Throwing Blade",
+
+            "type": "Secondary Weapon",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Delirium Throwing Blade</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Psionically-attuned throwing knives that strike two targets.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Hallucinate</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Hallucinating</abilityred> to non-Mindless Biological and Cyborg units for 2<turn></turn></bullet><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_deaths_gaze",
+            "tier": "IV",
+            "name": "Death's Gaze",
+
+            "type": "Secondary Weapon",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Death's Gaze</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Damage all foes in a 4 hex radius with a powerful psionic burst.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet>Only affects Ground targets.</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_lifes_grace",
+            "tier": "IV",
+            "name": "Life's Grace",
+
+            "type": "Secondary Weapon",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Life's Grace</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Heal all friendly units in a 4 hex range for 20<hp></hp> and remove all negative Status Effects.<br></br><bulletList><bullet>Only affects Ground targets.</bullet><bullet>Can only be used once per battle</bullet></bulletList><br></br><silver>(Psionic Buff)</silver></popUpDesc>",
+    },
 ]
 }
