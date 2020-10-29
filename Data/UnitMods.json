@@ -3287,7 +3287,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Shotgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Shotgun at the target.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
     },
-        {
+      /*  {
 
             "slug": "equipment:_shotgun",
             "tier": "I",
@@ -3298,7 +3298,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Shotgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a Shotgun at the target.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet></bulletList><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
-    },
+    },*/
         {
 
             "slug": "equipment:_augurs_catalyst",
@@ -3968,7 +3968,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>PsiTec Vox Amp</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>16<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Unleash a psionic screech at a target.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Madness</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply either <abilityred>Catatonic</abilityred>, <abilityred>Insanity</abilityred> or <abilityred>Panic</abilityred> to non-Mindless units for 1<turn></turn>. If resisted, apply <abilityred>Broken Mind</abilityred> instead.</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
     },
-        {
+        /*{
 
             "slug": "equipment:_radiant_force",
             "tier": "III",
@@ -3979,7 +3979,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Radiant Blast </titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>13<DamagePsyche></DamagePsyche> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Ranged Psionic attack.<br></br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Enlightened</xpCol> +20% damage against units with Soulburn.</bullet><bullet><xpCol>Soulburn</xpCol> Strength 8<strengthpsyche></strengthpsyche> chance to apply <abilityRed>Soulburn</abilityRed> until end of combat.</bullet></bulletList><br></br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br></br><silver>(Psionic)</silver></popUpDesc>",
-    },
+    },*/
         {
 
             "slug": "equipment:_rancor",
