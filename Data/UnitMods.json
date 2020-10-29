@@ -2725,6 +2725,305 @@ var jsonMods = {
     },
         {
 
+            "slug": "vehicle:_abyssian",
+            "tier": "II",
+            "name": "Vehicle: Abyssian",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy> ",
+
+
+            "description": "<popUpHeader3><titleBrown>Abyssian</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Specialist</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Corrosive Bile 18 <DamageBio></DamageBio></bullet> <bullet>Tunnel</bullet><bullet>Wax Cement 14 <DamageBio></DamageBio></bullet><bullet>Biological</bullet> <bullet>Light Unit</bullet><bullet>Mounted</bullet></bulletList></popUpDesc>",
+    }, {
+
+            "slug": "vehicle:_assault_bike",
+            "tier": "II",
+            "name": "Vehicle: Assault Bike",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Assault Bike</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+3<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Focused Laser Array 18 <DamageThermal></DamageThermal></bullet> <bullet>Wide Field Laser Array 18 <DamageThermal></DamageThermal></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_blackguard_adversary",
+            "tier": "II",
+            "name": "Vehicle: Blackguard Adversary",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Blackguard Adversary</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Chaos Blade 7 <DamageEntropy></DamageEntropy></bullet> <bullet>Enervation 17 <DamageEntropy></DamageEntropy></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_bulwark",
+            "tier": "II",
+            "name": "Vehicle: Bulwark",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Bulwark</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Autocannons 12 <DamagePhysical></DamagePhysical></bullet> <bullet>Concussive Volley</bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_chopper",
+            "tier": "II",
+            "name": "Vehicle: Chopper",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Chopper</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Mounted Gun 11 <DamagePhysical></DamagePhysical></bullet> <bullet>Repulsor Blast 22 <DamagePhysical></DamagePhysical></bullet><bullet>Cyborg</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_glaukos",
+            "tier": "II",
+            "name": "Vehicle: Glaukos",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Glaukos</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Sono-Ebb 11 <DamagePhysical></DamagePhysical></bullet> <bullet>Sono-Flow 10 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_hoverbike",
+            "tier": "II",
+            "name": "Vehicle: Hoverbike",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Hoverbike</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>PsiTec Emitter 15 <DamagePsyche></DamagePsyche></bullet> <bullet>Motion Suppressor <DamagePsyche></DamagePsyche></bullet><bullet>Biological</bullet> <bullet>Light Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_imperial_apc",
+            "tier": "II",
+            "name": "Vehicle: Imperial APC",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Imperial APC</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Specialist</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_lancer",
+            "tier": "II",
+            "name": "Vehicle: Lancer",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Lancer</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Laser Lance Strike 12 <DamageThermal></DamageThermal></bullet> <bullet>Laser Lance 16 <DamageThermal></DamageThermal></bullet><bullet>Biological</bullet> <bullet>Light Unit</bullet><bullet>Mounted</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_paladin_light_bringer",
+            "tier": "II",
+            "name": "Vehicle: Paladin Light Bringer",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Paladin Light Bringer</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Burning Greatbow 20 <DamageThermal></DamageThermal></bullet> <bullet>Burning Banner 9 <DamageThermal></DamageThermal></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet><bullet>Enlightened</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_paladin_marquis",
+            "tier": "II",
+            "name": "Vehicle: Paladin Marquis",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Paladin Marquis</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+3<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Volt Discharge 10 <DamageArc></DamageArc></bullet> <bullet>Banner of Justice</bullet><bullet>Honor's Calling</bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_paladin_protector",
+            "tier": "II",
+            "name": "Vehicle: Paladin Protector",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Paladin Protector</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Volt Saber 13 <DamageArc></DamageArc></bullet> <bullet>Embolden</bullet><bullet>Infantry</bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_paladin_purifier",
+            "tier": "II",
+            "name": "Vehicle: Paladin Purifier",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Paladin Purifier</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Plasma Slash 20 <DamageThermal></DamageThermal></bullet> <bullet>Launch Plasma Bombs 14 <DamageThermal></DamageThermal></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_paladin_warden",
+            "tier": "II",
+            "name": "Vehicle: Paladin Warden",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Paladin Warden</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Volt Greatbow 20 <DamageArc></DamageArc></bullet> <bullet>Warden's Banner 9 <DamageArc></DamageArc></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_paladin_warlord",
+            "tier": "II",
+            "name": "Vehicle: Paladin Warlord",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Paladin Warlord</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+3<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Twinaxes 12 <DamageArc></DamageArc></bullet> <bullet> Volt Surge 10 <DamageArc></DamageArc></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_imperial_buggy",
+            "tier": "II",
+            "name": "Vehicle: Imperial Buggy",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Imperial Buggy</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Mounted Laser Repeater 9 <DamageThermal></DamageThermal></bullet> <bullet>Laser Burst 20 <DamageThermal></DamageThermal></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_truck",
+            "tier": "II",
+            "name": "Vehicle: Truck",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Truck</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Makeshift Turret 18 <DamagePhysical></DamagePhysical></bullet> <bullet>Reckless Crash 22<DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_hellcopter",
+            "tier": "II",
+            "name": "Vehicle: Hellcopter",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Hellcopter</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Makeshift Laser Turret 18 <DamageThermal></DamageThermal></bullet> <bullet>Spacer Missile 20 <DamageThermal></DamageThermal></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_ember_hopperhound",
+            "tier": "II",
+            "name": "Vehicle: Ember Hopperhound",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Ember Hopperhound</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+15<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Blaze Spit 12 <DamageThermal></DamageThermal></bullet> <bullet>Inflame 14 <DamageThermal></DamageThermal></bullet><bullet>Biological</bullet> <bullet>Jump</bullet> <bullet>Heavy Unit</bullet><bullet>Mounted</bullet> </bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_hopperhound_alpha",
+            "tier": "II",
+            "name": "Vehicle: Hopperhound Alpha",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Hopperhound Alpha</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+15<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Blaze Spit 12 <DamageThermal></DamageThermal></bullet> <bullet>Psionic Blast 8 <DamagePsyche></DamagePsyche></bullet><bullet>Biological</bullet> <bullet>Jump</bullet> <bullet>Heavy Unit</bullet><bullet>Mounted</bullet> </bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_imperial_dragonfly",
+            "tier": "II",
+            "name": "Vehicle: Imperial Dragonfly",
+
+            "type": "Hero Equipment",
+            "cost": "60 <energy></energy>",
+
+
+            "description": "<popUpHeader3><titleBrown>Imperial Dragonfly</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+2<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Aircraft Gun 9 <DamagePhysical></DamagePhysical></bullet> <bullet>Swarm Missiles <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_imperial_walker",
+            "tier": "III",
+            "name": "Vehicle: Imperial Walker",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Imperial Walker</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Arc Gatling 11 <DamageArc></DamageArc></bullet> <bullet>Arc Missile 20 <DamageArc></DamageArc></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_paladin_champion",
+            "tier": "III",
+            "name": "Vehicle: Paladin Champion",
+
+            "type": "Hero Equipment",
+            "cost": "100 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Paladin Champion</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+5<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+0<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Volt Greatsword 22 <DamageArc></DamageArc></bullet> <bullet>Storm Discharge 16 <DamageArc></DamageArc></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_blackguard_tyrant",
+            "tier": "IV",
+            "name": "Vehicle: Blackguard Tyrant",
+
+            "type": "Hero Equipment",
+            "cost": "175 <energy></energy> 50 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Blackguard Tyrant</titleBrown></popUpHeader3><br><HelpText>Tier IV, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Chaos Axe 18 <DamageEntropy></DamageEntropy></bullet> <bullet>Instill Anarchy 18<DamageEntropy></DamageEntropy></bullet><bullet>Tyrant's Assault</bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
+            "slug": "vehicle:_imperial_behemoth",
+            "tier": "IV",
+            "name": "Vehicle: Imperial Behemoth",
+
+            "type": "Hero Equipment",
+            "cost": "175 <energy></energy> 50 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Imperial Behemoth</titleBrown></popUpHeader3><br><HelpText>Tier III, Unit - Elite</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+10<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+2<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Imperial Mounted Gun 12 <DamagePhysical></DamagePhysical></bullet> <bullet>Explosive Round 16 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+    },
+        {
+
             "slug": "dna_injector_prowler",
             "tier": "I",
             "name": "DNA Injector: Prowler",
