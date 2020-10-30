@@ -4995,5 +4995,528 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Life's Grace</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Heal all friendly units in a 4 hex range for 20<hp></hp> and remove all negative Status Effects.<br><bulletList><bullet>Only affects Ground targets.</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Psionic Buff)</silver></popUpDesc>",
     },
+             /// hero equipment
+        {
+
+            "slug": "equipment:_tactical_aid_rig",
+            "tier": "I",
+            "name": "Tactical Aid Rig",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Tactical Aid Rig</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Heal target Biological or Cyborg unit for 12 <hp></hp>  for each action point used during the heal.<br><bulletList><bullet>Can only be used once per battle</bullet></bulletList>Additionally, this mod grants the user +5<hp></hp><br><br><actionblue>This Mod can only be applied to Hero units</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_tactical_repair_rig",
+            "tier": "I",
+            "name": "Tactical Repair Rig",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Tactical Repair Rig</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Heal target Mechanical or Cyborg unit for 12 <hp></hp>  for each action point used during the heal.<br><bulletList><bullet>Can only be used once per battle</bullet></bulletList>Additionally, this mod grants the user +1<armor></armor><br><br><actionblue>This Mod can only be applied to Hero units</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_wide-range_mending_rig",
+            "tier": "I",
+            "name": "Wide-range Mending Rig",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Wide-range Mending Rig</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Heal target  unit for 20 <hp></hp>  for each action point used during the heal.<br><bulletList><bullet>Can only be used once per battle</bullet></bulletList>Additionally, this mod grants the user +10<hp></hp><br><br><actionblue>This Mod can only be applied to Hero units</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_antaran_armor",
+            "tier": "II",
+            "name": "Antaran Armor",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Whenever damage is dealt to this unit, 25% of the damage is reflected back to its source. <br><br>Additionally, this mod grants the user +1<shield></shield><br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_banner_of_the_union",
+            "tier": "II",
+            "name": "Banner of the Union",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Vanguard and Paragon units in the wielder's stack gain +300 <morale></morale> Morale. Vanguard and Paragon units firing on the bearer suffer -20<accuracy></accuracy> accuracy.<br><br>Additionally, this mod grants the user +2<shield></shield><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_bio_scanner",
+            "tier": "II",
+            "name": "Bio Scanner",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "A biomancer's scanner. Grants the 'Scan: Catalogue' ability.<br><popUpHeader3><titleBrown>Scan: Catalogue</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Reveal detailed information about the weaknesses of the target unit. All units of this type become <abilityred>Scanned</abilityred> for 3<turn></turn>, giving them -2 resistance to all damage types.<br></br><bulletList><bullet>Cooldown: 4 <turn></turn></bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1<shield></shield><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_blurring_canisters",
+            "tier": "II",
+            "name": "Blurring Canisters",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Blurring Canisters</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Throw a canister that creates a blurring cloud that makes units inside harder to hit. The cloud lasts for 2<turn></turn><br></br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 3 <turn></turn></bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1<armor></armor><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_body_odor_disperser",
+            "tier": "II",
+            "name": "Body Odor Disperser",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Now you too can smell like the Megasow!<br>Unit gains <actionblue>Rancid Stench</actionblue>: at the end of this unit's turn, adjacent enemy Biological and Cyborg ground units become <abilityred>Poisoned</abilityred>.<br><br>Additionally, this mod grants the user +5<hp></hp><br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_core_projection_relay",
+            "tier": "II",
+            "name": "CORE Projection Relay",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Operation strength is increased by +6 <operationstrength></operationstrength> on operations that target sectors with this hero in them. Grants 'Initialize Connections'. <popUpHeader3><titleBrown>Initialize Connections</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br><abilityblue>Network</abilityblue> all friendly Mechanical units , granting them a bonus that becomes stronger with each subsequent use: <br></br><bulletList><bullet>Level 1: +10% accuracy on attacks and +2<DefenseWave></DefenseWave> resistance. </bullet><bullet>Level 2: Unit's attacks gain one level of <abilityred>Stagger Impact</abilityred>. </bullet><bullet>Level 3: 20% increased damage to all attacks and +1 range on ranged attacks.</bullet></bulletList><br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +2<armor></armor><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_disorientating_sound_emitter",
+            "tier": "II",
+            "name": "Disorientating Sound Emitter",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "At end of the turn, unit damages adjacent enemy units for 10 <DamagePhysical></DamagePhysical> with 8 <StrengthPhysical></StrengthPhysical> strength chance to become <abilityred>Disorientated</abilityred> for 2 <turn></turn>.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_edict_interdicta",
+            "tier": "II",
+            "name": "Edict Interdicta",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Edict of Interdiction</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Enemy units in the target area have a 8 <StrengthPsyche></StrengthPsyche> chance to become Pacified, disabling them from using abilties for 2 <turn></turn>. <br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +2 <shield></shield>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_emergency_combat_regenerator",
+            "tier": "II",
+            "name": "Emergency Combat Regenerator",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "When health reaches 50% or lower, unit is healed for 30 <hp></hp>.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_gluttony_ethos",
+            "tier": "II",
+            "name": "Gluttony Ethos",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Melee attacks heal for 10 <hp></hp> on hit (5 <hp></hp> on repeating attacks). Gives stack of <actionblue>Glutted</actionblue> on success.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units that have a Melee or Firearms ability.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_minds_eye",
+            "tier": "II",
+            "name": "Mind's Eye",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "The unit gains <actionblue>Mind's Eye</actionblue>, becoming unable to be Flanked, has it's sensor range increased by 3 and gains immunity to <actionblue>Psionic Status Effects and Hazards.</actionblue>.<br><br>Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_old_jetpack",
+            "tier": "II",
+            "name": "Old Jetpack",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Jetpack Jump</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Jump to the target location. <br></br><bulletList><bullet>Cooldown: 3 <turn></turn></bullet><bullet>Starts on cooldown: 1 <turn></turn></bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +1 <shield></shield>.<br><br><actionblue>This Mod can only be applied to Infantry and Battlesuit Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_projectile_accelerator",
+            "tier": "II",
+            "name": "Projectile Accelerator",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Ranged weapons gain one level of Impact.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_prototype_dv-r_suit",
+            "tier": "II",
+            "name": "Prototype DV-R Suit",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Grants the wearer <actionblue>Status Effect Immunity</actionblue><br><br>Additionally, this mod grants the unit +1 <armor></armor>.<br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_provisional_weapon_augments",
+            "tier": "II",
+            "name": "Provisional Weapon Augments",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Jetpack Jump</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Increase target unit's damage by 20$ for 2 <turn></turn>. <br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_regenerative_dermal_patches",
+            "tier": "II",
+            "name": "Regenerative Dermal Patches",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Regenerative Dermal Patches</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Regenerate 8<hp></hp> per turn for 4 <turn></turn>. <br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +1 <armor></armor>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_structure_integrity_destabilizers",
+            "tier": "II",
+            "name": "Structure Integrity Destabilizers",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Gives primary weapon Demolisher<br><br>Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_tactical_supply_charge",
+            "tier": "II",
+            "name": "Blurring Canisters",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Tactical Supply Charge</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Resupply target friendly unit, resetting its once per battle abilities and cooldowns.<br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1<shield></shield><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_the_black_egg",
+            "tier": "II",
+            "name": "The Black Egg",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Ethereal Hatchling</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Spawn an Ethereal Penguin adjacent to the hero.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +2 <shield></shield>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_v4_auto_stims_calming_state",
+            "tier": "II",
+            "name": "V4 Auto Stims: Calming State",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "When health drops to 66% or lower, unit ignores morale penalties and gains 30% accuracy for 2 <turn></turn><br><br>Additionally, this mod grants the unit +1 <armor></armor>.<br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_x-7_combat_stims",
+            "tier": "II",
+            "name": "X-7 Combat Stims",
+
+            "type": "Hero Offensive Mod",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>X-7 Combat Stims</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Gain 25% accuracy for 4 <turn></turn>. <br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_displacement_systems",
+            "tier": "III",
+            "name": "Displacement Systems",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "A system that creates an image of the unit, making it seems as if it is a small distance from where it actually is. The unit is 25% harder to hit.<br><br>Additionally, this mod grants the unit +2 <shield></shield.<br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_drone_deployment_module_laser",
+            "tier": "III",
+            "name": "Drone Deployment Module: Laser",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Drone Deployment Module: Laser</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deploy a flying attack drone armed with laser weapons. The drone expires after 4 <turn></turn>. <br> The summoned unit will inherit any compatible mods that do not grant an active ability.<br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1<armor></armor><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_drone_deployment_module_repair",
+            "tier": "III",
+            "name": "Drone Deployment Module: Repair",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Drone Deployment Module: Repair</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deploy a flying repair drone armed that can heal units. The drone expires after 4 <turn></turn>. <br> The summoned unit will inherit any compatible mods that do not grant an active ability.<br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1<armor></armor><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_drone_deployment_module_skirmish",
+            "tier": "III",
+            "name": "Drone Deployment Module: Skirmish",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Drone Deployment Module: Skirmish</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deploy a flying melee skirmishing drone. The drone expires after 4 <turn></turn>. <br> The summoned unit will inherit any compatible mods that do not grant an active ability.<br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1<armor></armor><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_entopathogenic_mycelia",
+            "tier": "III",
+            "name": "Entopathogenic Mycelia",
+
+            "type": "Hero Offensive Mod",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "All attacks have a 8 <StrengthBio></StrengthBio> strength chance to cause <abilityred>Insanity</abilityred> (4 <StrengthBio></StrengthBio> for repeating attacks) <br><br>Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_essence_ark",
+            "tier": "III",
+            "name": "Essence Ark",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Open the Ark</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Spawn a Drained unit adjecent to the hero.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +5 <hp></hp>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_hollow_essence_ark",
+            "tier": "III",
+            "name": "Hollow Essence Ark",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "Grants <actionblue>Resurgence</actionblue> and revives the hero with 25% <hp></hp> after 2 <turn></turn> in tactical combat. <br> <abilityred> A unit can only revive itself once per battle</abilityred><br><br>Additionally, this mod grants the unit +5 <hp></hp>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_leg_exoskeleton_systems",
+            "tier": "III",
+            "name": "Leg Exoskeleton Systems",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "Exoskeleton systems grant the hero <actionblue>Fast Movement</actionblue> and one level of Stagger Resistance.<br><br>Additionally, this mod grants the unit +1 <armor></armor.<br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_nekris_host",
+            "tier": "III",
+            "name": "NEKRIS Host",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Spread NEKRIS</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deploy a flying melee skirmishing drone. The drone expires after 4 <turn></turn>. <br>Spread NEKRIS to a terget friendly Mechanical or Cyborg unit, dispelling status effects and granting them +2 <shield></shield>.<br><silver>(Arc)</silver></popUpDesc><br><br>Additionally, this mod grants the user +2<shield></shield><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_sporulation_Flares",
+            "tier": "III",
+            "name": "Sporulation Flares",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "When damaged by an enemy, this unit triggers a flash of Bioluminescence with a 8 <StrengthPhysical></StrengthPhysical> chance to cause <abilityred> Blinded</abilityred> to units within 2 hexes.<br><br>Additionally, this mod grants the unit +15 <hp></hp>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_tactical_aed_assistant",
+            "tier": "III",
+            "name": "Tactical AED Assistant",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Tactical AED Assistant</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Revive target Biological or Cyborg unit with 50% of the unit's maximum <hp></hp>. Only works on land.<bulletList><bullet>Only affects Ground targets.</bullet><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +10 <hp></hp><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_tactical_mechanic_assistant",
+            "tier": "III",
+            "name": "Tactical Mechanic Assistant",
+
+            "type": "Hero Defensive Mod - Armor",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Tactical Mechanic Assistant</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Revive target Mechanical or Cyborg unit with 50% of the unit's maximum <hp></hp>. Only works on land.<bulletList><bullet>Only affects Ground targets.</bullet><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1 <armor></armor><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_tyres_gift",
+            "tier": "III",
+            "name": "Tyre's Gift",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Tactical Mechanic Assistant</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Dispel all status effects, positive or negative, from target unit. Grants an Essence Charge.</popUpDesc><br><br>Additionally, this mod grants the user +15 <hp></hp><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_provisional_weapon_augments_mk-ii",
+            "tier": "IV",
+            "name": "Provisional Weapon Augments MK-II",
+
+            "type": "Hero Offensive Mod",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Provisional Weapon Augments MK-II</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Increase target unit's damage by 50% and accuracy by 20% for 2<turn></turn>. <br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:_shadows_embrace",
+            "tier": "IV",
+            "name": "Shadow's Embrace",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Shadow Jump</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Full Action (Continue)<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>This unit teleports to target hex within 5 hexes and wraps itself in shadows, gaining <abilityblue>Complete Immunity</abilityblue> for 1<turn></turn>.<br></br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +2 <shield></shield>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_universal_cloaking_field_generator",
+            "tier": "IV",
+            "name": "Universal Cloaking Field Generator",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "A powerful device that projects a cloaking field over the hero's army. All units in the hero's army gain Universal Camouflage as long as the hero is leading the army.<br><br>Additionally, this mod grants the unit +2 <shield></shield>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+
+        {
+
+            "slug": "equipment:v4_auto_stims_blind_rage",
+            "tier": "IV",
+            "name": "V4 Auto Stims: Blind Rage",
+
+            "type": "Hero Offensive Mod",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "When health drops to 66% or lower, unit has -20% accuracy, but deals 50$ more damage for 2 <turn></turn>.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_wide-range_mending_rig_mk-ii",
+            "tier": "IV",
+            "name": "Wide-Range Mending Rig MK-II",
+
+            "type": "Hero Defensive Mod - Hit Points",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Wide-Range Mending Rig MK-II</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Heal target unit for 80<hp></hp> Hit Points, or revive a dead unit with 85% of its max <hp></hp>. <br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +15 <hp></hp>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
 ]
 }
