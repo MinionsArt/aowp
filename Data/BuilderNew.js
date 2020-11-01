@@ -582,6 +582,9 @@
              if (jsonMods.mods[j].type.includes("Weapon")) {
                  a = a.replace("equipment:_", "");
              }
+             if (jsonMods.mods[j].type.includes("Hero")) {
+                 a = a.replace("equipment:_", "");
+             }
 
              imagelink.setAttribute("src", "/aowp/Icons/Mods/" + a + ".png");
              imagelink.setAttribute("id", "modicon" + a);
