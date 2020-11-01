@@ -5559,7 +5559,7 @@ var jsonMods = {
             "tier": "IV",
             "name": "Time Anomaly Generator",
 
-            "type": "Hero Defensive Mod - Shields",
+            "type": "Defensive Mod - Shields",
             "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
 
 
