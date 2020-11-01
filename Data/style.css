@@ -1192,7 +1192,23 @@ strengthpsyche {
 
 }
 
+StrengthPsyche {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/Strength_psy.png);
+    position: relative;
+
+}
+
 StrengthWave {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/Strength_arc.png);
+    position: relative;
+
+}
+
+StrengthArc {
     max-height: 25px;
     top: 3px;
     content: url(/aowp/Icons/Text/Strength_arc.png);
@@ -1209,6 +1225,14 @@ StrengthThermal {
 }
 
 strengthentropy {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/Strength_entropy.png);
+    position: relative;
+
+}
+
+StrengthEntropy {
     max-height: 25px;
     top: 3px;
     content: url(/aowp/Icons/Text/Strength_entropy.png);
@@ -1271,6 +1295,14 @@ repeatingAction {
 }
 
 singleUseAction {
+    max-width: 80px;
+    content: url(/aowp/Icons/Text/single_action.png);
+    position: relative;
+    padding-left: 10px;
+
+}
+
+singleAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/single_action.png);
     position: relative;
