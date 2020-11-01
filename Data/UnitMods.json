@@ -3888,7 +3888,7 @@ var jsonMods = {
 
         {
 
-            "slug": "equipment:_hearthbreaker_handgun",
+            "slug": "equipment:_heartbreaker_handgun",
             "tier": "III",
             "name": "Heartbreaker Handgun",
 
@@ -4503,27 +4503,27 @@ var jsonMods = {
     },
         {
 
-            "slug": "equipment:_psi-stones_of_dissonance",
+            "slug": "equipment:_psi-stone_of_dissonance",
             "tier": "I",
-            "name": "Psi-Stones of Dissonance",
+            "name": "Psi-Stone of Dissonance",
 
             "type": "Secondary Weapon",
             "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
 
 
-            "description": "<popUpHeader3><titleBrown>Psi-Stones of Dissonance</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>9<DamagePsyche></DamagePsyche> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>A short-range cone attack that deals Psionic damage to all units.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
+            "description": "<popUpHeader3><titleBrown>Psi-Stone of Dissonance</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>9<DamagePsyche></DamagePsyche> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>A short-range cone attack that deals Psionic damage to all units.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet></bulletList><br><bulletList><bullet>Only affects Ground targets</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
     },
         {
 
-            "slug": "equipment:_psi-stones_of_harmony",
+            "slug": "equipment:_psi-stone_of_harmony",
             "tier": "I",
-            "name": "Psi-Stones of Harmony",
+            "name": "Psi-Stone of Harmony",
 
             "type": "Secondary Weapon",
             "cost": "16 <energy></energy> 8 <tricorium></tricorium>",
 
 
-            "description": "<popUpHeader3><titleBrown>Psi-Stones of Harmony</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Heals a friendly unit for 15<hp></hp> and grants them 200 <morale></morale> bonus to Morale.<br><bulletList><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Psionic Buff)</silver></popUpDesc>",
+            "description": "<popUpHeader3><titleBrown>Psi-Stone of Harmony</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Heals a friendly unit for 15<hp></hp> and grants them 200 <morale></morale> bonus to Morale.<br><bulletList><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Psionic Buff)</silver></popUpDesc>",
     },
         {
 
@@ -5409,7 +5409,7 @@ var jsonMods = {
     },
         {
 
-            "slug": "equipment:_sporulation_Flares",
+            "slug": "equipment:_sporulation_flares",
             "tier": "III",
             "name": "Sporulation Flares",
 
@@ -5517,6 +5517,53 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Wide-Range Mending Rig MK-II</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Heal target unit for 80<hp></hp> Hit Points, or revive a dead unit with 85% of its max <hp></hp>. <br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>.<br><br>Additionally, this mod grants the unit +15 <hp></hp>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_mastercrafted_armor",
+            "tier": "II",
+            "name": "Mastercrafted Armor",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+            "description": "Grants <actionblue>Defense Mode: Hyper Armor<actionblue><br><br>Additionally, this mod grants the user +2 <armor></armor><br><br><actionblue>This Mod can only be applied to Infantry units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_proto-tyrannodon_muscle_structure",
+            "tier": "III",
+            "name": "Proto-Tyrannodon Muscle Structure",
+
+            "type": "Defensive Mod - Armor",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "Grants <actionblue>Fast Movement Speed<actionblue><br><br>Additionally, this mod grants the user +2 <armor></armor><br><br><actionblue>This Mod can only be applied to Animal and Mounted units.</actionblue></popUpDesc>",
+    },
+        {
+
+            "slug": "equipment:_rumble_pack",
+            "tier": "II",
+            "name": "Proto-Tyrannodon Muscle Structure",
+
+            "type": "Offensive Mod",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Get Ready To Rumble</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Grants +20% damage and one level of stagger resistance to target non-Mindless unit for 2 <turn></turn> </bulletList></popUpDesc><br><br><actionblue>This Mod can be applied to any unit.</actionblue></popUpDesc><br> <abilityred>This Mod only shows up on preset units and does not unlock</abilityred>",
+    },
+        {
+
+            "slug": "equipment:_time_anomaly_generator",
+            "tier": "IV",
+            "name": "Time Anomaly Generator",
+
+            "type": "Hero Defensive Mod - Shields",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "Generate a Time Anomaly, giving target friendly units <actionblue>Fast Movement</actionblue> and target enemy units <abilityred>Slowed Movement</abilityred> for 2 <turn></turn>.<popUpHeader3><titleBrown>Time Anomaly</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Affects all units in a 5 hex radius, giving target friendly units <actionblue>Fast Movement</actionblue> and target enemy units <abilityred>Slowed Movement</abilityred> for 2 <turn></turn> </bulletList></popUpDesc><br><br>Aditionally, this mod grants the unit +1 <shield></shield>.<br><br><actionblue>This Mod can only be applied to Voidtech or Voidtech-modded units.</actionblue></popUpDesc><br> <abilityred>This Mod only shows up on preset units and does not unlock</abilityred>",
     },
 ]
 }
