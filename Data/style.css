@@ -1132,16 +1132,16 @@ popUpHeader2 {
 
 }
 
-bullet:before {
-    content: "• ";
-}
+bullet:before {}
+
+
 
 bullet {
-    display: block;
+    display: list-item;
     color: white;
     text-align: left;
-    margin-left: 5px;
-    padding: 0px;
+    margin-left: 15px;
+    margin-bottom: 5px;
     text-decoration: none;
 }
 
@@ -1524,6 +1524,13 @@ raceRelation {
 }
 
 unhappiness {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/unhappiness.png);
+    position: relative;
+}
+
+anger {
     max-height: 25px;
     top: 3px;
     content: url(/aowp/Icons/Text/unhappiness.png);

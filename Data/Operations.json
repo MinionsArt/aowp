@@ -1750,7 +1750,7 @@ var jsonOperations = {
             "name": "Declaration of Truth",
             "tier": "V",
             "type": "Strategic Operation (Timed)",
-            "description": "Wash target non-Celestian enemy colony and its colonists in Psionically-enforced Truth for 10<turn></turn>. This increases in strength as you build more Beacons of Truth.<br><br>On failure, applies <abilityRed>Civil Unrest</abilityRed> to the colony, which causes 12<anger></anger> for 3<turn></turn>.<br><bullet>Level 1<br>40% to transfer 1<population></population> to your nearest colony each <turn></turn>.</bullet><bullet>Level 2<br>40% to transfer 1<population></population> to your nearest colony each <turn></turn>.<br>Non-Celestian units gain <abilityRed>Soulburn</abilityRed>.</bullet><bullet>Level 2<br>40% to transfer 1<population></population> to your nearest colony each <turn></turn>.<br>Non-Celestian units gain <abilityRed>Soulburn</abilityRed>.<br>Celestian Units heal 10<hp></hp> each <turn></turn> in combat.</bullet>",
+            "description": "Wash target non-Celestian enemy colony and its colonists in Psionically-enforced Truth for 10<turn></turn>. This increases in strength as you build more Beacons of Truth.<br><br>On failure, applies <abilityRed>Civil Unrest</abilityRed> to the colony, which causes 12<unhappiness></unhappiness> for 3<turn></turn>.<br><br><actionblue>Each level includes all previous levels' effects</actionblue><br><bulletList><bullet><actionblue>Level 1</actionblue>: 40% to transfer 1<population></population> to your nearest colony each <turn></turn>.</bullet><bullet><actionblue>Level 2</actionblue>: Non-Celestian units gain <abilityRed>Soulburn</abilityRed>.</bullet><bullet><actionblue>Level 3</actionblue>: Celestian Units heal 10<hp></hp> each <turn></turn> in combat.</bullet></bulletList>",
             "energy_cost": "120",
             "casting": "12 <stratPoint></stratPoint>",
         },
@@ -3217,7 +3217,7 @@ var jsonOperations = {
             "energy_cost": "0",
             "casting": "16 <stratPoint></stratPoint>",
             "influence_cost": "80",
-            
+
         },
 
         {
