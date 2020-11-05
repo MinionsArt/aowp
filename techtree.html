@@ -12,13 +12,12 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/Tech.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/Operations.json"></script>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="/aowp/Data/dragscroll.js"></script>
     <script>
         $("#body").ready(function() {
 
             $("#header").load("/aowp/header.html");
-
 
 
             /// Amazon----------------------------------------------------------------------------------------------------------------------------------------Amazon
@@ -29,8 +28,7 @@
 
                 showhideSoc('amazond', 'amazond5', 'amazond9');
                 showhideSocST('celestiand', 'celestiand7');
-
-
+                showhideTree("military");
             });
 
             $("#amazont2").load("/aowp/techcard.html", function() {
@@ -919,9 +917,6 @@
                 showTech("xenoplague_omega_transcendance", "s");
             });
 
-
-
-
             /// Doctrines----------------------------------------------------------------------------------------------------------------------------------------Doctrines
 
             $("#amazond").load("/aowp/techcard.html", function() {
@@ -1219,11 +1214,7 @@
                 });
                 $("#econ1b").load("/aowp/techcard.html", function() {
                     showTech("society_frontier_facilities");
-
-
                 });
-
-
             });
 
 
@@ -1262,14 +1253,6 @@
 
 
         });
-
-        $(document).ready(function() {
-            function showMilitary() {
-                showhideTree("military");
-            }
-
-            setTimeout(showMilitary, 200);
-        });
     </script>
 
 
@@ -1293,7 +1276,7 @@
     </div>
     <br>
     <br>
-    <div id="military" style="display: none">
+    <div id="military">
         <div class="buttons">
             <a href="#/" onclick="showhide('amazon', 'biochemical', 'laser');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
             <a href="#/" onclick="showhide('assembly', 'arc', 'firearms');" style="font-size: 20px" class="togglelink"> Assembly </a>
@@ -3675,7 +3658,7 @@
 
     </div>
 
-    <div id="society" style="display: none">
+    <div id="society">
         <div class="buttons">
             <a href="#/" onclick="showhideSoc('amazond', 'amazond5', 'amazond9');" style="font-size: 20px; color: aqua; text-decoration: underline;" class="togglelink"> Amazon </a>
             <a href="#/" onclick="showhideSoc('assemblyd', 'assemblyd5', 'assemblyd9');" style="font-size: 20px" class="togglelink"> Assembly </a>

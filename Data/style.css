@@ -655,7 +655,7 @@ tab {
     min-height: 40px;
     margin-left: 40px;
 
-
+    transition: opacity 0.5s;
 
 }
 
@@ -786,7 +786,7 @@ tab {
     min-height: 40px;
     margin-left: 40px;
 
-
+    transition: opacity 0.5s;
 
 }
 
@@ -808,7 +808,7 @@ tab {
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
-
+    transition: opacity 0.5s;
 
 }
 
@@ -839,7 +839,7 @@ tab {
     min-height: 40px;
     margin-left: 40px;
 
-
+    transition: opacity 0.5s;
 
 }
 
@@ -861,7 +861,7 @@ tab {
     max-width: 600px;
     min-height: 40px;
 
-
+    transition: opacity 0.5s;
 
 }
 
@@ -906,7 +906,7 @@ tab {
 
     margin-left: 200px;
 
-
+    transition: opacity 0.5s;
 }
 
 .researchSkillSlot {

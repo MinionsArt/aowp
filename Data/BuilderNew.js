@@ -593,12 +593,10 @@
  }
 
  function showTech(a, b) {
-     var modName, description, cost, type, tier, secret, card = "";
+     var modName, description, cost, type, tier, secret = "";
      var found = false;
-     card = document.getElementById("techcard");
      for (j in jsonTech.tech) {
          if (a == jsonTech.tech[j].slug) {
-
              modName = document.getElementById("techname");
              modName.innerHTML = jsonTech.tech[j].name;
              modName.setAttribute("id", "techname" + a);
@@ -644,8 +642,7 @@
              document.getElementById("unlockholder").setAttribute("id", "unlockholder" + a);
              found = true;
          }
-         card.setAttribute("id", "techcard" + a);
-         card.style.display = 'inline-block';
+
 
      }
      if (found == false) {
