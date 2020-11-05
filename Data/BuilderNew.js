@@ -636,6 +636,11 @@
                          }
 
                      }
+
+                     if (currentRace == "dvar" && jsonTech.tech[j].unit_unlock[k].slug == "phoenix_walker") {
+                         secret = "dvar_phoenix_walker";
+                     }
+
                      addUnitUnlock(secret, b);
                  }
 
