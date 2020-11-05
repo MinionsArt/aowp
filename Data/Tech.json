@@ -1552,7 +1552,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "hasher_smg"
+                    "slug": "equipment:_hasher_smg"
                 }
 
             ],
