@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/aowp/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#unit").load("/aowp/unitcard.html", function() {
+                showUnit("oathbound_scryer");
+            });
+            $("#unit2").load("/aowp/unitcard.html", function() {
+                showUnit("oathbound_paladin_aspirant");
+            });
+
+            $("#unit3").load("/aowp/unitcard.html", function() {
+                showUnit("oathbound_augur");
+            });
+
+
+            $("#unit9").load("/aowp/unitcard.html", function() {
+                showUnit("oathbound_paladin_protector");
+            });
+
+            $("#unit5").load("/aowp/unitcard.html", function() {
+                showUnit("oathbound_paladin_warden");
+            });
+
+            $("#unit6").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_torrent");
+            });
+
+            $("#unit7").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_engulfer");
+            });
+            $("#unit8").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_deep_one");
+            });
+            $("#unit4").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_transcendent");
+            });
+            $("#unit10").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_ravenous");
+            });
+            $("#unit11").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_harbinger");
+            });
+            $("#unit12").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_abyssian");
+            });
+            $("#unit13").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_emergent");
+            });
+
+            $("#unit14").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_colonizer");
+            });
+            $("#unit15").load("/aowp/unitcard.html", function() {
+                showUnit("kirko_hiveguard");
+            });
+
+
+        });
+
+    </script>
+
+
+    <title>Age of Wonders Planetfall - Kir'ko Units</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h2 style="text-align: center; color: aliceblue">
+        Kir'Ko Units
+    </h2>
+    <div id="unit">
+    </div>
+    <div id="unit2"></div>
+    <div id="unit3"></div>
+    <div id="unit4"></div>
+    <div id="unit5"></div>
+
+    <div id="unit6"></div>
+    <div id="unit7"></div>
+    <div id="unit8"></div>
+    <div id="unit9"></div>
+    <div id="unit10"></div>
+    <div id="unit11"></div>
+    <div id="unit12"></div>
+    <div id="unit13"></div>
+    <div id="unit14"></div>
+    <div id="unit15"></div>
+
+
+    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
+        <p>Your browser does not support iframes.</p>
+    </iframe>-->
+    </div>
+
+
+</body>
+
+</html>
