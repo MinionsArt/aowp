@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div class="unit_card">
+        <div style="position: absolute; top: 0px; background-color: #112244; height: 35px; width: 800px;">
+            <p class="unit_name" id="unitstring" style="width: 800px">A morbid Cavern</p>
+        </div>
+
+        <div class="unit_image_holder" style="width:310px">
+
+            <img src="Icons/Survey/a_morbid_cavern.jpg" height="400px">
+            <p class="unit_description" id="description" style="width: 300px">A cavern full of sculptures built from limbs and mechanical parts.</p>
+
+
+
+
+
+
+        </div>
+        <p id="description">We discovered a series of concealed caverns near our search of an ancient military testing facility. One cave featured a formation of various body parts in altered states of deterioration. Initial tests on the dead show the flesh remarkably well preserved. Though dead, some of the biomechanics interwoven in this strange construct appear to keep the parts in a kind of grisly stasis. <br><br> At first, we thought the network of body parts to be evidence of a primitive culture, then we were confronted by a female Assembly cave-dweller. She's an antique and atypical of her modern kind, calling herself Groxum. She appears distraught by our intrusion. Groxum demands we restore her "sculpture". She seems unaware of our current era, hearkening from a time when the Star Union had no understanding of the Assembly's morbid instincts. </p>
+
+        <div style="clear: both"></div>
+
+
+
+        <button type="button" class="collapsible">
+            <p id="description"> > (<img src="/aowp/Icons/UnitTypes/assembly.png" width="50px"> Assembly) Help to rebuild the sculpture with Assembly experience</p>
+
+        </button>
+        <div class="content">
+            <p>With her sculpture repaired, we hailed her as Assembly. Groxum's auto-vivification routines immediately refreshed. We pieced together her history without disassembling her core storage. She fled oppression from early Star Union dogmatists. They didn't understand her "love" of lifeless organic materials. This is no longer a prejudice among most nonhostile enlightened beings. Her unconventional pastime aside, Groxum managed to conceal herself all the while collecting dead matter. We can learn from her remarkable self-preservation subroutines. We welcome her ingenuity. </p>
+            <div style="padding-left: 50px;" id="unlockholderamazon_primal_control">
+
+                <p style="float: right; text-align: right; padding-top: 20px; padding-right: 5px" id="modcostamazon_primal_control">300<research></research>
+                </p>
+                <div class="researchResultBackgroundImage" style="height: 100px"><img class="modunlock_icon2" src="/aowp/Icons/Mods/primal_awareness_amplifier_(detector).png" height="1000"><span class="tooltiptext">
+                        <p>
+                            <titlebrown>Primal Awareness Amplifier (Detector)</titlebrown>
+                        </p>
+                        <silver>Tier III, Defense Mod - Shields</silver>
+                        <hr><img src="/aowp/Icons/Mods/primal_awareness_amplifier_(detector).png" width="200" "=""><br>This unit gains <actionblue>Detection</actionblue>, can no longer be flanked, gains +2 Sensor Range and is 10% harder to hit<br><br>Additionally, this mod grants the unit +1 <shield></shield> <br><br> <abilityred>This Mod can only be applied to non-Mechanical and non-Mindless units. </abilityred> <hr>Base Production Cost: 10 <production></production><br>Base Cosmite Cost: 5 <tricorium></tricorium></span></div>
+            </div>
+        </div>
+        <button type=" button" class="collapsible">> Help to rebuild the morbid sculpture as best you can</button>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button type="button" class="collapsible">The likes of you have no place on this planet! </button>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                </div>
+            </div>
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+</body></html>

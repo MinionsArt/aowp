@@ -6,7 +6,7 @@ var jsonSurvey = {
             "name": "A Morbid Cavern",
             "rarity": "Common",
 
-            "description": "Remove target friendly unit's negative Status Effects and heal it for 8<hp></hp>. This effect jumps to 3 other units within 2 hexes.",
+            "description": "We discovered a series of concealed caverns near our search of an ancient military testing facility. One cave featured a formation of various body parts in altered states of deterioration. Initial tests on the dead show the flesh remarkably well preserved. Though dead, some of the biomechanics interwoven in this strange construct appear to keep the parts in a kind of grisly stasis. <br><br> At first, we thought the network of body parts to be evidence of a primitive culture, then we were confronted by a female Assembly cave-dweller. She's an antique and atypical of her modern kind, calling herself Groxum. She appears distraught by our intrusion. Groxum demands we restore her 'sculpture'. She seems unaware of our current era, hearkening from a time when the Star Union had no understanding of the Assembly's morbid instincts. ",
             "choices": [
                 {
                     "choice": "(Requires Assembly) Choice 1a: Help to rebuild the sculpture with Assembly experience"
@@ -21,7 +21,9 @@ var jsonSurvey = {
                 }
 
 
-            ]
+                
+            ],   "description1":
+" With her sculpture repaired, we hailed her as Assembly. Groxum's auto-vivification routines immediately refreshed. We pieced together her history without disassembling her core storage. She fled oppression from early Star Union dogmatists. They didn't understand her "love" of lifeless organic materials. This is no longer a prejudice among most nonhostile enlightened beings. Her unconventional pastime aside, Groxum managed to conceal herself all the while collecting dead matter. We can learn from her remarkable self-preservation subroutines. We welcome her ingenuity. ",
         },
         {
             "slug": "propagation_towers",
