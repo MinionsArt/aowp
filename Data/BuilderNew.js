@@ -557,6 +557,7 @@
 
  function showMod(a) {
      var modName, description, cost, type, tier = "";
+     var found = false;
      for (j in jsonMods.mods) {
          if (a == jsonMods.mods[j].slug) {
              modName = document.getElementById("modname");
@@ -588,7 +589,12 @@
 
              imagelink.setAttribute("src", "/aowp/Icons/Mods/" + a + ".png");
              imagelink.setAttribute("id", "modicon" + a);
+
+             found = true;
          }
+     }
+     if (found == false) {
+         console.log("Couldn't find mod: " + a);
      }
  }
 

@@ -75,6 +75,7 @@ ul.egmenu {
 ul.egmenu > li {
     float: left;
     position: relative;
+
 }
 
 ul.egmenu ul {
@@ -84,7 +85,8 @@ ul.egmenu ul {
     left: 0;
     top: 100%;
     border: 1px solid rgba(60, 60, 90, 1);
-    min-width: 150px;
+
+    min-width: 210px;
 }
 
 body {
@@ -103,10 +105,12 @@ ul.egmenu li {
     list-style: none;
     z-index: 1000;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Duru Sans', sans-serif;
 
+
 }
+
 
 ul.egmenu li:hover {
     background-color: darkslategrey;
@@ -298,6 +302,9 @@ ul.egmenu li:hover ul {
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     text-align: left;
     outline: none;
