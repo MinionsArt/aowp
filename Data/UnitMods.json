@@ -3396,7 +3396,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Laser Sword Strike</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>13<DamageThermal></DamageThermal> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Strike the target with a Laser Sword.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee, Laser)</silver></popUpDesc>",
     },
-        {
+       /* {
 
             "slug": "equipment:_mx-2000_sniper",
             "tier": "I",
@@ -3407,6 +3407,18 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>MX-2000 Sniper</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a MX-2000 Sniper rifle at the target.<br><br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
+    },*/
+        {
+
+            "slug": "equipment:_mx-2000_sniper",
+            "tier": "I",
+            "name": "MX-2000 Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "",
+
+
+            "description": "<popUpHeader3><titleBrown>MX-2000 Sniper</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire a MX-2000 Sniper rifle at the target.<br><br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
     },
         {
 
@@ -4064,7 +4076,7 @@ var jsonMods = {
             "description": "<popUpHeader3><titleBrown>Volt Shotgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target.<br><bulletList><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
     },
 
-        {
+       /* {
 
             "slug": "equipment:_vorpal_sniper_rifle",
             "tier": "II",
@@ -4074,6 +4086,18 @@ var jsonMods = {
             "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
 
             "description": "<popUpHeader3><titleBrown>Vorpal Shot</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire the Vorpal Sniper rifle at the target.<br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Power Shot</xpCol> +15% critical chance.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br><popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
+    },
+         */
+        {
+
+            "slug": "equipment:_vorpal_sniper_rifle",
+            "tier": "II",
+            "name": "Vorpal Sniper Rifle",
+
+            "type": "Primary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+            "description": "<popUpHeader3><titleBrown>Vorpal Shot</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>16<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire the Vorpal Sniper rifle at the target.<br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Power Shot</xpCol> +15% critical chance.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br><popUpHeader3><titleBrown>Improved Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Improved Overwatch, allowing it to automatically shoot at an enemy that moves or attacks within its field of view with +20% accuracy while in Overwatch.</popUpDesc>",
     },
         {
 
@@ -4304,7 +4328,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Reverberating Dagger</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePhysical></DamagePhysical> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Sonic Melee Attack<br><bulletList><xpCol>High Impact</xpCol> <abilityred> Stagger</abilityred> units, reducing action points and cancelling defensive modes.</bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Reverb</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Reverb</abilityred> to units for 2<turn></turn>. If resisted, apply <abilityred>Resonance</abilityred> instead.</bullet><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Melee, Sonic)</silver></popUpDesc>",
     },
-        {
+      /*  {
 
             "slug": "equipment:_rocket_assault_cannon",
             "tier": "III",
@@ -4315,6 +4339,18 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Rocket Assault Cannon</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire the Rocket Assault Cannon<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Explosive)</silver></popUpDesc>",
+    }, */
+        {
+
+            "slug": "equipment:_rocket_assault_cannon",
+            "tier": "III",
+            "name": "Rocket Assault Cannon",
+
+            "type": "Primary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Rocket Assault Cannon</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire the Rocket Assault Cannon<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Explosive)</silver></popUpDesc>",
     },
         {
 
@@ -4414,7 +4450,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Chaos Bolt</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageEntropy></DamageEntropy> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Entropic chaos attack<br><bulletList><bullet><xpCol>Chaotic</xpCol> Deals an extra 5 damage of a random channel.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Channel Chaos</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target unit and 2 other random units gain <abilityred>Chaos Vulnerability</abilityred> for 3<turn></turn>, decreasing Entropic Resistance and another random Resistance by 3.<br>This unit gains <abilityblue>Channeled</abilityblue>, making Chaos Bolt hit 2 other random units, for 2<turn></turn>.<br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
     },*/
-        {
+       /* {
 
             "slug": "equipment:_stunning_sniper",
             "tier": "III",
@@ -4425,6 +4461,18 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Stunning Sniper</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>18<DamageWave></DamageWave> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target.<br><bulletList><bullet><xpCol>Stun</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> for 2<turn></turn> instead.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+    },*/
+        {
+
+            "slug": "equipment:_stunning_sniper",
+            "tier": "III",
+            "name": "Stunning Sniper",
+
+            "type": "Primary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Stunning Sniper</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>18<DamageWave></DamageWave> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target.<br><bulletList><bullet><xpCol>Stun</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> for 2<turn></turn> instead.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
     },
         {
 
@@ -4474,7 +4522,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Volt Rifle</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>13<DamageWave></DamageWave> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target. <br><bulletList><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc>",
     },
-        {
+       /* {
 
             "slug": "equipment:_addiction",
             "tier": "IV",
@@ -4485,6 +4533,18 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Addiction</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>21<DamagePsyche></DamagePsyche> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at the target. At the end of a combat turn, if this weapon was fire, it becomes stronger. <br>Power is an addiction<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc><br><br><popUpDesc><titleBrown>Psionic Status Effect Immunity</titleBrown></popUpHeader3><popUpDesc><br>This unit cannot be affected by Psionic Status or Hazard effects</popUpDesc>",
+    },*/
+        {
+
+            "slug": "equipment:_addiction",
+            "tier": "IV",
+            "name": "Addiction",
+
+            "type": "Primary Weapon",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Addiction</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>80%<accuracy></accuracy><tab></tab>21<DamagePsyche></DamagePsyche> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at the target. At the end of a combat turn, if this weapon was fire, it becomes stronger. <br>Power is an addiction<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc><br><br><popUpDesc><titleBrown>Psionic Status Effect Immunity</titleBrown></popUpHeader3><popUpDesc><br>This unit cannot be affected by Psionic Status or Hazard effects</popUpDesc>",
     },
         {
 
@@ -4594,7 +4654,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Mephitis</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamageBio></DamageBio> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target.<br><bulletList><bullet><xpCol>Armor Melt</xpCol> Destroys 1 <armor></armor> per hit.</bullet><bullet><xpCol>Blighted</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Blighted Infection</abilityred> to Biological and Cyborg units for 3 <turn></turn></bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Biochemical)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> <br><br><popUpDesc><titleBrown>Biochemical Status Effect Immunity</titleBrown></popUpHeader3><popUpDesc><br>This unit cannot be affected by Biochemical Status or Hazard effects</popUpDesc>",
     },
-        {
+       /* {
 
             "slug": "equipment:_one-eyed_hawk",
             "tier": "IV",
@@ -4605,6 +4665,18 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>One-eyed Hawk</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>23<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target. If the targeted unit is of tier 1 or 2, there is a 6 <StrengthPhysical></StrengthPhysical> strength chance it wil instantly die.<br><br><bulletList><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> ",
+    },*/
+        {
+
+            "slug": "equipment:_one-eyed_hawk",
+            "tier": "IV",
+            "name": "One-eyed Hawk",
+
+            "type": "Primary Weapon",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>One-eyed Hawk</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>23<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target. If the targeted unit is of tier 1 or 2, there is a 6 <StrengthPhysical></StrengthPhysical> strength chance it wil instantly die.<br><br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> ",
     },
         {
 
@@ -4654,7 +4726,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Thunderbreak</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target.<br><bulletList><bullet><xpCol>Stun</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> for 2<turn></turn> instead.</bullet><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc> <br><br><popUpDesc><titleBrown>Arc Status Effect Immunity</titleBrown></popUpHeader3><popUpDesc><br>This unit cannot be affected by Arc Status or Hazard effects</popUpDesc>",
     },
-        {
+      /*  {
 
             "slug": "equipment:_void_seeker",
             "tier": "IV",
@@ -4665,6 +4737,18 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Void Seeker</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target. Shots travel through the Void, shifting and changing direction, causing all attacks from this weapon to flack the target.<br><br><bulletList><bullet><xpCol>Always Flanks</xpCol> Always counts as Flanking </bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> ",
+    },*/
+        {
+
+            "slug": "equipment:_void_seeker",
+            "tier": "IV",
+            "name": "Void Seeker",
+
+            "type": "Primary Weapon",
+            "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
+
+
+            "description": "<popUpHeader3><titleBrown>Void Seeker</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target. Shots travel through the Void, shifting and changing direction, causing all attacks from this weapon to flack the target.<br><br><bulletList><bullet><xpCol>Always Flanks</xpCol> Always counts as Flanking </bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> ",
     },
 
              /// secondary weapons
@@ -4945,7 +5029,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Electrical Blaster</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>6<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at target.</abilityred>.<br><bulletList><bullet><xpCol>Static Charge</xpCol> Applies one stack of <abilityred>Static Charge</abilityred> for 2<turn></turn></bullet><bullet>Affected by line of sight penalties</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
     },
-        {
+        /*{
 
             "slug": "equipment:_imperial_launcher",
             "tier": "I",
@@ -4957,6 +5041,19 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Strike Missile</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamagePhysical></DamagePhysical> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet><bullet>Affected by line of sight rules</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Explosive)</silver></popUpDesc>",
+    },*/
+        {
+
+            "slug": "equipment:_imperial_launcher",
+            "tier": "I",
+            "name": "Imperial Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "24 <energy></energy> 12 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Strike Missile</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>11<DamagePhysical></DamagePhysical> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet>Affected by line of sight rules</bullet><bullet>Can only be used once per battle</bullet></bulletList><br><silver>(Explosive)</silver></popUpDesc>",
     },
         {
 
@@ -5079,7 +5176,7 @@ var jsonMods = {
             "description": "<popUpHeader3><titleBrown>Assassin's Persistence</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamagePhysical></DamagePhysical><tab></tab>6<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target; part of the Assassin's Kit <br><br> When equipped with <titleBrown>Assassin's Fixation</titleBrown>, hero gains the <actionblue>Assassin's Kit</actionblue> buff<br><bulletList><bullet><xpCol>Finish the Job</xpCol> +50% damage against targets affected by: <abilityred>Subject of Fixation, Catatonic, Concussed, Crippled or Disabled</abilityred></bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
     },
 
-        {
+     /*   {
 
             "slug": "equipment:_bio_launcher",
             "tier": "III",
@@ -5091,6 +5188,19 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Bio Launcher</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamageBio></DamageBio> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Poison</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br><silver>(Biochemical)</silver></popUpDesc>",
+    },*/
+        {
+
+            "slug": "equipment:_bio_launcher",
+            "tier": "III",
+            "name": "Bio Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Bio Launcher</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>10<DamageBio></DamageBio> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Poison</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br><silver>(Biochemical)</silver></popUpDesc>",
     },
         {
 
@@ -5131,7 +5241,7 @@ var jsonMods = {
             "description": "<popUpHeader3><titleBrown>Ego Launcher</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamagePsyche></DamagePsyche> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Broken Mind</xpCol> 8<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
     },
 
-        {
+    /*    {
 
             "slug": "equipment:_inferno_launcher",
             "tier": "III",
@@ -5143,6 +5253,19 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Inferno Launcher</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageThermal></DamageThermal> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Incendiary</xpCol> 8<StrengthThermal></StrengthThermal> strength chance to apply <abilityRed>Burning</abilityRed> to non-Ethereal and non-Mineral targets for 3<turn></turn>.</bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></popUpDesc>",
+    },*/
+        {
+
+            "slug": "equipment:_inferno_launcher",
+            "tier": "III",
+            "name": "Inferno Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Inferno Launcher</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageThermal></DamageThermal> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Incendiary</xpCol> 8<StrengthThermal></StrengthThermal> strength chance to apply <abilityRed>Burning</abilityRed> to non-Ethereal and non-Mineral targets for 3<turn></turn>.</bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br></popUpDesc>",
     },
 
         {
@@ -5158,7 +5281,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Last Resort</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamageThermal></DamageThermal> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>A short range thirmal shotgun, for when escape isn't an option.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><<bullet><xpCol>Knockback</xpCol> 12<StrengthThermal></StrengthThermal> chance to <abilityred>knock back</abilityred> a non-Ethereal, non-Heavy enemy unit 1 hex.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Laser)</silver></popUpDesc>",
     },
-        {
+      /*  {
 
             "slug": "equipment:_lightning_launcher",
             "tier": "III",
@@ -5170,6 +5293,19 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Lightning Launcher</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamageWave></DamageWave> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets</bullet><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+    },*/
+        {
+
+            "slug": "equipment:_lightning_launcher",
+            "tier": "III",
+            "name": "Lightning Launcher",
+
+            "type": "Secondary Weapon",
+            "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
+
+
+
+            "description": "<popUpHeader3><titleBrown>Lightning Launcher</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>14<DamageWave></DamageWave> <tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Launch a missile, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes.</bullet><bullet><xpCol>Electrified</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Electrified</abilityred> to non-Ethereal for 3<turn></turn>.</bullet><bullet>Affected by line of sight rules</bullet><bullet>Cooldown: 2<turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
     },
         {
 
