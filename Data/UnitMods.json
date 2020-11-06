@@ -4665,7 +4665,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>One-eyed Hawk</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>23<DamagePhysical></DamagePhysical> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at a target. If the targeted unit is of tier 1 or 2, there is a 6 <StrengthPhysical></StrengthPhysical> strength chance it wil instantly die.<br><br><bulletList><bullet><xpCol>Anti-Air</xpCol> +20% damage/+20% accuracy to Flying targets.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> ",
-    },*/
+    }, */
         {
 
             "slug": "equipment:_one-eyed_hawk",
