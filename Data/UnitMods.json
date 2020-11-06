@@ -2141,6 +2141,7 @@ var jsonMods = {
             "description": "Additionally,this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can be applied to Biological and Cyborg units. </abilityred>  <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Omni Activation</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Unit gains <actionblue>Resurgence</actionblue> until the end of combat and enters <actionblue>Defense Mode</actionblue>. At the start of the next turn, this unit gains <abilityred>Insanity</abilityred>, attacking enemy units at random for 3 <turn></turn>. During this time, it also gains +30% damage increase and +3 resistance to all Damage Channels.<br><br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc>",
 
     },
+             /*
 
         {
             "slug": "battle_pattern_analyzer",
@@ -2308,7 +2309,7 @@ var jsonMods = {
             "description": "Additionally,this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Amass Chaos Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>12 <DamageEntropy></DamageEntropy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Damage enemies in a 4 hex cone with a blast of chaos.<bulletList><bullet><xpCol>Reality Break</xpCol> 12<StrengthEntropy></StrengthEntropy> strength chance to apply <abilityred>one random negative effect</abilityred> to any unit, ignoring any type incompatiblity the unit might have.</bullet><bullet>Cooldown: 1 <turn></turn></bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
 
 
-    },
+    },*/
 
 
              ///equipment =============================================================================================================================equipment
@@ -2997,7 +2998,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Lancer</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Laser Lance Strike 12 <DamageThermal></DamageThermal></bullet> <bullet>Laser Lance 16 <DamageThermal></DamageThermal></bullet><bullet>Biological</bullet> <bullet>Light Unit</bullet><bullet>Mounted</bullet></bulletList></popUpDesc>",
     },
-        {
+      /*  {
 
             "slug": "vehicle:_paladin_light_bringer",
             "tier": "II",
@@ -3068,7 +3069,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Paladin Warlord</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>32/32<mp></mp> <tab></tab>+3<armor></armor> <tab></tab>+0<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Twinaxes 12 <DamageArc></DamageArc></bullet> <bullet> Volt Surge 10 <DamageArc></DamageArc></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
-    },
+    }, */
         {
 
             "slug": "vehicle:_imperial_buggy",
@@ -4064,7 +4065,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Hearbreaker Handgun</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePhysical></DamagePhysical><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire 2 bullets at an enemy<br><br><bulletList><bullet><xpCol>Distracted</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Distracted</abilityred> for 2<turn></turn></bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Firearms)</silver></popUpDesc>",
     },
-        {
+        /*{
 
             "slug": "equipment:_infested_lance",
             "tier": "III",
@@ -4075,6 +4076,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Infested Lance</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageBio></DamageBio> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>A lance coated in fungal flesh<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Fungal Infestation</xpCol> 8<StrengthBio></StrengthBio> strength chance to apply <abilityred>Fungal Infestation</abilityred> for 2<turn></turn>. If resisted, this ability causes <abilityred>Stagger</abilityred> instead.</bullet><bullet>Only affects Ground targets</bullet></bulletList><br><silver>(Biochemical, Melee)</silver></popUpDesc> <br><br> <popUpHeader3><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc> <popUpHeader3>",
     },
+    */
         {
 
             "slug": "equipment:_knockout_shotgun",
@@ -4270,7 +4272,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Flare Essence</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>20<DamageEntropy></DamageEntropy> <tab></tab>9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>The staff flares and drains the essence of the target.<br><bulletList><bullet><xpCol>Energy Drain</xpCol> 12<strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred> to targets for 3<turn></turn>. On success, the caster gains an <abilityblue>Essence Charge</abilityblue>.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Overwatch</titleBrown></popUpHeader3><popUpDesc><br>This unit can enter Overwatch, allowing it to automatically fire at any enemy that moves or attacks within its field of view.</popUpDesc><br><br><popUpDesc><titleBrown>Embalm Essence</titleBrown></popUpHeader3><popUpDesc><br>Requires and uses 1 Essence charge. Target friendly unit has its negative status effects dispelled and is healed for 10 <hp></hp>. That unit gains +2 resistance to all damage for 1 <turn></turn>.</popUpDesc><br><br> <popUpHeader3><titleBrown>Essence Charge</titleBrown></popUpHeader3><popUpDesc><br>This unit is capable of carrying 1 additional <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue> per stack</popUpDesc>",
     },
-        {
+        /*{
 
             "slug": "equipment:_staff_of_turmoil",
             "tier": "III",
@@ -4281,7 +4283,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Chaos Bolt</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>9<DamageEntropy></DamageEntropy> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Entropic chaos attack<br><bulletList><bullet><xpCol>Chaotic</xpCol> Deals an extra 5 damage of a random channel.</bullet><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc><br><br> <popUpHeader3><titleBrown>Channel Chaos</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target unit and 2 other random units gain <abilityred>Chaos Vulnerability</abilityred> for 3<turn></turn>, decreasing Entropic Resistance and another random Resistance by 3.<br>This unit gains <abilityblue>Channeled</abilityblue>, making Chaos Bolt hit 2 other random units, for 2<turn></turn>.<br><bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList></popUpDesc>",
-    },
+    },*/
         {
 
             "slug": "equipment:_stunning_sniper",
@@ -4498,7 +4500,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Sonic Amplification Battery</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>8<DamagePhysical></DamagePhysical> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Unleash sonic waves at the target, damaging it and adjacent targets.<br><bulletList<bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Reverb</xpCol> 8<StrengthPhysical></StrengthPhysical> strength chance to apply <abilityred>Reverb</abilityred> to units for 2<turn></turn>. If resisted, apply <abilityred>Resonance</abilityred> instead.</bullet><bullet>Affected by line of sight penalties</bullet></bulletList><br><silver>(Sonic)</silver></popUpDesc> ",
     },
-        {
+       /* {
 
             "slug": "equipment:_the_hunger",
             "tier": "IV",
@@ -4509,7 +4511,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>The Hunger</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>18<DamagePsyche></DamagePsyche> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Drain the enemy's mind. Create a Crystal Leech if the target is killed by The Hunger.<br><bulletList><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet>Only affects Ground targets</bullet><bullet><xpCol>Glut</xpCol> Strikes on non-Mindless units heal this unit for 10<hp></hp> and give it a stack of <abilityblue>Glutted</abilityblue>.</bullet><bullet><xpCol>Psionic Larva</xpCol> Units killed by this attack transform into Psionica Leeches.</bullet><bullet>Affected by line of sight penalties</bullet></bulletList><br><silver>(Psionic)</silver></popUpDesc>",
-    },
+    },*/
         {
 
             "slug": "equipment:_thunderbreak",
@@ -4597,7 +4599,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Bio Grenade</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<DamageBio></DamageBio> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Throw a Biochemical grenade, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Demolisher</xpCol> 200% additional damage to obstacles. Can destroy fortified obstacles.</bullet><bullet><xpCol>Poison</xpCol> 12<StrengthBio></StrengthBio> strength chance to apply <abilityred>Poison</abilityred> to Biological or Cyborg targets for 3<turn></turn></bullet><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Biochemical, Grenade)</silver></popUpDesc>",
     },
-        {
+        /*{
 
             "slug": "equipment:_entropic_revolver",
             "tier": "I",
@@ -4608,7 +4610,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Entropic Shock</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>7<DamageEntropy></DamageEntropy> <tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Shock an enemy with entropic energy.<br><bulletList><bullet>Affected by line of sight rules</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
-    },
+    },*/
         {
 
             "slug": "equipment:_imperial_revolver",
@@ -4741,7 +4743,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Thermal Grenade</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>10<DamageThermal></DamageThermal> <tab></tab>3<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Throw a Thermal grenade, dealing damage in a 1 hex radius.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Incendiary</xpCol> 8<StrengthThermal></StrengthThermal> strength chance to apply <abilityRed>Burning</abilityRed> to non-Ethereal and non-Mineral targets for 3<turn></turn>.</bullet><bullet>Ignores line of sight penalties</bullet><bullet>Only affects Ground targets</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Thermal, Grenade)</silver></popUpDesc>",
     },
-        {
+       /* {
 
             "slug": "equipment:_volt_pistol",
             "tier": "I",
@@ -4752,7 +4754,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Volt Pistol</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>12<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at target.</abilityred>.<br><bulletList><bullet>Affected by line of sight penalties</bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
-    },
+    },*/
         {
 
             "slug": "equipment:_bio_blaster",
@@ -4886,7 +4888,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Thrax Pistol</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>6<DamageBio></DamageBio> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Fire at target.</abilityred>.<br><bulletList><bullet>Affected by line of sight penalties</bullet></bulletList><br><silver>(Biochemical)</silver></popUpDesc>",
     },
-        {
+       /* {
 
             "slug": "equipment:_watcher's_scrolls",
             "tier": "II",
@@ -4897,7 +4899,7 @@ var jsonMods = {
 
 
             "description": "<popUpHeader3><titleBrown>Gift of Providence</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>7<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Target friendly unit gains <abilityblue>Providence</abilityblue> for 1<turn></turn>, making all of its attacks critically hit.<br><bulletList><bullet>Cooldown: 3 <turn></turn></bullet></bulletList></popUpDesc>",
-    },
+    },*/
         {
 
             "slug": "equipment:_static_bomb",
@@ -5338,7 +5340,7 @@ var jsonMods = {
             "description": "When health reaches 50% or lower, unit is healed for 30 <hp></hp>.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Infantry Hero units.</actionblue></popUpDesc>",
     },
 
-        {
+        /*{
 
             "slug": "equipment:_gluttony_ethos",
             "tier": "II",
@@ -5349,7 +5351,7 @@ var jsonMods = {
 
 
             "description": "Melee attacks heal for 10 <hp></hp> on hit (5 <hp></hp> on repeating attacks). Gives stack of <actionblue>Glutted</actionblue> on success.<br><br>Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units that have a Melee or Firearms ability.</actionblue></popUpDesc>",
-    },
+    },*/
 
         {
 
@@ -5538,7 +5540,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Drone Deployment Module: Skirmish</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deploy a flying melee skirmishing drone. The drone expires after 4 <turn></turn>. <br> The summoned unit will inherit any compatible mods that do not grant an active ability.<br></br><bulletList><bullet>Can only be used once per battle.</bullet></bulletList></popUpDesc><br><br>Additionally, this mod grants the user +1<armor></armor><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
     },
-        {
+       /* {
 
             "slug": "equipment:_entopathogenic_mycelia",
             "tier": "III",
@@ -5549,7 +5551,7 @@ var jsonMods = {
 
 
             "description": "All attacks have a 8 <StrengthBio></StrengthBio> strength chance to cause <abilityred>Insanity</abilityred> (4 <StrengthBio></StrengthBio> for repeating attacks) <br><br>Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
-    },
+    },*/
 
         {
 
@@ -5599,7 +5601,7 @@ var jsonMods = {
 
             "description": "<popUpHeader3><titleBrown>Spread NEKRIS</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deploy a flying melee skirmishing drone. The drone expires after 4 <turn></turn>. <br>Spread NEKRIS to a terget friendly Mechanical or Cyborg unit, dispelling status effects and granting them +2 <shield></shield>.<br><silver>(Arc)</silver></popUpDesc><br><br>Additionally, this mod grants the user +2<shield></shield><br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
     },
-        {
+       /* {
 
             "slug": "equipment:_sporulation_flares",
             "tier": "III",
@@ -5610,7 +5612,7 @@ var jsonMods = {
 
 
             "description": "When damaged by an enemy, this unit triggers a flash of Bioluminescence with a 8 <StrengthPhysical></StrengthPhysical> chance to cause <abilityred> Blinded</abilityred> to units within 2 hexes.<br><br>Additionally, this mod grants the unit +15 <hp></hp>.<br><br><actionblue>This Mod can only be applied to Hero units.</actionblue></popUpDesc>",
-    },
+    }, */
         {
 
             "slug": "equipment:_tactical_aed_assistant",
