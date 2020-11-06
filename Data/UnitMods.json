@@ -2435,7 +2435,7 @@ var jsonMods = {
             "tier": "III",
             "name": "Radiant Force",
 
-            "type": "Secondary Weapon",
+            "type": "Primary Weapon",
             "cost": "32 <energy></energy> 16 <tricorium></tricorium>",
 
 
@@ -4556,7 +4556,7 @@ var jsonMods = {
             "cost": "40 <energy></energy> 20 <tricorium></tricorium>",
 
 
-            "description": "<popUpHeader3><titleBrown>Edge</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>15<DamagePsyche></DamagePsyche> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Swing this ethereal weapon at an enemy.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet>Only affects Ground targets</bullet><bullet><xpCol>Broken Mind</xpCol> 12<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet><bullet><xpCol>Life Drain</xpCol> Heals 3<hp></hp> when attacking Biological or Cyborg units.</bullet></bulletList><br><silver>(Melee, Psionic)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Psionic Status Effect Immunity</titleBrown></popUpHeader3><popUpDesc><br>This unit cannot be affected by Psionic Status or Hazard effects</popUpDesc>",
+            "description": "<popUpHeader3><titleBrown>Edge</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Repeating<repeatingAction></repeatingAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>90%<accuracy></accuracy><tab></tab>15<DamagePsyche></DamagePsyche> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Swing this ethereal weapon at an enemy.<br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Melee</xpCol> Bypass all <shield></shield></bullet><bullet><xpCol>Psionic</xpCol> Bypass all <armor></armor></bullet><bullet>Only affects Ground targets</bullet><bullet><xpCol>Broken Mind</xpCol> 12<StrengthPsyche></StrengthPsyche> strength chance to apply <abilityred>Broken Mind</abilityred> to non-Mindless for 3<turn></turn></bullet><bullet><xpCol>Life Drain</xpCol> Heals equal to damage dealt</bullet></bulletList><br><silver>(Melee, Psionic)</silver></popUpDesc><br><br><popUpDesc><titleBrown>Psionic Status Effect Immunity</titleBrown></popUpHeader3><popUpDesc><br>This unit cannot be affected by Psionic Status or Hazard effects</popUpDesc>",
     },
         {
 
