@@ -1695,9 +1695,8 @@ var jsonTech = {
             ],
             "op_unlock": [
                 {
-                    "slug": "skirmish_subroutines"
+                    "slug": "localized_system_shutdown"
                 }
-
             ],
             "unit_unlock": [
                 {
@@ -1774,7 +1773,7 @@ var jsonTech = {
             ],
             "op_unlock": [
                 {
-                    "slug": "localized_system_shutdown"
+                    "slug": "skirmish_subroutines"
                 }
 
             ],
