@@ -75,6 +75,7 @@ ul.egmenu {
 ul.egmenu > li {
     float: left;
     position: relative;
+
 }
 
 ul.egmenu ul {
@@ -84,7 +85,8 @@ ul.egmenu ul {
     left: 0;
     top: 100%;
     border: 1px solid rgba(60, 60, 90, 1);
-    min-width: 150px;
+
+    min-width: 210px;
 }
 
 body {
@@ -103,10 +105,12 @@ ul.egmenu li {
     list-style: none;
     z-index: 1000;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Duru Sans', sans-serif;
 
+
 }
+
 
 ul.egmenu li:hover {
     background-color: darkslategrey;
@@ -298,6 +302,9 @@ ul.egmenu li:hover ul {
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     text-align: left;
     outline: none;
@@ -655,7 +662,7 @@ tab {
     min-height: 40px;
     margin-left: 40px;
 
-    transition: opacity 0.5s;
+
 
 }
 
@@ -786,7 +793,7 @@ tab {
     min-height: 40px;
     margin-left: 40px;
 
-    transition: opacity 0.5s;
+
 
 }
 
@@ -808,7 +815,7 @@ tab {
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
-    transition: opacity 0.5s;
+
 
 }
 
@@ -839,7 +846,7 @@ tab {
     min-height: 40px;
     margin-left: 40px;
 
-    transition: opacity 0.5s;
+
 
 }
 
@@ -861,7 +868,7 @@ tab {
     max-width: 600px;
     min-height: 40px;
 
-    transition: opacity 0.5s;
+
 
 }
 
@@ -906,7 +913,7 @@ tab {
 
     margin-left: 200px;
 
-    transition: opacity 0.5s;
+
 }
 
 .researchSkillSlot {
@@ -1132,16 +1139,16 @@ popUpHeader2 {
 
 }
 
-bullet:before {
-    content: "• ";
-}
+bullet:before {}
+
+
 
 bullet {
-    display: block;
+    display: list-item;
     color: white;
     text-align: left;
-    margin-left: 5px;
-    padding: 0px;
+    margin-left: 15px;
+    margin-bottom: 5px;
     text-decoration: none;
 }
 
@@ -1192,7 +1199,23 @@ strengthpsyche {
 
 }
 
+StrengthPsyche {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/Strength_psy.png);
+    position: relative;
+
+}
+
 StrengthWave {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/Strength_arc.png);
+    position: relative;
+
+}
+
+StrengthArc {
     max-height: 25px;
     top: 3px;
     content: url(/aowp/Icons/Text/Strength_arc.png);
@@ -1209,6 +1232,14 @@ StrengthThermal {
 }
 
 strengthentropy {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/Strength_entropy.png);
+    position: relative;
+
+}
+
+StrengthEntropy {
     max-height: 25px;
     top: 3px;
     content: url(/aowp/Icons/Text/Strength_entropy.png);
@@ -1271,6 +1302,14 @@ repeatingAction {
 }
 
 singleUseAction {
+    max-width: 80px;
+    content: url(/aowp/Icons/Text/single_action.png);
+    position: relative;
+    padding-left: 10px;
+
+}
+
+singleAction {
     max-width: 80px;
     content: url(/aowp/Icons/Text/single_action.png);
     position: relative;
@@ -1492,6 +1531,13 @@ raceRelation {
 }
 
 unhappiness {
+    max-height: 25px;
+    top: 3px;
+    content: url(/aowp/Icons/Text/unhappiness.png);
+    position: relative;
+}
+
+anger {
     max-height: 25px;
     top: 3px;
     content: url(/aowp/Icons/Text/unhappiness.png);

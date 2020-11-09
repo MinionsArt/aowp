@@ -8,7 +8,7 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta charset="UTF-8">
     <script>
         $("#body").ready(function() {
@@ -30,7 +30,6 @@
 
             $(this).css("color", "cyan");
         });
-
     </script>
     <title>Age of Wonders Planetfall - Search</title>
 </head>
@@ -45,7 +44,7 @@
     </div>
     <div id="unitS" style=" width:100%;margin: auto;">
         <h2 style="color:white;text-align: center">Unit Search</h2>
-        <p style="color:white;text-align: center">use "+" to search for up to 3 keywords <br> E.G: <span style="color:aqua">cyborg+skirmisher+overwatch</span></p>
+        <p style="color:white;text-align: center">use "+" to search for up to 3 keywords <br> E.G: <span style="color:aqua">cyborg+skirmisher+overwatch</span><br>Add tier like "tier3"</p>
         <br>
         <div style="margin-right: auto; margin-left: auto; width: 300px;">
             <input type="text" style="margin-right: auto; margin-left: auto; width: 300px;" id="searchInput">
@@ -278,6 +277,22 @@
             }
 
 
+            textvalue = "tier" + jsonUnits.units[i].tier;
+            if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
+                if (list.length >= 1) {
+                    if (!isInArray(list, jsonUnits.units[i].id)) {
+                        list.push(jsonUnits.units[i].id);
+                    }
+                } else {
+                    list.push(jsonUnits.units[i].id);
+                }
+
+
+
+            }
+
+
+
 
         }
 
@@ -387,6 +402,19 @@
 
                 }
             }
+            textvalue = "tier" + jsonUnits.units[i].tier;
+            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+                if (newlist.length >= 1) {
+                    if (!isInArray(newlist, jsonUnits.units[i].id)) {
+                        newlist.push(jsonUnits.units[i].id);
+                    }
+                } else {
+                    newlist.push(jsonUnits.units[i].id);
+                }
+
+
+
+            }
 
 
 
@@ -419,7 +447,4 @@
 
 
     }
-
-</script>
-
-</html>
+</script></html>

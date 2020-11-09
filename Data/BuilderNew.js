@@ -557,6 +557,7 @@
 
  function showMod(a) {
      var modName, description, cost, type, tier = "";
+     var found = false;
      for (j in jsonMods.mods) {
          if (a == jsonMods.mods[j].slug) {
              modName = document.getElementById("modname");
@@ -582,18 +583,28 @@
              if (jsonMods.mods[j].type.includes("Weapon")) {
                  a = a.replace("equipment:_", "");
              }
+             if (jsonMods.mods[j].type.includes("Hero")) {
+                 a = a.replace("equipment:_", "");
+             }
 
              imagelink.setAttribute("src", "/aowp/Icons/Mods/" + a + ".png");
              imagelink.setAttribute("id", "modicon" + a);
+
+             found = true;
          }
+     }
+     if (found == false) {
+         console.log("Couldn't find mod: " + a);
      }
  }
 
  function showTech(a, b) {
-     var modName, description, cost, type, tier, secret = "";
+     var modName, description, cost, type, tier, secret, card = "";
      var found = false;
+     card = document.getElementById("techcard");
      for (j in jsonTech.tech) {
          if (a == jsonTech.tech[j].slug) {
+
              modName = document.getElementById("techname");
              modName.innerHTML = jsonTech.tech[j].name;
              modName.setAttribute("id", "techname" + a);
@@ -631,6 +642,11 @@
                          }
 
                      }
+
+                     if (currentRace == "dvar" && jsonTech.tech[j].unit_unlock[k].slug == "phoenix_walker") {
+                         secret = "dvar_phoenix_walker";
+                     }
+
                      addUnitUnlock(secret, b);
                  }
 
@@ -639,7 +655,8 @@
              document.getElementById("unlockholder").setAttribute("id", "unlockholder" + a);
              found = true;
          }
-
+         card.setAttribute("id", "techcard" + a);
+         card.style.display = 'inline-block';
 
      }
      if (found == false) {

@@ -3217,7 +3217,7 @@ var jsonOperations = {
             "energy_cost": "0",
             "casting": "16 <stratPoint></stratPoint>",
             "influence_cost": "80",
-            
+
         },
 
         {

@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/aowp/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#mod1").load("/aowp/modcard.html", function() {
+                showMod("equipment:_tactical_aid_rig");
+            });
+
+            $("#mod2").load("/aowp/modcard.html", function() {
+                showMod("equipment:_tactical_repair_rig");
+            });
+            $("#mod3").load("/aowp/modcard.html", function() {
+                showMod("equipment:_wide-range_mending_rig");
+            });
+
+            // t2
+            $("#mod4").load("/aowp/modcard.html", function() {
+                showMod("equipment:_antaran_armor");
+            });
+            $("#mod5").load("/aowp/modcard.html", function() {
+                showMod("equipment:_banner_of_the_union");
+            });
+            $("#mod6").load("/aowp/modcard.html", function() {
+                showMod("equipment:_bio_scanner");
+            });
+            $("#mod7").load("/aowp/modcard.html", function() {
+                showMod("equipment:_blurring_canisters");
+            });
+            $("#mod8").load("/aowp/modcard.html", function() {
+                showMod("equipment:_body_odor_disperser");
+            });
+            $("#mod9").load("/aowp/modcard.html", function() {
+                showMod("equipment:_core_projection_relay");
+            });
+            $("#mod10").load("/aowp/modcard.html", function() {
+                showMod("equipment:_edict_interdicta");
+            });
+            $("#mod11").load("/aowp/modcard.html", function() {
+                showMod("equipment:_old_jetpack");
+            });
+
+            $("#mod12").load("/aowp/modcard.html", function() {
+                showMod("equipment:_prototype_dv-r_suit");
+            });
+            $("#mod13").load("/aowp/modcard.html", function() {
+                showMod("equipment:_regenerative_dermal_patches");
+            });
+
+
+            $("#mod14").load("/aowp/modcard.html", function() {
+                showMod("equipment:_tactical_supply_charge");
+            });
+            $("#mod15").load("/aowp/modcard.html", function() {
+                showMod("equipment:_the_black_egg");
+            });
+            $("#mod16").load("/aowp/modcard.html", function() {
+                showMod("equipment:_v4_auto_stims_calming_state");
+            });
+            $("#mod17").load("/aowp/modcard.html", function() {
+                showMod("equipment:_disorientating_sound_emitter");
+            });
+            $("#mod18").load("/aowp/modcard.html", function() {
+                showMod("equipment:_emergency_combat_regenerator");
+            });
+            $("#mod19").load("/aowp/modcard.html", function() {
+                showMod("equipment:_gluttony_ethos");
+            });
+            $("#mod20").load("/aowp/modcard.html", function() {
+                showMod("equipment:_minds_eye");
+            });
+            $("#mod21").load("/aowp/modcard.html", function() {
+                showMod("equipment:_projectile_accelerator");
+            });
+            $("#mod22").load("/aowp/modcard.html", function() {
+                showMod("equipment:_provisional_weapon_augments");
+            });
+            $("#mod23").load("/aowp/modcard.html", function() {
+                showMod("equipment:_structure_integrity_destabilizers");
+            });
+            $("#mod24").load("/aowp/modcard.html", function() {
+                showMod("equipment:_x-7_combat_stims");
+            });
+
+            // t3
+            $("#mod25").load("/aowp/modcard.html", function() {
+                showMod("equipment:_displacement_systems");
+            });
+            $("#mod26").load("/aowp/modcard.html", function() {
+                showMod("equipment:_drone_deployment_module_laser");
+            });
+            $("#mod27").load("/aowp/modcard.html", function() {
+                showMod("equipment:_drone_deployment_module_repair");
+            });
+            $("#mod28").load("/aowp/modcard.html", function() {
+                showMod("equipment:_drone_deployment_module_skirmish");
+            });
+            $("#mod29").load("/aowp/modcard.html", function() {
+                showMod("equipment:_essence_ark");
+            });
+            $("#mod30").load("/aowp/modcard.html", function() {
+                showMod("equipment:_hollow_essence_ark");
+            });
+
+            $("#mod31").load("/aowp/modcard.html", function() {
+                showMod("equipment:_leg_exoskeleton_systems");
+            });
+            $("#mod32").load("/aowp/modcard.html", function() {
+                showMod("equipment:_nekris_host");
+            });
+            $("#mod33").load("/aowp/modcard.html", function() {
+                showMod("equipment:_sporulation_flares");
+            });
+            $("#mod34").load("/aowp/modcard.html", function() {
+                showMod("equipment:_tactical_aed_assistant");
+            });
+            $("#mod35").load("/aowp/modcard.html", function() {
+                showMod("equipment:_tactical_mechanic_assistant");
+            });
+            $("#mod36").load("/aowp/modcard.html", function() {
+                showMod("equipment:_tyres_gift");
+            });
+
+            $("#mod37").load("/aowp/modcard.html", function() {
+                showMod("equipment:_entopathogenic_mycelia");
+            });
+
+            ///t4
+
+            $("#mod38").load("/aowp/modcard.html", function() {
+                showMod("equipment:_shadows_embrace");
+            });
+            $("#mod39").load("/aowp/modcard.html", function() {
+                showMod("equipment:_universal_cloaking_field_generator");
+            });
+            $("#mod40").load("/aowp/modcard.html", function() {
+                showMod("equipment:_wide-range_mending_rig_mk-ii");
+            });
+
+            $("#mod41").load("/aowp/modcard.html", function() {
+                showMod("equipment:_provisional_weapon_augments_mk-ii");
+            });
+            $("#mod42").load("/aowp/modcard.html", function() {
+                showMod("equipment:_v4_auto_stims_blind_rage");
+            });
+        });
+
+    </script>
+
+
+    <title>Age of Wonders Planetfall - Hero Mods</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h2 style="text-align: center; color: aliceblue">
+        Hero Mods
+    </h2>
+
+    <div class="mod_card">
+        <button type="button" class="collapsible">
+            <p id="description">Tier 1 Mods</p>
+
+        </button>
+        <div class="content">
+            <div id="mod1">
+            </div>
+
+            <div id="mod2"></div>
+            <div id="mod3"></div>
+
+        </div>
+        <button type="button" class="collapsible">
+            <p id="description">Tier 2 Mods</p>
+
+        </button>
+        <div class="content">
+            <div id="mod4"></div>
+            <div id="mod5"></div>
+
+            <div id="mod6"></div>
+            <div id="mod7"></div>
+            <div id="mod8"></div>
+            <div id="mod9"></div>
+            <div id="mod10">
+            </div>
+            <div id="mod11"></div>
+            <div id="mod12"></div>
+
+            <div id="mod13"></div>
+            <div id="mod14"></div>
+            <div id="mod15"></div>
+            <div id="mod16"></div>
+            <div id="mod17">
+            </div>
+            <div id="mod18"></div>
+
+
+            <div id="mod20"></div>
+            <div id="mod21"></div>
+            <div id="mod22"></div>
+            <div id="mod23"></div>
+            <div id="mod24">
+            </div>
+        </div>
+
+        <button type="button" class="collapsible">
+            <p id="description">Tier 3 Mods</p>
+
+        </button>
+        <div class="content">
+            <div id="mod25"></div>
+            <div id="mod26"></div>
+
+            <div id="mod27"></div>
+            <div id="mod28"></div>
+            <div id="mod29"></div>
+            <div id="mod30"></div>
+            <div id="mod31">
+            </div>
+            <div id="mod32"></div>
+
+            <div id="mod34"></div>
+            <div id="mod35"></div>
+            <div id="mod36"></div>
+
+
+        </div>
+        <button type="button" class="collapsible">
+            <p id="description">Tier 4 Mods</p>
+
+        </button>
+        <div class="content">
+            <div id="mod38"></div>
+            <div id="mod39"></div>
+
+            <div id="mod40"></div>
+            <div id="mod41"></div>
+            <div id="mod42"></div>
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
