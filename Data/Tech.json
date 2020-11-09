@@ -2872,7 +2872,7 @@ var jsonTech = {
             ],
             "op_unlock": [
                 {
-                    "slug": "integrated_support"
+                    "slug": "shock_and_awe"
                 }
         ,
                 {
@@ -2905,7 +2905,7 @@ var jsonTech = {
                 }
         ,
                 {
-                    "slug": "planetary_conquest"
+                    "slug": "integrated_support"
                 }
         ,
                 {
