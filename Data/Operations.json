@@ -4207,7 +4207,7 @@ var jsonOperations = {
             "name": "Sonic Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Sonic Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Sonic weaponry! 10% extra damage to all Sonic weapon attacks.<br>",
+            "description": "<titlebrown>Sonic Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Sonic weaponry! <br><br>10% extra damage to all Sonic weapon attacks.<br>",
         },
 
         {
@@ -4231,7 +4231,7 @@ var jsonOperations = {
             "name": "Advanced Essence Catalysts",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Essence Sequencer</titlebrown><br>Accidental Breakthrough! By making a mobile sequencer that forms essence at a local level, all our units gain an Essence Charge at the start of battle!<br>",
+            "description": "<titlebrown>Essence Sequencer</titlebrown><br>Accidental Breakthrough!<br><br> By making a mobile sequencer that forms essence at a local level, all our units gain an Essence Charge at the start of battle!<br>",
         },
 
         {
@@ -4247,7 +4247,7 @@ var jsonOperations = {
             "name": "Arc Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Arc Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Arc weaponry! 10% extra damage to all Arc weapon attacks.<br>",
+            "description": "<titlebrown>Arc Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Arc weaponry! <br><br>10% extra damage to all Arc weapon attacks.<br>",
         },
 
         {
@@ -4255,7 +4255,7 @@ var jsonOperations = {
             "name": "Firearms Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Firearms Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Firearms weaponry! 10% extra damage to all Firearms weapon attacks.<br>",
+            "description": "<titlebrown>Firearms Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Firearms weaponry! <br><br>10% extra damage to all Firearms weapon attacks.<br>",
         },
 
         {
@@ -4263,7 +4263,7 @@ var jsonOperations = {
             "name": "Explosive Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Explosive Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Explosive weaponry! 10% extra damage to all Explosive weapon attacks.<br>",
+            "description": "<titlebrown>Explosive Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Explosive weaponry!<br><br> 10% extra damage to all Explosive weapon attacks.<br>",
         },
 
         {
@@ -4271,7 +4271,7 @@ var jsonOperations = {
             "name": "Psionic Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Psionic Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Psionic weaponry! 10% extra damage to all Psionic weapon attacks.<br>",
+            "description": "<titlebrown>Psionic Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Psionic weaponry!<br><br> 10% extra damage to all Psionic weapon attacks.<br>",
         },
 
         {
@@ -4279,7 +4279,7 @@ var jsonOperations = {
             "name": "Biochemical Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Biochemical Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Biochemical weaponry! 10% extra damage to all Biochemical weapon attacks.<br>",
+            "description": "<titlebrown>Biochemical Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Biochemical weaponry!<br><br> 10% extra damage to all Biochemical weapon attacks.<br>",
         },
 
         {
@@ -4287,7 +4287,7 @@ var jsonOperations = {
             "name": "Entropy Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Entropy Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Entropy weaponry! 10% extra damage to all Entropy weapon attacks.<br>",
+            "description": "<titlebrown>Entropy Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Entropy weaponry! <br><br>10% extra damage to all Entropy weapon attacks.<br>",
         },
 
         {
@@ -4295,7 +4295,7 @@ var jsonOperations = {
             "name": "Laser Weaponry Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Laser Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Laser weaponry! 10% extra damage to all Laser weapon attacks.<br>",
+            "description": "<titlebrown>Laser Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Laser weaponry!<br><br> 10% extra damage to all Laser weapon attacks.<br>",
         },
 
         {
@@ -4303,7 +4303,7 @@ var jsonOperations = {
             "name": "Bio-Resistant Materials Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Biochemical Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Biochemical attacks. All units you control gain +2<DamageBio></DamageBio>.<br>",
+            "description": "<titlebrown>Biochemical Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Biochemical attacks.<br><br> All units you control gain +2<DamageBio></DamageBio> resistance.<br>",
         },
 
         {
@@ -4311,7 +4311,7 @@ var jsonOperations = {
             "name": "Arc-Resistant Materials Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Arc Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Arc attacks. All units you control gain +2<defensewave></defensewave>.<br>",
+            "description": "<titlebrown>Arc Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Arc attacks. <br><br>All units you control gain +2<damageWave></damageWave> resistance.<br>",
         },
 
         {
@@ -4319,7 +4319,7 @@ var jsonOperations = {
             "name": "Entropy-Resistant Materials Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Entropy Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Entropy attacks. All units you control gain +2<damageEntropy></damageEntropy>.<br>",
+            "description": "<titlebrown>Entropy Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Entropy attacks. <br><br>All units you control gain +2<damageEntropy></damageEntropy> resistance.<br>",
         },
 
         {
@@ -4327,7 +4327,7 @@ var jsonOperations = {
             "name": "Thermal-Resistant Materials Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Thermal Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Thermal attacks. All units you control gain +2<DamageThermal></DamageThermal>.<br>",
+            "description": "<titlebrown>Thermal Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Thermal attacks. <br><br>All units you control gain +2<DamageThermal></DamageThermal> resistance.<br>",
         },
 
         {
@@ -4335,7 +4335,7 @@ var jsonOperations = {
             "name": "Kinetic-Resistant Materials Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Kinetic Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Kinetic attacks. All units you control gain +2<DamageKinetic></DamageKinetic>.<br>",
+            "description": "<titlebrown>Kinetic Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Kinetic attacks.<br><br> All units you control gain +2<DamagePhysical></DamagePhysical> resistance.<br>",
         },
 
         {
@@ -4343,7 +4343,7 @@ var jsonOperations = {
             "name": "Psionic-Resistant Materials Breakthrough",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Psionic Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Psionic attacks. All units you control gain +2<DamagePsyche></DamagePsyche>.<br>",
+            "description": "<titlebrown>Psionic Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Psionic attacks. <br><br>All units you control gain +2<DamagePsyche></DamagePsyche> resistance.<br>",
         },
 
         {
@@ -4351,7 +4351,7 @@ var jsonOperations = {
             "name": "Armor: Mechanical",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Advanced Armors</titlebrown><br>A breakthrough has occurred in the field of Armor for Mechanical Units! All Mechanical units you control gain +1<armor></armor>.<br>",
+            "description": "<titlebrown>Advanced Armors</titlebrown><br>A breakthrough has occurred in the field of Armor for Mechanical Units! <br><br>All Mechanical units you control gain +1<armor></armor>.<br>",
         },
 
         {
@@ -4359,7 +4359,7 @@ var jsonOperations = {
             "name": "Shields: Cyborg and Mechanical",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Shielding Metals</titlebrown><br>A breakthrough has occurred in the field of Shields for Cyborg and Mechanical units! All Cyborg and Mechanical units you control gain +1<shield></shield>.<br>",
+            "description": "<titlebrown>Shielding Metals</titlebrown><br>A breakthrough has occurred in the field of Shields for Cyborg and Mechanical units! <br><br>All Cyborg and Mechanical units you control gain +1<shield></shield>.<br>",
         },
 
         {
@@ -4367,7 +4367,7 @@ var jsonOperations = {
             "name": "Armor: Biological and Cyborg",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Second Skin</titlebrown><br>A breakthrough has occurred in the field of Armor for Biological and Cyborg units! All Biological and Cyborg units you control gain +1<armor></armor>.<br>",
+            "description": "<titlebrown>Second Skin</titlebrown><br>A breakthrough has occurred in the field of Armor for Biological and Cyborg units!<br><br> All Biological and Cyborg units you control gain +1<armor></armor>.<br>",
         },
 
         {
@@ -4375,7 +4375,7 @@ var jsonOperations = {
             "name": "Shields: Biological",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Shield Infusion</titlebrown><br>A breakthrough has occurred in the field of Shields for Biological units! All Biological units you control gain +1<shield></shield>.<br>",
+            "description": "<titlebrown>Shield Infusion</titlebrown><br>A breakthrough has occurred in the field of Shields for Biological units! <br><br>All Biological units you control gain +1<shield></shield>.<br>",
         },
 
         {
@@ -4407,7 +4407,7 @@ var jsonOperations = {
             "name": "Accidental Enlightenment",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Enlightened Minds</titlebrown><br>Accidental Breakthrough! We saw into the stars and became enlightened! We can now easily teach our units the way of all things. All units you control gain <actionblue>Enlightened</actionblue>.<br>",
+            "description": "<titlebrown>Enlightened Minds</titlebrown><br>Accidental Breakthrough! We saw into the stars and became enlightened! We can now easily teach our units the way of all things.<br><br> All units you control gain <actionblue>Enlightened</actionblue>.<br>",
         },
 
         {
@@ -4415,7 +4415,7 @@ var jsonOperations = {
             "name": "Arc Waves",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Wave Integration</titlebrown><br>Accidental Breakthrough! We discovered a electron wave integration method that can combine with any form of attack, granting it Arc damage! All units you control gain 4<DamageWave></DamageWave> on their attacks.<br>",
+            "description": "<titlebrown>Wave Integration</titlebrown><br>Accidental Breakthrough! We discovered a electron wave integration method that can combine with any form of attack, granting it Arc damage!<br><br> All units you control gain 4<DamageWave></DamageWave> on their attacks.<br>",
         },
 
         {
@@ -4423,7 +4423,7 @@ var jsonOperations = {
             "name": "XNA Agitators",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Xenoplague Hasteners</titlebrown><br>Accidental Breakthrough! By further agitating the XNA of the xenoplague lifeforms, we can make them transform into their next phase faster! Xenoplague Units transform 20% faster.<br>",
+            "description": "<titlebrown>Xenoplague Hasteners</titlebrown><br>Accidental Breakthrough! By further agitating the XNA of the xenoplague lifeforms, we can make them transform into their next phase faster!<br><br> Xenoplague Units transform 20% faster.<br>",
         },
 
         {
@@ -4431,7 +4431,7 @@ var jsonOperations = {
             "name": "Mechanical Augments",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Performance Booster Metals</titlebrown><br>Accidental Breakthrough! We discovered new compounds that are less Arc conductive while increasing the performance of our machines! All Mechanical units you control gain +10% damage and +4<DamageWave></DamageWave>.<br>",
+            "description": "<titlebrown>Performance Booster Metals</titlebrown><br>Accidental Breakthrough! We discovered new compounds that are less Arc conductive while increasing the performance of our machines!<br><br> All Mechanical units you control gain +10% damage and +4<DamageWave></DamageWave>.<br>",
         },
 
         {
@@ -4447,7 +4447,7 @@ var jsonOperations = {
             "name": "Biological Toughening",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Genome Editing</titlebrown><br>Accidental Breakthrough! We discovered how to make Biological units tougher by altering their DNA! All Biological units you control gain 2<armor></armor> and 10<hp></hp>.<br>",
+            "description": "<titlebrown>Genome Editing</titlebrown><br>Accidental Breakthrough! We discovered how to make Biological units tougher by altering their DNA! <br><br>All Biological units you control gain 2<armor></armor> and 10<hp></hp>.<br>",
         },
 
         {
@@ -4455,7 +4455,7 @@ var jsonOperations = {
             "name": "Occlusion Filters",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Obfuscation Materials</titlebrown><br>Accidental Breakthrough! We made new progress on obfuscation materials and control. We can make a permanent mist around our units, obfuscating them from enemy line of sight! All units you control gain <actionblue>Lightly Obscured</actionblue>, making them 20% harder to hit.<br>",
+            "description": "<titlebrown>Obfuscation Materials</titlebrown><br>Accidental Breakthrough! We made new progress on obfuscation materials and control. We can make a permanent mist around our units, obfuscating them from enemy line of sight! <br><br>All units you control gain <actionblue>Lightly Obscured</actionblue>, making them 20% harder to hit.<br>",
         },
 
         {
@@ -4463,7 +4463,7 @@ var jsonOperations = {
             "name": "Colonist Efficiency: Production",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Colonist Production Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Production gain. Gain 5<production></production> per <productionSlot></productionSlot>.<br>",
+            "description": "<titlebrown>Colonist Production Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Production gain. <br><br> Gain 5<production></production> per <productionSlot></productionSlot>.<br>",
         },
 
         {
@@ -4471,7 +4471,7 @@ var jsonOperations = {
             "name": "Colonist Efficiency: Supply",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Colonist Supply Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Supply gain. Gain 5<food></food> per <foodslot></foodslot>.<br>",
+            "description": "<titlebrown>Colonist Supply Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Supply gain.<br><br> Gain 5<food></food> per <foodslot></foodslot>.<br>",
         },
 
         {
@@ -4479,7 +4479,7 @@ var jsonOperations = {
             "name": "Colonist Efficiency: Energy",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Colonist Energy Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Energy gain. Gain 5<energy></energy> per <energyslot></energyslot>.<br>",
+            "description": "<titlebrown>Colonist Energy Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Energy gain.<br><br> Gain 5<energy></energy> per <energyslot></energyslot>.<br>",
         },
 
         {
@@ -4487,7 +4487,7 @@ var jsonOperations = {
             "name": "Colonist Efficiency: Knowledge",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Colonist Knowledge Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Knowledge gain. Gain 5<research></research> per <researchslot></researchslot>.<br>",
+            "description": "<titlebrown>Colonist Knowledge Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Knowledge gain.<br><br> Gain 5<research></research> per <researchslot></researchslot>.<br>",
         },
 
         {
@@ -4495,7 +4495,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Unit Ranks",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Complex Training</titlebrown><br>By using Automatic Training Inceptors, units produced in your colonies are produced with higher training. Colonies Produce units with a +1<x-medal_veteran></x-medal_veteran><br>",
+            "description": "<titlebrown>Complex Training</titlebrown><br>By using Automatic Training Inceptors, units produced in your colonies are produced with higher training. <br><br>Colonies Produce units with a +1<x-medal_veteran></x-medal_veteran><br>",
         },
 
         {
@@ -4503,7 +4503,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Unit Armor",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Future Armors</titlebrown><br>We made great strides in the field of armoring our units! Colonies produce units with +1<armor></armor>.<br>",
+            "description": "<titlebrown>Future Armors</titlebrown><br>We made great strides in the field of armoring our units!<br><br> Colonies produce units with +1<armor></armor>.<br>",
         },
 
         {
@@ -4511,7 +4511,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Unit Shields",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Compact Shields</titlebrown><br>We made great strides in the way we shield our units! Colonies produce units with +1<shield></shield>.<br>",
+            "description": "<titlebrown>Compact Shields</titlebrown><br>We made great strides in the way we shield our units!<br><br> Colonies produce units with +1<shield></shield>.<br>",
         },
 
         {
@@ -4519,7 +4519,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Unit Health",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Altered Structure</titlebrown><br>We made great strides in the way we build our units!<br><titlebrown>Colonies produce units with +5<hp></hp>.</titlebrown><br><br>",
+            "description": "<titlebrown>Altered Structure</titlebrown><br>We made great strides in the way we build our units!<br><br>Colonies produce units with +5<hp></hp>.<br><br>",
         },
 
         {
@@ -4527,7 +4527,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Energy",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Energy Gains</titlebrown><br>Our scientists figured a more efficient way to gain Energy! Colonies produce +10%<energy></energy>.<br>",
+            "description": "<titlebrown>Energy Gains</titlebrown><br>Our scientists figured a more efficient way to gain Energy!<br><br> Colonies produce +10%<energy></energy>.<br>",
         },
 
         {
@@ -4535,7 +4535,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Supply",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Supply Gains</titlebrown><br>Our scientists figured a more efficient way to gain Supply! Colonies produce +10%<food></food>.<br>",
+            "description": "<titlebrown>Supply Gains</titlebrown><br>Our scientists figured a more efficient way to gain Supply!<br><br> Colonies produce +10%<food></food>.<br>",
         },
 
         {
@@ -4543,7 +4543,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Production",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Production Gains</titlebrown><br>Our scientists figured a more efficient way to gain Production! Colonies produce +10%<production></production>.<br>",
+            "description": "<titlebrown>Production Gains</titlebrown><br>Our scientists figured a more efficient way to gain Production! <br><br>Colonies produce +10%<production></production>.<br>",
         },
 
         {
@@ -4551,7 +4551,7 @@ var jsonOperations = {
             "name": "Colony Breakthrough: Knowledge",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Knowledge Gains</titlebrown><br>Our scientists figured a more efficient way to gain Knowledge! Colonies produce +10%<research></research>.<br>",
+            "description": "<titlebrown>Knowledge Gains</titlebrown><br>Our scientists figured a more efficient way to gain Knowledge! <br><br>Colonies produce +10%<research></research>.<br>",
         },
 
         {
@@ -4559,7 +4559,7 @@ var jsonOperations = {
             "name": "Empire Breakthrough: Doctrine Slot",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Grand Bureaucracy</titlebrown><br>Our social scientists made strides in the field of Organizational Bureaucracy, making space for further policies. Empire gains +1<doctrine></doctrine><br>",
+            "description": "<titlebrown>Grand Bureaucracy</titlebrown><br>Our social scientists made strides in the field of Organizational Bureaucracy, making space for further policies. <br><br> Empire gains +1<doctrine></doctrine><br>",
         },
 
         {
@@ -4567,7 +4567,7 @@ var jsonOperations = {
             "name": "Empire Breakthrough: Cosmite",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Void Cosmite</titlebrown><br>We created a way of extracting Cosmite from the Void! Empire gains +10<tricorium></tricorium><br>",
+            "description": "<titlebrown>Void Cosmite</titlebrown><br>We created a way of extracting Cosmite from the Void!<br><br> Empire gains +10<tricorium></tricorium><br>",
         },
 
         {
@@ -4575,7 +4575,7 @@ var jsonOperations = {
             "name": "Empire Breakthrough: Influence",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Enhanced Diplomats</titlebrown><br>Our scientists managed to make our Diplomats and Envoys more efficient through advanced linguistic training and manipulation skills. Empire gains +5<influence></influence><br>",
+            "description": "<titlebrown>Enhanced Diplomats</titlebrown><br>Our scientists managed to make our Diplomats and Envoys more efficient through advanced linguistic training and manipulation skills.<br><br> Empire gains +5<influence></influence><br>",
         },
 
         {
@@ -4583,7 +4583,7 @@ var jsonOperations = {
             "name": "Empire Breakthrough: Rivers",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Waste Not</titlebrown><br>Our scientists figured a way of recycling waste commonly found in rivers into food for our colonies! Empire gains +10<food></food> from Rivers in a colony's Domain.<br>",
+            "description": "<titlebrown>Waste Not</titlebrown><br>Our scientists figured a way of recycling waste commonly found in rivers into food for our colonies!<br><br> Empire gains +10<food></food> from Rivers in a colony's Domain.<br>",
         },
 
         {
@@ -4591,7 +4591,7 @@ var jsonOperations = {
             "name": "Empire Breakthrough: Lava Stream",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Future Geothermal Generators</titlebrown><br>Our scientists figured out how to make geothermal generators that quickly gather energy using entropy technology. Empire gains +10<energy></energy> from Lava Streams in a colony's Domain.<br>",
+            "description": "<titlebrown>Future Geothermal Generators</titlebrown><br>Our scientists figured out how to make geothermal generators that quickly gather energy using entropy technology. <br><br>Empire gains +10<energy></energy> from Lava Streams in a colony's Domain.<br>",
         },
 
         {
@@ -4599,7 +4599,7 @@ var jsonOperations = {
             "name": "Operation Breakthrough: Op Defense",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Future Counterintelligence Measures</titlebrown><br>Our scientists figured out a new encryption method that will prevent our data from being stolen. Your empire gains +2<operationDefense></operationDefense>.<br>",
+            "description": "<titlebrown>Future Counterintelligence Measures</titlebrown><br>Our scientists figured out a new encryption method that will prevent our data from being stolen. <br><br>Your empire gains +2<operationDefense></operationDefense>.<br>",
         },
 
         {
@@ -4607,7 +4607,7 @@ var jsonOperations = {
             "name": "Operation Breakthrough: Op Strength",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Future Intel Extraction</titlebrown><br>Our scientists figured out a faster way to break through enemy encryption. Your empire gains +2<operationstrength></operationstrength>.<br>",
+            "description": "<titlebrown>Future Intel Extraction</titlebrown><br>Our scientists figured out a faster way to break through enemy encryption.<br><br> Your empire gains +2<operationstrength></operationstrength>.<br>",
         },
 
         {
@@ -4615,7 +4615,7 @@ var jsonOperations = {
             "name": "Operation Breakthrough: Tactical Points",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Future Tactical Operation Support</titlebrown><br>A new discovery in logistics allows us to deploy more Tactical Operations! Your empire gains +3<tacticalPoint></tacticalPoint>.<br>",
+            "description": "<titlebrown>Future Tactical Operation Support</titlebrown><br>A new discovery in logistics allows us to deploy more Tactical Operations! <br><br>Your empire gains +3<tacticalPoint></tacticalPoint>.<br>",
         },
 
         {
@@ -4623,7 +4623,7 @@ var jsonOperations = {
             "name": "Operation Breakthrough: Strategic Points",
             "tier": "XI",
             "type": "Empire Upgrade",
-            "description": "<titlebrown>Future Strategic Operation Support</titlebrown><br>A new discovery in logistics allows us to deploy more Strategic Operations! Your empire gains 3<stratPoint></stratPoint>.<br>",
+            "description": "<titlebrown>Future Strategic Operation Support</titlebrown><br>A new discovery in logistics allows us to deploy more Strategic Operations! <br><br>Your empire gains 3<stratPoint></stratPoint>.<br>",
         }
 
 
