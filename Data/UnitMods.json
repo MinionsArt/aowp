@@ -1708,7 +1708,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "This unit's Laser weapons have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks) to inflict <abilityred>Burning</abilityred> for 3 <turn></turn>. Burning deals 5 <DamageThermal></DamageThermal> per <turn></turn> as well as making the affected unit 20% easier to hit. <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+            "description": "This unit's Laser weapons have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks) to inflict <abilityred>Burning</abilityred> for 3 <turn></turn>. Burning deals 5 <DamageThermal></DamageThermal> per <turn></turn> as well as making the affected unit 20% easier to hit. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
 
 
     },
