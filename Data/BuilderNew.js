@@ -256,10 +256,7 @@
              //abilityDam = jsonUnitAbilities.abilities[j].damage;
              abilityRange = jsonUnitAbilities.abilities[j].range;
              abilityAcc = jsonUnitAbilities.abilities[j].accuracy;
-             abilityType = jsonUnitAbilities.abilities[j].type;
-             if (abilityType == "Repeating") {
-                 abilityType += "<x-repeating></x-repeating>";
-             }
+
              var tooltipName = document.createElement("SPAN");
              var btn = document.createElement("DIV");
              /// tooltipName.style.fontSize = "20px";
