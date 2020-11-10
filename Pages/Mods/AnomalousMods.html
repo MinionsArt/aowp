@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/aowp/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/aowp/header.html");
+
+            $("#mod1").load("/aowp/modcard.html", function() {
+                showMod("mastercrafted_armor");
+            });
+            $("#mod2").load("/aowp/modcard.html", function() {
+                showMod("rumble_pack");
+            });
+            $("#mod3").load("/aowp/modcard.html", function() {
+                showMod("proto-tyrannodon_muscle_structure");
+            });
+            $("#mod4").load("/aowp/modcard.html", function() {
+                showMod("time_anomaly_generator");
+            });
+
+        });
+
+    </script>
+
+
+    <title>Age of Wonders Planetfall - Anomalous Mods</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h2 style="text-align: center; color: aliceblue">
+        Mods from Anomalous Sites
+    </h2>
+    <div id="mod1">
+    </div>
+    <div id="mod2"></div>
+    <div id="mod3"></div>
+    <div id="mod4"></div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -3832,6 +3832,799 @@ var jsonOperations = {
         },
 
 
+        {
+            "slug": "protector_program",
+            "name": "Protector Program",
+            "tier": "II",
+            "type": "Strategic Operation (Sustained)",
+            "description": "A Paladin Protector will patrol target friendly colony. When friendly armies fight in target friendly colony, a Paladin Protector will aid them in combat. The Protector disappears at the end of combat.",
+            "energy_cost": "30",
+            "casting": "4 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "elevate_to_warden",
+            "name": "Elevate to Warden",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target friendly army evolves a Prime Rank <x-medal_prime></x-medal_prime> Paladin Aspirant into Paladin Warden. It permanently gains +1 status effect resistance.",
+            "energy_cost": "40",
+            "casting": "4 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "elevate_to_protector",
+            "name": "Elevate to Protector",
+            "tier": "II",
+            "type": "Strategic Operation(Instant)",
+            "description": "Target friendly army evolves a Prime Rank <x-medal_prime></x-medal_prime> Paladin Aspirant into Paladin Protector. It permanently gains +1 status effect resistance.",
+            "energy_cost": "40",
+            "casting": "4 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "direct_tribulation",
+            "name": "Direct Tribulation",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "All units in enemy army get <abilityRed>Adversity</abilityRed> for 3<turn></turn> at the start of next combat. Units in this army take 20%<hp></hp> of their current <hp></hp>.<br>On failure, only deals 20%<hp></hp> of their current <hp></hp>.",
+            "energy_cost": "80",
+            "casting": "8 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "intervention",
+            "name": "Intervention",
+            "tier": "VI",
+            "type": "Strategic Operation(Instant)",
+            "description": "All units in the stack gain <actionblue>Resurgence</actionblue> and <actionblue>double XP</actionblue> for 1 strategic <turn></turn>.",
+            "energy_cost": "140",
+            "casting": "16 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "oracle's_guidance",
+            "name": "Oracle's Guidance",
+            "tier": "IX",
+            "type": "Strategic Operation (Sustained)",
+            "description": "Target friendly colony has +20% <production></production> and <research></research> income. Units produced in this colony start with +2 <x-medal_veteran></x-medal_veteran>.",
+            "energy_cost": "160",
+            "casting": "20 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "momentary_insight",
+            "name": "Momentary Insight",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target friendly unit gains <actionblue>Providence</actionblue> for 1<turn></turn>, making all of its attacks critically hit.",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "launch_healing_banner",
+            "name": "Launch Healing Banner",
+            "tier": "III",
+            "type": "Tactical Operation (Instant)",
+            "description": "Launch a flying Banner of Healing, healing friendly units in a 1 hex radius for 15<hp></hp> on launch. The Banner randomly picks an allied unit within 9 hexes and heals it for 15<hp></hp> every <turn></turn>. The Banner of Healing lasts for 3<turn></turn>.",
+            "energy_cost": "40",
+            "casting": "2 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "battlesuit_defensive_protocol",
+            "name": "Battlesuit Defensive Protocol",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Friendly Battlesuit units in target 2 hex radius are healed for 20<hp></hp> and get 2 for 2<turn></turn>.",
+            "energy_cost": "75",
+            "casting": "6 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "erratic_misfortune",
+            "name": "Erratic Misfortune",
+            "tier": "V",
+            "type": "Tactical Operation (Instant)",
+            "description": "Enemy units in a 2 hex radius get 15<damageEntropy></damageEntropy> damage and a 8<strengthEntropy></strengthEntropy> strength chance to get either <abilityRed>Fatalism</abilityRed> or <abilityRed>Adversity</abilityRed> for 1<turn></turn>.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "butterfly_effect",
+            "name": "Butterfly Effect",
+            "tier": "VII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target enemy unit gets <abilityRed>Fatalism</abilityRed> and <abilityRed>Butterfly Effect</abilityRed> for 3<turn></turn>: when this unit dies, units allied to it in a 3 hex radius get a 12<strengthEntropy></strengthEntropy> strength chance to gain <abilityRed>Fatalism</abilityRed> and <abilityRed>Butterfly Effect</abilityRed> for 3<turn></turn>.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "expedite_doom",
+            "name": "Expedite Doom",
+            "tier": "IX",
+            "type": "Tactical Operation (Instant)",
+            "description": "Enemy units in a 2 hex radius get 25<damageEntropy></damageEntropy>. Units with <abilityRed>Doomed, Fatalism</abilityRed> or <abilityRed>Adversity</abilityRed> have a 12<strengthEntropy></strengthEntropy> strength chance to instantly be killed.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "duty_of_care",
+            "name": "Duty of Care",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "Gain +20%<diplolinks></diplolinks> and +20%<influence></influence> from quests, plus an additional +20% for each level of <reputation6></reputation6> above Neutral.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "pre-battle_predictions",
+            "name": "Pre-Battle Predictions",
+            "tier": "I",
+            "type": "Doctrine Operation",
+            "description": "All units start battle with 1 stack of <actionblue>Precognition</actionblue>.",
+            "energy_cost": "50",
+            "casting": "6 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "loyalty_to_the_flag",
+            "name": "Loyalty to the Flag",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "Start all combat with 1 Warden's Banner that lasts until the end of combat. Gain the ability to control the targets of all Oathbound Banners.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "honor_and_unity",
+            "name": "Honor and Unity",
+            "tier": "V",
+            "type": "Doctrine Operation",
+            "description": "Colonists in <food></food> and <happiness></happiness> slots produce +1 of their respective resource per level of <reputation6></reputation6> above Neutral.",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "guarded_utopia",
+            "name": "Guarded Utopia",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "Colonies gain 8<happiness></happiness>. Battlesuit units in friendly domain +10<hp></hp> and +3<shield></shield>. ",
+            "energy_cost": "100",
+            "casting": "10 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "seer's_crusade",
+            "name": "Seer's Crusade",
+            "tier": "IX",
+            "type": "Doctrine Operation",
+            "description": "All Seer's attacks now do +30% extra damage and have 12<strengthEntropy></strengthEntropy> strength chance (8<strengthEntropy></strengthEntropy> strength chance for repeating attacks) to apply <abilityRed>Entropic Decay</abilityRed>.",
+            "energy_cost": "200",
+            "casting": "15 <stratPoint></stratPoint>",
+        },
+
+        {
+            "slug": "localized_decay",
+            "name": "Localized Decay",
+            "tier": "I",
+            "type": "Tactical Operation (Instant)",
+            "description": "Enemy units in a 1 hex radius gain 10<damageEntropy></damageEntropy> damage and 1 stack of <abilityRed>Entropic Decay</abilityRed> for 3<turn></turn>",
+            "energy_cost": "25",
+            "casting": "1 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "isomer_stabilization",
+            "name": "Isomer Stabilization",
+            "tier": "II",
+            "type": "Tactical Operation (Instant)",
+            "description": "All friendly units gain +6 Status Effect Resistance for 2<turn></turn>.",
+            "energy_cost": "30",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "atrophy_spread",
+            "name": "Atrophy Spread",
+            "tier": "IV",
+            "type": "Tactical Operation (Instant)",
+            "description": "Target enemy unit gets <abilityRed>Atrophy Spread</abilityRed> for 3<turn></turn>: at the start of its turn, this unit and its allied units in a 1 hex radius around it have a 8<strengthEntropy></strengthEntropy> strength chance to gain a stack of <abilityRed>Atrophy</abilityRed>.",
+            "energy_cost": "45",
+            "casting": "3 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "atomic_collapse",
+            "name": "Atomic Collapse",
+            "tier": "VI",
+            "type": "Tactical Operation (Instant)",
+            "description": "8<strengthEntropy></strengthEntropy> strength chance of instantly killing target unit, leaving no corpse. Applies one stack of <abilityRed>Entropic Decay</abilityRed> and <abilityRed>Atrophy</abilityRed> for 3<turn></turn> on failure.",
+            "energy_cost": "75",
+            "casting": "7 <tacticalPoint></tacticalPoint>",
+        },
+
+        {
+            "slug": "divide_half-life",
+            "name": "Divide Half-Life",
+            "tier": "VIII",
+            "type": "Tactical Operation (Instant)",
+            "description": "Enemy units in target 3 hex radius take 20<damageEntropy></damageEntropy> damage. Targets with <abilityRed>Entropic Decay</abilityRed> or <abilityRed>Atrophy</abilityRed> take an additional 10<damageEntropy></damageEntropy>, or 20<damageEntropy></damageEntropy> for both.",
+            "energy_cost": "100",
+            "casting": "8 <tacticalPoint></tacticalPoint>",
+        },
+
+
+
+        {
+            "slug": "ambassadors'_quarters",
+            "name": "Ambassadors' Quarters",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "A Syndicate specialist center, where colonists can be trained to work as Ambassadors. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Ambassador Slots.<br><population></population> in Ambassador Slots generate +1 <influence></influence>, -10 <energy></energy>.</bullet><bullet>Fine:<br>+4 Ambassador Slots.<br><population></population> in Ambassador Slots generate +2 <influence></influence>, -10 <energy></energy>.</bullet><bullet>Immaculate:<br>+6 Ambassador Slots.<br><population></population> in Ambassador Slots generate +2 <influence></influence>, -10 <energy></energy>.<br>This colony gains +20 <happiness></happiness>whenever <influence></influence> is spent in an interaction with other commanders.</bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "breeding_grounds",
+            "name": "Breeding Grounds",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "A Kir'Ko specialist center, where colonists can be trained to work as Brood Mothers. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Brood Mother Slots.<br><population></population> in Brood Mother Slots generate +6 <food></food>, +3 <happiness></happiness>.</bullet><bullet>Fine:<br>+4 Brood Mother Slots.<br><population></population> in Brood Mother Slots generate +8 <food></food>, +4 <happiness></happiness>.</bullet><bullet>Immaculate:<br>+6 Brood Mother Slots.<br><population></population> in Brood Mother Slots generate +10 <food></food>, +5 <happiness></happiness>.<br>This colony produces an Emergent unit whenever it has a <happiness></happiness> event or grows a <population></population>.</bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "cryopod_bunkers",
+            "name": "Cryopod Bunkers",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "A Vanguard specialist center, where colonists can be trained to work as Cryo-Experts. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Cryo-Expert Slots.<br><population></population> in Cryo-Expert Slots generate +6 <food></food>, +6 <production></production>.</bullet><bullet>Fine:<br>+4 Cryo-Expert Slots.<br><population></population> in Cryo-Expert Slots generate +8 <food></food>, +8 <production></production>.</bullet><bullet>Immaculate:<br>+6 Cryo-Expert Slots.<br><population></population> in Cryo-Expert Slots generate +10 <food></food>, +10 <production></production>.<br>This colony gains <research></research> whenever it completes a unit production.</bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "overdrive_reactor",
+            "name": "Overdrive Reactor",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "An Assembly specialist center, where colonists can be trained to work as Reactor Workers. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Reactor Worker Slots.<br><population></population> in Reactor Worker Slots generate +1 <tricorium></tricorium>, -3 <happiness></happiness>.</bullet><bullet>Fine:<br>+4 Reactor Worker Slots.<br><population></population> in Reactor Worker Slots generate +2 <tricorium></tricorium>, -3 <happiness></happiness>.</bullet><bullet>Immaculate:<br>+6 Reactor Worker Slots.<br><population></population> in Reactor Worker Slots generate +2 <tricorium></tricorium>, -3 <happiness></happiness>.<br>This colony produces a random hero mod or weapon whenever a military research is completed.</bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "urban_mining_shafts",
+            "name": "Urban Mining Shafts",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "A Dvar specialist center, where colonists can be trained to work as Prospectors. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Prospector Slots.<br><population></population> in Prospector Slots generate +6 <energy></energy>, +6 <production></production>.</bullet><bullet>Fine:<br>+4 Prospector Slots.<br><population></population> in Prospector Slots generate +8 <energy></energy>, +8 <production></production>.</bullet><bullet>Immaculate:<br>+6 Prospector Slots.<br><population></population> in Prospector Slots generate +10 <energy></energy>, +10 <production></production>.<br>Whenever this colony produces a colony upgrade, it gains a ' sector prospected 'event. </bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "wildlife_reserve",
+            "name": "Wildlife Reserve",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "An Amazon specialist center, where colonists can be trained to work as Rangers. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Ranger Slots.<br><population></population> in Ranger Slots generate +6 <food></food>, +6 <research></research>.</bullet><bullet>Fine:<br>+4 Ranger Slots.<br><population></population> in Ranger Slots generate +8 <food></food>, +8 <research></research>.</bullet><bullet>Immaculate:<br>+6 Ranger Slots.<br><population></population> in Ranger Slots generate +10 <food></food>, +10 <research></research>.<br>This colony produces a random animal unit (low chance for tier III) whenever a society research is completed.</bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "holo-simulation_camp",
+            "name": "Holo-Simulation Camp",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "A Shakarn specialist center, where colonists can be trained and work as Infiltrators. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Infiltrator Slots.<br><population></population> in Infiltrator Slots generate +6 <research></research> and +1 covert <operationstrength></operationstrength>.</bullet><bullet>Fine:<br>+4 Infiltrator Slots.<br><population></population> in Infiltrator Slots generate +8 <research></research> and +2 covert <operationstrength></operationstrength>.</bullet><bullet>Immaculate:<br>+6 Infiltrator Slots.<br><population></population> in Infiltrator Slots generate +10 <research></research> and +3 covert <operationstrength></operationstrength>.<br>This colony gains +60 <happiness></happiness> whenever you successfully use a covert operation on a player.</bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "archive_of_deeds",
+            "name": "Archive of Deeds",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "An Oathbound specialist center, where colonists can be trained and work as Chroniclers. The structure can later be upgraded after annexing Residential Exploitation sectors to the colony.<br><br><bullet>Basic:<br>+2 Chronicler Slots.<br><population></population> in Chronicler Slots generate +6 <research></research>, +3 <happiness></happiness>.</bullet><bullet>Fine:<br>+4 Chronicler Slots.<br><population></population> in Chronicler Slots generate +8 <research></research>, +4 <happiness></happiness>.</bullet><bullet>Immaculate:<br>+6 Chronicler Slots.<br><population></population> in Chronicler Slots generate +10 <research></research>, +5 <happiness></happiness>.<br>Whenever the Lord of the colony <abilityRed>(3 <turn></turn> adjustment)</abilityRed> wins a battle, this colony generates +5 <influence></influence>, +20 <energy></energy>.</bullet>",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "the_throne",
+            "name": "The Throne",
+            "tier": "I",
+            "type": "Colony Upgrade",
+            "description": "When a hero with a Colony Lord Bonus hero skill is linked to this colony, then the colony will still receive 50% of the Hero In Domain bonus, even when the hero is outside of the colony's domain.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "residential_sectors_upgrade",
+            "name": "Residential Sectors Upgrade",
+            "tier": "IV",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all residential sectors. Raising the sector level of a sector will increase the benefits from sector exploitations in that sector.",
+            "production_cost": "150 <production></production> Production",
+
+
+
+        },
+
+        {
+            "slug": "residential_sectors_advanced_upgrade",
+            "name": "Residential Sectors Advanced Upgrade",
+            "tier": "VII",
+            "type": "Colony Upgrade",
+            "description": "Gives +1 level to all residential sectors. Raising the sector level of a sector will increase the benefits from sector exploitations in that sector.",
+            "production_cost": "450 <production></production> Production",
+
+
+
+        },
+        {
+            "slug": "mushroom_farms",
+            "name": "Mushroom Farms",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Mycelian Farms</titlebrown><br>Allows the production of Mycelian Units in our colonies.<br><titlebrown>Fungal Immunities</titlebrown><br>All Animal, Ethereal, Mineral and Plant units you control gain +2 Status Effect Resistance.<br>",
+        },
+        {
+            "slug": "sonic_weaponry_breakthrough",
+            "name": "Sonic Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Sonic Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Sonic weaponry! 10% extra damage to all Sonic weapon attacks.<br>",
+        },
+
+        {
+            "slug": "xeno_panacea",
+            "name": "Xeno Panacea",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Shakarn Cure</titlebrown><br>Units you control with Xeno Debilitation gain +3 resistance to status effects and +10<hp></hp>.<br>",
+        },
+
+        {
+            "slug": "captive_thunder",
+            "name": "Captive Thunder",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Thundermaw Park</titlebrown><br>Allows the production of Thundermaws in our colonies.<br><titlebrown>Better Zoological Containers</titlebrown><br>All Animal, Ethereal, Mineral and Plant units you produce in your colonies gain +1<x-medal_veteran></x-medal_veteran><br>",
+        },
+
+        {
+            "slug": "advanced_essence_catalysts",
+            "name": "Advanced Essence Catalysts",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Essence Sequencer</titlebrown><br>Accidental Breakthrough! By making a mobile sequencer that forms essence at a local level, all our units gain an Essence Charge at the start of battle!<br>",
+        },
+
+        {
+            "slug": "feline_chorus",
+            "name": "Feline Chorus",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Feline Psytherapy</titlebrown><br>Allows the production of Misfortune units in our colonies.<br><titlebrown>Cruel Attunement</titlebrown><br>All Animal, Ethereal, Mineral and Plant units you control gain <actionblue>Sadism</actionblue>, increasing damage against units with low morale.<br>",
+        },
+
+        {
+            "slug": "arc_weaponry_breakthrough",
+            "name": "Arc Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Arc Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Arc weaponry! 10% extra damage to all Arc weapon attacks.<br>",
+        },
+
+        {
+            "slug": "firearms_weaponry_breakthrough",
+            "name": "Firearms Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Firearms Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Firearms weaponry! 10% extra damage to all Firearms weapon attacks.<br>",
+        },
+
+        {
+            "slug": "explosive_weaponry_breakthrough",
+            "name": "Explosive Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Explosive Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Explosive weaponry! 10% extra damage to all Explosive weapon attacks.<br>",
+        },
+
+        {
+            "slug": "psionic_weaponry_breakthrough",
+            "name": "Psionic Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Psionic Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Psionic weaponry! 10% extra damage to all Psionic weapon attacks.<br>",
+        },
+
+        {
+            "slug": "biochemical_weaponry_breakthrough",
+            "name": "Biochemical Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Biochemical Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Biochemical weaponry! 10% extra damage to all Biochemical weapon attacks.<br>",
+        },
+
+        {
+            "slug": "entropy_weaponry_breakthrough",
+            "name": "Entropy Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Entropy Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Entropy weaponry! 10% extra damage to all Entropy weapon attacks.<br>",
+        },
+
+        {
+            "slug": "laser_weaponry_breakthrough",
+            "name": "Laser Weaponry Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Laser Weapon Damage</titlebrown><br>A major breakthrough from our weapons division has led to a boost to all of our armies' Laser weaponry! 10% extra damage to all Laser weapon attacks.<br>",
+        },
+
+        {
+            "slug": "bio-resistant_materials_breakthrough",
+            "name": "Bio-Resistant Materials Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Biochemical Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Biochemical attacks. All units you control gain +2<DamageBio></DamageBio>.<br>",
+        },
+
+        {
+            "slug": "arc-resistant_materials_breakthrough",
+            "name": "Arc-Resistant Materials Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Arc Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Arc attacks. All units you control gain +2<defensewave></defensewave>.<br>",
+        },
+
+        {
+            "slug": "entropy-resistant_materials_breakthrough",
+            "name": "Entropy-Resistant Materials Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Entropy Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Entropy attacks. All units you control gain +2<damageEntropy></damageEntropy>.<br>",
+        },
+
+        {
+            "slug": "thermal-resistant_materials_breakthrough",
+            "name": "Thermal-Resistant Materials Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Thermal Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Thermal attacks. All units you control gain +2<DamageThermal></DamageThermal>.<br>",
+        },
+
+        {
+            "slug": "kinetic-resistant_materials_breakthrough",
+            "name": "Kinetic-Resistant Materials Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Kinetic Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Kinetic attacks. All units you control gain +2<DamageKinetic></DamageKinetic>.<br>",
+        },
+
+        {
+            "slug": "psionic-resistant_materials_breakthrough",
+            "name": "Psionic-Resistant Materials Breakthrough",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Psionic Resistance</titlebrown><br>Our scientists have made major strides in treating materials to resist Psionic attacks. All units you control gain +2<DamagePsyche></DamagePsyche>.<br>",
+        },
+
+        {
+            "slug": "armor:_mechanical",
+            "name": "Armor: Mechanical",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Advanced Armors</titlebrown><br>A breakthrough has occurred in the field of Armor for Mechanical Units! All Mechanical units you control gain +1<armor></armor>.<br>",
+        },
+
+        {
+            "slug": "shields:_cyborg_and_mechanical",
+            "name": "Shields: Cyborg and Mechanical",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Shielding Metals</titlebrown><br>A breakthrough has occurred in the field of Shields for Cyborg and Mechanical units! All Cyborg and Mechanical units you control gain +1<shield></shield>.<br>",
+        },
+
+        {
+            "slug": "armor:_biological_and_cyborg",
+            "name": "Armor: Biological and Cyborg",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Second Skin</titlebrown><br>A breakthrough has occurred in the field of Armor for Biological and Cyborg units! All Biological and Cyborg units you control gain +1<armor></armor>.<br>",
+        },
+
+        {
+            "slug": "shields:_biological",
+            "name": "Shields: Biological",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Shield Infusion</titlebrown><br>A breakthrough has occurred in the field of Shields for Biological units! All Biological units you control gain +1<shield></shield>.<br>",
+        },
+
+        {
+            "slug": "crystalloid_grafts",
+            "name": "Crystalloid Grafts",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Quartzite Magma Worm Corrals</titlebrown><br>Allows the production of Quartzite Magma Worms in our colonies.<br><titlebrown>Crystal Grafts</titlebrown><br>All Animal, Ethereal, Mineral and Plant units you control gain +1<armor></armor>.<br>",
+        },
+
+        {
+            "slug": "crystalloid_wave-emitters",
+            "name": "Crystalloid Wave-Emitters",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Quartzite Crystal Worm Corrals</titlebrown><br>Allows the production of Quartzite Crystal Worms in our colonies.<br><titlebrown>Wave-Emitters</titlebrown><br>All Animal, Ethereal, Mineral and Plant units you control gain +1<shield></shield>.<br>",
+        },
+
+        {
+            "slug": "extradimensional_penguin_comms",
+            "name": "Extradimensional Penguin Comms",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Penguin Void Portals</titlebrown><br>Allows the production of Penguins in our colonies.<br><titlebrown>Penguin Refinement</titlebrown><br>All Penguin units you control deal +20% damage, gain +1<armor></armor>, +1<shield></shield> and +5<hp></hp>.<br>",
+        },
+
+        {
+            "slug": "accidental_enlightenment",
+            "name": "Accidental Enlightenment",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Enlightened Minds</titlebrown><br>Accidental Breakthrough! We saw into the stars and became enlightened! We can now easily teach our units the way of all things. All units you control gain <actionblue>Enlightened</actionblue>.<br>",
+        },
+
+        {
+            "slug": "arc_waves",
+            "name": "Arc Waves",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Wave Integration</titlebrown><br>Accidental Breakthrough! We discovered a electron wave integration method that can combine with any form of attack, granting it Arc damage! All units you control gain 4<DamageWave></DamageWave> on their attacks.<br>",
+        },
+
+        {
+            "slug": "xna_agitators",
+            "name": "XNA Agitators",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Xenoplague Hasteners</titlebrown><br>Accidental Breakthrough! By further agitating the XNA of the xenoplague lifeforms, we can make them transform into their next phase faster! Xenoplague Units transform 20% faster.<br>",
+        },
+
+        {
+            "slug": "mechanical_augments",
+            "name": "Mechanical Augments",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Performance Booster Metals</titlebrown><br>Accidental Breakthrough! We discovered new compounds that are less Arc conductive while increasing the performance of our machines! All Mechanical units you control gain +10% damage and +4<DamageWave></DamageWave>.<br>",
+        },
+
+        {
+            "slug": "cybernetic_resilience",
+            "name": "Cybernetic Resilience",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Cyborg Last Stand</titlebrown><br>Accidental Breakthrough! We discovered a way to quickly stabilize Cyborg units, granting them Steadfast! Cyborg units you control gain <actionblue>Steadfast</actionblue>, making them remain at 1<hp></hp> and invulnerable for a turn when they drop below 1<hp></hp>, once per combat.<br>",
+        },
+
+        {
+            "slug": "biological_toughening",
+            "name": "Biological Toughening",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Genome Editing</titlebrown><br>Accidental Breakthrough! We discovered how to make Biological units tougher by altering their DNA! All Biological units you control gain 2<armor></armor> and 10<hp></hp>.<br>",
+        },
+
+        {
+            "slug": "occlusion_filters",
+            "name": "Occlusion Filters",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Obfuscation Materials</titlebrown><br>Accidental Breakthrough! We made new progress on obfuscation materials and control. We can make a permanent mist around our units, obfuscating them from enemy line of sight! All units you control gain <actionblue>Lightly Obscured</actionblue>, making them 20% harder to hit.<br>",
+        },
+
+        {
+            "slug": "colonist_efficiency:_production",
+            "name": "Colonist Efficiency: Production",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Colonist Production Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Production gain. Gain 5<production></production> per <productionSlot></productionSlot>.<br>",
+        },
+
+        {
+            "slug": "colonist_efficiency:_supply",
+            "name": "Colonist Efficiency: Supply",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Colonist Supply Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Supply gain. Gain 5<food></food> per <foodslot></foodslot>.<br>",
+        },
+
+        {
+            "slug": "colonist_efficiency:_energy",
+            "name": "Colonist Efficiency: Energy",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Colonist Energy Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Energy gain. Gain 5<energy></energy> per <energyslot></energyslot>.<br>",
+        },
+
+        {
+            "slug": "colonist_efficiency:_knowledge",
+            "name": "Colonist Efficiency: Knowledge",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Colonist Knowledge Increase</titlebrown><br>Our scientists made great strides towards Colonist efficiency in the field of Knowledge gain. Gain 5<research></research> per <researchslot></researchslot>.<br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_unit_ranks",
+            "name": "Colony Breakthrough: Unit Ranks",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Complex Training</titlebrown><br>By using Automatic Training Inceptors, units produced in your colonies are produced with higher training. Colonies Produce units with a +1<x-medal_veteran></x-medal_veteran><br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_unit_armor",
+            "name": "Colony Breakthrough: Unit Armor",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Future Armors</titlebrown><br>We made great strides in the field of armoring our units! Colonies produce units with +1<armor></armor>.<br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_unit_shields",
+            "name": "Colony Breakthrough: Unit Shields",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Compact Shields</titlebrown><br>We made great strides in the way we shield our units! Colonies produce units with +1<shield></shield>.<br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_unit_health",
+            "name": "Colony Breakthrough: Unit Health",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Altered Structure</titlebrown><br>We made great strides in the way we build our units!<br><titlebrown>Colonies produce units with +5<hp></hp>.</titlebrown><br><br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_energy",
+            "name": "Colony Breakthrough: Energy",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Energy Gains</titlebrown><br>Our scientists figured a more efficient way to gain Energy! Colonies produce +10%<energy></energy>.<br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_supply",
+            "name": "Colony Breakthrough: Supply",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Supply Gains</titlebrown><br>Our scientists figured a more efficient way to gain Supply! Colonies produce +10%<food></food>.<br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_production",
+            "name": "Colony Breakthrough: Production",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Production Gains</titlebrown><br>Our scientists figured a more efficient way to gain Production! Colonies produce +10%<production></production>.<br>",
+        },
+
+        {
+            "slug": "colony_breakthrough:_knowledge",
+            "name": "Colony Breakthrough: Knowledge",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Knowledge Gains</titlebrown><br>Our scientists figured a more efficient way to gain Knowledge! Colonies produce +10%<research></research>.<br>",
+        },
+
+        {
+            "slug": "empire_breakthrough:_doctrine_slot",
+            "name": "Empire Breakthrough: Doctrine Slot",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Grand Bureaucracy</titlebrown><br>Our social scientists made strides in the field of Organizational Bureaucracy, making space for further policies. Empire gains +1<doctrine></doctrine><br>",
+        },
+
+        {
+            "slug": "empire_breakthrough:_cosmite",
+            "name": "Empire Breakthrough: Cosmite",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Void Cosmite</titlebrown><br>We created a way of extracting Cosmite from the Void! Empire gains +10<tricorium></tricorium><br>",
+        },
+
+        {
+            "slug": "empire_breakthrough:_influence",
+            "name": "Empire Breakthrough: Influence",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Enhanced Diplomats</titlebrown><br>Our scientists managed to make our Diplomats and Envoys more efficient through advanced linguistic training and manipulation skills. Empire gains +5<influence></influence><br>",
+        },
+
+        {
+            "slug": "empire_breakthrough:_rivers",
+            "name": "Empire Breakthrough: Rivers",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Waste Not</titlebrown><br>Our scientists figured a way of recycling waste commonly found in rivers into food for our colonies! Empire gains +10<food></food> from Rivers in a colony's Domain.<br>",
+        },
+
+        {
+            "slug": "empire_breakthrough:_lava_stream",
+            "name": "Empire Breakthrough: Lava Stream",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Future Geothermal Generators</titlebrown><br>Our scientists figured out how to make geothermal generators that quickly gather energy using entropy technology. Empire gains +10<energy></energy> from Lava Streams in a colony's Domain.<br>",
+        },
+
+        {
+            "slug": "operation_breakthrough:_op_defense",
+            "name": "Operation Breakthrough: Op Defense",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Future Counterintelligence Measures</titlebrown><br>Our scientists figured out a new encryption method that will prevent our data from being stolen. Your empire gains +2<operationDefense></operationDefense>.<br>",
+        },
+
+        {
+            "slug": "operation_breakthrough:_op_strength",
+            "name": "Operation Breakthrough: Op Strength",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Future Intel Extraction</titlebrown><br>Our scientists figured out a faster way to break through enemy encryption. Your empire gains +2<operationstrength></operationstrength>.<br>",
+        },
+
+        {
+            "slug": "operation_breakthrough:_tactical_points",
+            "name": "Operation Breakthrough: Tactical Points",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Future Tactical Operation Support</titlebrown><br>A new discovery in logistics allows us to deploy more Tactical Operations! Your empire gains +3<tacticalPoint></tacticalPoint>.<br>",
+        },
+
+        {
+            "slug": "operation_breakthrough:_strategic_points",
+            "name": "Operation Breakthrough: Strategic Points",
+            "tier": "XI",
+            "type": "Empire Upgrade",
+            "description": "<titlebrown>Future Strategic Operation Support</titlebrown><br>A new discovery in logistics allows us to deploy more Strategic Operations! Your empire gains 3<stratPoint></stratPoint>.<br>",
+        }
 
 
     ]
