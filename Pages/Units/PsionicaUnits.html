@@ -16,10 +16,10 @@
             $("#header").load("/aowp/header.html");
 
             $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("psionica_liquid_tick");
+                showUnit("psionica_leech");
             });
             $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("psionica_leech");
+                showUnit("psionica_liquid_tick");
             });
 
             $("#unit3").load("/aowp/unitcard.html", function() {
@@ -29,6 +29,13 @@
 
 
 
+        });
+        $(document).ready(function() {
+            function showStats() {
+                textFit(document.getElementsByClassName('unit_passiveslot'));
+            }
+
+            setTimeout(showStats, 500);
         });
     </script>
 
