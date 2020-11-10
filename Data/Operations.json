@@ -723,7 +723,7 @@ var jsonOperations = {
 
         {
             "slug": "integrated_support",
-            "name": "Integrated Support",
+            "name": "Global Integrated Support",
             "tier": "IX",
             "type": "Doctrine Operation",
             "description": "Expand our operation network on a global level for rapid response and deployment.<br><br>You are able to cast Tactical Operations starting from the first turn of combat, and gain 2<tacticalPoint></tacticalPoint>  and 2<stratPoint></stratPoint>.",
