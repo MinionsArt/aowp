@@ -242,7 +242,14 @@
 
              abilityName = jsonUnitAbilities.abilities[j].name;
              abilityIcon = jsonUnitAbilities.abilities[j].icon;
-             abilityDescr = jsonUnitAbilities.abilities[j].description;
+
+             if (abilityName.indexOf("Defense Mode") > -1) {
+                 abilityDescr = "<popupheader3><titlebrown>" + abilityName + "</titlebrown></popupheader3><br> <br>";
+                 abilityDescr += jsonUnitAbilities.abilities[j].description;
+             } else {
+                 abilityDescr = jsonUnitAbilities.abilities[j].description;
+             }
+
              var n = abilityDescr.includes("Unique");
 
 
