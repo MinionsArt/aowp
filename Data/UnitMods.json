@@ -1565,7 +1565,7 @@ var jsonMods = {
 
             "type": "Defensive Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Unit gains +5 <DamageBio></DamageBio> resistance and Immunity to <actionblue>Biochemical Status Effects and Hazards</actionblue>. <br> at the end of this unit's turn, any Biological or Cyborg units within 2 hexes of this unit have a 8 <StrengthBio></StrengthBio> strength chance to be affected by <abilityred>Blighted Plague</abilityred> for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical or Claw ability. </abilityred> ",
+            "description": "Unit gains +3 <DamageBio></DamageBio> resistance and Immunity to <actionblue>Biochemical Status Effects and Hazards</actionblue>. <br> at the end of this unit's turn, any Biological or Cyborg units within 2 hexes of this unit have a 8 <StrengthBio></StrengthBio> strength chance to be affected by <abilityred>Blighted Plague</abilityred> for 3 <turn></turn>.<br><br> Additionally, this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can only be applied to units that have a Biochemical or Claw ability. </abilityred> ",
 
 
     },
