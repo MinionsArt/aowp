@@ -7331,7 +7331,7 @@ var jsonTech = {
                 }
         ,
                 {
-                    "slug": "cosmite_growth_chambers"
+                    "slug": "cosmite_harvesting_center"
                 }
 
             ],
@@ -7341,7 +7341,7 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "800",
+            "cost": "1700",
     },
 
         {
@@ -7580,7 +7580,7 @@ var jsonTech = {
                 }
         ,
                 {
-                    "slug": "cosmite_harvesting_center"
+                    "slug": "cosmite_growth_chambers"
                 }
 
             ],
@@ -7590,7 +7590,7 @@ var jsonTech = {
                 }
 
             ],
-            "cost": "1700",
+            "cost": "800",
     },
 
         {
