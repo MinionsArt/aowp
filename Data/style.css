@@ -16,8 +16,24 @@ th {
 
 td {
     min-width: 320px;
-    max-width: 320px;
+    max-width: 900px;
     height: 90px;
+    color: aliceblue;
+
+}
+
+.endtd {
+    width: 500px;
+
+    height: 90px;
+    color: aliceblue;
+
+}
+
+.endtr {
+    min-width: 320px;
+    max-width: 4000px;
+    height: 120px;
     color: aliceblue;
 
 }
@@ -343,6 +359,13 @@ p {
     width: inherit;
 }
 
+.endbackground {
+
+    position: relative;
+    display: contents;
+    width: 3000px;
+}
+
 .tabletech {
     background-color: rgba(0, 255, 100, 0.05);
     box-shadow: inset 1px 1px 10px #074447;
@@ -498,8 +521,9 @@ tab {
 .tech_card {
 
     color: white;
-    width: 290px;
-    height: 85px;
+    min-width: 240px;
+    min-height: 85px;
+    max-width: 900px;
     border-radius: 30px 0px 10px 30px;
     border: 1px solid #A5C3D3;
     background-color: #131517;

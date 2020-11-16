@@ -1,6 +1,6 @@
  // we store the status in this object
- var divState = ["amazon", "assembly", "vanguard", "kirko", "dvar", "syndicate", "shakarn"];
- var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics", "explosives", "sonic"];
+ var divState = ["amazon", "assembly", "vanguard", "kirko", "dvar", "syndicate", "shakarn", "oathbound"];
+ var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics", "explosives", "sonic", "entropy"];
  var currentRace = "amazon";
 
  function showhide(id, weapon, weapon2) {
@@ -80,6 +80,24 @@
      }
  }
 
+ var divTreesEndless = ["endlessMil", "endlessSoc"];
+
+ function showhideEndless(id) {
+     if (document.getElementById) {
+         var divid = document.getElementById(id);
+         //close others
+         for (var i = 0; i < divTreesEndless.length; i++) {
+
+             var e = document.getElementById(divTreesEndless[i])
+             e.style.display = 'none'; // hide
+             //  divStateweapon1[div] = false; // reset status
+         }
+
+
+         divid.style.display = 'contents';
+     }
+ }
+
  var divsearch = ["unitS", "modS"];
 
  function showhide3(id) {
@@ -98,10 +116,10 @@
      }
  }
 
- var divTreesSoc = ["amazond", "assemblyd", "dvard", "kirkod", "syndicated", "vanguardd", "shakarnd"];
- var divTreesSoc2 = ["amazond5", "assemblyd5", "dvard5", "kirkod5", "syndicated5", "vanguardd5", "shakarnd5"];
+ var divTreesSoc = ["amazond", "assemblyd", "dvard", "kirkod", "syndicated", "vanguardd", "shakarnd", "oathboundd"];
+ var divTreesSoc2 = ["amazond5", "assemblyd5", "dvard5", "kirkod5", "syndicated5", "vanguardd5", "shakarnd5", "oathboundd5"];
 
- var divTreesSoc3 = ["amazond9", "assemblyd9", "dvard9", "kirkod9", "syndicated9", "vanguardd9", "shakarnd9"];
+ var divTreesSoc3 = ["amazond9", "assemblyd9", "dvard9", "kirkod9", "syndicated9", "vanguardd9", "shakarnd9", "oathboundd9"];
 
  function showhideSoc(id, id2, id3) {
      if (document.getElementById) {
@@ -224,17 +242,21 @@
 
              abilityName = jsonUnitAbilities.abilities[j].name;
              abilityIcon = jsonUnitAbilities.abilities[j].icon;
-             abilityDescr = jsonUnitAbilities.abilities[j].description;
+
+             if (abilityName.indexOf("Defense Mode") > -1) {
+                 abilityDescr = "<popupheader3><titlebrown>" + abilityName + "</titlebrown></popupheader3><br> <br>";
+                 abilityDescr += jsonUnitAbilities.abilities[j].description;
+             } else {
+                 abilityDescr = jsonUnitAbilities.abilities[j].description;
+             }
+
              var n = abilityDescr.includes("Unique");
 
 
              //abilityDam = jsonUnitAbilities.abilities[j].damage;
              abilityRange = jsonUnitAbilities.abilities[j].range;
              abilityAcc = jsonUnitAbilities.abilities[j].accuracy;
-             abilityType = jsonUnitAbilities.abilities[j].type;
-             if (abilityType == "Repeating") {
-                 abilityType += "<x-repeating></x-repeating>";
-             }
+
              var tooltipName = document.createElement("SPAN");
              var btn = document.createElement("DIV");
              /// tooltipName.style.fontSize = "20px";
@@ -408,6 +430,7 @@
 
  function showUnit(a) {
      var hp, mp, shield, armor, descr, j, k, x, y, z, unitName, icon, imagelink, prodcost, tier, research, building, reward = "";
+     var found = false;
      for (i in jsonUnits.units) {
          if (a == jsonUnits.units[i].id) {
              icon = document.getElementById("uniticon");
@@ -523,9 +546,13 @@
 
 
              //checkModRequirements(jsonUnits.units[i]);
-
+             found = true;
          }
 
+
+     }
+     if (found == false) {
+         console.log("Couldn't find unit: " + a);
      }
 
  }
@@ -614,8 +641,20 @@
              cost.innerHTML = jsonTech.tech[j].cost + "<research></research>";
              cost.setAttribute("id", "modcost" + a);
              imagelink = document.getElementById("techicon");
-             imagelink.setAttribute("src", "/aowp/Icons/Tech/" + a + ".png");
-             imagelink.setAttribute("id", "techicon" + a);
+             if (b == "em") {
+
+                 imagelink.setAttribute("src", "/aowp/Icons/Tech/" + "military_future_military_tech" + ".png");
+                 imagelink.setAttribute("id", "techicon" + a);
+             } else if (b == "es") {
+
+                 imagelink.setAttribute("src", "/aowp/Icons/Tech/" + "society_future_society_tech" + ".png");
+                 imagelink.setAttribute("id", "techicon" + a);
+             } else {
+                 imagelink.setAttribute("src", "/aowp/Icons/Tech/" + a + ".png");
+                 imagelink.setAttribute("id", "techicon" + a);
+             }
+
+
 
              for (k in jsonTech.tech[j].mod_unlock) {
                  if (jsonTech.tech[j].mod_unlock[k].slug != undefined) {
@@ -626,7 +665,35 @@
 
              for (k in jsonTech.tech[j].op_unlock) {
                  if (jsonTech.tech[j].op_unlock[k].slug != undefined) {
-                     addOpUnlock(jsonTech.tech[j].op_unlock[k].slug, b);
+                     if (jsonTech.tech[j].op_unlock[k].slug == "colony_district_buildings") {
+                         if (currentRace == "kirko") {
+                             addOpUnlock("breeding_grounds", b);
+                         }
+                         if (currentRace == "dvar") {
+                             addOpUnlock("urban_mining_shafts", b);
+                         }
+                         if (currentRace == "amazon") {
+                             addOpUnlock("wildlife_reserve", b);
+                         }
+                         if (currentRace == "syndicate") {
+                             addOpUnlock("ambassadors'_quarters", b);
+                         }
+                         if (currentRace == "vanguard") {
+                             addOpUnlock("cryopod_bunkers", b);
+                         }
+                         if (currentRace == "shakarn") {
+                             addOpUnlock("holo-simulation_camp", b);
+                         }
+                         if (currentRace == "oathbound") {
+                             addOpUnlock("archive_of_deeds", b);
+                         }
+                         if (currentRace == "assembly") {
+                             addOpUnlock("overdrive_reactor", b);
+                         }
+                     } else {
+                         addOpUnlock(jsonTech.tech[j].op_unlock[k].slug, b);
+                     }
+
                  }
 
              }
@@ -637,15 +704,21 @@
                      if (jsonTech.tech[j].unit_unlock[k].slug.indexOf("secret") > -1) {
                          if (currentRace == "syndicate" && jsonTech.tech[j].unit_unlock[k].slug == "secret_purifier") {
                              secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace + "_indentured");
+                         } else if (currentRace == "oathbound" && (jsonTech.tech[j].unit_unlock[k].slug == "secret_light_bringer" || jsonTech.tech[j].unit_unlock[k].slug == "secret_echo_walker")) {
+                             secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace + "_paladin");
                          } else {
                              secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace);
                          }
 
                      }
+                     if (secret == "phoenix_walker") {
+                         if (currentRace == "dvar" || currentRace == "kirko") {
+                             secret = currentRace + "_phoenix_walker";
 
-                     if (currentRace == "dvar" && jsonTech.tech[j].unit_unlock[k].slug == "phoenix_walker") {
-                         secret = "dvar_phoenix_walker";
+                         }
+
                      }
+
 
                      addUnitUnlock(secret, b);
                  }
@@ -727,7 +800,7 @@
              btn.appendChild(spa);
 
 
-             if (b == "s") {
+             if (b == "s" || b == "em" || b == "es") {
                  spa.className = "tooltiptext2";
              } else {
                  spa.className = "tooltiptext";
@@ -751,6 +824,7 @@
      var found = false;
      for (j in jsonOperations.operations) {
          if (a == jsonOperations.operations[j].slug) {
+
              opUnlockName = "<titlebrown>" + jsonOperations.operations[j].name + "</titlebrown>";
              opUnlockIcon = jsonOperations.operations[j].slug;
              opUnlockAbility = jsonOperations.operations[j].description;
@@ -769,7 +843,12 @@
              //tex.innerHTML = modUnlockName;
 
              spa.innerHTML = "<p>" + opUnlockName + "</p>" + tier + "<hr>"
-             imag.setAttribute("src", "/aowp/Icons/Operations/" + opUnlockIcon + ".png");
+             if (b == "em" || b == "es") {
+                 imag.setAttribute("src", "/aowp/Icons/Operations/" + "unknown" + ".png");
+             } else {
+                 imag.setAttribute("src", "/aowp/Icons/Operations/" + opUnlockIcon + ".png");
+             }
+
 
 
              spa.innerHTML += "<br>" + opUnlockAbility;
@@ -821,7 +900,7 @@
              btn.appendChild(spa);
 
 
-             if (b == "s") {
+             if (b == "s" || b == "em" || b == "es") {
                  spa.className = "tooltiptext2";
              } else {
                  spa.className = "tooltiptext";
@@ -904,7 +983,7 @@
              btn.appendChild(spa);
 
 
-             if (b == "s") {
+             if (b == "s" || b == "em" || b == "es") {
                  spa.className = "tooltiptext2";
              } else {
                  spa.className = "tooltiptext";

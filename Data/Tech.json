@@ -3734,7 +3734,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "equipment:_energy_blaster"
+                    "slug": "equipment:_energy_blaster_rifle"
                 }
 
             ],
@@ -5743,7 +5743,7 @@ var jsonTech = {
 
             "mod_unlock": [
                 {
-                    "slug": "equipment:_lights'_harmony"
+                    "slug": "equipment:_light's_harmony"
                 }
 
             ],
@@ -7081,7 +7081,7 @@ var jsonTech = {
             ],
             "unit_unlock": [
                 {
-                    "slug": "secret_colonizer"
+
                 }
 
             ],
@@ -7559,34 +7559,6 @@ var jsonTech = {
             "cost": "1700",
     },
 
-        {
-            "slug": "society_virtual_hospitality_systems",
-            "name": "Virtual Hospitality Systems",
-
-            "mod_unlock": [
-                {
-
-                }
-
-            ],
-            "op_unlock": [
-                {
-                    "slug": "holistic_military_care_center"
-                }
-        ,
-                {
-                    "slug": "virtual_entertainment_plaza"
-                }
-
-            ],
-            "unit_unlock": [
-                {
-
-                }
-
-            ],
-            "cost": "1700",
-    },
 
         {
             "slug": "society_adaptive_exploitation",
@@ -8105,6 +8077,1011 @@ var jsonTech = {
             "cost": "2250",
     },
 
+
+        {
+            "slug": "oathbound_induction_rites",
+            "name": "Induction Rites",
+
+            "mod_unlock": [
+                {
+                    "slug": "oath_of_loyalty"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "momentary_insight"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "oathbound_warden_ranks",
+            "name": "Warden Ranks",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_paladin_warden"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "oathbound_paladin_warden"
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "oathbound_colonial_guard",
+            "name": "Colonial Guard",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "protector_program"
+                }
+        ,
+                {
+                    "slug": "elevate_to_warden"
+                }
+        ,
+                {
+                    "slug": "elevate_to_protector"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "oathbound_watcher_ranks",
+            "name": "Watcher Ranks",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_watcher's_scrolls"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "oathbound_watcher"
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "oathbound_combat_manuscripts",
+            "name": "Combat Manuscripts",
+
+            "mod_unlock": [
+                {
+                    "slug": "battle_pattern_analyzer"
+                }
+        ,
+                {
+                    "slug": "oath_of_purity"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "launch_healing_banner"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "300",
+        },
+
+        {
+            "slug": "oathbound_battlesuit_attunement",
+            "name": "Battlesuit Attunement",
+
+            "mod_unlock": [
+                {
+                    "slug": "oath_of_devotion"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "battlesuit_defensive_protocol"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "oathbound_champion_ranks",
+            "name": "Champion Ranks",
+
+            "mod_unlock": [
+                {
+                    "slug": "vehicle:_paladin_champion"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "oathbound_paladin_champion"
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "oathbound_misfortune_manipulation",
+            "name": "Misfortune Manipulation",
+
+            "mod_unlock": [
+                {
+                    "slug": "plight_mitigator"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "erratic_misfortune"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "oathbound_diviner_ranks",
+            "name": "Diviner Ranks",
+
+            "mod_unlock": [
+                {
+                    "slug": "equipment:_diviner's_threads"
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "oathbound_diviner"
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "oathbound_regulated_chaos_theory",
+            "name": "Regulated Chaos Theory",
+
+            "mod_unlock": [
+                {
+                    "slug": "oath_of_courage"
+                }
+        ,
+                {
+                    "slug": "timethread_datascrolls"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "butterfly_effect"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "oathbound_exemplar's_vestibule",
+            "name": "Exemplar's Vestibule",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+
+                }
+
+            ],
+            "unit_unlock": [
+                {
+                    "slug": "oathbound_paladin_exemplar"
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "oathbound_superb_communion",
+            "name": "Superb Communion",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "oracle's_guidance"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "oathbound_flawless_divination",
+            "name": "Flawless Divination",
+
+            "mod_unlock": [
+                {
+                    "slug": "beacon_of_hope"
+                }
+        ,
+                {
+                    "slug": "destiny's_manuscript"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "expedite_doom"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+
+        {
+            "slug": "entropy_entropic_foundations",
+            "name": "Entropic Foundations",
+
+            "mod_unlock": [
+                {
+                    "slug": "sedating_decay_component"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "localized_decay"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "entropy_entropy_inhibition",
+            "name": "Entropy Inhibition",
+
+            "mod_unlock": [
+                {
+                    "slug": "entropic_decomposer"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "isomer_stabilization"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "150",
+        },
+
+        {
+            "slug": "entropy_decay_chains",
+            "name": "Decay Chains",
+
+            "mod_unlock": [
+                {
+                    "slug": "entropic_radiation_emitter"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "atrophy_spread"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "entropy_probabilistic_nature",
+            "name": "Probabilistic Nature",
+
+            "mod_unlock": [
+                {
+                    "slug": "entropy_retaliation_component"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "atomic_collapse"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+        {
+            "slug": "entropy_exponential_decay",
+            "name": "Exponential Decay",
+
+            "mod_unlock": [
+                {
+                    "slug": "maxwell's_puzzle_box"
+                }
+        ,
+                {
+                    "slug": "structural_integrity_diminisher"
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "divide_half-life"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2200",
+        },
+
+        {
+            "slug": "oathbound_people's_contracts",
+            "name": "People's Contracts",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "duty_of_care"
+                }
+        ,
+                {
+                    "slug": "pre-battle_predictions"
+                }
+        ,
+                {
+                    "slug": "the_throne"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "100",
+        },
+
+        {
+            "slug": "oathbound_articles_of_faith",
+            "name": "Articles of Faith",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "loyalty_to_the_flag"
+                }
+        ,
+                {
+                    "slug": "honor_and_unity"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "800",
+        },
+
+        {
+            "slug": "oathbound_unbreakable_vows",
+            "name": "Unbreakable Vows",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "guarded_utopia"
+                }
+        ,
+                {
+                    "slug": "seer's_crusade"
+                }
+        ,
+                {
+                    "slug": "doctrine_development_vi"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "2750",
+        },
+        {
+            "slug": "oathbound_orchestrated_manipulation",
+            "name": "Orchestrated Manipulation",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "direct_tribulation"
+                }
+        ,
+                {
+                    "slug": "intervention"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1200",
+        },
+
+
+        {
+            "slug": "society_residential_development",
+            "name": "Residential Development",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "residential_sectors_upgrade"
+                }
+        ,
+                {
+                    "slug": "colony_district_buildings"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "520",
+        },
+
+        {
+            "slug": "society_virtual_hospitality_systems",
+            "name": "Virtual Hospitality Systems",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "residential_sectors_advanced_upgrade"
+                }
+        ,
+                {
+                    "slug": "holistic_military_care_center"
+                }
+        ,
+                {
+                    "slug": "virtual_entertainment_plaza"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "1700",
+        },
+
+        {
+            "slug": "society_future_society_tech",
+            "name": "Future Society Tech",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    //  "slug": "???"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        },
+
+        {
+            "slug": "military_future_military_tech",
+            "name": "Future Military Tech",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    //  "slug": "???"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        },
+        {
+            "slug": "military_future_military_wildcards",
+            "name": "Wildcards",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "mushroom_farms"
+                },
+                {
+                    "slug": "crystalloid_grafts"
+                },
+                {
+                    "slug": "crystalloid_wave-emitters"
+                },
+                {
+                    "slug": "extradimensional_penguin_comms"
+                },
+                {
+                    "slug": "accidental_enlightenment"
+                },
+                {
+                    "slug": "arc_waves"
+                }
+                , {
+                    "slug": "xna_agitators"
+                },
+                {
+                    "slug": "mechanical_augments"
+                },
+                {
+                    "slug": "cybernetic_resilience"
+                },
+                {
+                    "slug": "biological_toughening"
+                },
+                {
+                    "slug": "occlusion_filters"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        },
+        {
+            "slug": "military_future_military_unit",
+            "name": "Unit Improvements",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "armor:_mechanical"
+                },
+                {
+                    "slug": "armor:_biological_and_cyborg"
+                },
+                {
+                    "slug": "shields:_cyborg_and_mechanical"
+                },
+                {
+                    "slug": "shields:_biological"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        },
+        {
+            "slug": "military_future_military_resistance",
+            "name": "Resistances",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "bio-resistant_materials_breakthrough"
+                },
+                {
+                    "slug": "arc-resistant_materials_breakthrough"
+                },
+                {
+                    "slug": "entropy-resistant_materials_breakthrough"
+                },
+                {
+                    "slug": "thermal-resistant_materials_breakthrough"
+                },
+                {
+                    "slug": "kinetic-resistant_materials_breakthrough"
+                },
+                {
+                    "slug": "psionic-resistant_materials_breakthrough"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        },
+        {
+            "slug": "military_future_military_weapons",
+            "name": "Weapons",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "arc_weaponry_breakthrough"
+                },
+                {
+                    "slug": "firearms_weaponry_breakthrough"
+                },
+                {
+                    "slug": "explosive_weaponry_breakthrough"
+                },
+                {
+                    "slug": "psionic_weaponry_breakthrough"
+                },
+                {
+                    "slug": "biochemical_weaponry_breakthrough"
+                },
+                {
+                    "slug": "entropy_weaponry_breakthrough"
+                },
+                {
+                    "slug": "sonic_weaponry_breakthrough"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        },
+        {
+            "slug": "society_future_society_colony",
+            "name": "Colony and Empire",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "colonist_efficiency:_production"
+                },
+                {
+                    "slug": "colonist_efficiency:_supply"
+                },
+                {
+                    "slug": "colonist_efficiency:_energy"
+                },
+                {
+                    "slug": "colonist_efficiency:_knowledge"
+                },
+                {
+                    "slug": "colony_breakthrough:_energy"
+                },
+                {
+                    "slug": "colony_breakthrough:_supply"
+                },
+                {
+                    "slug": "colony_breakthrough:_production"
+                },
+                {
+                    "slug": "colony_breakthrough:_knowledge"
+                },
+                {
+                    "slug": "empire_breakthrough:_doctrine_slot"
+                },
+                {
+                    "slug": "empire_breakthrough:_influence"
+                }, {
+                    "slug": "empire_breakthrough:_cosmite"
+                },
+                {
+                    "slug": "empire_breakthrough:_rivers"
+                }, {
+                    "slug": "empire_breakthrough:_lava_stream"
+                }
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        }
+             ,
+        {
+            "slug": "society_future_society_operation",
+            "name": "Operations",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "operation_breakthrough:_op_defense"
+                },
+                {
+                    "slug": "operation_breakthrough:_op_strength"
+                },
+                {
+                    "slug": "operation_breakthrough:_tactical_points"
+                },
+                {
+                    "slug": "operation_breakthrough:_strategic_points"
+                },
+
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        },
+        {
+            "slug": "society_future_society_unit",
+            "name": "Unit Production Bonuses",
+
+            "mod_unlock": [
+                {
+
+                }
+
+            ],
+            "op_unlock": [
+                {
+                    "slug": "colony_breakthrough:_unit_ranks"
+                },
+                {
+                    "slug": "colony_breakthrough:_unit_armor"
+                },
+                {
+                    "slug": "colony_breakthrough:_unit_shields"
+                },
+                {
+                    "slug": "colony_breakthrough:_unit_health"
+                },
+
+
+            ],
+            "unit_unlock": [
+                {
+
+                }
+
+            ],
+            "cost": "4500",
+        }
 
 
 ]
