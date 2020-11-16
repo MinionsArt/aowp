@@ -379,7 +379,7 @@ var jsonMods = {
     },*/
 
         {
-            "slug": "sundering_claws",
+            "slug": "crippling_claws",
             "tier": "I",
             "name": "Crippling Claws",
 
@@ -1422,7 +1422,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Whenever the unit takes damage, its attacker is teleported 1 hex away from their current position, and has an 8 <strengthPhysical></strengthPhysical> strength chance to receive <abilityred>Dimensional Instability</abilityred>.<br> Voidtech or Voidtech-modded units adjacent to this one receive 3 <shield></shield> and gain a level of <actionblue>Stagger Resistance</actionblue>. <br><br> Additionally, this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
+            "description": "Whenever the unit takes damage, its attacker is teleported 1 hex away from their current position, and has an 8 <strengthPhysical></strengthPhysical> strength chance to receive <abilityred>Dimensional Instability</abilityred>.<br><br> The unit and  Voidtech or Voidtech-modded units adjacent to it receive 2 <shield></shield><br><br> <abilityred>This Mod can only be applied to Heavy units. </abilityred> ",
 
 
     },
