@@ -8811,6 +8811,9 @@ var jsonTech = {
                     "slug": "extradimensional_penguin_comms"
                 },
                 {
+                    "slug": "captive_thunder"
+                },
+                {
                     "slug": "accidental_enlightenment"
                 },
                 {
@@ -8830,6 +8833,12 @@ var jsonTech = {
                 },
                 {
                     "slug": "occlusion_filters"
+                },
+                {
+                    "slug": "advanced_essence_catalysts"                
+                },
+                {
+                    "slug": "feline_chorus"
                 }
 
             ],
@@ -8863,8 +8872,10 @@ var jsonTech = {
                 },
                 {
                     "slug": "shields:_biological"
+                },
+                {
+                    "slug": "xeno_panacea"
                 }
-
             ],
             "unit_unlock": [
                 {
