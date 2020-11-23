@@ -1428,7 +1428,7 @@ var jsonMods = {
     },
         {
             "slug": "static_buildup_module",
-            "tier": "II",
+            "tier": "I",
             "name": "Static Buildup Module",
 
             "type": "Offensive Mod",
@@ -1439,7 +1439,7 @@ var jsonMods = {
     },
         {
             "slug": "arc_retaliation_defense",
-            "tier": "IV",
+            "tier": "II",
             "name": "Arc Retaliation Defense",
 
             "type": "Defense Mod - Shields",
@@ -1450,7 +1450,7 @@ var jsonMods = {
     },
         {
             "slug": "arc_impact_module",
-            "tier": "VI",
+            "tier": "IV",
             "name": "Arc Impact Module",
 
             "type": "Offensive Mod",
@@ -1461,7 +1461,7 @@ var jsonMods = {
     },
         {
             "slug": "arc_extension_module",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Arc Extension Module",
 
             "type": "Offensive Mod",
@@ -1472,7 +1472,7 @@ var jsonMods = {
     },
         {
             "slug": "stun_module",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Stun Module",
 
             "type": "Offensive Mod",
@@ -1483,7 +1483,7 @@ var jsonMods = {
     },
         {
             "slug": "positron_arc_storm_projector",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Positron Arc Storm Projector",
 
             "type": "Offensive Mod",
@@ -1538,7 +1538,7 @@ var jsonMods = {
     },
         {
             "slug": "viscous_strain",
-            "tier": "VI",
+            "tier": "IV",
             "name": "Viscous Strain",
 
             "type": "Offensive Mod",
@@ -1549,7 +1549,7 @@ var jsonMods = {
     },
         {
             "slug": "blight_infection",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Blightworm Injector",
 
             "type": "Offensive Mod",
@@ -1571,7 +1571,7 @@ var jsonMods = {
     },
         {
             "slug": "flash_payload",
-            "tier": "II",
+            "tier": "I",
             "name": "Flash Payload",
 
             "type": "Offensive Mod",
@@ -1593,7 +1593,7 @@ var jsonMods = {
     },
         {
             "slug": "guided_delivery_mechanisms",
-            "tier": "VI",
+            "tier": "IV",
             "name": "Guided Delivery Mechanisms",
 
             "type": "Offensive Mod",
@@ -1626,7 +1626,7 @@ var jsonMods = {
     },
         {
             "slug": "micro_nuclear_payload",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Micro Nuclear Payload",
 
             "type": "Offensive Mod",
@@ -1648,7 +1648,7 @@ var jsonMods = {
     },
         {
             "slug": "ammunition_electrified",
-            "tier": "III",
+            "tier": "II",
             "name": "Ammunition: Electrified",
 
             "type": "Offensive Mod",
@@ -1659,7 +1659,7 @@ var jsonMods = {
     },
         {
             "slug": "rail_accelerators",
-            "tier": "III",
+            "tier": "II",
             "name": "Rail Accelerators",
 
             "type": "Offensive Mod",
@@ -1670,7 +1670,7 @@ var jsonMods = {
     },
         {
             "slug": "ammunition_fire_burst",
-            "tier": "VII",
+            "tier": "VI",
             "name": "Ammunition: Fire Burst",
 
             "type": "Offensive Mod",
@@ -1681,7 +1681,7 @@ var jsonMods = {
     },
         {
             "slug": "kinetic_phase_modulator",
-            "tier": "V",
+            "tier": "IV",
             "name": "Kinetic Phase Modulator",
 
             "type": "Offensive Mod",
@@ -1692,7 +1692,7 @@ var jsonMods = {
     },
         {
             "slug": "shockwave_infuser",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Shockwave Infuser",
 
             "type": "Offensive Mod",
@@ -1813,7 +1813,7 @@ var jsonMods = {
     },
         {
             "slug": "mantra_of_control",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Mantra of Control",
 
             "type": "Defensive Mod - Shields",
@@ -1825,7 +1825,7 @@ var jsonMods = {
     },
         {
             "slug": "aether_storm",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Aether Storm",
 
             "type": "Offensive Mod",
@@ -2031,7 +2031,7 @@ var jsonMods = {
     },
         {
             "slug": "sono-interference_module",
-            "tier": "III",
+            "tier": "VIII",
             "name": "Sono-Interference Module",
 
             "type": "Offensive Mod",
