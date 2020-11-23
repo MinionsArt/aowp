@@ -1674,7 +1674,7 @@ var jsonMods = {
             "name": "Ammunition: Fire Burst",
 
             "type": "Offensive Mod",
-            "cost": "10 <tricorium></tricorium>",
+            "cost": "15 <tricorium></tricorium>",
             "description": "Allows the unit to fire incendiary ammunition to deal Thermal damage and have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks) to set targets on fire, causing <abilityred>Burning</abilityred> for 3 <turn></turn>.<br><br> Attacks deal 75% of their damage to adjecent units.<br><br><abilityred>Only one kind of ammunition can be active at any time. </abilityred> <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
 
 
