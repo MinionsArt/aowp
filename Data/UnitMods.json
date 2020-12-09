@@ -1333,7 +1333,7 @@ var jsonMods = {
             "name": "Pain Mirror",
 
             "type": "Defense Mod - Shields",
-            "cost": "15 <tricorium></tricorium>",
+            "cost": "10 <tricorium></tricorium>",
             "description": "Whenever this unit is damaged from within 4 hexes, deal 8 <DamagePsyche></DamagePsyche> damage back to the attacker. This damage also has a 8 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Broken Mind</abilityred>.<br><br> Additionally, this mod grants the unit +2<shield></shield><br><br> <abilityred>This Mod can be applied to any units. </abilityred> ",
 
 
@@ -1488,7 +1488,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": " Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred><br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Positron Arc Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><bulletList><bullet><xpCol>Stun</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> instead.</bullet><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+            "description": " Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred><br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Positron Arc Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
 
 
     },
@@ -2161,7 +2161,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Heals the user and all friendly units in a 3 hex radius around it for 10<hp></hp> at the end of each turn. <br><br> Additionally,this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "Heals the user and all friendly units in a 2 hex radius around it for 10<hp></hp> at the end of each turn. This effect does not stack.<br><br> Additionally,this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
@@ -2205,7 +2205,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Grants +1<armor></armor> for each adjacent unit with an Oath mod.<br><br> Additionally,this mod grants the unit +1 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "Grants +1<armor></armor> for each adjacent unit with an Oath mod, up to a maximum of +2.<br><br> Additionally,this mod grants the unit +1 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
@@ -2306,7 +2306,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Additionally,this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Amass Chaos Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>12 <DamageEntropy></DamageEntropy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Damage enemies in a 4 hex cone with a blast of chaos.<bulletList><bullet><xpCol>Reality Break</xpCol> 12<StrengthEntropy></StrengthEntropy> strength chance to apply <abilityred>one random negative effect</abilityred> to any unit, ignoring any type incompatiblity the unit might have.</bullet><bullet>Cooldown: 1 <turn></turn></bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
+            "description": "Additionally,this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Amass Chaos Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>12 <DamageEntropy></DamageEntropy><tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Damage enemies in a 4 hex cone with a blast of chaos.<bulletList><bullet><xpCol>Reality Break</xpCol> 10 x 2<StrengthEntropy></StrengthEntropy> strength chance to apply <abilityred>one random negative effect</abilityred> to any unit twice, ignoring any type incompatiblity the unit might have.</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
 
 
     },
