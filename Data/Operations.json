@@ -2357,7 +2357,7 @@ var jsonOperations = {
             "name": "Divine Legion",
             "tier": "VII",
             "type": "Doctrine Operation",
-            "description": "Infuse your Drained with Essence, forming a divine legion that cannot be stopped.<br><br>All Drained units gain <actionblue>Essence Infusion</actionblue>, granting them  +2<shield></shield>, <actionblue>Resurgence</actionblue> and allowing them to carry 2 additional <actionblue><essenceCharge></essenceCharge>Essence Charges</actionblue>.",
+            "description": "Infuse your Drained with Essence, forming a divine legion that cannot be stopped.<br><br>All Drained units gain <actionblue>Essence Infusion</actionblue>, granting them  +2<shield></shield>, <actionblue>Resurgence</actionblue> and allowing them to carry 1 additional <actionblue><essenceCharge></essenceCharge>Essence Charge</actionblue>.",
             "energy_cost": "200",
             "casting": "15 <stratPoint></stratPoint>",
         },
