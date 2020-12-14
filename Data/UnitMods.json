@@ -1333,7 +1333,7 @@ var jsonMods = {
             "name": "Pain Mirror",
 
             "type": "Defense Mod - Shields",
-            "cost": "15 <tricorium></tricorium>",
+            "cost": "10 <tricorium></tricorium>",
             "description": "Whenever this unit is damaged from within 4 hexes, deal 8 <DamagePsyche></DamagePsyche> damage back to the attacker. This damage also has a 8 <strengthpsyche></strengthpsyche> strength chance to apply <abilityred>Broken Mind</abilityred>.<br><br> Additionally, this mod grants the unit +2<shield></shield><br><br> <abilityred>This Mod can be applied to any units. </abilityred> ",
 
 
@@ -1428,7 +1428,7 @@ var jsonMods = {
     },
         {
             "slug": "static_buildup_module",
-            "tier": "II",
+            "tier": "I",
             "name": "Static Buildup Module",
 
             "type": "Offensive Mod",
@@ -1439,7 +1439,7 @@ var jsonMods = {
     },
         {
             "slug": "arc_retaliation_defense",
-            "tier": "IV",
+            "tier": "II",
             "name": "Arc Retaliation Defense",
 
             "type": "Defense Mod - Shields",
@@ -1450,7 +1450,7 @@ var jsonMods = {
     },
         {
             "slug": "arc_impact_module",
-            "tier": "VI",
+            "tier": "IV",
             "name": "Arc Impact Module",
 
             "type": "Offensive Mod",
@@ -1461,7 +1461,7 @@ var jsonMods = {
     },
         {
             "slug": "arc_extension_module",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Arc Extension Module",
 
             "type": "Offensive Mod",
@@ -1472,7 +1472,7 @@ var jsonMods = {
     },
         {
             "slug": "stun_module",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Stun Module",
 
             "type": "Offensive Mod",
@@ -1483,12 +1483,12 @@ var jsonMods = {
     },
         {
             "slug": "positron_arc_storm_projector",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Positron Arc Storm Projector",
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": " Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred><br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Positron Arc Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><bulletList><bullet><xpCol>Stun</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Stunned</abilityred> to non-Ethereal for 1<turn></turn>. If resisted, apply <abilityred>Static Charge</abilityred> instead.</bullet><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
+            "description": " Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred><br><br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Positron Arc Storm</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleAction></singleAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>20<DamageWave></DamageWave> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Send forth a powerful torrent of Arc energy in a 4 hex cone.<br><bulletList><bullet><xpCol>Massive Impact</xpCol> <abilityred>Stagger</abilityred> units, including stagger resistant units, reducing action points and canceling defensive modes.</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Arc)</silver></popUpDesc>",
 
 
     },
@@ -1538,7 +1538,7 @@ var jsonMods = {
     },
         {
             "slug": "viscous_strain",
-            "tier": "VI",
+            "tier": "IV",
             "name": "Viscous Strain",
 
             "type": "Offensive Mod",
@@ -1549,7 +1549,7 @@ var jsonMods = {
     },
         {
             "slug": "blight_infection",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Blightworm Injector",
 
             "type": "Offensive Mod",
@@ -1571,7 +1571,7 @@ var jsonMods = {
     },
         {
             "slug": "flash_payload",
-            "tier": "II",
+            "tier": "I",
             "name": "Flash Payload",
 
             "type": "Offensive Mod",
@@ -1593,7 +1593,7 @@ var jsonMods = {
     },
         {
             "slug": "guided_delivery_mechanisms",
-            "tier": "VI",
+            "tier": "IV",
             "name": "Guided Delivery Mechanisms",
 
             "type": "Offensive Mod",
@@ -1626,7 +1626,7 @@ var jsonMods = {
     },
         {
             "slug": "micro_nuclear_payload",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Micro Nuclear Payload",
 
             "type": "Offensive Mod",
@@ -1648,7 +1648,7 @@ var jsonMods = {
     },
         {
             "slug": "ammunition_electrified",
-            "tier": "III",
+            "tier": "II",
             "name": "Ammunition: Electrified",
 
             "type": "Offensive Mod",
@@ -1659,7 +1659,7 @@ var jsonMods = {
     },
         {
             "slug": "rail_accelerators",
-            "tier": "III",
+            "tier": "II",
             "name": "Rail Accelerators",
 
             "type": "Offensive Mod",
@@ -1670,18 +1670,18 @@ var jsonMods = {
     },
         {
             "slug": "ammunition_fire_burst",
-            "tier": "VII",
+            "tier": "VI",
             "name": "Ammunition: Fire Burst",
 
             "type": "Offensive Mod",
-            "cost": "10 <tricorium></tricorium>",
+            "cost": "15 <tricorium></tricorium>",
             "description": "Allows the unit to fire incendiary ammunition to deal Thermal damage and have a 12 <StrengthThermal></StrengthThermal> strength chance (8 <StrengthThermal></StrengthThermal> for repeating attacks) to set targets on fire, causing <abilityred>Burning</abilityred> for 3 <turn></turn>.<br><br> Attacks deal 75% of their damage to adjecent units.<br><br><abilityred>Only one kind of ammunition can be active at any time. </abilityred> <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
 
 
     },
         {
             "slug": "kinetic_phase_modulator",
-            "tier": "V",
+            "tier": "IV",
             "name": "Kinetic Phase Modulator",
 
             "type": "Offensive Mod",
@@ -1692,7 +1692,7 @@ var jsonMods = {
     },
         {
             "slug": "shockwave_infuser",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Shockwave Infuser",
 
             "type": "Offensive Mod",
@@ -1730,7 +1730,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "This unit's ranged Laser weapons gain +1 range. Additionally this unit's weapons gain +20% accuracy. <br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
+            "description": "This unit's ranged Laser weapons gain +1 range. Additionally this unit's weapons gain +20% accuracy. <br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Laser ability. </abilityred> ",
 
 
     },
@@ -1813,7 +1813,7 @@ var jsonMods = {
     },
         {
             "slug": "mantra_of_control",
-            "tier": "VIII",
+            "tier": "VI",
             "name": "Mantra of Control",
 
             "type": "Defensive Mod - Shields",
@@ -1825,7 +1825,7 @@ var jsonMods = {
     },
         {
             "slug": "aether_storm",
-            "tier": "IX",
+            "tier": "VIII",
             "name": "Aether Storm",
 
             "type": "Offensive Mod",
@@ -1855,7 +1855,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "All melee attacks made by the unit now have a 8 <strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred> (4 <strengthentropy></strengthentropy> strength chance on repeating attacks). On succes, the caster gains an <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue>, increasing damage.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Melee ability. </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Essence Expulsion</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>0<range></range><tab></tab>8<DamageEntropy></DamageEntropy> <tab></tab>All <essencechargeall></essencechargeall></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Consumes all <EssenceCharge></EssenceCharge><actionblue>Essence Charges</actionblue>, dealing 8 <DamageEntropy></DamageEntropy> to all adjacent units for each <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue> consumed and staggers them. <bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and cancelling defensive modes.</bullet><br><bullet>Cooldown: 1 <turn></turn>.</bullet></bulletList><br><silver>(Entropy, Melee)</silver></popUpDesc> ",
+            "description": "All melee attacks made by the unit now have a 8 <strengthentropy></strengthentropy> strength chance to apply <abilityred>Energy Drain</abilityred> (4 <strengthentropy></strengthentropy> strength chance on repeating attacks). On succes, the caster gains an <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue>, increasing damage.<br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have a Melee ability. </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Essence Expulsion</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>0<range></range><tab></tab>8<DamageEntropy></DamageEntropy> <tab></tab>All <essencechargeall></essencechargeall></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Consumes all <EssenceCharge></EssenceCharge><actionblue>Essence Charges</actionblue>, dealing 4 <DamageEntropy></DamageEntropy> to all adjacent units for each <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue> consumed and staggers them. <bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and cancelling defensive modes.</bullet><br><bullet>Cooldown: 1 <turn></turn>.</bullet></bulletList><br><silver>(Entropy, Melee)</silver></popUpDesc> ",
 
 
     },
@@ -1878,7 +1878,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Hit Points",
             "cost": "10 <tricorium></tricorium>",
-            "description": "The Drained gains +10% <DamageEntropy></DamageEntropy> to their attack for each <EssenceCharge></EssenceCharge><actionblue>Essence Charge</actionblue> they have active. Additionally, their Mind Possession ability is upgraded to Mind Dominance, which works on tier III units.  <br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to the Heritor Drained. </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Mind Dominance</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br> 8 <strengthentropy></strengthentropy> strength chance to <abilityred>Mind Control</abilityred> target enemy non-mindless, non-hero, non-tier 4 unit. On failure, the unit is Stunned for 1 <turn></turn> instead. </bullet><bullet><xpCol>Mind Dominance</xpCol> 8 <strengthentropy></strengthentropy> strength chance to <abilityred>Mind Control</abilityred> target enemy non-mindless, non-hero, non-tier 4 unit. On failure, the unit is <abilityred>Stunned</abilityred> for 1 <turn></turn> instead. </bullet><br><bullet>Can only be used once per battle.</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
+            "description": "The Drained gains <actionblue>Resurgence</actionblue> allowing it to return from the dead after combat. Additionally, their Mind Possession ability is upgraded to Mind Dominance, which works on tier III units.  <br><br> Additionally, this mod grants the unit +10 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to the Heritor Drained. </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Mind Dominance</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy> <tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br> 8 <strengthentropy></strengthentropy> strength chance to <abilityred>Mind Control</abilityred> target enemy non-mindless, non-hero, non-tier 4 unit. On failure, the unit is Stunned for 1 <turn></turn> instead. </bullet><bullet><xpCol>Mind Dominance</xpCol> 8 <strengthentropy></strengthentropy> strength chance to <abilityred>Mind Control</abilityred> target enemy non-mindless, non-hero, non-tier 4 unit. On failure, the unit is <abilityred>Stunned</abilityred> for 1 <turn></turn> instead. </bullet><br><bullet>Can only be used once per battle.</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
 
 
     },
@@ -1900,7 +1900,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "10 <tricorium></tricorium>",
-            "description": "Gives the unit a conduit to channel their essence through, inflicting damage at range.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an ability that Drains Essence. </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Essence Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>8<DamageEntropy></DamageEntropy> <tab></tab>5<range></range><tab></tab>All <essencechargeall></essencechargeall></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>The unit consumes all <EssenceCharge></EssenceCharge> <actionblue>Essence Charges</actionblue> and channels them into a blast of Essence, dealing damage in a 1 hex radius area of effect.<bulletList><bullet><xpCol>Essence Blast</xpCol> Deals +5 <DamageEntropy></DamageEntropy> per <EssenceCharge></EssenceCharge> <actionblue>Essence Charge</actionblue>.</bullet><br><bullet>Ignores line of sight penalties</bullet><br><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></popUpDesc> ",
+            "description": "Gives the unit a conduit to channel their essence through, inflicting damage at range.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an ability that Drains Essence. </abilityred>  <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Essence Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>10<DamageEntropy></DamageEntropy> <tab></tab>5<range></range><tab></tab>All <essencechargeall></essencechargeall></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>The unit consumes all <EssenceCharge></EssenceCharge> <actionblue>Essence Charges</actionblue> and channels them into a blast of Essence, dealing damage in a 1 hex radius area of effect.<bulletList><bullet><xpCol>Essence Blast</xpCol> Deals +3 <DamageEntropy></DamageEntropy> per <EssenceCharge></EssenceCharge> <actionblue>Essence Charge</actionblue>.</bullet><br><bullet>Ignores line of sight penalties</bullet><br><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></popUpDesc> ",
 
 
     },
@@ -2031,7 +2031,7 @@ var jsonMods = {
     },
         {
             "slug": "sono-interference_module",
-            "tier": "III",
+            "tier": "VIII",
             "name": "Sono-Interference Module",
 
             "type": "Offensive Mod",
@@ -2161,7 +2161,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Heals the user and all friendly units in a 3 hex radius around it for 10<hp></hp> at the end of each turn. <br><br> Additionally,this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "Heals the user and all friendly units in a 2 hex radius around it for 10<hp></hp> at the end of each turn. This effect does not stack.<br><br> Additionally,this mod grants the unit +2 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
@@ -2172,7 +2172,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Shields",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Additionally,this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Scramble Destiny</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Enemy units in a 5 hex radius around the caster have a 12 <StrengthEntropy></StrengthEntropy> strength chance to gain <abilityred>Fatalism and Adversity</abilityred> for 2 <turn></turn>. Friendly units in a 5 hex radius gain either <actionblue>Providence</actionblue>, +10% damage on all abilities, or +2 <armor></armor> for 2 <turn></turn>.<br><br><bulletList><bullet>Cooldown: 2 <turn></turn>.</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
+            "description": "Additionally,this mod grants the unit +2 <shield></shield>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Scramble Destiny</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Enemy units in a 3 hex radius around the caster have a 12 <StrengthEntropy></StrengthEntropy> strength chance to gain either <abilityred>Fatalism or Adversity</abilityred> for 2 <turn></turn>. Friendly units in a 5 hex radius gain either <actionblue>Providence</actionblue>, +10% damage on all abilities, or +2 <armor></armor> for 2 <turn></turn>.<br><br><bulletList><bullet>Cooldown: 2 <turn></turn>.</bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
 
 
     },
@@ -2205,7 +2205,7 @@ var jsonMods = {
 
             "type": "Defense Mod - Armor",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Grants +1<armor></armor> for each adjacent unit with an Oath mod.<br><br> Additionally,this mod grants the unit +1 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "Grants +1<armor></armor> for each adjacent unit with an Oath mod, up to a maximum of +2.<br><br> Additionally,this mod grants the unit +1 <armor></armor>.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
@@ -2306,7 +2306,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Additionally,this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Amass Chaos Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>12 <DamageEntropy></DamageEntropy><tab></tab>1<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Damage enemies in a 4 hex cone with a blast of chaos.<bulletList><bullet><xpCol>Reality Break</xpCol> 12<StrengthEntropy></StrengthEntropy> strength chance to apply <abilityred>one random negative effect</abilityred> to any unit, ignoring any type incompatiblity the unit might have.</bullet><bullet>Cooldown: 1 <turn></turn></bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
+            "description": "Additionally,this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> <br> <br> <silver>Unlocks Ability:</silver> <br><br> <popUpHeader3><titleBrown>Amass Chaos Blast</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Full Action<fullAction></fullAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>85%<accuracy></accuracy><tab></tab>12 <DamageEntropy></DamageEntropy><tab></tab>2-9<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Damage enemies in a 4 hex cone with a blast of chaos.<bulletList><bullet><xpCol>Reality Break</xpCol> 10 x 2<StrengthEntropy></StrengthEntropy> strength chance to apply <abilityred>one random negative effect</abilityred> to any unit twice, ignoring any type incompatiblity the unit might have.</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br><silver>(Entropy)</silver></popUpDesc>",
 
 
     },
