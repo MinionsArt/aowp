@@ -271,6 +271,7 @@
              var tex = document.createElement("DIV");
              tex.className = "tooltip";
              tex.innerHTML = abilityName;
+             tex.setAttribute('onclick', '');
              var dam = document.createElement("DIV");
              dam.className = "ability_damage";
              dam.innerHTML = abilityDam;
@@ -309,6 +310,7 @@
              var spa = document.createElement("SPAN");
              var tex = document.createElement("DIV");
              tex.className = "tooltip";
+             tex.setAttribute('onclick', '');
              tex.innerHTML = abilityName;
              spa.className = "tooltiptext";
              spa.innerHTML = "<p>" + "<span style=\"font-size=20px; color=rgb(158, 197, 225)\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
@@ -347,6 +349,7 @@
              dam.innerHTML = abilityDam;
 
              tex.className = "tooltip";
+             tex.setAttribute('onclick', '');
              tex.innerHTML = abilityName;
 
              spa.className = "tooltiptext";
@@ -394,6 +397,7 @@
              var spa = document.createElement("SPAN");
              var tex = document.createElement("DIV");
              tex.className = "tooltip";
+             tex.setAttribute('onclick', '');
              tex.innerHTML = abilityName;
              spa.className = "tooltiptext";
              spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
@@ -840,6 +844,7 @@
              var spa = document.createElement("SPAN");
              var tex = document.createElement("DIV");
              tex.className = "tooltip";
+             tex.setAttribute('onclick', '');
              //tex.innerHTML = modUnlockName;
 
              spa.innerHTML = "<p>" + opUnlockName + "</p>" + tier + "<hr>"
@@ -949,6 +954,7 @@
              var spa = document.createElement("SPAN");
              var tex = document.createElement("DIV");
              tex.className = "tooltip";
+             tex.setAttribute('onclick', '');
              //tex.innerHTML = modUnlockName;
 
              spa.innerHTML = "<p>" + unitNameShort + "</p>" + tier + "<hr>";
