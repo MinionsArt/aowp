@@ -1071,12 +1071,12 @@ var jsonMods = {
     },
         {
             "slug": "bio-spore_hyper_aggression",
-            "tier": "VII",
+            "tier": "III",
             "name": "Bio-Spore Hyper Aggression",
 
             "type": "Defense Mod - Hit Points",
             "cost": "15 <tricorium></tricorium>",
-            "description": "Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Bio-Spore Purification</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Releases a burst of spores from the unit, driving all friendly Biological and Cyborg units within 2 hexes around them into <actionblue> Hyper Aggression</actionblue>, increasing their damage by 25% for 3 <turn></turn>. <br> Mechanical units with Xenoplague upgrades can also be affected<bulletList><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></popUpDesc>",
+            "description": "Additionally, this mod grants the unit +15 <hp></hp>.<br><br> <abilityred>This Mod can only be applied to Biological, Cyborg and Mechanical units </abilityred> <br><br> <silver>Unlocks Ability:</silver> <br><br><popUpHeader3><titleBrown>Bio-Spore Purification</titleBrown></popUpHeader3><br><HelpText>Active Ability<tab></tab><actionblue>Free Action<freeAction></freeAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>0<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br>Releases a burst of spores from the unit, driving all friendly Biological and Cyborg units within 2 hexes around them into <actionblue> Hyper Aggression</actionblue>, increasing their damage by 40% for 2 <turn></turn>. <br> Mechanical units with Xenoplague upgrades can also be affected<bulletList><bullet>Cooldown: 3 <turn></turn></bullet></bulletList><br></popUpDesc>",
 
 
 
