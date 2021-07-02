@@ -6177,9 +6177,6 @@ var jsonUnits = {
    },
                 {
                     "slug": "thermal_status_effect_immunity"
-   },
-                {
-                    "slug": "thermal_status_effect_immunity"
    }
   ],
             "unit_types": [
