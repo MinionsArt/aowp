@@ -10084,9 +10084,6 @@ var jsonUnits = {
                     "slug": "ferocious_determination"
    },
                 {
-                    "slug": "ferocious_determination"
-   },
-                {
                     "slug": "skitter"
    },
                 {
@@ -10144,9 +10141,6 @@ var jsonUnits = {
             "armor": 3,
             "tier": 2,
             "passives": [
-                {
-                    "slug": "ferocious_determination"
-   },
                 {
                     "slug": "ferocious_determination"
    },
@@ -10222,9 +10216,6 @@ var jsonUnits = {
                     "slug": "ferocious_determination"
    },
                 {
-                    "slug": "ferocious_determination"
-   },
-                {
                     "slug": "hyper-evolved_immune_system"
    },
                 {
@@ -10287,9 +10278,6 @@ var jsonUnits = {
             "passives": [
                 {
                     "slug": "all-round_awareness"
-   },
-                {
-                    "slug": "ferocious_determination"
    },
                 {
                     "slug": "ferocious_determination"
