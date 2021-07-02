@@ -1780,7 +1780,7 @@ var jsonOperations = {
             "slug": "compelling_cause",
             "name": "Compelling Cause",
             "tier": "VIII",
-            "type": "Strategic Operation (Sustained)",
+            "type": "Strategic Operation (Summon)",
             "description": "Target an enemy colony and compel them to your cause. Summon two Tier 2 units from the target faction, spawning them adjacent to the enemy colony.",
             "energy_cost": "140",
             "casting": "16 <stratPoint></stratPoint>",
