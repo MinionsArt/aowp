@@ -3176,6 +3176,7 @@ var jsonOperations = {
             "description": "Sabotage target enemy player's relationship with a faction, degrading their relation over time until they eventually reach a state in which they will go to war with the player.",
             "energy_cost": "0",
             "casting": "16 <stratPoint></stratPoint>",
+            "influence_cost": "80",
         },
 
         {
