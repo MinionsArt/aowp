@@ -12,7 +12,7 @@ var jsonMods = {
         },
         {
             "slug": "enhanced_limb_augments",
-            "tier": "",
+            "tier": "I",
             "name": "Enhanced Limb Augments",
 
             "type": "Defense Mod - Armor",
@@ -23,7 +23,7 @@ var jsonMods = {
         },
         {
             "slug": "therian_ally_insignia",
-            "tier": "",
+            "tier": "II",
             "name": "Therian Ally Insignia",
 
             "type": "Defense Mod - Shields",
@@ -34,7 +34,7 @@ var jsonMods = {
         },
         {
             "slug": "hunters_camouflage",
-            "tier": "",
+            "tier": "II",
             "name": "Hunter's Camouflage",
 
             "type": "Defense Mod - Armor",
@@ -45,7 +45,7 @@ var jsonMods = {
         },
         {
             "slug": "might_of_the_therians",
-            "tier": "",
+            "tier": "III",
             "name": "Might of the Therians",
 
             "type": "Offensive Mod",
@@ -122,7 +122,7 @@ var jsonMods = {
 
         {
             "slug": "enthralled",
-            "tier": "",
+            "tier": "III",
             "name": "Enthralled",
 
             "type": "Offensive Mod",
@@ -661,7 +661,7 @@ var jsonMods = {
     },
         {
             "slug": "autonom_network_connector",
-            "tier": "",
+            "tier": "I",
             "name": "Autonom Network Connector",
 
             "type": "Defense Mod - Armor",
@@ -673,7 +673,7 @@ var jsonMods = {
 
         {
             "slug": "combat_protocol_implants",
-            "tier": "",
+            "tier": "II",
             "name": "Combat Protocol Implants",
 
             "type": "Offensive Mod",
@@ -684,7 +684,7 @@ var jsonMods = {
     },
         {
             "slug": "concussive_ordnance",
-            "tier": "",
+            "tier": "II",
             "name": "Concussive Ordnance",
 
             "type": "Offensive Mod",
@@ -695,7 +695,7 @@ var jsonMods = {
     },
         {
             "slug": "debilitating_strain",
-            "tier": "",
+            "tier": "I",
             "name": "Debilitating Strain",
 
             "type": "Offensive Mod",
@@ -706,7 +706,7 @@ var jsonMods = {
     },
         {
             "slug": "euphoric_spores",
-            "tier": "",
+            "tier": "II",
             "name": "Euphoric Spores",
 
             "type": "Defense Mod - Hit Points",
@@ -717,7 +717,7 @@ var jsonMods = {
     },
         {
             "slug": "eyes_of_eternity",
-            "tier": "",
+            "tier": "II",
             "name": "Eyes of Eternity",
 
             "type": "Offensive Mod",
@@ -728,7 +728,7 @@ var jsonMods = {
     },
         {
             "slug": "focus.chimera",
-            "tier": "",
+            "tier": "II",
             "name": "Focus: Chimera",
 
             "type": "Offensive Mod",
@@ -739,7 +739,7 @@ var jsonMods = {
     },
         {
             "slug": "hallucinogenic_regulators",
-            "tier": "",
+            "tier": "II",
             "name": "Hallucinogenic Regulators",
 
             "type": "Offensive Mod",
@@ -750,7 +750,7 @@ var jsonMods = {
     },
         {
             "slug": "immolation_matrix",
-            "tier": "",
+            "tier": "II",
             "name": "Immolation Matrix",
 
             "type": "Offensive Mod",
@@ -761,7 +761,7 @@ var jsonMods = {
     },
         {
             "slug": "makeshift_choking_module",
-            "tier": "",
+            "tier": "I",
             "name": "Makeshift Choking Module",
 
             "type": "Offensive Mod",
@@ -772,7 +772,7 @@ var jsonMods = {
     },
         {
             "slug": "mantra_of_illusion",
-            "tier": "",
+            "tier": "II",
             "name": "Mantra of Illusion",
 
             "type": "Offensive Mod",
@@ -783,7 +783,7 @@ var jsonMods = {
     },
         {
             "slug": "mantra_of_the_branded",
-            "tier": "",
+            "tier": "II",
             "name": "Mantra of the Branded",
 
             "type": "Offensive Mod",
@@ -794,7 +794,7 @@ var jsonMods = {
     },
         {
             "slug": "mind_barrier",
-            "tier": "",
+            "tier": "II",
             "name": "Mind Barrier",
 
             "type": "Defense Mod - Shields",
@@ -805,7 +805,7 @@ var jsonMods = {
     },
         {
             "slug": "mining_laser_upgrade",
-            "tier": "",
+            "tier": "I",
             "name": "Mining Laser Upgrade",
 
             "type": "Offensive Mod",
@@ -816,7 +816,7 @@ var jsonMods = {
     },
         {
             "slug": "overcharger_augment",
-            "tier": "",
+            "tier": "III",
             "name": "Overcharger Augment",
 
             "type": "Defense Mod - Shields",
@@ -827,7 +827,7 @@ var jsonMods = {
     },
         {
             "slug": "poison_glands",
-            "tier": "",
+            "tier": "I",
             "name": "Poison Glands",
 
             "type": "Offensive Mod",
@@ -838,7 +838,7 @@ var jsonMods = {
     },
         {
             "slug": "reactive_shielding",
-            "tier": "",
+            "tier": "I",
             "name": "Reactive Shielding",
 
             "type": "Defense Mod - Shields",
@@ -849,7 +849,7 @@ var jsonMods = {
     },
         {
             "slug": "regeneration_spores",
-            "tier": "",
+            "tier": "II",
             "name": "Regeneration Spores",
 
             "type": "Defense Mod - Hit Points",
@@ -860,7 +860,7 @@ var jsonMods = {
     },
         {
             "slug": "self-repair_systems",
-            "tier": "",
+            "tier": "II",
             "name": "Self-Repair Systems",
 
             "type": "Defense Mod - Armor",
@@ -871,7 +871,7 @@ var jsonMods = {
     },
         {
             "slug": "smart_rounds",
-            "tier": "",
+            "tier": "II",
             "name": "Smart Rounds",
 
             "type": "Offensive Mod",
@@ -882,7 +882,7 @@ var jsonMods = {
     },
         {
             "slug": "sprouting_infestation",
-            "tier": "",
+            "tier": "III",
             "name": "Sprouting Infestation",
 
             "type": "Offensive Mod",
@@ -893,7 +893,7 @@ var jsonMods = {
     },
         {
             "slug": "blazing_infusion",
-            "tier": "",
+            "tier": "II",
             "name": "Blazing Infusion",
 
             "type": "Offensive Mod",
@@ -904,7 +904,7 @@ var jsonMods = {
     },
         {
             "slug": "fiery_infusion",
-            "tier": "",
+            "tier": "I",
             "name": "Fiery Infusion",
 
             "type": "Offensive Mod",
@@ -915,7 +915,7 @@ var jsonMods = {
     },
         {
             "slug": "contaminated_claws",
-            "tier": "",
+            "tier": "I",
             "name": "Contaminated Claws",
 
             "type": "Offensive Mod",
@@ -926,7 +926,7 @@ var jsonMods = {
     },
         {
             "slug": "evolutionary_mutation",
-            "tier": "",
+            "tier": "I",
             "name": "Evolutionary Mutation",
 
             "type": "Defense Mod - Hit Points",
@@ -937,7 +937,7 @@ var jsonMods = {
     },
         {
             "slug": "hardened_scything_claws",
-            "tier": "",
+            "tier": "II",
             "name": "Hardened Scything Claws",
 
             "type": "Offensive Mod",
@@ -948,7 +948,7 @@ var jsonMods = {
     },
         {
             "slug": "infection_x",
-            "tier": "",
+            "tier": "II",
             "name": "Infection X",
 
             "type": "Defense Mod - Hit Points",
@@ -959,7 +959,7 @@ var jsonMods = {
     },
         {
             "slug": "minor_infection_x",
-            "tier": "",
+            "tier": "I",
             "name": "Minor Infection X",
 
             "type": "Defense Mod - Hit Points",
@@ -970,7 +970,7 @@ var jsonMods = {
     },
         {
             "slug": "paralyzing_infusion",
-            "tier": "",
+            "tier": "II",
             "name": "Paralyzing Infusion",
 
             "type": "Offensive Mod",
@@ -981,7 +981,7 @@ var jsonMods = {
     },
         {
             "slug": "plague_carrier",
-            "tier": "",
+            "tier": "II",
             "name": "Plague Carrier",
 
             "type": "Defense Mod - Armor",
@@ -992,7 +992,7 @@ var jsonMods = {
     },
         {
             "slug": "scything_claws",
-            "tier": "",
+            "tier": "I",
             "name": "Scything Claws",
 
             "type": "Offensive Mod",
@@ -1003,7 +1003,7 @@ var jsonMods = {
     },
         {
             "slug": "superior_evolutionary_mutation",
-            "tier": "",
+            "tier": "II",
             "name": "Superior Evolutionary Mutation",
 
             "type": "Defense Mod - Hit Points",
@@ -1014,7 +1014,7 @@ var jsonMods = {
     },
         {
             "slug": "tempered_shells",
-            "tier": "",
+            "tier": "I",
             "name": "Tempered Shells",
 
             "type": "Defense Mod - Armor",
@@ -1653,7 +1653,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Allows the unit to fire electrified ammunition to deal Arc damage and have a 12 <StrengthWave></StrengthWave> strength chance (8 <StrengthWave></StrengthWave> for repeating attacks) to inflict <abilityred>Electrified</abilityred> on Cyborg and Mechanical units for 3 <turn></turn>.<br><br><abilityred>Only one kind of ammunition can be active at any time. </abilityred> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
+            "description": "Allows the unit to fire electrified ammunition to deal Arc damage and have a 12 <StrengthWave></StrengthWave> strength chance (8 <StrengthWave></StrengthWave> for repeating attacks) to inflict <abilityred>Electrified</abilityred> on Non-Ethereal units for 3 <turn></turn>.<br><br><abilityred>Only one kind of ammunition can be active at any time. </abilityred> <br><br> Additionally, this mod grants the unit 10% increased damage on all abilities.<br><br> <abilityred>This Mod can only be applied to units that have an Firearms ability. </abilityred> ",
 
 
     },
@@ -1929,7 +1929,7 @@ var jsonMods = {
 
         {
             "slug": "forgotten_essence_siphon",
-            "tier": "",
+            "tier": "I",
             "name": "Forgotten Essence Siphon",
 
             "type": "Offensive Mod",
@@ -1941,7 +1941,7 @@ var jsonMods = {
 
         {
             "slug": "entropic_transpositioner",
-            "tier": "",
+            "tier": "II",
             "name": "Entropic Transpositioner",
 
             "type": "Offensive Mod",
@@ -1952,7 +1952,7 @@ var jsonMods = {
     },
         {
             "slug": "corrupted_incarnation",
-            "tier": "",
+            "tier": "II",
             "name": "Corrupted Incarnation",
 
             "type": "Defense Mod - Armor",
@@ -1963,7 +1963,7 @@ var jsonMods = {
     },
         {
             "slug": "entropic_chaos_inducer",
-            "tier": "",
+            "tier": "III",
             "name": "Entropic Chaos Inducer",
 
             "type": "Offensive Mod",
