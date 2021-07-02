@@ -1312,7 +1312,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "Each time they deal a killing blow, they gain <actionblue>Dark Reward</actionblue> until end of combat, increasing their damage by 20% per stack, to a maximum of 6 stacks.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "Each time they deal a killing blow, they gain <actionblue>Dark Reward</actionblue> until end of combat, increasing their damage by 10% per stack, to a maximum of 6 stacks.<br><br> Additionally, this mod grants the unit 20% increased damage on all abilities<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
