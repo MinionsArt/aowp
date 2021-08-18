@@ -147,9 +147,9 @@ var jsonMods = {
             "tier": "I",
             "name": "Ocular Implants(Detector)",
 
-            "type": "Defense Mod - Armor",
+            "type": "Offensive Mod",
             "cost": "5 <tricorium></tricorium>",
-            "description": "This unit gains <actionblue>Detection</actionblue>, +1 Strategical Vision Range and a 20% bonus to critical hit chance <br> Additionally, this mod grants the unit +1<armor></armor> <br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
+            "description": "This unit gains <actionblue>Detection</actionblue>, +1 Strategical Vision Range and a 20% bonus to critical hit chance <br> Additionally, this mod grants the unit 10% increased damage on all abilities<br><br> <abilityred>This Mod can only be applied to Biological and Cyborg units. </abilityred> ",
 
 
         },
