@@ -5936,10 +5936,10 @@ var jsonUnits = {
                     "slug": "hasher_smg_kirko_hacker"
    },
                 {
-                    "slug": "scrambling_virus_kirko_hacker"
+                    "slug": "tuning_step_kirko_hacker"
    },
                 {
-                    "slug": "haywire_daemon_kirko_hacker"
+                    "slug": "neuroscrambler_daemon_kirko_hacker"
    },
                 {
                     "slug": "defense_mode"
