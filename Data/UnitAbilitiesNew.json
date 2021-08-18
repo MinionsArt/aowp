@@ -2287,16 +2287,16 @@ var jsonUnitAbilities = {
  },
         {
             "damage": "8<DamageWave></DamageWave> ",
-            "description": "<popUpHeader3><titleBrown>Scrambling Virus</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>8<DamageWave></DamageWave> <tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Deal Arc Damage to a unit. This attack jumps 2 times to other enemy units within 2 hexes.<br></br><bulletList><bullet><xpCol>High Impact</xpCol> <abilityred>Stagger</abilityred> units, reducing action points and canceling defense modes. </bullet><bullet><xpCol>Compromised</xpCol> 8<StrengthWave></StrengthWave> strength chance to apply <abilityred>Compromised</abilityred> for 2<turn></turn> to Mechanical and Cyborg units.</bullet></bulletList><br></br><bulletList><bullet>Ignores line of sight penalties</bullet><bullet>Cooldown: 2 <turn></turn></bullet></bulletList><br></br><silver>(Arc)</silver></popUpDesc>",
-            "name": "<popUpHeader2><titleBrown>Scrambling Virus</titleBrown></popUpHeader2>",
-            "slug": "scrambling_virus_kirko_hacker",
-            "icon": "scrambling_virus_icon"
+            "description": "<popUpHeader3><titleBrown>Tuning Step</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Leave One<leaveoneaction></leaveoneaction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>4<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Teleport to target hex, granting friendly <abilityblue>Integrated</abilityblue> unis in a 1 hex radius <abilityblue>Finely-Tuned</abilityblue>(+10% damage and accuracy) for 2<turn></turn>.<br></br><bulletList><bullet>Cooldown: 3<turn></turn></bullet></bulletList><br></br><silver>(Psionic Buff)</silver></popUpDesc>",
+            "name": "<popUpHeader2><titleBrown>Tuning Step</titleBrown></popUpHeader2>",
+            "slug": "tuning_step_kirko_hacker",
+            "icon": "shrouded_step_icon"
  },
         {
-            "description": "<popUpHeader3><titleBrown>Haywire Daemon</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Target enemy Mechanical or Cyborg unit is forcibly infected with a hostile Daemon. They are <abilityred>Staggered</abilityred> and have a strength 8<StrengthWave></StrengthWave> chance to become <abilityred>Disabled</abilityred> for 2<turn></turn>.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
-            "name": "<popUpHeader2><titleBrown>Haywire Daemon</titleBrown></popUpHeader2>",
-            "slug": "haywire_daemon_kirko_hacker",
-            "icon": "haywire_daemon_icon"
+            "description": "<popUpHeader3><titleBrown>Neuroscrambler Daemon</titleBrown></popUpHeader3><br></br><HelpText>Active Ability<tab></tab><actionblue>Single Action<singleUseAction></singleUseAction></actionblue></HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>100%<accuracy></accuracy><tab></tab>5<range></range></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br></br>Target enemy non-Mindless unit is forcibly infected with a hostile Daemon. They have a strength 8<StrengthWave></StrengthWave> chance to become <abilityred>Disabled</abilityred> for 2<turn></turn>.<br></br><bulletList><bullet>Can only be used once per battle</bullet></bulletList></popUpDesc>",
+            "name": "<popUpHeader2><titleBrown>Neuroscrambler Daemon</titleBrown></popUpHeader2>",
+            "slug": "neuroscrambler_daemon_kirko_hacker",
+            "icon": "override_daemon_icon"
  },
         {
             "description": "Unit gains +2<shield></shield> when there is an adjacent friendly unit with Swarm Shield.",
