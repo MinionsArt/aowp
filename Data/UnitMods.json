@@ -2938,7 +2938,7 @@ var jsonMods = {
             "cost": "60 <energy></energy>",
 
 
-            "description": "<popUpHeader3><titleBrown>Glaukos</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Sono-Ebb 11 <DamagePhysical></DamagePhysical></bullet> <bullet>Sono-Flow 10 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
+            "description": "<popUpHeader3><titleBrown>Glaukos</titleBrown></popUpHeader3><br><HelpText>Tier II, Unit - Skirmisher</HelpText><spacedline></spacedline><popUpHeader3><popUpHeader2>+0<hp></hp><tab></tab>40/40<mp></mp> <tab></tab>+1<armor></armor> <tab></tab>+1<shield></shield></popUpHeader2></popUpHeader3><spacedline></spacedline><popUpDesc><br><bulletList><bullet>Sono-Ebb 16 <DamagePhysical></DamagePhysical></bullet> <bullet>Sono-Flow 10 <DamagePhysical></DamagePhysical></bullet><bullet>Mechanical</bullet> <bullet>Heavy Unit</bullet></bulletList></popUpDesc>",
     },
         {
 
