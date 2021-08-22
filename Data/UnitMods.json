@@ -1411,7 +1411,7 @@ var jsonMods = {
 
             "type": "Offensive Mod",
             "cost": "15 <tricorium></tricorium>",
-            "description": "The unit's attacks gain a 8 <StrengthPhysical></StrengthPhysical> strength chance (4 <StrengthPhysical></StrengthPhysical> for repeating attacks) to remove 1 <mp></mp> action points from the target.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
+            "description": "The unit's attacks gain a 6 <StrengthPhysical></StrengthPhysical> strength chance (3 <StrengthPhysical></StrengthPhysical> for repeating attacks) to remove 1 <mp></mp> action points from the target.<br><br> Additionally, this mod grants the unit 30% increased damage on all abilities.<br><br> <abilityred>This Mod can be applied to any unit. </abilityred> ",
 
 
     },
