@@ -2268,7 +2268,7 @@ var jsonMods = {
         {
             "slug": "entropy_retaliation_component",
             "tier": "VI",
-            "name": "Entropic Radiation Emitter",
+            "name": "Entropy Retaliation Component",
 
             "type": "Defensive Mod - Armor",
             "cost": "10 <tricorium></tricorium>",
@@ -3087,7 +3087,7 @@ var jsonMods = {
         {
 
             "slug": "vehicle:_ember_hopperhound",
-            "tier": "II",
+            "tier": "III",
             "name": "Vehicle: Ember Hopperhound",
 
             "type": "Hero Equipment",
