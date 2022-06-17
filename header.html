@@ -48,6 +48,69 @@
 
     </script>
 
+    <template id="unit_card_template">
+        <div class="unit_card">
+
+            <div class="unit_image_holder">
+                <video width="400" autoplay muted loop id="vid">
+                    <source src="" type="video/mp4">
+                </video>
+                <p class="unit_description" id="description">Unit Description</p>
+                <div style="width: 100%">
+                    <p class="unit_name" id="unitstring">Unit Name</p>
+                </div>
+                <div style="position: absolute; top: 18px; height: 20px; width: 252px;">
+
+                    <p class="unit_prod" id="productioncost">Base Cost</p>
+                </div>
+                <img class="unit_image" id="uniticon" src="" style="position: absolute; left:-35px; top: -35px; background-color:rgba(105, 255, 255, 0.4);;  padding: 2px" width="60">
+
+                <div style="position: absolute; top: 42px; height: 20px; width: 133px;">
+
+                    <p class="unit_prod" id="tier"> Tier</p>
+                </div>
+                <div class="unit_stat_icon" style="position: absolute; top: 10px; left:370px; height: 35px; width: 30px;"> <img class="unit_stat_icon" src="/aowp/Icons/Text/xp.png">
+                    <span class=" tooltiptext" id="levelup">Level Up Info goes here</span>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="unit_ability_holder" id="unitabholder" style=" float: left;">
+
+                <div class="unit_stats">
+
+                    <p style="font-size: 18px;position: relative;top:-8px; float: left; left:10%" id="hp"> hp </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" src="/aowp/Icons/Text/hp.png " width="25 " height="25 ">
+                        <span class="tooltiptext">Hit Points <br><span style="font-size: 14px; color:grey">Hit Points represent the amount of damage a unit an take before being defeated</span> </span>
+                    </div>
+                    <p style="font-size: 18px;position: relative;top:-8px; float: left; left:10%" id="armor"> armor </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" src="/aowp/Icons/Text/armor.png " width="25 " height="25 ">
+                        <span class="tooltiptext">Armor <br><span style="font-size: 14px; color:grey">Armor reduces incoming damage dealt to the unit. Psionic attacks ignore all armor</span> </span>
+                    </div>
+                    <p style="font-size: 18px;position: relative;top:-8px; float: left; left:10%" id="shield"> shield </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" src="/aowp/Icons/Text/shield.png" width="25 " height="25 ">
+                        <span class="tooltiptext">Shield <br><span style="font-size: 14px; color:grey">Shields reduce incoming damage dealt to the unit. Melee attack ignore all shields</span></span>
+                    </div>
+
+
+                    <p style="font-size: 18px;position: relative;top:-8px; float: left; left:10%" id="mp"> MP </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" src="/aowp/Icons/Text/mp.png" width="25 " height="25 ">
+                        <span class="tooltiptext">Move Points <br><span style="font-size: 14px; color:grey">Move points represent how far a unit can move in one turn on the world map and in combat</span></span>
+                    </div>
+
+                </div>
+                <div class="unit_types" id="unitstat">
+
+
+                </div>
+            </div>
+
+        </div>
+    </template>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.3, user-scalable=no" />
 </head>

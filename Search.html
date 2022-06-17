@@ -30,6 +30,7 @@
 
             $(this).css("color", "cyan");
         });
+
     </script>
     <title>Age of Wonders Planetfall - Search</title>
 </head>
@@ -423,13 +424,11 @@
     }
 
     function addUnitCard(unit) {
-        var iDiv = document.createElement('div');
-        // iDiv.setAttribute("id", "unit");
-        // alert(unit);
+
+        var iDiv = unit_card_template.content.cloneNode(true);
         document.getElementById("searchOutput").appendChild(iDiv);
-        $(iDiv).load("/aowp/unitcard.html", function() {
-            showUnit(unit);
-        });
+        showUnit(unit);
+
 
 
 
@@ -447,4 +446,7 @@
 
 
     }
-</script></html>
+
+</script>
+
+</html>

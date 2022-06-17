@@ -13,29 +13,11 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("therians_prowler");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("therians_bouncer");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("therians_sharpshooter");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("therians_chemist");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("therians_apex");
-            });
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("therians_proto_squirrel");
+            var unitarray = ["therians_prowler", "therians_bouncer", "therians_sharpshooter",
+                "therians_chemist", "therians_apex", "therians_proto_squirrel"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
@@ -53,19 +35,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Therian Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit6"></div>
+    <div id="units"></div>
 
 
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
 
 
 </body></html>
