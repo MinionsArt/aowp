@@ -441,10 +441,14 @@
      };
  }
 
- function showModsFromList(list) {
+ function showModsFromList(list, divId) {
      for (let i = 0; i < list.length; i++) {
          var iDiv = mod_card_template.content.cloneNode(true);
-         document.getElementById("mods").appendChild(iDiv);
+         if (divId === undefined) {
+             document.getElementById("mods").appendChild(iDiv);
+         } else {
+             document.getElementById(divId).appendChild(iDiv);
+         }
          showMod(list[i]);
 
      };

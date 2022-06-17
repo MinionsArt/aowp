@@ -15,220 +15,20 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarrayT2 = ["vehicle:_abyssian", "vehicle:_assault_bike", "vehicle:_blackguard_adversary", "vehicle:_bulwark", "vehicle:_chopper", "vehicle:_engulfer", "vehicle:_glaukos", "vehicle:_gunship", "vehicle:_harrier", "vehicle:_hellcopter", "vehicle:_hopperhound_alpha", "vehicle:_hoverbike", "vehicle:_imperial_apc", "vehicle:_imperial_buggy", "vehicle:_imperial_dragonfly", "vehicle:_lancer", "vehicle:_lightning_rider", "vehicle:_mirage", "vehicle:_paladin_light_bringer", "vehicle:_paladin_marquis", "vehicle:_paladin_protector", "vehicle:_paladin_purifier", "vehicle:_paladin_warden", "vehicle:_paladin_warlord", "vehicle:_propagator", "vehicle:_ramjet", "vehicle:_sapper", "vehicle:_truck"];
 
-            $("#1veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_abyssian");
-            });
+            var modsarrayT3 = ["vehicle:_aegis_tank", "vehicle:_baron", "vehicle:_barrager", "vehicle:_disassembler", "vehicle:_ember_hopperhound", "vehicle:_excavator_tank", "vehicle:_high_lord", "vehicle:_imperial_walker", "vehicle:_laser_tank", "vehicle:_paladin_champion", "vehicle:_phoenix_walker", "vehicle:_ravenous", "vehicle:_refractor", "vehicle:_rift_generator", "vehicle:_subjugator", "vehicle:_tyrannodon", "vehicle:_walker", "vehicle:_wraith", "vehicle:_wrecker"];
 
-            $("#2veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_assault_bike");
-            });
+            var modsarrayT4 = ["vehicle:_blackguard_tyrant", "vehicle:_imperial_behemoth"];
 
-            $("#3veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_blackguard_adversary");
-            });
-            $("#4veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_bulwark");
-            });
-
-            $("#5veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_chopper");
-            });
-
-            $("#6veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_engulfer");
-            });
-            $("#7veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_glaukos");
-            });
-
-            $("#8veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_gunship");
-            });
-
-            $("#9veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_harrier");
-            });
-            $("#10veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_hellcopter");
-            });
-            $("#11veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_hopperhound_alpha");
-            });
-            $("#12veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_hoverbike");
-            });
-
-            $("#13veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_imperial_apc");
-            });
-            $("#14veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_imperial_buggy");
-            });
-            $("#15veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_imperial_dragonfly");
-            });
-
-            $("#16veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_lancer");
-            });
-
-            $("#17veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_lightning_rider");
-            });
-
-            $("#18veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_mirage");
-            });
-            $("#19veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_paladin_light_bringer");
-            });
-            $("#20veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_paladin_marquis");
-            });
-            $("#21veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_paladin_protector");
-            });
-            $("#22veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_paladin_purifier");
-            });
-            $("#23veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_paladin_warden");
-            });
-            $("#24veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_paladin_warlord");
-            });
-
-            $("#25veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_propagator");
-            });
-            $("#26veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_ramjet");
-            });
-            $("#27veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_sapper");
-            });
-            $("#28veht2").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_truck");
-            });
-
-            // tier 3
-
-            $("#1veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_aegis_tank");
-            });
-
-            $("#2veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_baron");
-            });
+            var modsarrayTransform = ["dna_injector_prowler", "dna_injector_bouncer", "dna_injector_sharpshooter", "dna_injector_chemist", "dna_injector_apex"];
 
 
-            $("#3veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_barrager");
-            });
-
-
-            $("#4veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_disassembler");
-            });
-            
-            
-            $("#5veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_ember_hopperhound");
-            });
-
-
-            $("#6veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_excavator_tank");
-            });
-
-
-            $("#7veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_high_lord");
-            });
-
-
-            $("#8veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_imperial_walker");
-            });
-
-
-            $("#9veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_laser_tank");
-            });
-
-
-            $("#10veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_paladin_champion");
-            });
-
-            $("#11veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_phoenix_walker");
-            });
-
-
-            $("#12veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_ravenous");
-            });
-
-            $("#13veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_refractor");
-            });
-
-            $("#14veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_rift_generator");
-            });
-
-
-            $("#15veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_subjugator");
-            });
-
-
-            $("#16veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_tyrannodon");
-            });
-
-
-            $("#17veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_walker");
-            });
-
-            $("#18veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_wraith");
-            });
-
-            $("#19veht3").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_wrecker");
-            });
-
-
-            // t4
-
-            $("#1veht4").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_blackguard_tyrant");
-            });
-            $("#2veht4").load("/aowp/modcard.html", function() {
-                showMod("vehicle:_imperial_behemoth");
-            });
-
-            // transforms
-
-            $("#t1").load("/aowp/modcard.html", function() {
-                showMod("dna_injector_prowler");
-            });
-            $("#t2").load("/aowp/modcard.html", function() {
-                showMod("dna_injector_bouncer");
-            });
-            $("#t3").load("/aowp/modcard.html", function() {
-                showMod("dna_injector_sharpshooter");
-            });
-            $("#t4").load("/aowp/modcard.html", function() {
-                showMod("dna_injector_chemist");
-            });
-            $("#t5").load("/aowp/modcard.html", function() {
-                showMod("dna_injector_apex");
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarrayT2, 't2');
+                showModsFromList(modsarrayT3, 't3');
+                showModsFromList(modsarrayT4, 't4');
+                showModsFromList(modsarrayTransform, 'transf');
             });
 
         });
@@ -249,36 +49,7 @@
         <button type="button" class="collapsible">
             <p id="description">Tier 2 Vehicles (29)</p>
         </button>
-        <div class="content">
-            <div id="1veht2"></div>
-            <div id="2veht2"></div>
-            <div id="3veht2"></div>
-            <div id="4veht2"></div>
-            <div id="5veht2"></div>
-            <div id="6veht2"></div>
-            <div id="7veht2"></div>
-            <div id="8veht2"></div>
-            <div id="9veht2"></div>
-            <div id="10veht2"></div>
-            <div id="11veht2"></div>
-            <div id="12veht2"></div>
-            <div id="13veht2"></div>
-            <div id="14veht2"></div>
-            <div id="15veht2"></div>
-            <div id="16veht2"></div>
-            <div id="17veht2"></div>
-            <div id="18veht2"></div>
-            <div id="19veht2"></div>
-            <div id="20veht2"></div>
-            <div id="21veht2"></div>
-            <div id="22veht2"></div>
-            <div id="23veht2"></div>
-            <div id="24veht2"></div>
-            <div id="25veht2"></div>
-            <div id="26veht2"></div>
-            <div id="27veht2"></div>
-            <div id="28veht2"></div>
-            <div id="29veht2"></div>
+        <div class="content" id="t2">
 
         </div>
 
@@ -286,51 +57,20 @@
             <p id="description">Tier 3 Vehicles (18)</p>
 
         </button>
-        <div class="content">
-            <div id="1veht3"></div>
-            <div id="2veht3"></div>
-            <div id="3veht3"></div>
-            <div id="4veht3"></div>
-            <div id="4veht3"></div>
-            <div id="5veht3"></div>
-            <div id="6veht3"></div>
-            <div id="7veht3"></div>
-            <div id="8veht3"></div>
-            <div id="9veht3"></div>
-            <div id="10veht3"></div>
-            <div id="11veht3"></div>
-            <div id="12veht3"></div>
-            <div id="13veht3"></div>
-            <div id="14veht3"></div>
-            <div id="15veht3"></div>
-            <div id="16veht3"></div>
-            <div id="17veht3"></div>
-            <div id="18veht3"></div>
-
+        <div class="content" id="t3">
         </div>
         <button type="button" class="collapsible">
             <p id="description">Tier 4 Vehicles (2)</p>
 
         </button>
-        <div class="content">
-            <div id="1veht4"></div>
-            <div id="2veht4"></div>
-
+        <div class="content" id="t4">
 
         </div>
         <button type="button" class="collapsible">
             <p id="description">Transformations (5)</p>
 
         </button>
-        <div class="content">
-            <div id="t1"></div>
-            <div id="t2"></div>
-
-            <div id="t3"></div>
-            <div id="t4"></div>
-            <div id="t5"></div>
-
-
+        <div class="content" id="transf">
         </div>
     </div>
 
