@@ -12,54 +12,14 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
-
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("plasmoid");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("amazon_purifier");
+            var unitarray = ["plasmoid", "amazon_purifier", "assembly_purifier",
+                "dvar_purifier", "kirko_purifier", "oathbound_purifier", "syndicate_indentured_purifier", "shakarn_purifier", "vanguard_purifier",
+                "aegis_tank", "dvar_phoenix_walker", "kirko_phoenix_walker", "phoenix_walker"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_purifier");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_purifier");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_purifier");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_purifier");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("syndicate_indentured_purifier");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_purifier");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_purifier");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("aegis_tank");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_phoenix_walker");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_phoenix_walker");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("phoenix_walker");
-            });
         });
     </script>
 
@@ -72,27 +32,10 @@
     <h2 style="text-align: center; color: aliceblue">
         Promethean Units
     </h2>
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit13"></div>
-    <div id="unit11"></div>
 
 
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit12"></div>
-    <div id="unit10"></div>
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
 
 
 </body></html>

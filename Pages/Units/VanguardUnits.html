@@ -13,81 +13,16 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var unitarray = ["vanguard_owl", "vanguard_trooper", "vanguard_engineer",
+                "vanguard_pug", "vanguard_assault_bike", "vanguard_gunship", "vanguard_frigate",
+                "vanguard_walker", "vanguard_laser_tank", "vanguard_battleship", "vanguard_drone_carrier", "vanguard_assault_drone", "vanguard_repair_drone", "vanguard_skirmish_drone", "vanguard_nanite_support_station", "vanguard_gun_turret", "vanguard_heavy_gun_turret", "vanguard_launcher_turret", "vanguard_valkyrie", "vanguard_colonizer", "vanguard_repeater_defense_turret"
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_owl");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_trooper");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_engineer");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_pug");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_assault_bike");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_gunship");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_frigate");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_walker");
-            });
-
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_laser_tank");
-
-            });
-            $("#unit21").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_battleship");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_drone_carrier");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_assault_drone");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_repair_drone");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_skirmish_drone");
-            });
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_nanite_support_station");
-            });
-            $("#unit15").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_gun_turret");
-            });
-            $("#unit16").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_heavy_gun_turret");
-            });
-            $("#unit17").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_launcher_turret");
-            });
-            $("#unit18").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_valkyrie");
-            });
-            $("#unit19").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_colonizer");
-            });
-            $("#unit20").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_repeater_defense_turret");
-            });
         });
-
     </script>
 
     <title>Age of Wonders Planetfall - Vanguard Units</title>
@@ -102,36 +37,9 @@
     </h2>
 
 
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit6"></div>
-    <div id="unit8"></div>
-    <div id="unit7"></div>
-
-    <div id="unit9"></div>
-    <div id="unit21"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit14"></div>
-    <div id="unit15"></div>
-    <div id="unit16"></div>
-    <div id="unit17"></div>
-    <div id="unit18"></div>
-    <div id="unit19"></div>
-    <div id="unit20"></div>
 
 
 
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
-</body>
-
-</html>
+</body></html>

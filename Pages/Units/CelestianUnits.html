@@ -13,72 +13,15 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("amazon_light_bringer");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_light_bringer");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_light_bringer");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_light_bringer");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("syndicate_light_bringer");
-            });
-
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_light_bringer");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_light_bringer");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("amazon_star_guide");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_star_guide");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_star_guide");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_star_guide");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_star_guide");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("syndicate_star_guide");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_star_guide");
-            });
-            $("#unit15").load("/aowp/unitcard.html", function() {
-                showUnit("ascended_teacher");
-            });
-            $("#unit16").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_light_bringer");
-            });
-            $("#unit17").load("/aowp/unitcard.html", function() {
-                showUnit("burning_banner");
-            });
-            $("#unit18").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_star_guide");
+            var unitarray = ["amazon_light_bringer", "assembly_light_bringer", "dvar_light_bringer",
+                "kirko_light_bringer", "oathbound_paladin_light_bringer", "burning_banner", "syndicate_light_bringer", "shakarn_light_bringer", "vanguard_light_bringer",
+                "amazon_star_guide", "assembly_star_guide", "dvar_star_guide", "kirko_star_guide", "oathbound_star_guide", "shakarn_star_guide", "syndicate_star_guide", "vanguard_star_guide", "ascended_teacher"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
         });
-
     </script>
 
 
@@ -92,32 +35,10 @@
     <h2 style="text-align: center; color: aliceblue">
         Celestian Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit16"></div>
-    <div id="unit17"></div>
-    <div id="unit14"></div>
-
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit18"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit15"></div>
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
-</body>
 
-</html>
+
+
+</body></html>

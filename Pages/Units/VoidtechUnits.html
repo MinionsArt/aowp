@@ -13,45 +13,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("amazon_echo_walker");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_echo_walker");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_echo_walker");
+            var unitarray = ["amazon_echo_walker", "assembly_echo_walker", "dvar_echo_walker",
+                "kirko_echo_walker", "oathbound_paladin_echo_walker", "syndicate_echo_walker", "shakarn_echo_walker",
+                "vanguard_echo_walker", "phase_manipulator", "rift_generator"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_echo_walker");
-            });
 
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_echo_walker");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("syndicate_echo_walker");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_echo_walker");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_echo_walker");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("phase_manipulator");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("rift_generator");
-            });
 
         });
     </script>
@@ -66,21 +38,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Voidtech Units
     </h2>
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit10"></div>
-    <div id="unit5"></div>
-    <div id="unit9"></div>
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
 
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
 
 </body></html>

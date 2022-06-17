@@ -12,18 +12,12 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script>
         $("#body").ready(function() {
+            var unitarray = ["apostates_blackguard_adversary", "apostates_chaos_witch", "amazon_biomancer",
+                "apostates_blackguard_tyrant"
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("apostates_blackguard_adversary");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("apostates_chaos_witch");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("apostates_blackguard_tyrant");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
@@ -42,16 +36,11 @@
     <h2 style="text-align: center; color: aliceblue">
         Apostates (Star Kings)
     </h2>
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
 
 
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
+
 
 
 </body></html>

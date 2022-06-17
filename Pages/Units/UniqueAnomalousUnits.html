@@ -13,74 +13,16 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var unitarray = ["paragon_paragon_elite", "paragon_paragon_elite_sniper", "dragonfly_ace",
+                "kirko_ancestral_hidden", "assembly_groxum", "ethereal_penguin", "spark_droid",
+                "xennodon", "a.i.v.a._-3", "vanguard_shadow_trooper", "dreamer_cultist", "ebot_valer-e", "assembly_will-em", "heritor_the_hand_that_takes", "heritor_the_hand_that_gives", "purified_golem", "hopperhound_alpha", "hopperhound_progenitor"
 
-            //  $("#unit").load("/aowp/unitcard.html", function() {
-            //     showUnit("spacer_truck");
-            //  });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_paragon_elite");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_paragon_elite_sniper");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("dragonfly_ace");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_ancestral_hidden");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_groxum");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("ethereal_penguin");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("spark_droid");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("xennodon");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("a.i.v.a._-3");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_shadow_trooper");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("dreamer_cultist");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("ebot_valer-e");
-            });
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_will-em");
-            });
-            //  $("#unit15").load("/aowp/unitcard.html", function() {
-            //     showUnit("assembly_wrecker");
-            // });
-            $("#unit16").load("/aowp/unitcard.html", function() {
-                showUnit("heritor_the_hand_that_takes");
-            });
-            $("#unit17").load("/aowp/unitcard.html", function() {
-                showUnit("heritor_the_hand_that_gives");
-            });
-            $("#unit18").load("/aowp/unitcard.html", function() {
-                showUnit("purified_golem");
-            });
-            $("#unit19").load("/aowp/unitcard.html", function() {
-                showUnit("hopperhound_alpha");
-            });
-            $("#unit20").load("/aowp/unitcard.html", function() {
-                showUnit("hopperhound_progenitor");
-            });
         });
 
         $(document).ready(function() {
@@ -90,7 +32,6 @@
 
             setTimeout(showStats, 500);
         });
-
     </script>
 
 
@@ -104,25 +45,8 @@
         Unique Units from Anomalous sites
     </h2>
 
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
+    <div id="units"></div>
 
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit14"></div>
-    <div id="unit16"></div>
-    <div id="unit17"></div>
-    <div id="unit18"></div>
-    <div id="unit19"></div>
-    <div id="unit20"></div>
 
     <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
         <p>Your browser does not support iframes.</p>
@@ -130,6 +54,4 @@
     </div>
 
 
-</body>
-
-</html>
+</body></html>

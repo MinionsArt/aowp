@@ -12,57 +12,16 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
+            var unitarray = ["shakarn_recon", "shakarn_raider", "shakarn_infiltrator",
+                "shakarn_deadeye", "shakarn_propagator", "shakarn_seeker", "shakarn_refractor",
+                "shakarn_tactician", "shakarn_firebrand", "shakarn_sonokarn", "shakarn_colonizer", "shakarn_reconnaissance_buoy", "shakarn_sleeper_agent"
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_recon");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_raider");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_infiltrator");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_deadeye");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_propagator");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_seeker");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_refractor");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_tactician");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_firebrand");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_sonokarn");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_colonizer");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_reconnaissance_buoy");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_sleeper_agent");
-            });
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_sono_turret");
-            });
 
         });
     </script>
@@ -75,28 +34,10 @@
     <div id="header"></div>
     <h2 style="text-align: center; color: aliceblue">
         Shakarn Units </h2>
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit14"></div>
 
 
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
 
 
 </body></html>

@@ -13,58 +13,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var unitarray = ["dvar_prospector", "dvar_trencher", "dvar_foreman",
+                "dvar_bulwark", "dvar_ramjet", "dvar_ironclad", "dvar_sapper",
+                "dvar_baron", "dvar_excavator_tank", "dvar_rocket_artillery", "dvar_dreadnought", "dvar_earth_crusher", "dvar_colonizer", "dvar_bombard"
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_prospector");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_trencher");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_foreman");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_bulwark");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_ramjet");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_ironclad");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_sapper");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_baron");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_excavator_tank");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_rocket_artillery");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_dreadnought");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_earth_crusher");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_colonizer");
-            });
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_bombard");
-            });
         });
-
     </script>
 
 
@@ -77,31 +36,13 @@
     <h2 style="text-align: center; color: aliceblue">
         Dvar Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit14"></div>
-
-
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
 
-</body>
 
-</html>
+
+
+
+
+</body></html>

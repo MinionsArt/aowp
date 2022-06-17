@@ -13,69 +13,15 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var unitarray = ["assembly_inspector", "assembly_scavenger", "assembly_vorpal_sniper",
+                "assembly_electrocutioner", "assembly_lightning_rider", "assembly_reverse_engineer", "assembly_storm_wader",
+                "assembly_wrecker", "assembly_wrecking_ship", "assembly_disassembler", "assembly_reaver", "assembly_swarm", "assembly_construct", "water_construct", "assembly_advanced_construct", "assembly_constrictor", "assembly_colonizer", "assembly_arc_coil"
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_inspector");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_scavenger");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_vorpal_sniper");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_electrocutioner");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_lightning_rider");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_reverse_engineer");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_storm_wader");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_wrecker");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_wrecking_ship");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_disassembler");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_reaver");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_swarm");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_construct");
-            });
-            $("#unit19").load("/aowp/unitcard.html", function() {
-                showUnit("water_construct");
-            });
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_advanced_construct");
-            });
-
-            $("#unit16").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_constrictor");
-            });
-            $("#unit17").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_colonizer");
-            });
-            $("#unit18").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_arc_coil");
-            });
         });
     </script>
 
@@ -88,30 +34,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Assembly Units
     </h2>
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit6"></div>
-    <div id="unit5"></div>
 
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit19"></div>
-    <div id="unit14"></div>
 
-    <div id="unit16"></div>
-    <div id="unit17"></div>
-    <div id="unit18"></div>
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
 </body></html>

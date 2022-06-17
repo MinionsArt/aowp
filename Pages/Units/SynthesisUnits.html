@@ -13,50 +13,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("amazon_hacker");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_hacker");
-            });
+            var unitarray = ["amazon_hacker", "assembly_hacker", "dvar_hacker",
+                "kirko_hacker", "oathbound_hacker", "syndicate_hacker", "shakarn_hacker",
+                "vanguard_hacker", "malware_daemon", "reconstructed_daemon", "network_link", "avatar"
 
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_hacker");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_hacker");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_hacker");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("syndicate_hacker");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_hacker");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_hacker");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("malware_daemon");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("reconstructed_daemon");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("network_link");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("avatar");
-            });
         });
 
         $(document).ready(function() {
@@ -77,20 +44,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Synthesis Units
     </h2>
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit12"></div>
-    <div id="unit11"></div>
 
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
 
 
 

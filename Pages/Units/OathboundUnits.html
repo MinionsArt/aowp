@@ -12,72 +12,13 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
+            var unitarray = ["oathbound_scryer", "oathbound_paladin_aspirant", "oathbound_augur",
+                "oathbound_watcher", "oathbound_paladin_warden", "galleon", "oathbound_paladin_protector",
+                "oathbound_paladin_champion", "oathbound_diviner", "oathbound_paladin_exemplar", "oathbound_paladin_exemplar_glaive", "banner_of_healing", "banner_of_justice", "wardens_banner", "oathbound_banner_of_protection", "oathbound_colonizer", "oathbound_paladin_warlord", "oathbound_paladin_marquis"
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_scryer");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_aspirant");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_augur");
-            });
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_watcher");
-            });
-
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_warden");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("galleon");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_protector");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_champion");
-            });
-
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_diviner");
-            });
-
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_exemplar");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_exemplar_glaive");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("banner_of_healing");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("banner_of_justice");
-            });
-
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("wardens_banner");
-            });
-            $("#unit15").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_banner_of_protection");
-            });
-            $("#unit16").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_colonizer");
-            });
-            $("#unit17").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_warlord");
-            });
-
-            $("#unit18").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_paladin_marquis");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
@@ -101,35 +42,12 @@
 
     <h2 style="text-align: center; color: aliceblue">
         Oathbound Units
+        (Last 2 are starting vehicles)
     </h2>
-    <div id="unit">
+    <div id="units">
     </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
 
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit14"></div>
-    <div id="unit15"></div>
-    <div id="unit16"></div>
-    <h2 style="text-align: center; color: aliceblue">
-        Starting Vehicles
-    </h2>
-    <div id="unit17"></div>
-    <div id="unit18"></div>
 
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
 
 
 </body></html>

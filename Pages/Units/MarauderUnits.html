@@ -12,53 +12,20 @@
     <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script>
         $("#body").ready(function() {
+            var unitarray = ["ebot_roy-2", "ebot_emma-3", "imperial_buggy",
+                "imperial_walker", "imperial_dragonfly", "imperial_behemoth", "imperial_submarine",
+                "imperial_inferno_submarine", "imperial_behemoth_submarine", "auto-torpedo", "blaze_auto-torpedo"
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("ebot_roy-2");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("ebot_emma-3");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("imperial_buggy");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("imperial_walker");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("imperial_dragonfly");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("imperial_behemoth");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("imperial_submarine");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("imperial_inferno_submarine");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("imperial_behemoth_submarine");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("auto-torpedo");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("blaze_auto-torpedo");
-            });
 
 
 
         });
-
     </script>
 
 
@@ -71,26 +38,10 @@
     <h2 style="text-align: center; color: aliceblue">
         Marauder Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
 
-</body>
 
-</html>
+
+</body></html>

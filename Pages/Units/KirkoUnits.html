@@ -13,64 +13,19 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var unitarray = ["kirko_unleashed", "kirko_frenzied", "kirko_hidden",
+                "kirko_tormented", "kirko_barrager", "kirko_torrent", "kirko_engulfer",
+                "kirko_deep_one", "kirko_transcendent", "kirko_ravenous", "kirko_harbinger", "kirko_abyssian", "kirko_emergent", "kirko_colonizer", "kirko_hiveguard"
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_unleashed");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_frenzied");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_hidden");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_tormented");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_barrager");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_torrent");
-            });
-
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_engulfer");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_deep_one");
-            });
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_transcendent");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_ravenous");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_harbinger");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_abyssian");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_emergent");
-            });
-
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_colonizer");
-            });
-            $("#unit15").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_hiveguard");
-            });
 
 
         });
-
     </script>
 
 
@@ -83,31 +38,10 @@
     <h2 style="text-align: center; color: aliceblue">
         Kir'Ko Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit13"></div>
-    <div id="unit14"></div>
-    <div id="unit15"></div>
-
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
 
-</body>
 
-</html>
+
+</body></html>

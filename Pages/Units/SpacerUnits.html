@@ -13,39 +13,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var unitarray = ["spacer_psycho", "spacer_truck", "spacer_melter",
+                "spacer_junk_ship", "spacer_hellcopter", "spacer_mad_preacher", "spacer_effigy"
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("spacer_psycho");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("spacer_truck");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("spacer_melter");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("spacer_junk_ship");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("spacer_hellcopter");
-            });
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("spacer_mad_preacher");
-            });
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("spacer_effigy");
-            });
-
 
 
 
         });
-
     </script>
 
     <title>Age of Wonders Planetfall - Spacer Units</title>
@@ -57,21 +35,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Spacer Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
-</body>
 
-</html>
+</body></html>

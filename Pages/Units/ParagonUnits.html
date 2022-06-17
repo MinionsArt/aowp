@@ -12,40 +12,19 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
+            var unitarray = ["paragon_soldier", "paragon_guard", "paragon_fanatic",
+                "paragon_heavy_soldier", "paragon_techno_prophet", "paragon_peacekeeper_light_turret", "paragon_warden_heavy_turret"
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_soldier");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_guard");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_fanatic");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_heavy_soldier");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_techno_prophet");
-            });
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_peacekeeper_light_turret");
-            });
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("paragon_warden_heavy_turret");
-            });
 
 
 
 
         });
-
     </script>
 
 
@@ -58,21 +37,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Paragon Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit6"></div>
-    <div id="unit7"></div>
-
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
-</body>
 
-</html>
+</body></html>

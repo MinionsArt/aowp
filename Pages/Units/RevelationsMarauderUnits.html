@@ -13,37 +13,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("rabid_piglet");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("megasow");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("misfortune");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("rpr-liquidator");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("rpr-stalker");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("rpr-culler");
+            var unitarray = ["rabid_piglet", "megasow", "misfortune",
+                "rpr-liquidator", "rpr-stalker", "rpr-culler"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
 
 
         });
-
     </script>
 
 
@@ -56,22 +36,8 @@
     <h2 style="text-align: center; color: aliceblue">
         RPR and Wildlife Units from Revelations Expansion
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-
-    <div id="unit6"></div>
-
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
 
-</body>
-
-</html>
+</body></html>

@@ -12,37 +12,15 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
+            var unitarray = ["voidbringer_strix", "voidbringer_naga", "voidbringer_undine",
+                "voidbringer_leviathan", "voidbringer_pandora_portal", "shepherd", "thundermaw_swarmling",
+                "thundermaw"
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("voidbringer_strix");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("voidbringer_naga");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("voidbringer_undine");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("voidbringer_leviathan");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("voidbringer_pandora_portal");
-            });
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("shepherd");
-            });
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("thundermaw_swarmling");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("thundermaw");
-            });
 
 
         });
@@ -61,24 +39,9 @@
 
 
     <p style="color:aliceblue"> Voidbringers come in 4 types(Psionic, Arc, Thermal, Biochemical), each resisting a different channel, and they have mods that change their damage channel</p>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit6"></div>
-    <div id="unit7">
-    </div>
-    <div id="unit8">
+    <div id="units">
     </div>
 
-
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
-    </div>
 
 
 </body></html>

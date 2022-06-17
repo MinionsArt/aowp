@@ -13,72 +13,14 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("echo_of_despair");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("whisper_of_discord");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("amazon_initiate");
+            var unitarray = ["echo_of_despair", "whisper_of_discord", "amazon_initiate",
+                "assembly_initiate", "dvar_initiate", "kirko_initiate", "oathbound_initiate", "syndicate_initiate", "shakarn_initiate",
+                "vanguard_initiate", "amazon_malictor", "assembly_malictor", "dvar_malictor", "kirko_malictor", "oathbound_malictor", "shakarn_malictor", "syndicate_malictor", "vanguard_malictor", "herald_of_oblivion"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_initiate");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_initiate");
-            });
-
-            $("#unit6").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_initiate");
-            });
-            $("#unit17").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_initiate");
-            });
-            $("#unit7").load("/aowp/unitcard.html", function() {
-                showUnit("syndicate_initiate");
-            });
-
-
-            $("#unit16").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_initiate");
-            });
-            $("#unit8").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_initiate");
-            });
-            $("#unit9").load("/aowp/unitcard.html", function() {
-                showUnit("amazon_malictor");
-            });
-            $("#unit10").load("/aowp/unitcard.html", function() {
-                showUnit("assembly_malictor");
-            });
-            $("#unit11").load("/aowp/unitcard.html", function() {
-                showUnit("dvar_malictor");
-            });
-            $("#unit12").load("/aowp/unitcard.html", function() {
-                showUnit("kirko_malictor");
-            });
-            $("#unit18").load("/aowp/unitcard.html", function() {
-                showUnit("oathbound_malictor");
-            });
-            $("#unit13").load("/aowp/unitcard.html", function() {
-                showUnit("shakarn_malictor");
-            });
-            $("#unit14").load("/aowp/unitcard.html", function() {
-                showUnit("syndicate_malictor");
-            });
-            $("#unit15").load("/aowp/unitcard.html", function() {
-                showUnit("vanguard_malictor");
-            });
-            $("#unit19").load("/aowp/unitcard.html", function() {
-                showUnit("herald_of_oblivion");
-            });
 
         });
     </script>
@@ -93,31 +35,7 @@
     <h2 style="text-align: center; color: aliceblue">
         Psynumbra Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-    <div id="unit16"></div>
-
-    <div id="unit6"></div>
-    <div id="unit17"></div>
-    <div id="unit7"></div>
-    <div id="unit8"></div>
-    <div id="unit9"></div>
-    <div id="unit10"></div>
-    <div id="unit11"></div>
-    <div id="unit12"></div>
-    <div id="unit18"></div>
-    <div id="unit13"></div>
-    <div id="unit14"></div>
-    <div id="unit15"></div>
-    <div id="unit19"></div>
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
 

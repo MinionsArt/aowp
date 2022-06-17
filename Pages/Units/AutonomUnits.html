@@ -12,34 +12,18 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
+            var unitarray = ["autonom_sentinel", "autonom_golem", "autonom_monitor",
+                "autonom_justicar", "autonom_network_controller",
 
-            $("#header").load("/aowp/header.html");
-
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("autonom_sentinel");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("autonom_golem");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("autonom_monitor");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("autonom_justicar");
-            });
-
-            $("#unit5").load("/aowp/unitcard.html", function() {
-                showUnit("autonom_network_controller");
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
             });
 
 
 
 
         });
-
     </script>
 
 
@@ -53,19 +37,7 @@
     <h2 style="text-align: center; color: aliceblue">
         Autonom Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-    <div id="unit5"></div>
-
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
-</body>
-
-</html>
+</body></html>

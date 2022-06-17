@@ -12,24 +12,14 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
-
+            var unitarray = ["heritor_drained", "heritor_siphoner", "heritor_quintessence_ark",
+                "heritor_high_lord"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showUnitsFromList(unitarray);
+            });
             $("#header").load("/aowp/header.html");
 
-            $("#unit").load("/aowp/unitcard.html", function() {
-                showUnit("heritor_drained");
-            });
-            $("#unit2").load("/aowp/unitcard.html", function() {
-                showUnit("heritor_siphoner");
-            });
-
-            $("#unit3").load("/aowp/unitcard.html", function() {
-                showUnit("heritor_quintessence_ark");
-            });
-
-
-            $("#unit4").load("/aowp/unitcard.html", function() {
-                showUnit("heritor_high_lord");
-            });
 
 
 
@@ -42,7 +32,6 @@
 
             setTimeout(showStats, 500);
         });
-
     </script>
 
 
@@ -56,18 +45,11 @@
     <h2 style="text-align: center; color: aliceblue">
         Heritor Units
     </h2>
-    <div id="unit">
-    </div>
-    <div id="unit2"></div>
-    <div id="unit3"></div>
-    <div id="unit4"></div>
-
-
-    <!-- <iframe id="testing" width=0px height=0px src="../../../unitcard.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>-->
+    <div id="units">
     </div>
 
-</body>
 
-</html>
+
+
+
+</body></html>
