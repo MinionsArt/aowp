@@ -15,25 +15,20 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("eyes_of_eternity");
+            var modsarray = ["eyes_of_eternity", "focus.chimera", "mantra_of_illusion",
+                "mind_barrier"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
             });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("focus.chimera");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("mantra_of_illusion");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("mind_barrier");
-            });
+
+
+
 
 
 
         });
-
     </script>
 
 
@@ -46,19 +41,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Psi-Fish Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-
-
-
-
-
+    <div id="mods">
     </div>
 
 
-</body>
 
-</html>
+</body></html>

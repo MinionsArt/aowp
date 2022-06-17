@@ -15,25 +15,18 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["reactive_shielding", "combat_protocol_implants", "smart_rounds",
+                "overcharger_augment"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("reactive_shielding");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("combat_protocol_implants");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("smart_rounds");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("overcharger_augment");
-            });
+
 
 
 
         });
-
     </script>
 
 
@@ -46,19 +39,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Paragon Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-
-
-
-
-
+    <div id="mods">
     </div>
 
 
-</body>
 
-</html>
+</body></html>

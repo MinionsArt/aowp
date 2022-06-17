@@ -15,32 +15,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["static_buildup_module", "arc_retaliation_defense", "arc_impact_module",
+                "arc_extension_module", "stun_module", "positron_arc_storm_projector", "positron_discharge_shield"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("static_buildup_module");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("arc_retaliation_defense");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("arc_impact_module");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("arc_extension_module");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("stun_module");
-            });
-            $("#mod6").load("/aowp/modcard.html", function() {
-                showMod("positron_arc_storm_projector");
-            });
-            $("#mod7").load("/aowp/modcard.html", function() {
-                showMod("positron_discharge_shield");
-            });
+
+
 
         });
-
     </script>
 
 
@@ -53,18 +38,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Arc Weapon Group Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
-    <div id="mod6"></div>
-    <div id="mod7"></div>
-
+    <div id="mods">
     </div>
 
 
-</body>
-
-</html>
+</body></html>

@@ -15,46 +15,16 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["contaminated_claws", "evolutionary_mutation", "fiery_infusion",
+                "minor_infection_x", "scything_claws", "tempered_shells", "blazing_infusion",
+                "hardened_scything_claws", "infection_x", "paralyzing_infusion", "plague_carrier", "superior_evolutionary_mutation"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("contaminated_claws");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("evolutionary_mutation");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("fiery_infusion");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("minor_infection_x");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("scything_claws");
-            });
-            $("#mod6").load("/aowp/modcard.html", function() {
-                showMod("tempered_shells");
-            });
-            $("#mod7").load("/aowp/modcard.html", function() {
-                showMod("blazing_infusion");
-            });
-            $("#mod8").load("/aowp/modcard.html", function() {
-                showMod("hardened_scything_claws");
-            });
-            $("#mod9").load("/aowp/modcard.html", function() {
-                showMod("infection_x");
-            });
-            $("#mod10").load("/aowp/modcard.html", function() {
-                showMod("paralyzing_infusion");
-            });
-            $("#mod11").load("/aowp/modcard.html", function() {
-                showMod("plague_carrier");
-            });
-            $("#mod12").load("/aowp/modcard.html", function() {
-                showMod("superior_evolutionary_mutation");
-            });
+
         });
-
     </script>
 
 
@@ -67,26 +37,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Wildlife Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
-    <div id="mod6"></div>
-    <div id="mod7"></div>
-    <div id="mod8"></div>
-    <div id="mod9"></div>
-    <div id="mod10"></div>
-
-    <div id="mod11"></div>
-    <div id="mod12"></div>
-
-
-
+    <div id="mods">
     </div>
 
 
-</body>
 
-</html>
+</body></html>

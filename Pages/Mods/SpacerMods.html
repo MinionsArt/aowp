@@ -15,25 +15,18 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["debilitating_strain", "hallucinogenic_regulators", "makeshift_choking_module",
+                "mantra_of_the_branded"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("debilitating_strain");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("hallucinogenic_regulators");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("makeshift_choking_module");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("mantra_of_the_branded");
-            });
+
 
 
 
         });
-
     </script>
 
 
@@ -46,19 +39,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Spacer Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-
-
-
-
-
+    <div id="mods">
     </div>
 
 
-</body>
-
-</html>
+</body></html>

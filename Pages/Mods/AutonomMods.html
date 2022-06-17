@@ -14,28 +14,17 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $("#body").ready(function() {
+            var modsarray = ["autonom_network_connector", "concussive_ordnance", "immolation_matrix",
+                "mining_laser_upgrade", "self-repair_systems"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#header").load("/aowp/header.html");
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("autonom_network_connector");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("concussive_ordnance");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("immolation_matrix");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("mining_laser_upgrade");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("self-repair_systems");
-            });
 
 
         });
-
     </script>
 
 
@@ -48,19 +37,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Autonom Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
-
-
-
-
+    <div id="mods">
     </div>
 
 
-</body>
-
-</html>
+</body></html>

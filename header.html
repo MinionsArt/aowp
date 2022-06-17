@@ -15,7 +15,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-70751511-1');
-
     </script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
@@ -45,7 +44,6 @@
         function is_touch_device() {
             return !!('ontouchstart' in window);
         }
-
     </script>
 
     <template id="unit_card_template">
@@ -109,6 +107,45 @@
             </div>
 
         </div>
+    </template>
+
+    <template id="mod_card_template">
+        <div class="mod_card">
+
+            <div class="mod_image_holder">
+
+
+                <p class="mod_name" id="modname">Grounding Harness</p>
+
+                <p style="padding-left: 10px" id="modtier">Tier: I</p>
+                <spacedline></spacedline>
+                <div style="width : 250px; float:left">
+                    <img class="mod_image" id="modicon" src="Icons/Mods/Grounding_Harness.png">
+
+
+
+                    <spacedline></spacedline>
+                    <p style="padding-left: 10px" id="modcost">
+
+                        Cost: 5 <tricorium></tricorium>
+
+                    </p>
+
+
+                </div>
+
+                <div style="float:left">
+                    <p class="mod_description" id="moddescription">By grounding itself, the unit gains Stagger Resistance and +5 <arcResistance></arcResistance> resistance <br> Additionally, this mod grants the unit +1 <armor></armor> <br><br>
+                        <abilityred>This Mod can only be applied to non-Mechanical units that have Land Movement. </abilityred>
+                    </p>
+                </div>
+
+
+
+
+
+
+            </div>
     </template>
 
     <meta charset="UTF-8">
@@ -247,6 +284,4 @@
         </li>
         <li><a class='prett' style="color:lawngreen" href='/aowp/techtree.html'>Techtree</a> </li>
     </ul>
-</body>
-
-</html>
+</body></html>

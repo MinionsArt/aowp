@@ -15,24 +15,18 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["forgotten_essence_siphon", "corrupted_incarnation", "entropic_transpositioner",
+                "entropic_chaos_inducer"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("forgotten_essence_siphon");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("corrupted_incarnation");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("entropic_transpositioner");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("entropic_chaos_inducer");
-            });
+
+
 
 
         });
-
     </script>
 
 
@@ -45,16 +39,8 @@
     <h2 style="text-align: center; color: aliceblue">
         Forgotten Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-
-
+    <div id="mods">
     </div>
 
 
-</body>
-
-</html>
+</body></html>

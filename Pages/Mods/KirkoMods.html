@@ -15,41 +15,15 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["heightened_vision_(detector)", "crippling_claws", "regenerative_carapace",
+                "adaptive_carapace", "tunneling_claws", "poison_excretion", "psi-infected_claws",
+                "cloaking_carapace", "resuscitation_glands", "accelerated_metabolism", "adrenal_response_glands"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("heightened_vision_(detector)");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("crippling_claws");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("regenerative_carapace");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("adaptive_carapace");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("tunneling_claws");
-            });
-            $("#mod6").load("/aowp/modcard.html", function() {
-                showMod("poison_excretion");
-            });
-            $("#mod7").load("/aowp/modcard.html", function() {
-                showMod("psi-infected_claws");
-            });
-            $("#mod8").load("/aowp/modcard.html", function() {
-                showMod("cloaking_carapace");
-            });
-            $("#mod9").load("/aowp/modcard.html", function() {
-                showMod("resuscitation_glands");
-            });
-            $("#mod10").load("/aowp/modcard.html", function() {
-                showMod("accelerated_metabolism");
-            });
-            $("#mod11").load("/aowp/modcard.html", function() {
-                showMod("adrenal_response_glands");
-            });
+
         });
     </script>
 
@@ -63,21 +37,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Kir'Ko Mods
     </h2>
-    <div id="mod1">
+    <div id="mods">
     </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
 
-    <div id="mod6"></div>
-    <div id="mod7"></div>
-    <div id="mod8"></div>
-    <div id="mod9"></div>
-    <div id="mod10"></div>
-    <div id="mod11"></div>
-
-    </div>
 
 
 </body></html>

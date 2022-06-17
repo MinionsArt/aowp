@@ -15,33 +15,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["grounding_harness", "advanced_instinct_controller", "primal_awareness_amplifier_(detector)",
+                "regenerative_bioregulator", "crushing_roots", "blood_fury_inducers", "earth_link_mask",
+                "spirit_link_module"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("grounding_harness");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("advanced_instinct_controller");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("primal_awareness_amplifier_(detector)");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("regenerative_bioregulator");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("crushing_roots");
-            });
-            $("#mod6").load("/aowp/modcard.html", function() {
-                showMod("blood_fury_inducers");
-            });
-            $("#mod7").load("/aowp/modcard.html", function() {
-                showMod("earth_link_mask");
-            });
-            $("#mod8").load("/aowp/modcard.html", function() {
-                showMod("spirit_link_module");
-            });
+
         });
+
     </script>
 
 
@@ -54,21 +38,10 @@
     <h2 style="text-align: center; color: aliceblue">
         Amazon Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
-
-    <div id="mod6"></div>
-    <div id="mod7"></div>
-    <div id="mod8"></div>
-
-
-
-
+    <div id="mods">
     </div>
 
 
-</body></html>
+</body>
+
+</html>

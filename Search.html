@@ -30,7 +30,6 @@
 
             $(this).css("color", "cyan");
         });
-
     </script>
     <title>Age of Wonders Planetfall - Search</title>
 </head>
@@ -435,18 +434,14 @@
     }
 
     function addModCard(mod) {
-        var iDiv = document.createElement('div');
-        // iDiv.setAttribute("id", "unit");
-        // alert(unit);
+
+        var iDiv = mod_card_template.content.cloneNode(true);
         document.getElementById("searchOutputMod").appendChild(iDiv);
-        $(iDiv).load("/aowp/modcard.html", function() {
-            showMod(mod);
-        });
+
+        showMod(mod);
+
 
 
 
     }
-
-</script>
-
-</html>
+</script></html>

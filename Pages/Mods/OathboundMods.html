@@ -15,35 +15,14 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["oath_of_loyalty", "battle_pattern_analyzer", "oath_of_purity",
+                "oath_of_devotion", "plight_mitigator", "timethread_datascrolls", "oath_of_courage",
+                "destiny's_manuscript", "beacon_of_hope"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("oath_of_loyalty");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("battle_pattern_analyzer");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("oath_of_purity");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("oath_of_devotion");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("plight_mitigator");
-            });
-            $("#mod6").load("/aowp/modcard.html", function() {
-                showMod("timethread_datascrolls");
-            });
-            $("#mod7").load("/aowp/modcard.html", function() {
-                showMod("oath_of_courage");
-            });
-            $("#mod8").load("/aowp/modcard.html", function() {
-                showMod("destiny's_manuscript");
-            });
-            $("#mod9").load("/aowp/modcard.html", function() {
-                showMod("beacon_of_hope");
-            });
 
         });
     </script>
@@ -58,18 +37,7 @@
     <h2 style="text-align: center; color: aliceblue">
         Oathbound Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
-
-    <div id="mod6"></div>
-    <div id="mod7"></div>
-    <div id="mod8"></div>
-    <div id="mod9"></div>
-
+    <div id="mods">
     </div>
 
 

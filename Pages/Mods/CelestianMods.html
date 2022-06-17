@@ -15,27 +15,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["tenets_of_tranquility", "shield_of_remorse", "tenets_of_healing",
+                "tenets_of_pacifism", "shield_of_reckoning"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("tenets_of_tranquility");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("shield_of_remorse");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("tenets_of_healing");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("tenets_of_pacifism");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("shield_of_reckoning");
-            });
+
 
 
         });
-
     </script>
 
 
@@ -48,19 +38,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Celestian Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
-
-
-
-
+    <div id="mods">
     </div>
 
 
-</body>
 
-</html>
+</body></html>

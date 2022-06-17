@@ -15,25 +15,17 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["poison_glands", "euphoric_spores", "regeneration_spores",
+                "sprouting_infestation"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("poison_glands");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("euphoric_spores");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("regeneration_spores");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("sprouting_infestation");
-            });
 
 
 
         });
-
     </script>
 
 
@@ -46,19 +38,9 @@
     <h2 style="text-align: center; color: aliceblue">
         The Growth Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-
-
-
-
-
+    <div id="mods">
     </div>
 
 
-</body>
 
-</html>
+</body></html>

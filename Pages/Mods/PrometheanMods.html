@@ -15,31 +15,15 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aowp/header.html");
+            var modsarray = ["purification_field", "thermal_targeting_relay", "hazmat_protection",
+                "pyrx_absorption_panels", "backlash_projectors", "superheated_plasma_actuators", "phoenix_bomb_launchers"
+            ];
+            $("#header").load("/aowp/header.html", function() {
+                showModsFromList(modsarray);
+            });
 
-            $("#mod1").load("/aowp/modcard.html", function() {
-                showMod("purification_field");
-            });
-            $("#mod2").load("/aowp/modcard.html", function() {
-                showMod("thermal_targeting_relay");
-            });
-            $("#mod3").load("/aowp/modcard.html", function() {
-                showMod("hazmat_protection");
-            });
-            $("#mod4").load("/aowp/modcard.html", function() {
-                showMod("pyrx_absorption_panels");
-            });
-            $("#mod5").load("/aowp/modcard.html", function() {
-                showMod("backlash_projectors");
-            });
-            $("#mod6").load("/aowp/modcard.html", function() {
-                showMod("superheated_plasma_actuators");
-            });
-            $("#mod7").load("/aowp/modcard.html", function() {
-                showMod("phoenix_bomb_launchers");
-            });
+
         });
-
     </script>
 
 
@@ -52,19 +36,9 @@
     <h2 style="text-align: center; color: aliceblue">
         Promethean Mods
     </h2>
-    <div id="mod1">
-    </div>
-    <div id="mod2"></div>
-    <div id="mod3"></div>
-    <div id="mod4"></div>
-    <div id="mod5"></div>
-    <div id="mod6"></div>
-    <div id="mod7"></div>
-
-
+    <div id="mods">
     </div>
 
 
-</body>
 
-</html>
+</body></html>
