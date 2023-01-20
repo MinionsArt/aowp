@@ -433,7 +433,7 @@
  }
 
  function showUnitsFromList(list) {
-     for (let i = 0; i < list.length; i++) {
+     for (var i = 0; i < list.length; i++) {
          var iDiv = unit_card_template.content.cloneNode(true);
          document.getElementById("units").appendChild(iDiv);
          showUnit(list[i]);
