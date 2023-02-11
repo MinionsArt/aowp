@@ -417,6 +417,34 @@
      }
 
  }
+ async function spawnCards(list) {
+     var doc = document.getElementById("units");
+     for (var i = 0; i < list.length; i++) {
+         var iDiv = unit_card_template.content.cloneNode(true);
+         doc.appendChild(iDiv);
+     }
+
+ }
+
+
+
+
+
+ async function showUnitsFromList(list) {
+
+
+     await spawnCards(list);
+
+     for (var i = 0; i < list.length; i++) {
+
+         showUnit(list[i]);
+
+     };
+
+
+
+
+ }
 
 
  function checkModRequirements(unit) {
@@ -432,14 +460,11 @@
      }
  }
 
- function showUnitsFromList(list) {
-     for (var i = 0; i < list.length; i++) {
-         var iDiv = unit_card_template.content.cloneNode(true);
-         document.getElementById("units").appendChild(iDiv);
-         showUnit(list[i]);
 
-     };
- }
+
+
+
+
 
  function showModsFromList(list, divId) {
      for (let i = 0; i < list.length; i++) {
@@ -573,6 +598,7 @@
 
              //checkModRequirements(jsonUnits.units[i]);
              found = true;
+             break;
          }
 
 
