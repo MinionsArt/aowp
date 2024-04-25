@@ -4,6 +4,25 @@ html {
 
 }
 
+@font-face {
+    font-family: 'Header';
+    src: url(/aowp/Data/HEADER.ttf);
+}
+
+@font-face {
+    font-family: 'Decorative';
+    src: url(/aowp/Data/DECORATIVE.otf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(/aowp/Data/REGULAR.ttf);
+}
+
+@font-face {
+    font-family: 'Number';
+    src: url(/aowp/Data/NUMBER.ttf);
+}
 
 
 th {
@@ -72,7 +91,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: aliceblue;
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
     font-size: 14px;
 }
 
@@ -85,7 +104,7 @@ ul.egmenu {
     background: black;
     border: 1px solid rgba(60, 60, 90, 1);
     height: 30px;
-    width: 100%;
+    width: 1300px;
 }
 
 ul.egmenu > li {
@@ -106,7 +125,7 @@ ul.egmenu ul {
 }
 
 body {
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
 }
 
 ul.egmenu a {
@@ -122,7 +141,7 @@ ul.egmenu li {
     z-index: 1000;
     text-transform: uppercase;
     font-size: 10px;
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
 
 
 }
@@ -201,7 +220,7 @@ ul.egmenu li:hover ul {
 #menu li {
     float: left;
     position: relative;
-    font: bold 12px Arial;
+    font: 12px Arial;
     text-shadow: 0 -1px 0 #000;
     text-transform: uppercase;
     z-index: 1000;
@@ -236,7 +255,7 @@ ul.egmenu li:hover ul {
 }
 
 #menu label {
-    font: bold 30px Arial;
+    font: 30px Arial;
     display: none;
     width: 35px;
     height: 36px;
@@ -346,7 +365,7 @@ ul.egmenu li:hover ul {
 }
 
 p {
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
     font-size: 15px;
     margin: 10px 0 0 0;
 
@@ -420,6 +439,7 @@ p {
     float: right;
     padding: 20px;
     max-width: 500px;
+
     top: -20px;
 }
 
@@ -436,12 +456,44 @@ p {
 }
 
 .unit_description {
-    font-family: "Custom";
+    font-family: "REGULAR";
     color: #fff4ad;
+
+    font-size: 14px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+    padding: 15px;
+    background-image: url(/aowp/UI/scan.png);
+    max-height: 200px;
+    overflow-y: scroll;
     top: -20px;
+}
+
+.unit_description::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: black;
+}
+
+.unit_description::-webkit-scrollbar {
+    width: 12px;
+    background-color: black;
+}
+
+.unit_description::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(105, 255, 255, 0.4);
+    ;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    box-shadow: inset 0px 0px 20px 14px rgb(7 26 42);
+    top: 0;
+    left: 0;
 }
 
 .mod_image {
@@ -499,8 +551,7 @@ tab {
     width: 400px;
     float: left;
     border: 1px solid white;
-    background-image: url("/aowp/UI/AbilityListBackground.png");
-    background-size: 400px;
+    background-color: rgb(7 26 42);
     display: table;
     border: 2px solid white;
     border-color: rgba(105, 255, 255, 0.4);
@@ -535,16 +586,17 @@ tab {
 
 
 .unit_card {
-    background-color: rgb(25, 49, 61, 0.5);
+
+    background-color: rgb(12 23 29 / 50%);
     color: white;
-    width: 840px;
-    height: 600px;
-    padding: 35px;
+    width: 760px;
+    height: auto;
+    padding: 0px;
     display: table;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-bottom: 100px;
+    margin-top: 35px;
     margin-left: auto;
-
     margin-right: auto;
 
 }
@@ -652,7 +704,7 @@ tab {
     position: relative;
     clear: left;
     width: 320px;
-    border: 5px solid black;
+    border: 5px solid #111920;
     background-color: rgba(10, 10, 40, 0.4);
 
 }
@@ -695,7 +747,22 @@ tab {
     visibility: visible;
 }
 
+.tooltiptextnew {
+    background-color: black;
+    color: #fff;
 
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #004b5e;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    position: absolute;
+    z-index: 10000;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 40px;
+    margin-left: 0px;
+    pointer-events: none;
+}
 
 
 .unit_prod {
@@ -714,19 +781,19 @@ tab {
     align-content: right;
     margin-top: 10px;
     display: inline-block;
-
+    font-family: 'Number';
     min-width: 50px;
 }
 
 
 .unit_name {
-    font-size: 16px;
+    font-size: 18px;
     position: absolute;
     text-align: center;
     width: 100%;
     /* position the left edge of the element at the middle of the parent */
-    top: -1px;
-    background-color: #15242e;
+    top: 0px;
+    /*  background-color: #15242e;*/
     text-shadow: 1px 1px 2px black;
 }
 
@@ -740,7 +807,7 @@ tab {
 }
 
 .togglelink2 {
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
     padding-left: 10px;
     margin-left: 5px;
     text-transform: uppercase;
@@ -752,7 +819,7 @@ tab {
 
 
 .togglelink3 {
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
     padding-left: 10px;
 
     text-transform: uppercase;
@@ -764,7 +831,7 @@ tab {
 }
 
 .togglelink {
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
     padding-left: 10px;
     margin-left: 5px;
     text-transform: uppercase;
@@ -780,7 +847,7 @@ tab {
     color: aliceblue;
     text-align: center;
     padding-left: 10px;
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
 
 }
 
@@ -1504,7 +1571,7 @@ research {
 .hero-text {
     text-align: center;
     position: absolute;
-    font-family: 'Duru Sans', sans-serif;
+    font-family: 'Regular';
     top: 5%;
     left: 50%;
     transform: translate(-50%, -30%);

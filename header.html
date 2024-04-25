@@ -52,18 +52,35 @@
         <div class="unit_card">
 
             <div class="unit_image_holder">
-                <video width="400" autoplay muted loop id="vid">
+                <video width="400" height="297" autoplay muted loop id="vid" preload="none">
                     <source src="" type="video/mp4">
                 </video>
+                <div class="shadow"></div>
                 <p class="unit_description" id="description">Unit Description</p>
                 <div style="width: 100%">
+                    <img src="/aowp/UI/iconLeft.png" style="    position: absolute;
+    width: 80%;
+    top: -57px;
+    left: 0%;">
+                    <img src="/aowp/UI/iconMiddle.png" style="  
+    position: absolute;
+    width: 100%;
+    top: -55px;
+    left: 52%;
+    z-index: 1;">
+                    <img src="/aowp/UI/iconRight.png" style="    position: absolute;
+    width: 80%;
+    top: -57px;
+    left: 112%;">
                     <p class="unit_name" id="unitstring">Unit Name</p>
                 </div>
                 <div style="position: absolute; top: 18px; height: 20px; width: 252px;">
 
                     <p class="unit_prod" id="productioncost">Base Cost</p>
                 </div>
-                <img class="unit_image" id="uniticon" src="" style="position: absolute; left:-35px; top: -35px; background-color:rgba(105, 255, 255, 0.4);;  padding: 2px" width="60">
+                <img class="unit_image" id="uniticon" src="" style="position: absolute; 
+    left: -11px;
+    top: -45px; background-color:rgba(105, 255, 255, 0.4);;  padding: 2px" width="60">
 
                 <div style="position: absolute; top: 42px; height: 20px; width: 133px;">
 
@@ -148,6 +165,7 @@
 
 
             </div>
+        </div>
     </template>
 
     <meta charset="UTF-8">
@@ -166,7 +184,9 @@
 <body>
     <ul class="egmenu">
 
-        <li style="color:antiquewhite">Units:</li>
+        <li><img style="
+    margin-top: -10px;
+    margin-right: -10px;" src="/aowp/UI/UnitsIcon.png" width="40px">
         <li><a style="color:burlywood" href='#'>Race</a>
             <ul>
 
@@ -219,7 +239,9 @@
                 <li><a href="/aowp/Pages/Units/MycellianUnits.html" style="color: yellow"><img src="/aowp/Icons/UnitTypes/plant.png" width="20px"> Mycelians</a></li>
             </ul>
         </li>
-        <li style="color:cadetblue">Mods:</li>
+        <li><img style="
+    margin-top: -10px;
+    margin-right: -10px;" src="/aowp/UI/modsIcon.png" width="40px">
         <li><a class='prett' style="color:deepskyblue" href='#'>Race</a>
             <ul class='menus'>
                 <li><a href="/aowp/Pages/Mods/AmazonMods.html"><img src="/aowp/Icons/UnitTypes/amazon.png" width="20px"> Amazon</a></li>
@@ -284,8 +306,13 @@
         </li>
         <li><a class='prett' style="color:coral" href='/aowp/Search.html'>Search</a>
         </li>
+        <li><img style="
+    margin-top: -10px;
+    margin-right: -10px;" src="/aowp/UI/researchIcon.png" width="40px">
         <li><a class='prett' style="color:lawngreen" href='/aowp/techtree.html'>Techtree</a> </li>
     </ul>
+    <div id="hoverDiv" class="tooltiptextnew" style="display: none"></div>
 </body>
+
 
 </html>

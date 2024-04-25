@@ -218,7 +218,8 @@
              document.getElementById("unitstat").appendChild(btn);
 
              btn.appendChild(imag);
-             btn.append(spa);
+             //   btn.append(spa);
+             addTooltipListeners(btn, spa);
 
 
          }
@@ -284,8 +285,8 @@
              imag.setAttribute("height", "40");
 
              document.getElementById("unitabholder").append(btn);
-             tex.appendChild(spa);
-
+             // tex.appendChild(spa);
+             addTooltipListeners(btn, spa);
              btn.appendChild(imag);
              btn.append(tex);
              btn.append(dam);
@@ -320,8 +321,8 @@
              imag.setAttribute("height", "40");
 
              document.getElementById("unitabholder").appendChild(btn);
-             tex.appendChild(spa);
-
+             // tex.appendChild(spa);
+             addTooltipListeners(btn, spa);
              btn.appendChild(imag);
              btn.append(tex);
 
@@ -359,8 +360,8 @@
              imag.setAttribute("height", "40");
 
              document.getElementById("unitabholder").appendChild(btn);
-             tex.appendChild(spa);
-
+             // tex.appendChild(spa);
+             addTooltipListeners(btn, spa);
              btn.appendChild(imag);
              btn.append(tex);
              btn.append(dam);
@@ -408,9 +409,10 @@
              document.getElementById("unitabholder").appendChild(btn);
              // document.getElementById("unitabholder").setAttribute("id", "unitabholder" + b);
 
-             tex.appendChild(spa);
+             //  tex.appendChild(spa);
 
              btn.appendChild(imag);
+             addTooltipListeners(btn, spa);
              btn.append(tex);
 
          }
@@ -493,16 +495,15 @@
              unitName = document.getElementById("unitstring");
              unitName.setAttribute("id", "unitstring" + a);
 
-             unitName.innerHTML = "<span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonUnits.units[i].name.toUpperCase();
+             unitName.innerHTML = "<span style=\"background-color:#15242e\"><span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonUnits.units[i].name.toUpperCase(); + "</span>"
              descr = document.getElementById("description");
              descr.setAttribute("id", "description" + a);
-             descr.innerHTML = jsonUnits.units[i].description;
+             var description = jsonUnits.units[i].description;
+             description = description.replace("— ", "<br><br>— ");
+             descr.innerHTML = description;
              imagelink = document.getElementById("vid");
-             imagelink.setAttribute("id", "vid" + a);
+
              imagelink.setAttribute('src', "/aowp/Previews/" + jsonUnits.units[i].id + ".mp4");
-             if (imagelink.getAttribute('src') === "/aowp/Previews/undefined") {
-                 imagelink.setAttribute('src', "/aowp/Previews/placeholder.mp4");
-             }
              // research = document.getElementById("researchorigin");
              // research.setAttribute("id", "researchorigin" + a);
              // if (jsonUnits.units[i].origin_research != "") {
@@ -595,7 +596,7 @@
 
              document.getElementById("unitstat").setAttribute("id", "unitstat" + a);
 
-
+             imagelink.setAttribute("id", "vid" + a);
              //checkModRequirements(jsonUnits.units[i]);
              found = true;
              break;
@@ -849,15 +850,10 @@
              btn.appendChild(imag);
 
 
-             btn.appendChild(spa);
+             //  btn.appendChild(spa);
 
 
-             if (b == "s" || b == "em" || b == "es") {
-                 spa.className = "tooltiptext2";
-             } else {
-                 spa.className = "tooltiptext";
-             }
-
+             addTooltipListeners(btn, spa);
              found = true;
 
              // btn.appendChild(tex);
@@ -950,14 +946,10 @@
              btn.appendChild(imag);
 
 
-             btn.appendChild(spa);
+             // btn.appendChild(spa);
 
 
-             if (b == "s" || b == "em" || b == "es") {
-                 spa.className = "tooltiptext2";
-             } else {
-                 spa.className = "tooltiptext";
-             }
+             addTooltipListeners(btn, spa);
              found = true;
              // btn.appendChild(tex);
 
@@ -1033,15 +1025,8 @@
              document.getElementById("unlockholder").appendChild(btn);
              btn.appendChild(imag);
 
-
-             btn.appendChild(spa);
-
-
-             if (b == "s" || b == "em" || b == "es") {
-                 spa.className = "tooltiptext2";
-             } else {
-                 spa.className = "tooltiptext";
-             }
+             addTooltipListeners(btn, spa);
+             // btn.appendChild(spa);
              // btn.appendChild(tex);
              found = true;
          }
@@ -1259,3 +1244,96 @@
          document.body.appendChild(css)
      }
  });
+
+
+ function addTooltipListeners(tooltip, span) {
+     tooltip.addEventListener('mouseenter', function (event) {
+         TurnOnTooltip(span);
+         if (tooltip != hoverDiv) {
+             updateHoverDivPosition(event);
+         }
+
+     });
+
+     tooltip.addEventListener('mouseleave', function () {
+         TurnOffTooltip();
+     });
+ }
+
+ function removeToolTipListeners(tooltip) {
+     tooltip.removeEventListener('mouseenter', tooltip);
+
+     tooltip.removeEventListener('mouseleave', tooltip);
+
+ }
+
+
+ function TurnOnTooltip(spa) {
+     hoverDiv = document.getElementById("hoverDiv");
+     // console.log('Mouse entered the div');
+     hoverDiv.style.display = 'block';
+     if (spa != null) {
+         hoverDiv.innerHTML = spa.innerHTML;
+     }
+
+ }
+
+ function TurnOffTooltip() {
+     hoverDiv = document.getElementById("hoverDiv");
+     hoverDiv.style.display = 'none';
+ }
+
+
+ function getNormalizedPosition(event) {
+     const screenWidth = window.innerWidth;
+     const screenHeight = window.innerHeight;
+
+     // event.clientX and event.clientY give the position of the mouse
+     const xPosition = event.clientX;
+     const yPosition = event.clientY;
+
+     // Normalize to a range of 0 to 1
+     const normalizedX = xPosition / screenWidth;
+     const normalizedY = yPosition / screenHeight;
+
+     return {
+         x: normalizedX,
+         y: normalizedY
+     };
+ }
+
+ function updateHoverDivPosition(event) {
+
+     // const settings = getUserSettings();
+
+     var offset = 2;
+     /*if (settings.tooltipselectable) {
+         hoverDiv.setAttribute("Style", "pointer-events: all;");
+
+
+     } else {*/
+     hoverDiv.setAttribute("Style", "pointer-events: none;");
+     offset = 10;
+
+
+     var normalizedPos = getNormalizedPosition(event);
+     const mouseX = event.clientX;
+     const mouseY = event.clientY;
+
+     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+     const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+     if (normalizedPos.x > 0.8) {
+         hoverDiv.style.left = (mouseX - hoverDiv.getBoundingClientRect().width - offset + scrollLeft) + 'px';
+     } else {
+         hoverDiv.style.left = (mouseX + offset + scrollLeft) + 'px';
+     }
+
+     if (normalizedPos.y > 0.8) {
+         hoverDiv.style.top = (mouseY - hoverDiv.getBoundingClientRect().height - offset + scrollTop) + 'px';
+     } else {
+         hoverDiv.style.top = (mouseY + offset + scrollTop) + 'px';
+     }
+
+
+ }
