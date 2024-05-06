@@ -489,7 +489,7 @@ p {
     float: left;
     background-color: rgb(0, 5, 10, 0.5);
     background-image: url(/aowp/UI/modbackgroundPlain.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: table;
     padding: 10px;
@@ -550,7 +550,7 @@ p {
     max-height: calc(100vh - var(--offset) * 2);
     margin: 0 0 0 0;
     overflow-y: auto;
-    width: 200px;
+    width: 240px;
     max-height: 800px;
     display: grid;
     grid-auto-columns: auto;
@@ -1845,98 +1845,98 @@ happinessSlot {
 }
 
 unitSkirmisher {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/skirmisher.png);
     position: relative;
 }
 
 unitSpecialist {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/specialist.png);
     position: relative;
 }
 
 unitElite {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/elite.png);
     position: relative;
 }
 
 unitScout {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/scout.png);
     position: relative;
 }
 
 unitCore {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/core.png);
     position: relative;
 }
 
 unitShip {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/ship.png);
     position: relative;
 }
 
 Amazon {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/amazon.png);
     position: relative;
 }
 
 Assembly {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/assembly.png);
     position: relative;
 }
 
 Dvar {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/dvar.png);
     position: relative;
 }
 
 Syndicate {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/syndicate.png);
     position: relative;
 }
 
 Shakarn {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/shakarn.png);
     position: relative;
 }
 
 Vanguard {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/vanguard.png);
     position: relative;
 }
 
 Kirko {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/kirko.png);
     position: relative;
 }
 
 Oathbound {
-    max-height: 20px;
+    max-height: 30px;
     top: 3px;
     content: url(/aowp/Icons/UnitTypes/oathbound.png);
     position: relative;

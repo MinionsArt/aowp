@@ -588,11 +588,11 @@ function GetUnitTierAndName(id) {
             if (splitName.length > 1) {
                 splitName[0] = splitName[0].replace("'", "");
                 var name = "<" + splitName[0] + ">" + "</" + splitName[0] + "> - " + splitName[1];
-                return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
+                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
 
             }
             else {
-                return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
+                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
 
             }
 
@@ -612,7 +612,7 @@ function GetModTierAndName(id) {
             var name = jsonMods.mods[i].name;
 
 
-            return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getModTypeTag(jsonMods.mods[i].type) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonMods.mods[i].tier) + "</p>";
+            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getModTypeTag(jsonMods.mods[i].type) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonMods.mods[i].tier) + "</p>";
 
         }
     }
