@@ -18,10 +18,11 @@
                 "amazon_star_guide", "assembly_star_guide", "dvar_star_guide", "kirko_star_guide", "oathbound_star_guide", "shakarn_star_guide", "syndicate_star_guide", "vanguard_star_guide", "ascended_teacher"
             ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                showUnitsFromListTest(unitarray, "undefined");
             });
 
         });
+
     </script>
 
 
@@ -35,10 +36,14 @@
     <h2 style="text-align: center; color: aliceblue">
         Celestian Units
     </h2>
+
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
     <div id="units">
     </div>
 
 
 
 
-</body></html>
+</body>
+
+</html>
