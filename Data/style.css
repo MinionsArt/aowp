@@ -330,6 +330,45 @@ ul.egmenu li:hover ul {
     display: block;
 }
 
+.contentUnits {
+    z-index: 1;
+    grid-auto-columns: auto;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    color: #bbcdf6;
+    text-align: left;
+    border-style: solid;
+    border-image: url(/aow4db/Icons/9slicetooltip.png);
+    border-image-slice: 4 10 4 10 fill;
+    text-shadow: 2px 2px 3px black;
+    z-index: 2;
+}
+
+.collapsibleUnits {
+    color: white;
+    cursor: pointer;
+    padding: 8px 6px;
+    border: none;
+    text-align: left;
+    outline: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-image: url(/aowp/UI/modbackgroundPlain.png);
+    border-image-slice: 10 10 10 10;
+    background-color: black;
+    border-image-repeat: stretch;
+}
+
+.active,
+.collapsibleUnits:hover {
+    background-color: darkslategray;
+}
+
+.collapsibleUnits:after {
+    content: '▼';
+}
+
 
 .collapsible {
     background-color: #371847;

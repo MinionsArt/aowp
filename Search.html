@@ -43,6 +43,7 @@
         <a href="#" onclick="showhide3('modS');" style="font-size: 20px" class="togglelink"> Mod Search </a>
 
     </div>
+
     <div id="unitS" style=" width:100%;margin: auto;">
         <h2 style="color:white;text-align: center">Unit Search</h2>
         <p style="color:white;text-align: center">use "+" to search for up to 3 keywords <br> E.G: <span style="color:aqua">cyborg+skirmisher+overwatch</span><br>Add tier like "tier3"</p>
@@ -53,7 +54,9 @@
             <p id="searchResult" style="color: aqua"></p>
 
         </div>
-        <div id="searchOutput">test</div>
+
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units">test</div>
     </div>
     <div id="modS" style=" width:100%;margin: auto; display: none">
         <h2 style="color:white;text-align: center">Mod Search</h2>
@@ -65,8 +68,10 @@
             <p id="searchResultMod" style="color: aqua"></p>
 
         </div>
-        <div id="searchOutputMod">test</div>
+        <div id="buttonHolder2" class="w3-bar w3-black"></div>
+        <div id="mods">test</div>
     </div>
+
 </body>
 <script>
     $(document).ready(function() {
@@ -108,7 +113,7 @@
     function searchData() {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInput");
-        output = document.getElementById("searchOutput");
+        output = document.getElementById("units");
         output.innerHTML = "";
 
 
@@ -122,7 +127,7 @@
     function searchDataMod() {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInputMod");
-        output = document.getElementById("searchOutputMod");
+        output = document.getElementById("mods");
         output.innerHTML = "";
 
 
@@ -137,7 +142,7 @@
 
         var fields = keyword.split('+', 3);
         var listMod = new Array();
-        output = document.getElementById("searchOutputMod");
+        output = document.getElementById("mods");
         result = document.getElementById("searchResultMod");
 
         for (i = 0; i < jsonMods.mods.length; i++) {
@@ -177,18 +182,16 @@
                 } else {
                     listMod.push(jsonMods.mods[i].slug);
                 }
-
-
-
             }
 
 
         }
         result.innerHTML = listMod.length.toString() + " results found";
-        for (j = 0; j < listMod.length; j++) {
+        showModsFromList(listMod, undefined, "search");
+        /*  for (j = 0; j < listMod.length; j++) {
 
             addModCard(listMod[j]);
-        }
+        }*/
 
     }
 
@@ -197,7 +200,7 @@
 
         var fields = keyword.split('+', 3);
         var list = new Array();
-        output = document.getElementById("searchOutput");
+        output = document.getElementById("units");
         result = document.getElementById("searchResult");
 
         for (i = 0; i < jsonUnits.units.length; i++) {
@@ -317,10 +320,13 @@
         }
 
         result.innerHTML = list.length.toString() + " results found";
-        for (j = 0; j < list.length; j++) {
+
+        showUnitsFromList(list);
+        // showUnitsSearchNew(list);
+        /*for (j = 0; j < list.length; j++) {
 
             addUnitCard(list[j]);
-        }
+        }*/
 
     }
 

@@ -24,14 +24,20 @@
 
             var modsarrayT4 = ["equipment:_avarice", "equipment:_deaths_gaze", "equipment:_delirium_throwing_blade", "equipment:_lifes_grace"];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarrayT1, 't1');
-                showModsFromList(modsarrayT2, 't2');
-                showModsFromList(modsarrayT3, 't3');
-                showModsFromList(modsarrayT4, 't4');
+                modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
+
+
+                for (i in modarrayTotal) {
+
+                    showModsFromList(modarrayTotal[i], "Secondary Weapons Tier " + (parseInt(parseInt(i) + 1)) + " ");
+                }
+
+                SetCollapsibleStuff();
             });
 
 
         });
+
     </script>
 
     S
@@ -45,48 +51,11 @@
         Secondary Weapons
     </h2>
 
-    <div class="mod_card">
-        <button type="button" class="collapsible">
-            <p id="description">Tier 1 Secondary Weapons (17)</p>
-        </button>
-        <div class="content" id="t1">
 
-        </div>
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
 
-        <button type="button" class="collapsible">
-            <p id="description">Tier 2 Secondary Weapons (15)</p>
-        </button>
-        <div class="content" id="t2">
+    <div id="mods"></div>
 
-        </div>
-        <button type="button" class="collapsible">
-            <p id="description">Tier 3 Secondary Weapons (21)</p>
-        </button>
-        <div class="content" id="t3">
-        </div>
-        <button type="button" class="collapsible">
-            <p id="description">Tier 4 Secondary Weapons (4)</p>
-        </button>
-        <div class="content" id="t4">
-        </div>
+</body>
 
-    </div>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
-
-</body></html>
+</html>

@@ -427,10 +427,25 @@ async function spawnCards(list) {
 }
 
 
+function romanize(num) {
+    if (isNaN(num))
+        return NaN;
+    var digits = String(+num).split(""),
+        key = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
+            "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
+            "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"
+        ],
+        roman = "",
+        i = 3;
+    while (i--)
+        roman = (key[+digits.pop() + (i * 10)] || "") + roman;
+    return Array(+digits.join("") + 1).join("M") + roman;
+}
+
 async function showUnitsFromListTest(list, overwritetext) {
 
     await spawnCards(list);
-    SetButtonsAndDivs(list, overwritetext + "-button", "unit");
+    SetButtonsAndDivs(list, undefined, "unit");
 
     const urlParams = new URLSearchParams(window.location.search);
     const product = searchParams.get('type');
@@ -449,12 +464,13 @@ async function showUnitsFromListTest(list, overwritetext) {
     }
 }
 
-function AddListView(list, parent) {
+function AddListView(list, parent, cardType) {
     // add list view first
+    console.log(parent);
     if (parent != undefined) { // but only if its a non-tiered one, if tiered only do the first one
         if (parent.indexOf("Tier") != -1) {
             // tiered
-            if (parent.indexOf("Tier I ") != -1) {
+            if (parent.indexOf("Tier 1 ") != -1) {
                 // do nothing;
                 console.log("parent has tier1");
             } else {
@@ -464,15 +480,24 @@ function AddListView(list, parent) {
         }
     }
 
+    if (cardType === "searchMod") {
+        var buttonHolder = document.getElementById("buttonHolder2");
+    } else {
+        var buttonHolder = document.getElementById("buttonHolder");
+    }
 
-    var buttonHolder = document.getElementById("buttonHolder");
     var btn = document.createElement("BUTTON");
 
 
     btn.className = "w3-bar-item w3-button tablink";
     btn.type = "button";
     btn.innerHTML = "<i class=\"fa fa-solid fa-list\"></i>";
-    btn.setAttribute("onclick", 'openDiv(event, "' + list + '")');
+    if (cardType == "searchMod") {
+        btn.setAttribute("onclick", 'openDiv(event,\'' + list + '\',true)');
+    } else {
+        btn.setAttribute("onclick", 'openDiv(event, "' + list + '")');
+    }
+
 
     var firstChild = buttonHolder.firstChild;
     buttonHolder.insertBefore(btn, firstChild);
@@ -480,17 +505,24 @@ function AddListView(list, parent) {
 
 function SetButtonsAndDivs(list, parent, cardType) {
 
-    AddListView(list, parent);
+    if (parent === undefined) {
+        var buttonHolder = document.getElementById("buttonHolder");
+    } else {
+        var buttonHolder = document.getElementById(parent);
+    }
+    buttonHolder.innerHTML = "";
+    AddListView(list, parent, cardType);
 
     for (let i = 0; i < list.length; i++) {
 
-        // if (parent === undefined) {
-        var buttonHolder = document.getElementById("buttonHolder");
-        // } else {
-        //    var buttonHolder = document.getElementById(parent);
-        //}
 
         var dataHolder = document.getElementById("units");
+        if (dataHolder === null) {
+            dataHolder = document.getElementById("mods");
+        }
+        if (cardType === "searchMod") {
+            dataHolder = document.getElementById("mods");
+        }
         var div = document.createElement("DIV");
         div.className = "w3-container w3-border city";
         div.setAttribute("id", list[i]);
@@ -513,14 +545,28 @@ function SetButtonsAndDivs(list, parent, cardType) {
                 // btn.innerHTML = list[i];
                 btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
                 break;
+            case "mod":
+                showMod(list[i], list[i]);
+                btn.innerHTML = GetModTierAndName(list[i]);
 
+                // btn.innerHTML = list[i];
+                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
+                break;
+            case "searchMod":
+                showMod(list[i], list[i]);
+
+                btn.innerHTML = GetModTierAndName(list[i]);
+                var buttonHolder = document.getElementById("buttonHolder2");
+                // btn.innerHTML = list[i];
+                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
+                break;
 
         }
 
         buttonHolder.appendChild(btn);
 
 
-        var holderHeight = buttonHolder.offsetHeight + 50;
+        var holderHeight = buttonHolder.offsetHeight;
         dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px; margin-left:200px");
 
     }
@@ -542,11 +588,11 @@ function GetUnitTierAndName(id) {
             if (splitName.length > 1) {
                 splitName[0] = splitName[0].replace("'", "");
                 var name = "<" + splitName[0] + ">" + "</" + splitName[0] + "> - " + splitName[1];
-                return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonUnits.units[i].tier) + "</p>";
+                return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
 
             }
             else {
-                return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonUnits.units[i].tier) + "</p>";
+                return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
 
             }
 
@@ -557,6 +603,20 @@ function GetUnitTierAndName(id) {
 }
 
 
+function GetModTierAndName(id) {
+
+
+    for (i in jsonMods.mods) {
+        if (id === jsonMods.mods[i].slug) {
+
+            var name = jsonMods.mods[i].name;
+
+
+            return "<p style=\"width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getModTypeTag(jsonMods.mods[i].type) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonMods.mods[i].tier) + "</p>";
+
+        }
+    }
+}
 
 function getUnitTypeTag(passivesList) {
     var i = "";
@@ -607,6 +667,24 @@ function getUnitTypeTag(passivesList) {
     return "";
 }
 
+function getModTypeTag(type) {
+
+
+    if (type.toLowerCase().indexOf("shield") != -1) {
+        return "<shield></shield>";
+    }
+    if (type.toLowerCase().indexOf("offensive") != -1) {
+        return "<accuracy></accuracy>";
+    }
+    if (type.toLowerCase().indexOf("armor") != -1) {
+        return "<armor></armor>";
+    }
+    if (type.toLowerCase().indexOf("hit points") != -1) {
+        return "<hp></hp>";
+    }
+    return "";
+}
+
 
 async function openDiv(evt, cityName, search) {
 
@@ -629,6 +707,13 @@ async function openDiv(evt, cityName, search) {
     if (cityName.indexOf(",") != -1) {
         console.log("is array");
         var parentDiv = document.getElementById("units");
+        if (parentDiv === null) {
+            parentDiv = document.getElementById("mods");
+        }
+
+        if (search === true) {
+            parentDiv = document.getElementById("mods");
+        }
 
         // Get all direct children of the parent div
         var children = parentDiv.children;
@@ -639,12 +724,7 @@ async function openDiv(evt, cityName, search) {
         }
 
     } else {
-
-
-
-
-
-
+        console.log("get here" + cityName);
         var currentEl = document.getElementById(cityName + "_card");
         if (currentEl != null) {
             currentEl.style.display = "table";
@@ -719,17 +799,190 @@ function checkModRequirements(unit) {
 
 
 
-function showModsFromList(list, divId) {
+async function showModsFromList(list, overwritetext, search) {
+
+
     for (let i = 0; i < list.length; i++) {
         var iDiv = mod_card_template.content.cloneNode(true);
-        if (divId === undefined) {
-            document.getElementById("mods").appendChild(iDiv);
-        } else {
-            document.getElementById(divId).appendChild(iDiv);
-        }
-        showMod(list[i]);
+
+        document.getElementById("mods").appendChild(iDiv);
+
+        document.getElementById("mod_cardID").setAttribute("id", list[i] + "_card");
+
+        // showMod(list[i]);
 
     };
+    var typeMod = "mod";
+    if (search != null) {
+        typeMod = "searchMod"
+    }
+
+    if (overwritetext != undefined) {
+        SetCollapsibleButtonsAndDivs(overwritetext, list, typeMod);
+        SetButtonsAndDivs(list, overwritetext + "-button", typeMod);
+    } else {
+
+        SetButtonsAndDivs(list, undefined, typeMod);
+    }
+
+
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = searchParams.get('type');
+
+
+    if (product != undefined && search != true) {
+        var splits = product.split("&");
+        closeTabLinks(product);
+
+        document.getElementById(splits[0] + "-button").className += " w3-red";
+
+
+        await openDiv(event, splits[0]);
+
+
+    }
+}
+
+async function SetCollapsibleStuff() {
+    var coll = document.getElementsByClassName("collapsibleUnits");
+
+    var i = "";
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            var contents = document.getElementsByClassName("contentUnits");
+            var content = this.nextElementSibling;
+
+            for (j = 0; j < contents.length; j++) {
+
+
+                if (contents[j].style != null) {
+                    if (contents[j].style.display === "grid") {
+                        if (contents[j].id === content.id) {
+
+                        } else {
+
+                            coll[j].classList.toggle("active");
+                            contents[j].style.display = "none";
+                        }
+
+                    }
+                }
+
+            }
+            this.classList.toggle("active");
+
+            if (content.style.display === "grid") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "grid";
+            }
+
+
+
+
+            var buttonHolder = document.getElementById("buttonHolder");
+            var holderHeight = buttonHolder.offsetHeight;
+            var dataHolder = document.getElementById("units");
+
+
+            if (dataHolder === null) {
+                dataHolder = document.getElementById("mods");
+            }
+            dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px; margin-left:200px");
+        });
+
+
+    }
+
+    var buttonHolder = document.getElementById("buttonHolder");
+    var holderHeight = buttonHolder.offsetHeight;
+    var dataHolder = document.getElementById("units");
+    if (dataHolder === null) {
+        dataHolder = document.getElementById("mods");
+    }
+    dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;; margin-left:200px");
+}
+
+function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
+    var modName, description, cost, type, tier, i, nameString = "";
+    if (cardType === "searchMod") {
+        var buttonHolder = document.getElementById("buttonHolder2");
+    } else {
+        var buttonHolder = document.getElementById("buttonHolder");
+    }
+
+    var btn = document.createElement("BUTTON");
+    btn.type = "button";
+
+    btn.innerHTML = overwrite + " (" + list.length + ")";
+    if (cardType != "unit" && cardType != "mod" && cardType.indexOf("search") === -1) {
+        btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\')');
+        btn.setAttribute("id", overwrite + "-");
+    } else if (cardType.indexOf("search") != -1) {
+        console.log("search");
+        btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\',true)');
+        btn.setAttribute("id", overwrite + "-");
+    }
+
+    buttonHolder.appendChild(btn);
+
+    if (cardType != "unit") {
+        btn.className = "w3-bar-item w3-button tablink";
+        var dataHolder = document.getElementById("units");
+
+        if (dataHolder === null) {
+            dataHolder = document.getElementById("mods");
+        }
+        if (cardType === "searchMod") {
+            parentDiv = document.getElementById("mods");
+        }
+        var holderHeight = buttonHolder.offsetHeight + 50;
+        dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
+        var div = document.createElement("DIV");
+
+        div.className = "w3-container w3-border city";
+        div.setAttribute("id", overwrite);
+
+
+        dataHolder.appendChild(div);
+    }
+
+
+    switch (cardType) {
+
+        case "mod":
+            var holderHeight = buttonHolder.offsetHeight;
+            dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
+            btn.className = "collapsibleUnits";
+            var content = document.createElement("DIV");
+            content.setAttribute("id", overwrite + "-button");
+            content.className = "contentUnits";
+            buttonHolder.append(content);
+            // showModsFromList(list, overwrite);
+            break;
+        case "searchMod":
+            var holderHeight = buttonHolder.offsetHeight;
+            dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
+            btn.className = "collapsibleUnits";
+            var content = document.createElement("DIV");
+            content.setAttribute("id", overwrite + "-button");
+            content.className = "contentUnits";
+            buttonHolder.append(content);
+            // showModsFromList(list, overwrite);
+            break;
+
+        // case "unit":
+        //     btn.className = "collapsibleUnits";
+        //     var content = document.createElement("DIV");
+        //     content.setAttribute("id", overwrite + "-button");
+        //     content.className = "contentUnits";
+        //     buttonHolder.append(content);
+        //     break;
+    }
+
+
 }
 
 function showUnit(a) {

@@ -26,10 +26,18 @@
             var modsarrayT4 = ["equipment:_shadows_embrace", "equipment:_universal_cloaking_field_generator", "equipment:_wide-range_mending_rig_mk-ii", "equipment:_provisional_weapon_augments_mk-ii", "equipment:_v4_auto_stims_blind_rage"];
 
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarrayT1, 't1');
-                showModsFromList(modsarrayT2, 't2');
-                showModsFromList(modsarrayT3, 't3');
-                showModsFromList(modsarrayT4, 't4');
+
+                modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
+
+
+                for (i in modarrayTotal) {
+
+                    showModsFromList(modarrayTotal[i], "Hero Mods Tier " + (parseInt(parseInt(i) + 1)) + " ");
+                }
+
+                SetCollapsibleStuff();
+
+
             });
 
 
@@ -37,6 +45,7 @@
 
 
         });
+
     </script>
 
 
@@ -50,58 +59,12 @@
         Hero Mods
     </h2>
 
-    <div class="mod_card">
-        <button type="button" class="collapsible">
-            <p id="description">Tier 1 Mods (3)</p>
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
 
-        </button>
-        <div class="content" id="t1">
-
-
-        </div>
-        <button type="button" class="collapsible">
-            <p id="description">Tier 2 Mods (21)</p>
-
-        </button>
-        <div class="content" id="t2">
-
-        </div>
-        <button type="button" class="collapsible">
-            <p id="description">Tier 3 Mods (13)</p>
-
-        </button>
-        <div class="content" id="t3">
-
-
-        </div>
-        <button type="button" class="collapsible">
-            <p id="description">Tier 4 Mods (5)</p>
-
-        </button>
-        <div class="content" id="t4">
+    <div id="mods"></div>
 
 
 
-        </div>
-    </div>
+</body>
 
-
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
-
-</body></html>
+</html>

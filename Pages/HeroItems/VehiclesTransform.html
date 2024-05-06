@@ -25,13 +25,19 @@
 
 
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarrayT2, 't2');
-                showModsFromList(modsarrayT3, 't3');
-                showModsFromList(modsarrayT4, 't4');
-                showModsFromList(modsarrayTransform, 'transf');
+                modarrayTotal = [modsarrayT2, modsarrayT3, modsarrayT4];
+
+
+                for (i in modarrayTotal) {
+
+                    showModsFromList(modarrayTotal[i], "Vehicle/Transformation Tier " + (parseInt(parseInt(i) + 2)) + " ");
+                }
+
+                SetCollapsibleStuff();
             });
 
         });
+
     </script>
 
 
@@ -45,52 +51,10 @@
         Vehicles/Transformations
     </h2>
 
-    <div class="mod_card">
-        <button type="button" class="collapsible">
-            <p id="description">Tier 2 Vehicles (29)</p>
-        </button>
-        <div class="content" id="t2">
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
 
-        </div>
+    <div id="mods"></div>
 
-        <button type="button" class="collapsible">
-            <p id="description">Tier 3 Vehicles (18)</p>
+</body>
 
-        </button>
-        <div class="content" id="t3">
-        </div>
-        <button type="button" class="collapsible">
-            <p id="description">Tier 4 Vehicles (2)</p>
-
-        </button>
-        <div class="content" id="t4">
-
-        </div>
-        <button type="button" class="collapsible">
-            <p id="description">Transformations (5)</p>
-
-        </button>
-        <div class="content" id="transf">
-        </div>
-    </div>
-
-    </div>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
-
-</body></html>
+</html>
