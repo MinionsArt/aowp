@@ -635,7 +635,7 @@ async function openDiv(evt, cityName, search) {
 
         // Loop through each child and set its display to "block"
         for (var i = 0; i < children.length; i++) {
-            children[i].style.display = "block";
+            children[i].style.display = "table";
         }
 
     } else {
@@ -647,7 +647,7 @@ async function openDiv(evt, cityName, search) {
 
         var currentEl = document.getElementById(cityName + "_card");
         if (currentEl != null) {
-            currentEl.style.display = "block";
+            currentEl.style.display = "table";
         }
 
         var currenturl = window.location.href.split('?')[0];
