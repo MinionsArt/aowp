@@ -779,9 +779,10 @@ tab {
 
 .unit_abilityslot {
     overflow: hidden;
-
+    white-space: nowrap;
+    text-overflow: ellipsis;
     width: 328px;
-    height: 40px;
+    min-height: 40px;
     margin: 1px;
     background-color: rgba(0, 0, 0, 0.8);
     border-top: 1px solid white;
