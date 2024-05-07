@@ -14,22 +14,29 @@
         $("#body").ready(function() {
 
             $("#header").load("/aowp/header.html");
-            showhide3('unitS');
+            setTimeout(() => {
+                rememberSearch();
+            }, 1000);
 
+            //setTimeout(rememberSearch(), 5000);
         });
-        $(document).ready(function() {
-            function showStats() {
-                textFit(document.getElementsByClassName('unit_passiveslot'));
-            }
 
-            setTimeout(showStats, 500);
-        });
 
         $(".togglelink").click(function() {
             $(".togglelink").css("color", "white");
 
             $(this).css("color", "cyan");
         });
+        async function rememberSearch() {
+
+            const searchKeyword = searchParams.get('search');
+            input = document.getElementById("searchInput");
+            input.value = searchKeyword;
+            if (searchKeyword != undefined) {
+                searchData(searchKeyword);
+            }
+
+        }
 
     </script>
     <title>Age of Wonders Planetfall - Search</title>
@@ -38,14 +45,9 @@
 <body>
     <div id="header"></div>
 
-    <div class="buttons">
-        <a href="#" onclick="showhide3('unitS');" style="font-size: 20px; color: aqua" class="togglelink"> Unit Search </a>
-        <a href="#" onclick="showhide3('modS');" style="font-size: 20px" class="togglelink"> Mod Search </a>
-
-    </div>
 
     <div id="unitS" style=" width:100%;margin: auto;">
-        <h2 style="color:white;text-align: center">Unit Search</h2>
+        <h2 style="color:white;text-align: center">Search</h2>
         <p style="color:white;text-align: center">use "+" to search for up to 3 keywords <br> E.G: <span style="color:aqua">cyborg+skirmisher+overwatch</span><br>Add tier like "tier3"</p>
         <br>
         <div style="margin-right: auto; margin-left: auto; width: 300px;">
@@ -58,44 +60,25 @@
         <div id="buttonHolder" class="w3-bar w3-black"></div>
         <div id="units">test</div>
     </div>
-    <div id="modS" style=" width:100%;margin: auto; display: none">
-        <h2 style="color:white;text-align: center">Mod Search</h2>
-        <p style="color:white;text-align: center">Search name and description of mods</p>
-        <br>
-        <div style="margin-right: auto; margin-left: auto; width: 300px;">
-            <input type="text" style="margin-right: auto; margin-left: auto; width: 300px;" id="searchInputMod">
-            <input type="submit" value="Submit" id="buttonMod">
-            <p id="searchResultMod" style="color: aqua"></p>
 
-        </div>
-        <div id="buttonHolder2" class="w3-bar w3-black"></div>
-        <div id="mods">test</div>
-    </div>
 
 </body>
 <script>
     $(document).ready(function() {
         $('#button').click(function() {
             searchData();
+
             showStats();
         });
-        $('#buttonMod').click(function() {
-            searchDataMod();
-        });
     });
 
-    $(document).ready(function() {
-
-    });
 
     $(function() {
         $("#searchInput").keyup(function(event) {
             if (event.which === 13) {
                 searchData();
 
-                function showStats() {
-                    textFit(document.getElementsByClassName('unit_passiveslot'));
-                }
+
             }
         })
         $("#searchInputMod").keyup(function(event) {
@@ -109,17 +92,32 @@
         return array.indexOf(search) >= 0;
     }
 
+    function showStats() {
+        textFit(document.getElementsByClassName('unit_passiveslot'));
+    }
 
-    function searchData() {
+    async function searchData(value) {
+
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInput");
         output = document.getElementById("units");
         output.innerHTML = "";
 
+        if (value != null) {
+            filter = value.toUpperCase();
+        } else {
+            filter = input.value.toUpperCase();
+        }
 
-        filter = input.value.toUpperCase();
+
+        document.getElementById("buttonHolder").innerHTML = "";
         var test = filter.replace(' ', "_");
-        searchUnits(test);
+        await searchUnits(test);
+        searchMods(filter);
+        showStats();
+        var currenturl = window.location.href.split('?')[0];
+
+        window.history.replaceState({}, 'foo', currenturl + "?search=" + input.value);
 
     }
 
@@ -142,7 +140,7 @@
 
         var fields = keyword.split('+', 3);
         var listMod = new Array();
-        output = document.getElementById("mods");
+        output = document.getElementById("units");
         result = document.getElementById("searchResultMod");
 
         for (i = 0; i < jsonMods.mods.length; i++) {
@@ -186,7 +184,8 @@
 
 
         }
-        result.innerHTML = listMod.length.toString() + " results found";
+        console.log("listMod " + listMod.length);
+
         showModsFromList(listMod, undefined, "search");
         /*  for (j = 0; j < listMod.length; j++) {
 
@@ -195,7 +194,7 @@
 
     }
 
-    function searchUnits(keyword) {
+    async function searchUnits(keyword) {
         var i, output, textvalue, j, l, result = "";
 
         var fields = keyword.split('+', 3);
@@ -319,14 +318,9 @@
 
         }
 
-        result.innerHTML = list.length.toString() + " results found";
 
-        showUnitsFromList(list);
-        // showUnitsSearchNew(list);
-        /*for (j = 0; j < list.length; j++) {
 
-            addUnitCard(list[j]);
-        }*/
+        await showUnitsFromList(list, undefined, "search");
 
     }
 
