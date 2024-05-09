@@ -6,23 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["assembly_inspector", "assembly_scavenger", "assembly_vorpal_sniper",
+            "assembly_electrocutioner", "assembly_lightning_rider", "assembly_reverse_engineer", "assembly_storm_wader",
+            "assembly_wrecker", "assembly_wrecking_ship", "assembly_disassembler", "assembly_reaver", "assembly_swarm", "assembly_construct", "water_construct", "assembly_advanced_construct", "assembly_constrictor", "assembly_colonizer", "assembly_arc_coil"
+
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["assembly_inspector", "assembly_scavenger", "assembly_vorpal_sniper",
-                "assembly_electrocutioner", "assembly_lightning_rider", "assembly_reverse_engineer", "assembly_storm_wader",
-                "assembly_wrecker", "assembly_wrecking_ship", "assembly_disassembler", "assembly_reaver", "assembly_swarm", "assembly_construct", "water_construct", "assembly_advanced_construct", "assembly_constrictor", "assembly_colonizer", "assembly_arc_coil"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["grounding_harness", "advanced_instinct_controller", "primal_awareness_amplifier_(detector)",
+            "regenerative_bioregulator", "crushing_roots", "blood_fury_inducers", "earth_link_mask",
+            "spirit_link_module"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["grounding_harness", "advanced_instinct_controller", "primal_awareness_amplifier_(detector)",
-                "regenerative_bioregulator", "crushing_roots", "blood_fury_inducers", "earth_link_mask",
-                "spirit_link_module"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

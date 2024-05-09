@@ -6,26 +6,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["psi-fish_chrysalis", "psi-fish_spawn", "psi-fish_hunter",
+            "psi-fish_siren", "psi-fish_medusa_"
+
+        ];
         $("#body").ready(function() {
-            var unitarray = ["psi-fish_chrysalis", "psi-fish_spawn", "psi-fish_hunter",
-                "psi-fish_siren", "psi-fish_medusa_"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

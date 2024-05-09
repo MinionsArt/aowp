@@ -6,25 +6,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["paragon_soldier", "paragon_guard", "paragon_fanatic",
+            "paragon_heavy_soldier", "paragon_techno_prophet", "paragon_peacekeeper_light_turret", "paragon_warden_heavy_turret"
+
+        ];
         $("#body").ready(function() {
-            var unitarray = ["paragon_soldier", "paragon_guard", "paragon_fanatic",
-                "paragon_heavy_soldier", "paragon_techno_prophet", "paragon_peacekeeper_light_turret", "paragon_warden_heavy_turret"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

@@ -6,24 +6,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["focus_flames", "mantra_of_clarity", "focus_venom",
+            "mantra_of_life", "mantra_of_control", "aether_storm"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["focus_flames", "mantra_of_clarity", "focus_venom",
-                "mantra_of_life", "mantra_of_control", "aether_storm"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

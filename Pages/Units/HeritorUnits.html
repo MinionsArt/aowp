@@ -6,25 +6,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["heritor_drained", "heritor_siphoner", "heritor_quintessence_ark",
+            "heritor_high_lord"
+        ];
         $("#body").ready(function() {
-            var unitarray = ["heritor_drained", "heritor_siphoner", "heritor_quintessence_ark",
-                "heritor_high_lord"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-            $("#header").load("/aowp/header.html");
-
-
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
+
         $(document).ready(function() {
             function showStats() {
                 textFit(document.getElementsByClassName('unit_passiveslot'));

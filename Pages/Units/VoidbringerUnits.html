@@ -6,24 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["voidbringer_strix", "voidbringer_naga", "voidbringer_undine",
+            "voidbringer_leviathan", "voidbringer_pandora_portal", "shepherd", "thundermaw_swarmling",
+            "thundermaw"
+
+        ];
         $("#body").ready(function() {
-            var unitarray = ["voidbringer_strix", "voidbringer_naga", "voidbringer_undine",
-                "voidbringer_leviathan", "voidbringer_pandora_portal", "shepherd", "thundermaw_swarmling",
-                "thundermaw"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

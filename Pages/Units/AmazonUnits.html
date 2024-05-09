@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["amazon_shrike", "amazon_huntress", "amazon_biomancer",
+            "amazon_lancer", "amazon_harrier", "amazon_hydromancer", "amazon_bombardon",
+            "amazon_arborian_sentinel", "amazon_aquatica", "amazon_tyrannodon", "amazon_arborian_queen", "amazon_colonizer", "amazon_nourishing_field_pylon", "amazon_luring_field_pylon", "amazon_amplifying_field_pylon", "amazon_laser_turret"
+
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["amazon_shrike", "amazon_huntress", "amazon_biomancer",
-                "amazon_lancer", "amazon_harrier", "amazon_hydromancer", "amazon_bombardon",
-                "amazon_arborian_sentinel", "amazon_aquatica", "amazon_tyrannodon", "amazon_arborian_queen", "amazon_colonizer", "amazon_nourishing_field_pylon", "amazon_luring_field_pylon", "amazon_amplifying_field_pylon", "amazon_laser_turret"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+              CheckData();
             });
-
-
         });
-
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
     </script>
 
 

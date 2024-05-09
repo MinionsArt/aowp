@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["the_growth_worker_bee", "the_growth_soldier_bee", "the_growth_vine_bud",
+            "the_growth_flowering_node_", "the_growth_seed_cluster", "the_growth_vine_sprout"
+
+        ];
+
         $("#body").ready(function() {
-            var unitarray = ["the_growth_worker_bee", "the_growth_soldier_bee", "the_growth_vine_bud",
-                "the_growth_flowering_node_", "the_growth_seed_cluster", "the_growth_vine_sprout"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

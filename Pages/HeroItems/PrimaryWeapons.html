@@ -6,36 +6,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarrayT1 = ["equipment:_arc_projector", "equipment:_arc_sword", "equipment:_assault_rifle", "equipment:_draining_shotgun", "equipment:_hasher_smg", "equipment:_heavy_spike_gun", "equipment:_laser_glaive", "equipment:_laser_rifle", "equipment:_laser_shotgun", "equipment:_laser_sniper", "equipment:_laser_sword", "equipment:_mx-2000_sniper", "equipment:_omni_carbine", "equipment:_psitec_staff", "equipment:_pulse_repeater", "equipment:_rocket_hammer", "equipment:_scavenger_shotgun", "equipment:_shotgun"];
+
+        var modsarrayT2 = ["equipment:_acrimonious", "equipment:_arc_blaster", "equipment:_augur's_catalyst", "equipment:_beamer_rifle", "equipment:_bio_staff", "equipment:_dazzling_rifle", "equipment:_dindin", "equipment:_ego_rifle", "equipment:_energy_blaster_rifle", "equipment:_esteq_fangs", "equipment:_esteq_shotgun", "equipment:_esteq_sniper", "equipment:_glint_shotgun", "equipment:_hand_mortar", "equipment:_heavy_hitter", "equipment:_hunting_bow", "equipment:_imperial_rifle", "equipment:_imperial_shotgun", "equipment:_imperial_sniper_rifle", "equipment:_inferno_fists", "equipment:_lacerating_shotgun", "equipment:_lightning_sniper", "equipment:_omni_cannon", "equipment:_paragon_guard_spear", "equipment:_pestilence", "equipment:_psi-rifle", "equipment:_psitec_fists", "equipment:_pulse_sniper", "equipment:_purifier_gun", "equipment:_reaper_sniper", "equipment:_rending_claws", "equipment:_reverb_dagger", "equipment:_rotary_cannon", "equipment:_siphoner_staff", "equipment:_smog_sniper", "equipment:_sono_shotgun", "equipment:_soul_splitter", "equipment:_sunbringer", "equipment:_thadeus_memory", "equipment:_thrax_rifle", "equipment:_trance_sniper", "equipment:_venom_rifle", "equipment:_venom_sniper", "equipment:_viral_sniper_rifle", "equipment:_void_blades", "equipment:_void_glaive", "equipment:_void_hammer", "equipment:_volt_pike", "equipment:_volt_shotgun", "equipment:_vorpal_sniper_rifle"];
+
+        var modsarrayT3 = ["equipment:_alpha_claws", "equipment:_assassins_fixation", "equipment:_binder_shotgun", "equipment:_carbon_glaive", "equipment:_caustic_blade", "equipment:_chemical_scythe", "equipment:_crystal_shotgun", "equipment:_cullers_gaze", "equipment:_disruption_relay", "equipment:_diviner's_threads", "equipment:_drizzler", "equipment:_ethereal_spear", "equipment:_heartbreaker_handgun", "equipment:_infested_lance", "equipment:_knockout_shotgun", "equipment:_lightning_blade", "equipment:_malady", "equipment:_mind_shredder", "equipment:_omni_claw", "equipment:_piercing_bow", "equipment:_psitec_vox_amp", "equipment:_radiant_force", "equipment:_rancor", "equipment:_rocket_assault_cannon", "equipment:_scorcher_rifle", "equipment:_screech", "equipment:_secretor", "equipment:_shell_splitter", "equipment:_shield_breacher_rifle", "equipment:_shrill_of_discord", "equipment:_staff_of_the_pontiff", "equipment:_staff_of_turmoil", "equipment:_stunning_sniper", "equipment:_swelter_blade", "equipment:_tyrant_gauntlet", "equipment:_veldfire", "equipment:_volt_rifle"];
+
+        var modsarrayT4 = ["equipment:_addiction", "equipment:_edge", "equipment:_essence_of_the_devourer", "equipment:_festivity", "equipment:_gauntlet_of_empires", "equipment:_genetic_destabilizer", "equipment:_herald_dagger", "equipment:_horror", "equipment:_medley", "equipment:_mephitis", "equipment:_one-eyed_hawk", "equipment:_phoenix_breath", "equipment:_sonic_amplification_battery", "equipment:_the_hunger", "equipment:_thunderbreak", "equipment:_void_seeker"];
+        var modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
+
         $("#body").ready(function() {
-            var modsarrayT1 = ["equipment:_arc_projector", "equipment:_arc_sword", "equipment:_assault_rifle", "equipment:_draining_shotgun", "equipment:_hasher_smg", "equipment:_heavy_spike_gun", "equipment:_laser_glaive", "equipment:_laser_rifle", "equipment:_laser_shotgun", "equipment:_laser_sniper", "equipment:_laser_sword", "equipment:_mx-2000_sniper", "equipment:_omni_carbine", "equipment:_psitec_staff", "equipment:_pulse_repeater", "equipment:_rocket_hammer", "equipment:_scavenger_shotgun", "equipment:_shotgun"];
-
-            var modsarrayT2 = ["equipment:_acrimonious", "equipment:_arc_blaster", "equipment:_augur's_catalyst", "equipment:_beamer_rifle", "equipment:_bio_staff", "equipment:_dazzling_rifle", "equipment:_dindin", "equipment:_ego_rifle", "equipment:_energy_blaster_rifle", "equipment:_esteq_fangs", "equipment:_esteq_shotgun", "equipment:_esteq_sniper", "equipment:_glint_shotgun", "equipment:_hand_mortar", "equipment:_heavy_hitter", "equipment:_hunting_bow", "equipment:_imperial_rifle", "equipment:_imperial_shotgun", "equipment:_imperial_sniper_rifle", "equipment:_inferno_fists", "equipment:_lacerating_shotgun", "equipment:_lightning_sniper", "equipment:_omni_cannon", "equipment:_paragon_guard_spear", "equipment:_pestilence", "equipment:_psi-rifle", "equipment:_psitec_fists", "equipment:_pulse_sniper", "equipment:_purifier_gun", "equipment:_reaper_sniper", "equipment:_rending_claws", "equipment:_reverb_dagger", "equipment:_rotary_cannon", "equipment:_siphoner_staff", "equipment:_smog_sniper", "equipment:_sono_shotgun", "equipment:_soul_splitter", "equipment:_sunbringer", "equipment:_thadeus_memory", "equipment:_thrax_rifle", "equipment:_trance_sniper", "equipment:_venom_rifle", "equipment:_venom_sniper", "equipment:_viral_sniper_rifle", "equipment:_void_blades", "equipment:_void_glaive", "equipment:_void_hammer", "equipment:_volt_pike", "equipment:_volt_shotgun", "equipment:_vorpal_sniper_rifle"];
-
-            var modsarrayT3 = ["equipment:_alpha_claws", "equipment:_assassins_fixation", "equipment:_binder_shotgun", "equipment:_carbon_glaive", "equipment:_caustic_blade", "equipment:_chemical_scythe", "equipment:_crystal_shotgun", "equipment:_cullers_gaze", "equipment:_disruption_relay", "equipment:_diviner's_threads", "equipment:_drizzler", "equipment:_ethereal_spear", "equipment:_heartbreaker_handgun", "equipment:_infested_lance", "equipment:_knockout_shotgun", "equipment:_lightning_blade", "equipment:_malady", "equipment:_mind_shredder", "equipment:_omni_claw", "equipment:_piercing_bow", "equipment:_psitec_vox_amp", "equipment:_radiant_force", "equipment:_rancor", "equipment:_rocket_assault_cannon", "equipment:_scorcher_rifle", "equipment:_screech", "equipment:_secretor", "equipment:_shell_splitter", "equipment:_shield_breacher_rifle", "equipment:_shrill_of_discord", "equipment:_staff_of_the_pontiff", "equipment:_staff_of_turmoil", "equipment:_stunning_sniper", "equipment:_swelter_blade", "equipment:_tyrant_gauntlet", "equipment:_veldfire", "equipment:_volt_rifle"];
-
-            var modsarrayT4 = ["equipment:_addiction", "equipment:_edge", "equipment:_essence_of_the_devourer", "equipment:_festivity", "equipment:_gauntlet_of_empires", "equipment:_genetic_destabilizer", "equipment:_herald_dagger", "equipment:_horror", "equipment:_medley", "equipment:_mephitis", "equipment:_one-eyed_hawk", "equipment:_phoenix_breath", "equipment:_sonic_amplification_battery", "equipment:_the_hunger", "equipment:_thunderbreak", "equipment:_void_seeker"];
             $("#header").load("/aowp/header.html", function() {
-                modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
-
-
-                for (i in modarrayTotal) {
-
-                    showModsFromList(modarrayTotal[i], "Primary Weapons Tier " + (parseInt(parseInt(i) + 1)) + " ");
-                }
-
-                SetCollapsibleStuff();
+                CheckData();
             });
-
-
-
         });
+        async function HandlePage() {
+            for (i in modarrayTotal) {
+
+                showModsFromList(modarrayTotal[i], "Primary Weapons Tier " + (parseInt(parseInt(i) + 1)) + " ");
+            }
+
+            SetCollapsibleStuff();
+        }
 
     </script>
 

@@ -8,23 +8,22 @@
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["forgotten_desolate", "forgotten_golem_", "forgotten_shattered_ark",
+            "forgotten_serpion", "forgotten_eater_of_the_dead"
+
+        ];
         $("#body").ready(function() {
-            var unitarray = ["forgotten_desolate", "forgotten_golem_", "forgotten_shattered_ark",
-                "forgotten_serpion", "forgotten_eater_of_the_dead"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
+
 
         $(document).ready(function() {
             function showStats() {

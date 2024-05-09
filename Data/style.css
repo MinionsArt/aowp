@@ -148,7 +148,8 @@ ul.egmenu li {
 
 
 ul.egmenu li:hover {
-    background-color: darkslategrey;
+    text-shadow: 1px 1px 10px blue;
+    color: aqua;
 }
 
 ul.egmenu li:hover ul {
@@ -191,7 +192,8 @@ ul.egmenu li:hover ul {
 
 @media all and (min-width: 481px) {
     ul.egmenu li:hover {
-        background: #555;
+        text-shadow: 1px 1px 10px white;
+        color: aqua;
     }
 
     ul.egmenu li:hover ul {
@@ -241,7 +243,8 @@ ul.egmenu li:hover ul {
 
 #menu li:hover > a,
 #menu li a:hover {
-    background: #111
+    text-shadow: 1px 1px 10px blue;
+    color: aqua;
 }
 
 #menu input {
@@ -323,7 +326,8 @@ ul.egmenu li:hover ul {
 }
 
 #menu ul.menus .submenu li {
-    background: #111;
+    text-shadow: 1px 1px 10px blue;
+    color: aqua;
 }
 
 #menu ul.menus .has-submenu:hover .submenu {

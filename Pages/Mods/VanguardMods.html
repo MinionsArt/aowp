@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["nanite_injectors", "improved_combat_sensors_(detector)", "interlocking_armor",
+            "jetpack", "launcher_turret_pack", "sequential_kill_system", "miniaturized_missile_array",
+            "reactive_armor_plating"
+        ];
         $("#body").ready(function() {
-
-
-            var modsarray = ["nanite_injectors", "improved_combat_sensors_(detector)", "interlocking_armor",
-                "jetpack", "launcher_turret_pack", "sequential_kill_system", "miniaturized_missile_array",
-                "reactive_armor_plating"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

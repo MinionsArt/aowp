@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["fortification_tools", "ironbreaker_modifications", "advanced_target_recognition_(detector)",
+            "explosive_resistant_armor", "reconstruction_kit", "illuminator_targeting_system", "super-powered_pistons",
+            "captain's_regalia", "reactive_kinetic_battery"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["fortification_tools", "ironbreaker_modifications", "advanced_target_recognition_(detector)",
-                "explosive_resistant_armor", "reconstruction_kit", "illuminator_targeting_system", "super-powered_pistons",
-                "captain's_regalia", "reactive_kinetic_battery"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

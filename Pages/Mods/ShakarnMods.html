@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["portable_scanners", "impairing_grenade", "xeno_defense_module",
+            "holodisplacement_shields", "orbital_recall_systems", "assault_exoskeleton", "holoreality_mantle",
+            "trigger-phrase_systems", "holochromatic_engines"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["portable_scanners", "impairing_grenade", "xeno_defense_module",
-                "holodisplacement_shields", "orbital_recall_systems", "assault_exoskeleton", "holoreality_mantle",
-                "trigger-phrase_systems", "holochromatic_engines"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

@@ -5,6 +5,57 @@ var divState = ["amazon", "assembly", "vanguard", "kirko", "dvar", "syndicate", 
 var divStateweapon1 = ["biochemical", "laser", "firearms", "arc", "psionics", "explosives", "sonic", "entropy"];
 var currentRace = "amazon";
 
+var jsonUnits, jsonUnitAbilities, jsonTech, jsonOperations, jsonMods;
+
+
+function fetchJsonFiles(filePaths) {
+    return Promise.all(
+        filePaths.map(filePath =>
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response was not ok: ${response.statusText}`);
+                    }
+                    return response.json();
+                })
+        )
+    );
+}
+
+async function GetAllData() {
+
+    const jsonFilePaths = ['/aowp/Data/Units.json', '/aowp/Data/UnitAbilities.json', '/aowp/Data/Tech.json', '/aowp/Data/Operations.json', '/aowp/Data/UnitMods.json'];
+    await fetchJsonFiles(jsonFilePaths)
+        .then(dataArray => {
+            dataArray.forEach((data, index) => {
+                // console.log(`Data from ${jsonFilePaths[index]}:`, data);
+                if (index == 0) {
+                    jsonUnits = data;
+                } else if (index == 1) {
+                    jsonUnitAbilities = data;
+                } else if (index == 2) {
+                    jsonTech = data;
+                } else if (index == 3) {
+                    jsonOperations = data;
+                } else if (index == 4) {
+                    jsonMods = data;
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching JSON files:', error.message);
+        });
+
+}
+async function CheckData() {
+
+    if (jsonUnits === undefined) {
+        await GetAllData();
+
+        HandlePage();
+    }
+}
+
 function showhide(id, weapon, weapon2) {
     if (document.getElementById) {
         if (document.getElementById) {
@@ -195,11 +246,11 @@ function showhideSocST(id, id2) {
 
 function addUnitTypeIcon(a, b) {
     var icontext, iconsrc, iconName, j, btn, imag, spa = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a === jsonUnitAbilities.abilities[j].slug) {
-            icontext = jsonUnitAbilities.abilities[j].description;
+    for (j in jsonUnitAbilities) {
+        if (a === jsonUnitAbilities[j].slug) {
+            icontext = jsonUnitAbilities[j].description;
             iconsrc = a;
-            iconName = jsonUnitAbilities.abilities[j].name;
+            iconName = jsonUnitAbilities[j].name;
             btn = document.createElement("DIV");
             btn.className = "unittype_icon";
             imag = document.createElement("IMG");
@@ -227,32 +278,32 @@ function addUnitTypeIcon(a, b) {
 function addAbilityslot(a, b) {
     var abilityName, abilityIcon, abilityDescr, abilityDam, abilityAcc, abilityRange, abilityType, j, splitDamageString, abilityDamType = "";
 
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
-            if (jsonUnitAbilities.abilities[j].damage === undefined) {
+    for (j in jsonUnitAbilities) {
+        if (a == jsonUnitAbilities[j].slug) {
+            if (jsonUnitAbilities[j].damage === undefined) {
                 abilityDam = "";
             } else {
-                abilityDam = jsonUnitAbilities.abilities[j].damage;
+                abilityDam = jsonUnitAbilities[j].damage;
             }
 
 
 
-            abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].icon;
+            abilityName = jsonUnitAbilities[j].name;
+            abilityIcon = jsonUnitAbilities[j].icon;
 
             if (abilityName.indexOf("Defense Mode") > -1) {
                 abilityDescr = "<popupheader3><titlebrown>" + abilityName + "</titlebrown></popupheader3><br> <br>";
-                abilityDescr += jsonUnitAbilities.abilities[j].description;
+                abilityDescr += jsonUnitAbilities[j].description;
             } else {
-                abilityDescr = jsonUnitAbilities.abilities[j].description;
+                abilityDescr = jsonUnitAbilities[j].description;
             }
 
             var n = abilityDescr.includes("Unique");
 
 
-            //abilityDam = jsonUnitAbilities.abilities[j].damage;
-            abilityRange = jsonUnitAbilities.abilities[j].range;
-            abilityAcc = jsonUnitAbilities.abilities[j].accuracy;
+            //abilityDam = jsonUnitAbilities[j].damage;
+            abilityRange = jsonUnitAbilities[j].range;
+            abilityAcc = jsonUnitAbilities[j].accuracy;
 
             var tooltipName = document.createElement("SPAN");
             var btn = document.createElement("DIV");
@@ -294,11 +345,11 @@ function addAbilityslot(a, b) {
 
 function addPassiveslot(a) {
     var abilityName, abilityIcon, abilityDescr, j = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
-            abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].slug;
-            abilityDescr = jsonUnitAbilities.abilities[j].description;
+    for (j in jsonUnitAbilities) {
+        if (a == jsonUnitAbilities[j].slug) {
+            abilityName = jsonUnitAbilities[j].name;
+            abilityIcon = jsonUnitAbilities[j].slug;
+            abilityDescr = jsonUnitAbilities[j].description;
 
             var btn = document.createElement("DIV");
             btn.className = "unit_passiveslot";
@@ -329,12 +380,12 @@ function addPassiveslot(a) {
 
 function addResistanceSlot(a) {
     var abilityName, abilityIcon, abilityDescr, abilityDam = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
-            abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].icon;
-            abilityDescr = jsonUnitAbilities.abilities[j].description;
-            abilityDam = jsonUnitAbilities.abilities[j].damage;
+    for (j in jsonUnitAbilities) {
+        if (a == jsonUnitAbilities[j].slug) {
+            abilityName = jsonUnitAbilities[j].name;
+            abilityIcon = jsonUnitAbilities[j].icon;
+            abilityDescr = jsonUnitAbilities[j].description;
+            abilityDam = jsonUnitAbilities[j].damage;
             var btn = document.createElement("DIV");
             btn.className = "unit_resistanceslot";
             var imag = document.createElement("IMG");
@@ -370,9 +421,9 @@ function addResistanceSlot(a) {
 
 function EliteSkill(a) {
     var nam = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
-            nam = jsonUnitAbilities.abilities[j].name;
+    for (j in jsonUnitAbilities) {
+        if (a == jsonUnitAbilities[j].slug) {
+            nam = jsonUnitAbilities[j].name;
         }
 
     }
@@ -381,11 +432,11 @@ function EliteSkill(a) {
 
 function addEliteSkill(a) {
     var abilityName, abilityIcon, abilityDescr = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
-            abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].slug;
-            abilityDescr = jsonUnitAbilities.abilities[j].description;
+    for (j in jsonUnitAbilities) {
+        if (a == jsonUnitAbilities[j].slug) {
+            abilityName = jsonUnitAbilities[j].name;
+            abilityIcon = jsonUnitAbilities[j].slug;
+            abilityDescr = jsonUnitAbilities[j].description;
 
             var btn = document.createElement("DIV");
             btn.className = "unit_elite_skill";
@@ -597,23 +648,22 @@ function SetButtonsAndDivs(list, parent, cardType) {
 function GetUnitTierAndName(id) {
 
 
-    for (i in jsonUnits.units) {
-        if (id === jsonUnits.units[i].id) {
+    for (i in jsonUnits) {
+        if (id === jsonUnits[i].id) {
 
 
 
-            var name = jsonUnits.units[i].name;
+            var name = jsonUnits[i].name;
 
             var splitName = name.split("-");
 
             if (splitName.length > 1) {
                 splitName[0] = splitName[0].replace("'", "");
                 var name = "<" + splitName[0] + ">" + "</" + splitName[0] + "> - " + splitName[1];
-                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
+                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits[i].tier) + "</p>";
 
-            }
-            else {
-                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits.units[i].tier) + "</p>";
+            } else {
+                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits[i].tier) + "</p>";
 
             }
 
@@ -627,13 +677,13 @@ function GetUnitTierAndName(id) {
 function GetModTierAndName(id) {
 
 
-    for (i in jsonMods.mods) {
-        if (id === jsonMods.mods[i].slug) {
+    for (i in jsonMods) {
+        if (id === jsonMods[i].slug) {
 
-            var name = jsonMods.mods[i].name;
+            var name = jsonMods[i].name;
 
 
-            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getModTypeTag(jsonMods.mods[i].type) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonMods.mods[i].tier) + "</p>";
+            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getModTypeTag(jsonMods[i].type) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonMods[i].tier) + "</p>";
 
         }
     }
@@ -803,9 +853,9 @@ async function showUnitsFromList(list, test, search) {
 
 function checkModRequirements(unit) {
     var j, check, checksplit, checknot, checknotsplit = "";
-    for (j in jsonMods.mods) {
-        checksplit = jsonMods.mods[j].check.split(" ");
-        checknotsplit = jsonMods.mods[j].checknot.split(" ");
+    for (j in jsonMods) {
+        checksplit = jsonMods[j].check.split(" ");
+        checknotsplit = jsonMods[j].checknot.split(" ");
         for (k in checksplit) {
             if (divs[i].innerHTML.indexOf(checksplit[k]) !== -1) {
                 // something
@@ -945,7 +995,7 @@ function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
         btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\')');
         btn.setAttribute("id", overwrite + "-");
     } else if (cardType.indexOf("search") != -1) {
-        console.log("search");
+
         btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\',true)');
         btn.setAttribute("id", overwrite + "-");
     }
@@ -1012,8 +1062,8 @@ function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
 function showUnit(a) {
     var hp, mp, shield, armor, descr, j, k, x, y, z, unitName, icon, imagelink, prodcost, tier, research, building, reward = "";
     var found = false;
-    for (i in jsonUnits.units) {
-        if (a == jsonUnits.units[i].id) {
+    for (i in jsonUnits) {
+        if (a == jsonUnits[i].id) {
             icon = document.getElementById("uniticon");
             icon.setAttribute("src", "/aowp/Icons/UnitIcons/" + a + "_icon.png");
             icon.setAttribute("id", "uniticon" + a);
@@ -1023,21 +1073,21 @@ function showUnit(a) {
             unitName = document.getElementById("unitstring");
             unitName.setAttribute("id", "unitstring" + a);
 
-            unitName.innerHTML = "<span style=\"background-color:#15242e\"><span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonUnits.units[i].name.toUpperCase(); + "</span>"
+            unitName.innerHTML = "<span style=\"background-color:#15242e\"><span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonUnits[i].name.toUpperCase(); + "</span>"
             descr = document.getElementById("description");
             descr.setAttribute("id", "description" + a);
-            var description = jsonUnits.units[i].description;
+            var description = jsonUnits[i].description;
             description = description.replace("— ", "<br><br>— ");
             descr.innerHTML = description;
             imagelink = document.getElementById("vid");
 
-            imagelink.setAttribute('src', "/aowp/Previews/" + jsonUnits.units[i].id + ".mp4");
+            imagelink.setAttribute('src', "/aowp/Previews/" + jsonUnits[i].id + ".mp4");
             // research = document.getElementById("researchorigin");
             // research.setAttribute("id", "researchorigin" + a);
-            // if (jsonUnits.units[i].origin_research != "") {
-            // research.setAttribute("src", "/Icons/Research/" + jsonUnits.units[i].origin_research + ".jpg");
-            // research.setAttribute("src", "/Icons/Research/" + jsonUnits.units[i].origin_research + ".jpg");
-            //     research.innerHTML = jsonUnits.units[i].origin_research;
+            // if (jsonUnits[i].origin_research != "") {
+            // research.setAttribute("src", "/Icons/Research/" + jsonUnits[i].origin_research + ".jpg");
+            // research.setAttribute("src", "/Icons/Research/" + jsonUnits[i].origin_research + ".jpg");
+            //     research.innerHTML = jsonUnits[i].origin_research;
             // } else {
             //    research.setAttribute("src", "/aowp/UI/empty.png");
             //    research.setAttribute("style", "width: 0px");
@@ -1046,9 +1096,9 @@ function showUnit(a) {
 
             // building = document.getElementById("buildingorigin");
             // building.setAttribute("id", "buildingorigin" + a);
-            // if (jsonUnits.units[i].origin_research != "") {
-            // building.setAttribute("src", "/Icons/Buildings/" + jsonUnits.units[i].origin_building + ".jpg");
-            //      building.innerHTML = jsonUnits.units[i].origin_building;
+            // if (jsonUnits[i].origin_research != "") {
+            // building.setAttribute("src", "/Icons/Buildings/" + jsonUnits[i].origin_building + ".jpg");
+            //      building.innerHTML = jsonUnits[i].origin_building;
             //  } else {
             //     building.setAttribute("src", "/aowp/UI/empty.png");
 
@@ -1056,76 +1106,76 @@ function showUnit(a) {
             // }
             hp = document.getElementById("hp")
             hp.setAttribute("id", "hp" + a);
-            hp.innerHTML = jsonUnits.units[i].hp;
+            hp.innerHTML = jsonUnits[i].hp;
             armor = document.getElementById("armor")
             armor.setAttribute("id", "armor" + a);
-            armor.innerHTML = jsonUnits.units[i].armor;
+            armor.innerHTML = jsonUnits[i].armor;
             shield = document.getElementById("shield");
             shield.setAttribute("id", "shield" + a);
-            shield.innerHTML = jsonUnits.units[i].shield;
+            shield.innerHTML = jsonUnits[i].shield;
             mp = document.getElementById("mp");
             mp.setAttribute("id", "mp" + a);
-            mp.innerHTML = jsonUnits.units[i].mp;
+            mp.innerHTML = jsonUnits[i].mp;
             tier = document.getElementById("tier");
             tier.setAttribute("id", "tier" + a);
             var levelup = document.getElementById("levelup");
             levelup.setAttribute("id", "levelup" + a);
-            if ((jsonUnits.units[i].elite_rewards[0]) != undefined) {
-                reward = jsonUnits.units[i].elite_rewards[0].slug;
+            if ((jsonUnits[i].elite_rewards[0]) != undefined) {
+                reward = jsonUnits[i].elite_rewards[0].slug;
 
 
             } else {
                 reward = "";
             }
-            tier.innerHTML = "Tier " + jsonUnits.units[i].tier + ": " + jsonUnits.units[i].upkeep;
-            if (jsonUnits.units[i].tier == "1") {
+            tier.innerHTML = "Tier " + jsonUnits[i].tier + ": " + jsonUnits[i].upkeep;
+            if (jsonUnits[i].tier == "1") {
 
                 levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+4 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 <hp></hp> HP <li>+5 <accuracy></accuracy> Accuracy </li></li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+4 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+5 <accuracy></accuracy> Accuracy </li><li>+4 <hp></hp> HP </li><li>" + EliteSkill(reward) + "</li></ul>";
 
             }
-            if (jsonUnits.units[i].tier == "2") {
+            if (jsonUnits[i].tier == "2") {
                 levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+6 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+6 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
 
             }
-            if (jsonUnits.units[i].tier == "3") {
+            if (jsonUnits[i].tier == "3") {
                 levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+8 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+8 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
             }
-            if (jsonUnits.units[i].tier == "4") {
+            if (jsonUnits[i].tier == "4") {
                 levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+10 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+10 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+10 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+10 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
             }
 
             prodcost = document.getElementById("productioncost");
             prodcost.setAttribute("id", "productioncost" + a);
-            prodcost.innerHTML = "Base Cost: " + jsonUnits.units[i].cost;
+            prodcost.innerHTML = "Base Cost: " + jsonUnits[i].cost;
 
-            for (j in jsonUnits.units[i].unit_types) {
-                addUnitTypeIcon(jsonUnits.units[i].unit_types[j].slug, a);
-
-            }
-
-            for (k in jsonUnits.units[i].abilities) {
-                addAbilityslot(jsonUnits.units[i].abilities[k].slug);
-
-            }
-            for (z in jsonUnits.units[i].resistances) {
-                addResistanceSlot(jsonUnits.units[i].resistances[z].slug);
+            for (j in jsonUnits[i].unit_types) {
+                addUnitTypeIcon(jsonUnits[i].unit_types[j].slug, a);
 
             }
 
-            for (x in jsonUnits.units[i].passives) {
-                addPassiveslot(jsonUnits.units[i].passives[x].slug);
+            for (k in jsonUnits[i].abilities) {
+                addAbilityslot(jsonUnits[i].abilities[k].slug);
+
+            }
+            for (z in jsonUnits[i].resistances) {
+                addResistanceSlot(jsonUnits[i].resistances[z].slug);
 
             }
 
-            for (m in jsonUnits.units[i].elite_rewards) {
-                addEliteSkill(jsonUnits.units[i].elite_rewards[m].slug);
+            for (x in jsonUnits[i].passives) {
+                addPassiveslot(jsonUnits[i].passives[x].slug);
+
+            }
+
+            for (m in jsonUnits[i].elite_rewards) {
+                addEliteSkill(jsonUnits[i].elite_rewards[m].slug);
             }
             document.getElementById("unitabholder").setAttribute("id", "unitabholder" + a);
 
             document.getElementById("unitstat").setAttribute("id", "unitstat" + a);
 
             imagelink.setAttribute("id", "vid" + a);
-            //checkModRequirements(jsonUnits.units[i]);
+            //checkModRequirements(jsonUnits[i]);
             found = true;
             break;
         }
@@ -1166,32 +1216,32 @@ function showBuilding(a) {
 function showMod(a) {
     var modName, description, cost, type, tier = "";
     var found = false;
-    for (j in jsonMods.mods) {
-        if (a == jsonMods.mods[j].slug) {
+    for (j in jsonMods) {
+        if (a == jsonMods[j].slug) {
             modName = document.getElementById("modname");
-            modName.innerHTML = "<titlebrown>" + jsonMods.mods[j].name + "</titlebrown>";
+            modName.innerHTML = "<titlebrown>" + jsonMods[j].name + "</titlebrown>";
             modName.setAttribute("id", "modname" + a);
             description = document.getElementById("moddescription");
-            description.innerHTML = jsonMods.mods[j].description;
+            description.innerHTML = jsonMods[j].description;
             description.setAttribute("id", "moddescription" + a);
             //type = document.getElementById("modtype");
-            //type.innerHTML = "Mod Type: " + jsonMods.mods[j].type;
+            //type.innerHTML = "Mod Type: " + jsonMods[j].type;
             //type.setAttribute("id", "modtype" + a);
             tier = document.getElementById("modtier");
-            tier.innerHTML = "<silver>" + "Tier " + jsonMods.mods[j].tier + ", " + jsonMods.mods[j].type + "</silver>";
+            tier.innerHTML = "<silver>" + "Tier " + jsonMods[j].tier + ", " + jsonMods[j].type + "</silver>";
             tier.setAttribute("id", "modtier" + a);
             cost = document.getElementById("modcost");
-            cost.innerHTML = "Purchase Cost : " + jsonMods.mods[j].cost;
+            cost.innerHTML = "Purchase Cost : " + jsonMods[j].cost;
             cost.setAttribute("id", "modcost" + a);
             imagelink = document.getElementById("modicon");
 
-            if (jsonMods.mods[j].name.includes("Vehicle")) {
+            if (jsonMods[j].name.includes("Vehicle")) {
                 a = a.replace("vehicle:_", "");
             }
-            if (jsonMods.mods[j].type.includes("Weapon")) {
+            if (jsonMods[j].type.includes("Weapon")) {
                 a = a.replace("equipment:_", "");
             }
-            if (jsonMods.mods[j].type.includes("Hero")) {
+            if (jsonMods[j].type.includes("Hero")) {
                 a = a.replace("equipment:_", "");
             }
 
@@ -1210,16 +1260,16 @@ function showTech(a, b) {
     var modName, description, cost, type, tier, secret, card = "";
     var found = false;
     card = document.getElementById("techcard");
-    for (j in jsonTech.tech) {
-        if (a == jsonTech.tech[j].slug) {
+    for (j in jsonTech) {
+        if (a == jsonTech[j].slug) {
 
             modName = document.getElementById("techname");
-            modName.innerHTML = jsonTech.tech[j].name;
+            modName.innerHTML = jsonTech[j].name;
             modName.setAttribute("id", "techname" + a);
 
 
             cost = document.getElementById("techcost");
-            cost.innerHTML = jsonTech.tech[j].cost + "<research></research>";
+            cost.innerHTML = jsonTech[j].cost + "<research></research>";
             cost.setAttribute("id", "modcost" + a);
             imagelink = document.getElementById("techicon");
             if (b == "em") {
@@ -1237,16 +1287,16 @@ function showTech(a, b) {
 
 
 
-            for (k in jsonTech.tech[j].mod_unlock) {
-                if (jsonTech.tech[j].mod_unlock[k].slug != undefined) {
-                    addModUnlock(jsonTech.tech[j].mod_unlock[k].slug, b);
+            for (k in jsonTech[j].mod_unlock) {
+                if (jsonTech[j].mod_unlock[k].slug != undefined) {
+                    addModUnlock(jsonTech[j].mod_unlock[k].slug, b);
                 }
 
             }
 
-            for (k in jsonTech.tech[j].op_unlock) {
-                if (jsonTech.tech[j].op_unlock[k].slug != undefined) {
-                    if (jsonTech.tech[j].op_unlock[k].slug == "colony_district_buildings") {
+            for (k in jsonTech[j].op_unlock) {
+                if (jsonTech[j].op_unlock[k].slug != undefined) {
+                    if (jsonTech[j].op_unlock[k].slug == "colony_district_buildings") {
                         if (currentRace == "kirko") {
                             addOpUnlock("breeding_grounds", b);
                         }
@@ -1272,23 +1322,23 @@ function showTech(a, b) {
                             addOpUnlock("overdrive_reactor", b);
                         }
                     } else {
-                        addOpUnlock(jsonTech.tech[j].op_unlock[k].slug, b);
+                        addOpUnlock(jsonTech[j].op_unlock[k].slug, b);
                     }
 
                 }
 
             }
 
-            for (k in jsonTech.tech[j].unit_unlock) {
-                if (jsonTech.tech[j].unit_unlock[k].slug != undefined) {
-                    secret = jsonTech.tech[j].unit_unlock[k].slug;
-                    if (jsonTech.tech[j].unit_unlock[k].slug.indexOf("secret") > -1) {
-                        if (currentRace == "syndicate" && jsonTech.tech[j].unit_unlock[k].slug == "secret_purifier") {
-                            secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace + "_indentured");
-                        } else if (currentRace == "oathbound" && (jsonTech.tech[j].unit_unlock[k].slug == "secret_light_bringer" || jsonTech.tech[j].unit_unlock[k].slug == "secret_echo_walker")) {
-                            secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace + "_paladin");
+            for (k in jsonTech[j].unit_unlock) {
+                if (jsonTech[j].unit_unlock[k].slug != undefined) {
+                    secret = jsonTech[j].unit_unlock[k].slug;
+                    if (jsonTech[j].unit_unlock[k].slug.indexOf("secret") > -1) {
+                        if (currentRace == "syndicate" && jsonTech[j].unit_unlock[k].slug == "secret_purifier") {
+                            secret = jsonTech[j].unit_unlock[k].slug.replace("secret", currentRace + "_indentured");
+                        } else if (currentRace == "oathbound" && (jsonTech[j].unit_unlock[k].slug == "secret_light_bringer" || jsonTech[j].unit_unlock[k].slug == "secret_echo_walker")) {
+                            secret = jsonTech[j].unit_unlock[k].slug.replace("secret", currentRace + "_paladin");
                         } else {
-                            secret = jsonTech.tech[j].unit_unlock[k].slug.replace("secret", currentRace);
+                            secret = jsonTech[j].unit_unlock[k].slug.replace("secret", currentRace);
                         }
 
                     }
@@ -1322,26 +1372,26 @@ function showTech(a, b) {
 function addModUnlock(a, b) {
     var modUnlockName, modUnlockIcon, modUnlockAbility, j = "";
     var found = false;
-    for (j in jsonMods.mods) {
-        if (a == jsonMods.mods[j].slug) {
-            if (jsonMods.mods[j].type.includes("Weapon")) {
-                modUnlockName = "Equipment: " + jsonMods.mods[j].name;
+    for (j in jsonMods) {
+        if (a == jsonMods[j].slug) {
+            if (jsonMods[j].type.includes("Weapon")) {
+                modUnlockName = "Equipment: " + jsonMods[j].name;
             } else {
-                modUnlockName = jsonMods.mods[j].name;
+                modUnlockName = jsonMods[j].name;
             }
             modUnlockName = "<titlebrown>" + modUnlockName + "</titlebrown>";
-            modUnlockIcon = jsonMods.mods[j].slug;
+            modUnlockIcon = jsonMods[j].slug;
 
-            if (jsonMods.mods[j].name.includes("Vehicle")) {
+            if (jsonMods[j].name.includes("Vehicle")) {
                 modUnlockIcon = modUnlockIcon.replace("vehicle:_", "");
             }
-            if (jsonMods.mods[j].type.includes("Weapon")) {
+            if (jsonMods[j].type.includes("Weapon")) {
                 modUnlockIcon = modUnlockIcon.replace("equipment:_", "");
             }
-            modUnlockAbility = jsonMods.mods[j].description;
+            modUnlockAbility = jsonMods[j].description;
 
 
-            var tier = "<silver>" + "Tier " + jsonMods.mods[j].tier + ", " + jsonMods.mods[j].type + "</silver>";
+            var tier = "<silver>" + "Tier " + jsonMods[j].tier + ", " + jsonMods[j].type + "</silver>";
 
 
             var btn = document.createElement("DIV");
@@ -1357,15 +1407,15 @@ function addModUnlock(a, b) {
             spa.innerHTML += "<img src=\"/aowp/Icons/Mods/" + modUnlockIcon + ".png\" width='200'\">";
             spa.innerHTML += "<br>" + modUnlockAbility;
 
-            if (jsonMods.mods[j].type.includes("Weapon") || jsonMods.mods[j].name.includes("Vehicle")) {
-                spa.innerHTML += "<hr> Base Cost: " + jsonMods.mods[j].cost;
+            if (jsonMods[j].type.includes("Weapon") || jsonMods[j].name.includes("Vehicle")) {
+                spa.innerHTML += "<hr> Base Cost: " + jsonMods[j].cost;
             } else {
-                spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods.mods[j].cost;
+                spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods[j].cost;
             }
 
             imag.setAttribute("height", "30");
 
-            if (jsonMods.mods[j].name.includes("Vehicle") || jsonMods.mods[j].type.includes("Weapon")) {
+            if (jsonMods[j].name.includes("Vehicle") || jsonMods[j].type.includes("Weapon")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/arsenal.png");
                 imag2.className = "corner_icon";
@@ -1398,15 +1448,15 @@ function addModUnlock(a, b) {
 function addOpUnlock(a, b) {
     var opUnlockName, opUnlockIcon, opUnlockAbility, j = "";
     var found = false;
-    for (j in jsonOperations.operations) {
-        if (a == jsonOperations.operations[j].slug) {
+    for (j in jsonOperations) {
+        if (a == jsonOperations[j].slug) {
 
-            opUnlockName = "<titlebrown>" + jsonOperations.operations[j].name + "</titlebrown>";
-            opUnlockIcon = jsonOperations.operations[j].slug;
-            opUnlockAbility = jsonOperations.operations[j].description;
+            opUnlockName = "<titlebrown>" + jsonOperations[j].name + "</titlebrown>";
+            opUnlockIcon = jsonOperations[j].slug;
+            opUnlockAbility = jsonOperations[j].description;
 
 
-            var tier = "<silver>" + "Tier " + jsonOperations.operations[j].tier + ", " + jsonOperations.operations[j].type + "</silver>";
+            var tier = "<silver>" + "Tier " + jsonOperations[j].tier + ", " + jsonOperations[j].type + "</silver>";
 
 
             var btn = document.createElement("DIV");
@@ -1430,39 +1480,39 @@ function addOpUnlock(a, b) {
 
             spa.innerHTML += "<br>" + opUnlockAbility;
 
-            if (jsonOperations.operations[j].casting != undefined) {
-                spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
+            if (jsonOperations[j].casting != undefined) {
+                spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations[j].energy_cost + "<energy></energy>" + jsonOperations[j].casting;
             }
 
-            if (jsonOperations.operations[j].production_cost != undefined) {
-                spa.innerHTML += "<hr>" + "Cost: " + jsonOperations.operations[j].production_cost;
+            if (jsonOperations[j].production_cost != undefined) {
+                spa.innerHTML += "<hr>" + "Cost: " + jsonOperations[j].production_cost;
             }
 
-            if (jsonOperations.operations[j].influence_cost != undefined) {
-                spa.innerHTML += "<hr>" + "Cost: " + jsonOperations.operations[j].influence_cost + "<influence></influence>";
+            if (jsonOperations[j].influence_cost != undefined) {
+                spa.innerHTML += "<hr>" + "Cost: " + jsonOperations[j].influence_cost + "<influence></influence>";
             }
 
             imag.setAttribute("height", "35");
-            if (jsonOperations.operations[j].type.includes("Tactical")) {
+            if (jsonOperations[j].type.includes("Tactical")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/tac_ops.png");
                 imag2.className = "corner_icon";
                 btn.appendChild(imag2);
             }
 
-            if (jsonOperations.operations[j].type.includes("Doctrine")) {
+            if (jsonOperations[j].type.includes("Doctrine")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/doctrine.png");
                 imag2.className = "corner_icon";
                 btn.appendChild(imag2);
             }
-            if (jsonOperations.operations[j].type.includes("Strategic")) {
+            if (jsonOperations[j].type.includes("Strategic")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/strat_ops.png");
                 imag2.className = "corner_icon";
                 btn.appendChild(imag2);
             }
-            if (jsonOperations.operations[j].type.includes("Covert")) {
+            if (jsonOperations[j].type.includes("Covert")) {
                 var imag2 = document.createElement("IMG");
                 imag2.setAttribute("src", "/aowp/Icons/Text/covert.png");
                 imag2.className = "corner_icon";
@@ -1495,21 +1545,21 @@ function addOpUnlock(a, b) {
 function addUnitUnlock(a, b) {
     var unitUnlockName, unitUnlockIcon, unitUnlockAbility, j = "";
     var found = false;
-    for (j in jsonUnits.units) {
+    for (j in jsonUnits) {
 
 
-        if (a == jsonUnits.units[j].id) {
+        if (a == jsonUnits[j].id) {
 
 
-            if (jsonUnits.units[j].name.includes("-")) {
-                unitNameShort = "<titleBrownBig> Unit: " + jsonUnits.units[j].name.split("-")[1] + "</titleBrownBig>";
+            if (jsonUnits[j].name.includes("-")) {
+                unitNameShort = "<titleBrownBig> Unit: " + jsonUnits[j].name.split("-")[1] + "</titleBrownBig>";
             } else {
-                unitNameShort = "<titleBrownBig> Unit: " + jsonUnits.units[j].name + "</titleBrownBig>";
+                unitNameShort = "<titleBrownBig> Unit: " + jsonUnits[j].name + "</titleBrownBig>";
             }
 
-            unitUnlockName = "<titleBrownBig>" + jsonUnits.units[j].name + "</titleBrownBig>";
-            unitUnlockIcon = jsonUnits.units[j].icon;
-            // unitUnlockAbility = jsonUnits.units[j].description;
+            unitUnlockName = "<titleBrownBig>" + jsonUnits[j].name + "</titleBrownBig>";
+            unitUnlockIcon = jsonUnits[j].icon;
+            // unitUnlockAbility = jsonUnits[j].description;
 
 
             var tier = "<silver>Unit Unlock</silver>";
@@ -1527,28 +1577,28 @@ function addUnitUnlock(a, b) {
 
             spa.innerHTML = "<p>" + unitNameShort + "</p>" + tier + "<hr>";
             spa.innerHTML += unitUnlockName;
-            spa.innerHTML += "<br>Tier " + jsonUnits.units[j].tier;
-            spa.innerHTML += "<hr>" + jsonUnits.units[j].hp + "<hp></hp> " + jsonUnits.units[j].mp + "<mp></mp> ";
-            if (jsonUnits.units[j].shield) {
-                spa.innerHTML += jsonUnits.units[j].shield + "<shield></shield> ";
+            spa.innerHTML += "<br>Tier " + jsonUnits[j].tier;
+            spa.innerHTML += "<hr>" + jsonUnits[j].hp + "<hp></hp> " + jsonUnits[j].mp + "<mp></mp> ";
+            if (jsonUnits[j].shield) {
+                spa.innerHTML += jsonUnits[j].shield + "<shield></shield> ";
             }
-            if (jsonUnits.units[j].armor) {
-                spa.innerHTML += jsonUnits.units[j].armor + "<armor></armor> ";
+            if (jsonUnits[j].armor) {
+                spa.innerHTML += jsonUnits[j].armor + "<armor></armor> ";
             }
             spa.innerHTML += "<hr>";
-            for (k in jsonUnits.units[j].abilities) {
-                spa.innerHTML += "<li>" + addAbilityList(jsonUnits.units[j].abilities[k].slug) + "</li>";
+            for (k in jsonUnits[j].abilities) {
+                spa.innerHTML += "<li>" + addAbilityList(jsonUnits[j].abilities[k].slug) + "</li>";
 
             }
-            for (k in jsonUnits.units[j].unit_types) {
-                spa.innerHTML += "<li>" + addAbilityList(jsonUnits.units[j].unit_types[k].slug) + "</li>";
+            for (k in jsonUnits[j].unit_types) {
+                spa.innerHTML += "<li>" + addAbilityList(jsonUnits[j].unit_types[k].slug) + "</li>";
 
             }
             imag.setAttribute("src", "/aowp/Icons/UnitIcons/" + unitUnlockIcon + ".png");
 
 
             // spa.innerHTML += "<br>" + opUnlockAbility;
-            //spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations.operations[j].energy_cost + "<energy></energy>" + jsonOperations.operations[j].casting;
+            //spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations[j].energy_cost + "<energy></energy>" + jsonOperations[j].casting;
             imag.setAttribute("height", "35");
             document.getElementById("unlockholder").appendChild(btn);
             btn.appendChild(imag);
@@ -1570,46 +1620,26 @@ function addUnitUnlock(a, b) {
 
 function addAbilityList(a) {
     var dam = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
-            if (jsonUnitAbilities.abilities[j].damage) {
-                dam = jsonUnitAbilities.abilities[j].damage;
+    for (j in jsonUnitAbilities) {
+        if (a == jsonUnitAbilities[j].slug) {
+            if (jsonUnitAbilities[j].damage) {
+                dam = jsonUnitAbilities[j].damage;
             }
-            return jsonUnitAbilities.abilities[j].name + dam + "<br>"
+            return jsonUnitAbilities[j].name + dam + "<br>"
         }
     }
 }
 
 function addTypesList(a) {
     var dam = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
+    for (j in jsonUnitAbilities) {
+        if (a == jsonUnitAbilities[j].slug) {
 
-            return jsonUnitAbilities.abilities[j].name + "<br>"
+            return jsonUnitAbilities[j].name + "<br>"
         }
     }
 }
 
-function searchData() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
-    searchUnits(filter);
-}
-
-function searchUnits(keyword) {
-    var i, output, textvalue, list = "";
-    output = document.getElementById("searchOutput");
-
-    for (i = 0; i < jsonUnits.units.length; i++) {
-        textvalue = jsonUnits.units[i].string;
-        if (textvalue.toUpperCase().indexOf(keyword) > -1) {
-            list += "<br>" + jsonUnits.units[i].string;
-
-        }
-    }
-    output.innerHTML = list;
-}
 
 
 var coll = document.getElementsByClassName("collapsible");

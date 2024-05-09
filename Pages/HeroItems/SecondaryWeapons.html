@@ -6,37 +6,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarrayT1 = ["equipment:_arc_bolas", "equipment:_arc_grenade", "equipment:_arc_rod", "equipment:_basic_grenade", "equipment:_bio_grenade", "equipment:_entropic_revolver", "equipment:_laser_pistol", "equipment:_imperial_revolver", "equipment:_med_kit", "equipment:_mining_shield", "equipment:_pistol", "equipment:_psi-stones_of_dissonance", "equipment:_psi-stones_of_harmony", "equipment:_psitec_grenade", "equipment:_repair_kit", "equipment:_sono_pistol", "equipment:_thermal_grenade", "equipment:_volt_pistol"];
+
+        var modsarrayT2 = ["equipment:_bio_blaster", "equipment:_dispersing_gas_bomb", "equipment:_ego_bomb", "equipment:_electrical_blaster", "equipment:_imperial_launcher", "equipment:_imperial_pistol", "equipment:_improved_imperial_revolver", "equipment:_inferno_handgun", "equipment:_jet_of_dismay", "equipment:_light's_harmony", "equipment:_link_shard", "equipment:_static_bomb", "equipment:_thrax_pistol", "equipment:_type-s_mobile_network", "equipment:_watcher's_scrolls"];
+
+        var modsarrayT3 = ["equipment:_acorn_assault_pouch", "equipment:_acorn_support_pouch", "equipment:_assassins_persistence", "equipment:_bio_launcher", "equipment:_cementing_bomb", "equipment:_debilitating_revolver", "equipment:_ego_launcher", "equipment:_ego_pursuer", "equipment:_inferno_launcher", "equipment:_last_resort", "equipment:_lightning_launcher", "equipment:_obsidian_of_despair", "equipment:_onyx_of_conversion", "equipment:_onyx_of_suffering", "equipment:_psi-stone_of_misfortune", "equipment:_seed_shrapnel", "equipment:_sonic_emitter_drone", "equipment:_sono_fins", "equipment:_stupor_grenade", "equipment:_the_burden_bearer", "equipment:_thumper"];
+
+        var modsarrayT4 = ["equipment:_avarice", "equipment:_deaths_gaze", "equipment:_delirium_throwing_blade", "equipment:_lifes_grace"];
+
+        var modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
         $("#body").ready(function() {
-
-
-            var modsarrayT1 = ["equipment:_arc_bolas", "equipment:_arc_grenade", "equipment:_arc_rod", "equipment:_basic_grenade", "equipment:_bio_grenade", "equipment:_entropic_revolver", "equipment:_laser_pistol", "equipment:_imperial_revolver", "equipment:_med_kit", "equipment:_mining_shield", "equipment:_pistol", "equipment:_psi-stones_of_dissonance", "equipment:_psi-stones_of_harmony", "equipment:_psitec_grenade", "equipment:_repair_kit", "equipment:_sono_pistol", "equipment:_thermal_grenade", "equipment:_volt_pistol"];
-
-            var modsarrayT2 = ["equipment:_bio_blaster", "equipment:_dispersing_gas_bomb", "equipment:_ego_bomb", "equipment:_electrical_blaster", "equipment:_imperial_launcher", "equipment:_imperial_pistol", "equipment:_improved_imperial_revolver", "equipment:_inferno_handgun", "equipment:_jet_of_dismay", "equipment:_light's_harmony", "equipment:_link_shard", "equipment:_static_bomb", "equipment:_thrax_pistol", "equipment:_type-s_mobile_network", "equipment:_watcher's_scrolls"];
-
-            var modsarrayT3 = ["equipment:_acorn_assault_pouch", "equipment:_acorn_support_pouch", "equipment:_assassins_persistence", "equipment:_bio_launcher", "equipment:_cementing_bomb", "equipment:_debilitating_revolver", "equipment:_ego_launcher", "equipment:_ego_pursuer", "equipment:_inferno_launcher", "equipment:_last_resort", "equipment:_lightning_launcher", "equipment:_obsidian_of_despair", "equipment:_onyx_of_conversion", "equipment:_onyx_of_suffering", "equipment:_psi-stone_of_misfortune", "equipment:_seed_shrapnel", "equipment:_sonic_emitter_drone", "equipment:_sono_fins", "equipment:_stupor_grenade", "equipment:_the_burden_bearer", "equipment:_thumper"];
-
-            var modsarrayT4 = ["equipment:_avarice", "equipment:_deaths_gaze", "equipment:_delirium_throwing_blade", "equipment:_lifes_grace"];
             $("#header").load("/aowp/header.html", function() {
-                modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
-
-
-                for (i in modarrayTotal) {
-
-                    showModsFromList(modarrayTotal[i], "Secondary Weapons Tier " + (parseInt(parseInt(i) + 1)) + " ");
-                }
-
-                SetCollapsibleStuff();
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            for (i in modarrayTotal) {
+
+                showModsFromList(modarrayTotal[i], "Secondary Weapons Tier " + (parseInt(parseInt(i) + 1)) + " ");
+            }
+
+            SetCollapsibleStuff();
+        }
 
     </script>
 

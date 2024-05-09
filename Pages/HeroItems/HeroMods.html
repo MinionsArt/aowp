@@ -6,45 +6,35 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarrayT1 = ["equipment:_tactical_aid_rig", "equipment:_tactical_repair_rig", "equipment:_wide-range_mending_rig"];
+
+        var modsarrayT2 = ["equipment:_antaran_armor", "equipment:_banner_of_the_union", "equipment:_bio_scanner", "equipment:_blurring_canisters", "equipment:_body_odor_disperser", "equipment:_core_projection_relay", "equipment:_edict_interdicta", "equipment:_old_jetpack", "equipment:_prototype_dv-r_suit", "equipment:_regenerative_dermal_patches", "equipment:_tactical_supply_charge", "equipment:_the_black_egg", "equipment:_v4_auto_stims_calming_state", "equipment:_disorientating_sound_emitter", "equipment:_emergency_combat_regenerator", "equipment:_gluttony_ethos", "equipment:_minds_eye", "equipment:_projectile_accelerator", "equipment:_provisional_weapon_augments", "equipment:_structure_integrity_destabilizers",
+            "equipment:_x-7_combat_stims"
+        ];
+
+        var modsarrayT3 = ["equipment:_displacement_systems", "equipment:_drone_deployment_module_laser", "equipment:_drone_deployment_module_repair", "equipment:_drone_deployment_module_skirmish", "equipment:_essence_ark", "equipment:_hollow_essence_ark", "equipment:_leg_exoskeleton_systems", "equipment:_nekris_host", "equipment:_sporulation_flares", "equipment:_tactical_aed_assistant", "equipment:_tactical_mechanic_assistant", "equipment:_tyres_gift", "equipment:_entopathogenic_mycelia"];
+
+        var modsarrayT4 = ["equipment:_shadows_embrace", "equipment:_universal_cloaking_field_generator", "equipment:_wide-range_mending_rig_mk-ii", "equipment:_provisional_weapon_augments_mk-ii", "equipment:_v4_auto_stims_blind_rage"];
+
+        var modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
+
+
         $("#body").ready(function() {
-
-            var modsarrayT1 = ["equipment:_tactical_aid_rig", "equipment:_tactical_repair_rig", "equipment:_wide-range_mending_rig"];
-
-            var modsarrayT2 = ["equipment:_antaran_armor", "equipment:_banner_of_the_union", "equipment:_bio_scanner", "equipment:_blurring_canisters", "equipment:_body_odor_disperser", "equipment:_core_projection_relay", "equipment:_edict_interdicta", "equipment:_old_jetpack", "equipment:_prototype_dv-r_suit", "equipment:_regenerative_dermal_patches", "equipment:_tactical_supply_charge", "equipment:_the_black_egg", "equipment:_v4_auto_stims_calming_state", "equipment:_disorientating_sound_emitter", "equipment:_emergency_combat_regenerator", "equipment:_gluttony_ethos", "equipment:_minds_eye", "equipment:_projectile_accelerator", "equipment:_provisional_weapon_augments", "equipment:_structure_integrity_destabilizers",
-                "equipment:_x-7_combat_stims"
-            ];
-
-            var modsarrayT3 = ["equipment:_displacement_systems", "equipment:_drone_deployment_module_laser", "equipment:_drone_deployment_module_repair", "equipment:_drone_deployment_module_skirmish", "equipment:_essence_ark", "equipment:_hollow_essence_ark", "equipment:_leg_exoskeleton_systems", "equipment:_nekris_host", "equipment:_sporulation_flares", "equipment:_tactical_aed_assistant", "equipment:_tactical_mechanic_assistant", "equipment:_tyres_gift", "equipment:_entopathogenic_mycelia"];
-
-            var modsarrayT4 = ["equipment:_shadows_embrace", "equipment:_universal_cloaking_field_generator", "equipment:_wide-range_mending_rig_mk-ii", "equipment:_provisional_weapon_augments_mk-ii", "equipment:_v4_auto_stims_blind_rage"];
-
             $("#header").load("/aowp/header.html", function() {
-
-                modarrayTotal = [modsarrayT1, modsarrayT2, modsarrayT3, modsarrayT4];
-
-
-                for (i in modarrayTotal) {
-
-                    showModsFromList(modarrayTotal[i], "Hero Mods Tier " + (parseInt(parseInt(i) + 1)) + " ");
-                }
-
-                SetCollapsibleStuff();
-
-
+                CheckData();
             });
-
-
-
-
-
         });
+        async function HandlePage() {
+            for (i in modarrayTotal) {
+
+                showModsFromList(modarrayTotal[i], "Hero Mods Tier " + (parseInt(parseInt(i) + 1)) + " ");
+            }
+
+            SetCollapsibleStuff();
+        }
 
     </script>
 

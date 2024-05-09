@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["oath_of_loyalty", "battle_pattern_analyzer", "oath_of_purity",
+            "oath_of_devotion", "plight_mitigator", "timethread_datascrolls", "oath_of_courage",
+            "destiny's_manuscript", "beacon_of_hope"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["oath_of_loyalty", "battle_pattern_analyzer", "oath_of_purity",
-                "oath_of_devotion", "plight_mitigator", "timethread_datascrolls", "oath_of_courage",
-                "destiny's_manuscript", "beacon_of_hope"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

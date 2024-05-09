@@ -6,21 +6,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["plasmoid", "amazon_purifier", "assembly_purifier",
+            "dvar_purifier", "kirko_purifier", "oathbound_purifier", "syndicate_indentured_purifier", "shakarn_purifier", "vanguard_purifier",
+            "aegis_tank", "dvar_phoenix_walker", "kirko_phoenix_walker", "phoenix_walker"
+        ];
         $("#body").ready(function() {
-            var unitarray = ["plasmoid", "amazon_purifier", "assembly_purifier",
-                "dvar_purifier", "kirko_purifier", "oathbound_purifier", "syndicate_indentured_purifier", "shakarn_purifier", "vanguard_purifier",
-                "aegis_tank", "dvar_phoenix_walker", "kirko_phoenix_walker", "phoenix_walker"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

@@ -6,22 +6,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["amazon_light_bringer", "assembly_light_bringer", "dvar_light_bringer",
+            "kirko_light_bringer", "oathbound_paladin_light_bringer", "burning_banner", "syndicate_light_bringer", "shakarn_light_bringer", "vanguard_light_bringer",
+            "amazon_star_guide", "assembly_star_guide", "dvar_star_guide", "kirko_star_guide", "oathbound_star_guide", "shakarn_star_guide", "syndicate_star_guide", "vanguard_star_guide", "ascended_teacher"
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["amazon_light_bringer", "assembly_light_bringer", "dvar_light_bringer",
-                "kirko_light_bringer", "oathbound_paladin_light_bringer", "burning_banner", "syndicate_light_bringer", "shakarn_light_bringer", "vanguard_light_bringer",
-                "amazon_star_guide", "assembly_star_guide", "dvar_star_guide", "kirko_star_guide", "oathbound_star_guide", "shakarn_star_guide", "syndicate_star_guide", "vanguard_star_guide", "ascended_teacher"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromListTest(unitarray, "undefined");
+                CheckData();
             });
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

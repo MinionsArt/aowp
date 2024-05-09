@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["exploitative_targeting_system", "cerebral_control_collars", "psitec_vision_enhancers_(detector)",
+            "spatial_acceleration_sails", "adaptive_camouflage_projector", "control_amplifier", "advanced_dislocation_drive",
+            "cerebral_amplifier", "psitec_drive_modulator"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["exploitative_targeting_system", "cerebral_control_collars", "psitec_vision_enhancers_(detector)",
-                "spatial_acceleration_sails", "adaptive_camouflage_projector", "control_amplifier", "advanced_dislocation_drive",
-                "cerebral_amplifier", "psitec_drive_modulator"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

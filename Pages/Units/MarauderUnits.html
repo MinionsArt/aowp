@@ -7,25 +7,20 @@
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script>
+        var unitarray = ["ebot_roy-2", "ebot_emma-3", "imperial_buggy",
+            "imperial_walker", "imperial_dragonfly", "imperial_behemoth", "imperial_submarine",
+            "imperial_inferno_submarine", "imperial_behemoth_submarine", "auto-torpedo", "blaze_auto-torpedo"
+
+        ];
         $("#body").ready(function() {
-            var unitarray = ["ebot_roy-2", "ebot_emma-3", "imperial_buggy",
-                "imperial_walker", "imperial_dragonfly", "imperial_behemoth", "imperial_submarine",
-                "imperial_inferno_submarine", "imperial_behemoth_submarine", "auto-torpedo", "blaze_auto-torpedo"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

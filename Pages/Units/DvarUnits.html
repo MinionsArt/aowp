@@ -6,24 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
+
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["dvar_prospector", "dvar_trencher", "dvar_foreman",
+            "dvar_bulwark", "dvar_ramjet", "dvar_ironclad", "dvar_sapper",
+            "dvar_baron", "dvar_excavator_tank", "dvar_rocket_artillery", "dvar_dreadnought", "dvar_earth_crusher", "dvar_colonizer", "dvar_bombard"
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["dvar_prospector", "dvar_trencher", "dvar_foreman",
-                "dvar_bulwark", "dvar_ramjet", "dvar_ironclad", "dvar_sapper",
-                "dvar_baron", "dvar_excavator_tank", "dvar_rocket_artillery", "dvar_dreadnought", "dvar_earth_crusher", "dvar_colonizer", "dvar_bombard"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

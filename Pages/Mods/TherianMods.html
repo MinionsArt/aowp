@@ -6,24 +6,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["enhanced_limb_augments", "therian_ally_insignia", "hunters_camouflage",
+            "might_of_the_therians", "dna_injector_prowler", "dna_injector_bouncer", "dna_injector_sharpshooter", "dna_injector_chemist", "dna_injector_apex"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["enhanced_limb_augments", "therian_ally_insignia", "hunters_camouflage",
-                "might_of_the_therians", "dna_injector_prowler", "dna_injector_bouncer", "dna_injector_sharpshooter", "dna_injector_chemist", "dna_injector_apex"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

@@ -6,21 +6,17 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        const unitarray = ["spacer_psycho", "spacer_truck", "spacer_melter", "spacer_junk_ship", "spacer_hellcopter", "spacer_mad_preacher", "spacer_effigy"];
         $("#body").ready(function() {
-
-            const unitarray = ["spacer_psycho", "spacer_truck", "spacer_melter", "spacer_junk_ship", "spacer_hellcopter", "spacer_mad_preacher", "spacer_effigy"];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

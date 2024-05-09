@@ -6,30 +6,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["oathbound_scryer", "oathbound_paladin_aspirant", "oathbound_augur",
+            "oathbound_watcher", "oathbound_paladin_warden", "galleon", "oathbound_paladin_protector",
+            "oathbound_paladin_champion", "oathbound_diviner", "oathbound_paladin_exemplar", "oathbound_paladin_exemplar_glaive", "banner_of_healing", "banner_of_justice", "wardens_banner", "oathbound_banner_of_protection", "oathbound_colonizer", "oathbound_paladin_warlord", "oathbound_paladin_marquis"
+
+        ];
         $("#body").ready(function() {
-            var unitarray = ["oathbound_scryer", "oathbound_paladin_aspirant", "oathbound_augur",
-                "oathbound_watcher", "oathbound_paladin_warden", "galleon", "oathbound_paladin_protector",
-                "oathbound_paladin_champion", "oathbound_diviner", "oathbound_paladin_exemplar", "oathbound_paladin_exemplar_glaive", "banner_of_healing", "banner_of_justice", "wardens_banner", "oathbound_banner_of_protection", "oathbound_colonizer", "oathbound_paladin_warlord", "oathbound_paladin_marquis"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
+        });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
 
-            $(document).ready(function() {
-                function showStats() {
-                    textFit(document.getElementsByClassName('unit_abilityslot'));
-                }
 
-                setTimeout(showStats, 500);
-            });
 
+        $(document).ready(function() {
+            function showStats() {
+                textFit(document.getElementsByClassName('unit_abilityslot'));
+            }
+
+            setTimeout(showStats, 500);
         });
 
     </script>

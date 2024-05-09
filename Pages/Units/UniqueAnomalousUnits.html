@@ -6,24 +6,23 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["paragon_paragon_elite", "paragon_paragon_elite_sniper", "dragonfly_ace",
+            "kirko_ancestral_hidden", "assembly_groxum", "ethereal_penguin", "spark_droid",
+            "xennodon", "a.i.v.a._-3", "vanguard_shadow_trooper", "dreamer_cultist", "ebot_valer-e", "assembly_will-em", "heritor_the_hand_that_takes", "heritor_the_hand_that_gives", "purified_golem", "hopperhound_alpha", "hopperhound_progenitor"
+
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["paragon_paragon_elite", "paragon_paragon_elite_sniper", "dragonfly_ace",
-                "kirko_ancestral_hidden", "assembly_groxum", "ethereal_penguin", "spark_droid",
-                "xennodon", "a.i.v.a._-3", "vanguard_shadow_trooper", "dreamer_cultist", "ebot_valer-e", "assembly_will-em", "heritor_the_hand_that_takes", "heritor_the_hand_that_gives", "purified_golem", "hopperhound_alpha", "hopperhound_progenitor"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
+
+
 
         $(document).ready(function() {
             function showStats() {

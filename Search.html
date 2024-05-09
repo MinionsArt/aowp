@@ -4,22 +4,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="/aowp/favicon.ico" />
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta charset="UTF-8">
     <script>
         $("#body").ready(function() {
-
-            $("#header").load("/aowp/header.html");
-            setTimeout(() => {
-                rememberSearch();
-            }, 1000);
-
-            //setTimeout(rememberSearch(), 5000);
+            $("#header").load("/aowp/header.html", function() {
+                CheckData();
+            });
         });
+        async function HandlePage() {
+            console.log(" here");
+            await rememberSearch();
+        }
+
+
 
 
         $(".togglelink").click(function() {
@@ -143,42 +141,42 @@
         output = document.getElementById("units");
         result = document.getElementById("searchResultMod");
 
-        for (i = 0; i < jsonMods.mods.length; i++) {
-            textvalue = jsonMods.mods[i].name;
+        for (i = 0; i < jsonMods.length; i++) {
+            textvalue = jsonMods[i].name;
             if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                 if (listMod.length >= 1) {
-                    if (!isInArray(listMod, jsonMods.mods[i].slug)) {
-                        listMod.push(jsonMods.mods[i].slug);
+                    if (!isInArray(listMod, jsonMods[i].slug)) {
+                        listMod.push(jsonMods[i].slug);
                     }
                 } else {
-                    listMod.push(jsonMods.mods[i].slug);
+                    listMod.push(jsonMods[i].slug);
                 }
 
 
 
             }
-            textvalue = jsonMods.mods[i].description;
+            textvalue = jsonMods[i].description;
             if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                 if (listMod.length >= 1) {
-                    if (!isInArray(listMod, jsonMods.mods[i].slug)) {
-                        listMod.push(jsonMods.mods[i].slug);
+                    if (!isInArray(listMod, jsonMods[i].slug)) {
+                        listMod.push(jsonMods[i].slug);
                     }
                 } else {
-                    listMod.push(jsonMods.mods[i].slug);
+                    listMod.push(jsonMods[i].slug);
                 }
 
 
 
             }
 
-            textvalue = jsonMods.mods[i].type;
+            textvalue = jsonMods[i].type;
             if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                 if (listMod.length >= 1) {
-                    if (!isInArray(listMod, jsonMods.mods[i].slug)) {
-                        listMod.push(jsonMods.mods[i].slug);
+                    if (!isInArray(listMod, jsonMods[i].slug)) {
+                        listMod.push(jsonMods[i].slug);
                     }
                 } else {
-                    listMod.push(jsonMods.mods[i].slug);
+                    listMod.push(jsonMods[i].slug);
                 }
             }
 
@@ -202,60 +200,44 @@
         output = document.getElementById("units");
         result = document.getElementById("searchResult");
 
-        for (i = 0; i < jsonUnits.units.length; i++) {
-            textvalue = jsonUnits.units[i].id;
+        for (i = 0; i < jsonUnits.length; i++) {
+            textvalue = jsonUnits[i].id;
             if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                 if (list.length >= 1) {
-                    if (!isInArray(list, jsonUnits.units[i].id)) {
-                        list.push(jsonUnits.units[i].id);
+                    if (!isInArray(list, jsonUnits[i].id)) {
+                        list.push(jsonUnits[i].id);
                     }
                 } else {
-                    list.push(jsonUnits.units[i].id);
+                    list.push(jsonUnits[i].id);
                 }
 
 
 
             }
-            for (j = 0; j < jsonUnits.units[i].abilities.length; j++) {
-                textvalue = jsonUnits.units[i].abilities[j].slug;
+            for (j = 0; j < jsonUnits[i].abilities.length; j++) {
+                textvalue = jsonUnits[i].abilities[j].slug;
                 if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                     if (list.length >= 1) {
-                        if (!isInArray(list, jsonUnits.units[i].id)) {
-                            list.push(jsonUnits.units[i].id);
+                        if (!isInArray(list, jsonUnits[i].id)) {
+                            list.push(jsonUnits[i].id);
                         }
                     } else {
-                        list.push(jsonUnits.units[i].id);
+                        list.push(jsonUnits[i].id);
                     }
 
 
 
                 }
             }
-            for (j = 0; j < jsonUnits.units[i].passives.length; j++) {
-                textvalue = jsonUnits.units[i].passives[j].slug;
+            for (j = 0; j < jsonUnits[i].passives.length; j++) {
+                textvalue = jsonUnits[i].passives[j].slug;
                 if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                     if (list.length >= 1) {
-                        if (!isInArray(list, jsonUnits.units[i].id)) {
-                            list.push(jsonUnits.units[i].id);
+                        if (!isInArray(list, jsonUnits[i].id)) {
+                            list.push(jsonUnits[i].id);
                         }
                     } else {
-                        list.push(jsonUnits.units[i].id);
-                    }
-
-
-
-                }
-            }
-
-            for (j = 0; j < jsonUnits.units[i].unit_types.length; j++) {
-                textvalue = jsonUnits.units[i].unit_types[j].slug;
-                if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
-                    if (list.length >= 1) {
-                        if (!isInArray(list, jsonUnits.units[i].id)) {
-                            list.push(jsonUnits.units[i].id);
-                        }
-                    } else {
-                        list.push(jsonUnits.units[i].id);
+                        list.push(jsonUnits[i].id);
                     }
 
 
@@ -263,15 +245,31 @@
                 }
             }
 
-            for (j = 0; j < jsonUnits.units[i].resistances.length; j++) {
-                textvalue = jsonUnits.units[i].resistances[j].slug;
+            for (j = 0; j < jsonUnits[i].unit_types.length; j++) {
+                textvalue = jsonUnits[i].unit_types[j].slug;
                 if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                     if (list.length >= 1) {
-                        if (!isInArray(list, jsonUnits.units[i].id)) {
-                            list.push(jsonUnits.units[i].id);
+                        if (!isInArray(list, jsonUnits[i].id)) {
+                            list.push(jsonUnits[i].id);
                         }
                     } else {
-                        list.push(jsonUnits.units[i].id);
+                        list.push(jsonUnits[i].id);
+                    }
+
+
+
+                }
+            }
+
+            for (j = 0; j < jsonUnits[i].resistances.length; j++) {
+                textvalue = jsonUnits[i].resistances[j].slug;
+                if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
+                    if (list.length >= 1) {
+                        if (!isInArray(list, jsonUnits[i].id)) {
+                            list.push(jsonUnits[i].id);
+                        }
+                    } else {
+                        list.push(jsonUnits[i].id);
                     }
 
 
@@ -280,14 +278,14 @@
             }
 
 
-            textvalue = "tier" + jsonUnits.units[i].tier;
+            textvalue = "tier" + jsonUnits[i].tier;
             if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                 if (list.length >= 1) {
-                    if (!isInArray(list, jsonUnits.units[i].id)) {
-                        list.push(jsonUnits.units[i].id);
+                    if (!isInArray(list, jsonUnits[i].id)) {
+                        list.push(jsonUnits[i].id);
                     }
                 } else {
-                    list.push(jsonUnits.units[i].id);
+                    list.push(jsonUnits[i].id);
                 }
 
 
@@ -327,60 +325,44 @@
     function searchUnitsMultiple(workinglist, fieldToSearch) {
 
         var newlist = new Array();
-        for (i = 0; i < jsonUnits.units.length; i++) {
-            textvalue = jsonUnits.units[i].id;
-            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+        for (i = 0; i < jsonUnits.length; i++) {
+            textvalue = jsonUnits[i].id;
+            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits[i].id)) {
                 if (newlist.length >= 1) {
-                    if (!isInArray(newlist, jsonUnits.units[i].id)) {
-                        newlist.push(jsonUnits.units[i].id);
+                    if (!isInArray(newlist, jsonUnits[i].id)) {
+                        newlist.push(jsonUnits[i].id);
                     }
                 } else {
-                    newlist.push(jsonUnits.units[i].id);
+                    newlist.push(jsonUnits[i].id);
                 }
 
 
 
             }
-            for (j = 0; j < jsonUnits.units[i].abilities.length; j++) {
-                textvalue = jsonUnits.units[i].abilities[j].slug;
-                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+            for (j = 0; j < jsonUnits[i].abilities.length; j++) {
+                textvalue = jsonUnits[i].abilities[j].slug;
+                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits[i].id)) {
                     if (newlist.length >= 1) {
-                        if (!isInArray(newlist, jsonUnits.units[i].id)) {
-                            newlist.push(jsonUnits.units[i].id);
+                        if (!isInArray(newlist, jsonUnits[i].id)) {
+                            newlist.push(jsonUnits[i].id);
                         }
                     } else {
-                        newlist.push(jsonUnits.units[i].id);
+                        newlist.push(jsonUnits[i].id);
                     }
 
 
 
                 }
             }
-            for (j = 0; j < jsonUnits.units[i].passives.length; j++) {
-                textvalue = jsonUnits.units[i].passives[j].slug;
-                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+            for (j = 0; j < jsonUnits[i].passives.length; j++) {
+                textvalue = jsonUnits[i].passives[j].slug;
+                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits[i].id)) {
                     if (newlist.length >= 1) {
-                        if (!isInArray(newlist, jsonUnits.units[i].id)) {
-                            newlist.push(jsonUnits.units[i].id);
+                        if (!isInArray(newlist, jsonUnits[i].id)) {
+                            newlist.push(jsonUnits[i].id);
                         }
                     } else {
-                        newlist.push(jsonUnits.units[i].id);
-                    }
-
-
-
-                }
-            }
-
-            for (j = 0; j < jsonUnits.units[i].unit_types.length; j++) {
-                textvalue = jsonUnits.units[i].unit_types[j].slug;
-                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
-                    if (newlist.length >= 1) {
-                        if (!isInArray(newlist, jsonUnits.units[i].id)) {
-                            newlist.push(jsonUnits.units[i].id);
-                        }
-                    } else {
-                        newlist.push(jsonUnits.units[i].id);
+                        newlist.push(jsonUnits[i].id);
                     }
 
 
@@ -388,29 +370,45 @@
                 }
             }
 
-            for (j = 0; j < jsonUnits.units[i].resistances.length; j++) {
-                textvalue = jsonUnits.units[i].resistances[j].slug;
-                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+            for (j = 0; j < jsonUnits[i].unit_types.length; j++) {
+                textvalue = jsonUnits[i].unit_types[j].slug;
+                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits[i].id)) {
                     if (newlist.length >= 1) {
-                        if (!isInArray(newlist, jsonUnits.units[i].id)) {
-                            newlist.push(jsonUnits.units[i].id);
+                        if (!isInArray(newlist, jsonUnits[i].id)) {
+                            newlist.push(jsonUnits[i].id);
                         }
                     } else {
-                        newlist.push(jsonUnits.units[i].id);
+                        newlist.push(jsonUnits[i].id);
                     }
 
 
 
                 }
             }
-            textvalue = "tier" + jsonUnits.units[i].tier;
-            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].id)) {
+
+            for (j = 0; j < jsonUnits[i].resistances.length; j++) {
+                textvalue = jsonUnits[i].resistances[j].slug;
+                if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits[i].id)) {
+                    if (newlist.length >= 1) {
+                        if (!isInArray(newlist, jsonUnits[i].id)) {
+                            newlist.push(jsonUnits[i].id);
+                        }
+                    } else {
+                        newlist.push(jsonUnits[i].id);
+                    }
+
+
+
+                }
+            }
+            textvalue = "tier" + jsonUnits[i].tier;
+            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits[i].id)) {
                 if (newlist.length >= 1) {
-                    if (!isInArray(newlist, jsonUnits.units[i].id)) {
-                        newlist.push(jsonUnits.units[i].id);
+                    if (!isInArray(newlist, jsonUnits[i].id)) {
+                        newlist.push(jsonUnits[i].id);
                     }
                 } else {
-                    newlist.push(jsonUnits.units[i].id);
+                    newlist.push(jsonUnits[i].id);
                 }
 
 

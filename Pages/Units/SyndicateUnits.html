@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["syndicate_runner", "syndicate_indentured", "syndicate_overseer",
+            "syndicate_guild_assassin", "syndicate_enforcer", "syndicate_mirage", "syndicate_guild_cruiser",
+            "syndicate_wraith", "syndicate_subjugator", "syndicate_zenith", "syndicate_sentinel", "syndicate_colonizer", "syndicate_suppressor_tower"
+
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["syndicate_runner", "syndicate_indentured", "syndicate_overseer",
-                "syndicate_guild_assassin", "syndicate_enforcer", "syndicate_mirage", "syndicate_guild_cruiser",
-                "syndicate_wraith", "syndicate_subjugator", "syndicate_zenith", "syndicate_sentinel", "syndicate_colonizer", "syndicate_suppressor_tower"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

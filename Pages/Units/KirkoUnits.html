@@ -6,26 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["kirko_unleashed", "kirko_frenzied", "kirko_hidden",
+            "kirko_tormented", "kirko_barrager", "kirko_torrent", "kirko_engulfer",
+            "kirko_deep_one", "kirko_transcendent", "kirko_ravenous", "kirko_harbinger", "kirko_abyssian", "kirko_emergent", "kirko_colonizer", "kirko_hiveguard"
+
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["kirko_unleashed", "kirko_frenzied", "kirko_hidden",
-                "kirko_tormented", "kirko_barrager", "kirko_torrent", "kirko_engulfer",
-                "kirko_deep_one", "kirko_transcendent", "kirko_ravenous", "kirko_harbinger", "kirko_abyssian", "kirko_emergent", "kirko_colonizer", "kirko_hiveguard"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

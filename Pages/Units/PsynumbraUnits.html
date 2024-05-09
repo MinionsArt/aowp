@@ -7,22 +7,19 @@
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script>
+        var unitarray = ["echo_of_despair", "whisper_of_discord", "amazon_initiate",
+            "assembly_initiate", "dvar_initiate", "kirko_initiate", "oathbound_initiate", "syndicate_initiate", "shakarn_initiate",
+            "vanguard_initiate", "amazon_malictor", "assembly_malictor", "dvar_malictor", "kirko_malictor", "oathbound_malictor", "shakarn_malictor", "syndicate_malictor", "vanguard_malictor", "herald_of_oblivion"
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["echo_of_despair", "whisper_of_discord", "amazon_initiate",
-                "assembly_initiate", "dvar_initiate", "kirko_initiate", "oathbound_initiate", "syndicate_initiate", "shakarn_initiate",
-                "vanguard_initiate", "amazon_malictor", "assembly_malictor", "dvar_malictor", "kirko_malictor", "oathbound_malictor", "shakarn_malictor", "syndicate_malictor", "vanguard_malictor", "herald_of_oblivion"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

@@ -6,21 +6,15 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/Tech.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/Operations.json"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/aowp/Data/dragscroll.js"></script>
     <script>
         $("#body").ready(function() {
-
-            $("#header").load("/aowp/header.html");
-
-
-
+            $("#header").load("/aowp/header.html", function() {
+                CheckData();
+            });
+        });
+        async function HandlePage() {
             /// Amazon----------------------------------------------------------------------------------------------------------------------------------------Amazon
             $("#amazont1").load("/aowp/techcard.html", function() {
                 showTech("amazon_protective_grounding");
@@ -1390,10 +1384,8 @@
 
 
             });
+        }
 
-
-
-        });
 
 
 

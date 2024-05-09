@@ -6,23 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var unitarray = ["vanguard_owl", "vanguard_trooper", "vanguard_engineer",
+            "vanguard_pug", "vanguard_assault_bike", "vanguard_gunship", "vanguard_frigate",
+            "vanguard_walker", "vanguard_laser_tank", "vanguard_battleship", "vanguard_drone_carrier", "vanguard_assault_drone", "vanguard_repair_drone", "vanguard_skirmish_drone", "vanguard_nanite_support_station", "vanguard_gun_turret", "vanguard_heavy_gun_turret", "vanguard_launcher_turret", "vanguard_valkyrie", "vanguard_colonizer", "vanguard_repeater_defense_turret"
+
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["vanguard_owl", "vanguard_trooper", "vanguard_engineer",
-                "vanguard_pug", "vanguard_assault_bike", "vanguard_gunship", "vanguard_frigate",
-                "vanguard_walker", "vanguard_laser_tank", "vanguard_battleship", "vanguard_drone_carrier", "vanguard_assault_drone", "vanguard_repair_drone", "vanguard_skirmish_drone", "vanguard_nanite_support_station", "vanguard_gun_turret", "vanguard_heavy_gun_turret", "vanguard_launcher_turret", "vanguard_valkyrie", "vanguard_colonizer", "vanguard_repeater_defense_turret"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

@@ -6,25 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["contaminated_claws", "evolutionary_mutation", "fiery_infusion",
+            "minor_infection_x", "scything_claws", "tempered_shells", "blazing_infusion",
+            "hardened_scything_claws", "infection_x", "paralyzing_infusion", "plague_carrier", "superior_evolutionary_mutation"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["contaminated_claws", "evolutionary_mutation", "fiery_infusion",
-                "minor_infection_x", "scything_claws", "tempered_shells", "blazing_infusion",
-                "hardened_scything_claws", "infection_x", "paralyzing_infusion", "plague_carrier", "superior_evolutionary_mutation"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
 
     </script>
 

@@ -6,41 +6,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
-        /* $("#body").ready(function() {
-            var unitarray = ["shakarn_recon", "shakarn_raider", "shakarn_infiltrator",
-            "shakarn_deadeye", "shakarn_propagator", "shakarn_seeker", "shakarn_refractor",
-            "shakarn_tactician", "shakarn_firebrand", "shakarn_sonokarn", "shakarn_colonizer", "shakarn_reconnaissance_buoy", "shakarn_sleeper_agent"
-            ];
-            $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
-            });
+        var unitarray = ["shakarn_recon", "shakarn_raider", "shakarn_infiltrator",
+            "shakarn_deadeye", "shakarn_seeker", "shakarn_refractor",
+            "shakarn_tactician", "shakarn_firebrand", "shakarn_sonokarn", "shakarn_colonizer", "shakarn_reconnaissance_buoy", "shakarn_sleeper_agent", "shakarn_propagator"
 
-
-
-        });*/
-
-    </script>
-
-    <script>
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["shakarn_recon", "shakarn_raider", "shakarn_infiltrator",
-                "shakarn_deadeye", "shakarn_seeker", "shakarn_refractor",
-                "shakarn_tactician", "shakarn_firebrand", "shakarn_sonokarn", "shakarn_colonizer", "shakarn_reconnaissance_buoy", "shakarn_sleeper_agent", "shakarn_propagator"
-
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 

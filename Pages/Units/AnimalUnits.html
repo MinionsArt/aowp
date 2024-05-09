@@ -7,25 +7,20 @@
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
     <script>
+        var unitarray = ["penguin", "wild_shrike", "wild_swift_beak",
+            "wild_harrier", "wild_bombardon", "voradon", "chelus_steeleater",
+            "chelus_clutchmother", "chelus_spawn", "chelus_egg", "octowhale", "elder_octowhale", "mega_beetle_baby", "mega_beetle_adult", "hopperhound_hatchling", "hopperhound_manhunter", "hopperhound_blademaw", "hopperhound_eviscerator", "savage_tyrannodon"
+
+        ];
         $("#body").ready(function() {
-
-            var unitarray = ["penguin", "wild_shrike", "wild_swift_beak",
-                "wild_harrier", "wild_bombardon", "voradon", "chelus_steeleater",
-                "chelus_clutchmother", "chelus_spawn", "chelus_egg", "octowhale", "elder_octowhale", "mega_beetle_baby", "mega_beetle_adult", "hopperhound_hatchling", "hopperhound_manhunter", "hopperhound_blademaw", "hopperhound_eviscerator", "savage_tyrannodon"
-
-            ];
-
             $("#header").load("/aowp/header.html", function() {
-                showUnitsFromList(unitarray);
+                CheckData();
             });
-
-
-
         });
+        async function HandlePage() {
+            showUnitsFromList(unitarray);
+        }
 
     </script>
 
@@ -39,7 +34,7 @@
     <h2 style="text-align: center; color: aliceblue">
         Animal Units
     </h2>
-  <div id="buttonHolder" class="w3-bar w3-black"></div>
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
     <div id="units">
     </div>
 

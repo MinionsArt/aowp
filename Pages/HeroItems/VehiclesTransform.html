@@ -6,37 +6,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/aowp/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitAbilitiesNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitsNew.json"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/BuilderNew.js"></script>
-    <script type="text/javascript" language="javascript" src="/aowp/Data/UnitMods.json"></script>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarrayT2 = ["vehicle:_abyssian", "vehicle:_assault_bike", "vehicle:_blackguard_adversary", "vehicle:_bulwark", "vehicle:_chopper", "vehicle:_engulfer", "vehicle:_glaukos", "vehicle:_gunship", "vehicle:_harrier", "vehicle:_hellcopter", "vehicle:_hopperhound_alpha", "vehicle:_hoverbike", "vehicle:_imperial_apc", "vehicle:_imperial_buggy", "vehicle:_imperial_dragonfly", "vehicle:_lancer", "vehicle:_lightning_rider", "vehicle:_mirage", "vehicle:_paladin_light_bringer", "vehicle:_paladin_marquis", "vehicle:_paladin_protector", "vehicle:_paladin_purifier", "vehicle:_paladin_warden", "vehicle:_paladin_warlord", "vehicle:_propagator", "vehicle:_ramjet", "vehicle:_sapper", "vehicle:_truck"];
+
+        var modsarrayT3 = ["vehicle:_aegis_tank", "vehicle:_baron", "vehicle:_barrager", "vehicle:_disassembler", "vehicle:_ember_hopperhound", "vehicle:_excavator_tank", "vehicle:_high_lord", "vehicle:_imperial_walker", "vehicle:_laser_tank", "vehicle:_paladin_champion", "vehicle:_phoenix_walker", "vehicle:_ravenous", "vehicle:_refractor", "vehicle:_rift_generator", "vehicle:_subjugator", "vehicle:_tyrannodon", "vehicle:_walker", "vehicle:_wraith", "vehicle:_wrecker"];
+
+        var modsarrayT4 = ["vehicle:_blackguard_tyrant", "vehicle:_imperial_behemoth"];
+
+        var modsarrayTransform = ["dna_injector_prowler", "dna_injector_bouncer", "dna_injector_sharpshooter", "dna_injector_chemist", "dna_injector_apex"];
+        var modarrayTotal = [modsarrayT2, modsarrayT3, modsarrayT4, modsarrayTransform];
+
         $("#body").ready(function() {
-
-            var modsarrayT2 = ["vehicle:_abyssian", "vehicle:_assault_bike", "vehicle:_blackguard_adversary", "vehicle:_bulwark", "vehicle:_chopper", "vehicle:_engulfer", "vehicle:_glaukos", "vehicle:_gunship", "vehicle:_harrier", "vehicle:_hellcopter", "vehicle:_hopperhound_alpha", "vehicle:_hoverbike", "vehicle:_imperial_apc", "vehicle:_imperial_buggy", "vehicle:_imperial_dragonfly", "vehicle:_lancer", "vehicle:_lightning_rider", "vehicle:_mirage", "vehicle:_paladin_light_bringer", "vehicle:_paladin_marquis", "vehicle:_paladin_protector", "vehicle:_paladin_purifier", "vehicle:_paladin_warden", "vehicle:_paladin_warlord", "vehicle:_propagator", "vehicle:_ramjet", "vehicle:_sapper", "vehicle:_truck"];
-
-            var modsarrayT3 = ["vehicle:_aegis_tank", "vehicle:_baron", "vehicle:_barrager", "vehicle:_disassembler", "vehicle:_ember_hopperhound", "vehicle:_excavator_tank", "vehicle:_high_lord", "vehicle:_imperial_walker", "vehicle:_laser_tank", "vehicle:_paladin_champion", "vehicle:_phoenix_walker", "vehicle:_ravenous", "vehicle:_refractor", "vehicle:_rift_generator", "vehicle:_subjugator", "vehicle:_tyrannodon", "vehicle:_walker", "vehicle:_wraith", "vehicle:_wrecker"];
-
-            var modsarrayT4 = ["vehicle:_blackguard_tyrant", "vehicle:_imperial_behemoth"];
-
-            var modsarrayTransform = ["dna_injector_prowler", "dna_injector_bouncer", "dna_injector_sharpshooter", "dna_injector_chemist", "dna_injector_apex"];
-
-
             $("#header").load("/aowp/header.html", function() {
-                modarrayTotal = [modsarrayT2, modsarrayT3, modsarrayT4];
-
-
-                for (i in modarrayTotal) {
-
-                    showModsFromList(modarrayTotal[i], "Vehicle/Transformation Tier " + (parseInt(parseInt(i) + 2)) + " ");
-                }
-
-                SetCollapsibleStuff();
+                CheckData();
             });
-
         });
+        async function HandlePage() {
+            for (i in modarrayTotal) {
+
+                showModsFromList(modarrayTotal[i], "Vehicle/Transformation Tier " + (parseInt(parseInt(i) + 1)) + " ");
+            }
+
+            SetCollapsibleStuff();
+        }
 
     </script>
 
