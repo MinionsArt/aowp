@@ -146,9 +146,14 @@ ul.egmenu li {
 
 }
 
+ul.egmenu a:hover {
+    text-shadow: 1px 1px 10px white;
+    color: aqua;
+}
+
 
 ul.egmenu li:hover {
-    text-shadow: 1px 1px 10px blue;
+    /*  text-shadow: 1px 1px 10px blue;*/
     color: aqua;
 }
 
@@ -192,7 +197,7 @@ ul.egmenu li:hover ul {
 
 @media all and (min-width: 481px) {
     ul.egmenu li:hover {
-        text-shadow: 1px 1px 10px white;
+
         color: aqua;
     }
 
@@ -223,7 +228,7 @@ ul.egmenu li:hover ul {
     float: left;
     position: relative;
     font: 12px Arial;
-    text-shadow: 0 -1px 0 #000;
+
     text-transform: uppercase;
     z-index: 1000;
     white-space: nowrap;
