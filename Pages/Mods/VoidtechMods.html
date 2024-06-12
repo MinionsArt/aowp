@@ -13,17 +13,18 @@
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
+        var modsarray = ["phasewalk_modulator", "void_augmentation", "gravity_pulse_grenade",
+            "phase_drive", "stasis_pocket_inducer", "quantum_avatar"
+        ];
         $("#body").ready(function() {
-
-            var modsarray = ["phasewalk_modulator", "void_augmentation", "gravity_pulse_grenade",
-                "phase_drive", "stasis_pocket_inducer", "quantum_avatar"
-            ];
             $("#header").load("/aowp/header.html", function() {
-                showModsFromList(modsarray);
+                CheckData();
             });
-
-
         });
+        async function HandlePage() {
+            showModsFromList(modsarray);
+        }
+
     </script>
 
 
@@ -36,8 +37,11 @@
     <h2 style="text-align: center; color: aliceblue">
         Voidtech Mods
     </h2>
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
     <div id="mods">
-
-
     </div>
-</body></html>
+
+
+</body>
+
+</html>
