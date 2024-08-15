@@ -7,26 +7,29 @@ var currentRace = "amazon";
 
 var jsonUnits, jsonUnitAbilities, jsonTech, jsonOperations, jsonMods;
 
-
 function fetchJsonFiles(filePaths) {
     return Promise.all(
-        filePaths.map(filePath =>
-            fetch(filePath)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Network response was not ok: ${response.statusText}`);
-                    }
-                    return response.json();
-                })
+        filePaths.map((filePath) =>
+            fetch(filePath).then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return response.json();
+            })
         )
     );
 }
 
 async function GetAllData() {
-
-    const jsonFilePaths = ['/aowp/Data/Units.json', '/aowp/Data/UnitAbilities.json', '/aowp/Data/Tech.json', '/aowp/Data/Operations.json', '/aowp/Data/UnitMods.json'];
+    const jsonFilePaths = [
+        "/aowp/Data/Units.json",
+        "/aowp/Data/UnitAbilities.json",
+        "/aowp/Data/Tech.json",
+        "/aowp/Data/Operations.json",
+        "/aowp/Data/UnitMods.json"
+    ];
     await fetchJsonFiles(jsonFilePaths)
-        .then(dataArray => {
+        .then((dataArray) => {
             dataArray.forEach((data, index) => {
                 // console.log(`Data from ${jsonFilePaths[index]}:`, data);
                 if (index == 0) {
@@ -42,13 +45,11 @@ async function GetAllData() {
                 }
             });
         })
-        .catch(error => {
-            console.error('Error fetching JSON files:', error.message);
+        .catch((error) => {
+            console.error("Error fetching JSON files:", error.message);
         });
-
 }
 async function CheckData() {
-
     if (jsonUnits === undefined) {
         await GetAllData();
 
@@ -62,14 +63,12 @@ function showhide(id, weapon, weapon2) {
             var divid = document.getElementById(id);
             //close others
             for (var i = 0; i < divState.length; i++) {
-
-                var e = document.getElementById(divState[i])
-                e.style.display = 'none'; // hide
+                var e = document.getElementById(divState[i]);
+                e.style.display = "none"; // hide
                 //  divStateweapon1[div] = false; // reset status
             }
 
-
-            divid.style.display = 'inline-block';
+            divid.style.display = "inline-block";
         }
         currentRace = id;
     }
@@ -80,17 +79,14 @@ function showhide(id, weapon, weapon2) {
 
         //close others
         for (var i = 0; i < divStateweapon1.length; i++) {
-
-            var e = document.getElementById(divStateweapon1[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divStateweapon1[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
-
-        divid.style.display = 'inline-block';
-        divid2.style.display = 'inline-block';
+        divid.style.display = "inline-block";
+        divid2.style.display = "inline-block";
     }
-
 }
 var divState2 = ["promethean", "synthesis", "voidtech", "psynumbra", "celestian", "xenoplague", "heritor"];
 
@@ -99,14 +95,12 @@ function showhide2(id) {
         var divid = document.getElementById(id);
         //close others
         for (var i = 0; i < divState2.length; i++) {
-
-            var e = document.getElementById(divState2[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divState2[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
-
-        divid.style.display = 'inline-block';
+        divid.style.display = "inline-block";
     }
 }
 var divTrees = ["military", "society"];
@@ -116,14 +110,12 @@ function showhideTree(id) {
         var divid = document.getElementById(id);
         //close others
         for (var i = 0; i < divTrees.length; i++) {
-
-            var e = document.getElementById(divTrees[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divTrees[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
-
-        divid.style.display = 'contents';
+        divid.style.display = "contents";
     }
 }
 
@@ -134,14 +126,12 @@ function showhideEndless(id) {
         var divid = document.getElementById(id);
         //close others
         for (var i = 0; i < divTreesEndless.length; i++) {
-
-            var e = document.getElementById(divTreesEndless[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divTreesEndless[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
-
-        divid.style.display = 'contents';
+        divid.style.display = "contents";
     }
 }
 
@@ -152,21 +142,37 @@ function showhide3(id) {
         var divid = document.getElementById(id);
         //close others
         for (var i = 0; i < divsearch.length; i++) {
-
-            var e = document.getElementById(divsearch[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divsearch[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
-
-        divid.style.display = 'contents';
+        divid.style.display = "contents";
     }
 }
 
 var divTreesSoc = ["amazond", "assemblyd", "dvard", "kirkod", "syndicated", "vanguardd", "shakarnd", "oathboundd"];
-var divTreesSoc2 = ["amazond5", "assemblyd5", "dvard5", "kirkod5", "syndicated5", "vanguardd5", "shakarnd5", "oathboundd5"];
+var divTreesSoc2 = [
+    "amazond5",
+    "assemblyd5",
+    "dvard5",
+    "kirkod5",
+    "syndicated5",
+    "vanguardd5",
+    "shakarnd5",
+    "oathboundd5"
+];
 
-var divTreesSoc3 = ["amazond9", "assemblyd9", "dvard9", "kirkod9", "syndicated9", "vanguardd9", "shakarnd9", "oathboundd9"];
+var divTreesSoc3 = [
+    "amazond9",
+    "assemblyd9",
+    "dvard9",
+    "kirkod9",
+    "syndicated9",
+    "vanguardd9",
+    "shakarnd9",
+    "oathboundd9"
+];
 
 function showhideSoc(id, id2, id3) {
     if (document.getElementById) {
@@ -175,30 +181,27 @@ function showhideSoc(id, id2, id3) {
         var divid3 = document.getElementById(id3);
         //close others
         for (var i = 0; i < divTreesSoc.length; i++) {
-
-            var e = document.getElementById(divTreesSoc[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divTreesSoc[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
         for (var i = 0; i < divTreesSoc2.length; i++) {
-
-            var e = document.getElementById(divTreesSoc2[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divTreesSoc2[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
         for (var i = 0; i < divTreesSoc3.length; i++) {
-
-            var e = document.getElementById(divTreesSoc3[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divTreesSoc3[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
-        var end = id.lastIndexOf("d"); //this finds the first occurrence of "." 
+        var end = id.lastIndexOf("d"); //this finds the first occurrence of "."
         //in string thus giving you the index of where it is in the string
 
-        // Now iend can be -1, if lets say the string had no "." at all in it i.e. no "." is found. 
+        // Now iend can be -1, if lets say the string had no "." at all in it i.e. no "." is found.
         //So check and account for it.
 
         var subString;
@@ -207,16 +210,22 @@ function showhideSoc(id, id2, id3) {
         }
 
         currentRace = subString;
-        divid.style.display = 'contents';
-        divid2.style.display = 'contents';
-        divid3.style.display = 'contents';
-
-
+        divid.style.display = "contents";
+        divid2.style.display = "contents";
+        divid3.style.display = "contents";
     }
 }
 
 var divTreesSocST = ["celestiand", "heritord", "prometheand", "psynumbrad", "synthesisd", "voidtechd", "xenoplagued"];
-var divTreesSocST2 = ["celestiand7", "heritord7", "prometheand7", "psynumbrad7", "synthesisd7", "voidtechd7", "xenoplagued7"];
+var divTreesSocST2 = [
+    "celestiand7",
+    "heritord7",
+    "prometheand7",
+    "psynumbrad7",
+    "synthesisd7",
+    "voidtechd7",
+    "xenoplagued7"
+];
 
 function showhideSocST(id, id2) {
     if (document.getElementById) {
@@ -224,28 +233,30 @@ function showhideSocST(id, id2) {
         var divid2 = document.getElementById(id2);
         //close others
         for (var i = 0; i < divTreesSocST.length; i++) {
-
-            var e = document.getElementById(divTreesSocST[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divTreesSocST[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
         for (var i = 0; i < divTreesSocST2.length; i++) {
-
-            var e = document.getElementById(divTreesSocST2[i])
-            e.style.display = 'none'; // hide
+            var e = document.getElementById(divTreesSocST2[i]);
+            e.style.display = "none"; // hide
             //  divStateweapon1[div] = false; // reset status
         }
 
-
-
-        divid.style.display = 'contents';
-        divid2.style.display = 'contents';
+        divid.style.display = "contents";
+        divid2.style.display = "contents";
     }
 }
 
 function addUnitTypeIcon(a, b) {
-    var icontext, iconsrc, iconName, j, btn, imag, spa = "";
+    var icontext,
+        iconsrc,
+        iconName,
+        j,
+        btn,
+        imag,
+        spa = "";
     for (j in jsonUnitAbilities) {
         if (a === jsonUnitAbilities[j].slug) {
             icontext = jsonUnitAbilities[j].description;
@@ -257,7 +268,7 @@ function addUnitTypeIcon(a, b) {
             spa = document.createElement("SPAN");
             spa.className = "tooltiptext";
 
-            spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + iconName + "</p>" + "<hr>" + icontext;
+            spa.innerHTML = "<p>" + '<span style="font-size=20px">' + iconName + "</p>" + "<hr>" + icontext;
             imag.setAttribute("src", "/aowp/Icons/UnitTypes/" + iconsrc + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
@@ -267,16 +278,21 @@ function addUnitTypeIcon(a, b) {
             btn.appendChild(imag);
             //   btn.append(spa);
             addTooltipListeners(btn, spa);
-
-
         }
     }
-
-
 }
 
 function addAbilityslot(a, b) {
-    var abilityName, abilityIcon, abilityDescr, abilityDam, abilityAcc, abilityRange, abilityType, j, splitDamageString, abilityDamType = "";
+    var abilityName,
+        abilityIcon,
+        abilityDescr,
+        abilityDam,
+        abilityAcc,
+        abilityRange,
+        abilityType,
+        j,
+        splitDamageString,
+        abilityDamType = "";
 
     for (j in jsonUnitAbilities) {
         if (a == jsonUnitAbilities[j].slug) {
@@ -285,8 +301,6 @@ function addAbilityslot(a, b) {
             } else {
                 abilityDam = jsonUnitAbilities[j].damage;
             }
-
-
 
             abilityName = jsonUnitAbilities[j].name;
             abilityIcon = jsonUnitAbilities[j].icon;
@@ -299,7 +313,6 @@ function addAbilityslot(a, b) {
             }
 
             var n = abilityDescr.includes("Unique");
-
 
             //abilityDam = jsonUnitAbilities[j].damage;
             abilityRange = jsonUnitAbilities[j].range;
@@ -319,7 +332,7 @@ function addAbilityslot(a, b) {
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
             tex.innerHTML = abilityName;
-            tex.setAttribute('onclick', '');
+            tex.setAttribute("onclick", "");
             var dam = document.createElement("DIV");
             dam.className = "ability_damage";
             dam.innerHTML = abilityDam;
@@ -337,14 +350,15 @@ function addAbilityslot(a, b) {
             btn.appendChild(imag);
             btn.append(tex);
             btn.append(dam);
-
         }
     }
-
 }
 
 function addPassiveslot(a) {
-    var abilityName, abilityIcon, abilityDescr, j = "";
+    var abilityName,
+        abilityIcon,
+        abilityDescr,
+        j = "";
     for (j in jsonUnitAbilities) {
         if (a == jsonUnitAbilities[j].slug) {
             abilityName = jsonUnitAbilities[j].name;
@@ -358,10 +372,16 @@ function addPassiveslot(a) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
-            tex.setAttribute('onclick', '');
+            tex.setAttribute("onclick", "");
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
-            spa.innerHTML = "<p>" + "<span style=\"font-size=20px; color=rgb(158, 197, 225)\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
+            spa.innerHTML =
+                "<p>" +
+                '<span style="font-size=20px; color=rgb(158, 197, 225)">' +
+                abilityName +
+                "</p>" +
+                "<hr>" +
+                abilityDescr;
             imag.setAttribute("src", "/aowp/Icons/Passives/" + abilityIcon + ".png");
             imag.className = "unittype_icon";
             imag.setAttribute("width", "40");
@@ -372,14 +392,15 @@ function addPassiveslot(a) {
             addTooltipListeners(btn, spa);
             btn.appendChild(imag);
             btn.append(tex);
-
         }
     }
-
 }
 
 function addResistanceSlot(a) {
-    var abilityName, abilityIcon, abilityDescr, abilityDam = "";
+    var abilityName,
+        abilityIcon,
+        abilityDescr,
+        abilityDam = "";
     for (j in jsonUnitAbilities) {
         if (a == jsonUnitAbilities[j].slug) {
             abilityName = jsonUnitAbilities[j].name;
@@ -397,11 +418,11 @@ function addResistanceSlot(a) {
             dam.innerHTML = abilityDam;
 
             tex.className = "tooltip";
-            tex.setAttribute('onclick', '');
+            tex.setAttribute("onclick", "");
             tex.innerHTML = abilityName;
 
             spa.className = "tooltiptext";
-            spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
+            spa.innerHTML = "<p>" + '<span style="font-size=20px">' + abilityName + "</p>" + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aowp/Icons/Resistances/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
@@ -412,11 +433,8 @@ function addResistanceSlot(a) {
             btn.appendChild(imag);
             btn.append(tex);
             btn.append(dam);
-
-
         }
     }
-
 }
 
 function EliteSkill(a) {
@@ -425,13 +443,14 @@ function EliteSkill(a) {
         if (a == jsonUnitAbilities[j].slug) {
             nam = jsonUnitAbilities[j].name;
         }
-
     }
     return nam;
 }
 
 function addEliteSkill(a) {
-    var abilityName, abilityIcon, abilityDescr = "";
+    var abilityName,
+        abilityIcon,
+        abilityDescr = "";
     for (j in jsonUnitAbilities) {
         if (a == jsonUnitAbilities[j].slug) {
             abilityName = jsonUnitAbilities[j].name;
@@ -445,10 +464,10 @@ function addEliteSkill(a) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
-            tex.setAttribute('onclick', '');
+            tex.setAttribute("onclick", "");
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
-            spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
+            spa.innerHTML = "<p>" + '<span style="font-size=20px">' + abilityName + "</p>" + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aowp/UI/elite_rank.png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
@@ -461,10 +480,8 @@ function addEliteSkill(a) {
             btn.appendChild(imag);
             addTooltipListeners(btn, spa);
             btn.append(tex);
-
         }
     }
-
 }
 async function spawnCards(list) {
     var doc = document.getElementById("units");
@@ -474,27 +491,50 @@ async function spawnCards(list) {
         doc.appendChild(iDiv);
         document.getElementById("unit_cardID").setAttribute("id", list[i] + "_card");
     }
-
 }
 
-
 function romanize(num) {
-    if (isNaN(num))
-        return NaN;
+    if (isNaN(num)) return NaN;
     var digits = String(+num).split(""),
-        key = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
-            "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
-            "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"
+        key = [
+            "",
+            "C",
+            "CC",
+            "CCC",
+            "CD",
+            "D",
+            "DC",
+            "DCC",
+            "DCCC",
+            "CM",
+            "",
+            "X",
+            "XX",
+            "XXX",
+            "XL",
+            "L",
+            "LX",
+            "LXX",
+            "LXXX",
+            "XC",
+            "",
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI",
+            "VII",
+            "VIII",
+            "IX"
         ],
         roman = "",
         i = 3;
-    while (i--)
-        roman = (key[+digits.pop() + (i * 10)] || "") + roman;
+    while (i--) roman = (key[+digits.pop() + i * 10] || "") + roman;
     return Array(+digits.join("") + 1).join("M") + roman;
 }
 
 async function showUnitsFromListTest(list, overwritetext, search) {
-
     await spawnCards(list);
 
     var typeMod = "unit";
@@ -505,8 +545,7 @@ async function showUnitsFromListTest(list, overwritetext, search) {
     SetButtonsAndDivs(list, undefined, typeMod);
 
     const urlParams = new URLSearchParams(window.location.search);
-    const product = searchParams.get('type');
-
+    const product = searchParams.get("type");
 
     if (product != undefined) {
         var splits = product.split("&");
@@ -514,17 +553,15 @@ async function showUnitsFromListTest(list, overwritetext, search) {
 
         document.getElementById(splits[0] + "-button").className += " w3-red";
 
-
         await openDiv(event, splits[0]);
-
-
     }
 }
 
 function AddListView(list, parent, cardType) {
     // add list view first
     console.log(parent);
-    if (parent != undefined) { // but only if its a non-tiered one, if tiered only do the first one
+    if (parent != undefined) {
+        // but only if its a non-tiered one, if tiered only do the first one
         if (parent.indexOf("Tier") != -1) {
             // tiered
             if (parent.indexOf("Tier 1 ") != -1) {
@@ -538,50 +575,36 @@ function AddListView(list, parent, cardType) {
     }
     var buttonHolder = document.getElementById("buttonHolder");
     if (buttonHolder.firstChild != undefined) {
-        if (buttonHolder.firstChild.innerHTML === "<i class=\"fa fa-solid fa-list\"></i>") {
+        if (buttonHolder.firstChild.innerHTML === '<i class="fa fa-solid fa-list"></i>') {
             return;
         }
     }
 
-
-
-
-
-
     var btn = document.createElement("BUTTON");
-
-
-
 
     btn.className = "w3-bar-item w3-button tablink";
     btn.type = "button";
-    btn.innerHTML = "<i class=\"fa fa-solid fa-list\"></i>";
+    btn.innerHTML = '<i class="fa fa-solid fa-list"></i>';
     if (cardType == "searchMod" || cardType == "searchUnit") {
-        btn.setAttribute("onclick", 'openDiv(event,\'' + list + '\',true)');
+        btn.setAttribute("onclick", "openDiv(event,'" + list + "',true)");
     } else {
         btn.setAttribute("onclick", 'openDiv(event, "' + list + '")');
     }
-
 
     var firstChild = buttonHolder.firstChild;
     buttonHolder.insertBefore(btn, firstChild);
 }
 
 function SetButtonsAndDivs(list, parent, cardType) {
-
     if (parent === undefined) {
         var buttonHolder = document.getElementById("buttonHolder");
     } else {
         var buttonHolder = document.getElementById(parent);
     }
 
-
-
     AddListView(list, parent, cardType);
 
     for (let i = 0; i < list.length; i++) {
-
-
         var dataHolder = document.getElementById("units");
         if (dataHolder === null) {
             dataHolder = document.getElementById("mods");
@@ -603,26 +626,24 @@ function SetButtonsAndDivs(list, parent, cardType) {
         btn.type = "button";
         btn.setAttribute("id", list[i] + "-button");
         switch (cardType) {
-
-
             case "unit":
                 showUnit(list[i], list[i]);
                 btn.innerHTML = GetUnitTierAndName(list[i]);
                 // btn.innerHTML = list[i];
-                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
+                btn.setAttribute("onclick", "openDiv(event,'" + list[i] + "')");
                 break;
             case "searchUnit":
                 showUnit(list[i], list[i]);
                 btn.innerHTML = GetUnitTierAndName(list[i]);
                 // btn.innerHTML = list[i];
-                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\',true)');
+                btn.setAttribute("onclick", "openDiv(event,'" + list[i] + "',true)");
                 break;
             case "mod":
                 showMod(list[i], list[i]);
                 btn.innerHTML = GetModTierAndName(list[i]);
 
                 // btn.innerHTML = list[i];
-                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
+                btn.setAttribute("onclick", "openDiv(event,'" + list[i] + "')");
                 break;
             case "searchMod":
                 showMod(list[i], list[i]);
@@ -630,29 +651,20 @@ function SetButtonsAndDivs(list, parent, cardType) {
                 btn.innerHTML = GetModTierAndName(list[i]);
 
                 // btn.innerHTML = list[i];
-                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\',true)');
+                btn.setAttribute("onclick", "openDiv(event,'" + list[i] + "',true)");
                 break;
-
         }
 
         buttonHolder.appendChild(btn);
 
-
         var holderHeight = buttonHolder.offsetHeight;
         dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px; margin-left:200px");
-
     }
-
 }
 
 function GetUnitTierAndName(id) {
-
-
     for (i in jsonUnits) {
         if (id === jsonUnits[i].id) {
-
-
-
             var name = jsonUnits[i].name;
 
             var splitName = name.split("-");
@@ -660,31 +672,47 @@ function GetUnitTierAndName(id) {
             if (splitName.length > 1) {
                 splitName[0] = splitName[0].replace("'", "");
                 var name = "<" + splitName[0] + ">" + "</" + splitName[0] + "> - " + splitName[1];
-                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits[i].tier) + "</p>";
-
+                return (
+                    '<p style="width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;" >' +
+                    getUnitTypeTag(jsonUnits[i].unit_types) +
+                    " " +
+                    name +
+                    "</p>" +
+                    '<p style="text-align:right; color:white; position:relative; ">' +
+                    romanize(jsonUnits[i].tier) +
+                    "</p>"
+                );
             } else {
-                return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + romanize(jsonUnits[i].tier) + "</p>";
-
+                return (
+                    '<p style="width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;" >' +
+                    getUnitTypeTag(jsonUnits[i].unit_types) +
+                    " " +
+                    name +
+                    "</p>" +
+                    '<p style="text-align:right; color:white; position:relative; ">' +
+                    romanize(jsonUnits[i].tier) +
+                    "</p>"
+                );
             }
-
-
-
         }
     }
 }
 
-
 function GetModTierAndName(id) {
-
-
     for (i in jsonMods) {
         if (id === jsonMods[i].slug) {
-
             var name = jsonMods[i].name;
 
-
-            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getModTypeTag(jsonMods[i].type) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (jsonMods[i].tier) + "</p>";
-
+            return (
+                '<p style="width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;" >' +
+                getModTypeTag(jsonMods[i].type) +
+                " " +
+                name +
+                "</p>" +
+                '<p style="text-align:right; color:white; position:relative; ">' +
+                jsonMods[i].tier +
+                "</p>"
+            );
         }
     }
 }
@@ -732,15 +760,11 @@ function getUnitTypeTag(passivesList) {
         if (passivesList[i].slug === "civilian") {
             return "<unitCivilian></unitCivilian>";
         }
-
-
     }
     return "";
 }
 
 function getModTypeTag(type) {
-
-
     if (type.toLowerCase().indexOf("shield") != -1) {
         return "<shield></shield>";
     }
@@ -756,9 +780,7 @@ function getModTypeTag(type) {
     return "";
 }
 
-
 async function openDiv(evt, cityName, search) {
-
     console.log("name : " + cityName);
     if (cityName != undefined) {
         currentView = cityName;
@@ -793,7 +815,6 @@ async function openDiv(evt, cityName, search) {
         for (var i = 0; i < children.length; i++) {
             children[i].style.display = "table";
         }
-
     } else {
         console.log("get here" + cityName);
         var currentEl = document.getElementById(cityName + "_card");
@@ -801,16 +822,15 @@ async function openDiv(evt, cityName, search) {
             currentEl.style.display = "table";
         }
 
-        var currenturl = window.location.href.split('?')[0];
-        var currentadditive = currenturl.split('&')[1];
+        var currenturl = window.location.href.split("?")[0];
+        var currentadditive = currenturl.split("&")[1];
         if (currentadditive === undefined) {
             currentadditive = "";
         }
         console.log(currenturl + search);
         if (search === undefined) {
-            window.history.replaceState({}, 'foo', currenturl + "?type=" + cityName + "&" + currentadditive);
+            window.history.replaceState({}, "foo", currenturl + "?type=" + cityName + "&" + currentadditive);
         }
-
 
         // if (sorting != undefined) {
         //     var splits = sorting.split(":");
@@ -822,19 +842,16 @@ async function openDiv(evt, cityName, search) {
     }
 }
 
-
 function closeTabLinks(cityName) {
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         if (tablinks[i].id != cityName + "-button") {
             tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
         }
-
     }
 }
 
 async function showUnitsFromList(list, test, search) {
-
     showUnitsFromListTest(list, undefined, search);
 
     // await spawnCards(list);
@@ -844,15 +861,14 @@ async function showUnitsFromList(list, test, search) {
     //     showUnit(list[i]);
 
     // };
-
-
-
-
 }
 
-
 function checkModRequirements(unit) {
-    var j, check, checksplit, checknot, checknotsplit = "";
+    var j,
+        check,
+        checksplit,
+        checknot,
+        checknotsplit = "";
     for (j in jsonMods) {
         checksplit = jsonMods[j].check.split(" ");
         checknotsplit = jsonMods[j].checknot.split(" ");
@@ -864,15 +880,7 @@ function checkModRequirements(unit) {
     }
 }
 
-
-
-
-
-
-
 async function showModsFromList(list, overwritetext, search) {
-
-
     for (let i = 0; i < list.length; i++) {
         var iDiv = mod_card_template.content.cloneNode(true);
 
@@ -882,30 +890,24 @@ async function showModsFromList(list, overwritetext, search) {
             document.getElementById("mods").appendChild(iDiv);
         }
 
-
         document.getElementById("mod_cardID").setAttribute("id", list[i] + "_card");
 
         // showMod(list[i]);
-
-    };
+    }
     var typeMod = "mod";
     if (search != null) {
-        typeMod = "searchMod"
+        typeMod = "searchMod";
     }
 
     if (overwritetext != undefined) {
         SetCollapsibleButtonsAndDivs(overwritetext, list, typeMod);
         SetButtonsAndDivs(list, overwritetext + "-button", typeMod);
     } else {
-
         SetButtonsAndDivs(list, undefined, typeMod);
     }
 
-
-
     const urlParams = new URLSearchParams(window.location.search);
-    const product = searchParams.get('type');
-
+    const product = searchParams.get("type");
 
     if (product != undefined && search != true) {
         var splits = product.split("&");
@@ -913,10 +915,7 @@ async function showModsFromList(list, overwritetext, search) {
 
         document.getElementById(splits[0] + "-button").className += " w3-red";
 
-
         await openDiv(event, splits[0]);
-
-
     }
 }
 
@@ -931,21 +930,15 @@ async function SetCollapsibleStuff() {
             var content = this.nextElementSibling;
 
             for (j = 0; j < contents.length; j++) {
-
-
                 if (contents[j].style != null) {
                     if (contents[j].style.display === "grid") {
                         if (contents[j].id === content.id) {
-
                         } else {
-
                             coll[j].classList.toggle("active");
                             contents[j].style.display = "none";
                         }
-
                     }
                 }
-
             }
             this.classList.toggle("active");
 
@@ -955,21 +948,15 @@ async function SetCollapsibleStuff() {
                 content.style.display = "grid";
             }
 
-
-
-
             var buttonHolder = document.getElementById("buttonHolder");
             var holderHeight = buttonHolder.offsetHeight;
             var dataHolder = document.getElementById("units");
-
 
             if (dataHolder === null) {
                 dataHolder = document.getElementById("mods");
             }
             dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px; margin-left:200px");
         });
-
-
     }
 
     var buttonHolder = document.getElementById("buttonHolder");
@@ -982,21 +969,25 @@ async function SetCollapsibleStuff() {
 }
 
 function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
-    var modName, description, cost, type, tier, i, nameString = "";
+    var modName,
+        description,
+        cost,
+        type,
+        tier,
+        i,
+        nameString = "";
 
     var buttonHolder = document.getElementById("buttonHolder");
-
 
     var btn = document.createElement("BUTTON");
     btn.type = "button";
 
     btn.innerHTML = overwrite + " (" + list.length + ")";
     if (cardType != "unit" && cardType != "mod" && cardType.indexOf("search") === -1) {
-        btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\')');
+        btn.setAttribute("onclick", "openDiv(event,'" + overwrite + "')");
         btn.setAttribute("id", overwrite + "-");
     } else if (cardType.indexOf("search") != -1) {
-
-        btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\',true)');
+        btn.setAttribute("onclick", "openDiv(event,'" + overwrite + "',true)");
         btn.setAttribute("id", overwrite + "-");
     }
 
@@ -1019,13 +1010,10 @@ function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
         div.className = "w3-container w3-border city";
         div.setAttribute("id", overwrite);
 
-
         dataHolder.appendChild(div);
     }
 
-
     switch (cardType) {
-
         case "mod":
             var holderHeight = buttonHolder.offsetHeight;
             dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
@@ -1055,25 +1043,45 @@ function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
         //     buttonHolder.append(content);
         //     break;
     }
-
-
 }
 
 function showUnit(a) {
-    var hp, mp, shield, armor, descr, j, k, x, y, z, unitName, icon, imagelink, prodcost, tier, research, building, reward = "";
+    var hp,
+        mp,
+        shield,
+        armor,
+        descr,
+        j,
+        k,
+        x,
+        y,
+        z,
+        unitName,
+        icon,
+        imagelink,
+        prodcost,
+        tier,
+        research,
+        building,
+        reward = "";
     var found = false;
     for (i in jsonUnits) {
         if (a == jsonUnits[i].id) {
             icon = document.getElementById("uniticon");
             icon.setAttribute("src", "/aowp/Icons/UnitIcons/" + a + "_icon.png");
             icon.setAttribute("id", "uniticon" + a);
-            if (icon.getAttribute('src') === "/aowp/Icons/UnitIcons/undefined") {
-                icon.setAttribute('src', "/aowp/Icons/placeholder.png");
+            if (icon.getAttribute("src") === "/aowp/Icons/UnitIcons/undefined") {
+                icon.setAttribute("src", "/aowp/Icons/placeholder.png");
             }
             unitName = document.getElementById("unitstring");
             unitName.setAttribute("id", "unitstring" + a);
 
-            unitName.innerHTML = "<span style=\"background-color:#15242e\"><span style=\"color:orange\">" + "/&nbsp" + "</span>" + jsonUnits[i].name.toUpperCase(); + "</span>"
+            unitName.innerHTML =
+                '<span style="background-color:#15242e"><span style="color:orange">' +
+                "/&nbsp" +
+                "</span>" +
+                jsonUnits[i].name.toUpperCase();
+            +"</span>";
             descr = document.getElementById("description");
             descr.setAttribute("id", "description" + a);
             var description = jsonUnits[i].description;
@@ -1081,7 +1089,7 @@ function showUnit(a) {
             descr.innerHTML = description;
             imagelink = document.getElementById("vid");
 
-            imagelink.setAttribute('src', "/aowp/Previews/" + jsonUnits[i].id + ".mp4");
+            imagelink.setAttribute("src", "/aowp/Previews/" + jsonUnits[i].id + ".avif");
             // research = document.getElementById("researchorigin");
             // research.setAttribute("id", "researchorigin" + a);
             // if (jsonUnits[i].origin_research != "") {
@@ -1104,10 +1112,10 @@ function showUnit(a) {
 
             //     building.setAttribute("style", "width: 0px");
             // }
-            hp = document.getElementById("hp")
+            hp = document.getElementById("hp");
             hp.setAttribute("id", "hp" + a);
             hp.innerHTML = jsonUnits[i].hp;
-            armor = document.getElementById("armor")
+            armor = document.getElementById("armor");
             armor.setAttribute("id", "armor" + a);
             armor.innerHTML = jsonUnits[i].armor;
             shield = document.getElementById("shield");
@@ -1120,28 +1128,35 @@ function showUnit(a) {
             tier.setAttribute("id", "tier" + a);
             var levelup = document.getElementById("levelup");
             levelup.setAttribute("id", "levelup" + a);
-            if ((jsonUnits[i].elite_rewards[0]) != undefined) {
+            if (jsonUnits[i].elite_rewards[0] != undefined) {
                 reward = jsonUnits[i].elite_rewards[0].slug;
-
-
             } else {
                 reward = "";
             }
             tier.innerHTML = "Tier " + jsonUnits[i].tier + ": " + jsonUnits[i].upkeep;
             if (jsonUnits[i].tier == "1") {
-
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+4 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 <hp></hp> HP <li>+5 <accuracy></accuracy> Accuracy </li></li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+4 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+5 <accuracy></accuracy> Accuracy </li><li>+4 <hp></hp> HP </li><li>" + EliteSkill(reward) + "</li></ul>";
-
+                levelup.innerHTML =
+                    "<p><x-medal_novice> </x-medal_novice>Novice<li>+4 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+4 <hp></hp> HP <li>+5 <accuracy></accuracy> Accuracy </li></li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+4 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+5 <accuracy></accuracy> Accuracy </li><li>+4 <hp></hp> HP </li><li>" +
+                    EliteSkill(reward) +
+                    "</li></ul>";
             }
             if (jsonUnits[i].tier == "2") {
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+6 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+6 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
-
+                levelup.innerHTML =
+                    "<p><x-medal_novice> </x-medal_novice>Novice<li>+6 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+6 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+6 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" +
+                    EliteSkill(reward) +
+                    "</li></ul>";
             }
             if (jsonUnits[i].tier == "3") {
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+8 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+8 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
+                levelup.innerHTML =
+                    "<p><x-medal_novice> </x-medal_novice>Novice<li>+8 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+8 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+8 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" +
+                    EliteSkill(reward) +
+                    "</li></ul>";
             }
             if (jsonUnits[i].tier == "4") {
-                levelup.innerHTML = "<p><x-medal_novice> </x-medal_novice>Novice<li>+10 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+10 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+10 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+10 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" + EliteSkill(reward) + "</li></ul>";
+                levelup.innerHTML =
+                    "<p><x-medal_novice> </x-medal_novice>Novice<li>+10 <hp></hp> HP </li></ul><p><x-medal_veteran> </x-medal_veteran>Veteran<li>+10 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li></ul><p><x-medal_expert> </x-medal_expert>Expert<li>+10 <hp></hp> HP </li></ul> <p><x-medal_prime> </x-medal_prime>Prime<li>+10 <hp></hp> HP </li><li>+5 <accuracy></accuracy> Accuracy </li><li>" +
+                    EliteSkill(reward) +
+                    "</li></ul>";
             }
 
             prodcost = document.getElementById("productioncost");
@@ -1150,21 +1165,17 @@ function showUnit(a) {
 
             for (j in jsonUnits[i].unit_types) {
                 addUnitTypeIcon(jsonUnits[i].unit_types[j].slug, a);
-
             }
 
             for (k in jsonUnits[i].abilities) {
                 addAbilityslot(jsonUnits[i].abilities[k].slug);
-
             }
             for (z in jsonUnits[i].resistances) {
                 addResistanceSlot(jsonUnits[i].resistances[z].slug);
-
             }
 
             for (x in jsonUnits[i].passives) {
                 addPassiveslot(jsonUnits[i].passives[x].slug);
-
             }
 
             for (m in jsonUnits[i].elite_rewards) {
@@ -1179,18 +1190,20 @@ function showUnit(a) {
             found = true;
             break;
         }
-
-
     }
     if (found == false) {
         console.log("Couldn't find unit: " + a);
     }
-
 }
 
-
 function showBuilding(a) {
-    var buildingName, description, cost, type, prereq, j, imagelink = "";
+    var buildingName,
+        description,
+        cost,
+        type,
+        prereq,
+        j,
+        imagelink = "";
     for (j in jsonBuildings.buildings) {
         if (a == jsonBuildings.buildings[j].slug) {
             buildingName = document.getElementById("buildingname");
@@ -1203,7 +1216,6 @@ function showBuilding(a) {
             cost = document.getElementById("buildingcost");
             cost.innerHTML = "Cost : " + jsonBuildings.buildings[j].cost;
             if (jsonBuildings.buildings.prereq != "") {
-
                 prereq = document.getElementById("buildingprereq");
                 prereq.innerHTML = jsonBuildings.buildings[j].prereq;
             }
@@ -1214,7 +1226,11 @@ function showBuilding(a) {
 }
 
 function showMod(a) {
-    var modName, description, cost, type, tier = "";
+    var modName,
+        description,
+        cost,
+        type,
+        tier = "";
     var found = false;
     for (j in jsonMods) {
         if (a == jsonMods[j].slug) {
@@ -1257,27 +1273,29 @@ function showMod(a) {
 }
 
 function showTech(a, b) {
-    var modName, description, cost, type, tier, secret, card = "";
+    var modName,
+        description,
+        cost,
+        type,
+        tier,
+        secret,
+        card = "";
     var found = false;
     card = document.getElementById("techcard");
     for (j in jsonTech) {
         if (a == jsonTech[j].slug) {
-
             modName = document.getElementById("techname");
             modName.innerHTML = jsonTech[j].name;
             modName.setAttribute("id", "techname" + a);
-
 
             cost = document.getElementById("techcost");
             cost.innerHTML = jsonTech[j].cost + "<research></research>";
             cost.setAttribute("id", "modcost" + a);
             imagelink = document.getElementById("techicon");
             if (b == "em") {
-
                 imagelink.setAttribute("src", "/aowp/Icons/Tech/" + "military_future_military_tech" + ".png");
                 imagelink.setAttribute("id", "techicon" + a);
             } else if (b == "es") {
-
                 imagelink.setAttribute("src", "/aowp/Icons/Tech/" + "society_future_society_tech" + ".png");
                 imagelink.setAttribute("id", "techicon" + a);
             } else {
@@ -1285,13 +1303,10 @@ function showTech(a, b) {
                 imagelink.setAttribute("id", "techicon" + a);
             }
 
-
-
             for (k in jsonTech[j].mod_unlock) {
                 if (jsonTech[j].mod_unlock[k].slug != undefined) {
                     addModUnlock(jsonTech[j].mod_unlock[k].slug, b);
                 }
-
             }
 
             for (k in jsonTech[j].op_unlock) {
@@ -1324,9 +1339,7 @@ function showTech(a, b) {
                     } else {
                         addOpUnlock(jsonTech[j].op_unlock[k].slug, b);
                     }
-
                 }
-
             }
 
             for (k in jsonTech[j].unit_unlock) {
@@ -1335,42 +1348,41 @@ function showTech(a, b) {
                     if (jsonTech[j].unit_unlock[k].slug.indexOf("secret") > -1) {
                         if (currentRace == "syndicate" && jsonTech[j].unit_unlock[k].slug == "secret_purifier") {
                             secret = jsonTech[j].unit_unlock[k].slug.replace("secret", currentRace + "_indentured");
-                        } else if (currentRace == "oathbound" && (jsonTech[j].unit_unlock[k].slug == "secret_light_bringer" || jsonTech[j].unit_unlock[k].slug == "secret_echo_walker")) {
+                        } else if (
+                            currentRace == "oathbound" &&
+                            (jsonTech[j].unit_unlock[k].slug == "secret_light_bringer" ||
+                                jsonTech[j].unit_unlock[k].slug == "secret_echo_walker")
+                        ) {
                             secret = jsonTech[j].unit_unlock[k].slug.replace("secret", currentRace + "_paladin");
                         } else {
                             secret = jsonTech[j].unit_unlock[k].slug.replace("secret", currentRace);
                         }
-
                     }
                     if (secret == "phoenix_walker") {
                         if (currentRace == "dvar" || currentRace == "kirko") {
                             secret = currentRace + "_phoenix_walker";
-
                         }
-
                     }
-
 
                     addUnitUnlock(secret, b);
                 }
-
-
             }
             document.getElementById("unlockholder").setAttribute("id", "unlockholder" + a);
             found = true;
         }
         card.setAttribute("id", "techcard" + a);
-        card.style.display = 'inline-block';
-
+        card.style.display = "inline-block";
     }
     if (found == false) {
         console.log("Couldn't find tech: " + a);
     }
 }
 
-
 function addModUnlock(a, b) {
-    var modUnlockName, modUnlockIcon, modUnlockAbility, j = "";
+    var modUnlockName,
+        modUnlockIcon,
+        modUnlockAbility,
+        j = "";
     var found = false;
     for (j in jsonMods) {
         if (a == jsonMods[j].slug) {
@@ -1390,9 +1402,7 @@ function addModUnlock(a, b) {
             }
             modUnlockAbility = jsonMods[j].description;
 
-
             var tier = "<silver>" + "Tier " + jsonMods[j].tier + ", " + jsonMods[j].type + "</silver>";
-
 
             var btn = document.createElement("DIV");
             btn.className = "researchResultBackgroundImage";
@@ -1400,17 +1410,21 @@ function addModUnlock(a, b) {
             imag.className = "modunlock_icon2";
             var spa = document.createElement("SPAN");
 
-
-            spa.innerHTML = "<p>" + modUnlockName + "</p>" + tier + "<hr>"
+            spa.innerHTML = "<p>" + modUnlockName + "</p>" + tier + "<hr>";
             imag.setAttribute("src", "/aowp/Icons/Mods/" + modUnlockIcon + ".png");
 
-            spa.innerHTML += "<img src=\"/aowp/Icons/Mods/" + modUnlockIcon + ".png\" width='200'\">";
+            spa.innerHTML += '<img src="/aowp/Icons/Mods/' + modUnlockIcon + ".png\" width='200'\">";
             spa.innerHTML += "<br>" + modUnlockAbility;
 
             if (jsonMods[j].type.includes("Weapon") || jsonMods[j].name.includes("Vehicle")) {
                 spa.innerHTML += "<hr> Base Cost: " + jsonMods[j].cost;
             } else {
-                spa.innerHTML += "<hr>" + "Base Production Cost: 10 <production></production>" + "<br>" + "Base Cosmite Cost: " + jsonMods[j].cost;
+                spa.innerHTML +=
+                    "<hr>" +
+                    "Base Production Cost: 10 <production></production>" +
+                    "<br>" +
+                    "Base Cosmite Cost: " +
+                    jsonMods[j].cost;
             }
 
             imag.setAttribute("height", "30");
@@ -1422,42 +1436,36 @@ function addModUnlock(a, b) {
                 btn.appendChild(imag2);
             }
 
-
             var newID = document.getElementById("unlockholder");
             newID.appendChild(btn);
             btn.appendChild(imag);
 
-
             //  btn.appendChild(spa);
-
 
             addTooltipListeners(btn, spa);
             found = true;
 
             // btn.appendChild(tex);
-
         }
     }
     if (found == false) {
         console.log("Couldn't find mod: " + a);
     }
-
 }
 
-
 function addOpUnlock(a, b) {
-    var opUnlockName, opUnlockIcon, opUnlockAbility, j = "";
+    var opUnlockName,
+        opUnlockIcon,
+        opUnlockAbility,
+        j = "";
     var found = false;
     for (j in jsonOperations) {
         if (a == jsonOperations[j].slug) {
-
             opUnlockName = "<titlebrown>" + jsonOperations[j].name + "</titlebrown>";
             opUnlockIcon = jsonOperations[j].slug;
             opUnlockAbility = jsonOperations[j].description;
 
-
             var tier = "<silver>" + "Tier " + jsonOperations[j].tier + ", " + jsonOperations[j].type + "</silver>";
-
 
             var btn = document.createElement("DIV");
             btn.className = "researchResultBackgroundImage";
@@ -1466,22 +1474,25 @@ function addOpUnlock(a, b) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
-            tex.setAttribute('onclick', '');
+            tex.setAttribute("onclick", "");
             //tex.innerHTML = modUnlockName;
 
-            spa.innerHTML = "<p>" + opUnlockName + "</p>" + tier + "<hr>"
+            spa.innerHTML = "<p>" + opUnlockName + "</p>" + tier + "<hr>";
             if (b == "em" || b == "es") {
                 imag.setAttribute("src", "/aowp/Icons/Operations/" + "unknown" + ".png");
             } else {
                 imag.setAttribute("src", "/aowp/Icons/Operations/" + opUnlockIcon + ".png");
             }
 
-
-
             spa.innerHTML += "<br>" + opUnlockAbility;
 
             if (jsonOperations[j].casting != undefined) {
-                spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations[j].energy_cost + "<energy></energy>" + jsonOperations[j].casting;
+                spa.innerHTML +=
+                    "<hr>" +
+                    "Priming Cost: " +
+                    jsonOperations[j].energy_cost +
+                    "<energy></energy>" +
+                    jsonOperations[j].casting;
             }
 
             if (jsonOperations[j].production_cost != undefined) {
@@ -1519,18 +1530,14 @@ function addOpUnlock(a, b) {
                 btn.appendChild(imag2);
             }
 
-
             document.getElementById("unlockholder").appendChild(btn);
             btn.appendChild(imag);
 
-
             // btn.appendChild(spa);
-
 
             addTooltipListeners(btn, spa);
             found = true;
             // btn.appendChild(tex);
-
         }
     }
     if (found == false) {
@@ -1538,19 +1545,14 @@ function addOpUnlock(a, b) {
     }
 }
 
-
-
-
-
 function addUnitUnlock(a, b) {
-    var unitUnlockName, unitUnlockIcon, unitUnlockAbility, j = "";
+    var unitUnlockName,
+        unitUnlockIcon,
+        unitUnlockAbility,
+        j = "";
     var found = false;
     for (j in jsonUnits) {
-
-
         if (a == jsonUnits[j].id) {
-
-
             if (jsonUnits[j].name.includes("-")) {
                 unitNameShort = "<titleBrownBig> Unit: " + jsonUnits[j].name.split("-")[1] + "</titleBrownBig>";
             } else {
@@ -1561,9 +1563,7 @@ function addUnitUnlock(a, b) {
             unitUnlockIcon = jsonUnits[j].icon;
             // unitUnlockAbility = jsonUnits[j].description;
 
-
             var tier = "<silver>Unit Unlock</silver>";
-
 
             var btn = document.createElement("DIV");
             btn.className = "researchResultBackgroundImage";
@@ -1572,7 +1572,7 @@ function addUnitUnlock(a, b) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
-            tex.setAttribute('onclick', '');
+            tex.setAttribute("onclick", "");
             //tex.innerHTML = modUnlockName;
 
             spa.innerHTML = "<p>" + unitNameShort + "</p>" + tier + "<hr>";
@@ -1588,14 +1588,11 @@ function addUnitUnlock(a, b) {
             spa.innerHTML += "<hr>";
             for (k in jsonUnits[j].abilities) {
                 spa.innerHTML += "<li>" + addAbilityList(jsonUnits[j].abilities[k].slug) + "</li>";
-
             }
             for (k in jsonUnits[j].unit_types) {
                 spa.innerHTML += "<li>" + addAbilityList(jsonUnits[j].unit_types[k].slug) + "</li>";
-
             }
             imag.setAttribute("src", "/aowp/Icons/UnitIcons/" + unitUnlockIcon + ".png");
-
 
             // spa.innerHTML += "<br>" + opUnlockAbility;
             //spa.innerHTML += "<hr>" + "Priming Cost: " + jsonOperations[j].energy_cost + "<energy></energy>" + jsonOperations[j].casting;
@@ -1610,12 +1607,9 @@ function addUnitUnlock(a, b) {
         }
     }
 
-
     if (found == false) {
         console.log("Couldn't find unit: " + a);
     }
-
-
 }
 
 function addAbilityList(a) {
@@ -1625,7 +1619,7 @@ function addAbilityList(a) {
             if (jsonUnitAbilities[j].damage) {
                 dam = jsonUnitAbilities[j].damage;
             }
-            return jsonUnitAbilities[j].name + dam + "<br>"
+            return jsonUnitAbilities[j].name + dam + "<br>";
         }
     }
 }
@@ -1634,13 +1628,10 @@ function addTypesList(a) {
     var dam = "";
     for (j in jsonUnitAbilities) {
         if (a == jsonUnitAbilities[j].slug) {
-
-            return jsonUnitAbilities[j].name + "<br>"
+            return jsonUnitAbilities[j].name + "<br>";
         }
     }
 }
-
-
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -1657,15 +1648,14 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-
 (function (root, factory) {
     "use strict";
     if (typeof define === "function" && define.amd) {
-        define([], factory)
+        define([], factory);
     } else if (typeof exports === "object") {
-        module.exports = factory()
+        module.exports = factory();
     } else {
-        root.textFit = factory()
+        root.textFit = factory();
     }
 })(typeof global === "object" ? global : this, function () {
     "use strict";
@@ -1685,38 +1675,41 @@ for (i = 0; i < coll.length; i++) {
         var settings = {};
         for (var key in defaultSettings) {
             if (options.hasOwnProperty(key)) {
-                settings[key] = options[key]
+                settings[key] = options[key];
             } else {
-                settings[key] = defaultSettings[key]
+                settings[key] = defaultSettings[key];
             }
         }
         if (typeof els.toArray === "function") {
-            els = els.toArray()
+            els = els.toArray();
         }
         var elType = Object.prototype.toString.call(els);
         if (elType !== "[object Array]" && elType !== "[object NodeList]" && elType !== "[object HTMLCollection]") {
-            els = [els]
+            els = [els];
         }
         for (var i = 0; i < els.length; i++) {
-            processItem(els[i], settings)
+            processItem(els[i], settings);
         }
     };
 
     function processItem(el, settings) {
-        if (!isElement(el) || !settings.reProcess && el.getAttribute("textFitted")) {
-            return false
+        if (!isElement(el) || (!settings.reProcess && el.getAttribute("textFitted"))) {
+            return false;
         }
         if (!settings.reProcess) {
-            el.setAttribute("textFitted", 1)
+            el.setAttribute("textFitted", 1);
         }
         var innerSpan, originalHeight, originalHTML, originalWidth;
         var low, mid, high;
         originalHTML = el.innerHTML;
         originalWidth = innerWidth(el);
         originalHeight = innerHeight(el);
-        if (!originalWidth || !settings.widthOnly && !originalHeight) {
-            if (!settings.widthOnly) throw new Error("Set a static height and width on the target element " + el.outerHTML + " before using textFit!");
-            else throw new Error("Set a static width on the target element " + el.outerHTML + " before using textFit!")
+        if (!originalWidth || (!settings.widthOnly && !originalHeight)) {
+            if (!settings.widthOnly)
+                throw new Error(
+                    "Set a static height and width on the target element " + el.outerHTML + " before using textFit!"
+                );
+            else throw new Error("Set a static width on the target element " + el.outerHTML + " before using textFit!");
         }
         if (originalHTML.indexOf("textFitted") === -1) {
             innerSpan = document.createElement("span");
@@ -1724,37 +1717,44 @@ for (i = 0; i < coll.length; i++) {
             innerSpan.style["display"] = "inline-block";
             innerSpan.innerHTML = originalHTML;
             el.innerHTML = "";
-            el.appendChild(innerSpan)
+            el.appendChild(innerSpan);
         } else {
             innerSpan = el.querySelector("span.textFitted");
             if (hasClass(innerSpan, "textFitAlignVert")) {
                 innerSpan.className = innerSpan.className.replace("textFitAlignVert", "");
                 innerSpan.style["height"] = "";
-                el.className.replace("textFitAlignVertFlex", "")
+                el.className.replace("textFitAlignVertFlex", "");
             }
         }
         if (settings.alignHoriz) {
             el.style["text-align"] = "center";
-            innerSpan.style["text-align"] = "center"
+            innerSpan.style["text-align"] = "center";
         }
         var multiLine = settings.multiLine;
-        if (settings.detectMultiLine && !multiLine && innerSpan.scrollHeight >= parseInt(window.getComputedStyle(innerSpan)["font-size"], 10) * 2) {
-            multiLine = true
+        if (
+            settings.detectMultiLine &&
+            !multiLine &&
+            innerSpan.scrollHeight >= parseInt(window.getComputedStyle(innerSpan)["font-size"], 10) * 2
+        ) {
+            multiLine = true;
         }
         if (!multiLine) {
-            el.style["white-space"] = "nowrap"
+            el.style["white-space"] = "nowrap";
         }
         low = settings.minFontSize;
         high = settings.maxFontSize;
         var size = low;
         while (low <= high) {
-            mid = high + low >> 1;
+            mid = (high + low) >> 1;
             innerSpan.style.fontSize = mid + "px";
-            if (innerSpan.scrollWidth <= originalWidth && (settings.widthOnly || innerSpan.scrollHeight <= originalHeight)) {
+            if (
+                innerSpan.scrollWidth <= originalWidth &&
+                (settings.widthOnly || innerSpan.scrollHeight <= originalHeight)
+            ) {
                 size = mid;
-                low = mid + 1
+                low = mid + 1;
             } else {
-                high = mid - 1
+                high = mid - 1;
             }
         }
         if (innerSpan.style.fontSize != size + "px") innerSpan.style.fontSize = size + "px";
@@ -1762,85 +1762,104 @@ for (i = 0; i < coll.length; i++) {
             addStyleSheet();
             var height = innerSpan.scrollHeight;
             if (window.getComputedStyle(el)["position"] === "static") {
-                el.style["position"] = "relative"
+                el.style["position"] = "relative";
             }
             if (!hasClass(innerSpan, "textFitAlignVert")) {
-                innerSpan.className = innerSpan.className + " textFitAlignVert"
+                innerSpan.className = innerSpan.className + " textFitAlignVert";
             }
             innerSpan.style["height"] = height + "px";
             if (settings.alignVertWithFlexbox && !hasClass(el, "textFitAlignVertFlex")) {
-                el.className = el.className + " textFitAlignVertFlex"
+                el.className = el.className + " textFitAlignVertFlex";
             }
         }
     }
 
     function innerHeight(el) {
         var style = window.getComputedStyle(el, null);
-        return el.clientHeight - parseInt(style.getPropertyValue("padding-top"), 10) - parseInt(style.getPropertyValue("padding-bottom"), 10)
+        return (
+            el.clientHeight -
+            parseInt(style.getPropertyValue("padding-top"), 10) -
+            parseInt(style.getPropertyValue("padding-bottom"), 10)
+        );
     }
 
     function innerWidth(el) {
         var style = window.getComputedStyle(el, null);
-        return el.clientWidth - parseInt(style.getPropertyValue("padding-left"), 10) - parseInt(style.getPropertyValue("padding-right"), 10)
+        return (
+            el.clientWidth -
+            parseInt(style.getPropertyValue("padding-left"), 10) -
+            parseInt(style.getPropertyValue("padding-right"), 10)
+        );
     }
 
     function isElement(o) {
-        return typeof HTMLElement === "object" ? o instanceof HTMLElement : o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName === "string"
+        return typeof HTMLElement === "object"
+            ? o instanceof HTMLElement
+            : o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName === "string";
     }
 
     function hasClass(element, cls) {
-        return (" " + element.className + " ").indexOf(" " + cls + " ") > -1
+        return (" " + element.className + " ").indexOf(" " + cls + " ") > -1;
     }
 
     function addStyleSheet() {
         if (document.getElementById("textFitStyleSheet")) return;
-        var style = [".textFitAlignVert{", "position: absolute;", "top: 0; right: 0; bottom: 0; left: 0;", "margin: auto;", "display: flex;", "justify-content: center;", "flex-direction: column;", "}", ".textFitAlignVertFlex{", "display: flex;", "}", ".textFitAlignVertFlex .textFitAlignVert{", "position: static;", "}"].join("");
+        var style = [
+            ".textFitAlignVert{",
+            "position: absolute;",
+            "top: 0; right: 0; bottom: 0; left: 0;",
+            "margin: auto;",
+            "display: flex;",
+            "justify-content: center;",
+            "flex-direction: column;",
+            "}",
+            ".textFitAlignVertFlex{",
+            "display: flex;",
+            "}",
+            ".textFitAlignVertFlex .textFitAlignVert{",
+            "position: static;",
+            "}"
+        ].join("");
         var css = document.createElement("style");
         css.type = "text/css";
         css.id = "textFitStyleSheet";
         css.innerHTML = style;
-        document.body.appendChild(css)
+        document.body.appendChild(css);
     }
 });
 
-
 function addTooltipListeners(tooltip, span) {
-    tooltip.addEventListener('mouseenter', function (event) {
+    tooltip.addEventListener("mouseenter", function (event) {
         TurnOnTooltip(span);
         if (tooltip != hoverDiv) {
             updateHoverDivPosition(event);
         }
-
     });
 
-    tooltip.addEventListener('mouseleave', function () {
+    tooltip.addEventListener("mouseleave", function () {
         TurnOffTooltip();
     });
 }
 
 function removeToolTipListeners(tooltip) {
-    tooltip.removeEventListener('mouseenter', tooltip);
+    tooltip.removeEventListener("mouseenter", tooltip);
 
-    tooltip.removeEventListener('mouseleave', tooltip);
-
+    tooltip.removeEventListener("mouseleave", tooltip);
 }
-
 
 function TurnOnTooltip(spa) {
     hoverDiv = document.getElementById("hoverDiv");
     // console.log('Mouse entered the div');
-    hoverDiv.style.display = 'block';
+    hoverDiv.style.display = "block";
     if (spa != null) {
         hoverDiv.innerHTML = spa.innerHTML;
     }
-
 }
 
 function TurnOffTooltip() {
     hoverDiv = document.getElementById("hoverDiv");
-    hoverDiv.style.display = 'none';
+    hoverDiv.style.display = "none";
 }
-
 
 function getNormalizedPosition(event) {
     const screenWidth = window.innerWidth;
@@ -1861,7 +1880,6 @@ function getNormalizedPosition(event) {
 }
 
 function updateHoverDivPosition(event) {
-
     // const settings = getUserSettings();
 
     var offset = 2;
@@ -1873,7 +1891,6 @@ function updateHoverDivPosition(event) {
     hoverDiv.setAttribute("Style", "pointer-events: none;");
     offset = 10;
 
-
     var normalizedPos = getNormalizedPosition(event);
     const mouseX = event.clientX;
     const mouseY = event.clientY;
@@ -1882,16 +1899,14 @@ function updateHoverDivPosition(event) {
     const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
     if (normalizedPos.x > 0.8) {
-        hoverDiv.style.left = (mouseX - hoverDiv.getBoundingClientRect().width - offset + scrollLeft) + 'px';
+        hoverDiv.style.left = mouseX - hoverDiv.getBoundingClientRect().width - offset + scrollLeft + "px";
     } else {
-        hoverDiv.style.left = (mouseX + offset + scrollLeft) + 'px';
+        hoverDiv.style.left = mouseX + offset + scrollLeft + "px";
     }
 
     if (normalizedPos.y > 0.8) {
-        hoverDiv.style.top = (mouseY - hoverDiv.getBoundingClientRect().height - offset + scrollTop) + 'px';
+        hoverDiv.style.top = mouseY - hoverDiv.getBoundingClientRect().height - offset + scrollTop + "px";
     } else {
-        hoverDiv.style.top = (mouseY + offset + scrollTop) + 'px';
+        hoverDiv.style.top = mouseY + offset + scrollTop + "px";
     }
-
-
 }
