@@ -924,7 +924,7 @@
         "tier": "VII",
         "name": "Backlash Projectors",
         "type": "Defense Mod - Armor",
-        "cost": "15 <tricorium></tricorium>",
+        "cost": "10 <tricorium></tricorium>",
         "description": "When damaged, this unit pulses fire around itself, dealing 15 <DamageThermal></DamageThermal> damage to all adjacent enemy units.<br><br> Additionally, this mod grants the unit +2<armor></armor><br><br> <abilityred>This Mod can only be applied to non-Animal and non-Ethereal units. </abilityred> "
    },
     {
